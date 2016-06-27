@@ -1,0 +1,12 @@
+#! /bin/bash
+
+./Clean
+
+pdflatex 2nd_round_comments.tex
+bibtex   2nd_round_comments
+pdflatex 2nd_round_comments.tex
+pdflatex 2nd_round_comments.tex
+
+rm 2nd_round_comments.aux 2nd_round_comments.bbl 2nd_round_comments.blg 2nd_round_comments.log 2nd_round_comments.out 2nd_round_comments.maf 
+rm 2nd_round_comments.mtc 2nd_round_comments.mtc1 2nd_round_comments.nlo
+#Add creation of a tar?
