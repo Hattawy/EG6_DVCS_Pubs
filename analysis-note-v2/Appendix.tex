@@ -1,0 +1,975 @@
+\appendix
+\chead[]{\let\uppercase\relax\leftmark}
+
+%\chapter{Appendix}
+\chapter{$e ~^4He \rightarrow e ~^4He ~\gamma$ cross section} \label{app:Helium_cross_section}
+The differential cross section for a longitudinally-polarized electron beam ($\lambda$) and an unpolarized $^4$He target can written as:
+\small
+\begin{equation}
+\frac{d^{5}\sigma_{\lambda}}{dx_{A} dQ^{2} dt d\phi_{e} d\phi} = 
+\frac{\alpha^{3}}{16 \pi^{2}} \frac{x_{A} \, y^{2}}{Q^{4} \sqrt{1 + \epsilon ^{2}}} 
+\frac{
+|\mathcal{T}_{BH}|^{2} + |{\mathcal{T}}_{DVCS}^{\lambda}|^{2} + {\mathcal{I}}_{BH*DVCS}^{\lambda}}{e^{6}}
+\label{eq:sigdiff}
+\end{equation}
+\normalsize
+where $y = \frac{p \cdot q}{p \cdot k}$, $\epsilon  =  \frac{2 x_{A} M_{A}}{Q}$ 
+and $x_A  =  \frac{Q^2}{2 p \cdot q}$. The different amplitudes can be written 
+as \cite{BM_2009}:
+\small
+\begin{equation}
+|\mathcal{T}_{BH}|^{2} =  
+\frac{e^{6} (1 + \epsilon^{2})^{-2}}{x^{2}_{A} y^{2} t \mathcal{P}_{1}(\phi) \mathcal{P}_{2}(\phi)} \left[ c_{0}^{BH} + c_{1}^{BH} \cos(\phi) + c_{2}^{BH} \cos(2\phi)\right] 
+\label{TTBH}
+\end{equation}
+
+\begin{equation}
+|\mathcal{T}_{DVCS}|^{2} =  \frac{e^{6}}{y^{2} Q^{2}} \left[ c_{0}^{DVCS} + \sum_{n=1}^{2} \Bigg( c_{n}^{DVCS} \cos(n \phi) + \lambda s_{n}^{DVCS} \sin(n \phi)\Bigg) \right] 
+\label{TTDVCS}
+\end{equation}
+
+\begin{equation}
+\mathcal{I}_{BH*DVCS} =  \frac{\pm e^{6}}{x_A y^{3} t \, \mathcal{P}_{1}(\phi) 
+\mathcal{P}_{2}(\phi)} \left[ c_{0}^{I} + \sum_{n=0}^{3} \Bigg( c_{n}^{I} \cos(n \phi) + \lambda s_{n}^{I} \sin(n \phi) \Bigg) \right] 
+\label{TTinter} 
+\end{equation}
+\\
+\normalsize
+where $\mathcal{P}_{1}(\phi)$ and $\mathcal{P}_{2}(\phi)$ are BH propagators and defined as:
+\small
+\begin{align}
+&\mathcal{P}_{1}(\phi) = \frac{(k - q')^{2}}{Q^{2}} = - \frac{1}{y (1 + \epsilon^{2})} 
+\big[ J + 2 K \cos(\phi) \big] \\
+&\mathcal{P}_{2}(\phi) = \frac{(k - \Delta)^{2}}{Q^{2}} = 1 + \frac{t}{Q^{2}} + 
+\frac{1}{y (1 + \epsilon^{2})} \big[ J + 2 K \cos(\phi) \big]
+\end{align}
+~~~~~~~~~~~with,
+\begin{align}
+& J = \bigg( 1 - y - \frac{y \epsilon^{2}}{2} \bigg) \bigg(1 + \frac{t}{Q^{2}} \bigg) - 
+(1 - x_{A})(2 - y) \frac{t}{Q^{2}} \\
+& K^{2} = - \delta t \, (1 - x_{A}) \bigg( 1 - y - \frac{y^{2} \epsilon^{2}}{4} \bigg) 
+\bigg\{ \sqrt{1 + \epsilon^{2}} + \frac{4 x_{A} (1-x_{A}) + \epsilon^{2}}{4 (1 - x_{A})}
+\delta t \bigg\} \\
+& \delta t = \frac{t - t_{min}}{Q^{2}} = \frac{t}{Q^{2}} + \frac{2(1-x_{A}) \left(1- \sqrt{1 + 
+\epsilon^{2}} \right) + \epsilon^{2}}{4 x_{A} (1- x_{A}) + \epsilon^{2}}
+\end{align}
+\normalsize
+where $t_{min}$ represents the kinematic boundary of the process and defined as:
+\small
+\begin{equation}
+t_{min} = Q^2 \frac{2(1-x_A)(1 - \sqrt{1+\epsilon^2}) + \epsilon^2}{4 x_A(1-x_A) + \epsilon^2}
+\end{equation}
+\normalsize
+The Fourier coefficients, in equations \ref{TTBH}, \ref{TTDVCS} and \ref{TTinter}, of a spin-0 target are defined as:
+\small
+\begin{eqnarray}
+c_0^{BH} = & \bigg[ & \left\{ {(2-y)}^2 + y^2{(1+\epsilon^2)}^2 \right\} 
+\left\{ \frac{\epsilon^2 Q^2}{t} + 4 (1-x_A) + (4x_A+\epsilon^2) \frac{t}{Q^2} 
+\right\} \nonumber \\
+& \phantom{\bigg[} & + 2 \epsilon^2 \left\{ 4(1-y)(3+2\epsilon^2) + y^2(2-\epsilon^4) 
+\right\} - 4 x_A^2{(2-y)}^2 (2+\epsilon^2) \frac{t}{Q^2} \nonumber \\
+& \phantom{\bigg[} & + 8 K^2 \frac{\epsilon^2 Q^2}{t} \,\,\,\,\,\,\, \bigg] F_A^2(t)  \\
+c_1^{BH} = & \phantom{\bigg[} & -8 (2-y) K \left\{ 2 x_A + \epsilon^2 - 
+\frac{\epsilon^2 Q^2}{t} \right\} F_A^2(t)  \\
+c_2^{BH} = & \phantom{\bigg[} & 8 K^2 \frac{\epsilon^2 Q^2}{t} F_A^2(t) 
+\end{eqnarray} 
+\normalsize
+where $F_A(t)$ is the electromagnetic form factor of the $^4$He. At leading twist, the $|\mathcal{T}_{DVCS}|^{2}$ writes as a function of only one CFF according to
+\small
+\begin{equation}
+%c_0^{DVCS} = 2 (2-2y+y^2) \, {\mathcal H}_A {\mathcal H}^{\star}_A 
+   c_0^{DVCS}= 2 \frac{2-2y+y^2 + \frac{\epsilon^2}{2}y^2}{1 + \epsilon^2} \, 
+   {\mathcal H}_A {\mathcal H}^{\star}_A 
+   \label{eq:c0DVCS}
+\end{equation}
+\normalsize
+and the interference amplitude coefficients are written as:
+\small
+\begin{equation}
+s_{1}^{INT} = F_{A}(t) \Im m(\mathcal{H}_{A}) S_{++}(1),
+\end{equation}
+with
+\begin{eqnarray}
+   S_{++}(1) &=& \frac{-8K(2-y)y}{1+\epsilon^2} \left( 1 + 
+\frac{1-xA+\frac{\sqrt{1+\epsilon^2}-1}{2}}{1+\epsilon^2} 
+\frac{t-t_{min}}{Q^{2}} \right) \cdot F_{A}(t) \label{eq:s1I}
+\end{eqnarray}
+
+%c_0^{INT} & = & - 8 (2 - y) \frac{t}{Q^2} F_A \, \Re e \{{\mathcal H}_A\} 
+%\label{eq:c0I} \\
+% & \times & \left\{ (2-x_A)(1-y) - (1-x_A){(2-y)}^2 \left( 1 - 
+% \frac{t_{min}}{Q^2} \right) \right\} \nonumber \\
+
+%c_1^{INT} & = & 8 K (2y-y^2-2) F_A \, \Re e \{{\mathcal H}_A\} \label{eq:c1I} 
+
+\begin{eqnarray}
+\small
+c_0^{INT} &=& F_A(t) \Re e(\mathcal{H}_{A}) C_{++}(0),
+\end{eqnarray}
+with \begin{eqnarray}  C_{++}(0) &=&
+\frac{-4(2-y)(1+\sqrt{1+\epsilon^{2}})}{(1+\epsilon^{2})^2}  \bigg\{ 
+   \frac{\widetilde{K}^2}{Q^2}  \frac{(2-y)^2}{\sqrt{1+\epsilon^{2}}} \, \\
+   &+& \frac{t}{Q^2}  \left( 1 - y - \frac{\epsilon^2}{4} y^2 \right)  
+(2-x_{A}) \left(  1 + \frac{2x_A(2-x_A + \frac{\sqrt{1+\epsilon^{2}}-1}{2} + 
+\frac{\epsilon^{2}}{2x_A})\frac{t}{Q^2} + \epsilon^{2}}{(2-x_A) 
+(1+\sqrt{1+\epsilon^{2}})}  \right)  \bigg\} \nonumber
+ \label{eq:c0I} 
+ \end{eqnarray}
+
+\begin{eqnarray}
+   c_1^{INT} &=&  F_A(t) \Re e(\mathcal{H}_{A}) C_{++}(1),
+\end{eqnarray}
+with  
+   
+   \begin{eqnarray}
+   C_{++}(1) &=&
+   \frac{-16K(1-y+\frac{\epsilon^{2}}{4}y^2)}{(1+\epsilon^{2})^{5/2}}\bigg\{\left(1+(1-x_A)\frac{\sqrt{1+\epsilon^{2}}-1}{2x_A} 
+   + \frac{\epsilon^{2}}{4x_A}\right) 
+\frac{x_At}{Q^2}-\frac{3\epsilon^{2}}{4.0} \bigg\} \nonumber \\&-& 4K \left( 
+2-2y+y^2+\frac{\epsilon^{2}}{2}y^2\right)\frac{1+\sqrt{1+\epsilon^{2}}-\epsilon^{2}}{(1+e2)^{5/2}}\bigg\{1-(1-3x_A)\frac{t}{Q^2}\nonumber\\&\,\,\,\,&\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,+\frac{1-\sqrt{1+\epsilon^{2}}+3\epsilon^{2}}{1+\sqrt{1+\epsilon^{2}}-\epsilon^{2}} 
+\frac{x_A*t}{Q^2}\bigg\} \label{eq:c1I}
+\end{eqnarray}
+
+
+\normalsize
+
+
+\chapter{The parametrizations for the RTPC} \label{app:RTPC_appendix}
+\begin{itemize}
+
+\item The parametrizations of the mean ($\mu$) and the width ($\sigma$) of 
+   $\Delta z$ distributions shown in figure \ref{fig:rrtpc_delta_z}, with L and 
+   R stand for the left and the right modules of the RTPC, and $z$ in mm:
+\small
+\begin{eqnarray}
+\hspace{-0.3in} \mu_{\Delta z}^{L}(z) &=& 2.80051 -0.0624556*z +0.00035567*z^{2} +5.25789e-06*z^{3}\\
+\hspace{-0.3in} \sigma_{\Delta z}^{L}(z) &=& 7.48614 -0.00776678*z -3.66892e-05*z^{2}\\
+\hspace{-0.3in} \mu_{\Delta z}^{R}(z) &=& -3.85725 -0.061265*z +0.000324528*z^{2} +4.28801e-06*z^{3}\\
+\hspace{-0.3in} \sigma_{\Delta z}^{R}(z) &=& 8.67335 -0.00975138*z +8.01378e-05*z^{2}
+\end{eqnarray}  
+\normalsize
+\item  The parametrizations of the mean ($\mu$) and the width ($\sigma$) of $\Delta \phi$ distributions shown in figure \ref{fig:delta_phi_elastic} are:
+\small
+\begin{eqnarray}
+\hspace{-0.2in} \mu_{\Delta \phi}^{L}(z) &=& 178.053 +0.0298072*z -0.000362634*z^{2} -2.32442e-07*z^{3}\\
+\hspace{-0.2in} \sigma_{\Delta \phi}^{L}(z) &=& 2.00365 +0.0011081*z +4.1589e-05*z^{2} -2.95347e-07*z^{3}\\
+\hspace{-0.2in} \mu_{\Delta \phi}^{R}(z) &=& 181.3 +0.00749361*z -0.000338728*z^{2} +6.37882e-06*z^{3}\\
+\hspace{-0.2in} \sigma_{\Delta \phi}^{R}(z) &=& 2.0939 +9.59331e-05*z +2.16727e-05*z^{2} -5.69296e-08*z^{3}
+\end{eqnarray} 
+\normalsize
+
+\item The parametrizations of the mean ($\mu$) and the width ($\sigma$) of $\Delta \theta$ distribution shown in figure \ref{fig:delta_theta_elastic} are: 
+\small
+\begin{eqnarray}
+\hspace{-0.2in} \mu_{\Delta \theta}(z) &=& -1.02349 -0.0487393*z +0.000219641*z^{2} +3.84156e-06*z^{3}\\
+\hspace{-0.2in} \sigma_{\Delta \theta}(z) &=& 3.57854 +0.00639663*z
+\end{eqnarray}
+\normalsize
+
+~\newpage
+\item The drift speed parametrization:
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.28]{fig_rtpc/p0_RunNumber.png}
+\includegraphics[scale=0.28]{fig_rtpc/p1_RunNumber.png}
+\includegraphics[scale=0.28]{fig_rtpc/p2_RunNumber.png}
+\includegraphics[scale=0.28]{fig_rtpc/p3_RunNumber.png}
+\caption{ The fit parameters: $p_{0}$, $p_{1}$, $p_{2}$, and $p_{3}$ for the individual runs. The red lines represent their piece-wise fits. }
+\label{fig:Drift_speed_fit_par}
+\end{figure} 
+
+
+\begin{equation}
+TDC_{max/2} (z)= p_{0} +  p_{1} * e^{p_{2}*(z-p_{3})^{2}}
+\end{equation}
+
+\begin {table}[!h]
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+run range &  $p_{0}$ &  $p_{1}$ \\&  $p_{2}$ &  $p_{3}$ \\
+\hline
+61448 - 61481 & 
+\small{ 1.14312e+03 - 1.75217e-02 *$r_{N}$} & 
+\small{ 3.27339e+00 + 5.32577e-05 *$r_{N}$} \\&
+\small{-7.55131e-02 + 1.22429e-06 *$r_{N}$} &  
+\small{ 3.76627e+03 - 6.14148e-02 *$r_{N}$}\\
+\hline
+61483 - 61611 &  
+\small{ 1.21405e+02 - 9.40705e-04 *$r_{N}$} & 
+\small{ 3.89644e+00 + 6.33813e-05 *$r_{N}$}  \\& 
+\small{ 4.09308e-03 - 6.97839e-08 *$r_{N}$} & 
+\small{-9.04583e+02 + 1.45062e-02 *$r_{N}$}\\
+\hline
+61612 - 61646 & 
+\small{ 1.39733e+03 - 2.16496e-02 *$r_{N}$} & 
+\small{-3.07845e+02 + 5.10814e-03 *$r_{N}$}  \\&
+\small{-8.23774e-02 + 1.33384e-06 *$r_{N}$} & 
+\small{-9.05752e+02 + 1.44872e-02 *$r_{N}$}\\
+\hline
+61655 - 61779 &
+\small{ 1.45093e+02 - 1.33438e-03 *$r_{N}$} &
+\small{ 1.63746e+02 - 2.54273e-03 *$r_{N}$} \\&
+\small{-5.10501e-04 + 5.64359e-09 *$r_{N}$} &
+\small{ 4.26282e+02 - 7.12408e-03 *$r_{N}$}\\
+\hline
+61791 - 61930&
+\small{ 2.18243e+02 - 2.51495e-03 *$r_{N}$} &
+\small{ 4.92691e+01 - 6.90443e-04 *$r_{N}$} \\&
+\small{-1.11909e-02 + 1.78407e-07 *$r_{N}$} &
+\small{ 4.26297e+02 - 7.12383e-03 *$r_{N}$}\\
+\hline
+61931 - 61961)&
+\small{ 2.18152e+02 - 2.51641e-03 *$r_{N}$} &
+\small{ 4.92921e+01 - 6.90070e-04 *$r_{N}$} \\&
+\small{-1.11766e-02 + 1.78639e-07 *$r_{N}$} &
+\small{ 4.23668e+02 - 7.16628e-03 *$r_{N}$} \\
+\hline
+\end{tabular}
+\caption[]{The parameters of $TDC_{max/2}$ used in EG6 experiment reconstruction codes.}
+\label{Table:TDCmax}
+\end{center}
+\end{table}
+
+~\newpage
+\item Drift paths' parametrization:
+\begin{equation}
+  \Delta \phi (TDC, z)=  \sum\limits_{i=0}^{4} p_{i}(z)*TDC^{i}
+\end{equation}
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline
+Parameter & ~~~~~constant & ~~~~~~~*z & ~~~~~~~*$z^{2}$\\
+\hline
+~~~~$p_{0}$   & 0.14222     &-6.52562e-05 & 4.06768e-06\\
+\hline
+~~~~$p_{1}$   &-0.00147368  & 5.64924e-06 &-7.31944e-07\\
+\hline
+~~~~$p_{2}$   & 0.000216222 & 6.25749e-09 & 1.8923e-08 \\
+\hline
+~~~~$p_{3}$   &-3.82450e-06 &-6.29825e-09 &-1.89627e-10\\
+\hline
+~~~~$p_{4}$   & 3.22973e-08 & 7.52017e-11 & 1.08564e-12\\
+\hline
+\end{tabular}
+\caption{The drift paths extracted in the EG6 experiment.}
+\label{table:drift_paths}
+\end{center}
+\end{table}
+
+\end{itemize}
+
+%\part{SIDIS generalized cross section}
+%\begin{align}
+%\lefteqn{\frac{d\sigma}{dx \, dy\, d\phi_{S} \,dz\, d\phi_h\, d P_{h\perp}^2}
+%=}
+%\nonumber \\ & \quad 
+%\frac{\alpha^2}{x y Q^2}\,
+%\frac{y^2}{2\,(1-\varepsilon)}\,  \biggl( 1+\frac{\gamma^2}{2x} \biggr)\, \Biggl\{ F_{UU ,T} +  %\varepsilon F_{UU ,L} + \sqrt{2\,\varepsilon (1+\varepsilon)}\,\cos\phi_h\,
+%F_{UU}^{\cos\phi_h} \nonumber \\  & \quad \qquad + \varepsilon \cos(2\phi_h)\, 
+%F_{UU}^{\cos 2\phi_h} + \lambda_e\, \sqrt{2\,\varepsilon (1-\varepsilon)}\,  \sin\phi_h\, 
+%F_{LU}^{\sin\phi_h} \phantom{\Bigg[ \Bigg] }
+%\nonumber \\  & \quad \qquad + S_\parallel\, \Bigg[ \sqrt{2\, \varepsilon (1+\varepsilon)}\,
+%  \sin\phi_h\, F_{UL}^{\sin\phi_h} +  \varepsilon \sin(2\phi_h)\,  F_{UL}^{\sin 2\phi_h} \Bigg]
+%\nonumber \\  & \quad \qquad
+%+ S_\parallel \lambda_e\, \Bigg[ \, \sqrt{1-\varepsilon^2}\; 
+%F_{LL} +\sqrt{2\,\varepsilon (1-\varepsilon)}\,
+%  \cos\phi_h\,  F_{LL}^{\cos \phi_h} \Bigg] \nonumber \\  & \quad \qquad
+%+ |{S}_\perp|\, \Bigg[ \sin(\phi_h-\phi_S)\, \Bigl(F_{UT ,T}^{\sin(\phi_h -\phi_S)}
+%+ \varepsilon\, F_{UT ,L}^{\sin(\phi_h -\phi_S)}\Bigr) \nonumber \\  & \quad  \qquad \qquad
+%+ \varepsilon\, \sin(\phi_h+\phi_S)\,  F_{UT}^{\sin(\phi_h +\phi_S)}
+%+ \varepsilon\, \sin(3\phi_h-\phi_S)\, F_{UT}^{\sin(3\phi_h -\phi_S)}
+%\phantom{\Bigg[ \Bigg] } \nonumber \\  & \quad \qquad \qquad + \sqrt{2\,\varepsilon (1+\varepsilon)}\, 
+%  \sin\phi_S\,  F_{UT}^{\sin \phi_S }
+%+ \sqrt{2\,\varepsilon (1+\varepsilon)}\,  \sin(2\phi_h-\phi_S)\,  
+%F_{UT}^{\sin(2\phi_h -\phi_S)} \Bigg] \nonumber \\  & \quad \qquad 
+%+ |{S}_\perp| \lambda_e\, \Bigg[  \sqrt{1-\varepsilon^2}\, \cos(\phi_h-\phi_S)\, 
+%F_{LT}^{\cos(\phi_h -\phi_S)}
+%+\sqrt{2\,\varepsilon (1-\varepsilon)}\,   \cos\phi_S\,  F_{LT}^{\cos \phi_S}
+%\nonumber \\  & \quad \qquad \qquad +\sqrt{2\,\varepsilon (1-\varepsilon)}\,  \cos(2\phi_h-\phi_S)\,  %F_{LT}^{\cos(2\phi_h - \phi_S)} \Bigg] \Biggr\}
+%\label{crossmaster}
+%\end{align}
+
+%\begin{align}
+%\varepsilon &= \frac{1-y -\frac{1}{4} \gamma^2 y^2}{1-y
+%  +\frac{1}{2} y^2 +\frac{1}{4} \gamma^2 y^2} ,
+%\end{align}  
+
+
+\chapter{The parametrization of the IC-photons energy corrections} \label{App:AppendixA}
+\begin{itemize}
+\item $\alpha$ parametrization
+\vspace{-0.2in}
+\begin{equation}
+\alpha (x) = c_{0} + c_{2} \left[ e^{-c_{3}(x - c_{1})} - e^{-c_{4}(x - c_{1})} \right],
+\end{equation}
+
+\vspace{-0.2in}
+\begin {table}[!h]
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+$Fun_{N}$ & xmin  &   xmax    &  $c_{0}$     &   $c_{1}$    &  $c_{2}$      &   $c_{3}$  &   $c_{4}$\\
+\hline
+1  &  61510    & 61514   &  -0.00671929   &  61493     & -0.00868856    &   -0.114874  &  -0.117953\\
+\hline
+2   &  61519   &  61525  &    -0.00160398   &  61585.7  &  -2.1e-09    &   0.38362    &  0.38362\\
+\hline
+3   &  61531   &  61545  &    -0.00956513   &  61876.8  & -0.0295579   &    1.23958e-06 &  0.000704112\\
+\hline
+4   &  61546   &  61556  &    -0.000414459  &   61521.8  &-0.0179471   &    -0.0316302  &  -0.030899\\
+\hline
+5   &  61558   &  61580  &    -0.00731749  &   61532.4 &  -0.465254   &    0.0200131   &   0.0193213\\
+\hline
+6   &  61581   & 61590   &   0.0604759    & 61561.7  & -19.3314    & 0.0407449   & 0.0411026\\
+\hline
+7   &  61604   & 61608    &  -0.00320342  &   61521.1  &  -0.00074357   &    -0.018373  &    -0.0243743\\
+\hline
+8   &  61609   & 61622     & -0.00205987  &   61649.1  &   5.94004e-05   &    0.0760846  &    -2.64412\\
+\hline
+9   &  61623   & 61637    &  -0.00153458  &   61640.7  &   -1.02541e-10 &   0.965545   &   0.959411\\
+\hline
+10  &   61638   &  61646  &    -0.000735223  &   61763.1  & -0.00476067   & 0.0423013  &    0.0422956\\
+\hline
+11  &   61655  &  61675   &   -0.00123166   &  61561.1  &  -2.63733e-06  &  -0.159566  &    -0.159566\\
+\hline
+12  &  61678    & 61711   &   -0.00294886   &  61670.6   & -0.0079126   &    0.052612  &    0.0252883\\
+\hline
+13   &  61712   &  61713   &   -0.00102705   &  61711.9 &   -0.0034062 &  -3.1972   &   -3.19763\\
+\hline
+14   &  61714   &  61724   &   -0.00109184   &  61731.2&    -1.14221e-06  &     0.308061   &-4.24803\\
+\hline
+15   &  61725   &  61729   &   -0.00915958   &  61716.6 &     -0.0240355 &      0.137179  & 0.0524492\\
+\hline
+16   &  61731   &  61779   &   -0.00295947   &  61669.4 &  0.0130552    & 0.00768358   &   0.0117274\\
+\hline
+17   &  61791   &  61796   &   -0.00117275   &  61791.9  &  -0.00210188  &  5.63266   &   5.63003\\
+\hline
+18   &  61797   &  61826   &   0.00155106   &  61787.7 &  -0.980189  &     0.0514066 &     0.0518518\\
+\hline
+19   &  61829   &  61843   &   -0.0015276  &   61826 &  -0.00204473 &      2.72258   &   0.275824\\
+\hline
+20   &  61848  &   61874   &   0.0265578   &  61973.2 &  -0.0249309&    0.0010753   &   -0.186452\\
+\hline
+21   &  61876 &  61895    &  -0.00205642   &  61715.7  & -3.3277e-05 &   -0.065808   &   -0.0658091\\
+\hline
+22   &  61904  & 61915    &  -0.00274984   &  62178.9  &   -0.107207&     0.00976882  &    0.00977186\\
+\hline
+23   &  61925   &61930    &  0.0064528    & 61924.8   & -0.00849265  & 0.0278942  &   9.3268 \\
+\hline
+\end{tabular}
+\caption{$\alpha$ parametrization shown in figure \ref{fig:ic_alpha_beta_fitting}.}
+\label{Table:ic_alpha_corrections}
+\end{center}
+\end{table}
+
+~\newpage
+\item $\beta$ parametrization
+
+\begin{equation}
+\beta (x) = p_{0} + p_{2} \left[ e^{-p_{3}(x - p_{1})} - e^{-p_{4}(x - p_{1})} \right],
+\end{equation}
+
+\begin {table}[!h]
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+$Fun_{N}$ & xmin  &   xmax    &  $p_{0}$     &   $p_{1}$    &  $p_{2}$      &   $p_{3}$  &   $p_{4}$\\
+\hline
+1   &  61510   &61514   &   0.139127   &  61508.7   &   -0.00705827      & -0.127   &   -0.163719\\
+\hline
+2   &  61519   &  61525  &    0.144057  &   61553.1  &    6.44528e-05   &    0.384066 &     0.384069\\
+\hline
+3   &  61531   &  61545   &   -0.238301    & 61487    &  -1.28623      & 0.0260483   &   0.011476\\
+\hline
+4   &  61546    & 61556    &  0.0904474   &  61545.1   &   -0.0367149 &      2.10481  &    -0.0186192\\
+\hline
+5   &  61558  &   61580     & 0.095243   &  61543.5  &    -0.197639  &     0.0280817  &    0.015222\\
+\hline
+6   &  61581   &  61590 & 0.0643454     &61557.1    &  -0.394422    &   0.0358816   &   0.0212999\\
+\hline
+7   &  61604    & 61608  &    0.138436 &    61605.4  &    -0.0142253    &   -0.0323464  &    -0.0103419\\
+\hline
+8  &   61609    & 61622   &   0.135047    & 61605.8   &   -0.00856825    &   0.157423    &  0.0474859\\
+\hline
+9   &  61623    & 61637    &  0.137445   &  61646.8    &  -1.46307e-05  &     0.273975  &    -0.0770047\\
+\hline
+10 &    61638    & 61646    &  0.141909 &    61651.9 &     -0.103873    &   0.00713496   &  0.000949948\\
+\hline
+11&   61655  & 61675  & 0.127712   &  61652.8   &  -0.00969769     &  0.220956  &    0.00215349\\
+\hline
+12 &  61678   &  61711 &     0.137774     &61697.7  &    -9.15967e-05    &   0.237965 &     -0.158587\\
+\hline
+13  & 61712   & 61713   &   0.124706     &61655.1    &  -3.72443e-05    &   -0.0443564 &     -0.100321\\
+\hline
+14    & 61714  &   61724 &     0.138057 &    61726.8  &    -0.000274029   &    0.234    &  -4.45937\\
+\hline
+15   &  61725  &   61729  &    0.108381    & 61721.3   &   -0.0289603    &   0.77633  &    -0.00285553\\
+\hline
+16  &   61731  &   61779   &   0.113727   &  61726   &   -0.0236114     &  0.243927    &  -0.00196355\\
+\hline
+17 &    61791  &   61791    &  0.136619  &   0.0   &   0.0   &    0.0  &    0.0\\
+\hline
+18&   61792   &  61796 & 0.138708   &  61914.5   &   1.07991e-09     &  0.181595    &  0.181612\\
+\hline
+19 &  61797  &   61825  &    0.137559   &  61839.6 &     -0.000312349  &     0.160791&      0.159434\\
+\hline
+20  &61826   & 61843     & 0.0359758   &  61810.5   &   -0.10032      & 0.215911     & -0.000529924\\
+\hline
+21 & 61848  &  61874      &0.116396   &  61891.7   &   -0.385562     &  -0.0563216    &  -0.0479573\\
+\hline
+22&   61876  &   61915  &  0.105816  &   61872.2    &  -0.0312028     &  0.384691    &  -0.00145868\\
+\hline
+23 & 61925   &  61930    &  0.137809   &  61927.5    &  -0.00071665  &     0.620419   &   0.222406\\
+
+\hline
+\end{tabular}
+\caption{$\beta$ parametrization shown in figure \ref{fig:ic_alpha_beta_fitting}.}
+\label{Table:ic_beta_corrections}
+\end{center}
+\end{table}
+\end{itemize}
+
+~\newpage
+
+\chapter{Exclusive $\pi^{0}$ events selection}\label{app:Exclusive_pi0_selection}
+
+~~~~~The exclusive selection of the experimental $e^{4}He\pi^{0}$ and $ep\pi^{0}$ events require the detection of only one good electron, one good $\pi^{0}$ in the topology ICIC or ICEC, and one good $^{4}He$ track in the coherent channel or one good proton in the incoherent channel case. Furthermore, in order to ensure that this is a deep process we apply a set of initial requirements. The exclusivity of the reaction is ensured by a set of exclusivity cuts like for the DVCS channels. These requirements and exclusivity cuts are presented for the case of the coherent $e^{4}He\pi^{0}$ events are:
+
+\paragraph{Initial criteria}
+~\\
+~\\
+These requirements are made to ensure that the selected events occurre at the partonic level:
+\begin{itemize}
+\item High virtuality of the exchanged photon ($Q^{2}$>1 $GeV^{2}$).
+\item High energy of the emitted $\pi^{0}$ ($E_{\pi^{0}}$ > 2 GeV).
+\item The invariant mass of the virtual photon and the target proton is greater than 2 GeV$^{2}$/c$^{2}$ in order to avoid the baryons resonances region.
+\item The transfer momentum squared ($-t$) between the initial target and the recoil one is greater than the minimum allowed one ($t_{min}$) defined by the kinematics of the incoming and the scattered electrons. The definition of $t_{min}$ for each channel can be found in the corresponding DVCS channel selection presented previously.
+\end{itemize}
+
+\paragraph{Exclusivity requirements}
+~\\
+~\\The exclusivity of the selected $e^{4}He\pi^{0}$ events is done with the following cuts:
+\begin{itemize}
+\item The coplanarity cut ($\Delta \phi$) between the recoil $^{4}He$ and the produced $\pi^{0}$.
+\item The missing energy, mass and transverse momentum cuts in the configuration $e^{4}He\pi^{0}X$.
+\item The missing mass cut in the configuration $e^{4}HeX$.
+\item The missing mass cut in the configuration $e\pi^{0}X$.
+\item The cone angle cut between $e^{4}HeX$ and the reconstructed $\pi^{0}$.
+\end{itemize}
+  The same procedure holds for the case of the incoherent $ep\pi^{0}$ events. In the following two subsections, the results of the two channels selection are presented.
+~\newpage
+\section{$e^{4}He\pi^{0}$ exclusivity cuts}
+~~~~The events which pass the following exclusivity cuts are assumed to be good $e^{4}He\pi^{0}$ events.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{fig_dvcs/all_coh_pi0_exc_cuts.png}
+\caption{The blue distributions represent all the  $e^{4}He\pi^{0}$ events before the exclusivity cuts. The shaded distributions show the events which passed all the exclusivity cuts except for the quantity plotted. The red lines are $3\sigma$ cuts. The mean and sigma values of each distribution are listed in table \ref{Table:cohpi0_exclusivity_cuts}.} 
+\label{fig:cohpi0_exclusivty_cuts}
+\end{figure}
+
+\paragraph{Comparison with simulation}
+~\\
+~\\As for the selection of the experimental $e^{4}He\pi^{0}$ events, the simulated events have to pass an equivalent set of exclusivity cuts in addition to the $\pi^{0}$ electroproduction criteria, presented at the beginning of this section. In this section, we show the comparison between the experimental and the simulated selected  $e^{4}He\pi^{0}$ events as a function of the kinematic variables ($Q^{2}$, $x_{B}$, $-t$), figure \ref{fig:coh_pi0_comparison_with_simulation}, and as a function of the variables used for the exclusivity cuts, figure \ref{fig:coh_pi0_comparison_with_simulation_2}.\\
+
+\begin{figure}[h!]
+\hspace{-0.1in}\includegraphics[scale=0.37]{fig_dvcs/comp/Q2_Coh_pi0.png}
+\hspace{-0.4in}\includegraphics[scale=0.37]{fig_dvcs/comp/xB_Coh_pi0.png}
+\hspace*{-0.1in}\includegraphics[scale=0.37]{fig_dvcs/comp/t_Coh_pi0.png}
+\hspace{-0.4in}\includegraphics[scale=0.37]{fig_dvcs/comp/phi_h_Coh_pi0.png}
+\caption{Comparison between the simulated $e^{4}He\pi^{0}$ events (red lines) and the experimental events (blue shaded distributions) as a function of the kinematic variables: $Q^{2}$, $x_{B}$, $-t$ and $\phi_{h}$ respectively from top to right to right and from top to bottom.}
+\label{fig:coh_pi0_comparison_with_simulation}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[scale=0.35]{fig_dvcs/comp/Coh_pi0_delta_phi.png}
+\includegraphics[scale=0.35]{fig_dvcs/comp/Coh_pi0_e4Hepi0_E_Mis.png}
+\includegraphics[scale=0.35]{fig_dvcs/comp/Coh_pi0_e4Hepi0_M2_Mis.png}
+\includegraphics[scale=0.35]{fig_dvcs/comp/Coh_pi0_e4Hepi0_PT_Mis.png}
+\includegraphics[scale=0.35]{fig_dvcs/comp/Coh_pi0_e4He_M2_Mis.png}
+\includegraphics[scale=0.35]{fig_dvcs/comp/Coh_pi0_epi0_M2_Mis.png}
+\caption{Comparison between the simulated and experimental $e^{4}He\gamma$ events in terms of the exclusivity variables. The vertical black line indicates the theoretically expected value for each exclusive variable.} 
+\label{fig:coh_pi0_comparison_with_simulation_2}
+\end{figure}
+
+Even with low experimental statistics, figures \ref{fig:coh_pi0_comparison_with_simulation} and \ref{fig:coh_pi0_comparison_with_simulation_2} show a good match between the simulation and the experimental   $e^{4}He\gamma$ events for the different kinematic variables, which is satisfying  for our background subtraction goal. 
+
+
+~\newpage
+~\newpage
+\section{$ep\pi^{0}$ exclusivity cuts}
+The $ep\pi^{0}$ events which pass the initial deepness criteria and the exclusivity cuts, marked by the red vertical lines in the figure below, are considered as clean events.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{fig_dvcs/all_incoh_pi0_exc_cuts.png}
+\caption{The blue distributions represent all the $ep\pi^{0}$ events before any exclusive requirement. The shaded brown distributions show the events which passed all the exclusivity cuts except the quantity plotted. The vertical red lines represent $3\sigma$ cuts on the shaded distribution. The mean and sigma values of each distribution are listed in table \ref{Table:incohpi0_exclusivity_cuts}.} 
+\label{fig:incohpi0_exclusivty_cuts}
+\end{figure}
+
+
+
+\paragraph{Comparison with simulation}
+~\\
+~\\
+In this section, the experimental selected $ep\pi^{0}$ events are compared to the Monte Carlo simulated events. Figure \ref{fig:incoh_pi0_comparison_with_simulation} shows the comparison as a function of the kinematic variables. Figure \ref{fig:incoh_comparison_with_simulation_exclusive} shows the comparison in terms of the different exclusivity variables. One can see an agreement within some degrees of differences, which might come from the fact that our protons are bound ones and the physics of the nuclear process is not fully understood. 
+\begin{figure}[h!]
+\includegraphics[scale=0.35]{fig_dvcs/comp/Q2_InCoh_pi0.png}
+\includegraphics[scale=0.35]{fig_dvcs/comp/xB_InCoh_pi0.png}
+\includegraphics[scale=0.35]{fig_dvcs/comp/t_InCoh_pi0.png}
+\includegraphics[scale=0.35]{fig_dvcs/comp/phi_h_InCoh_pi0.png}
+\caption{Comparison between the Monte Carlo simulated $ep\pi^{0}$ events (red lines) and the experimental ones (blue shaded distributions) as a function of the kinematic variables: $Q^{2}$, $x_{B}$, $-t$, and $\phi$, respectively from top to right to right and from top to bottom.}
+\label{fig:incoh_pi0_comparison_with_simulation}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[scale=0.35]{fig_dvcs/comp/InCoh_pi0_delta_phi_InCoh.png}
+\includegraphics[scale=0.35]{fig_dvcs/comp/InCoh_pi0_eppi0_E_Mis.png}
+\includegraphics[scale=0.35]{fig_dvcs/comp/InCoh_pi0_eppi0_M2_Mis.png}
+\includegraphics[scale=0.35]{fig_dvcs/comp/InCoh_pi0_eppi0_PT_Mis.png}
+\includegraphics[scale=0.35]{fig_dvcs/comp/InCoh_pi0_epi0_M2_Mis_InCoh.png}
+\includegraphics[scale=0.35]{fig_dvcs/comp/InCoh_pi0_Theta_pi0X_InCoh.png}
+\caption{Comparison between the simulated and experimental $ep\pi^{0}$ DVCS events as a function of the variables used for the exclusivity cuts. The simulated distributions are normalized with respect to the experimental ones. The vertical black lines indicate the theoretically expected values.} 
+\label{fig:incoh_comparison_with_simulation_exclusive}
+\end{figure}
+
+
+\chapter{Tables list of the exclusive distributions}\label{exclusivity_cuts}
+\begin{itemize}
+
+\item Exclusive $e^{4}He\gamma$ distributions
+\begin {table}[!h]
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+The quantity &  ~~~mean & ~~~~~$\sigma$ \\
+\hline
+$\Delta \phi$ &  1.79405e-01 & 4.53791e-01 \\
+\hline
+$E_{X}$ ($e^{4}He\gamma X$) &  1.56814e-02 & 2.51492e-01 \\ 
+\hline
+$M^{2}_{X}$ ($e^{4}He\gamma X$) &  -2.96869e-03 & 9.10158e-03 \\ 
+\hline
+$pt_{X}$ ($e^{4}He\gamma X$) & 4.14664e-02 & 4.24914e-02 \\ 
+\hline
+$M^{2}_{X}$ ($e^{4}HeX$) &  -1.72013e-02 & 2.33988e-01 \\
+\hline
+ $M^{2}_{X}$ ($e\gamma X$) &  1.40066e+01 & 1.85929 \\
+\hline
+$\theta$ ($\gamma$,$e^{4}HeX$) &  5.08070e-01 & 4.74883e-01\\
+\hline
+$px_{X}$ ($e^{4}He\gamma X$) & -2.32102e-03  & 4.52945e-02\\
+\hline
+$py_{X}$ ($e^{4}He\gamma X$) &  -8.97351e-04 & 3.89937e-02\\ 
+\hline
+\end{tabular}
+\caption{ The mean and sigma values of the exclusive coherent quantities drawn in figure \ref{fig:coh_exclusivty_cuts}.}
+\label{Table:coh_exclusivity_cuts}
+\end{center}
+\end{table}
+
+
+\item Exclusive $e^{4}He\pi^{0}$ distributions
+\begin {table}[!h]
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+The quantity &  ~~~mean & ~~~~~$\sigma$  \\
+\hline
+$\Delta \phi$ & 1.41750e-01  & 3.84202e-01 \\
+\hline
+$E_{X}$ ($e^{4}He\pi^{0} X$)     &  7.80328e-03 & 1.85770e-01 \\
+\hline
+$M^{2}_{X}$ ($e^{4}He\pi^{0} X$) &  -2.31650e-03 & 8.65851e-03 \\
+\hline
+$pt_{X}$ ($e^{4}He\pi^{0} X$)    & 4.36619e-02  & 3.25254e-02 \\
+\hline
+$M^{2}_{X}$ ($e^{4}HeX$) &  -1.30346e-02 & 2.07791e-01 \\
+\hline
+$M^{2}_{X}$ ($e\pi^{0} X$)  & 1.39835e+01 & 1.33781\\
+\hline
+$\theta$ ($\pi^{0}$,$e^{4}HeX$) & 5.30001e-01  & 3.44745e-01\\
+\hline
+$px_{X}$ ($e^{4}He\pi^{0} X$)    &   -3.79596e-03  &  4.20732e-02\\
+\hline
+ $py_{X}$ ($e^{4}He\pi^{0} X$)    &   9.41010e-04  & 3.50393e-02 \\
+\hline
+\end{tabular}
+\caption{ The mean and sigma values of the exclusive coherent quantities drawn in figure \ref{fig:cohpi0_exclusivty_cuts}.}
+\label{Table:cohpi0_exclusivity_cuts}
+\end{center}
+\end{table}
+
+
+~\newpage
+\item Exclusive $ep\gamma$ distributions
+
+\begin {table}[!h]
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+The quantity &  ~~~mean & ~~~~~$\sigma$ \\
+\hline
+$\Delta \phi$ &  4.22584e-02 & 1.39413 \\
+\hline
+$E_{X}$ ($ep\gamma X$) &  6.27739e-02 & 1.34499e-01 \\
+\hline
+$M^{2}_{X}$ ($ep\gamma X$) &  -1.00889e-02 & 1.58503e-02 \\ 
+\hline
+$pt_{X}$ ($ep\gamma X$) & 8.03008e-02 & 4.28511e-02 \\  
+\hline
+$M^{2}_{X}$ ($epX$) &  2.40257e-01 & 3.66321e-01 \\
+\hline
+$M^{2}_{X}$ ($e\gamma X$) &  1.01266 & 2.03835e-01 \\
+\hline
+$\theta$ ($\gamma$, $epX$) &  1.06788 & 6.76469e-01 \\
+\hline
+$px_{X}$ ($ep\gamma X$) & 3.48024e-03  &  8.19527e-02\\
+\hline
+$py_{X}$ ($ep\gamma X$) & -1.50911e-03 & 8.16219e-02\\
+\hline
+\end{tabular}
+\caption{ The mean and sigma values of the exclusive incoherent quantities drawn in figure \ref{fig:incoh_exclusivty_cuts}.}
+\label{Table:incoh_exclusivity_cuts}
+\end{center}
+\end{table}
+
+
+\item Exclusive $ep\pi^{0}$ distributions
+\begin {table}[!h]
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+The quantity &  ~~~mean & ~~~~~$\sigma$  \\
+\hline
+$\Delta \phi$ & -3.25864e-02  & 2.11499 \\ 
+  
+\hline
+$E_{X}$ ($ep\pi^{0} X$) &  9.23934e-02 & 1.50977e-01 \\
+  
+\hline
+$M^{2}_{X}$ ($ep\pi^{0} X$) &  -1.11900e-02 & 2.31963e-02 \\
+  
+\hline
+$pt_{X}$ ($ep\pi^{0} X$) & 1.02247e-01 & 5.31387e-02 \\
+  
+\hline
+$M^{2}_{X}$ ($epX$) & 2.27334e-01  & 2.98775e-01\\
+\hline
+$M^{2}_{X}$ ($e\pi^{0} X$) & 1.07125  & 2.79845e-01\\
+\hline
+$\theta$ ($\pi^{0}$, $epX$) &  1.42739 & 8.89072e-01 \\
+\hline
+$px_{X}$ ($ep\pi^{0} X$) &  2.19686e-03  & 9.01343e-02 \\
+\hline
+$py_{X}$ ($ep\pi^{0} X$) &  -1.30580e-03 & 9.05090e-02  \\ 
+\hline
+\end{tabular}
+\caption{ The mean and sigma values of the exclusive $ep\pi^{0}$ quantities drawn in shaded brown in figure \ref{fig:incohpi0_exclusivty_cuts}.}
+\label{Table:incohpi0_exclusivity_cuts}
+\end{center}
+\end{table}
+\end{itemize}
+
+
+
+\section*{ALU tables}
+\begin{table}[!h]
+   \begin{center}
+      \begin{tabular}{||l|l|l|l|l||}
+         \hline
+ $<Q^{2}>$ & $<x_{B}>$ & $<-t>$ & $<\phi>$ & $A_{LU}$ $\pm$ stat. $\pm$ syst.\\
+         \hline
+         1.143 & 0.136 & 0.096 &  23.32563   &    0.1370716  $\pm$   0.08373948  $\pm$   0.02571563 \\
+         1.143 & 0.136 & 0.096 &  59.81847   &    0.3758095  $\pm$   0.07101178  $\pm$   0.01885969 \\
+         1.143 & 0.136 & 0.096 &  97.78493   &    0.4125528  $\pm$   0.08798407  $\pm$   0.04038886 \\
+         1.143 & 0.136 & 0.096 &  140.0018   &    0.159693   $\pm$   0.1366452   $\pm$   0.02678967 \\
+         1.143 & 0.136 & 0.096 &  179.0882   &    0.1714253  $\pm$   0.1398893   $\pm$   0.02789155 \\
+         1.143 & 0.136 & 0.096 &  219.1279   &   -0.1240822  $\pm$   0.1156237   $\pm$   0.02484531 \\
+         1.143 & 0.136 & 0.096 &  263.7259   &   -0.3608519  $\pm$   0.09411095  $\pm$   0.03891253 \\
+         1.143 & 0.136 & 0.096 &  302.9283   &   -0.1683747  $\pm$   0.07604881  $\pm$   0.02632836 \\
+         1.143 & 0.136 & 0.096 &  337.3336   &   -0.3508557  $\pm$   0.07680001  $\pm$   0.03431105 \\
+         \hline                                                                          
+         1.423 & 0.172 & 0.099 &  19.94307   &    0.1650792  $\pm$   0.067211    $\pm$   0.02673700 \\
+         1.423 & 0.172 & 0.099 &  57.17185   &    0.3028724  $\pm$   0.068908    $\pm$   0.02503328 \\
+         1.423 & 0.172 & 0.099 &  95.77216   &    0.4372785  $\pm$   0.099537    $\pm$   0.04267748 \\
+         1.423 & 0.172 & 0.099 &  137.9543   &    0.1147926  $\pm$   0.142932    $\pm$   0.02500644 \\
+         1.423 & 0.172 & 0.099 &  180.9498   &    0.1924395  $\pm$   0.1806951   $\pm$   0.03026008 \\
+         1.423 & 0.172 & 0.099 &  220.1671   &   -0.2589808  $\pm$   0.1611112   $\pm$   0.03447198 \\
+         1.423 & 0.172 & 0.099 &  263.1496   &   -0.3065283  $\pm$   0.1158366   $\pm$   0.03663218 \\
+         1.423 & 0.172 & 0.099 &  302.3187   &   -0.3646641  $\pm$   0.069707    $\pm$   0.03835156 \\
+         1.423 & 0.172 & 0.099 &  338.0674   &   -0.1660148  $\pm$   0.069482    $\pm$   0.02613428 \\
+         \hline                                                                        
+         1.902 & 0.224 & 0.107 &  20.96588   &    0.0841330  $\pm$   0.06370723  $\pm$   0.02345626 \\
+         1.902 & 0.224 & 0.107 &  56.59966   &    0.3739804  $\pm$   0.06574343  $\pm$   0.01851792 \\
+         1.902 & 0.224 & 0.107 &  95.79632   &    0.1779531  $\pm$   0.1058264   $\pm$   0.0173685  \\
+         1.902 & 0.224 & 0.107 &  139.5123   &    0.1574064  $\pm$   0.1713567   $\pm$   0.01702304 \\
+         1.902 & 0.224 & 0.107 &  179.5613   &   -0.0837227  $\pm$   0.2119008   $\pm$   0.01265815 \\
+         1.902 & 0.224 & 0.107 &  221.6768   &   -0.1251566  $\pm$   0.1783256   $\pm$   0.01528429 \\
+         1.902 & 0.224 & 0.107 &  263.0872   &   -0.3069055  $\pm$   0.1173135   $\pm$   0.02602474 \\
+         1.902 & 0.224 & 0.107 &  303.6431   &   -0.2404473  $\pm$   0.07568278  $\pm$   0.02071202 \\
+         1.902 & 0.224 & 0.107 &  339.2973   &   -0.184311   $\pm$   0.06150122  $\pm$   0.01635832 \\
+      \hline 
+      \hline
+      \end{tabular}
+      \caption{ The coherent $A_{LU}$ in $Q^2$ bins}
+      \label{table:Coh_Q2_BSA}
+   \end{center}
+\end{table}                    
+
+\begin{table}[!h]
+   \begin{center}
+      \begin{tabular}{||l|l|l|l|l||}
+         \hline
+ $<Q^{2}>$ & $<x_{B}>$ & $<-t>$ & $<\phi>$ & $A_{LU}$ $\pm$ stat. $\pm$ syst.\\
+         \hline
+        1.164 & 0.132 & 0.095 &   24.70837  &    -0.0009864  $\pm$   0.1023417     $\pm$   0.02214862    \\
+        1.164 & 0.132 & 0.095 &   60.38457  &     0.394491   $\pm$   0.06742577    $\pm$   0.01984295    \\
+        1.164 & 0.132 & 0.095 &   98.05482  &     0.4169974  $\pm$   0.0822727     $\pm$   0.04084068    \\
+        1.164 & 0.132 & 0.095 &   140.4849  &     0.2629772  $\pm$   0.1287244     $\pm$   0.03336946    \\
+        1.164 & 0.132 & 0.095 &   178.7877  &     0.1917519  $\pm$   0.133959      $\pm$   0.02937379    \\
+        1.164 & 0.132 & 0.095 &   218.4067  &    -0.1139352  $\pm$   0.1099316     $\pm$   0.02438166    \\
+        1.164 & 0.132 & 0.095 &   263.7104  &    -0.3303477  $\pm$   0.08687361    $\pm$   0.0372357     \\
+        1.164 & 0.132 & 0.095 &   302.0021  &    -0.158615   $\pm$   0.06873616    $\pm$   0.02598807    \\
+        1.164 & 0.132 & 0.095 &   335.3734  &    -0.2978278  $\pm$   0.09144179    $\pm$   0.03198552    \\
+         \hline                                                                         
+        1.439 & 0.17 & 0.099 &    21.20114   &    0.1944966  $\pm$   0.06481715    $\pm$   0.023002136   \\
+        1.439 & 0.17 & 0.099 &    57.05011   &    0.2135007  $\pm$   0.0688628     $\pm$   0.01959182    \\
+        1.439 & 0.17 & 0.099 &    95.32827   &    0.3033697  $\pm$   0.1028014     $\pm$   0.0295878     \\
+        1.439 & 0.17 & 0.099 &    137.6747   &    0.1027237  $\pm$   0.134283      $\pm$   0.01876947    \\
+        1.439 & 0.17 & 0.099 &    180.8816   &   -0.0055032  $\pm$   0.1730991     $\pm$   0.0197908     \\
+        1.439 & 0.17 & 0.099 &    220.8371   &   -0.2294214  $\pm$   0.1615644     $\pm$   0.0270881     \\
+        1.439 & 0.17 & 0.099 &    264.4366   &   -0.2758285  $\pm$   0.1156173     $\pm$   0.02923329    \\
+        1.439 & 0.17 & 0.099 &    302.6414   &   -0.3697083  $\pm$   0.07362371    $\pm$   0.03312501    \\
+        1.439 & 0.17 & 0.099 &    337.925    &   -0.2626907  $\pm$   0.06672689    $\pm$   0.02543044    \\              
+         \hline                                                                         
+        1.844 & 0.225 & 0.107 &   19.94412   &    0.1199148  $\pm$   0.0610976     $\pm$   0.024893846   \\
+        1.844 & 0.225 & 0.107 &   56.1033    &    0.4535308  $\pm$   0.07056983    $\pm$   0.02240954    \\
+        1.844 & 0.225 & 0.107 &   95.56723   &    0.2782661  $\pm$   0.1178502     $\pm$   0.02714954    \\
+        1.844 & 0.225 & 0.107 &   139.3193   &   -0.0854730  $\pm$   0.2144445     $\pm$   0.01668931    \\
+        1.844 & 0.225 & 0.107 &   180.6025   &    0.1409771  $\pm$   0.2599303     $\pm$   0.02044162    \\
+        1.844 & 0.225 & 0.107 &   223.7917   &   -0.2456453  $\pm$   0.2105987     $\pm$   0.02706752    \\
+        1.844 & 0.225 & 0.107 &   260.904    &   -0.3907139  $\pm$   0.1417117     $\pm$   0.03533464    \\
+        1.844 & 0.225 & 0.107 &   304.3742   &   -0.2674945  $\pm$   0.08101173    $\pm$   0.02630272    \\
+        1.844 & 0.225 & 0.107 &   340.0658   &   -0.125335   $\pm$   0.06016415    $\pm$   0.01755089    \\
+         \hline  
+         \hline
+      \end{tabular}
+      \caption{The coherent ALU in $x_B$ bins}
+      \label{table:Coh_xB_BSA}
+   \end{center}
+\end{table}                        
+
+\begin{table}[!h]
+   \begin{center}
+      \begin{tabular}{||l|l|l|l|l||}
+         \hline
+ $<Q^{2}>$ & $<x_{B}>$ & $<-t>$ & $<\phi>$ & $A_{LU}$ $\pm$ stat. $\pm$ syst.\\
+
+         \hline
+           1.36 & 0.160 & 0.080 &   21.30242  &  0.1531553   $\pm$  0.07225752   $\pm$  0.026305318    \\
+           1.36 & 0.160 & 0.080 &   57.11194  &  0.2900274   $\pm$  0.06585235   $\pm$  0.02439207     \\
+           1.36 & 0.160 & 0.080 &   96.15277  &  0.4041914   $\pm$  0.09641501   $\pm$  0.03947151     \\
+           1.36 & 0.160 & 0.080 &   137.9588  &  0.1402594   $\pm$  0.1434757    $\pm$  0.02522018     \\
+           1.36 & 0.160 & 0.080 &   179.2052  &  0.3218006   $\pm$  0.1641379    $\pm$  0.03717874     \\
+           1.36 & 0.160 & 0.080 &   221.4243  &  -0.3213178  $\pm$  0.1356342    $\pm$  0.03708316     \\
+           1.36 & 0.160 & 0.080 &   265.92    &  -0.392002   $\pm$  0.1066914    $\pm$  0.04038161     \\
+           1.36 & 0.160 & 0.080 &   301.3226  &  -0.2284983  $\pm$  0.07726413   $\pm$  0.02940459     \\
+           1.36 & 0.160 & 0.080 &   339.661   &  -0.2348847  $\pm$  0.06494273   $\pm$  0.02810254     \\
+         \hline                                                                         
+           1.507 & 0.179 & 0.094 &  21.17746   & 0.1631617   $\pm$  0.07120653   $\pm$  0.026711914     \\
+           1.507 & 0.179 & 0.094 &  56.92214   & 0.3715996   $\pm$  0.06870001   $\pm$  0.02842517      \\
+           1.507 & 0.179 & 0.094 &  97.24788   & 0.3145243   $\pm$  0.09659388   $\pm$  0.03076673      \\
+           1.507 & 0.179 & 0.094 &  141.6889   & 0.1388844   $\pm$  0.1607593    $\pm$  0.02150343      \\
+           1.507 & 0.179 & 0.094 &  179.6762   & -0.3612444  $\pm$  0.1723714    $\pm$  0.03603272      \\
+           1.507 & 0.179 & 0.094 &  220.3783   & -0.029479   $\pm$  0.1576259    $\pm$  0.01477838      \\
+           1.507 & 0.179 & 0.094 &  262.64     & -0.2524102  $\pm$  0.1096333    $\pm$  0.02830972      \\
+           1.507 & 0.179 & 0.094 &  303.6787   & -0.282367   $\pm$  0.07599572   $\pm$  0.02864878      \\
+           1.507 & 0.179 & 0.094 &  338.2113   & -0.1464348  $\pm$  0.07113145   $\pm$  0.02012911      \\
+         \hline                                                                       
+           1.610 & 0.193 & 0.127 &  21.08428   & 0.0341355   $\pm$  0.07013161   $\pm$   0.021403381     \\
+           1.610 & 0.193 & 0.127 &  59.38832   & 0.4083206   $\pm$  0.07247885   $\pm$   0.02045513      \\
+           1.610 & 0.193 & 0.127 &  96.08225   & 0.3209038   $\pm$  0.1013991    $\pm$   0.0313346       \\
+           1.610 & 0.193 & 0.127 &  138.5581   & 0.1170443   $\pm$  0.146122     $\pm$   0.02038013      \\
+           1.610 & 0.193 & 0.127 &  180.2608   & 0.3477719   $\pm$  0.1581127    $\pm$   0.0354366       \\
+           1.610 & 0.193 & 0.127 &  218.4883   & -0.091217   $\pm$  0.142311     $\pm$   0.01898904      \\
+           1.610 & 0.193 & 0.127 &  261.3985   & -0.320382   $\pm$  0.1108918    $\pm$   0.0327608       \\
+           1.610 & 0.193 & 0.127 &  303.3648   & -0.266328   $\pm$  0.07080153   $\pm$   0.02802882      \\
+           1.610 & 0.193 & 0.127 &  337.2208   & -0.261976   $\pm$  0.07224138   $\pm$   0.02615273      \\
+         \hline
+         \hline
+      \end{tabular}
+      \caption{The coherent $A_{LU}$ in -t bins}
+      \label{table:Coh_t_BSA}
+   \end{center}
+\end{table}
+
+% incoherent channel
+
+\begin{table}[!h]
+   \begin{center}
+      \begin{tabular}{||l|l|l|l|l||}
+         \hline
+ $<Q^{2}>$ & $<x_{B}>$ & $<-t>$ & $<\phi>$ & $A_{LU}$ $\pm$ stat. $\pm$ syst.\\
+ \hline  
+  1.395 & 0.166 & 0.407  &   21.10406  &  0.04811468 $\pm$  0.04658231  $\pm$  0.012062557     \\
+  1.395 & 0.166 & 0.407  &   61.33965  &  0.0836005  $\pm$  0.0531715   $\pm$  0.015623204     \\
+  1.395 & 0.166 & 0.407  &   95.84617  &  0.1792438  $\pm$  0.05315892  $\pm$  0.02637904      \\
+  1.395 & 0.166 & 0.407  &   140.0124  &  0.04524659 $\pm$  0.07010027  $\pm$  0.0158652       \\
+  1.395 & 0.166 & 0.407  &   181.9726  &  0.1242038  $\pm$  0.08510458  $\pm$  0.02346724      \\
+  1.395 & 0.166 & 0.407  &   219.0216  &  0.03828423 $\pm$  0.07649991  $\pm$  0.01509915      \\
+  1.395 & 0.166 & 0.407  &   259.0493  &  -0.1422473 $\pm$  0.0495869   $\pm$  0.02266091      \\
+  1.395 & 0.166 & 0.407  &   303.8597  &  -0.1478417 $\pm$  0.03942399  $\pm$  0.01968592      \\
+  1.395 & 0.166 & 0.407  &   337.5399  &  -0.0844819 $\pm$  0.04879445  $\pm$  0.01425768      \\
+ \hline                                                                      
+  1.886 & 0.233 & 0.499 &    20.62881  &  -0.0058365 $\pm$  0.03877985  $\pm$  0.012482536     \\
+  1.886 & 0.233 & 0.499 &    58.90961  &  0.1058029  $\pm$  0.05262749  $\pm$  0.016983385     \\
+  1.886 & 0.233 & 0.499 &    95.93819  &  0.1373368  $\pm$  0.06176916  $\pm$  0.02021609      \\
+  1.886 & 0.233 & 0.499 &    141.0758  &  0.2106814  $\pm$  0.09877572  $\pm$  0.02858216      \\
+  1.886 & 0.233 & 0.499 &    179.8328  &  0.06009099 $\pm$  0.1188988   $\pm$  0.01464961      \\
+  1.886 & 0.233 & 0.499 &    220.9095  &  -0.03806458 $\pm$  0.1066278   $\pm$  
+ 0.04304848      \\
+  1.886 & 0.233 & 0.499 &    260.608   &  -0.1192977 $\pm$  0.07428519  $\pm$  0.01808374      \\
+  1.886 & 0.233 & 0.499 &    304.2599  &  -0.2011292 $\pm$  0.05552498  $\pm$  0.0198082       \\
+  1.886 & 0.233 & 0.499 &    338.4649  &  -0.0815212 $\pm$  0.0567802   $\pm$  0.01138369      \\
+ \hline                                                                      
+  2.338 & 0.29 & 0.521  &    20.72956  &  0.08229175 $\pm$  0.03744839  $\pm$  0.013506039    \\ 
+  2.338 & 0.29 & 0.521  &    56.90895  &  0.155593   $\pm$  0.05379751  $\pm$  0.01010521     \\ 
+  2.338 & 0.29 & 0.521  &    94.91647  &  0.05217237 $\pm$  0.0715696   $\pm$  0.017660975    \\ 
+  2.338 & 0.29 & 0.521  &    141.1955  &  0.1371172  $\pm$  0.1260972   $\pm$  0.01618568     \\ 
+  2.338 & 0.29 & 0.521  &    181.6533  &  -0.2127209 $\pm$  0.1556657   $\pm$  0.02363223     \\ 
+  2.338 & 0.29 & 0.521  &    224.0629  &  0.2006703  $\pm$  0.1501709   $\pm$  0.02122811     \\ 
+  2.338 & 0.29 & 0.521  &    261.0354  &  -0.2716077 $\pm$  0.09343596  $\pm$  0.02419026     \\ 
+  2.338 & 0.29 & 0.521  &    303.8146  &  -0.2199163 $\pm$  0.06880397  $\pm$  0.01534961     \\ 
+  2.338 & 0.29 & 0.521  &    339.3798  &  -0.0379564 $\pm$  0.06803362  $\pm$  0.014507918    \\ 
+ \hline                                                                      
+  3.098 &0.379 & 0.65  &     20.11158  &  0.1124871  $\pm$  0.03615842  $\pm$  0.014743619    \\ 
+  3.098 &0.379 & 0.65  &     56.98647  &  0.0725830  $\pm$  0.0555646   $\pm$  0.014717011    \\ 
+  3.098 &0.379 & 0.65  &     95.74599  &  0.1911079  $\pm$  0.07990027  $\pm$  0.02811833     \\ 
+  3.098 &0.379 & 0.65  &     137.8186  &  -0.005798  $\pm$  0.1509773   $\pm$  0.01296021     \\ 
+  3.098 &0.379 & 0.65  &     179.3002  &  -0.605363  $\pm$  0.2490573   $\pm$  0.027008585    \\ 
+  3.098 &0.379 & 0.65  &     227.8571  &  0.1695245  $\pm$  0.1915087   $\pm$  0.02732611     \\ 
+  3.098 &0.379 & 0.65  &     263.4649  &  -0.120036  $\pm$  0.09407594  $\pm$  0.02149023     \\ 
+  3.098 &0.379 & 0.65  &     303.8994  &  -0.178453  $\pm$  0.04217566  $\pm$  0.02211641     \\ 
+  3.098 &0.379 & 0.65  &     340.4588  &  -0.059749  $\pm$  0.03455414  $\pm$  0.01412915     \\ 
+ \hline
+ \hline
+      \end{tabular}
+      \caption{The incoherent $A_{LU}$ in $Q^2$ bins}
+      \label{table:InCoh_Q2_BSA}
+   \end{center}
+\end{table}
+
+
+\begin{table}[!h]
+   \begin{center}
+      \begin{tabular}{||l|l|l|l|l||}
+         \hline
+ $<Q^{2}>$ & $<x_{B}>$ & $<-t>$ & $<\phi>$ & $A_{LU}$ $\pm$ stat. $\pm$ syst.\\
+         \hline 
+  1.425 & 0.162 & 0.397 &   21.03589  &  0.08658236   $\pm$  0.04970597   $\pm$  0.013707438    \\
+  1.425 & 0.162 & 0.397 &   62.13969  &  0.09617981   $\pm$  0.0520029    $\pm$  0.016508612    \\
+  1.425 & 0.162 & 0.397 &   95.88097  &  0.1468384    $\pm$  0.05007717   $\pm$  0.02161179     \\
+  1.425 & 0.162 & 0.397 &   140.2158  &  0.05840751   $\pm$  0.06522249   $\pm$  0.0149864      \\
+  1.425 & 0.162 & 0.397 &   181.147   &  0.1472116    $\pm$  0.07694323   $\pm$  0.02355567     \\
+  1.425 & 0.162 & 0.397 &   218.8907  &  -0.0045843   $\pm$  0.07180578   $\pm$  0.01995755     \\
+  1.425 & 0.162 & 0.397 &   259.1392  &  -0.1140192   $\pm$  0.04807579   $\pm$  0.01836548     \\
+  1.425 & 0.162 & 0.397 &   303.893   &  -0.1078614   $\pm$  0.04183492   $\pm$  0.01540446     \\
+  1.425 & 0.162 & 0.397 &   337.0219  &  -0.0313563   $\pm$  0.05506042   $\pm$  0.01052464     \\
+  \hline                                                                       
+  1.922 & 0.227 & 0.418 &   22.06063  &  -0.0071624   $\pm$  0.04158333   $\pm$  0.013118195    \\
+  1.922 & 0.227 & 0.418 &   58.5659   &  0.09277118   $\pm$  0.05070619   $\pm$  0.016106517    \\
+  1.922 & 0.227 & 0.418 &   96.23033  &  0.1248119    $\pm$  0.05973952   $\pm$  0.01838518     \\
+  1.922 & 0.227 & 0.418 &   141.4482  &  0.1767175    $\pm$  0.09500723   $\pm$  0.0246086      \\
+  1.922 & 0.227 & 0.418 &   181.8282  &  -0.0887164   $\pm$  0.1180524    $\pm$  0.01655364     \\
+  1.922 & 0.227 & 0.418 &   221.2517  &  -0.2925814   $\pm$  0.102211     $\pm$  0.03431685     \\
+  1.922 & 0.227 & 0.418 &   260.3485  &  -0.1909171   $\pm$  0.06539497   $\pm$  0.02278749     \\
+  1.922 & 0.227 & 0.418 &   303.5284  &  -0.2302893   $\pm$  0.05094602   $\pm$  0.02067598     \\
+  1.922 & 0.227 & 0.418 &   337.3474  &  -0.0637682   $\pm$  0.05413252   $\pm$  0.01008997     \\
+  \hline                                                                       
+  2.354 & 0.287 & 0.492 &   20.85891  &  0.04657884   $\pm$  0.036766     $\pm$  0.01988718     \\
+  2.354 & 0.287 & 0.492 &   57.91331  &  0.1459641    $\pm$  0.0526584    $\pm$  0.019557668    \\
+  2.354 & 0.287 & 0.492 &   94.69206  &  0.128379     $\pm$  0.07104001   $\pm$  0.01884086     \\
+  2.354 & 0.287 & 0.492 &   139.8528  &  0.1707919    $\pm$  0.1258279    $\pm$  0.02424851     \\
+  2.354 & 0.287 & 0.492 &   179.8321  &  -0.3851509   $\pm$  0.1628791    $\pm$  0.014502416    \\
+  2.354 & 0.287 & 0.492 &   225.9931  &  0.359824     $\pm$  0.1375561    $\pm$  0.014015373    \\
+  2.354 & 0.287 & 0.492 &   261.519   &  -0.2473872   $\pm$  0.08518201   $\pm$  0.02723866     \\
+  2.354 & 0.287 & 0.492 &   304.2744  &  -0.1756475   $\pm$  0.04527543   $\pm$  0.01784578     \\
+  2.354 & 0.287 & 0.492 &   338.8707  &  -0.0591266   $\pm$  0.04527858   $\pm$  0.01010778     \\
+ \hline                                                                        
+  2.987 & 0.390 & 0.714 &   19.433    &  0.1032664    $\pm$  0.03435814   $\pm$  0.014305278    \\
+  2.987 & 0.390 & 0.714 &   55.24427  &  0.07535726   $\pm$  0.06348906   $\pm$  0.014826822    \\
+  2.987 & 0.390 & 0.714 &   95.27441  &  0.21340720   $\pm$  0.1066241    $\pm$  0.03136377     \\
+  2.987 & 0.390 & 0.714 &   134.3823  &  -0.2684007   $\pm$  0.2723481    $\pm$  0.03863117     \\
+  2.987 & 0.390 & 0.714 &   182.475   &  3.6842530    $\pm$  5.592241     $\pm$  0.03642855     \\
+  2.987 & 0.390 & 0.714 &   232.2045  &  -0.3810377   $\pm$  0.426418     $\pm$  0.04691644     \\
+  2.987 & 0.390 & 0.714 &   264.8367  &  -0.0853021   $\pm$  0.1126019    $\pm$  0.02026491     \\
+  2.987 & 0.390 & 0.714 &   304.1341  &  -0.1678875   $\pm$  0.04062397   $\pm$  0.02296748     \\
+  2.987 & 0.390 & 0.714 &   341.2705  &  -0.0649467   $\pm$  0.03014188   $\pm$  0.01568537     \\
+ \hline
+ \hline
+ \end{tabular}
+ \caption{The incoherent $A_{LU}$ in $x_B$ bins}
+ \label{table:InCoh_xB_BSA}
+ \end{center}
+\end{table}
+
+
+
+\begin{table}[!h]
+   \begin{center}
+      \begin{tabular}{||l|l|l|l|l||}
+         \hline
+ $<Q^{2}>$ & $<x_{B}>$ & $<-t>$ & $<\phi>$ & $A_{LU}$ $\pm$ stat. $\pm$ syst.\\
+  \hline
+   1.823 & 0.213 & 0.145 &   22.36456  &   0.08044984  $\pm$  0.044171     $\pm$  0.013519389    \\
+   1.823 & 0.213 & 0.145 &   57.76681  &   0.139094    $\pm$  0.05252524   $\pm$  0.019097037    \\
+   1.823 & 0.213 & 0.145 &   97.34826  &   0.1215345   $\pm$  0.05070444   $\pm$  0.01794958     \\
+   1.823 & 0.213 & 0.145 &   141.6077  &   0.1973951   $\pm$  0.07158507   $\pm$  0.0263301      \\
+   1.823 & 0.213 & 0.145 &   180.9132  &   0.03301465  $\pm$  0.087735     $\pm$  0.01504234     \\
+   1.823 & 0.213 & 0.145 &   219.6382  &   0.00344467  $\pm$  0.07526837   $\pm$  0.018209534    \\
+   1.823 & 0.213 & 0.145 &   261.1274  &  -0.1527359   $\pm$  0.05030086   $\pm$  0.01958999     \\
+   1.823 & 0.213 & 0.145 &   303.674   &  -0.1071745   $\pm$  0.04406731   $\pm$  0.0137369      \\
+   1.823 & 0.213 & 0.145 &   337.0581  &  -0.06869941  $\pm$  0.04715184   $\pm$  0.01004524     \\
+ \hline                                                                        
+  2.127 & 0.255 & 0.282  &   21.36259  &  0.07262895   $\pm$ 0.04230211    $\pm$  0.013126559   \\
+  2.127 & 0.255 & 0.282  &   59.22203  &  0.03806518   $\pm$ 0.04905662    $\pm$  0.012518665   \\
+  2.127 & 0.255 & 0.282  &   95.55563  &  0.22988040   $\pm$ 0.05867932    $\pm$  0.03380763    \\
+  2.127 & 0.255 & 0.282  &   140.5704  &  -0.03154477  $\pm$ 0.08162287    $\pm$  0.0178829     \\
+  2.127 & 0.255 & 0.282  &   181.2953  &  -0.1565047   $\pm$ 0.10092       $\pm$  0.0298368     \\
+  2.127 & 0.255 & 0.282  &   219.844   &  -0.03787627  $\pm$ 0.09359193    $\pm$  0.01834677    \\
+  2.127 & 0.255 & 0.282  &   259.6599  &  -0.1349929   $\pm$ 0.05604338    $\pm$  0.02535689    \\
+  2.127 & 0.255 & 0.282  &   304.1345  &  -0.1822338   $\pm$ 0.03916768    $\pm$  0.02481545    \\
+  2.127 & 0.255 & 0.282  &   338.5113  &  -0.07208852  $\pm$ 0.04495988    $\pm$  0.01711214    \\
+ \hline                                                                          
+  2.308 & 0.284 & 0.490 &    20.67062  &  0.129165     $\pm$ 0.0415758     $\pm$  0.015497728  \\
+  2.308 & 0.284 & 0.490 &    59.71279  &  0.113594     $\pm$ 0.05196332    $\pm$  0.017545246  \\
+  2.308 & 0.284 & 0.490 &    94.41645  &  0.1003674    $\pm$ 0.06511375    $\pm$  0.01472001   \\
+  2.308 & 0.284 & 0.490 &    137.7611  &  0.1088956    $\pm$ 0.1159367     $\pm$  0.01662967   \\
+  2.308 & 0.284 & 0.490 &    181.8561  &  0.3436873    $\pm$ 0.1353462     $\pm$  0.03922332   \\
+  2.308 & 0.284 & 0.490 &    225.1743  &  -0.06749131  $\pm$ 0.1106012     $\pm$  0.01250426   \\
+  2.308 & 0.284 & 0.490 &    259.4171  &  -0.2186645   $\pm$ 0.06202168    $\pm$  0.02341567   \\
+  2.308 & 0.284 & 0.490 &    302.9163  &  -0.1778958   $\pm$ 0.03422616    $\pm$  0.01629588   \\
+  2.308 & 0.284 & 0.490 &    338.8539  &  -0.04591294  $\pm$ 0.03922611    $\pm$  0.017893601  \\
+ \hline                         
+   2.406 & 0.308 & 0.90 &    20.16669  &  0.01851554   $\pm$ 0.03466921    $\pm$ 0.017815254  \\
+   2.406 & 0.308 & 0.90 &    57.08842  &  0.167122     $\pm$ 0.06853916    $\pm$ 0.01086996   \\
+   2.406 & 0.308 & 0.90 &    93.11341  &  0.07585309   $\pm$ 0.140148      $\pm$ 0.01108901   \\
+   2.406 & 0.308 & 0.90 &    132.8371  &  -0.1390574   $\pm$ 0.4839775     $\pm$ 0.01772069   \\
+   2.406 & 0.308 & 0.90 &    177.344   &  1.854154     $\pm$ 0.5453675     $\pm$ 0.01816686   \\ 
+   2.406 & 0.308 & 0.90 &    228.2105  &  5.778605     $\pm$ 10.58589      $\pm$ 0.01512427   \\
+   2.406 & 0.308 & 0.90 &    263.1194  &  0.02895751   $\pm$ 0.1390042     $\pm$ 0.017122356  \\
+   2.406 & 0.308 & 0.90 &    305.0914  &  -0.1501369   $\pm$ 0.04840413    $\pm$ 0.01297528   \\
+   2.406 & 0.308 & 0.90 &    340.095   &  -0.05253375  $\pm$ 0.03990596    $\pm$ 0.016446498  \\
+ \hline
+ \hline
+ \end{tabular}
+ \caption{The incoherent $A_{LU}$ in -t bins}
+ \label{table:InCoh_t_BSA}
+ \end{center}
+\end{table}
+
+
+

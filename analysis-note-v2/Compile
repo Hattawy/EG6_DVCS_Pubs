@@ -1,0 +1,5 @@
+#! /bin/bash
+pdflatex -shell-escape EG6_analysis_note_v2.tex
+pdflatex -shell-escape EG6_analysis_note_v2.tex
+rm -f *.tex~ EG6_analysis_note_v2.mtc1 EG6_analysis_note_v2.aux EG6_analysis_note_v2.dvi EG6_analysis_note_v2.lof EG6_analysis_note_v2.log EG6_analysis_note_v2.out EG6_analysis_note_v2.lot EG6_analysis_note_v2.toc data_analysis.log experimental_setup.log ref.log RTPC.log EG6_analysis_note_v2.brf EG6_analysis_note_v2.maf EG6_analysis_note_v2.mtc EG6_analysis_note_v2.mtc0 EG6_analysis_note_v2.nlo formatAndDefs.aux TitlePage.aux
+
