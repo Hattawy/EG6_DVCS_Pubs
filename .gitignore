@@ -2,3 +2,7 @@ HeliumCohDVCS.aux
 HeliumCohDVCS.log
 HeliumCohDVCSNotes.bib
 HeliumCohDVCS.pdf
+*.bbl
+*.log
+*.aux
+*.blg
