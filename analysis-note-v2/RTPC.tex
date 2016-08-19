@@ -112,11 +112,32 @@ where $p$ is in GeV/c unit, $q$ is the elementary charge, $B_{z}$ is in Tesla (T
 
 
 \section{RTPC calibration}
-~~~~Reconstructing a trajectory from the recorded time information of the electrons requires a good knowledge of their drift speed and drift paths. Also, the gains of the readout pads are required to calculate $\frac{dE}{dx}$ from the recorded ADCs. The drift paths and the gain calibration of the RTPC require well identified events, so we decided to use elastic scattering ($e^{4}He \rightarrow e^{4}He$). We had specific calibration runs with 1-pass beam energies of 1.024 and 1.269 GeV in order to enhance the cross section of the elastic process at large angles, which is highly suppressed at higher beam energy.\\
+~~~~Reconstructing a trajectory from the recorded time information of the 
+electrons requires a good knowledge of their drift speed and drift paths.  
+Also, the gains of the readout pads are required to calculate $\frac{dE}{dx}$ 
+from the recorded ADCs. The drift paths and the gain calibration of the RTPC 
+require well identified events, so we decided to use elastic scattering 
+($e^{4}He \rightarrow e^{4}He$). We had specific calibration runs with 1-pass 
+beam energies of 1.024 and 1.269 GeV in order to enhance the cross section of 
+the elastic process at large angles, which is highly suppressed at higher beam 
+energy.\\
 
-A GEANT4 simulation for the RTPC has been developed to help reproduce these events in order to properly extract the drift paths and the gains. Their extractions are based on comparing the experimentally identified $^4He$ elastic tracks to the GEANT4 simulated ones. Indeed, the kinematics of each elastic $^4He$ can be calculated from the electron measured in CLAS and then simulated in GEANT4. The output of the simulation is then compared with the measured signals to determine the drift paths. \\
+A GEANT4 simulation for the RTPC has been developed to help reproduce these 
+events in order to properly extract the drift paths and the gains. Their 
+extractions are based on comparing the experimentally identified $^4He$ elastic 
+tracks to the GEANT4 simulated ones. Indeed, the kinematics of each elastic 
+$^4He$ can be calculated from the electron measured in CLAS and then simulated 
+in GEANT4. The output of the simulation is then compared with the measured 
+signals to determine the drift paths. \\
 
-This process is iterative since good tracks need to be identified at the beginning of the process. For this analysis, we started from a MAGBOLTZ calibration, which was then improved with the method described above with several iterations. In particular, changes in the alignment of the RTPC with respect to the beamline, detailed in CLAS-NOTE~\cite{eg6beamoffset}. In the following subsections, we present here only the selection of the RTPC tracks and elastic events for the last iteration of our calibration process. It is then followed by details on the techniques of calibration.   
+This process is iterative since good tracks need to be identified at the 
+beginning of the process. For this analysis, we started from a MAGBOLTZ 
+calibration, which was then improved with the method described above with 
+several iterations. In particular, changes in the alignment of the RTPC with 
+respect to the beamline, detailed in CLAS-NOTE~\cite{eg6beamoffset}. In the 
+following subsections, we present here only the selection of the RTPC tracks 
+and elastic events for the last iteration of our calibration process. It is 
+then followed by details on the techniques of calibration.   
 
 \subsection{Event selection}
 ~~~~Figure \ref{fig:RTPC_track} shows a drawing of a segment of the RTPC, where a $^4He$ track (in 
@@ -141,9 +162,13 @@ $edist$.\\
 \label{fig:RTPC_track}
 \end{figure}
 
-Because the two modules of the RTPC are electronically separated, we will sometimes show their distributions separately. In our angular convention, the right module of the RTPC covers the azimuthal angles between 90$^{\circ}$ and 270$^{\circ}$, while the left-side module covers the rest of the azimuthal angles. 
+Because the two modules of the RTPC are electronically separated, we will 
+sometimes show their distributions separately. In our angular convention, the 
+right module of the RTPC covers the azimuthal angles between 90$^{\circ}$ and 
+270$^{\circ}$, while the left-side module covers the rest of the azimuthal 
+angles. 
 
-\subsubsection{RTPC good track requirements}
+\subsubsection{RTPC good track requirements} \label{good_track_req}
 
 ~~~~A good RTPC track passes the following requirements:
 \begin{itemize}
@@ -170,12 +195,14 @@ where $\frac{DOCA}{\sigma_r}$ is the beam-spot constraint, $r^{pt}_{i}$,
 $\phi^{pt}_{i}$, $z^{pt}_{i}$ are the radial, azimuthal, longitudinal 
 coordinates of each reconstructed hit "$i$". ($r^{helix}_{i}$,
 $\phi^{helix}_{i}$, $z^{helix}_{i}$) is the point on the helix fit that is 
-closest to the reconstructed hit $i$. The resolutions are defined as ($\sigma_{r}$, 
-$\sigma_{\phi}$, $\sigma_{z}$) = (0.53 mm, 2$^{\circ}$, 1.2 mm) based on the size
-of the readout pads were kept identical for all calibration iterations. 
-$N_{pts}$ is the total number of the hits in the chain.  Figure 
-\ref{fig:rrtpc_X2} shows the $\chi^{2}$ distributions for the positive tracks 
-which originate within the RTPC.
+closest, in Euclidean (3D) space, to the reconstructed hit $i$. The resolutions 
+are defined as ($\sigma_{r}$, $\sigma_{\phi}$, $\sigma_{z}$) = (0.53 mm, 
+2$^{\circ}$, 1.2 mm) based on the size
+of the readout pads were kept identical for all calibration iterations. These 
+resolutions were derived by CLAS-BoNus experiment \cite{BONUS}. $N_{pts}$ is 
+the total number of the hits in the chain.  Figure \ref{fig:rrtpc_X2} shows the 
+$\chi^{2}$ distributions for the positive tracks which originate within the 
+RTPC.
 
 \begin{figure}[tbp]
 \centering
@@ -185,9 +212,30 @@ which originate within the RTPC.
 \end{figure}  
 
 
-\item $sdist$ ($\in$ [-2.0,2.0] mm) and $edist$ ($\in$ [-1,5] mm ) cuts: the cuts are applied to ensure that a track is on time, i.e. that the first ionization point is close to the cathode and the last point is close to the anode. The $sdist$ and $edist$ distributions are shown in figures \ref{fig:rrtpc_sdist} and \ref{fig:rrtpc_edist} respectively\footnote{The long tail on the positive side of the $edist$ distribution is mostly due to electronic noise. Note that after applying all the elastic He-4 selection cuts, we observe that most of the tails for both $edist$ and $sdist$ are removed.}. 
+\item $sdist$ ($\in$ [-2.0,2.0] mm) and $edist$ ($\in$ [-1,5] mm ) cuts: the 
+   cuts are applied to ensure that a track is on time, i.e. the first 
+   ionization point is close to the cathode and the last point is close to the 
+   anode. For both $sdist$ and $edist$, positive values correspond to tracking 
+   points inside the drift region, while negatives are outside the drift 
+   region. So, in terms of the path length of the track starting from the 
+   vertex, $sdist$ and $edist$ have opposite signs. The $sdist$ and $edist$ 
+   distributions are shown in figures \ref{fig:rrtpc_sdist} and 
+   \ref{fig:rrtpc_edist} respectively\footnote{The long tail on the positive 
+      side of the $edist$ distribution is mostly due to electronic noise.  Note 
+      that after applying all the elastic He-4 selection cuts, we observe that 
+   most of the tails for both $edist$ and $sdist$ are removed.}. 
 
-\item Vertex correspondence: the track reconstructed in the RTPC has to originate from the same place as the electron that triggered the event. We define $\Delta z$ as the difference between the electron z-vertex and the z-vertex of the RTPC track. Due to variations in the electric and the magnetic fields along the 200 cm of length of the RTPC, $\Delta z$ shows a dependence on the longitudinal position along the RTPC ($z_{RTPC}$). This can be seen in figure \ref{fig:rrtpc_delta_z}. These distributions are fitted to extract the mean and the width of $\Delta z$ as a function of $z_{RTPC}$. We then apply a 2$\sigma$ cut around the mean to select the RTPC good tracks. The parametrizations of the mean ($\mu$) and the width ($\sigma$) of $\Delta z$ can be found in Appendix \ref{app:RTPC_appendix}.
+\item Vertex correspondence: the track reconstructed in the RTPC has to 
+   originate from the same place as the electron that triggered the event. We 
+   define $\Delta z$ as the difference between the electron z-vertex and the 
+   z-vertex of the RTPC track. Due to variations in the electric and the 
+   magnetic fields along the 200 cm of length of the RTPC, $\Delta z$ shows a 
+   dependence on the longitudinal position along the RTPC ($z_{RTPC}$). This 
+   can be seen in figure \ref{fig:rrtpc_delta_z}. These distributions are 
+   fitted to extract the mean and the width of $\Delta z$ as a function of 
+   $z_{RTPC}$. We then apply a 2$\sigma$ cut around the mean to select the RTPC 
+   good tracks. The parametrizations of the mean ($\mu$) and the width 
+   ($\sigma$) of $\Delta z$ can be found in Appendix \ref{app:RTPC_appendix}.
 
 \begin{figure}[tbp]
 \begin{minipage}[c]{.46\linewidth}
@@ -270,7 +318,16 @@ Constructing the invariant mass is one way to verify the efficiency of the previ
 \begin{equation}
  W = \sqrt{-2E_{b}p_{e^{'}}(1-cos(\theta_{e^{'}})) + M_{^{4}He}^2 + 2(E_{b}-p_{e^{'}}) M_{^{4}He}}.
 \end{equation}
-with the conventions for the variables as in equation \ref{equ:theta_helium}. Figure \ref{fig:W_elastic} shows the W distribution of the events that have a good track in the RTPC and the identified elastic events. One can see the good agreement between the helium-4 real mass and the mean value of the identified elastic events. The difference in width is related to the different resolutions of the corresponding CLAS sectors. The reaction products are emitted back to back resulting in only small regions of overlapping acceptances between the RTPC and CLAS enhancing this effect. The reason for this is that local variations of the resolution can be much more important than ones averaged over the full detector.
+with the conventions for the variables as in equation \ref{equ:theta_helium}.  
+Figure \ref{fig:W_elastic} shows the W distribution of the events that have a 
+good track in the RTPC and the identified elastic events. One can see the good 
+agreement between the helium-4 real mass and the mean value of the identified 
+elastic events. The difference in width is related to the different resolutions 
+of the corresponding CLAS sectors. The reaction products are emitted back to 
+back resulting in only small regions of overlapping acceptances between the 
+RTPC and CLAS enhancing this effect. The reason for this is that local 
+variations of the resolution can be much more important than ones averaged over 
+the full detector.
 \\
 
 \begin{figure}[tbp]
@@ -285,7 +342,58 @@ calibration and detector alignments (RTPC alignment is described in
 CLAS-NOTE-2013-008). The observed remaining dependences are not fully 
 understood and probably arise from field misalignement and variations in the 
 electric and magnetic fields within the chamber.
- 
+
+
+\subsubsection{Checking the initial good track requirements}
+~~~~In this section, we recheck the individual good track requirements 
+presented in section \ref{good_track_req}, where we apply the other good track 
+and elastic requirements and watch the individual variables.
+
+Figure \ref{fig:2-z-vertex} presents the z-vertex distributions of the elastic 
+events, where all the good track and elastic requirements were applied. One 
+sees that the initial [-80:80] mm cuts on the helium z-vertex appear to be 
+suitable cuts to ensure that the reconstructed tracks are within the physical 
+volume of the RTPC.
+\begin{figure}[tp]
+  \centering
+   \includegraphics[scale=0.34]{fig_rtpc/updates/elastic_z_vertex.png}
+\caption{z-vertex distributions for the electrons of the identified elastic 
+events in the two modules of the RTPC.}
+\label{fig:2-z-vertex}
+\end{figure} 
+
+In figure \ref{fig:2-r0}, we show the distribution of the radius of curvature 
+for the identified elastic tracks in the RTPC. One sees that applying the other 
+good track and elastic conditions will eliminate all the negative tracks and 
+the tracks with $r_{0}$ less than 30 mm.
+\begin{figure}[tp]
+   \centering
+\includegraphics[scale=0.34]{fig_rtpc/updates/r0_elastic_1p2GeV.png}
+\caption{The radius of curvature distributions of the identified elastic 
+$^{4}$He tracks in the two modules of the RTPC after applying the other good 
+track and elastic events}.
+\label{fig:2-r0}
+\end{figure} 
+
+The distributions of $sdist$ and $edist$ for the identified elastic $^4$He 
+elastic tracks, figure \ref{fig:2-sdist-edist}, show that most of the tails, 
+which are mostly due to electronic noise, are removed. Therefore, making 
+tighter cuts would not cause changes in the calibration as the tracks in the 
+tail regions are cleaned by the other good track and elastic cuts.
+
+\begin{figure}[tp]
+\includegraphics[scale=0.34]{fig_rtpc/updates/sdist_elastic_1p2GeV.png}
+\includegraphics[scale=0.34]{fig_rtpc/updates/edist_elastic_1p2GeV.png}
+\caption{ $sdist$ (on left) and $edist$ (on right) distributions for the 
+identified $^4$He elastic tracks in the two modules of the RTPC after applying 
+the other cuts. The vertical dashed red lines indicate the initial cuts were 
+applied to select the good tracks.}
+\label{fig:2-sdist-edist}
+\end{figure} 
+
+
+
+
 \subsection{drift paths and drift speed calibration}
 
 \subsubsection{Drift speed parametrization}
@@ -353,9 +461,19 @@ elastic events (El) are shown for a sample of runs.}
 \label{fig:Drift_run_number}
 \end{figure} 
 
-
 \subsubsection{Drift paths parametrization}
-~~~~A drift path is the trajectory that an electron follows after being released in the drift region. The standard software to calculate these paths is the MAGBOLTZ program \cite{MAGBOLTZ}. This program requires precise knowledge of the experimental conditions, such as the detector's geometry, the exact composition of the drift gas and the applied electric and magnetic fields. Thus any variation in these conditions would give inaccurate calculated drift paths. In the EG6 experiment, MAGBOLTZ has been used to calculate a first set of drift paths, but it was observed for the drift speed that we do not have a perfect knowledge of the RTPC's conditions. Therefore, the first set of the drift paths is not accurate. For this reason, we chose to calculate the drift paths in a way that does not require an exact knowledge of the conditions in the chamber and is instead based on our experimental data. \\
+~~~~A drift path is the trajectory that an electron follows after being 
+released in the drift region. The standard software to calculate these paths is 
+the MAGBOLTZ program \cite{MAGBOLTZ}. This program requires precise knowledge 
+of the experimental conditions, such as the detector's geometry, the exact 
+composition of the drift gas and the applied electric and magnetic fields. Thus 
+any variation in these conditions would give inaccurate calculated drift paths.  
+In the EG6 experiment, MAGBOLTZ has been used to calculate a first set of drift 
+paths, but it was observed for the drift speed that we do not have a perfect 
+knowledge of the RTPC's conditions. Therefore, the first set of the drift paths 
+is not accurate. For this reason, we chose to calculate the drift paths in a 
+way that does not require an exact knowledge of the conditions in the chamber 
+and is instead based on our experimental data.  \\
 
 In our alternative method, we use the identified elastic ($e ~ ^{4}He \rightarrow e ~ ^{4}He$) events to extract the drift paths. For these events, the kinematics of the recoil $^{4}He$ are calculated from the scattered electron. Then the electrons' drift paths can be extracted from comparing the experimentally measured hits in the RTPC to the trajectory of a similar simulated $^{4}He$. In this technique, the drift paths are obtained independently of our knowledge of the exact conditions in the RTPC, in particular the electric field and the gas mixture have no impact. \\
 
