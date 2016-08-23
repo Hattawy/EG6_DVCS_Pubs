@@ -1,16 +1,35 @@
 \chapter{Particles reconstruction and simulation}
-~~~~The final state of a coherent (incoherent) DVCS event consists of three particles: an electron, a $^4$He (a proton), and a real photon. To identify the DVCS events, we first identify, individually, the different particles of interest. Then, events with three detected final-state particles will be further filtered by imposing the energy-momentum conservation laws, as will be presented in the following chapter.\\ 
+~~~~The final state of a coherent (incoherent) DVCS event consists of three 
+particles: an electron, a $^4$He (a proton), and a real photon. To identify the 
+DVCS events, we first identify, individually, the different particles of 
+interest. Then, events with three detected final-state particles will be 
+further filtered by imposing the energy-momentum conservation laws, as will be 
+presented in the following chapter.\\ 
 
 
-Even after imposing the conservation laws, the DVCS sample will not have 100$\%$ truly DVCS events. In our kinematical region, the main contamination to our DVCS channels comes from the electroproduction of neutral pions. For instance, in the coherent $\pi^0$-electroproduction, when one of the two-photon decay of the $\pi^{0}$ passes the DVCS requirements, it will be counted as a DVCS event. Thus, these events have to be subtracted before looking to any DVCS observable. For this purpose, we perform a technique in which we combine the measured exclusive $\pi^0$-electroproduction data sample with a Monte-Carlo simulation to evaluate the background in the selected DVCS sample. For this technique, we need to identify the experimental $\pi^0$s that come in the coherent and the incoherent $\pi^0$-electroproduction channels.\\
+Even after imposing the conservation laws, the DVCS sample will not have 
+100$\%$ truly DVCS events. In our kinematical region, the main contamination to 
+our DVCS channels comes from the electroproduction of neutral pions. For 
+instance, in the coherent $\pi^0$-electroproduction, when one of the two-photon 
+decay of the $\pi^{0}$ passes the DVCS requirements, it will be counted as a 
+DVCS event. Thus, these events have to be subtracted before looking to any DVCS 
+observable. For this purpose, we perform a technique in which we combine the 
+measured exclusive $\pi^0$-electroproduction data sample with a Monte-Carlo 
+simulation to evaluate the background in the selected DVCS sample. For this 
+technique, we need to identify the experimental $\pi^0$s that come in the 
+coherent and the incoherent $\pi^0$-electroproduction channels.\\
  
  
-In this chapter, we presents the procedures carried out to identify the final-state particles of interest, the Monte-Carlo simulation we used, and the kinematic corrections we applied on the particles.
+In this chapter, we presents the procedures carried out to identify the 
+final-state particles of interest, the Monte-Carlo simulation we used, and the 
+kinematic corrections we applied on the particles.
 
 \section{Particles identification}
      
 \subsection{Electron identification} \label{Electron_identification}
-~~~~The electron detection triggers the data acquisition system to record data from all the sub-detectors of CLAS. In this analysis, a particle which passes the following set of criteria is assumed to be a good electron.
+~~~~The electron detection triggers the data acquisition system to record data 
+from all the sub-detectors of CLAS. In this analysis, a particle which passes 
+the following set of criteria is assumed to be a good electron.
   
 \paragraph{Initial requirements}
 
@@ -258,10 +277,22 @@ where $l$ is the traveled distance from the vertex to the hit point in the EC. T
 \subsubsection*{IC photons}
 For IC photons, we use the following cuts:
 \begin{itemize}
-\item IC fiducial cuts: the photons which hit the edges of the IC deposit only part of their energies within the calorimeter. For this reason, we reject the photons which hit the innermost or the outermost rings of the IC. Figure \ref{fig:photons_IC_XY_2} illustrates this cut \cite{FX_thesis}.
-
-\item M\o ller electrons reduction: a two-dimensional plot of photon polar angles as a function of the energy shows an overcrowded region at low $\theta$ and low energy. This can be seen in figure \ref{fig:photons_IC_theta_En_1}. This region is mostly populated by the M\o ller electrons and must be excluded from the analysis. We optimized a linear cut for this region, shown by the black dashed line. The vertical extension of this line shows the minimum energy cut ($E_{\gamma}$ > 300 MeV).
-\item We do not apply any timing cut on the IC because its timing is not functionning properly for certain channels. Therefore, applying a timing cut would add inefficient regions in the detector that we wanted to avoid. Therefore, we rely mainly on exclusivity cuts to remove any potential contamination.
+\item IC fiducial cuts: the photons which hit the edges of the IC deposit only 
+   part of their energies within the calorimeter. For this reason, we reject 
+   the photons which hit the innermost or the outermost rings of the IC.  
+   Figure \ref{fig:photons_IC_XY_2} illustrates this cut \cite{FX_thesis}.
+\item M\o ller electrons reduction: a two-dimensional plot of photon polar 
+   angles as a function of the energy shows an overcrowded region at low 
+   $\theta$ and low energy. This can be seen in figure 
+   \ref{fig:photons_IC_theta_En_1}. This region is mostly populated by the M\o 
+   ller electrons and must be excluded from the analysis. We optimized a linear 
+   cut for this region, shown by the black dashed line. The vertical extension 
+   of this line shows the minimum energy cut ($E_{\gamma}$ > 300 MeV).
+\item We do not apply any timing cut to select the photons in the IC because 
+   its timing is not functioning properly for certain channels. Therefore, 
+   applying a timing cut would add inefficient regions in the detector that we 
+   wanted to avoid.  Therefore, we rely mainly on exclusivity cuts to remove 
+   any potential contamination.
 
 \end{itemize}
 \begin{figure}[tbp]
@@ -551,10 +582,25 @@ For the acceptance, the fastmc:
 \item applies the RTPC's thresholds on the momentum and the polar angle.
 \end{itemize} 
 
-The fastmc is applied to the Monte-Carlo generated 
-$^{4}He$ for the channels $e^{4}He\gamma$ and $e^{4}He\pi^{0}$. The other 
-particles are fed to GSIM through the previously mentioned 
+The fastmc is applied to the Monte-Carlo generated $^{4}He$ for the channels 
+$e^{4}He\gamma$ and $e^{4}He\pi^{0}$. We do not specifically apply energy loss 
+and multiple scattering in our fastmc, but we do apply resolution effects based 
+on experimental data that include both effects. The plots in figure 
+\ref{fig:comp_He} show the comparison between data and simulation in terms of 
+theta, $phi$ and momentum of the $^{4}$He DVCS nuclei, that will presented in 
+details in the following chapter. The other particles, ($e^{-}$, $p$, 
+$\gamma$), are fed to GSIM through the previously mentioned 
 simulation-reconstruction chain procedures.
+
+\begin{figure}[tpb]
+   \includegraphics[height=5.0cm]{fig_rtpc/updates/He_theta.png}
+   \includegraphics[height=5.0cm]{fig_rtpc/updates/He_phi.png}
+   \centering
+   \includegraphics[height=5.0cm]{fig_rtpc/updates/He_mom.png}
+   \caption{Comparison between experimental (blue) and simulated (red) DVCS 
+   $^{4}$He nuclei in terms of polar angle, azimuthal angle and momentum.}
+   \label{fig:comp_He}
+\end{figure}
 
 
 \section{Kinematic Corrections}

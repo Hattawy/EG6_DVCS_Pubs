@@ -27,68 +27,121 @@
 The RTPC has the following substructure, from the beam axis to the exterior:
 
 \begin{itemize}
-\item The target extends along the RTPC's central z-axis, with a diameter of 6 mm. It is enclosed in a 27-$\mu$m-thick Kapton wall.
+ \item The target extends along the RTPC's central z-axis, with a diameter of 6 
+    mm. It is enclosed in a 27-$\mu$m-thick Kapton wall.
 
-\item The first gas gap extends from 3 mm to 20 mm radial distances. It is filled with $^{4}He$ gas at one atmospheric pressure. This region is swarmed with M\o ller electrons induced by the beam, but filling this region with a light gas like $^{4}He$ at low pressure minimizes their secondary interactions, while the magnetic field of the solenoid keeps them away from the sensitive drift region. This gap is surrounded by a grounded window made of 4-$\mu$m-thick aluminized mylar.
+ \item The first gas gap extends from 3 mm to 20 mm radial distances. It is 
+    filled with $^{4}He$ gas at one atmospheric pressure. This region is 
+    swarmed with M\o ller electrons induced by the beam, but filling this 
+    region with a light gas like $^{4}He$ at low pressure minimizes their 
+    secondary interactions, while the magnetic field of the solenoid keeps them 
+    away from the sensitive drift region. This gap is surrounded by a grounded 
+    window made of 4-$\mu$m-thick aluminized mylar.
 
-\item The second gas gap extends from 20 mm to 30 mm radial distances and is filled with a gas mixture of 80$\%$ Neon (Ne) and 20$\%$ Dimethyl Ether (DME: $C_{2}H_{6}O$). This drift gas fills all the following gaps up to the external shell.
+ \item The second gas gap extends from 20 mm to 30 mm radial distances and is 
+    filled with a gas mixture of 80$\%$ Neon (Ne) and 20$\%$ Dimethyl Ether 
+    (DME: $C_{2}H_{6}O$). This drift gas fills all the following gaps up to the 
+    external shell.
 
-\item The cathode foil, which is made of 4-$\mu$m-thick aluminized mylar, surrounds the second gas gap. It is connected to a voltage of 4.3 kV to generate an electric field in the drift region.
+ \item The cathode foil, which is made of 4-$\mu$m-thick aluminized mylar, 
+    surrounds the second gas gap. It is connected to a voltage of 4.3 kV to 
+    generate an electric field in the drift region.
 
-\item The drift region is filled with the Ne-DME gas mixture. It extends from the cathode, 30 mm from the beam line, to the first gas electron multiplier layer, 60 mm from the beam line.
+ \item The drift region is filled with the Ne-DME gas mixture. It extends from 
+    the cathode, 30 mm from the beam line, to the first gas electron multiplier 
+    layer, 60 mm from the beam line.
 
-\item The amplification system is composed of three Gas Electron Multiplier (GEM) layers located at radii of 60 mm, 63 mm, and 66 mm.
+ \item The amplification system is composed of three Gas Electron Multiplier 
+    (GEM) layers located at radii of 60 mm, 63 mm, and 66 mm.
 
-\item The electron collection system has an internal radius of 69 mm and collects the charges. The data are then pre-amplified and transmitted to the data acquisition system.  
-\end{itemize}
+ \item The electron collection system has an internal radius of 69 mm and 
+ collects the charges. The data are then pre-amplified and transmitted to the 
+ data acquisition system.  \end{itemize}
 
-The Ne-DME gas mixture has been chosen as the drift gas because of its low-diffusion characteristics and small Lorentz angles (the angles between the drift direction of electrons under the influence of magnetic field and the direction of the electric field). These characteristics minimize the changes in the drift velocity of the ionization electrons \cite{DME}.\\ 
+The Ne-DME gas mixture has been chosen as the drift gas because of its 
+low-diffusion characteristics and small Lorentz angles (the angles between the 
+drift direction of electrons under the influence of magnetic field and the 
+direction of the electric field). These characteristics minimize the changes in 
+the drift velocity of the ionization electrons \cite{DME}.\\ 
 
-The GEMs amplify the ionized electrons to produce measurable signals. Figure \ref{fig:GEMs} shows a microscopic photo of a GEM. It is made from an insulator (Kapton) sandwiched between two copper layers. The mesh of each GEM layer is chemically etched with 50-$\mu$m-diameter holes in double-conical cross section shapes, as can be seen from the schematic plot on the right.\\
+The GEMs amplify the ionized electrons to produce measurable signals. Figure 
+\ref{fig:GEMs} shows a microscopic photo of a GEM. It is made from an insulator 
+(Kapton) sandwiched between two copper layers. The mesh of each GEM layer is 
+chemically etched with 50-$\mu$m-diameter holes in double-conical cross section 
+shapes, as can be seen from the schematic plot on the right.\\
 
 \begin{figure}[tbp]
 \centering
 \includegraphics[height=5.5cm]{fig_rtpc/GEM_photo.jpg}
 \hspace{0.4in}
 \includegraphics[height=6.0cm]{fig_rtpc/gem_holes.png}
-\caption{On the left: A microscopic image of a GEM shows the amplification holes, and the two copper layers, separated by a Kapton insulator. This figure is from \cite{BONUS_2}. On the right: Schematic of the hole structure in the GEMs with the electric field lines (solid red) and the equipotentials (dashed blue). This figure is from
+\caption{On the left: A microscopic image of a GEM shows the amplification 
+   holes, and the two copper layers, separated by a Kapton insulator. This 
+   figure is from \cite{BONUS_2}. On the right: Schematic of the hole structure 
+   in the GEMs with the electric field lines (solid red) and the equipotentials 
+   (dashed blue). This figure is from
  \cite{GEM_holes}. } 
 \label{fig:GEMs}
 \end{figure} 
 
 
- The electrons amplification is achieved through the holes via the strong electric field, that is generated by a 400-V potential difference between the two copper layers. Such a strong field leads to high ionization of the initial electrons and therefore amplification of the signals. Furthermore, an additional potential difference of 150 V is set between each two successive GEM layers to push the amplified electrons towards the readout board. In this configuration, the gain of each GEM layer is of the order of 100.\\
-     
+The electrons amplification is achieved through the holes via the strong 
+electric field, that is generated by a 400-V potential difference between the 
+two copper layers. Such a strong field leads to high ionization of the initial 
+electrons and therefore amplification of the signals. Furthermore, an 
+additional potential difference of 150 V is set between each two successive GEM 
+layers to push the amplified electrons towards the readout board. In this 
+configuration, the gain of each GEM layer is of the order of 100.\\
 
- The RTPC electron collection system has 3200 readout pads. Each module of the 
- RTPC has 40 rows and 40 columns of readout pads, each is 5 mm long and 4.45 mm 
- wide. Each group of 16 pads is connected to a pre-amplifier before the 
- recorded signals are carried to the acquisition electronics. There are 20 
- rows and 5 columns of pre-amplifiers per module. This readout system records 
- the charge information in time bins, in which the charge is measured in 
- Analog-to-Digital-Converter (ADC) units, while the time is 
- recorded in Time-to-Digital-Converter (TDC) units, in which each TDC is equal 
- to 114 ns. This measurement indicating the time taken by the electrons to drift from the 
- ionization point to the readout board. 
+
+The RTPC electron collection system has 3200 readout pads. Each module of the 
+RTPC has 40 rows and 40 columns of readout pads, each is 5 mm long and 4.45 mm 
+wide. Each group of 16 pads is connected to a pre-amplifier before the recorded 
+signals are carried to the acquisition electronics. There are 20 rows and 5 
+columns of pre-amplifiers per module. This readout system records the charge 
+information in time bins, in which the charge is measured in 
+Analog-to-Digital-Converter (ADC) units, while the time is recorded in 
+Time-to-Digital-Converter (TDC) units, in which each TDC is equal to 114 ns.  
+This measurement indicating the time taken by the electrons to drift from the 
+ionization point to the readout board. 
 
  
 \subsection{Working principle}
-~~~~When a charged particle traverses a gas, it ionizes the gas-atoms along its trajectory. In a TPC, the electrons released in the ionization drift towards the readout board under the effect of an applied electric field. The drift velocity depends on the gas mixture, and on the electric ($\vec{E}$) and magnetic ($\vec{B}$) fields. The recorded time of the electrons provides information on how far the initial ionizations happened in the drift region, leading to reconstruct the original points of ionization, while the recorded ADCs give the deposited energy.\\
+~~~~When a charged particle traverses a gas, it ionizes the gas-atoms along its 
+trajectory. In a TPC, the electrons released in the ionization drift towards 
+the readout board under the effect of an applied electric field. The drift 
+velocity depends on the gas mixture, and on the electric ($\vec{E}$) and 
+magnetic ($\vec{B}$) fields. The recorded time of the electrons provides 
+information on how far the initial ionizations happened in the drift region, 
+leading to reconstruct the original points of ionization, while the recorded 
+ADCs give the deposited energy.\\
 
-In our TPC the cathode and the anode are two cylinders. Thus, the generated $\vec{E}$ field in the drift region has a purely radial components, perpendicular to the beam line, with a magnitude around 500 V/cm. However, the two-cylinders configuration produces small gradient components at the sides of the RTPC. This issue was solved by installing field cages at the ends of the RTPC to keep a regular $\vec{E}$ field. These caused some high voltage issues and were disconnected during the experiment, partly justifying the time dependent calibration described below. \\
+In our TPC the cathode and the anode are two cylinders. Thus, the generated 
+$\vec{E}$ field in the drift region has a purely radial components, 
+perpendicular to the beam line, with a magnitude around 500 V/cm. However, the 
+two-cylinders configuration produces small gradient components at the sides of 
+the RTPC. This issue was solved by installing field cages at the ends of the 
+RTPC to keep a regular $\vec{E}$ field. These caused some high voltage issues 
+and were disconnected during the experiment, partly justifying the time 
+dependent calibration described below. \\
 
- The $\vec{B}$ field is generated by the solenoid. Figure \ref{fig:B_MAP} shows the magnetic field vectors in the different regions of the RTPC. The presence of the magnetic field enables us to deduce the momentum of a charged particle from the curvature of its track and the known magnetic field.
+The $\vec{B}$ field is generated by the solenoid. Figure \ref{fig:B_MAP} shows 
+the magnetic field vectors in the different regions of the RTPC. The presence 
+of the magnetic field enables us to deduce the momentum of a charged particle 
+from the curvature of its track and the known magnetic field.
 % from:
 %\begin{equation}
 %p = R q |\overrightarrow{B}| sin(\theta)
 %\end{equation}
-%where R is the radius of the track's curvature, q and $\theta$ are the charge and the polar angle of the %particle.
+%where R is the radius of the track's curvature, q and $\theta$ are the charge 
+%and the polar angle of the %particle.
 
 \begin{figure}[tp]
 \centering
 \includegraphics[scale=0.40]{fig_rtpc/B_MAP.png}
-\caption[]{The solenoid magnetic field vectors in the RTPC, shown in the $r-z$ plane, where $r$ is the radial distance from the central axis and $z$ represents the longitudinal distance along the RTPC.} 
-\label{fig:B_MAP}
+\caption[]{The solenoid magnetic field vectors in the RTPC, shown in the $r-z$ 
+plane, where $r$ is the radial distance from the central axis and $z$ 
+represents the longitudinal distance along the RTPC.} \label{fig:B_MAP}
 \end{figure}
 
 \subsection{Track reconstruction}
@@ -103,12 +156,27 @@ maximum distance between two adjacent hits must be less than 10.5 mm to chain
 them. Then, the number of hits per chain is required to be greater than 10 hits 
 in order to proceed to the fitting step. \\
 
-A fit to a chain of hits is performed in two iterations. In the first iteration, the hits of the chain are fitted with a helix. The helix fit is based on a circle fit in the $x-y$ plane followed by a linear fit in the $s-z$ plane for the hits of the chain, where $s=\sqrt{x^2+y^2}$.  In the second iteration, the residual between the fit and each hit is calculated. If the hit's residual is greater than 5 mm, the hit is excluded from the chain. Then the hits are re-fitted with the same previous helix fit giving five final parameters for each track's chain. From these five parameters, one can reconstruct all the parameters of a track. For example, one can calculate the momentum from the known longitudinal magnetic field ($\vec{B_{z}}$), the radius of curvature of the track ($r_{0}$) and the polar angle ($\theta$), like:
+A fit to a chain of hits is performed in two iterations. In the first 
+iteration, the hits of the chain are fitted with a helix. The helix fit is 
+based on a circle fit in the $x-y$ plane followed by a linear fit in the $s-z$ 
+plane for the hits of the chain, where $s=\sqrt{x^2+y^2}$.  In the second 
+iteration, the residual between the fit and each hit is calculated. If the 
+hit's residual is greater than 5 mm, the hit is excluded from the chain. Then 
+the hits are re-fitted with the same previous helix fit giving five final 
+parameters for each track's chain. From these five parameters, one can 
+reconstruct all the parameters of a track. For example, one can calculate the 
+momentum from the known longitudinal magnetic field ($\vec{B_{z}}$), the radius 
+of curvature of the track ($r_{0}$) and the polar angle ($\theta$), like:
 \begin{eqnarray}
 p_{tot} = \sqrt{p_{\|}^2 + p_{\perp}^2}, ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \\
-\text{with } p_{\perp} = 0.3\cdot q \cdot B_{z} \cdot |r_{0}|\text{and } p_{\|} = p_{\perp}/tan(\theta),\nonumber
+\text{with } p_{\perp} = 0.3\cdot q \cdot B_{z} \cdot |r_{0}|\text{and } p_{\|} 
+= p_{\perp}/tan(\theta),\nonumber
 \end{eqnarray}
-where $p$ is in GeV/c unit, $q$ is the elementary charge, $B_{z}$ is in Tesla (T) and $r_{0}$ is in meters (m). For example, In a magnetic field of 4.5 T, the recoil $^4$He nuclei from DVCS (elastic) reaction have kinetic energies in the range [10, 25] ([17, 35]) MeV, from momenta of [260, 450] ([360, 550]) MeV and $r_{0}$ [70, 150] ([130,180]) mm.
+where $p$ is in GeV/c unit, $q$ is the elementary charge, $B_{z}$ is in Tesla 
+(T) and $r_{0}$ is in meters (m). For example, In a magnetic field of 4.5 T, 
+the recoil $^4$He nuclei from DVCS (elastic) reaction have kinetic energies in 
+the range [10, 25] ([17, 35]) MeV, from momenta of [260, 450] ([360, 550]) MeV 
+and $r_{0}$ [70, 150] ([130,180]) mm.
 
 
 \section{RTPC calibration}
@@ -158,8 +226,10 @@ $edist$.\\
 \vspace{-0.1in}
 \includegraphics[scale=0.38]{fig_rtpc/RTPC_track.png}
 \vspace{-0.1in}
-\caption{Schematic of a segment of the RTPC in a plane perpendicular to the beam line, with a $^4He$ track (in green) crossing the volume. See the text for description of the various elements and notations.} 
-\label{fig:RTPC_track}
+\caption{Schematic of a segment of the RTPC in a plane perpendicular to the 
+beam line, with a $^4He$ track (in green) crossing the volume. See the text for 
+description of the various elements and notations. $sdist$ and $edist$ are 
+defined position as shown in this sketch.} \label{fig:RTPC_track}
 \end{figure}
 
 Because the two modules of the RTPC are electronically separated, we will 
@@ -174,7 +244,9 @@ angles.
 \begin{itemize}
 \item The number of active pads in the track is greater than 3. 
 
-\item We apply a cut on the vertex position in $z$ of the reconstructed tracks to insure it is in the RTPC volume, i.e. $z$ $\in$ [-80,80] mm, as illustrated in figure \ref{fig:rtpc_zz}.  
+\item We apply a cut on the vertex position in $z$ of the reconstructed tracks 
+   to insure it is in the RTPC volume, i.e. $z$ $\in$ [-80,80] mm, as 
+   illustrated in figure \ref{fig:rtpc_zz}.  
 
 \item We request a positive radius of curvature ($r_{0}>0$): the $^4He$ is a positively 
    charged nucleus and the reconstructed track in the RTPC must have positive 
@@ -182,7 +254,8 @@ angles.
    one looks into the electron beam. The curvature distribution of the 
    collected RTPC tracks is shown in figure \ref{fig:rtpc_ro}.
 
-\item We check the quality of the helix fit with a $\chi^{2}$ cut (< 3.5). The quality of the fit ($\chi^{2}$) is defined as:
+\item We check the quality of the helix fit with a $\chi^{2}$ cut (< 3.5). The 
+   quality of the fit ($\chi^{2}$) is defined as:
 
 \begin{equation}
    \chi^{2} = \frac{\displaystyle \left(\frac{DOCA}{\sigma_r}\right)^2 
@@ -912,17 +985,28 @@ active pads have very strong contributions from this type of noise, which
 previously resulted in many of them being marked as ``bad'' due to high 
 occupancies.
 
-An algorithm was developed to remove hits corresponding to this noise without suppressing good hits.  First, the ADC vs TDC noise curve was parameterized.  Next, for every event and channel independently, the number of hits falling on this curve is counted.  If a significant number of hits lie far above or below the noise curve, no rejection is performed.  If most of the hits below TDC=30 fall on the noise curve, all hits below TDC=30 are rejected for that channel.  Figure \ref{fig:Adcvstdcnoise} shows the effect of this noise reduction for one very noisy pad.
-
-The result of this algorithm is 5$\%$ more good tracks reconstructed, with improved signal to background ratio, as can be seen in figure \ref{fig:noise_edist_}. 
-Further, this allowed to recover 40 channels that had previously been ignored due to high occupancies before this noise rejection.
+An algorithm was developed to remove hits corresponding to this noise without 
+suppressing good hits.  First, the ADC vs TDC noise curve was parameterized.  
+Next, for every event and channel independently, the number of hits falling on 
+this curve is counted.  If a significant number of hits lie far above or below 
+the noise curve, no rejection is performed.  If most of the hits below TDC=30 
+fall on the noise curve, all hits below TDC=30 are rejected for that channel.  
+Figure \ref{fig:Adcvstdcnoise} shows the effect of this noise reduction for one 
+very noisy pad. The result of this algorithm is 5$\%$ more good tracks 
+reconstructed, with improved signal to background ratio, as can be seen in 
+figure \ref{fig:noise_edist_}.  Further, this allowed to recover 40 channels 
+that had previously been ignored due to high occupancies before this noise 
+rejection.
 
 \begin{figure}[tbp]
 %\hspace{-0.4in}
 \includegraphics[scale=0.3]{fig_rtpc/noisy_pad_before_rejection.png}
 \includegraphics[scale=0.3]{fig_rtpc/noisy_pad_after_rejection.png}
 %\vspace{-0.3in}
-\caption{The integrated ADC vs. TDC of the hits for good tracks before (left) and after (right) the oscillatory noise reduction, for a particular pad with strong noise. The event sample and color scales are identical in both plots.}
+\caption{The integrated ADC vs. TDC of the hits for good tracks before (left) 
+and after (right) the oscillatory noise reduction, for a particular pad with 
+strong noise. The color scale on the z-axis is for the hit yield and identical 
+in both plots as well as the event sample.}
 \label{fig:Adcvstdcnoise}
 \end{figure}
 
@@ -931,7 +1015,10 @@ Further, this allowed to recover 40 channels that had previously been ignored du
 \includegraphics[scale=0.55]{fig_rtpc/400px-Edist_noiserej.png}
 \includegraphics[scale=0.55]{fig_rtpc/400px-X2_noiserej.png}
 %\vspace{-0.1in}
-\caption{The $edist$ (left) and the $\chi^{2}$ (right) distributions for all the tracks collected in the RTPC before (blue) and after (red) the oscillatory noise rejection. The event sample and color scales are identical in both plots.}
+\caption{The $edist$ (left) and the $\chi^{2}$ (right) distributions for all 
+the tracks collected in the RTPC before (blue) and after (red) the oscillatory 
+noise rejection. The event sample and color scales are identical in both 
+plots.}
 \label{fig:noise_edist_}
 \end{figure}
 
@@ -970,7 +1057,7 @@ experiment, we use the cleanly identified elastic events to estimate the RTPC
 resolutions. The CLAS detector nominally provides electron detection with an 
 angular resolution around 1 and 4 mrad in $\theta$ and $\phi$, and a momentum 
 resolution ($\frac{\Delta p}{p}$) around 0.5$\%$ \cite{CLASref}. The z-vertex 
-resolution of about 3 mm for an extended target in the presence of the 
+resolution is about 3 mm for an extended target in the presence of the 
 solenoid, as can be observed experimentally from the target window, figure 
 \ref{fig:electron_z_vertex_res}. \\
 \begin{figure}[tbp]

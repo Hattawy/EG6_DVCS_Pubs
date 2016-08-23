@@ -26,29 +26,55 @@ changing the properties of the detector.
 \begin{figure}[h!]
 \hspace*{-0.3in}\includegraphics[scale=0.45]{fig_dvcs/tpc_over_e_Run.png}
 \hspace*{-0.3in}\includegraphics[scale=0.45]{fig_dvcs/tpc_over_e_Run_sec.png}
-\caption{On the top: The integrated $<tpc/e>$ ratio (over the six sectors of CLAS) for the individual runs. The blue points refer to the good runs, while the black ones are the rejected ones. On the bottom: the $<tpc/e>$ ratio is shown for each sector of CLAS. The colored points indicate the different sectors for each good run, while the black ones are the rejected runs without color difference between the sectors. In both plots, the experimental setting changes that might cause a change in the event rate are indicated with vertical colored lines.} 
-\label{fig:tpc_over_e_Run_sec.png}
+\caption{On the top: The integrated $<tpc/e>$ ratio (over the six sectors of 
+   CLAS) for the individual runs. The blue points refer to the good runs, while 
+   the black ones are the rejected ones. On the bottom: the $<tpc/e>$ ratio is 
+   shown for each sector of CLAS. The colored points indicate the different 
+   sectors for each good run, while the black ones are the rejected runs 
+without color difference between the sectors. In both plots, the experimental 
+setting changes that might cause a change in the event rate are indicated with 
+vertical colored lines.} \label{fig:tpc_over_e_Run_sec.png}
 \end{figure}
 
 \subsection{Coherent DVCS event selection}
-~~~~Events with one and only one good electron, one and only one good RTPC track and at least one good photon are considered good coherent DVCS candidates. Even though the DVCS reaction has only one real photon in the final state, events with more than one good photon are not discarded at this stage. This is motivated by the fact that some photons correspond to random coincidences and discarding these events results in losing good events. Then, events with one or more $\pi^{0}$ are removed from the coherent DVCS sample. After that, the most energetic photon in each remaining event is chosen as the DVCS photon. Next, to consider an event as a clean $^{4}He$ DVCS, it has to pass respectively two sets of requirements: DVCS characteristic cuts and exclusivity cuts.
+~~~~Events with one and only one good electron, one and only one good RTPC 
+track and at least one good photon are considered good coherent DVCS 
+candidates. Even though the DVCS reaction has only one real photon in the final 
+state, events with more than one good photon are not discarded at this stage.  
+This is motivated by the fact that some photons correspond to random 
+coincidences and discarding these events results in losing good events. Then, 
+events with one or more $\pi^{0}$ are removed from the coherent DVCS sample.  
+After that, the most energetic photon in each remaining event is chosen as the 
+DVCS photon. Next, to consider an event as a clean $^{4}He$ DVCS, it has to 
+pass respectively two sets of requirements: DVCS characteristic cuts and 
+exclusivity cuts.
 
 ~\newpage
 \paragraph{DVCS characteristics}
 \begin{itemize}
-\item $Q^{2}$ > 1 GeV$^{2}$: to ensure that the interaction occurs at the partonic level and the applicability of the factorization in the DVCS  handbag diagram.
-%\item The invariant mass of the system of the virtual photon and the target 
-   %proton is greater than $2~GeV/c{^2}$. This cut avoids the region of 
-   %excitation of the proton to resonances.
-\item $ -t > -t_{min}$: the transferred momentum squared to the recoil $^{4}He$ has to be greater than a minimum value defined by the kinematics of the beam and the scattered electron as:
+ \item $Q^{2}$ > 1 GeV$^{2}$: to ensure that the interaction occurs at the 
+    partonic level and the applicability of the factorization in the DVCS  
+    handbag diagram.
+\item $ -t > -t_{min}$: the transferred momentum squared to the recoil $^{4}He$ 
+   has to be greater than a minimum value defined by the kinematics of the beam 
+   and the scattered electron as:
 \begin{equation}
    t_{min} = - Q^{2} \frac{2(1- x_{A})(1 - \sqrt{1 + \epsilon ^{2}}) + \epsilon 
    ^{2}}{4 x_{A}(1-x_{A})+ \epsilon ^{2}},\\
 \end{equation}
-where $\epsilon ^{2} = \frac{4M^{2}_{^4He}x^{2}_{A}}{Q^{2}}$, $x_{A} = \frac{M_{p}\cdot x_{B}}{M_{^4He}}$ and $M_{p}$ ($M_{^4He}$) is the proton ($^{4}He$) mass.\\
+where $\epsilon ^{2} = \frac{4M^{2}_{^4He}x^{2}_{A}}{Q^{2}}$, $x_{A} = 
+\frac{M_{p}\cdot x_{B}}{M_{^4He}}$ and $M_{p}$ ($M_{^4He}$) is the proton 
+($^{4}He$) mass.\\
 
-In the case of the proton DVCS, the variable $x_{A}$ is replaced by the Bjorken $x_{B}$ in the formula for $t_{min}$.
+In the case of the proton DVCS, the variable $x_{A}$ is replaced by the Bjorken 
+$x_{B}$ in the formula for $t_{min}$. Figure \ref{fig:tmin_both} presents 
+$t_{min}$ distributions for both DVCS channels.
 
+\item In the case of the incoherent DVCS channel, we apply a cut on the 
+   invariant mass of the virtual photon and the target proton system to be
+   greater than $2~GeV/c{^2}$. This cut avoids the region of excitation of the 
+   proton to resonances.
+ 
 \item $E_{\gamma}>$ 2 GeV. This is a cleaning cut applied to reduce the 
    background in the DVCS sample as the simulation indicates that no DVCS 
    events are expected with photon energy less than 2 GeV. Figure 
@@ -56,22 +82,32 @@ In the case of the proton DVCS, the variable $x_{A}$ is replaced by the Bjorken 
    simulated coherent and incoherent DVCS events.
 
 \begin{figure}[tbp]
+\includegraphics[height=5.0cm]{fig_rtpc/updates/tmin_coh.png}
+\includegraphics[height=5.0cm]{fig_rtpc/updates/tmin_incoh.png}
+\caption{Coherent (left) and incoherent (right) -$t_{min}$ distributions 
+calculated for the experimentally selected DVCS events. We use the experimental 
+$Q^{2}$ and $x_{B}$ of the individual events. }
+\label{fig:tmin_both}
+ \end{figure}
+
+\begin{figure}[tbp]
       \includegraphics[height=5.0cm]{fig_dvcs/photon_energy_coh_sim.png}
       \includegraphics[height=5.5cm]{fig_dvcs/photon_energy_incoh_sim.png}
-          \caption{The energy distribution of the simulated coherent, on top, 
-          and incoherent, on bottom, DVCS photons.}
-          \label{fig:energy_dvcs_photons}
+      \caption{The energy distribution of the simulated coherent (left) and 
+      incoherent (right) DVCS photons.}
+      \label{fig:energy_dvcs_photons}
 \end{figure}
-
-
 \end{itemize}
 
+\newpage
 \paragraph{Exclusivity cuts}
 
 ~\\
 The coherent DVCS reaction is:
 \begin{equation}
-e(\mathbf{P}_{e}) + ~~^{4}He(\mathbf{P}_{^{4}He}) \rightarrow e'(\mathbf{P_{e'}}) +  ~~^{4}He'(\mathbf{P}_{^{4}He'}) + \gamma(\mathbf{P}_{\gamma})
+e(\mathbf{P}_{e}) + ~~^{4}He(\mathbf{P}_{^{4}He}) \rightarrow 
+e'(\mathbf{P_{e'}}) +  ~~^{4}He'(\mathbf{P}_{^{4}He'}) + 
+\gamma(\mathbf{P}_{\gamma})
 \label{coh_dvcs_equ}
 \end{equation}
 where the symbols in the parentheses are the energy-momentum four-vectors. We define the additional four-vectors:
@@ -86,29 +122,56 @@ where the symbols in the parentheses are the energy-momentum four-vectors. We de
 \begin{itemize}
 \item The co-planarity cut ($\Delta \phi$). In principle, the virtual photon, the emitted real photon and the recoil helium lie in the same plane, which is called the hadronic plane. Thus the DVCS events must have $\Delta \phi$ values around zero. The hadronic plane can be defined in three ways:
 \begin{eqnarray}
-\overrightarrow{HP}_{1} &=& \overrightarrow{\mathbf{P}}_{^{4}He'} \times \overrightarrow{\mathbf{P}}_{\gamma^{*}}\\
-\overrightarrow{HP}_{2} &=& \overrightarrow{\mathbf{P}}_{^{4}He'}  \times \overrightarrow{\mathbf{P}}_{\gamma}\\
-\overrightarrow{HP}_{3} &=& \overrightarrow{\mathbf{P}}_{\gamma^{*}} \times \overrightarrow{\mathbf{P}}_{\gamma}
+\overrightarrow{HP}_{1} &=& \overrightarrow{\mathbf{P}}_{^{4}He'} \times 
+   \overrightarrow{\mathbf{P}}_{\gamma^{*}}\\
+\overrightarrow{HP}_{2} &=& \overrightarrow{\mathbf{P}}_{^{4}He'}  \times 
+   \overrightarrow{\mathbf{P}}_{\gamma}\\
+\overrightarrow{HP}_{3} &=& \overrightarrow{\mathbf{P}}_{\gamma^{*}} \times 
+   \overrightarrow{\mathbf{P}}_{\gamma}
 \end{eqnarray}
-$\Delta \phi$ is defined to be the $\phi$ difference between these planes and is calculable from three combinations: ($\overrightarrow{HP}_{1}$, $\overrightarrow{HP}_{2}$), ($\overrightarrow{HP}_{1}$, $\overrightarrow{HP}_{3}$) and ($\overrightarrow{HP}_{2}$, $\overrightarrow{HP}_{3}$). We investigated the three combinations and we decided to use the second one as it gives better resolution.
+$\Delta \phi$ is defined to be the $\phi$ difference between these planes and 
+is calculable from three combinations: ($\overrightarrow{HP}_{1}$, 
+$\overrightarrow{HP}_{2}$), ($\overrightarrow{HP}_{1}$, 
+$\overrightarrow{HP}_{3}$) and ($\overrightarrow{HP}_{2}$, 
+$\overrightarrow{HP}_{3}$). We investigated the three combinations and we 
+decided to use the second one as it gives better resolution.
 
-\item Missing energy, mass and transverse momentum ($p^{T}_{X} = \sqrt{(p^{x}_{X})^2 + (p^{y}_{X}})^2$) cuts on $\mathbf{P}^{e^{4}He\gamma}_{X}$.
+\item Missing energy, mass and transverse momentum ($p^{T}_{X} = 
+   \sqrt{(p^{x}_{X})^2 + (p^{y}_{X}})^2$) cuts on 
+   $\mathbf{P}^{e^{4}He\gamma}_{X}$.
 
-\item Missing mass cuts on the $e^{4}HeX$ and $e\gamma X$ systems, which are defined as $(P^{e^{4}He}_{X})^{2}$ and $(P^{e\gamma}_{X})^{2}$ respectively.
+\item Missing mass cuts on the $e^{4}HeX$ and $e\gamma X$ systems, which are 
+   defined as $(P^{e^{4}He}_{X})^{2}$ and $(P^{e\gamma}_{X})^{2}$ respectively.
 
-\item Cone angle cut between the measured real photon and the missing particle in the $e^{4}HeX$ configuration. It is defined as:
+\item Cone angle cut between the measured real photon and the missing particle 
+   in the $e^{4}HeX$ configuration. It is defined as:
 \begin{equation}
-\theta(\gamma, e^{4}HeX) = cos^{-1} \left( \frac{\overrightarrow{\mathbf{P}}_{\gamma} \cdot \overrightarrow{\mathbf{P}}^{e^{4}He}_{X}}{|\overrightarrow{\mathbf{P}}_{\gamma^{}}| |\overrightarrow{\mathbf{P}}^{e^{4}He}_{X}|}   \right).
+\theta(\gamma, e^{4}HeX) = cos^{-1} \left( 
+\frac{\overrightarrow{\mathbf{P}}_{\gamma} \cdot 
+\overrightarrow{\mathbf{P}}^{e^{4}He}_{X}}{|\overrightarrow{\mathbf{P}}_{\gamma^{}}| 
+|\overrightarrow{\mathbf{P}}^{e^{4}He}_{X}|}   \right).
 \end{equation}
 \end{itemize}
-~~~~~Figure \ref{fig:coh_exclusivty_cuts} summarizes all the exclusivity cuts. In these plots, the blue distributions represent the coherent events after the DVCS characteristic cuts and before all the exclusivity cuts. The shaded distributions stand for the events which passed all the exclusivity cuts except the one on the quantity plotted. We fitted each shaded distribution by a Gaussian and then we applied  3$\sigma$ cuts around the mean value of each distribution. The events which pass these cuts are assumed to be good $^{4}He$ DVCS events. 
-~\\
+~~~~~Figure \ref{fig:coh_exclusivty_cuts} summarizes all the exclusivity cuts.  
+In these plots, the blue distributions represent the coherent events after the 
+DVCS characteristic cuts and before all the exclusivity cuts. The shaded 
+distributions stand for the events which passed all the exclusivity cuts except 
+the one on the quantity plotted. We fitted each shaded distribution by a 
+Gaussian and then we applied  3$\sigma$ cuts around the mean value of each 
+distribution. The events which pass these cuts are assumed to be good $^{4}He$ 
+DVCS events.  ~\\
 ~\\
 
 \begin{figure}[!h]
 \centering
 \includegraphics[scale=0.4]{fig_dvcs/all_coh_exc_cuts.png}
-\caption{The coherent DVCS exclusivity cuts. The blue distributions represent the coherent DVCS events candidate. The shaded distributions represent the events which passed all the exclusivity cuts except the quantity plotted. The vertical red lines represent $3\sigma$ cuts. The missing momentum in $x$ and $y$ directions in the configuration $e^{4}He\gamma X$, are shown for information. The mean and the sigma values of each quantity can be found in Appendix \ref{exclusivity_cuts}, table \ref{Table:coh_exclusivity_cuts}.} 
+\caption{The coherent DVCS exclusivity cuts. The blue distributions represent 
+   the coherent DVCS events candidate. The shaded distributions represent the 
+   events which passed all the exclusivity cuts except the quantity plotted.  
+   The vertical red lines represent $3\sigma$ cuts. The missing momentum in $x$ 
+   and $y$ directions in the configuration $e^{4}He\gamma X$, are shown for 
+information. The mean and the sigma values of each quantity can be found in 
+Appendix \ref{exclusivity_cuts}, table \ref{Table:coh_exclusivity_cuts}.} 
 \label{fig:coh_exclusivty_cuts}
 \end{figure}
 
@@ -239,20 +302,35 @@ kinematic variables: $Q^{2}$, $x_{B}$, $-t$, and $\phi$. }
 ~\newpage
 
 \section{Incoherent channel}
-~~~~In this channel, the DVCS process happens on a bound proton. Thus, the final state has a recoil proton instead of the helium nucleus. Therefore, events with one good electron, one recoil proton, and at least one real photon are the good candidates here. For the rest, we follow the same steps that were introduced for the coherent DVCS selection.
+~~~~In this channel, the DVCS process happens on a bound proton. Thus, the 
+final state has a recoil proton instead of the helium nucleus. Therefore, 
+events with one good electron, one recoil proton, and at least one real photon 
+are the good candidates here. For the rest, we follow the same steps that were 
+introduced for the coherent DVCS selection.
 
 \subsection{Good run list}
-~~~~The events rate stability is verified by looking at the rate of the detected number of protons to the detected electrons (<p/e>). Like for the coherent channel, the same technique for the determination of the good run list is followed herein. The results are presented in figure \ref{fig:prot_over_e_Run_sec.png}. 
-\begin{figure}[h!]
+~~~~The events rate stability is verified by looking at the rate of the 
+detected number of protons to the detected electrons (<p/e>). Like for the 
+coherent channel, the same technique for the determination of the good run list 
+is followed herein. The results are presented in figure 
+\ref{fig:prot_over_e_Run_sec.png}.  \begin{figure}[h!]
 \includegraphics[scale=0.4]{fig_dvcs/prot_over_e_Run.png}
 \includegraphics[scale=0.4]{fig_dvcs/prot_over_e_Run_sec.png}
-\caption{On the top: the integrated <$p/e$> ratio as a function of run number. The blue points refer to the good runs, while the black points are the rejected ones. On the bottom: the same ratio for each run, is shown for each sector of CLAS. The colored points indicate the six sectors, while the black points are the sectors of the rejected runs. } 
+\caption{On the top: the integrated <$p/e$> ratio as a function of run number.  
+   The blue points refer to the good runs, while the black points are the 
+rejected ones. On the bottom: the same ratio for each run, is shown for each 
+sector of CLAS. The colored points indicate the six sectors, while the black 
+points are the sectors of the rejected runs. } 
 \label{fig:prot_over_e_Run_sec.png}
 \end{figure}
 
 
 \subsection{Proton DVCS event selection}
-~~~~To certify that an event is a proton DVCS one, we require the same DVCS kinematic cuts as those presented for the coherent DVCS selection. Then, the exclusivity of the DVCS reaction is ensured by applying an equivalent set of exclusivity with taking a proton at rest as the target, instead of $^4He$. Figure \ref{fig:incoh_exclusivty_cuts} summarizes these exclusivity cuts.\\
+~~~~To certify that an event is a proton DVCS one, we require the same DVCS 
+kinematic cuts as those presented for the coherent DVCS selection. Then, the 
+exclusivity of the DVCS reaction is ensured by applying an equivalent set of 
+exclusivity with taking a proton at rest as the target, instead of $^4He$.  
+Figure \ref{fig:incoh_exclusivty_cuts} summarizes these exclusivity cuts.\\
 
 %\paragraph{$\blacklozenge$ DVCS characteristics}
 %\begin{itemize}
@@ -277,20 +355,43 @@ kinematic variables: $Q^{2}$, $x_{B}$, $-t$, and $\phi$. }
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.4]{fig_dvcs/all_incoh_exc_cuts.png}
-\caption{The incoherent DVCS exclusivity cuts. The blue distributions represent all the events with one good electron, one good proton, and at least one photon in the IC. The shaded brown distributions show the incoherent DVCS events which passed all the exclusivity cuts except the one on the quantity drawn. The distributions from left to right and from top to bottom are: the proton-photon coplanarity, the missing energy, missing mass squared, missing transverse momentum from $ep\gamma X$, the missing mass squared $epX$ and the missing mass squared $e\gamma X$, the angle between the missing particle in $epX$ and the measured photon, the missing $P_{x}$ and $P_{y}$ in $ep\gamma X$. The vertical red lines represent 3$\sigma$ cuts. The mean and sigma values of each shaded distribution are listed in table \ref{Table:incoh_exclusivity_cuts}.} 
-\label{fig:incoh_exclusivty_cuts}
+\caption{The incoherent DVCS exclusivity cuts. The blue distributions represent 
+   all the events with one good electron, one good proton, and at least one 
+   photon in the IC. The shaded brown distributions show the incoherent DVCS 
+   events which passed all the exclusivity cuts except the one on the quantity 
+   drawn. The distributions from left to right and from top to bottom are: the 
+   proton-photon coplanarity, the missing energy, missing mass squared, missing 
+   transverse momentum from $ep\gamma X$, the missing mass squared $epX$ and 
+   the missing mass squared $e\gamma X$, the angle between the missing particle 
+   in $epX$ and the measured photon, the missing $P_{x}$ and $P_{y}$ in 
+   $ep\gamma X$. The vertical red lines represent 3$\sigma$ cuts. The mean and 
+   sigma values of each shaded distribution are listed in table 
+\ref{Table:incoh_exclusivity_cuts}.} \label{fig:incoh_exclusivty_cuts}
 \end{figure}
 
 \subsection{Comparison with simulation}
-~~~~The three particles of the simulated $ep\gamma$ DVCS events are selected applying the previously described identification requirements. The events with three identified particles (e, p, $\gamma$) are required to pass a set of exclusivity cuts such as the ones of the experimental incoherent DVCS events. In this section, a comparison between the experimental and the simulated data is carried out.\\
+~~~~The three particles of the simulated $ep\gamma$ DVCS events are selected 
+applying the previously described identification requirements. The events with 
+three identified particles (e, p, $\gamma$) are required to pass a set of 
+exclusivity cuts such as the ones of the experimental incoherent DVCS events.  
+In this section, a comparison between the experimental and the simulated data 
+is carried out.\\
 
-Figure \ref{fig:incoh_coparison_with_simulation_1} shows the comparison between the simulated (red lines) and the experimental (shaded blue) incoherent DVCS events as a function of the four kinematic variables: $Q^{2}$, $x_{B}$, $-t$, and $\phi$. Figure \ref{fig:incoh_comparison_with_simulation_exclusive_2} shows the comparison as a function of the variables used to select exclusive DVCS events.
+Figure \ref{fig:incoh_coparison_with_simulation_1} shows the comparison between 
+the simulated (red lines) and the experimental (shaded blue) incoherent DVCS 
+events as a function of the four kinematic variables: $Q^{2}$, $x_{B}$, $-t$, 
+and $\phi$. Figure \ref{fig:incoh_comparison_with_simulation_exclusive_2} shows 
+the comparison as a function of the variables used to select exclusive DVCS 
+events.
 \begin{figure}[h!]
 \includegraphics[scale=0.35]{fig_dvcs/comp/Q2_InCoh.png}
 \includegraphics[scale=0.35]{fig_dvcs/comp/xB_InCoh.png}
 \includegraphics[scale=0.35]{fig_dvcs/comp/t_InCoh.png}
 \includegraphics[scale=0.35]{fig_dvcs/comp/phi_h_InCoh.png}
-\caption{Comparison between the Monte-Carlo simulated $ep\gamma$ DVCS events (red lines) and the experimental ones (blue shaded distributions) in terms of the kinematics: $Q^{2}$, $x_{B}$, $-t$, and $\phi$, respectively from left to right and from top to bottom.}
+\caption{Comparison between the Monte-Carlo simulated $ep\gamma$ DVCS events 
+(red lines) and the experimental ones (blue shaded distributions) in terms of 
+the kinematics: $Q^{2}$, $x_{B}$, $-t$, and $\phi$, respectively from left to 
+right and from top to bottom.}
 \label{fig:incoh_coparison_with_simulation_1}
 \end{figure}
 
@@ -302,7 +403,9 @@ Figure \ref{fig:incoh_coparison_with_simulation_1} shows the comparison between 
 \includegraphics[scale=0.35]{fig_dvcs/comp/InCoh_epgamma_PT_Mis.png}
 \includegraphics[scale=0.35]{fig_dvcs/comp/InCoh_egamma_M2_Mis_InCoh.png}
 \includegraphics[scale=0.35]{fig_dvcs/comp/InCoh_Theta_gammaX_InCoh.png}
-\caption{Comparison between simulated and experimental $ep\gamma$ DVCS events in terms of the variables used for exclusivity cuts. The vertical black lines indicate the theoretically expected values for each exclusive quantity.} 
+\caption{Comparison between simulated and experimental $ep\gamma$ DVCS events 
+in terms of the variables used for exclusivity cuts. The vertical black lines 
+indicate the theoretically expected values for each exclusive quantity.} 
 \label{fig:incoh_comparison_with_simulation_exclusive_2}
 \end{figure}
 
@@ -365,8 +468,12 @@ associated bins in $\phi$.
 \centering
 \includegraphics[scale=0.36]{fig_results/Q2_Coh_bins.png}
 \includegraphics[scale=0.45]{fig_results/bins_Coh_Q2_Phi.png}
-\caption{On the top: the $Q^2$ distribution of the collected coherent DVCS events. The different colors indicate the different bins in $Q^2$ integrated over the full ranges of $-t$ and $x_B$. On the bottom: the $\phi$ distributions of the coherent DVCS events for the bins in $Q^2$, which are shown in the top plot. The different colors in each $\phi$ distribution represent the nine bins in $\phi$.} 
-\label{fig:coh_Q2_bins}
+\caption{On the top: the $Q^2$ distribution of the collected coherent DVCS 
+   events. The different colors indicate the different bins in $Q^2$ integrated 
+   over the full ranges of $-t$ and $x_B$. On the bottom: the $\phi$ 
+   distributions of the coherent DVCS events for the bins in $Q^2$, which are 
+shown in the top plot. The different colors in each $\phi$ distribution 
+represent the nine bins in $\phi$.} \label{fig:coh_Q2_bins}
 \end{figure}
 
 
@@ -374,26 +481,65 @@ associated bins in $\phi$.
 \label{Background_subtraction}
 
 \subsection{$\pi^0$ contaminations}
-~~~~Even with all cuts applied to select the selected DVCS events, the events are not all DVCS events. In our kinematic region, the main contamination comes from the exclusive electroproduction of $\pi^{0}$ ($e ^{4}He \rightarrow e ^{4}He \pi^{0} \rightarrow e ^{4}He \gamma \gamma $, $e p \rightarrow e p \pi^{0} \rightarrow e p \gamma \gamma $), in which one of the two photons of the $\pi^{0}$ decay passes the requirements of the DVCS. Thus, the event is counted as a DVCS event. These events contaminate the DVCS sample and have to be subtracted to obtain the true number of DVCS events. In the case of the coherent channel, this can be formulated as:
+~~~~Even with all cuts applied to select the selected DVCS events, the events 
+are not all DVCS events. In our kinematic region, the main contamination comes 
+from the exclusive electroproduction of $\pi^{0}$ ($e ^{4}He \rightarrow e 
+^{4}He \pi^{0} \rightarrow e ^{4}He \gamma \gamma $, $e p \rightarrow e p 
+\pi^{0} \rightarrow e p \gamma \gamma $), in which one of the two photons of 
+the $\pi^{0}$ decay passes the requirements of the DVCS. Thus, the event is 
+counted as a DVCS event. These events contaminate the DVCS sample and have to 
+be subtracted to obtain the true number of DVCS events. In the case of the 
+coherent channel, this can be formulated as:
 \begin{equation}
 N^{True}_{e^{4}He\gamma} = N^{Exp.}_{e^{4}He\gamma} -  N^{Exp.}_{e^{4}He\pi^{0}(\gamma)},
 \label{equ_back_1}
-\end{equation} 
-where $N^{True}_{e^{4}He\gamma}$, $N^{Exp.}_{e^{4}He\gamma}$ and $ N^{Exp.}_{e^{4}He\pi^{0}(\gamma)}$ are the true number of coherent DVCS events, the experimentally measured number of $e^{4}He\gamma$ events and the contamination number, respectively. The contamination can be calculated by using real data and simulation. We define, for each kinematic bin and for each beam helicity state
+\end{equation}
+where $N^{True}_{e^{4}He\gamma}$, $N^{Exp.}_{e^{4}He\gamma}$ and $ 
+N^{Exp.}_{e^{4}He\pi^{0}(\gamma)}$ are the true number of coherent DVCS events, 
+the experimentally measured number of $e^{4}He\gamma$ events and the 
+contamination number, respectively. The contamination can be calculated by 
+using real data and simulation. We define, for each kinematic bin and for each 
+beam helicity state
 \begin{equation}
-N^{Exp.}_{e^{4}He\pi^{0}(\gamma)} = \frac{N^{Sim.}_{e^{4}He\pi^{0}(\gamma)}}{N^{Sim.}_{e^{4}He\pi^{0}(\gamma \gamma)}} * N^{Exp.}_{e^{4}He\pi^{0}(\gamma \gamma)},
+N^{Exp.}_{e^{4}He\pi^{0}(\gamma)} = 
+\frac{N^{Sim.}_{e^{4}He\pi^{0}(\gamma)}}{N^{Sim.}_{e^{4}He\pi^{0}(\gamma 
+\gamma)}} * N^{Exp.}_{e^{4}He\pi^{0}(\gamma \gamma)},
 \label{equation: background_equ}
-\end{equation} 
-where $N^{Exp.}_{e^{4}He\pi^{0}(\gamma \gamma)}$ is the number of measured $e^{4}He\pi^{0}$ events, for which both photons of the $\pi^{0}$ have been detected. The quantity $\frac{N^{Sim.}_{e^{4}He\pi^{0}(\gamma)}}{N^{Sim.}_{e^{4}He\pi^{0}(\gamma \gamma)}} $ is the acceptance ratio for detecting a $e^{4}He\gamma$ event that originates from an $e^{4}He\pi^{0}$ event. It can be derived from Monte-Carlo simulations by generating and simulating $e^{4}He\pi^{0}$. $N^{Sim.}_{e^{4}He\pi^{0}(\gamma)}$ is the number of such events passing the DVCS requirements, while $N^{Sim.}_{e^{4}He\pi^{0}(\gamma \gamma)}$ is the number of simulated $e^{4}He\pi^{0}$ events passing the exclusivity cuts for $e^{4}He\pi^{0}$ events.\\
+\end{equation}
+where $N^{Exp.}_{e^{4}He\pi^{0}(\gamma \gamma)}$ is the number of measured 
+$e^{4}He\pi^{0}$ events, for which both photons of the $\pi^{0}$ have been 
+detected. The quantity 
+$\frac{N^{Sim.}_{e^{4}He\pi^{0}(\gamma)}}{N^{Sim.}_{e^{4}He\pi^{0}(\gamma 
+\gamma)}} $ is the acceptance ratio for detecting a $e^{4}He\gamma$ event that 
+originates from an $e^{4}He\pi^{0}$ event. It can be derived from Monte-Carlo 
+simulations by generating and simulating $e^{4}He\pi^{0}$.  
+$N^{Sim.}_{e^{4}He\pi^{0}(\gamma)}$ is the number of such events passing the 
+DVCS requirements, while $N^{Sim.}_{e^{4}He\pi^{0}(\gamma \gamma)}$ is the 
+number of simulated $e^{4}He\pi^{0}$ events passing the exclusivity cuts for 
+$e^{4}He\pi^{0}$ events.\\
 
-The previous formulas apply to the case of the coherent DVCS. The same procedures hold for the incoherent case by replacing the $^{4}He$ with the proton.\\
+The previous formulas apply to the case of the coherent DVCS. The same 
+procedures hold for the incoherent case by replacing the $^{4}He$ with the 
+proton.\\
 
-The selection of the exclusive $e^{4}He\pi^{0}$ and $ep\pi^{0}$ events requires the detection of one good electron, one good $\pi^{0}$ in the topology ICIC or ICEC, and one good $^{4}He$ track in the coherent case, or one good proton in the incoherent case. In order to ensure that this is a deep process, we apply the same kinematic cuts as DVCS. These cuts and the comparisons with simulation can be found in Appendix \ref{app:Exclusive_pi0_selection}.\\
+The selection of the exclusive $e^{4}He\pi^{0}$ and $ep\pi^{0}$ events requires 
+the detection of one good electron, one good $\pi^{0}$ in the topology ICIC or 
+ICEC, and one good $^{4}He$ track in the coherent case, or one good proton in 
+the incoherent case. In order to ensure that this is a deep process, we apply 
+the same kinematic cuts as DVCS. These cuts and the comparisons with simulation 
+can be found in Appendix \ref{app:Exclusive_pi0_selection}.\\
 
 
-Figure \ref{fig:coh_acceptance _ratios} shows the coherent acceptance ratio as a function of each of the four kinematic variables ($Q^{2}$, $x_{B}$, $-t$, $\phi_{h}$). These distributions are one-dimensional, i.e. the data are integrated over all kinematical ranges except for the quantity which is binned (along the x-axis). The results  for the incoherent channel can be found in figure \ref{fig:incoh_acceptance _ratios}. The mean value of the acceptance ratio for the coherent channel is around 25$\%$, with some dependence on $x_{B}$ and $\phi$, and almost no dependence on $Q^{2}$ and $-t$. For the incoherent channel, the mean acceptance ratio is around 20$\%$ with some dependence on the four kinematic variables.\\
-
-As presented in the previous section, we construct two-dimensional bins: $Q^2$-$\phi$, $x_B$-$\phi$ and -$t$-$\phi$. Thus, for each bin in $Q^2$, $x_B$ and $-t$, we assume that the acceptance ratio does not change a lot within the bin range and we construct the one-dimensional acceptance ratio as a function of $\phi$. The latter is used to perform the background subtraction as shown in equations \ref{equ_back_1} and \ref{equation: background_equ}. 
+Figure \ref{fig:coh_acceptance _ratios} shows the coherent acceptance ratio as 
+a function of each of the four kinematic variables ($Q^{2}$, $x_{B}$, $-t$, 
+$\phi_{h}$). These distributions are one-dimensional, i.e. the data are 
+integrated over all kinematical ranges except for the quantity which is binned 
+(along the x-axis). The results for the incoherent channel can be found in 
+figure \ref{fig:incoh_acceptance _ratios}. The mean value of the acceptance 
+ratio for the coherent channel is around 25$\%$, with some dependence on 
+$x_{B}$ and $\phi$, and almost no dependence on $Q^{2}$ and $-t$. For the 
+incoherent channel, the mean acceptance ratio is around 20$\%$ with some 
+dependence on the four kinematic variables.\\
 
 
 \begin{figure}[tp]
@@ -416,9 +562,59 @@ $\phi$ (bottom right). }
 \includegraphics[scale=0.30]{fig_dvcs/epgamma_eppi0_Phi.png}
 \caption{The incoherent channel acceptance ratios as a function of the 
 kinematic variables: $Q^{2}$ (top left), $x_{B}$ (top right), $-t$ (bottom 
-left), and $\phi$ (bottom right).  }
+left), and $\phi$ (bottom right).}
 \label{fig:incoh_acceptance _ratios}
 \end{figure}
+
+As presented in the previous section, we construct two-dimensional bins: 
+$Q^2$-$\phi$, $x_B$-$\phi$ and -$t$-$\phi$. Thus, for each bin in $Q^2$, $x_B$ 
+and $-t$, we assume that the acceptance ratio does not change a lot within the 
+bin range and we construct the one-dimensional acceptance ratio as a function 
+of $\phi$. We also carried out four-dimensional background subtraction, in 
+which the acceptance ratio has been extracted from simulation as a function of 
+$Q^2$, $x_B$, -$t$, and $\phi$. The difference between the reconstructed 
+beam-spin asymmetries using two-dimensional and four-dimensional background 
+subtraction are presented in figures \ref{fig:coh_binning} and 
+\ref{fig:incoh_binning} for the coherent and the incoherent DVCS channels.  
+Even though the two-dimensional subtraction is a good approximation, a 
+four-dimensional subtraction is applied on the final results presented next 
+chapter. 
+
+\begin{figure}[tbp]
+   \centering
+    \includegraphics[height=6.0cm]{fig_rtpc/updates/BSA_Coherent_xB.png}
+    \includegraphics[height=6.0cm]{fig_rtpc/updates/diff_BSA_Coherent_xB_2.png}
+    \caption{On top: the reconstruct coherent beam-spin asymmetries as a 
+    function of $\phi$ in $x_{B}$ bins using two-dimensional (in blue) and 
+ four-dimensional (in green) background subtraction.  On bottom: the difference 
+ between the two asymmetries as a function of $\phi$.}
+    \label{fig:coh_binning}
+    \end{figure}            
+
+    \begin{figure}[tbp]
+       \centering
+    \includegraphics[height=5.2cm]{fig_rtpc/updates/BSA_InCoherent_xB.png}
+    \includegraphics[height=5.2cm]{fig_rtpc/updates/diff_BSA_InCoherent_xB_2.png}
+    \caption{On top: the reconstruct incoherent beam-spin asymmetries using    
+    two-dimensional (in blue) and four-dimensional (in green) background 
+ subtraction.  On bottom: the difference between the two asymmetries as a 
+ function of $\phi$.}
+    \label{fig:incoh_binning}
+    \end{figure}                                                                  
+
+  
+Regarding other backgrounds, the procedures carried out in this work followed 
+the same guidelines as for DVCS analysis on the nucleon. The neutral pion 
+production occurs "without threshold" as seen from the $eHe\gamma$ sample, 
+meaning that the contamination from $eHe\pi^0$ with one photon lost is 
+distributed all the way down to the DVCS, in the limit where the second photon 
+energy becomes negligible in the lab. Single charged pion production occurs 
+with a small threshold but is inconsistent with the already detected particles 
+($e$ and $^{4}$He). Two pion production is entirely cleaned up by the 
+exclusivity cuts. Scattering from the windows is excluded by the vertex cuts.  
+As far as accidental, we correct for that as presented in the following 
+section.   
+
 
 \subsection{Accidental contaminations}
 ~\\
@@ -536,7 +732,7 @@ plotted as functions of the cut widths in figures \ref{fig:sys_fit_alpha} to
 
 \begin{figure}[h!]
 \includegraphics[scale=0.31]{fig_dvcs/e4Hegamma_M2_Mis_sig.png}
-\includegraphics[scale=0.31]{fig_dvcs/e4Hegamma_M2_Mis_sig.png}
+\includegraphics[scale=0.31]{fig_dvcs/epgamma_M2_Mis_sig.png}
 \includegraphics[scale=0.31]{fig_dvcs/e4Hegamma_e4Hepi0_Phi_2.png}
 \hspace{-0.2in}\includegraphics[scale=0.31]{fig_dvcs/R_epgamma_eppi0_Phi.png}
 \includegraphics[scale=0.31]{fig_dvcs/BSA_Coherent_sigmas.png}
