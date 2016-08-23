@@ -393,53 +393,98 @@ applied to select the good tracks.}
 
 
 
-
 \subsection{drift paths and drift speed calibration}
 
 \subsubsection{Drift speed parametrization}
-~~~~The electrons follow their drift paths with a certain speed, named drift speed. This speed is affected by the experimental conditions, such as the variations in the magnetic field or in the gas composition. We can measure this speed using the tracks detected in the RTPC, as it is explained in this section.\\
+~~~~The electrons follow their drift paths with a certain speed, named drift 
+speed. This speed is affected by the experimental conditions, such as the 
+variations in the magnetic field or in the gas composition. We can measure this 
+speed using the tracks detected in the RTPC, as it is explained in this 
+section.\\
 
 
-In our TPC, the electrons released close to the cathode take the maximum drift time ($TDC_{max}$) to reach the readout pads while the geometrical symmetry along the RTPC ensures that these electrons always travel the same distance. Therefore, by identifying the $TDC_{max}$, the drift speed can be deduced. Figure \ref{fig:TDC_profile} shows the time profile of the collected hits for the detected good tracks. The experimental drift time ranges between the trigger time (TDC$_{min}$ = 15 TDCs) to 75 TDCs. The time profile shows an expected dropping edge at high TDCs due to the geometrical constraints. In order to avoid the statistical effects in determining the  $TDC_{max}$, we define a value named as $TDC_{max/2}$ at which the dropping edge passes to half of the maximum number of hits in each hits-time profile. $TDC_{max/2}$ is inversely proportional to the drift speed.\\
+In our TPC, the electrons released close to the cathode take the maximum drift 
+time ($TDC_{max}$) to reach the readout pads while the geometrical symmetry 
+along the RTPC ensures that these electrons always travel the same distance.  
+Therefore, by identifying the $TDC_{max}$, the drift speed can be deduced.  
+Figure \ref{fig:TDC_profile} shows the time profile of the collected hits for 
+the detected good tracks. The experimental drift time ranges between the 
+trigger time (TDC$_{min}$ = 15 TDCs) to 75 TDCs. The time profile shows an 
+expected dropping edge at high TDCs due to the geometrical constraints. In 
+order to avoid the statistical effects in determining the  $TDC_{max}$, we 
+define a value named as $TDC_{max/2}$ at which the dropping edge passes to half 
+of the maximum number of hits in each hits-time profile. $TDC_{max/2}$ is 
+inversely proportional to the drift speed.\\
  
 
-We measure the $TDC_{max/2}$ along the length of the RTPC to take into account the variations in the electric and magnetic fields. The results can be seen in figure \ref{fig:RunNumber_61551_TDCmax_Zslice}, where a clear variation of the drift speed along the RTPC was observed. \\ 
-\begin{figure}[tbp]
+We measure the $TDC_{max/2}$ along the length of the RTPC to take into account 
+the variations in the electric and magnetic fields. The results can be seen in 
+figure \ref{fig:RunNumber_61551_TDCmax_Zslice}, where a clear variation of the 
+drift speed along the RTPC was observed. \\ \begin{figure}[tbp]
 \centering
 \vspace{-0.1in}
 \includegraphics[scale=0.35]{fig_rtpc/TDC_profile.png}
-\caption{Time profile of the collected hits for the RTPC good tracks in one experimental run, run 61511. The $TDC_{max/2}$ is the time at which the dropping edge passes half the maximum number of hits. }
+\caption{Time profile of the collected hits for the RTPC good tracks in one 
+   experimental run, run 61511, integrated over the full longitudinal length 
+(z) of the RTPC. The $TDC_{max/2}$ is the time at which the dropping edge 
+passes half the maximum number of hits.}
 \label{fig:TDC_profile}
 \end{figure} 
 
-We also monitor the $TDC_{max/2}$ evolution during the time of the experiment, to take into account variations. The EG6 experiment has recorded data with different electron-beam energies: 1.204, 5.7, 6.064 and 1.269 GeV. The 5.7 and 6.064 data sets have low elastic cross sections compared to the 1.206 and 1.269 data sets. For this reason, we use all the RTPC good tracks and not only the elastic ones for these. Before checking the stability of $TDC_{max/2}$ over the experimental running period, we want to check the feasibility of using all good tracks for the purpose of parametrizing the drift speed. In this check, the $TDC_{max/2}$ identified using the good tracks of the 1.206-GeV data set is compared to the one identified from the elastic events of the same data sets. The result is shown in figure \ref{fig:TDCmax_ratio}, in which the ratio between the two $TDC_{max/2}$ is plotted as a function of the longitudinal position along the RTPC. This ratio is consistent with 1, within 1$\%$. Thus we can conclude that using the hits of the collected good tracks is a good approximation. \\
+We also monitor the $TDC_{max/2}$ evolution during the time of the experiment, 
+to take into account variations. The EG6 experiment has recorded data with 
+different electron-beam energies: 1.204, 5.7, 6.064 and 1.269 GeV. The 5.7 and 
+6.064 data sets have low elastic cross sections compared to the 1.206 and 1.269 
+data sets. For this reason, we use all the RTPC good tracks and not only the 
+elastic ones for these. Before checking the stability of $TDC_{max/2}$ over the 
+experimental running period, we want to check the feasibility of using all good 
+tracks for the purpose of parametrizing the drift speed. In this check, the 
+$TDC_{max/2}$ identified using the good tracks of the 1.206-GeV data set is 
+compared to the one identified from the elastic events of the same data sets.  
+The result is shown in figure \ref{fig:TDCmax_ratio}, in which the ratio 
+between the two $TDC_{max/2}$ is plotted as a function of the longitudinal 
+position along the RTPC. This ratio is consistent with 1, within 1$\%$. Thus we 
+can conclude that using the hits of the collected good tracks is a good 
+approximation. \\
 
-\begin{figure}[tp]
+\begin{figure}[tpb]
 \begin{minipage}[c]{.46\linewidth}
 \hspace*{-0.3in}
 \includegraphics[height=9.5cm]{fig_rtpc/RunNumber_61551_TDCmax_Zslice.png}
-\caption{$TDC_{max/2}$ variation as a function of the longitudinal position along the RTPC in one experimental run, 61510.} 
-\label{fig:RunNumber_61551_TDCmax_Zslice}
+ \caption{$TDC_{max/2}$ variation as a function of the longitudinal position 
+ along the RTPC, $z$ position of the hit, in one experimental run, 61510.} 
+ \label{fig:RunNumber_61551_TDCmax_Zslice}
 \end{minipage} \hfill
 \begin{minipage}[c]{.46\linewidth}
 \hspace*{-0.3in}
 \includegraphics[height=9.0cm]{fig_rtpc/TDCmax_ratio_final.png}
-\caption{Ratio between $TDC_{max/2}$ extracted using the RTPC good tracks and the one extracted using the clean elastic events, both from the 1.204-GeV dataset.}
+\caption{Ratio between $TDC_{max/2}$ extracted using the RTPC good tracks and 
+the one extracted using the clean elastic events, both from the 1.204-GeV 
+dataset, as function of the hit position ($z$).}
 \label{fig:TDCmax_ratio}
 \end{minipage}
 \end{figure}
 
-The variations with time of $TDC_{max/2}$ are shown in figure \ref{fig:Drift_run_number}, in which each point is a run of about two hours of data taking. One can see a non-negligible variation over the three months of data taking due to the changes in the experimental conditions. The main cause of these variations is probably the variation of proportions in the drift gas mixture which was not perfectly under control due to leaks in the thin parts of the detector.\\
+The variations with time of $TDC_{max/2}$ are shown in figure 
+\ref{fig:Drift_run_number}, in which each point is a run of about two hours of 
+data taking. One can see a non-negligible variation over the three months of 
+data taking due to the changes in the experimental conditions. The main cause 
+of these variations is probably the variation of proportions in the drift gas 
+mixture which was not perfectly under control due to leaks in the thin parts of 
+the detector.\\
 
-As $TDC_{max/2} -15 $ ($= 
-\frac{Drift~path~length}{Drift~speed}$) varies with both run number (time) and 
-the geometry of the RTPC ($z$ along the RTPC). We
-parametrize the dependence on $z$ for each run in the form:\\
+As $TDC_{max/2} -15 $ ($= \frac{Drift~path~length}{Drift~speed}$) varies with 
+both run number (time) and the geometry of the RTPC ($z$ along the RTPC). We
+parametrize the dependence on $z$, hit (pad) position, for each run in the 
+form:\\
 \begin{equation}
 TDC_{max/2} (z)= p_{0} +  p_{1} * e^{p_{2}*(z-p_{3})^{2}}.
 \label{equ:drift_speed_fit}
 \end{equation}
-Then fits are performed for these parameters as functions of the run number, such that the drift speed parametrization depends on the run and $z$ along the RTPC. The numeric parametrizations of $p_{0}$, $p_{1}$, $p_{2}$, and $p_{3}$ can be found in Appendix \ref{app:RTPC_appendix}, table \ref{Table:TDCmax}. \\
+Then fits are performed for these parameters as functions of the run number, 
+such that the drift speed parametrization depends on the run and $z$ along the 
+RTPC. The numeric parametrizations of $p_{0}$, $p_{1}$, $p_{2}$, and $p_{3}$ 
+can be found in Appendix \ref{app:RTPC_appendix}, table \ref{Table:TDCmax}. \\
 
 These functions are implemented in our reconstruction codes, and, as a result 
 of adapting the drift speed with these functions, more good tracks and elastic 
@@ -452,9 +497,9 @@ parameters of the reconstructed tracks ($sdist$, $edist$ ... etc) are more likel
 selection requirements and so more tracks are found to be good. \\
 
 
-\begin{figure}[tp]
+\begin{figure}[tpb]
 \hspace{-0.3in}
-\includegraphics[scale=0.45]{fig_rtpc/Drift_run_number.png}
+\includegraphics[scale=0.9]{fig_rtpc/updates/TDCmax2-run-number.pdf}
 \caption{ The integrated $TDC_{max/2}$ over the full z-RTPC as a function of 
 run number.  The gain after calibration in the collected good tracks (GT) and 
 elastic events (El) are shown for a sample of runs.}
@@ -475,7 +520,14 @@ is not accurate. For this reason, we chose to calculate the drift paths in a
 way that does not require an exact knowledge of the conditions in the chamber 
 and is instead based on our experimental data.  \\
 
-In our alternative method, we use the identified elastic ($e ~ ^{4}He \rightarrow e ~ ^{4}He$) events to extract the drift paths. For these events, the kinematics of the recoil $^{4}He$ are calculated from the scattered electron. Then the electrons' drift paths can be extracted from comparing the experimentally measured hits in the RTPC to the trajectory of a similar simulated $^{4}He$. In this technique, the drift paths are obtained independently of our knowledge of the exact conditions in the RTPC, in particular the electric field and the gas mixture have no impact. \\
+In our alternative method, we use the identified elastic ($e ~ ^{4}He 
+\rightarrow e ~ ^{4}He$) events to extract the drift paths. For these events, 
+the kinematics of the recoil $^{4}He$ are calculated from the scattered 
+electron. Then the electrons' drift paths can be extracted from comparing the 
+experimentally measured hits in the RTPC to the trajectory of a similar 
+simulated $^{4}He$. In this technique, the drift paths are obtained 
+independently of our knowledge of the exact conditions in the RTPC, in 
+particular the electric field and the gas mixture have no impact. \\
 
 Due to the magnetic field, the drift paths are not linear. This is handled by 
 the following procedure, in which we perform the drift paths' extraction in 
@@ -506,8 +558,10 @@ The procedure steps are:\\
    R(TDC) = \frac{60-30}{15-TDC_{max}} (TDC-15) + 60.
 \label{equ:R_TDC}
 \end{equation}
-We apply 3 TDCs-wide windows around the linear R-TDC correlation to associate the 
-GEANT4 simulated hits to measured hits.
+We apply 3 TDCs-wide windows around the linear R-TDC correlation to associate 
+the GEANT4 simulated hits to measured hits. Figure \ref{fig:R_correlation} 
+shows the distribution of $R$ versus TDC for the selected simulated hits in a 
+single $z$ bin.
 
 \item From these selected hits, we construct the drift paths $\Delta \phi$ (= 
    $\phi_{sim.}$ - $\phi_{hit\_pad}$) versus TDC. The results can be seen in 
@@ -516,7 +570,16 @@ GEANT4 simulated hits to measured hits.
    (the first GEM layer at radial distance equal to 60 mm) and the readout pads 
    (at radial distance equal to 69mm).
 
-\begin{figure}[tp]
+\begin{figure}[tpb]
+\centering
+\includegraphics[scale=0.45]{fig_rtpc/updates/TdcR_check_p1_10.png}
+\caption{(First pass). Distribution of $R$ as a function of TDC for the 
+simulated hits located in one $z$ bin. The width of the bin is 10 mm, with the 
+center at $z$ = 5 mm.}
+\label{fig:R_correlation}
+\end{figure}
+
+\begin{figure}[tpb]
 \centering
 \includegraphics[scale=0.45]{fig_rtpc/TdcPhi_p1_10.png}
 \caption{(First pass). Distribution of $\Delta \phi$ as a function of TDC for 
@@ -529,7 +592,8 @@ $\Delta\phi$.  }
 \begin{figure}[tbp]
 \centering
 \includegraphics[scale=0.45]{fig_rtpc/TdcR_p2_10.png}
-\caption{(Second pass). The calculated R as a function of TDC is corrected by the $\Delta \phi$ relation extracted from the first pass.}
+\caption{(Second pass). The calculated R as a function of TDC is corrected by 
+the $\Delta \phi$ relation extracted from the first pass.}
 \label{fig:R_TDC}
 \end{figure}
 
@@ -559,24 +623,44 @@ black line represents the final drift paths.}
 \end{figure}
 \end{itemize}
 
-We performed a third pass in which the R(TDC) correlation is refined using the drift paths from the second pass and new drift paths were extracted. As a result, we observed no difference between the drift paths of the second and the third passes. In other words, extracting the drift paths from two iterations gives us stable drift paths. \\
-
-The first drift paths were extracted using the elastic events from the early 1.204 GeV dataset. In order to ensure the consistency of these drift paths over the experimental running period, we extracted another set of drift paths using the elastic events of the 1.269 GeV runs. We observed no difference between the two sets of the drift paths, ensuring their stability over the experimental period and leaving the dependence on the TDC and $z$. The final drift paths are extracted using both datasets, 1.204 and 1.269 GeV. They take the form:
+We performed a third pass in which the R(TDC) correlation is refined using the 
+drift paths from the second pass and new drift paths were extracted. As a 
+result, we observed no difference between the drift paths of the second and the 
+third passes. In other words, extracting the drift paths from two iterations 
+gives us stable drift paths. \\
+ 
+The first drift paths were extracted using the elastic events from the early 
+1.204 GeV dataset. In order to ensure the consistency of these drift paths over 
+the experimental running period, we extracted another set of drift paths using 
+the elastic events of the 1.269 GeV runs. We observed no difference between the 
+two sets of the drift paths, ensuring their stability over the experimental 
+period and leaving the dependence on the TDC and $z$. The final drift paths are 
+extracted using both datasets, 1.204 and 1.269 GeV. They take the form:
 \vspace{-0.1in}
 \begin{equation}
 \Delta \phi (TDC, z)=  \sum\limits_{i=0}^{4} p_{i}(z)*TDC^{i},
 \end{equation}
-where the parameters, $p_{0}$, $p_{1}$, $p_{2}$, $p_{3}$ and $p_{4}$ are functions of $z$, as can be seen in Appendix \ref{app:RTPC_appendix}, table \ref{table:drift_paths}. The final drift paths are implemented in our reconstruction codes such that the reconstructed position of each hit becomes:
+where the parameters, $p_{0}$, $p_{1}$, $p_{2}$, $p_{3}$ and $p_{4}$ are 
+functions of $z$, as can be seen in Appendix \ref{app:RTPC_appendix}, table 
+\ref{table:drift_paths}. The final drift paths are implemented in our 
+reconstruction codes such that the reconstructed position of each hit becomes:
 \begin{equation}
 \phi_{exp}(z, TDC) = \phi _{hit\_pad} - \Delta \phi (z, TDC).
 \end{equation} 
 
-~~~~It is important to note that the drift paths have shown strong sensitivity to the other RTPC calibrations. Therefore, we performed iterative extractions of the drift paths and, as a results, obtained more good tracks with a signal to background ratio largely improved. Figure \ref{fig:sdist_comp_pass1v1_v6} shows an illustration of the improvements in terms of the $sdist$ parameter using the same initial collected data with an old drift paths and a newer set.
+~~~~It is important to note that the drift paths have shown strong sensitivity 
+to the other RTPC calibrations. Therefore, we performed iterative extractions 
+of the drift paths and, as a results, obtained more good tracks with a signal 
+to background ratio largely improved. Figure \ref{fig:sdist_comp_pass1v1_v6} 
+shows an illustration of the improvements in terms of the $sdist$ parameter 
+using the same initial collected data with an old drift paths and a newer set.
 
 \begin{figure}[tp]
 \centering
 \includegraphics[scale=0.38]{fig_rtpc/sdist_comp_pass1_v1_v6.png}
-\caption{The $sdist$ distribution for the collected tracks in the RTPC using the same initial collected data with an old set of drift paths, on the left, and a newer set, on the right.}
+\caption{The $sdist$ distribution for the collected tracks in the RTPC using 
+the same initial collected data with an old set of drift paths, on the left, 
+and a newer set, on the right.}
 \label{fig:sdist_comp_pass1v1_v6}
 \end{figure}
 
@@ -584,91 +668,170 @@ where the parameters, $p_{0}$, $p_{1}$, $p_{2}$, $p_{3}$ and $p_{4}$ are functio
 The drift paths and drift speed were first extracted using the
 MAGBOLTZ Monte Carlo simulation. One can find the detailed procedure of
 a similar extraction in the BoNuS analysis note \cite{GEM_holes}.
-Then, we improved this first result with many iterations after
-each change that would affect the drift paths, such as the beam-offset
- and gain calibrations of the RTPC. Moreover after each pass, the number of
- elastic events used for calibration increased, justifying by itself a new calibration. Overall, this was a long
- process that evolved and improved over the years and we concentrated in the
- note on the description of the final iteration of this calibration.
+Then, we improved this first result with many iterations after each change that 
+would affect the drift paths, such as the beam-offset and gain calibrations of 
+the RTPC. Moreover after each pass, the number of elastic events used for 
+calibration increased, justifying by itself a new calibration. Overall, this 
+was a long process that evolved and improved over the years and we concentrated 
+in the note on the description of the final iteration of this calibration.
 
 
 \subsection{Gain calibration}
-The second important calibration is the amplitude of the signal provided in ADC units. Since each charged particle deposits a certain amount of energy ($\small{\frac{dE}{dX}}$) when crossing a material, we can identify particles based on this variable. The ($\small{\frac{dE}{dX}}$) depends on the characteristics of the particle, such as its energy, mass and charge, and the nature of the medium as well. \\
+The second important calibration is the amplitude of the signal provided in ADC 
+units. Since each charged particle deposits a certain amount of energy 
+($\small{\frac{dE}{dX}}$) when crossing a material, we can identify particles 
+based on this variable. The ($\small{\frac{dE}{dX}}$) depends on the 
+characteristics of the particle, such as its energy, mass and charge, and the 
+nature of the medium as well. \\
 
 $\small{\frac{dE}{dX}}$ can be calculated using the Bethe-Bloch formula \cite{bethe_block}:
 \begin{eqnarray}
- \left\langle \frac{dE}{dX} \right\rangle &=& \rho K z^{2} \frac{Z}{A} \frac{1}{\beta^{2}} \left[ \frac{1}{2} ln \left(\frac{2m_{e}c^{2}\beta^{2}\gamma^{2}T_{max}}{I_{max}} \right) - \beta^{2} -\frac{\delta\beta\gamma}{2}\right]\\
+\left\langle \frac{dE}{dX} \right\rangle &=& \rho K z^{2} \frac{Z}{A} 
+   \frac{1}{\beta^{2}} \left[ \frac{1}{2} ln 
+   \left(\frac{2m_{e}c^{2}\beta^{2}\gamma^{2}T_{max}}{I_{max}} \right) - 
+\beta^{2} -\frac{\delta\beta\gamma}{2}\right]\\
 \text{with }
 T_{max} &=& \frac{2m_{e}c^{2}\beta^{2}\gamma^{2}}{1+2\gamma m_{e}/M + (m_{e}/M)^{2}} 
 \end{eqnarray}
-where $T_{max}$ is the maximum kinetic energy of a free electron in a single collision, and $z$, $M$, $\beta$ are the charge, mass and speed (=$p/ \sqrt{M^2 + p^2}$, where $p$ is the momentum) of the particle, respectively. $m_{e}$ is the electron mass and the constant $K$ is equal to $4 \pi N_{A} r^{2}_{e}m_{e}c^{2}$ = 0.307075 MeV mol$^{-1}$ cm$^{2}$. $Z$, $A$, $I$, $\rho$ are the effective charge, atomic number, mean excitation energy and mass density of the medium. In the RTPC, these constants are equal to 66, 126.79 mg mol$^{-1}$, 99.79 eV and 1.03 mg/cm$^3$, respectively. \\
+where $T_{max}$ is the maximum kinetic energy of a free electron in a single 
+collision, and $z$, $M$, $\beta$ are the charge, mass and speed (=$p/ \sqrt{M^2 
++ p^2}$, where $p$ is the momentum) of the particle, respectively.  $m_{e}$ is 
+the electron mass and the constant $K$ is equal to $4 \pi N_{A} 
+r^{2}_{e}m_{e}c^{2}$ = 0.307075 MeV mol$^{-1}$ cm$^{2}$. $Z$, $A$, $I$, $\rho$ 
+are the effective charge, atomic number, mean excitation energy and mass 
+density of the medium. In the RTPC, these constants are equal to 66, 126.79 mg 
+mol$^{-1}$, 99.79 eV and 1.03 mg/cm$^3$, respectively. \\
 
 Experimentally, $\small{\frac{dE}{dX}}$ can be calculated from the collected ADCs as: 
 \begin{equation}
  \left\langle \frac{dE}{dX} \right\rangle= \frac{\sum\limits_{i} \frac{ADC_{i}}{Gi}}{vtl},
 \end{equation}
-where the sum runs over all the pads contributing to a track. $ADC_{i}$ is the recorded amplitude in each pad $i$, and $G_{i}$ is its gain. The $vtl$ is the total visible length of the track in the active drift volume. This is of course assuming the energy loss in the drift region is small in regard to the total energy of the particle, which is true except close to our detection threshold.\\
+where the sum runs over all the pads contributing to a track. $ADC_{i}$ is the 
+recorded amplitude in each pad $i$, and $G_{i}$ is its gain. The $vtl$ is the 
+total visible length of the track in the active drift volume. This is of course 
+assuming the energy loss in the drift region is small in regard to the total 
+energy of the particle, which is true except close to our detection 
+threshold.\\
 
-The electron collection system of the RTPC has 3200 readout pads. The gain of each pad is the ratio between the deposited energy and the output recorded value. We extracted the gains using two techniques. The first one is by comparing the experimental recorded $\small{\frac{dE}{dX}}$ to the expected values calculated from the Bethe-Bloch formula. The second technique is based on comparing the experimental ADCs to the GEANT4 simulated ones, track by track. We latter refined this second method by comparing the ADCs of each pad to the average ADCs of the other pads in the same track.\\
+The electron collection system of the RTPC has 3200 readout pads. The gain of 
+each pad is the ratio between the deposited energy and the output recorded 
+value. We extracted the gains using two techniques. The first one is by 
+comparing the experimental recorded $\small{\frac{dE}{dX}}$ to the expected 
+values calculated from the Bethe-Bloch formula. The second technique is based 
+on comparing the experimental ADCs to the GEANT4 simulated ones, track by 
+track. We latter refined this second method by comparing the ADCs of each pad 
+to the average ADCs of the other pads in the same track.\\
 
 The two techniques were investigated for the EG6 experiment using the elastic 
 events from the 1.206 GeV data set. The first method involves a series of 
 equations to be solved to obtain the gains.
  
-~~~~The second method requires improvements in the simulation, in order to match the real experiment. In summary, these improvements are:
+~~~~The second method requires improvements in the simulation, in order to 
+match the real experiment. In summary, these improvements are:
 \begin{itemize}
-\item Implementation in the simulation of the previously extracted parametrizations of the drift speed and the drift paths.
-\item Global ADC normalization to give reasonable simulated values. In the left module, 1 ADC is equal to 
-17 eV, while it is equal to 21 eV in the right module. These normalizations were extracted from the comparison of the data to the GEANT4 simulation.
-\item Rejection of the signals from bad pads. During the experiment, the readout system of the RTPC suffered from 555 dead or noisy pads. These pads are marked by the dotted squares in figure \ref{fig:pad_row_col}.
-\item Smearing the position of the simulated hits. Experimentally, the average number of hits per track is around 80 while the initially reconstructed mean value from the simulation is around 50. We apply a Gaussian smearing on the position of the simulated hits to make the simulation more realistic, see figure \ref{fig:NNb_hits}. 
-
-\item Application of the TPC's DAQ cut on the simulated data. Experimentally, each pad must have at least 3 consecutive time bins, with ADC values above the threshold, 35 ADCs, in order to be recorded. Then, the hits of three neighboring bins on each side of the above threshold bins are also recorded, while the other hits are not.
+\item Implementation in the simulation of the previously extracted 
+   parametrizations of the drift speed and the drift paths.
+\item Global ADC normalization to give reasonable simulated values. In the left 
+   module, 1 ADC is equal to 17 eV, while it is equal to 21 eV in the right 
+   module. These normalizations were extracted from the comparison of the data 
+   to the GEANT4 simulation.
+\item Rejection of the signals from bad pads. During the experiment, the 
+   readout system of the RTPC suffered from 555 dead or noisy pads. These pads 
+   are marked by the dotted squares in figure \ref{fig:pad_row_col}.
+\item Smearing the position of the simulated hits. Experimentally, the average 
+   number of hits per track is around 80 while the initially reconstructed mean 
+   value from the simulation is around 50. We apply a Gaussian smearing on the 
+   position of the simulated hits to make the simulation more realistic, see 
+   figure \ref{fig:NNb_hits}.  
+\item Application of the TPC's DAQ cut on the simulated data. Experimentally, 
+   each pad must have at least 3 consecutive time bins, with ADC values above 
+   the threshold, 35 ADCs, in order to be recorded. Then, the hits of three 
+   neighboring bins on each side of the above threshold bins are also recorded, 
+   while the other hits are not.
 \end{itemize} 
 
-\begin{figure}[tp]
+\begin{figure}[tpb]
 \centering
-\includegraphics[scale=0.40]{fig_rtpc/NNb_hits.png}
-\caption{The distributions of the number of hits per track. The black, the blue and the red distributions are the number of hits per track  for respectively, the experimental data, simulation before smearing and the simulation with smearing.}
+\includegraphics[scale=0.35]{fig_rtpc/NNb_hits.png}
+\caption{The distributions of the number of hits per track. The black, the blue 
+and the red distributions are the number of hits per track  for respectively, 
+the experimental data, simulation before smearing and the simulation with 
+smearing.}
 \label{fig:NNb_hits}
 \end{figure}
 
 To illustrate the procedure of comparing simulated tracks with real tracks,
-we show in Figure \ref{fig:EVENT_adc_tdc} the simulated ADCs and the 
-experimental ones as a function of the TDCs for the same track. 
-Then, the gain of each pad can be obtained as the ratio of the mean experimental 
-ADCs to the one of the simulated track. For each pad, these gain 
-ratios were collected from all the identified elastic events and fitted by a 
-Landau function to obtain their gains.
+we show in Figure \ref{fig:EVENT_adc_tdc} the simulated and the experimental 
+ADCs as a function of the TDCs for the same track. Then, the gain of each pad 
+is defined as the ratio between the mean recorded experimental ADCs to the mean 
+simulated ADCs in the same track. Then for each pad, the gain ratios were 
+collected from all the identified elastic tracks and these gains were fitted by 
+a Landau function to give a first pass gain for each pad as the most probable 
+value of the fit. 
 
-As mentionned earlier, we refine this calibration after 
-the extracted gains are applied to the experimental data. We compare the ratio between the 
-mean ADCs of each pad to the mean ADCs of the whole track. This ratio is 
-collected from all the elastic events and a gain correction factor is extracted 
-for each pad. The final gains of the second method are obtained with the application of 
-this extra correction.\\
-
-\begin{figure}[tp]
+\begin{figure}[tpb]
 \centering
 \vspace{-0.1in}
-\includegraphics[scale=0.350]{fig_rtpc/EVENT_adc_tdc.png}
-\caption{The simulated (top) and the experimental (bottom) ADCs versus TDC distributions for the same track. The same colors indicate hits that were registered in the same channel for the simulation and the experiment.}
+\includegraphics[scale=0.320]{fig_rtpc/EVENT_adc_tdc.png}
+\caption{The simulated (top) and the experimental (bottom) ADCs versus TDC 
+distributions for the same track. The same colors indicate hits that were 
+registered in the same channel for the simulation and the experiment.}
 \label{fig:EVENT_adc_tdc}
 \end{figure}
 
-As the two modules of the RTPC are electronically separated, we look at their calibrations separately. Figure \ref{fig:dedx_p_exp_2nd} shows the ratio between the calculated $\small{\frac{dE}{dX}}$, using the gains of both methods, and the GEANT4 simulated $\small{\frac{dE}{dX}}$ for the elastic events in the two modules of the RTPC. We conclude that extracting the gains from comparing data to simulation in terms of the ADCs of the individual tracks gives more precise gains than solving the series of equations. Figure \ref{fig:pad_row_col} shows the gains from the second method, where the dotted squares refer to the dead or noisy pads. These are the ones that are implemented in the EG6 reconstruction codes.\\
+To make sure that the recorded ADCs by a given pad are similar to the recorded 
+ADCs by other pads in the same track, we refined this calibration after the 
+extracted gains were applied to the experimental data. At this step, we 
+compared the mean ADCs of each pad to the mean ADCs of the whole track. This 
+ratio is collected from all the elastic events and a gain correction factor is 
+extracted and applied to get a final gain for each pad, labeled as second pass 
+gain in figure \ref{fig:dedxre}. 
 
-\begin{figure}[tbp]
-\centering
-\includegraphics[scale=0.400]{fig_rtpc/dedx_p_sim_exp_2nd.png}
-\caption{The ratio between the experimental $dE/dx$, using the gains obtained with the two methods (1$^{st}$ in blue, and 2$^{nd}$ in black), to the GEANT4 simulated $dE/dx$, plotted for the two modules of the RTPC, respectively left and right. }
-\label{fig:dedx_p_exp_2nd}
+
+As the two modules of the RTPC are electronically separated, we look at their 
+calibrations separately. Figure \ref{fig:dedxre} shows the ratio between the 
+calculated $\small{\frac{dE}{dX}}$, using the gains extracted from first and 
+the second (both passes) meothods, and the GEANT4 simulated 
+$\small{\frac{dE}{dX}}$ for the elastic events in the two modules of the RTPC.  
+From the latter figure, one can see improvments obtained by using this method 
+to fine tune the gains extracted only by comparing data to simulation. We 
+conclude that extracting the gains from comparing data to simulation in terms 
+of the ADCs of the individual tracks gives more precise gains than solving the 
+series of equations. Figure \ref{fig:pad_row_col} shows the gains from the 
+second method, where the dotted squares refer to the dead or noisy pads. These 
+are the ones that are implemented in the EG6 reconstruction codes.\\
+
+
+\begin{figure}[tpb]
+\hspace{-0.5 cm}
+\includegraphics[height=11.5cm]{fig_rtpc/updates/dedx_ratio_elastic_NAB.png}
+\caption{The ratio between the experimental dEdx and the simulated ones for 
+   different regions along $z$ for the two modules of the RTPC, right module on 
+   top panel and left module on bottom panel. The blue lines are using the 
+   first method of extracting the gains (comparing the experimental recorded 
+   dEdx to the expected values calculated from the Bethe-Block formula). The 
+green lines are using the fist pass of the second method (comparing simulation 
+to data only) with all the elastic event sample. The brown lines are using the 
+final gains extracted from the second method (both passes).}
+\label{fig:dedxre}
 \end{figure}
+
+
+%\begin{figure}[tbp]
+%\centering
+%\includegraphics[scale=0.400]{fig_rtpc/dedx_p_sim_exp_2nd.png}
+%\caption{The ratio between the experimental $dE/dx$, using the gains obtained 
+%with the two methods (1$^{st}$ in blue, and 2$^{nd}$ in black), to the GEANT4 
+%simulated $dE/dx$, plotted for the two modules of the RTPC, respectively left 
+%nd right. }
+%\label{fig:dedx_p_exp_2nd}
+%\end{figure}
 
 \begin{figure}[tbp]
 \centering
 \includegraphics[scale=0.300]{fig_rtpc/pad_row_col.png}
-\caption{The extracted gains from the second method. The dotted squares refer to the position of the excluded pads.}
+\caption{The extracted gains from the second method. The dotted squares refer 
+to the position of the excluded pads.}
 \label{fig:pad_row_col}
 \end{figure}
 
@@ -687,7 +850,11 @@ understand their nature, see figure \ref{fig:dedx_cal_left}.\\
 \centering
 \includegraphics[scale=0.4]{fig_rtpc/Chan_706_1.png}
 \includegraphics[scale=0.4]{fig_rtpc/Chan_706_2.png}
-\caption{The average ADC vs. TDC distributions of the experimental hits recorded for the elastic events in one pad of the left module, pad number 706. On the top: the distribution for the elastic tracks in the region where dEdx$_{exp}$/dEdx$_{sim} $ $\sim$ 1. On the bottom: the distribution for the elastic tracks that exhibit dEdx$_{exp}$/dEdx$_{sim} $ $\sim$ 0.3.}
+\caption{The average ADC vs. TDC distributions of the experimental hits 
+   recorded for the elastic events in one pad of the left module, pad number 
+   706.  On the top: the distribution for the elastic tracks in the region 
+   where dEdx$_{exp}$/dEdx$_{sim} $ $\sim$ 1. On the bottom: the distribution 
+for the elastic tracks that exhibit dEdx$_{exp}$/dEdx$_{sim} $ $\sim$ 0.3.}
 \label{fig:Chann_706}
 \end{figure}
 
@@ -704,10 +871,14 @@ for the calibration purposes explained earlier in this chapter.}
 
 
 
-To check the validity of the extracted gains, we show $\small{\frac{dE}{dX}}$ versus the momentum (per charge unit) measured in the RTPC for all the collected tracks of the 1.206 GeV data set. In the plots, we add the theoretical lines derived from the Bethe-Bloch formula for possible detected particles: $^4He$, $^3He$, $^3H$, Deuterium (d) and the protons.
+To check the validity of the extracted gains, we show $\small{\frac{dE}{dX}}$ 
+versus the momentum (per charge unit) measured in the RTPC for all the 
+collected tracks of the 1.206 GeV data set. In the plots, we add the 
+theoretical lines derived from the Bethe-Bloch formula for possible detected 
+particles: $^4He$, $^3He$, $^3H$, Deuterium (d) and the protons.
 \begin{figure}[tbp]
-\includegraphics[scale=0.35]{fig_rtpc/dedx_p_l.png}
-\includegraphics[scale=0.35]{fig_rtpc/dedx_p_r.png}
+\includegraphics[scale=0.35]{fig_rtpc/updates/dedx_p_l.png}
+\includegraphics[scale=0.35]{fig_rtpc/updates/dedx_p_r.png}
 \caption{The experimental $\small{\frac{dE}{dX}}$ calculated using the second method gains versus $p/q$ of all the collected good tracks in the RTPC in the early 1.204 GeV dataset.}
 \label{fig:dedx_all}
 \end{figure}
