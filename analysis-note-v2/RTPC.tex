@@ -908,12 +908,12 @@ to the position of the excluded pads.}
 \label{fig:pad_row_col}
 \end{figure}
 
-In the left module of the RTPC, figure \ref{fig:dedx_p_exp_2nd}, one notices an 
-additional unexpected lower peak (dEdx$_{exp}$/dEdx$_{sim} \sim$ 0.3). These 
-events pass all the elastic requirements but for some reasons they have lower 
-ADC values. They represent around $7\%$ of all the elastic events. After 
-extended studies, the nature of these particles is not identified yet. We note 
-that this is a global phenomenon in the left module as 94$\%$ of the left 
+In the left module of the RTPC, on the bottom panel of figure \ref{fig:dedxre}, 
+one notices an additional unexpected lower peak (dEdx$_{exp}$/dEdx$_{sim} \sim$ 
+0.3). These events pass all the elastic requirements but for some reasons they 
+have lower ADC values. They represent around $7\%$ of all the elastic events.  
+After extended studies, the nature of these particles is not identified yet. We 
+note that this is a global phenomenon in the left module as 94$\%$ of the left 
 module's pads are involved in both some low and high dEdx events. For instance, 
 figure \ref{fig:Chann_706} shows the average ADC versus TDC distributions for 
 the recorded hits in one of these pads in the left module. For the calibration 
@@ -999,10 +999,9 @@ that had previously been ignored due to high occupancies before this noise
 rejection.
 
 \begin{figure}[tbp]
-%\hspace{-0.4in}
+\centering
 \includegraphics[scale=0.3]{fig_rtpc/noisy_pad_before_rejection.png}
 \includegraphics[scale=0.3]{fig_rtpc/noisy_pad_after_rejection.png}
-%\vspace{-0.3in}
 \caption{The integrated ADC vs. TDC of the hits for good tracks before (left) 
 and after (right) the oscillatory noise reduction, for a particular pad with 
 strong noise. The color scale on the z-axis is for the hit yield and identical 
@@ -1031,10 +1030,17 @@ and measured good tracks, while in other events the whole 8x2 channel group
 fired. In other words, the noise level of channels within the groups is 
 correlated in time.
 
-An event-based method was implemented to treat this noise by computing an event pedestal for the entire group for cases when there exist neighboring hits.
-Hits in the 8x2 with no neighboring hits outside the group were used to calculated an event pedestal for the group. That pedestal is subtracted off all hits in the board in that event. If there are no neighboring hits outside the 8x2 group, the whole group is rejected in that event. 
+An event-based method was implemented to treat this noise by computing an event 
+pedestal for the entire group for cases when there exist neighboring hits.
+Hits in the 8x2 with no neighboring hits outside the group were used to 
+calculated an event pedestal for the group. That pedestal is subtracted off all 
+hits in the board in that event. If there are no neighboring hits outside the 
+8x2 group, the whole group is rejected in that event. 
 
-The effect of this algorithm on a couple reconstructed tracks is shown in figure~\ref{fig:HotBoardSubtract}.  The overall result was another 5\% increase in good tracks, and this noise subtraction also allowed to recover 32 more channels previously ignored due to high occupancy.
+The effect of this algorithm on a couple reconstructed tracks is shown in 
+figure~\ref{fig:HotBoardSubtract}.  The overall result was another 5\% increase 
+in good tracks, and this noise subtraction also allowed to recover 32 more 
+channels previously ignored due to high occupancy.
 
 
 \begin{figure}[htbp]\centering
@@ -1043,8 +1049,8 @@ The effect of this algorithm on a couple reconstructed tracks is shown in figure
 \end{figure}
 
 \begin{figure}[htbp]\centering
-  \includegraphics[width=12cm]{fig_rtpc/Occ2d_norej2.png}
-  \includegraphics[width=12cm,trim={2.5cm 0 0 0},clip]{fig_rtpc/Occ2d_rej.png}
+  \includegraphics[width=12.3cm]{fig_rtpc/Occ2d_norej2.png}
+  \includegraphics[width=12cm,trim={1.9cm 0 0 0},clip]{fig_rtpc/Occ2d_rej.png}
   \caption{Occupancies before (top) and after (bottom) the two noise reduction algorithms.  The event sample and occupancy color scales are identical in the two plots.\label{fig:occ_noiserej}}
 \end{figure}
 
