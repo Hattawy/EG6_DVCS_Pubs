@@ -989,33 +989,33 @@ proton $A_{LU}$ at $\phi = 90^{\circ}$ were fitted as a function of $-t$ for
 the different bins in $x_B$ and $Q^2$. Then, the parameters of the fits were 
 parametrized as a function of $x_B$ assuming that the dependence on $Q^2$ is 
 negligible, figure \ref{fig:free-proton-alu}. Finally, the free proton 
-asymmetries were calculated at the same incoherent and coherent measured 
-kinematical values. The statistical errors on the calculated asymmetries were 
-calculated using the error bars on the fitted parameters $t_{min}$, $p_0$, and 
-$p_1$.\\ 
+asymmetries were calculated at the same measured incoherent and coherent
+kinematic values.  The statistical errors on the calculated asymmetries were 
+calculated using the error bars on the fitted parameters $a_{i}$s.\\ 
 
 
 \begin{figure}[tpb]
 \centering
 \includegraphics[scale=0.85]{fig_updated/ALU-proton-fits.pdf}
 \caption{Black circles are the free proton beam-spin asymmetries at $\phi = 90 
-^{circ}$ as a function of $-t$ in different ($x_B, Q^2$) bins as measured at 
-CLAS-E1DVCS experiment. The solid red curves are fits to the free proton 
-asymmetries in the form $p_{0}*(t-t_{min})*e^{p_{1}*\sqrt{t}}$. The dashed 
-curves are calculations using the fitted $t_{min}$, $p_0$, and $p_1$ parameters 
-as a function of $x_B$ as shown in figure \ref{fig:fitted-points-xB}. Blue 
-points are the interpolated points corresponding for the incoherent points 
-presented in this analysis. Red points are extrapolated free proton points at 
-the coherent kinematical values.}
+   ^{\circ}$ as a function of $-t$ in different ($x_B, Q^2$) bins as measured 
+   at CLAS-E1DVCS experiment. The solid red curves are fits to the free proton 
+   asymmetries in the form $a_{0}*(\sqrt{t}-a_{1})*e^{a_{2}*\sqrt{t} - a_{3}}$.  
+   The dashed curves are calculations using the fitted $a_{i}$'s parameters as 
+a function of $x_B$ as shown in figure \ref{fig:fitted-points-xB}. Blue points 
+are the interpolated points corresponding for the incoherent points presented 
+in this analysis. The red points stand for the extrapolated free proton 
+asymmetries at the measured coherent kinematics.}
 \label{fig:free-proton-alu}
 \end{figure}
 
 \begin{figure}[tpb]
-   \centering
-\includegraphics[scale=0.37]{fig_updated/tmin-xB-fit.png}\\
-\includegraphics[scale=0.37]{fig_updated/p0-xB-fit.png}\\
-\includegraphics[scale=0.37]{fig_updated/p1-xB-fit.png}
-\caption{The fitted $t_{min}$, $p_0$, and $p_1$ parameters as a function of 
+\includegraphics[scale=0.37]{fig_updated/test_a0.pdf}
+\includegraphics[scale=0.37]{fig_updated/test_a1.pdf}
+\includegraphics[scale=0.37]{fig_updated/test_a2.pdf}
+\hspace{1.7cm}
+\includegraphics[scale=0.37]{fig_updated/test_a3.pdf}
+\caption{The fitted $a_0$, $a_1$, $a_2$, and $a_3$ parameters as a function of 
 $x_B$.}
 \label{fig:fitted-points-xB}
 \end{figure}
@@ -1030,7 +1030,7 @@ mostly constrain the parameters of the imaginary part, and the unpolarized
 cross-section mostly constrain the D-term parameters. Figure 
 \ref{fig:FXfree-proton-alu} presents the published free proton asymmetries with 
 the model calculations, in solid red lines, and the interpolated free proton 
-asymmetries at our incoherent and coherent measured kinematical values.
+asymmetries at our measured coherent and incoherent kinematic values.
 
 \begin{figure}[tpb]
    \centering
@@ -1039,7 +1039,7 @@ asymmetries at our incoherent and coherent measured kinematical values.
 function of $-t$ in different ($x_B, Q^2$) bins as measured at CLAS-E1DVCS 
 experiment. The solid red lines are the model calculations based on the 
 kinematics of each bin. The blue points stand for the interpolated free proton 
-asymmetries at the kinematics of our incoherent and coherent DVCS channels.}
+asymmetries at the kinematics of our incoherent DVCS channels.}
 \label{fig:FXfree-proton-alu}
 \end{figure}
 
@@ -1062,30 +1062,31 @@ systematic uncertainties.
          \hline
  ($Q^{2}$, $x_{B}$, $-t$) & EG6 $A_{LU}$ $\pm$ stat. &  Exp. fit $\pm$ stat. & Exp. $A_{LU}$ ratio   &  Model extr. & Model $A_{LU}$ ratio &  Diff. (Exp - Model)    \\
   \hline
-(1.395, 0.166, 0.407) &  0.136 $\pm$ 0.027   &    0.174 $\pm$ 0.030   & 0.781213 $\pm$ 0.171565   &  0.2050 &  0.6634 &  0.1178 \\
-(1.886, 0.233, 0.499) &  0.156 $\pm$ 0.033   &    0.217 $\pm$ 0.046   & 0.71823  $\pm$ 0.171458   &  0.2244 &  0.6951 &  0.0231 \\ 
-(2.338, 0.290, 0.521) &  0.154 $\pm$ 0.038   &    0.220 $\pm$ 0.056   & 0.702512 $\pm$ 0.195657   &  0.2177 &  0.7110 &  0.0084 \\
-(3.098, 0.379, 0.650) &  0.122 $\pm$ 0.042   &    0.184 $\pm$ 0.061   & 0.665608 $\pm$ 0.254408   &  0.2017 &  0.6088 &  0.0568 \\
-  \hline \hline  \hline                                                                                        
-(1.425, 0.162, 0.397) &  0.118 $\pm$ 0.026   &    0.172 $\pm$ 0.029   & 0.687175 $\pm$ 0.164567   &  0.1885 &  0.6302 &  0.0569 \\
-(1.922, 0.227, 0.418) &  0.178 $\pm$ 0.029   &    0.222 $\pm$ 0.045   & 0.805541 $\pm$ 0.157091   &  0.2135 &  0.8379 &  0.0323 \\
-(2.354, 0.287, 0.492) &  0.151 $\pm$ 0.036   &    0.230 $\pm$ 0.057   & 0.657427 $\pm$ 0.179755   &  0.2170 &  0.6972 &  0.0397 \\
-(2.987, 0.390, 0.714) &  0.132 $\pm$ 0.050   &    0.163 $\pm$ 0.057   & 0.808622 $\pm$ 0.342802   &  0.2103 &  0.6281 &  0.1805 \\
-  \hline  \hline  \hline                                                                                       
-(1.823, 0.213, 0.145) &  0.146 $\pm$ 0.027   &    0.238 $\pm$ 0.070   & 0.61362  $\pm$ 0.147379   &  0.2438 &  0.6013 &  0.0123 \\
-(2.127, 0.255, 0.282) &  0.150 $\pm$ 0.031   &    0.280 $\pm$ 0.061   & 0.536143 $\pm$ 0.125386   &  0.2410 &  0.6248 &  0.0886 \\
-(2.308, 0.284, 0.490) &  0.163 $\pm$ 0.039   &    0.229 $\pm$ 0.056   & 0.711628 $\pm$ 0.192687   &  0.2195 &  0.7425 &  0.0308 \\
-(2.406, 0.308, 1.107) &  0.115 $\pm$ 0.054   &    0.080 $\pm$ 0.029   & 1.42796  $\pm$ 0.72146    &  0.1235 &  0.9311 &  0.4968 \\
-  \hline  \hline  \hline                                                                                         
-(1.143, 0.132, 0.096) &  0.332 $\pm$ 0.051   &    0.162 $\pm$ 0.039   & 2.04913  $\pm$ 0.405462   &  0.2447 &  1.3596 &  0.6895 \\
-(1.423, 0.170, 0.099) &  0.353 $\pm$ 0.051   &    0.186 $\pm$ 0.057   & 1.89763  $\pm$ 0.404796   &  0.2518 &  1.4050 &  0.4926 \\
-(1.902, 0.224, 0.107) &  0.258 $\pm$ 0.050   &    0.189 $\pm$ 0.094   & 1.36191  $\pm$ 0.431827   &  0.2359 &  1.0941 &  0.2678 \\
-    \hline \hline  \hline                                                                                      
-(1.164, 0.132, 0.095) &  0.373 $\pm$ 0.073   &    0.160 $\pm$ 0.038   & 2.33093  $\pm$ 0.535511   &  0.2234 &  1.6696 &  0.6613 \\
-(1.439, 0.170, 0.099) &  0.267 $\pm$ 0.086   &    0.186 $\pm$ 0.057   & 1.43489  $\pm$ 0.515672   &  0.2432 &  1.0978 &  0.3370 \\
-(1.844, 0.225, 0.107) &  0.362 $\pm$ 0.092   &    0.188 $\pm$ 0.095   & 1.92214  $\pm$ 0.689863   &  0.2515 &  1.4421 &  0.4800 \\
-     \hline  \hline  \hline                                                                                    
-(1.493, 0.177, 0.1)   &  0.326 $\pm$ 0.030   &    0.189 $\pm$ 0.061   & 1.721    $\pm$ 0.322757   &  0.2453 &  1.3289 &  0.3921 \\                                                                 
+(1.395, 0.166, 0.407) &  0.136 $\pm$ 0.027   &    0.1691 $\pm$ 0.0592   &  0.8042 $\pm$ 0.3248  &  0.2050 &  0.6634 &  0.1408 \\
+(1.886, 0.233, 0.499) &  0.156 $\pm$ 0.033   &    0.2081 $\pm$ 0.0738   &  0.7494 $\pm$ 0.3101  &  0.2244 &  0.6951 &  0.0543 \\ 
+(2.338, 0.290, 0.521) &  0.154 $\pm$ 0.038   &    0.2129 $\pm$ 0.0777   &  0.7268 $\pm$ 0.3206  &  0.2177 &  0.7110 &  0.0158 \\
+(3.098, 0.379, 0.650) &  0.122 $\pm$ 0.042   &    0.1765 $\pm$ 0.0676   &  0.6956 $\pm$ 0.3581  &  0.2017 &  0.6088 &  0.0868 \\
+  \hline \hline  \hline                                                                                                
+(1.425, 0.162, 0.397) &  0.118 $\pm$ 0.026   &    0.1686 $\pm$ 0.0587   &  0.7045 $\pm$ 0.2913  &  0.1885 &  0.6302 &  0.0743 \\
+(1.922, 0.227, 0.418) &  0.178 $\pm$ 0.029   &    0.2122 $\pm$ 0.0740   &  0.8429 $\pm$ 0.3257  &  0.2135 &  0.8379 &  0.005  \\
+(2.354, 0.287, 0.492) &  0.151 $\pm$ 0.036   &    0.2209 $\pm$ 0.0795   &  0.6847 $\pm$ 0.2974  &  0.2170 &  0.6972 &  0.0125 \\
+(2.987, 0.390, 0.714) &  0.132 $\pm$ 0.050   &    0.1562 $\pm$ 0.0615   &  0.8457 $\pm$ 0.4661  &  0.2103 &  0.6281 &  0.2176 \\
+  \hline  \hline  \hline                                                                                               
+(1.823, 0.213, 0.145) &  0.146 $\pm$ 0.027   &    0.2304 $\pm$ 0.0677   &  0.6363 $\pm$ 0.2223  &  0.2438 &  0.6013 &  0.035  \\
+(2.127, 0.255, 0.282) &  0.150 $\pm$ 0.031   &    0.2641 $\pm$ 0.0848   &  0.5700 $\pm$ 0.2177  &  0.2410 &  0.6248 &  0.0548 \\
+(2.308, 0.284, 0.490) &  0.163 $\pm$ 0.039   &    0.2200 $\pm$ 0.0791   &  0.7400 $\pm$ 0.3209  &  0.2195 &  0.7425 &  0.0025 \\
+(2.406, 0.308, 1.107) &  0.115 $\pm$ 0.054   &    0.0939 $\pm$ 0.0429   &  1.2240 $\pm$ 0.8030  &  0.1235 &  0.9311 &  0.2929 \\
+  \hline  \hline  \hline                                                                                               
+(1.143, 0.132, 0.096) &  0.332 $\pm$ 0.051   &    0.1821 $\pm$ 0.0528   &  1.8267 $\pm$ 0.6017  &  0.2447 &  1.3596 &  0.4671 \\
+(1.423, 0.170, 0.099) &  0.353 $\pm$ 0.051   &    0.1857 $\pm$ 0.0534   &  1.9044 $\pm$ 0.6146  &  0.2518 &  1.4050 &  0.4994 \\
+(1.902, 0.224, 0.107) &  0.258 $\pm$ 0.050   &    0.1835 $\pm$ 0.0524   &  1.4063 $\pm$ 0.4863  &  0.2359 &  1.0941 &  0.3122 \\
+    \hline \hline  \hline                                                                                              
+(1.164, 0.132, 0.095) &  0.373 $\pm$ 0.073   &    0.1819 $\pm$ 0.0529   &  2.0503 $\pm$ 0.7190  &  0.2234 &  1.6696 &  0.3807 \\
+(1.439, 0.170, 0.099) &  0.267 $\pm$ 0.086   &    0.1859 $\pm$ 0.0535   &  1.4361 $\pm$ 0.6231  &  0.2432 &  1.0978 &  0.3383 \\
+(1.844, 0.225, 0.107) &  0.362 $\pm$ 0.092   &    0.1830 $\pm$ 0.0522   &  1.9812 $\pm$ 0.7571  &  0.2515 &  1.4421 &  0.5391 \\
+     \hline  \hline  \hline                                                                                            
+(1.493, 0.177, 0.1)   &  0.326 $\pm$ 0.030   &    0.1863 $\pm$ 0.0535   &  1.7498 $\pm$ 0.5292  &  0.2453 &  1.3289 &  0.4209 \\                                                                
+ 
  \hline
  \end{tabular}
  \caption{$A_{LU}$ ratios. The first three blocks stand for the incoherent bins 
