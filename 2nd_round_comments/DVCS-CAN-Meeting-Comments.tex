@@ -84,9 +84,9 @@ Consequently, it is requested:
    ep missing M2 right cut, moving it tighter to the left (e.g. 1 and 0.75 
    GeV2).  (also see the evolution of the other distributions when doing so).\\
    \textcolor{blue}{The reconstructed incoherent asymmetries are presented in 
-      figure \ref{fig:BSA_incoherent_epMM} with the associated exlcusive 
-      distributions in figure \ref{fig:epMM2_incoh_exc_cuts}. The different 
-   tail cuts show no major effects on the reconstructed ALU.}
+   figure \ref{fig:BSA_incoherent_epMM} with the associated exclusive 
+distributions in figure \ref{fig:epMM2_incoh_exc_cuts}. We conclude that the 
+different tail cuts show no major effects on the reconstructed $A_{LU}$.}
 
    \begin{figure}[tbp]
     \centering
@@ -113,7 +113,11 @@ points) interpolation to smooth out both statistical fluctuations and
 kinematical dependences. Reintroduce a corresponding section in the CAN. Take 
 into account both stat. and syst. errors of both experiments in the ratio. The 
 committee recommends though to be cautious about the statements on the 
-asymmetry ratios in the future publication.
+asymmetry ratios in the future publication.\\
+  \textcolor{blue}{We changed the procedures completely, see Appendix G in the 
+  latest version of the analysis note. We performed fittings for the published 
+  free proton asymmetries. Then we used those fits to extrapolate the free 
+  proton asymmetries at our measured kinematics}.\\
   \begin{figure}[tbp]
     \includegraphics[height=14.6cm]{fig/ALU-proton-fits.png}
     \caption{ Fitting e1dvcs1 free proton beam-spin asymmetries. The dashed 
@@ -154,10 +158,13 @@ though to be cautious about the statements on CFF in the future publication.
 \item CAN: a number of answers to previous questions have to appear in the CAN.  
 This includes (but may not be limited to) 
 
-Figs 1-4 of \url{https://clasweb.jlab.org/rungroups/lowq/wiki/images/a/a3/Final_1st_round_comments.pdf} 
-Tighter $edist$ cut [-2,+3 mm].
-Otherwise, even if you do not show it in the CAN, mention in one line that a 
-specific study was done.
+Figs 1-4 of 
+\url{https://clasweb.jlab.org/rungroups/lowq/wiki/images/a/a3/Final_1st_round_comments.pdf} 
+Tighter $edist$ cut [-2,+3 mm]. Otherwise, even if you do not show it in the 
+CAN, mention in one line that a specific study was done.\\
+\textcolor{blue}{The analysis note has been updated with all the required 
+plots. See Q.7 for the new updates in the note.}\\
+
 \item Miscellaneous:
    \begin{enumerate}
       \item 4-D dependences of the ratio R: the statement that the integrated R's 
@@ -168,9 +175,10 @@ specific study was done.
        subtraction. The difference between the reconstructed ALU with 2D and 4D 
        background subtraction are presented in figures \ref{fig:coh_binning} 
        and \ref{fig:incoh_binning} for the coherent and the incoherent DVCS 
-       channels. Even though the 2D was a good a pproximation, a 4D subtraction 
-    is applied on the final results.} 
-    \begin{figure}[tbp]
+    channels. Even though the 2D was a good approximation, a 4D subtraction is 
+ applied on the final results.} 
+ 
+ \begin{figure}[tbp]
     \includegraphics[height=6.6cm]{fig/BSA_Coherent_xB.png}
     \includegraphics[height=6.6cm]{fig/diff_BSA_Coherent_xB.png}
     \caption{On top: the reconstruct coherent beam-spin asymmetries as a 
@@ -196,13 +204,51 @@ specific study was done.
     size of statistical and systematic errors, would accept that.
 
 \item Your Eq.(4) of "answer" is probably wrong. For our own understanding, 
-   look into this argument again.
+   look into this argument again. \\
+   \textcolor{blue}{Sorry there was a missig sign. This is the correct 
+      dependence.
+      \begin{equation}
+       \frac{\partial MM^2_{e\gamma X}}{\partial E_{\gamma}}
+                     = -2*(E_{\gamma^{*}} + M_{target} - E_{\gamma})
+                      \label{eq:egamma}
+                      \end{equation}
+        }
+
 
    \end{enumerate}
 
 \item Please keep a record of the changes in the CAN, as we will probably not 
-re-read the whole text.
+   re-read the whole text.\\
+\textcolor{blue}{\begin{enumerate}
+      \item Added the run conditions section 1.2.4.
+      \item Updated figure 2.2.
+      \item Update section 2.1.3 Track reconstruction.
+      \item Update section 2.2.1.1
+      \item Added section 2.2.1.3 Checking the initial good track requirements.
+      \item Cleaning section 2.2.2 with adding a summary for the drift paths 
+         and the drift speed calibrations, section 2.2.2.3
+      \item Cleaning section 2.2.3 Gain calibration with adding more demanded 
+         plots.
+      \item Added section 2.4 RTPC efficiency.
+      \item Cleaned section 3.2.5 with adding the required plots.
+      \item Added the demanded plots in section 4.1.2 and cleaning the writing.
+      \item Added a new section 4.1.3 regarding checking the selected coherent 
+         DVCS events.
+      \item Edited the plots in figure 4.15 with the -tmin lines.
+      \item Cleaning section 4.5 after changing to perform 4D background 
+         subtraction with a summery about other background sources and a new 
+         section for the accidental contaminations.
+      \item Updated section 4.7 Systematic uncertainties with all suggested 
+         studies.
+      \item Updated section 5.1 with the new fitting procedures for the 
+         coherent channel.
+      \item Updated all the figure in chapter 5 with the new results and the 
+         suggested modifications.
+      \item Added Appendix F with $A_{LU}$ tables.
+      \item Added Appendix G for the free proton asymmetry interpolations.
+   \end{enumerate} }
 
 \item Request to see the very first draft of the publication.
+    \textcolor{blue}{Will be provided}.
 
 \end{enumerate}
