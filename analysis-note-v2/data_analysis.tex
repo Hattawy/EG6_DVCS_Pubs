@@ -1,10 +1,10 @@
 \chapter{Particles reconstruction and simulation}
-~~~~The final state of a coherent (incoherent) DVCS event consists of three 
+The final state of a coherent (incoherent) DVCS event consists of three 
 particles: an electron, a $^4$He (a proton), and a real photon. To identify the 
 DVCS events, we first identify, individually, the different particles of 
 interest. Then, events with three detected final-state particles will be 
 further filtered by imposing the energy-momentum conservation laws, as will be 
-presented in the following chapter.\\ 
+presented in the following chapter. 
 
 
 Even after imposing the conservation laws, the DVCS sample will not have 
@@ -17,7 +17,7 @@ observable. For this purpose, we perform a technique in which we combine the
 measured exclusive $\pi^0$-electroproduction data sample with a Monte-Carlo 
 simulation to evaluate the background in the selected DVCS sample. For this 
 technique, we need to identify the experimental $\pi^0$s that come in the 
-coherent and the incoherent $\pi^0$-electroproduction channels.\\
+coherent and the incoherent $\pi^0$-electroproduction channels.
  
  
 In this chapter, we presents the procedures carried out to identify the 
@@ -27,7 +27,7 @@ kinematic corrections we applied on the particles.
 \section{Particles identification}
      
 \subsection{Electron identification} \label{Electron_identification}
-~~~~The electron detection triggers the data acquisition system to record data 
+The electron detection triggers the data acquisition system to record data 
 from all the sub-detectors of CLAS. In this analysis, a particle which passes 
 the following set of criteria is assumed to be a good electron.
   
@@ -54,10 +54,8 @@ the following set of criteria is assumed to be a good electron.
 \label{fig:z_cut}
 \end{figure}
 
-\paragraph{Fiducial cuts}
-~\\
-~\\
-~~~~Some regions of CLAS have to be excluded from the analysis to ensure an accurate detection of the different particles. For instance, an electron that hits the edge of the EC will have only part of its electromagnetic shower contained within the detector. Also, the structure of the torus magnet divides CLAS into six separate sectors, which makes edge effects non-negligible. For this reason, the following set of fiducial cuts is applied:      
+\paragraph{Fiducial cuts} ~\\
+Some regions of CLAS have to be excluded from the analysis to ensure an accurate detection of the different particles. For instance, an electron that hits the edge of the EC will have only part of its electromagnetic shower contained within the detector. Also, the structure of the torus magnet divides CLAS into six separate sectors, which makes edge effects non-negligible. For this reason, the following set of fiducial cuts is applied:      
  
 \begin{itemize}
 \item EC fiducial cut: each EC has a triangular shape with its three sides labelled as U,V and W. We apply a set of cuts (60 cm < $U$, $V$ < 360 cm, $W$ < 390 cm) to reject the electrons which hit the EC close to the edges, as shown in figure \ref{fig:EC_cut}.
@@ -81,7 +79,7 @@ the following set of criteria is assumed to be a good electron.
 \label{fig:CC_cut}
 \end{figure}
 
-\item CC fiducial cut: in reference \cite{CCref}, G. Adams {\it et al.} have studied the efficiency of the CCs. They found that within the fiducial regions, which are defined by the edges of the CCs mirrors, the detection efficiency is stable and is around 98$\%$. Outside the fiducial regions, the efficiency shows strong variations. In reference \cite{Osipenko}, M. Osipenko {\it et al.} have developed a coordinate system to represent the CC hits with respect to the center of each sector in CLAS. In this frame, the CCs mirror edges can be defined as:\\
+\item CC fiducial cut: in reference \cite{CCref}, G. Adams {\it et al.} have studied the efficiency of the CCs. They found that within the fiducial regions, which are defined by the edges of the CCs mirrors, the detection efficiency is stable and is around 98$\%$. Outside the fiducial regions, the efficiency shows strong variations. In reference \cite{Osipenko}, M. Osipenko {\it et al.} have developed a coordinate system to represent the CC hits with respect to the center of each sector in CLAS. In this frame, the CCs mirror edges can be defined as:
 \begin{multline}  
 \phi_{e}  = -63.32792 +11.05609\cdot \theta_{e} -0.6344957\cdot \theta^{2}_{e} +1.873895*10^{-2}\cdot \theta^{3}_{e} \\
 - 2.762131*10^{-2}\cdot \theta^{4}_{e}+1.604035*10^{-2}\cdot \theta^{5}_{e}. ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -110,10 +108,8 @@ Based on these works, we reject all the hits located outside the mirror edges. F
 
 \end{itemize}
 
-\paragraph{EC energy cuts}
-~\\
-~\\
-~~~~The Minimum Ionizing particles (MIPs), such as pions, deposit constant 
+\paragraph{EC energy cuts} ~\\
+The Minimum Ionizing particles (MIPs), such as pions, deposit constant 
 amounts of energy per distance while traversing the EC.  In contrast, the 
 showering particles, such as electrons and photons, deposit energies 
 proportional to their momenta. We use two energy cuts to clean the electrons 
@@ -154,10 +150,8 @@ from the main contamination, i.e.  $\pi^{-}$s.
 
 \end{itemize}
 
-\paragraph{CC cut}
-~\\
-~\\
-~~~~The Cherenkov counters have been designed to separate electrons from pions below 2.5 GeV/c momentum. In this region, the pions are not supposed to produce photoelectrons. However, low momentum $\delta$-electrons can be produced from the diffusion of the pions in the Cherenkov gas. These $\delta$-electrons produce a small number of photoelectrons. Figure \ref{fig:Nphe_cut} shows the distributions of the number of photoelectrons ($nphe$) produced by the negative particles for three different stages of the electron selection. \\
+\paragraph{CC cut} ~\\
+The Cherenkov counters have been designed to separate electrons from pions below 2.5 GeV/c momentum. In this region, the pions are not supposed to produce photoelectrons. However, low momentum $\delta$-electrons can be produced from the diffusion of the pions in the Cherenkov gas. These $\delta$-electrons produce a small number of photoelectrons. Figure \ref{fig:Nphe_cut} shows the distributions of the number of photoelectrons ($nphe$) produced by the negative particles for three different stages of the electron selection.
 
    
 One sees from figure \ref{fig:Nphe_cut} that the single-photoelectron peak is 
@@ -189,7 +183,7 @@ electrons.} \label{fig:Nphe_cut}
 \end{itemize}
 
 \subsection{Proton identification}
-~~~~Similarly to the electrons, the protons are affected by the geometry and the efficy of the different sub-detectors of CLAS. The following conditions are applied to select the good protons.
+Similarly to the electrons, the protons are affected by the geometry and the efficy of the different sub-detectors of CLAS. The following conditions are applied to select the good protons.
 \begin{itemize}
 \item Coincidence with one and only one good electron.
  
@@ -220,7 +214,7 @@ where $l_{track}$ is the measured track length and $m_{p}$ is the proton mass. O
 
 \item Vertex matching:  the last cut is the correspondence between the longitudinal vertices of the detected electron and proton. Figure \ref{fig:proton_delta_z_e_prot} shows the difference $\Delta z = z_{e} - z_{p}$ and the chosen cuts (red dashed lines).
 \end{itemize}
-~~~~Finally, figure \ref{fig:prot_Theta_Phi} shows the azimuthal angle as a function of the polar angle distribution for the identified protons after all the selection cuts. One notices that the population of the protons is different from one sector to another, which comes from the dead regions in some sectors.
+Finally, figure \ref{fig:prot_Theta_Phi} shows the azimuthal angle as a function of the polar angle distribution for the identified protons after all the selection cuts. One notices that the population of the protons is different from one sector to another, which comes from the dead regions in some sectors.
 \vspace{-0.1in}
  
 \begin{figure}[tbp]
@@ -240,7 +234,7 @@ where $l_{track}$ is the measured track length and $m_{p}$ is the proton mass. O
 \end{figure}
 
 \subsection{Photon identification}
-~~~~CLAS is equipped with two calorimeters that can detect photons: the IC, covering polar angles from 4$^\circ$ to 14$^\circ$, and the EC, covering polar angles from 8$^\circ$ to 45$^\circ$. Like for the other particles, in addition to the coincidence with one good electron, we require a set of criteria to ensure the quality of the detected photons. Due to the efficiency constraints in both calorimeters, we restrict the energy of the selected photons to be greater than 300 MeV. Further requirements are applied depending on each detector.   
+CLAS is equipped with two calorimeters that can detect photons: the IC, covering polar angles from 4$^\circ$ to 14$^\circ$, and the EC, covering polar angles from 8$^\circ$ to 45$^\circ$. Like for the other particles, in addition to the coincidence with one good electron, we require a set of criteria to ensure the quality of the detected photons. Due to the efficiency constraints in both calorimeters, we restrict the energy of the selected photons to be greater than 300 MeV. Further requirements are applied depending on each detector.   
 
 \subsubsection*{EC photons}
 A particle has to pass the following conditions in order to be considered a good photon: 
@@ -319,7 +313,7 @@ To summarize the photon selection, the two-dimensional distribution of azimuthal
 \end{figure}
 
 \subsection{Helium-4 identification}
-~~~~Details on the RTPC's structure and the definition of the different 
+Details on the RTPC's structure and the definition of the different 
 variables were given in chapter 2, section 2. In the following, we show the 
 cuts to select the RTPC good tracks with a 6-GeV beam energy. The distributions 
 will be shown for the two independent modules of the RTPC separately, labelled 
@@ -417,7 +411,7 @@ less than 20 mm.} \label{fig:rtpc_delta_z}
 \end{figure}
 
 \subsection{$\pi^{0}$ identification}
-~~~~In this analysis, we identify the $\pi^{0}$s with the goal of DVCS background subtraction as will be addressed in section \ref{Background_subtraction}. The $\pi^{0}$ identification is based on its two real photons decay mode ($\pi^{0} \rightarrow \gamma \gamma$), with a branching ratio around 98.8$\%$. In our experimental configuration, the reconstructed neutral pions can be categorized into three topologies: ICIC (the two photons are detected in the IC), ICEC (one photon in the IC and the second in the EC), and ECEC (the two photons are detected in the EC). The nominal mass of the $\pi^{0}$ is 0.135 GeV/c$^{2}$. The reconstructed invariant mass of the detected pair of photons can be seen in figure \ref{fig:pi0_selection}, for the three topologies. One can see clear peaks corresponding to the neutral pions in the three distributions.
+In this analysis, we identify the $\pi^{0}$s with the goal of DVCS background subtraction as will be addressed in section \ref{Background_subtraction}. The $\pi^{0}$ identification is based on its two real photons decay mode ($\pi^{0} \rightarrow \gamma \gamma$), with a branching ratio around 98.8$\%$. In our experimental configuration, the reconstructed neutral pions can be categorized into three topologies: ICIC (the two photons are detected in the IC), ICEC (one photon in the IC and the second in the EC), and ECEC (the two photons are detected in the EC). The nominal mass of the $\pi^{0}$ is 0.135 GeV/c$^{2}$. The reconstructed invariant mass of the detected pair of photons can be seen in figure \ref{fig:pi0_selection}, for the three topologies. One can see clear peaks corresponding to the neutral pions in the three distributions.
 \begin{figure}[tbp]
 \hspace{-0.2in}
 \includegraphics[scale=0.34]{fig_analysis/m_pi0_icic.png}
@@ -429,13 +423,13 @@ less than 20 mm.} \label{fig:rtpc_delta_z}
 \includegraphics[scale=0.38]{fig_analysis/sim_photon_phi_theta_2.png}
 \caption{The reconstructed invariant mass of the photon pairs in the three topologies: ICIC, ECIC and ECEC. On the bottom-right: $\phi$ vs. $\theta$ distribution for the simulated DVCS photons, shown that most of the DVCS photons are located in the IC.} 
 \label{fig:pi0_selection}
-\end{figure}\\
+\end{figure}
 
 One can conclude from the mean and sigma values of the distributions in figure \ref{fig:pi0_selection} that the IC has a better energy resolution than the EC. About 97$\%$ of the simulated DVCS events, as can be seen in the bottom-right plot, have the real photon emitted at very forward angles covered by IC. For these reasons, we chose to exclude the DVCS events which have their photons in the EC. Hence we are left with the two $\pi^{0}$ topologies, ICIC and ICEC, for the background subtraction as will be addressed later in this chapter.
 
 
 \section{Simulation}
-~~~~The Monte-Carlo simulation is used in this analysis for two goals: understanding the behaviour of the particles of interest in the detectors, and computing the acceptance for the DVCS background subtraction. The key stages of the simulation are summarized in figure \ref{fig:simulation_steps}: Monte-Carlo generated events pass in a GEANT3 simulation (GSIM) for the CLAS detector, then are processed with a package called GPP to add resolution and efficiency effects, and finally are reconstructed by a package named RECSIS, from which we obtain the physical quantities of each particle, like it is done for real data. In the following, each simulation stage will be briefly presented.
+The Monte-Carlo simulation is used in this analysis for two goals: understanding the behaviour of the particles of interest in the detectors, and computing the acceptance for the DVCS background subtraction. The key stages of the simulation are summarized in figure \ref{fig:simulation_steps}: Monte-Carlo generated events pass in a GEANT3 simulation (GSIM) for the CLAS detector, then are processed with a package called GPP to add resolution and efficiency effects, and finally are reconstructed by a package named RECSIS, from which we obtain the physical quantities of each particle, like it is done for real data. In the following, each simulation stage will be briefly presented.
 \begin{figure}[tbp]
 \centering
 \includegraphics[scale=0.25]{fig_simulation/simulation_steps.png}
@@ -444,7 +438,7 @@ One can conclude from the mean and sigma values of the distributions in figure \
 \end{figure}
 
 \subsection{Event generator} \label{Event_generator}
-~~~~Events are generated in the measured ranges of $Q^{2}$, $x_{B}$, $t$, and 
+Events are generated in the measured ranges of $Q^{2}$, $x_{B}$, $t$, and 
 $\phi$ following a parametrization of the cross section which roughly 
 reproduces the DVCS and exclusive $\pi^{0}$ electroproduction data 
 \cite{FX_thesis}:
@@ -460,7 +454,7 @@ This parametrization is the product of four factors which reproduce the DVCS and
 \item the $\phi$ term accounts for the cross section dependence on this angle, via the parameter $d$. The DVCS and the BH have a different behaviour than the $\pi^{0}$ exclusive events. 
 \end{itemize}
 
-~~~~Table \ref{Table:event_generator_values} shows the values of the parameters used for the cross section parametrization of the four channels of interest: $e^{4}He\gamma$, $e^{4}He\pi^{0}$, $ep\gamma$, and $ep\pi^{0}$.
+Table \ref{Table:event_generator_values} shows the values of the parameters used for the cross section parametrization of the four channels of interest: $e^{4}He\gamma$, $e^{4}He\pi^{0}$, $ep\gamma$, and $ep\pi^{0}$.
 
 \begin {table}[tbp]
 \begin{center}
@@ -488,7 +482,7 @@ d & 0.4 & 0 & 0.4 & 0 \\
 \end{center}
 \end{table}
 
-~~~~Regarding the protons in $ep\gamma$ and $ep\pi^{0}$ channels, we apply the 
+Regarding the protons in $ep\gamma$ and $ep\pi^{0}$ channels, we apply the 
 Fermi motion on the initial protons based on the parametrization of C. Ciofi 
 degli Atii and S. Simula \cite{fermi_motion}. Figure \ref{fig:fermi_mom} shows 
 the Fermi momentum distributions of the nucleons inside $^{4}He$, where we 
@@ -506,20 +500,16 @@ $GeV/c$.} \label{fig:fermi_mom}
 
 
 \subsection{GSIM}
-~~~~GSIM is a GEANT3-based simulation of the CLAS detector, developed by the CLAS collaboration \cite{GSIM}. This simulation takes into account all the experimental environment, such as the target's position, materials, and geometry, and also the various sub-detectors' materials and geometries, to reproduce the behaviour of particles traversing the detector. {\it Nota Bene} the reconstruction in the RTPC is not implemented in GSIM, however its material is present.
+GSIM is a GEANT3-based simulation of the CLAS detector, developed by the CLAS collaboration \cite{GSIM}. This simulation takes into account all the experimental environment, such as the target's position, materials, and geometry, and also the various sub-detectors' materials and geometries, to reproduce the behaviour of particles traversing the detector. {\it Nota Bene} the reconstruction in the RTPC is not implemented in GSIM, however its material is present.
 
 \subsection{GPP}
-~~~~For the purpose of making the simulation more realistic, the output of GSIM is fed to the GSIM Post-Processing (GPP) package. This package applies resolution effects on the different measured quantities, and also reads efficiency maps to match the simulation to the real experiment. The resolutions are categorized into three groups, time, position, and energy resolution. In the following, we present the techniques used in this work to extract the smearing factors for the simulation.
+For the purpose of making the simulation more realistic, the output of GSIM is fed to the GSIM Post-Processing (GPP) package. This package applies resolution effects on the different measured quantities, and also reads efficiency maps to match the simulation to the real experiment. The resolutions are categorized into three groups, time, position, and energy resolution. In the following, we present the techniques used in this work to extract the smearing factors for the simulation.
 
-\paragraph{SC time smearing}
-~\\
-~\\
-~~~~The GPP takes a single factor to smear the time in a Gaussian form. Figure \ref{fig:SC_smearing_factors} shows an illustration of the time smearing effects, in which $\Delta \beta$ for the protons \\($\Delta \beta~=~\beta_{measured}~-~\beta_{calculated}$~) is compared for data and simulation. The chosen SC smearing factor is 2.1.
+\paragraph{SC time smearing} ~\\
+The GPP takes a single factor to smear the time in a Gaussian form. Figure \ref{fig:SC_smearing_factors} shows an illustration of the time smearing effects, in which $\Delta \beta$ for the protons ($\Delta\beta~=~\beta_{measured}-\beta_{calculated}$) is compared for data and simulation. The chosen SC smearing factor is 2.1.
 
-\paragraph{DCs position smearing}
-~\\
-~\\
-~~~~The GPP uses three factors to smear the positions of the hits in the DCs, in a Gaussian form. These smearing factors are extracted from comparing simulation to data in terms of the Time-Based Tracking (TBT) residual distributions, i.e. the deviation of the hits in the DCs from the fitted track. Figure \ref{fig:DC_smearing_factors} shows the experimental, initial simulated, and smeared simulated residual distributions for the collected good electrons and protons. The extracted smearing factors are: ($a$, $b$, $c$) = (1.1, 0.85, 1.1), where the factor $a$ stands for smearing of DC1, $b$ for DC2, and $c$ for DC3. One can see the smearing effects by looking to the values of $\sigma$ from the fit in each Super-Layer (SL). We conclude that these factors match the simulation to the data.
+\paragraph{DCs position smearing} ~\\
+The GPP uses three factors to smear the positions of the hits in the DCs, in a Gaussian form. These smearing factors are extracted from comparing simulation to data in terms of the Time-Based Tracking (TBT) residual distributions, i.e. the deviation of the hits in the DCs from the fitted track. Figure \ref{fig:DC_smearing_factors} shows the experimental, initial simulated, and smeared simulated residual distributions for the collected good electrons and protons. The extracted smearing factors are: ($a$, $b$, $c$) = (1.1, 0.85, 1.1), where the factor $a$ stands for smearing of DC1, $b$ for DC2, and $c$ for DC3. One can see the smearing effects by looking to the values of $\sigma$ from the fit in each Super-Layer (SL). We conclude that these factors match the simulation to the data.
 \begin{figure}[tbp]
 \hspace{-0.7in}
 \includegraphics[scale=0.3]{fig_simulation/Exp_proton_delta_beta.png}
@@ -541,10 +531,8 @@ $GeV/c$.} \label{fig:fermi_mom}
 \end{figure}
 
 
-\paragraph{IC energy smearing}
-~\\
-~\\
-~~~~An energy smearing for the IC photons is also needed. The GPP software uses three factors to perform this smearing: $ic\_a$, $ic\_b$, and $ic\_c$, where $ic\_a$ accounts for the smearing of the width of the noise around zero using a Gaussian, while $ic\_b$ and $ic\_c$ are the smearing factors for the ADC values, using Gaussians as well. Our parameters are: 0.008, 0.036, and 0.024 respectively. Figure \ref{fig:IC_smearing_factors} shows the effect of these smearing factors on the simulated invariant mass of the $\pi^{0}$. The associated experimental distribution can be seen on the top left plot of figure \ref{fig:pi0_selection}. One notices that the smeared width of the simulated distribution matches the measured experimental one.\\
+\paragraph{IC energy smearing} ~\\
+An energy smearing for the IC photons is also needed. The GPP software uses three factors to perform this smearing: $ic\_a$, $ic\_b$, and $ic\_c$, where $ic\_a$ accounts for the smearing of the width of the noise around zero using a Gaussian, while $ic\_b$ and $ic\_c$ are the smearing factors for the ADC values, using Gaussians as well. Our parameters are: 0.008, 0.036, and 0.024 respectively. Figure \ref{fig:IC_smearing_factors} shows the effect of these smearing factors on the simulated invariant mass of the $\pi^{0}$. The associated experimental distribution can be seen on the top left plot of figure \ref{fig:pi0_selection}. One notices that the smeared width of the simulated distribution matches the measured experimental one.
 
 \begin{figure}[tp]
 \includegraphics[scale=0.32]{fig_simulation/m_pi0_sim_without_smearing.png}
@@ -555,7 +543,7 @@ $GeV/c$.} \label{fig:fermi_mom}
 
 \subsection{RECSIS}
 
-~~~~RECSIS is the reconstruction package of CLAS which is used for both data 
+RECSIS is the reconstruction package of CLAS which is used for both data 
 and simulation. The detector responses, in terms of ADCs and TDCs, are 
 converted by RECSIS into physical meaningful physical quantities, such as 
 momentum, using lookup tables. In this process, the thresholds on the different 
@@ -565,7 +553,7 @@ RECSIS for the experimental and the simulated events can be compared directly,
 as will be presented in the next section.
 
 \subsection{RTPC fastmc}
-~~~~All the sub-detectors of CLAS are implemented in the GSIM GEANT3 simulation, 
+All the sub-detectors of CLAS are implemented in the GSIM GEANT3 simulation, 
 however the RTPC is only there as dead material. As it is a more recent detector
 it has been fully simulated using a stand alone GEANT4 simulation. As a 
 first step, we replace this RTPC's simulation by a fast Monte-Carlo (fastmc) 
@@ -604,10 +592,10 @@ simulation-reconstruction chain procedures.
 
 
 \section{Kinematic Corrections}
-~~~~~The simulation enables us to extract kinematic corrections for the different particles, by comparing the reconstructed physical quantities from the simulation to the initially generated ones. In general, the reconstructed azimuthal angles of all the particles are consistent with the generated ones, while the reconstructed polar angles and momenta show some deviations. Therefore, corrections are required. In the following, the electron and the proton corrections are applied on both data and simulation, while the simulated photons are corrected differently from the experimental ones, as will be explained and justified. 
+The simulation enables us to extract kinematic corrections for the different particles, by comparing the reconstructed physical quantities from the simulation to the initially generated ones. In general, the reconstructed azimuthal angles of all the particles are consistent with the generated ones, while the reconstructed polar angles and momenta show some deviations. Therefore, corrections are required. In the following, the electron and the proton corrections are applied on both data and simulation, while the simulated photons are corrected differently from the experimental ones, as will be explained and justified. 
 
 \subsection{Electrons}
-~~~~The reconstructed kinematics of the simulated electrons are roughly consistent with the generated quantities, as can be seen in figure \ref{fig:electron_corrections}. Nevertheless, we extracted and applied corrections on the electrons to achieve a higher precision. The corrected polar angles and momenta take the form:
+The reconstructed kinematics of the simulated electrons are roughly consistent with the generated quantities, as can be seen in figure \ref{fig:electron_corrections}. Nevertheless, we extracted and applied corrections on the electrons to achieve a higher precision. The corrected polar angles and momenta take the form:
 \begin{equation}
 \theta_{corr.} = \frac{\theta_{rec.}}{f(\theta_{rec.})} ~~~~~~~ p_{corr.} = \frac{p_{rec.}}{f(p_{rec.})}
 \label{equation:correcting_function}
@@ -621,7 +609,7 @@ where $f(\theta_{Rec.})$ and $f(p_{Rec.})$ are the functions shown, respectively
 \end{figure}
 
 \subsection{Protons}
-~~~~The same procedures for the extraction of the kinematic corrections of the electrons have been carried out for the protons. The results can be seen in figure \ref{fig:proton_corrections}. The corrected polar angles and momenta are obtained using equations \ref{equation:correcting_function} and the functions shown on each plot of figure \ref{fig:proton_corrections}. 
+The same procedures for the extraction of the kinematic corrections of the electrons have been carried out for the protons. The results can be seen in figure \ref{fig:proton_corrections}. The corrected polar angles and momenta are obtained using equations \ref{equation:correcting_function} and the functions shown on each plot of figure \ref{fig:proton_corrections}. 
 \begin{figure}[tp]
 \centering
 \includegraphics[scale=0.41]{fig_simulation/before_proton_Rec_gen.png}
@@ -631,7 +619,7 @@ where $f(\theta_{Rec.})$ and $f(p_{Rec.})$ are the functions shown, respectively
 
 
 \subsection{IC photons in simulation} 
-~~~~The simulated IC photons shows non-negligible polar angle and energy deviations from the expected kinematics. This can be seen in figure \ref{fig:simulated_ic_corrections}. These deviations are almost systematic shifts, in which the polar angle deviation might be coming from badly defined geometrical values within GSIM. For these photons, we followed the same techniques of comparing the reconstructed quantities to the generated ones in order to extract the correction functions.\\
+The simulated IC photons shows non-negligible polar angle and energy deviations from the expected kinematics. This can be seen in figure \ref{fig:simulated_ic_corrections}. These deviations are almost systematic shifts, in which the polar angle deviation might be coming from badly defined geometrical values within GSIM. For these photons, we followed the same techniques of comparing the reconstructed quantities to the generated ones in order to extract the correction functions.
 
 \begin{figure}[tbp]
 \centering
@@ -650,7 +638,8 @@ As an illustration of the corrections, figure \ref{fig:egamma_difference} shows 
 \label{fig:egamma_difference}
 \end{figure}
 
-\subsection{IC photons in real data} ~~~~For the experimental IC photons, we 
+\subsection{IC photons in real data} 
+For the experimental IC photons, we 
 used the reconstructed invariant mass of the $\pi^{0}$ in the ICIC topology to 
 ensure the consistency of the IC calibration over the acceptance of the detecor 
 and the experimental running time. In this investigation, we require each 
@@ -659,7 +648,7 @@ efficiency effects of the IC.
 
 \subsubsection{Run-dependent energy correction}
 
-In the CLAS-EG6 experiment, the reconstructed mass of the $\pi^{0}$ displays a linear dependence on the energy, as can be seen in figure \ref{fig:M_E_pi0_before_corrections}. In order to ensure the consistency of the calibration over time, we extracted this mass-energy dependence for the individual runs. Figure \ref{fig:ic_alpha_beta_fitting} shows the extracted slope ($\alpha$) and offset ($\beta$), from the linear fits of the mass versus the energy of $\pi^{0}$, as a function of run number. One notices a non-negligible variation over the experimental running period due to changes in the experimental conditions, such as changes in trigger requirements and beam position.\\
+In the CLAS-EG6 experiment, the reconstructed mass of the $\pi^{0}$ displays a linear dependence on the energy, as can be seen in figure \ref{fig:M_E_pi0_before_corrections}. In order to ensure the consistency of the calibration over time, we extracted this mass-energy dependence for the individual runs. Figure \ref{fig:ic_alpha_beta_fitting} shows the extracted slope ($\alpha$) and offset ($\beta$), from the linear fits of the mass versus the energy of $\pi^{0}$, as a function of run number. One notices a non-negligible variation over the experimental running period due to changes in the experimental conditions, such as changes in trigger requirements and beam position.
 
 \begin{figure}[tbp]
 \centering
@@ -690,10 +679,10 @@ where the values of the parameters of $\alpha$ and $\beta$ can be found in Appen
 E^{\gamma}_{corr} &=& \frac{0.135*E^{\gamma}_{uncorr}}{\alpha(run)*2*E^{\gamma}_{uncorr} + \beta(run)}
 \label{ic_corrrection_formula}
 \end{eqnarray}
-which takes as input the measured uncorrected photon energy ($E^{\gamma}_{uncorr}$), and the $\alpha$ and $\beta$ parameters, which depend on the run number. It then returns the corrected energy ($E^{\gamma}_{corr}$).\\
+which takes as input the measured uncorrected photon energy ($E^{\gamma}_{uncorr}$), and the $\alpha$ and $\beta$ parameters, which depend on the run number. It then returns the corrected energy ($E^{\gamma}_{corr}$).
 
 \subsubsection{Position correction}
-~~~~Cluster position is reconstructed as a weighted average of its hits' positions.  Those hit positions are taken as the center of the front face of their corresponding crystal.  However, the energy deposition of the shower occurs at some depth into the crystal.  Due to the roughly focusing design of the calorimeter, this effect is negligible for photons originating from a vertex near the cystals' focal point.  However, for an extended target, and EG6 has the longest target used to date with this calorimeter, this effect is significant and a correction necessary.
+Cluster position is reconstructed as a weighted average of its hits' positions.  Those hit positions are taken as the center of the front face of their corresponding crystal.  However, the energy deposition of the shower occurs at some depth into the crystal.  Due to the roughly focusing design of the calorimeter, this effect is negligible for photons originating from a vertex near the cystals' focal point.  However, for an extended target, and EG6 has the longest target used to date with this calorimeter, this effect is significant and a correction necessary.
 %It is essentially a geometric projection effect.
 %, and can be thought of as a coordinate transformation.
 

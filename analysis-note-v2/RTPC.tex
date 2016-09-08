@@ -562,8 +562,8 @@ The variations with time of $TDC_{max/2}$ are shown in figure
 data taking. One can see a non-negligible variation over the three months of 
 data taking due to the changes in the experimental conditions. The main cause 
 of these variations is probably the variation of proportions in the drift gas 
-mixture which was not perfectly under control due to leaks in the thin parts of 
-the detector.
+mixture which was not perfectly under control due to leaks in the parts of 
+the detector where the gas is contained by very thin aluminized mylar.
 
 As $TDC_{max/2} -15 $ ($= \frac{Drift~path~length}{Drift~speed}$) varies with 
 both run number (time) and the geometry of the RTPC ($z$ along the RTPC). We
@@ -578,16 +578,14 @@ such that the drift speed parametrization depends on the run and $z$ along the
 RTPC. The numeric parametrizations of $p_{0}$, $p_{1}$, $p_{2}$, and $p_{3}$ 
 can be found in Appendix \ref{app:RTPC_appendix}, table \ref{Table:TDCmax}. 
 
-These functions are implemented in our reconstruction codes, and, as a result 
-of adapting the drift speed with these functions, more good tracks and elastic 
-events were identified comparing to the previous calibration set. Figure 
-\ref{fig:Drift_run_number} also shows the gain percentages of the good tracks 
-(GT) and the elastic events (El) in few runs. One can see a gradual improvement 
-with time because of giving the right drift speed, which together with the 
-drift paths gives more precise reconstructed hits chain. Therefore, the 
-parameters of the reconstructed tracks ($sdist$, $edist$ ... etc) are more likely to pass the 
-selection requirements and so more tracks are found to be good. 
-
+The implementation of these parametrizations of the drift speed in our 
+reconstruction codes resulted in more good tracks and elastic 
+events identified comparing to the previous calibration sets. Figure 
+\ref{fig:Drift_run_number} also shows these gain percentages of good tracks 
+(GT) and elastic events (El) for a few runs. The gradual improvement 
+with time is due to the improvement on the parameters of the reconstructed 
+tracks ($sdist$, $edist$ ... etc), which are then more likely to pass the 
+selection requirements. 
 
 \begin{figure}[tpb]
 \hspace{-0.3in}
@@ -599,6 +597,7 @@ elastic events (El) are shown for a sample of runs.}
 \end{figure} 
 
 \subsubsection{Drift paths parametrization}
+
 A drift path is the trajectory that an electron follows after being 
 released in the drift region. The standard software to calculate these paths is 
 the MAGBOLTZ program \cite{MAGBOLTZ}. This program requires precise knowledge 
@@ -606,44 +605,52 @@ of the experimental conditions, such as the detector's geometry, the exact
 composition of the drift gas and the applied electric and magnetic fields. Thus 
 any variation in these conditions would give inaccurate calculated drift paths.  
 In the EG6 experiment, MAGBOLTZ has been used to calculate a first set of drift 
-paths, but it was observed for the drift speed that we do not have a perfect 
-knowledge of the RTPC's conditions. Therefore, the first set of the drift paths 
-is not accurate. For this reason, we chose to calculate the drift paths in a 
-way that does not require an exact knowledge of the conditions in the chamber 
-and is instead based on our experimental data.  
+paths, but it was found rapidly that our lack of knowledge on some of the RTPC's 
+conditions was limiting the precision of the calculation. For this reason, we 
+chose to further calibrate the drift paths with a method 
+that does not require an exact knowledge of the conditions in the chamber 
+and is instead based on the experimental data.  
 
-In our alternative method, we use the identified elastic ($e ~ ^{4}He 
+In this alternative method, we use the identified elastic ($e ~ ^{4}He 
 \rightarrow e ~ ^{4}He$) events to extract the drift paths. For these events, 
-the kinematics of the recoil $^{4}He$ are calculated from the scattered 
-electron. Then the electrons' drift paths can be extracted from comparing the 
-experimentally measured hits in the RTPC to the trajectory of a similar 
-simulated $^{4}He$. In this technique, the drift paths are obtained 
-independently of our knowledge of the exact conditions in the RTPC, in 
-particular the electric field and the gas mixture have no impact. 
+the kinematic of the recoil $^{4}He$ is calculated from the scattered 
+electron. Then the electrons' drift paths is extracted by comparing event
+by event the experimentally measured hits in the RTPC to the 
+trajectory of the corresponding simulated $^{4}He$. With this technique, the 
+drift paths are obtained with limited impact from our knowledge of the 
+conditions in the RTPC, in particular the method is completely independent 
+from both electric field and gas mixture. 
 
-Due to the magnetic field, the drift paths are not linear. This is handled by 
-the following procedure, in which we perform the drift paths' extraction in 
-two passes. In the first pass, we assume a linear correlation between the 
+We perform the drift paths' extraction in two passes. 
+In the first pass, we assume a linear correlation between the 
 radius of emission $R$ (we work here in radial coordinates: $R$ and $\phi$) and the 
-drift time, to link the GEANT4 hits to the measured hits. Through this association, we obtain an 
-initial set of drift paths in the form of a $\Delta \phi$ distribution as function of time. We define $\Delta \phi$ the 
-difference between the $\phi$ of the simulated hits and the $\phi$ of the pad 
-which measured a hit. In the second pass, we refine the initial 
-correlation between the radius and the time using the initial drift paths, and 
-we extract final drift paths. To take into account the variations of the magnetic 
-field and therefore the varying Lorentz angle, the extraction 
-is made in $z$ bins along the RTPC. 
+drift time to link GEANT4 hits along the trajectory to actually measured 
+hits. Based on this association, we obtain a $\Delta \phi$ distribution 
+as function of time. $\Delta \phi$ is the 
+difference between the $\phi$ observed in GEANT4 and the $\phi$ of the pad 
+which actually measured a correlated hit. Assuming we have an axial 
+symmetry of the drift path, $\Delta \phi$ as a function of time indicates 
+how much the electron drifted because of the magnetic field for any hit. 
+This is therefore the relevant information to reconstruct the origin
+of the hits measured in the detector.
+However, the actual correlation between time and radius is not exactly
+linear. So we perform a second pass, in which we refine the initial 
+correlation between the radius and the time using the drift paths obtained 
+in the first path. We then repeat the procedure of the first pass to extract 
+the final drift paths. Because of the variations in the magnetic 
+field along the detector, the extraction is made in $z$ bins. 
 
-The procedure steps are:
+The detailed steps of the procedure are as follow:
 \begin{itemize}
-\item We first select a sample of well identified elastic events in our experimental data. Using the
+\item We first select a sample of well identified elastic events in our 
+   experimental data. Using the
    kinematics of the scattered electrons in these events, we generate in GEANT4
    a sample of events identical to the measured ones. 
 \item  For each couple of events (the experimental one and its simulated equivalent)
    we make a linear correlation between $R$, from simulation, and TDC from 
    real data, to link the GEANT4 hits to the measured ones. In our TPC, the 
    maximum $R$ equals 60 mm (close to the anode) at the trigger time, 
-   (TDC$_{min}$ = 15 TDCs), and the minimum R equals 30 mm (close to the 
+   (TDC$_{min}$ = 15 TDCs), and the minimum $R$ equals 30 mm (close to the 
    cathode) at maximum TDC ($TDC_{max}$). Thus, the linear correlations can be 
    written as:
 \begin{equation}
@@ -652,45 +659,40 @@ The procedure steps are:
 \end{equation}
 We apply 3 TDCs-wide windows around the linear R-TDC correlation to associate 
 the GEANT4 simulated hits to measured hits. Figure \ref{fig:R_correlation} 
-shows the distribution of $R$ versus TDC for the selected simulated hits in a 
-single $z$ bin.
-
-\item From these selected hits, we construct the drift paths $\Delta \phi$ (= 
-   $\phi_{sim.}$ - $\phi_{hit\_pad}$) versus TDC. The results can be seen in 
-   figure \ref{fig:1st_pass_delta_phi}. $\Delta \phi$ at the anode (TDC = 15) 
+shows the distribution of $R$ versus TDC for to select the matched hits.
+\item From these selected matched hits, we obtain $\Delta \phi$ (= 
+   $\phi_{sim.}$ - $\phi_{hit\_pad}$) as a function of time. The results can be seen in 
+   figure \ref{fig:1st_pass_delta_phi}\footnote{$\Delta \phi$ at the anode (TDC = 15) 
    is not equal to zero because there is a drift in $\phi$ between the anode 
    (the first GEM layer at radial distance equal to 60 mm) and the readout pads 
-   (at radial distance equal to 69mm).
-
+   (at radial distance equal to 69mm).}. This figure is fitted to obtain the 
+   parameterization of the drift path.
 \begin{figure}[tpb]
 \centering
 \includegraphics[scale=0.45]{fig_rtpc/updates/TdcR_check_p1_10.png}
-\caption{(First pass). Distribution of $R$ as a function of TDC for the 
+\caption{(First pass). Distribution of $R$ as a function of time (in TDC) for the 
 simulated hits located in one $z$ bin. The width of the bin is 10 mm, with the 
 center at $z$ = 5 mm.}
 \label{fig:R_correlation}
 \end{figure}
-
 \begin{figure}[tpb]
 \centering
 \includegraphics[scale=0.45]{fig_rtpc/TdcPhi_p1_10.png}
-\caption{(First pass). Distribution of $\Delta \phi$ as a function of TDC for 
+\caption{(First pass). Distribution of $\Delta \phi$ as a function of time (in TDC) for 
    in one $z$ bin. The width of the bin is 10 mm, 
 with the center at $z$ = 5 mm. The black line represents a fit for 
 $\Delta\phi$.  }
 \label{fig:1st_pass_delta_phi}
 \end{figure} 
-
 \begin{figure}[tbp]
 \centering
 \includegraphics[scale=0.45]{fig_rtpc/TdcR_p2_10.png}
-\caption{(Second pass). The calculated R as a function of TDC is corrected by 
+\caption{(Second pass). The calculated $R$ as a function of time (in TDC) is corrected by 
 the $\Delta \phi$ relation extracted from the first pass.}
 \label{fig:R_TDC}
 \end{figure}
-
-\item The correlation between R and TDC is refined using the extracted initial 
-   $\Delta \phi$ as a function of TDC as:
+\item The correlation between $R$ and the time is then refined using the extracted  
+   $\Delta \phi$ as a function of time as:
 \begin{equation}
    R (TDC) = R_{min} + \bigg[\sum\limits_{i=TDC_{Max}}^{TDC} \sqrt{DS^{2} - 
       R^{2}(i) \cdot \left(\frac{\partial \Delta \phi}{\partial TDC}(i) 
@@ -699,34 +701,34 @@ the $\Delta \phi$ relation extracted from the first pass.}
 where DS is the average drift speed, equal to 0.7 mm/TDC ( 6.14 $\mu$m/ns), 
 $R_{min}$ equals to 30 mm, $R(i)$ is the linear correlation defined in equation 
 \ref{equ:R_TDC} and $\Delta \phi (i)$ is the fit in figure 
-\ref{fig:1st_pass_delta_phi}. The sum is multiplied by a TDC (=114 ns) unit.  
-The calculated R, figure \ref{fig:R_TDC}, is very close to a straight line, 
+\ref{fig:1st_pass_delta_phi}. The sum is multiplied by a TDC unit (=114 ns).  
+The calculated R, figure \ref{fig:R_TDC}, is almost linear, 
 indicating that only two itterations are probably enough.
-
-\item In the second pass, we use the newly found R(TDC) relation to construct new $\Delta \phi$ distributions, see figure \ref{fig:final_drift_paths}.
-
+\item In the second pass, we use the newly found $R$(TDC) relation to construct 
+new $\Delta \phi$ distributions, see figure \ref{fig:final_drift_paths} for our final
+result.
 \begin{figure}[tp]
 \centering
 \includegraphics[scale=0.45]{fig_rtpc/FitResult_p2_10.png}
-\caption{(Second pass). Distribution of $\Delta \phi$ as a function of TDC 
+\caption{(Second pass). Distribution of $\Delta \phi$ as a function of time (in TDC) 
 located in the same $z$ bin shown in figure \ref{fig:1st_pass_delta_phi}. The 
 black line represents the final drift paths.}
 \label{fig:final_drift_paths}
 \end{figure}
 \end{itemize}
 
-We performed a third pass in which the R(TDC) correlation is refined using the 
-drift paths from the second pass and new drift paths were extracted. As a 
+We performed a third pass in which the $R$(TDC) correlation is refined using the 
+drift paths from the second pass. As a 
 result, we observed no difference between the drift paths of the second and the 
 third passes. In other words, extracting the drift paths from two iterations 
-gives us stable drift paths. 
+gives us stable results. 
  
 The first drift paths were extracted using the elastic events from the early 
-1.204 GeV dataset. In order to ensure the consistency of these drift paths over 
+1.204~GeV dataset. In order to ensure the consistency of these drift paths over 
 the experimental running period, we extracted another set of drift paths using 
-the elastic events of the 1.269 GeV runs. We observed no difference between the 
-two sets of the drift paths, ensuring their stability over the experimental 
-period and leaving the dependence on the TDC and $z$. The final drift paths are 
+the elastic events of the 1.269 GeV dataset. We observed no difference between the 
+two sets of the drift paths, ensuring the stability over the experimental 
+period. The final drift paths are 
 extracted using both datasets, 1.204 and 1.269 GeV. They take the form:
 \vspace{-0.1in}
 \begin{equation}
@@ -756,7 +758,7 @@ and a newer set, on the right.}
 \label{fig:sdist_comp_pass1v1_v6}
 \end{figure}
 
-\subsubsection{summary}
+\subsubsection{Summary}
 The drift paths and drift speed were first extracted using the
 MAGBOLTZ Monte Carlo simulation. One can find the detailed procedure of
 a similar extraction in the BoNuS analysis note \cite{GEM_holes}.

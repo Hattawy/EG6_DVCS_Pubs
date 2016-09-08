@@ -1,12 +1,12 @@
 \chapter{DVCS beam-spin asymmetry extraction}
 
-~~~~In the previous chapter, the events were filtered to select the ones which have one and only one good electron, and other good particles in coincidence with the electron. This chapter explains the procedure we used to extract the beam-spin asymmetry observable following this order: clean the DVCS data sample by choosing good run list, ensure the exclusivity of the selected events by imposing the conservation laws, subtract the background by combining data with simulation, and binning the identified DVCS events. This chapter contains also an estimation of the systematic uncertainty contribution from each source on the measured beam-spin asymmetry.\\
+In the previous chapter, the events were filtered to select the ones which have one and only one good electron, and other good particles in coincidence with the electron. This chapter explains the procedure we used to extract the beam-spin asymmetry observable following this order: clean the DVCS data sample by choosing good run list, ensure the exclusivity of the selected events by imposing the conservation laws, subtract the background by combining data with simulation, and binning the identified DVCS events. This chapter contains also an estimation of the systematic uncertainty contribution from each source on the measured beam-spin asymmetry.
 
 In the following, the selection procedures of the coherent DVCS events is detailed and generalized to the cases of incoherent DVCS, the coherent $\pi^{0}$, and the incoherent $\pi^{0}$ channels.    
   
 \section{Coherent channel}
 \subsection{Good run list}
-~~~~In principle, with constant beam luminosity, target density and pressure, the event rate has to be constant over the experimental time. Due to the changes in the experimental conditions, such as changing a trigger in a detector, a slight shift in the beam position or a system failure somewhere, this rate changes. We minimize the effects of these changes on the reconstructed events by selecting the good runs. To this aim, we monitor the ratio of the number of the good tracks reconstructed in the RTPC to number of the detected good electrons in CLAS (<tpc/e>) as a function of run number. Furthermore, we also look at this ratio in the six sectors of CLAS, as they are independent of each other and their performances might be different. \\
+In principle, with constant beam luminosity, target density and pressure, the event rate has to be constant over the experimental time. Due to the changes in the experimental conditions, such as changing a trigger in a detector, a slight shift in the beam position or a system failure somewhere, this rate changes. We minimize the effects of these changes on the reconstructed events by selecting the good runs. To this aim, we monitor the ratio of the number of the good tracks reconstructed in the RTPC to number of the detected good electrons in CLAS (<tpc/e>) as a function of run number. Furthermore, we also look at this ratio in the six sectors of CLAS, as they are independent of each other and their performances might be different. 
 
 In this work, after the PID procedures, a run is considered good if:
 \begin{itemize}
@@ -14,7 +14,7 @@ In this work, after the PID procedures, a run is considered good if:
 \item The six sectors show small fluctuations for each run. 
 \end{itemize}    
 
-~~~~Figure \ref{fig:tpc_over_e_Run_sec.png} shows the integrated and the 
+Figure \ref{fig:tpc_over_e_Run_sec.png} shows the integrated and the 
 sector-dependence of <tpc/e> for the individual runs. One notices a universal 
 variation of this ratio over the three months of data taking. This can be 
 attributed to changes in the RTPC. In particular, we had leaks in our gas 
@@ -37,7 +37,7 @@ vertical colored lines.} \label{fig:tpc_over_e_Run_sec.png}
 \end{figure}
 
 \subsection{Coherent DVCS event selection}
-~~~~Events with one and only one good electron, one and only one good RTPC 
+Events with one and only one good electron, one and only one good RTPC 
 track and at least one good photon are considered good coherent DVCS 
 candidates. Even though the DVCS reaction has only one real photon in the final 
 state, events with more than one good photon are not discarded at this stage.  
@@ -64,7 +64,7 @@ exclusivity cuts.
 \end{equation}
 where $\epsilon ^{2} = \frac{4M^{2}_{^4He}x^{2}_{A}}{Q^{2}}$, $x_{A} = 
 \frac{M_{p}\cdot x_{B}}{M_{^4He}}$ and $M_{p}$ ($M_{^4He}$) is the proton 
-($^{4}He$) mass.\\
+($^{4}He$) mass.
 
 In the case of the proton DVCS, the variable $x_{A}$ is replaced by the Bjorken 
 $x_{B}$ in the formula for $t_{min}$. Figure \ref{fig:tmin_both} presents 
@@ -100,9 +100,7 @@ $Q^{2}$ and $x_{B}$ of the individual events. }
 \end{itemize}
 
 \newpage
-\paragraph{Exclusivity cuts}
-
-~\\
+\paragraph{Exclusivity cuts} ~\\
 The coherent DVCS reaction is:
 \begin{equation}
 e(\mathbf{P}_{e}) + ~~^{4}He(\mathbf{P}_{^{4}He}) \rightarrow 
@@ -118,7 +116,7 @@ where the symbols in the parentheses are the energy-momentum four-vectors. We de
 \hspace{0.2in} \mathbf{P}^{e\gamma}_{X} &=& \mathbf{P}_{\gamma^{*}} + \mathbf{P}_{^{4}He} - ~~\mathbf{P}_{\gamma}
 \end{eqnarray}
 
-~~~~The exclusivity of the coherent DVCS reaction is ensured by imposing the following conservation laws:
+The exclusivity of the coherent DVCS reaction is ensured by imposing the following conservation laws:
 \begin{itemize}
 \item The co-planarity cut ($\Delta \phi$). In principle, the virtual photon, the emitted real photon and the recoil helium lie in the same plane, which is called the hadronic plane. Thus the DVCS events must have $\Delta \phi$ values around zero. The hadronic plane can be defined in three ways:
 \begin{eqnarray}
@@ -152,15 +150,14 @@ decided to use the second one as it gives better resolution.
 |\overrightarrow{\mathbf{P}}^{e^{4}He}_{X}|}   \right).
 \end{equation}
 \end{itemize}
-~~~~~Figure \ref{fig:coh_exclusivty_cuts} summarizes all the exclusivity cuts.  
+Figure \ref{fig:coh_exclusivty_cuts} summarizes all the exclusivity cuts.  
 In these plots, the blue distributions represent the coherent events after the 
 DVCS characteristic cuts and before all the exclusivity cuts. The shaded 
 distributions stand for the events which passed all the exclusivity cuts except 
 the one on the quantity plotted. We fitted each shaded distribution by a 
 Gaussian and then we applied  3$\sigma$ cuts around the mean value of each 
 distribution. The events which pass these cuts are assumed to be good $^{4}He$ 
-DVCS events.  ~\\
-~\\
+DVCS events. 
 
 \begin{figure}[!h]
 \centering
@@ -193,13 +190,13 @@ Appendix \ref{exclusivity_cuts}, table \ref{Table:coh_exclusivity_cuts}.}
 In this analysis We claim that kinematic exclusivity cuts are sufficient to
 cleanly select coherent $^4$He DVCS events without the need for $\frac{dE}{dx}$
 cuts. We performed few checks regarding applying a PID cut, where the full data
-was analyzed in the following three sets:\\
+was analyzed in the following three sets:
 \begin{itemize}
 \item Processing all the reconstructed tracks in each event with the exclusivity
-cuts.\\
+cuts.
 \item Processing events with only one good track in the RTPC being
-reconstructed.\\
-\item Processing events with only one track that passes a dedx cut.\\
+reconstructed.
+\item Processing events with only one track that passes a dedx cut.
 \end{itemize}
 
 The results are shown in figure \ref{fig:dedx_check} in terms of the
@@ -258,14 +255,14 @@ compatible.
 
 
 \subsection{Comparison with simulation}
-~~~~Coherent DVCS events were simulated according to the procedures described 
+Coherent DVCS events were simulated according to the procedures described 
 in section \ref{Event_generator}. Then, events are selected following the same 
 identification criteria as for the experimental data. Finally, We apply similar 
 exclusivity cuts as presented for the experimental coherent DVCS events. That 
 is each exclusive distribution is fitted by a Gaussian and a 3$\sigma$ cut is 
 applied. So the cut are not identical, but obtained with the same method. This 
 is done to avoid issues on variables where the peak is not in the exact same 
-place in simulation and in data.\\
+place in simulation and in data.
 
 Figure \ref{fig:coh_comparison_with_simulation_1} shows the comparison between 
 the experimental and the simulated DVCS events as a function of the kinematic 
@@ -302,14 +299,14 @@ kinematic variables: $Q^{2}$, $x_{B}$, $-t$, and $\phi$. }
 ~\newpage
 
 \section{Incoherent channel}
-~~~~In this channel, the DVCS process happens on a bound proton. Thus, the 
+In this channel, the DVCS process happens on a bound proton. Thus, the 
 final state has a recoil proton instead of the helium nucleus. Therefore, 
 events with one good electron, one recoil proton, and at least one real photon 
 are the good candidates here. For the rest, we follow the same steps that were 
 introduced for the coherent DVCS selection.
 
 \subsection{Good run list}
-~~~~The events rate stability is verified by looking at the rate of the 
+The events rate stability is verified by looking at the rate of the 
 detected number of protons to the detected electrons (<p/e>). Like for the 
 coherent channel, the same technique for the determination of the good run list 
 is followed herein. The results are presented in figure 
@@ -326,11 +323,11 @@ points are the sectors of the rejected runs. }
 
 
 \subsection{Proton DVCS event selection}
-~~~~To certify that an event is a proton DVCS one, we require the same DVCS 
+To certify that an event is a proton DVCS one, we require the same DVCS 
 kinematic cuts as those presented for the coherent DVCS selection. Then, the 
 exclusivity of the DVCS reaction is ensured by applying an equivalent set of 
 exclusivity with taking a proton at rest as the target, instead of $^4He$.  
-Figure \ref{fig:incoh_exclusivty_cuts} summarizes these exclusivity cuts.\\
+Figure \ref{fig:incoh_exclusivty_cuts} summarizes these exclusivity cuts.
 
 %\paragraph{$\blacklozenge$ DVCS characteristics}
 %\begin{itemize}
@@ -370,12 +367,12 @@ Figure \ref{fig:incoh_exclusivty_cuts} summarizes these exclusivity cuts.\\
 \end{figure}
 
 \subsection{Comparison with simulation}
-~~~~The three particles of the simulated $ep\gamma$ DVCS events are selected 
+The three particles of the simulated $ep\gamma$ DVCS events are selected 
 applying the previously described identification requirements. The events with 
 three identified particles (e, p, $\gamma$) are required to pass a set of 
 exclusivity cuts such as the ones of the experimental incoherent DVCS events.  
 In this section, a comparison between the experimental and the simulated data 
-is carried out.\\
+is carried out.
 
 Figure \ref{fig:incoh_coparison_with_simulation_1} shows the comparison between 
 the simulated (red lines) and the experimental (shaded blue) incoherent DVCS 
@@ -412,7 +409,7 @@ indicate the theoretically expected values for each exclusive quantity.}
 ~\newpage
 ~\newpage
 \section{Kinematic coverages}
-~~~~The one-dimensional distributions of explored kinematical regions can be 
+The one-dimensional distributions of explored kinematical regions can be 
 seen in figure \ref{fig:coh_comparison_with_simulation_1} for the coherent, and 
 in figure \ref{fig:incoh_coparison_with_simulation_1} for the incoherent DVCS 
 channels. In figure \ref{fig:kinematic_coverage}, we show two-dimensional 
@@ -448,7 +445,7 @@ $-t$ as a function of $\phi$.} \label{fig:kinematic_coverage}
 \end{figure}
 
 \section{Data binning}
-~~~~~The DVCS cross section and $A_{LU}$, equations \ref{BSA_equation} to 
+The DVCS cross section and $A_{LU}$, equations \ref{BSA_equation} to 
 \ref{eq:A_LU-coh}, depend on the four kinematic variables: $Q^{2}$, $x_{B}$, 
 $t$, and $\phi$. The number of identified coherent (incoherent) DVCS events is 
 about 5000 (30k). Due to our limited statistics only, a two-dimensional binning 
@@ -481,7 +478,7 @@ represent the nine bins in $\phi$.} \label{fig:coh_Q2_bins}
 \label{Background_subtraction}
 
 \subsection{$\pi^0$ contaminations}
-~~~~Even with all cuts applied to select the selected DVCS events, the events 
+Even with all cuts applied to select the selected DVCS events, the events 
 are not all DVCS events. In our kinematic region, the main contamination comes 
 from the exclusive electroproduction of $\pi^{0}$ ($e ^{4}He \rightarrow e 
 ^{4}He \pi^{0} \rightarrow e ^{4}He \gamma \gamma $, $e p \rightarrow e p 
@@ -516,18 +513,18 @@ simulations by generating and simulating $e^{4}He\pi^{0}$.
 $N^{Sim.}_{e^{4}He\pi^{0}(\gamma)}$ is the number of such events passing the 
 DVCS requirements, while $N^{Sim.}_{e^{4}He\pi^{0}(\gamma \gamma)}$ is the 
 number of simulated $e^{4}He\pi^{0}$ events passing the exclusivity cuts for 
-$e^{4}He\pi^{0}$ events.\\
+$e^{4}He\pi^{0}$ events.
 
 The previous formulas apply to the case of the coherent DVCS. The same 
 procedures hold for the incoherent case by replacing the $^{4}He$ with the 
-proton.\\
+proton.
 
 The selection of the exclusive $e^{4}He\pi^{0}$ and $ep\pi^{0}$ events requires 
 the detection of one good electron, one good $\pi^{0}$ in the topology ICIC or 
 ICEC, and one good $^{4}He$ track in the coherent case, or one good proton in 
 the incoherent case. In order to ensure that this is a deep process, we apply 
 the same kinematic cuts as DVCS. These cuts and the comparisons with simulation 
-can be found in Appendix \ref{app:Exclusive_pi0_selection}.\\
+can be found in Appendix \ref{app:Exclusive_pi0_selection}.
 
 
 Figure \ref{fig:coh_acceptance _ratios} shows the coherent acceptance ratio as 
@@ -539,12 +536,12 @@ figure \ref{fig:incoh_acceptance _ratios}. The mean value of the acceptance
 ratio for the coherent channel is around 25$\%$, with some dependence on 
 $x_{B}$ and $\phi$, and almost no dependence on $Q^{2}$ and $-t$. For the 
 incoherent channel, the mean acceptance ratio is around 20$\%$ with some 
-dependence on the four kinematic variables.\\
+dependence on the four kinematic variables.
 
 Figure \ref{fig:cont_yield} presents the measured coherent and incoherent 
 $\pi^{0}$ contmaination with respect to the measured DVCS events. On both 
 channels, the contamination increases strongly with -$t$, with a mean of 2$\%$ 
-(6$\%$) for the coherent (incoherent) channel. \\
+(6$\%$) for the coherent (incoherent) channel. 
 
 
 \begin{figure}[tpb]
@@ -636,7 +633,7 @@ section.
 
 
 \subsection{Accidental contaminations}
-~\\
+
 
 The $\Delta z$ distributions between the recoil hadrons and the scattered 
 electrons, see figures \ref{fig:rtpc_delta_z} and 
@@ -651,7 +648,7 @@ our asymmetries in the form: $ A_{LU~~corr.} = \frac{1}{1 - contamination}
 A_{LU}$, with a 4.1$\%$ global accidental contamination for the coherent DVCS 
 channel (see numbers in table~\ref{table:Events_numbers}). The same procedures 
 were performed on the incoherent channel, and a 
-global contamination of 6.5$\%$ has been observed.\\
+global contamination of 6.5$\%$ has been observed.
 
 \begin{figure}[tbp]
 \centering
@@ -692,7 +689,7 @@ global contamination of 6.5$\%$ has been observed.\\
 
 ~\newpage
 \section{Statistical uncertainties}
-~~~~~In terms of the collected number of events in each beam-helicity state ($N^{+}$, $N^{-}$), $A_{LU}$ can be expressed as:
+In terms of the collected number of events in each beam-helicity state ($N^{+}$, $N^{-}$), $A_{LU}$ can be expressed as:
 \begin{equation}
 A_{LU} = \frac{1}{P_{B}} \frac{N^{+} - N^{-}}{N^{+} + N^{-} }.
 \label{equation: ALU}
@@ -716,7 +713,7 @@ The errors on $P_{B}$ and $R$ are not considered statistical errors. They contri
 
 \section{Systematic uncertainties}
 
-~~~~It is particularly convenient to use the $A_{LU}$ as a DVCS observable, 
+It is particularly convenient to use the $A_{LU}$ as a DVCS observable, 
 because most of the experimental systematic uncertainties, such as 
 normalization and efficiencies that appear in the cross sections cancel out in 
 the asymmetry ratio. However, some sources still affect this asymmetry and 
@@ -728,9 +725,7 @@ of the contribution from each source.
 
  
 
-\paragraph{DVCS selection cuts}
-~\\
-
+\paragraph{DVCS selection cuts} ~\\
 In order to evaluate the systematic uncertainties stemming from the DVCS 
 selection cuts, the analysis was repeated changing cuts. As it can be seen in 
 figure \ref{fig:coh_exclusivty_cuts}, the 3$\sigma$ cuts cover up to 97$\%$ of 
@@ -813,9 +808,7 @@ widths.}
 
 
 
-\paragraph{Fitting sensitivity to our binning}
-~\\
-
+\paragraph{Fitting sensitivity to our binning} ~\\
 In order to evaluate how sensitive are the fit results to our binning, we 
 binned the data into 11 bins in $\phi$ and we compared the reconstructed 
 asymmetries to the results from our 9 binning. Figure 
@@ -858,9 +851,7 @@ to our estimated uncertainties for the extracted asymmetries at $\phi =
       \label{fig:incoh_BSA_9_11}
     \end{figure}
 
-\paragraph{Beam polarization}
-~\\
-   
+\paragraph{Beam polarization} ~\\
 The beam polarization has been measured regularly during the CLAS-EG6 data 
 taking period by using the Hall B M\o ller polarimeter. This polarimeter 
 measures the angular distribution of the M\o ller electrons to obtain the beam 
@@ -883,20 +874,18 @@ positive current. The figure is taken from \cite{yohann}.}
 \end{figure}
 
 
-\paragraph{Acceptance ratio}
-~\\
-
+\paragraph{Acceptance ratio} ~\\
 Predominantly, two techniques are used to estimate the systematic uncertainty 
 associated with the calculated acceptance ratio (R). The first is via repeating 
 the analysis by implementing R differently, while the second technique is by 
-using two generating models to calculate R.\\
+using two generating models to calculate R.
 
 Both methods were investigated in this work. Regarding the first method, the 
 analysis was repeated by taking three different values for R: 0.8*R, R and 
 1.2*R. The beam-spin asymmetries at $\phi = 90^{\circ}$ were extracted and 
 compared, see figure \ref{fig:background_sub_sys_uncer}. A maximum variation of 
 2$\%$ (0.6$\%$) has been observed on the incoherent (coherent) $A_{LU}$ at 
-$\phi = 90^{\circ}$. \\
+$\phi = 90^{\circ}$. 
 
 \begin{figure}[tp]
 \includegraphics[scale=0.30]{fig_dvcs/final_coh_BSA_NR.png}
@@ -928,9 +917,7 @@ blue (red) points are the ratios with (without) the cross section
 parametrization.} \label{fig:accep_ratio_sys_uncer}
 \end{figure}
 
-\paragraph{Radiative corrections}
-~\\
-
+\paragraph{Radiative corrections} ~\\
 In this analysis, we have assumed that the beam-spin asymmetry arises from the 
 leading twist DVCS amplitude and its interference with the BH process.  
 However, there are higher-order electromagnetic corrections which can affect 
@@ -943,7 +930,7 @@ beam energy and Q$^{2}$=1.25 GeV$^{2}$. In our case, as the radiative emission
 is inversely proportional to the mass of the radiating particle, the helium and 
 the proton contributions are negligible compared to the leptonic one.  
 Therefore, we can still take the result of Afanasev as a good estimation for 
-the radiative  effects on our measured $A_{LU}$.\\
+the radiative  effects on our measured $A_{LU}$.
 
 %\paragraph{Beam asymmetry}
 %The injector of JLab produces electrons with positive and negative helicities 
@@ -960,9 +947,7 @@ the radiative  effects on our measured $A_{LU}$.\\
 %\label{fig:beam_charge}
 
 
-\paragraph{Systematic uncertainty summary}
-~\\
-~\\
+\paragraph{Systematic uncertainty summary} ~\\
 The total systematic uncertainty is the quadratic sum of the previously 
 described individual uncertainties. Table \ref{Table:systematic_uncertainties} 
 summarizes the sources of systematic uncertainty and their contributions on the 
