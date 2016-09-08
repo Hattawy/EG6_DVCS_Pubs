@@ -3,7 +3,21 @@
 
 \section{The EG6 RTPC}
 
-~~~~At 6 GeV incident electron beam energy, the recoil $^{4}He$ nuclei from the coherent DVCS channel, have an average momentum around 200 MeV/c. CLAS cannot detect such low energy particles, for exemple protons are detected with a threshold of about 250 MeV/c, which will be even higher for helium. In order to detect such low-energy recoils a Radial TPC (RTPC), similar to the one used during the BoNuS run \cite{BONUS}, was added to CLAS. In 2009, the CLAS-EG6 group \cite{proposal} has built this RTPC, figure \ref{fig:RTPC2} shows a close photo of the RTPC, while figure \ref{fig:RTPC_xscetion} shows a schematic drawing of its internal structure. It is a 200 mm-long and 150 mm-diameter TPC, composed of two electronically separated modules, each covering about 150$^{\circ}$ of the azimuthal angle. The RTPC tracks the charged particles through the ionization centers they leave in the gas-filled detection volume. Then, the ionized electrons drift under the effect of an electric field and are amplified by a gas electron multiplier system before to be detected on collection pads.
+At 6 GeV incident electron beam energy, the recoil $^{4}He$ nuclei from 
+the coherent DVCS channel, have an average momentum around 200 MeV/c. CLAS 
+cannot detect such low energy particles, for exemple protons are detected with 
+a threshold of about 250 MeV/c, which will be even higher for helium. In order 
+to detect such low-energy recoils a Radial TPC (RTPC), similar to the one used 
+during the BoNuS run \cite{BONUS}, was added to CLAS. In 2009, the CLAS-EG6 
+group \cite{proposal} has built this RTPC, figure \ref{fig:RTPC2} shows a 
+close photo of the RTPC, while figure \ref{fig:RTPC_xscetion} shows a 
+schematic drawing of its internal structure. It is a 200~mm-long and 
+150~mm-diameter TPC, composed of two electronically separated modules, each 
+covering about 150$^{\circ}$ of the azimuthal angle. The RTPC tracks the 
+charged particles through the ionization centers they leave in the gas-filled 
+detection volume. Then, the ionized electrons drift under the effect of an 
+electric field and are amplified by a gas electron multiplier system before to 
+be detected on collection pads.
 
 
 \begin{figure}[tp]
@@ -11,12 +25,14 @@
 \vspace{0.3in}
 \includegraphics[height=6.2cm]{fig_rtpc/RTPC_exp_cut.jpg}
 \vspace{0.1in}
-\caption{A view of the RTPC before insertion into the solenoid. The incident electron beam comes from the left.} 
+\caption{A view of the RTPC before insertion into the solenoid. The incident 
+electron beam comes from the left.} 
 \label{fig:RTPC2}
 \end{minipage} \hfill
 \begin{minipage}[c]{.46\linewidth}
 \hspace*{-0.3in}\includegraphics[height=8.0cm]{fig_rtpc/RTPC_1_all.png}
-\caption{A cross section of the RTPC taken on a plane perpendicular to the beam line, with a typical $^4He$ track crossing the drift volume.}
+\caption{A cross section of the RTPC taken on a plane perpendicular to the 
+beam line, with a typical $^4He$ track crossing the drift volume.}
 \label{fig:RTPC_xscetion}
 \end{minipage}
 \end{figure}
@@ -62,13 +78,13 @@ The Ne-DME gas mixture has been chosen as the drift gas because of its
 low-diffusion characteristics and small Lorentz angles (the angles between the 
 drift direction of electrons under the influence of magnetic field and the 
 direction of the electric field). These characteristics minimize the changes in 
-the drift velocity of the ionization electrons \cite{DME}.\\ 
+the drift velocity of the ionization electrons \cite{DME}. 
 
 The GEMs amplify the ionized electrons to produce measurable signals. Figure 
 \ref{fig:GEMs} shows a microscopic photo of a GEM. It is made from an insulator 
 (Kapton) sandwiched between two copper layers. The mesh of each GEM layer is 
 chemically etched with 50-$\mu$m-diameter holes in double-conical cross section 
-shapes, as can be seen from the schematic plot on the right.\\
+shapes, as can be seen from the schematic plot on the right.
 
 \begin{figure}[tbp]
 \centering
@@ -91,7 +107,7 @@ two copper layers. Such a strong field leads to high ionization of the initial
 electrons and therefore amplification of the signals. Furthermore, an 
 additional potential difference of 150 V is set between each two successive GEM 
 layers to push the amplified electrons towards the readout board. In this 
-configuration, the gain of each GEM layer is of the order of 100.\\
+configuration, the gain of each GEM layer is of the order of 100.
 
 
 The RTPC electron collection system has 3200 readout pads. Each module of the 
@@ -107,14 +123,14 @@ ionization point to the readout board.
 
  
 \subsection{Working principle}
-~~~~When a charged particle traverses a gas, it ionizes the gas-atoms along its 
+When a charged particle traverses a gas, it ionizes the gas-atoms along its 
 trajectory. In a TPC, the electrons released in the ionization drift towards 
 the readout board under the effect of an applied electric field. The drift 
 velocity depends on the gas mixture, and on the electric ($\vec{E}$) and 
 magnetic ($\vec{B}$) fields. The recorded time of the electrons provides 
 information on how far the initial ionizations happened in the drift region, 
 leading to reconstruct the original points of ionization, while the recorded 
-ADCs give the deposited energy.\\
+ADCs give the deposited energy.
 
 In our TPC the cathode and the anode are two cylinders. Thus, the generated 
 $\vec{E}$ field in the drift region has a purely radial components, 
@@ -123,7 +139,7 @@ two-cylinders configuration produces small gradient components at the sides of
 the RTPC. This issue was solved by installing field cages at the ends of the 
 RTPC to keep a regular $\vec{E}$ field. These caused some high voltage issues 
 and were disconnected during the experiment, partly justifying the time 
-dependent calibration described below. \\
+dependent calibration described below. 
 
 The $\vec{B}$ field is generated by the solenoid. Figure \ref{fig:B_MAP} shows 
 the magnetic field vectors in the different regions of the RTPC. The presence 
@@ -145,7 +161,7 @@ represents the longitudinal distance along the RTPC.} \label{fig:B_MAP}
 \end{figure}
 
 \subsection{Track reconstruction}
-~~~~In order to reconstruct tracks we must first select the good hits. The 
+In order to reconstruct tracks we must first select the good hits. The 
 first step is the rejection of out-of-time hits and the noise reduction, as 
 will be explained in section \ref{sec:noise_rejection}. The second step is the 
 spatial reconstruction of the hits, using the extracted drift speed and drift 
@@ -154,7 +170,7 @@ obtained from the recorded time (TDC) and from the position of its pad. In the
 third step, the reconstructed nearby hits are linked together in chains. The 
 maximum distance between two adjacent hits must be less than 10.5 mm to chain 
 them. Then, the number of hits per chain is required to be greater than 10 hits 
-in order to proceed to the fitting step. \\
+in order to proceed to the fitting step. 
 
 A fit to a chain of hits is performed in two iterations. In the first 
 iteration, the hits of the chain are fitted with a helix. The helix fit is 
@@ -180,7 +196,7 @@ and $r_{0}$ [70, 150] ([130,180]) mm.
 
 
 \section{RTPC calibration}
-~~~~Reconstructing a trajectory from the recorded time information of the 
+Reconstructing a trajectory from the recorded time information of the 
 electrons requires a good knowledge of their drift speed and drift paths.  
 Also, the gains of the readout pads are required to calculate $\frac{dE}{dx}$ 
 from the recorded ADCs. The determination of the drift paths and the gain 
@@ -189,7 +205,7 @@ require well identified events, so we decided to use elastic scattering
 ($e^{4}He \rightarrow e^{4}He$). However, the cross section of 
 the elastic process at detectable angles is highly suppressed at higher beam 
 energy, so we had specific calibration runs with 1-pass 
-beam energies of 1.024 and 1.269 GeV. \\
+beam energies of 1.024 and 1.269 GeV.
 
 A GEANT4 simulation for the RTPC has been developed to help reproduce these 
 events in order to properly extract the drift paths and the gains. Their 
@@ -197,7 +213,7 @@ extractions are based on comparing the experimentally identified $^4He$ elastic
 tracks to the GEANT4 simulated ones. Indeed, the kinematics of each elastic 
 $^4He$ can be calculated from the electron measured in CLAS and then simulated 
 in GEANT4. The output of the simulation gives an expected trajectory that we then
-match to to the measured signals to determine the drift paths. \\
+match to to the measured signals to determine the drift paths. 
 
 This process is iterative since good tracks need to be identified at the 
 beginning of the process and as the calibration improves, more good tracks 
@@ -210,7 +226,8 @@ time, we present in the following subsections only the method used for the last
 iteration of our calibration process.
 
 \subsection{Event selection}
-~~~~Figure \ref{fig:RTPC_track} shows a drawing of a segment of the RTPC, where a $^4He$ track (in 
+Figure \ref{fig:RTPC_track} shows a drawing of a segment of the RTPC, 
+where a $^4He$ track (in 
 green) crosses the volume of the RTPC, producing a chain of ionization points 
 within the drift gas. The released electrons follow the drift paths (in black) 
 towards the readout board under the effect of the electromagnetic field 
@@ -221,7 +238,7 @@ trigger time), also called time offset, which is identical
 for all readout channels. In our convention, the distance between the 
 first ionization point in the chain and the cathode is labelled as $sdist$, 
 while the distance between the last point and the anode is labelled as 
-$edist$.\\ 
+$edist$. 
 
 \begin{figure}[tbp]
 \centering
@@ -243,7 +260,7 @@ angles.
 
 \subsubsection{RTPC good track requirements} \label{good_track_req}
 
-~~~~A good RTPC track passes the following requirements:
+A good RTPC track passes the following requirements:
 \begin{itemize}
 \item The number of active pads in the track is greater than 3. 
 
@@ -321,7 +338,8 @@ RTPC.
 \begin{minipage}[c]{.46\linewidth}
 \hspace{-0.3in}
 \includegraphics[height=6.5cm]{fig_rtpc/rtpc_X2.png}
-\caption{The $\chi^{2}$ distribution for the positive tracks in the RTPC. The red line represents the cut we apply to select good tracks.}
+\caption{The $\chi^{2}$ distribution for the positive tracks in the RTPC. The red 
+line represents the cut we apply to select good tracks.}
 \vspace{+0.1in}
 \label{fig:rrtpc_X2}
 \end{minipage}
@@ -331,7 +349,7 @@ RTPC.
 \begin{minipage}[c]{.46\linewidth}
 \hspace{-0.3in}
 \includegraphics[height=6.5cm]{fig_rtpc/rtpc_sdist.png}
-\caption{$sdist$ distribution for the positive tracks in the RTPC. We set $|sdist|$ < 2.0 mm to select good tracks.} 
+\caption{$sdist$ distribution for the positive tracks in the RTPC. We set $|sdist| < 2.0$ mm to select good tracks.} 
 \vspace{0.3in}
 \label{fig:rrtpc_sdist}
 \end{minipage} \hfill
@@ -360,9 +378,9 @@ RTPC.
 \centering
 e(k) + ^{4}He(p) \rightarrow e(k') + ^{4}He(p')
 \end{equation}
-with the symbols in parenthesis representing the four-momenta of the particles. \\
+with the symbols in parenthesis representing the four-momenta of the particles. 
 
- In addition to the good-track requirements described above, to select elastic events we impose further constraints. The co-planarity between the scattered electron and the recoil $^4He$ is ensured using a $\Delta \phi$ (=$\phi_{e}-\phi_{^{4}He}$) cut as shown in Figure \ref{fig:delta_phi_elastic}. Like for $\Delta z$, the $\Delta \phi$ 2$\sigma$ cut is dependent on $z$ to account for systematic variations. Our final parametrizations can be found in Appendix \ref{app:RTPC_appendix} as well.\\
+ In addition to the good-track requirements described above, to select elastic events we impose further constraints. The co-planarity between the scattered electron and the recoil $^4He$ is ensured using a $\Delta \phi$ (=$\phi_{e}-\phi_{^{4}He}$) cut as shown in Figure \ref{fig:delta_phi_elastic}. Like for $\Delta z$, the $\Delta \phi$ 2$\sigma$ cut is dependent on $z$ to account for systematic variations. Our final parametrizations can be found in Appendix \ref{app:RTPC_appendix} as well.
 
 An additional elastic cut is performed by comparing the measured $^4He$ polar angle to the calculated one, based on the measured electron in CLAS. Indeed, from momentum conservation the $^4He$ polar angle can be calculated as:
 \begin{eqnarray}
@@ -370,7 +388,7 @@ An additional elastic cut is performed by comparing the measured $^4He$ polar an
 \text{ with~~} p^{^4He}_{cal} &=& \sqrt{(E_{b} + M_{^4He} - p_{e'})^{2} - M^{2}_{^4He}}
 \label{equ:theta_helium}
 \end{eqnarray}
-where $p_{e'}$ and $\theta_{e'}$ are the electron's measured momentum and polar angle, $E_{b}$ is the beam energy and $M_{^4He}$ is the helium mass (3.727 GeV/c$^{2}$). Figure \ref{fig:delta_theta_elastic} shows the $\Delta \theta$ ($\theta^{^4He}_{cal}$ - $\theta^{^4He}_{meas}$) distribution versus the $^4He$ z-vertex. No significant difference was observed between the two modules regarding this quantity. The obtained parametrization of the mean and the width of the $\Delta \theta$  distribution can be found in Appendix \ref{app:RTPC_appendix}.\\
+where $p_{e'}$ and $\theta_{e'}$ are the electron's measured momentum and polar angle, $E_{b}$ is the beam energy and $M_{^4He}$ is the helium mass (3.727 GeV/c$^{2}$). Figure \ref{fig:delta_theta_elastic} shows the $\Delta \theta$ ($\theta^{^4He}_{cal}$ - $\theta^{^4He}_{meas}$) distribution versus the $^4He$ z-vertex. No significant difference was observed between the two modules regarding this quantity. The obtained parametrization of the mean and the width of the $\Delta \theta$  distribution can be found in Appendix \ref{app:RTPC_appendix}.
 
 \begin{figure}[tp]
 \includegraphics[scale=0.34]{fig_rtpc/delta_phi_z_l.png}
@@ -387,7 +405,7 @@ where $p_{e'}$ and $\theta_{e'}$ are the electron's measured momentum and polar 
 \end{figure} 
 
 
-Constructing the invariant mass is one way to verify the efficiency of the previously described selection procedures. For a helium target, the invariant mass (W) is:\\
+Constructing the invariant mass is one way to verify the efficiency of the previously described selection procedures. For a helium target, the invariant mass (W) is:
 \begin{equation}
  W = \sqrt{-2E_{b}p_{e^{'}}(1-cos(\theta_{e^{'}})) + M_{^{4}He}^2 + 2(E_{b}-p_{e^{'}}) M_{^{4}He}}.
 \end{equation}
@@ -400,7 +418,7 @@ resolution in CLAS.
 The large effect is due to the reaction products being emitted back to 
 back resulting in a small overall acceptance for the process. This result is
 therefore very sensitive to the local 
-variations of the resolution, which can be rather important in CLAS.\\
+variations of the resolution, which can be rather important in CLAS.
 
 \begin{figure}[tbp]
 \includegraphics[scale=0.32]{fig_rtpc/fit_W_distribution_l.png}
@@ -417,7 +435,7 @@ electric and magnetic fields within the chamber.
 
 
 \subsubsection{Checking the initial good track requirements}
-~~~~In this section, we study some of the good track requirements 
+In this section, we study some of the good track requirements 
 presented in section \ref{good_track_req}. We apply here all the good track 
 and elastic requirements but the one related to the ploted variable.
 
@@ -468,11 +486,11 @@ applied to select the good tracks.}
 \subsection{Drift paths and drift speed calibration}
 
 \subsubsection{Drift speed parametrization}
-~~~~The electrons follow their drift paths with a certain speed, named drift 
+The electrons follow their drift paths with a certain speed, named drift 
 speed. This speed is affected by the experimental conditions, such as the 
 variations in the magnetic field or in the gas composition. We can measure this 
 speed using the tracks detected in the RTPC, as it is explained in this 
-section.\\
+section.
 
 
 In our TPC, the electrons released close to the cathode take the maximum drift 
@@ -486,13 +504,15 @@ expected dropping edge at high TDCs due to the geometrical constraints. In
 order to avoid the statistical effects in determining the  $TDC_{max}$, we 
 define a value named as $TDC_{max/2}$ at which the dropping edge passes to half 
 of the maximum number of hits in each hits-time profile. $TDC_{max/2}$ is 
-inversely proportional to the drift speed.\\
+inversely proportional to the drift speed.
  
 
 We measure the $TDC_{max/2}$ along the length of the RTPC to take into account 
 the variations in the electric and magnetic fields. The results can be seen in 
 figure \ref{fig:RunNumber_61551_TDCmax_Zslice}, where a clear variation of the 
-drift speed along the RTPC was observed. \\ \begin{figure}[tbp]
+drift speed along the RTPC was observed.  
+
+\begin{figure}[tbp]
 \centering
 \vspace{-0.1in}
 \includegraphics[scale=0.35]{fig_rtpc/TDC_profile.png}
@@ -517,7 +537,7 @@ The result is shown in figure \ref{fig:TDCmax_ratio}, in which the ratio
 between the two $TDC_{max/2}$ is plotted as a function of the longitudinal 
 position along the RTPC. This ratio is consistent with 1, within 1$\%$. Thus we 
 can conclude that using the hits of the collected good tracks is a good 
-approximation. \\
+approximation. 
 
 \begin{figure}[tpb]
 \begin{minipage}[c]{.46\linewidth}
@@ -543,12 +563,12 @@ data taking. One can see a non-negligible variation over the three months of
 data taking due to the changes in the experimental conditions. The main cause 
 of these variations is probably the variation of proportions in the drift gas 
 mixture which was not perfectly under control due to leaks in the thin parts of 
-the detector.\\
+the detector.
 
 As $TDC_{max/2} -15 $ ($= \frac{Drift~path~length}{Drift~speed}$) varies with 
 both run number (time) and the geometry of the RTPC ($z$ along the RTPC). We
 parametrize the dependence on $z$, hit (pad) position, for each run in the 
-form:\\
+form:
 \begin{equation}
 TDC_{max/2} (z)= p_{0} +  p_{1} * e^{p_{2}*(z-p_{3})^{2}}.
 \label{equ:drift_speed_fit}
@@ -556,7 +576,7 @@ TDC_{max/2} (z)= p_{0} +  p_{1} * e^{p_{2}*(z-p_{3})^{2}}.
 Then fits are performed for these parameters as functions of the run number, 
 such that the drift speed parametrization depends on the run and $z$ along the 
 RTPC. The numeric parametrizations of $p_{0}$, $p_{1}$, $p_{2}$, and $p_{3}$ 
-can be found in Appendix \ref{app:RTPC_appendix}, table \ref{Table:TDCmax}. \\
+can be found in Appendix \ref{app:RTPC_appendix}, table \ref{Table:TDCmax}. 
 
 These functions are implemented in our reconstruction codes, and, as a result 
 of adapting the drift speed with these functions, more good tracks and elastic 
@@ -566,7 +586,7 @@ events were identified comparing to the previous calibration set. Figure
 with time because of giving the right drift speed, which together with the 
 drift paths gives more precise reconstructed hits chain. Therefore, the 
 parameters of the reconstructed tracks ($sdist$, $edist$ ... etc) are more likely to pass the 
-selection requirements and so more tracks are found to be good. \\
+selection requirements and so more tracks are found to be good. 
 
 
 \begin{figure}[tpb]
@@ -579,7 +599,7 @@ elastic events (El) are shown for a sample of runs.}
 \end{figure} 
 
 \subsubsection{Drift paths parametrization}
-~~~~A drift path is the trajectory that an electron follows after being 
+A drift path is the trajectory that an electron follows after being 
 released in the drift region. The standard software to calculate these paths is 
 the MAGBOLTZ program \cite{MAGBOLTZ}. This program requires precise knowledge 
 of the experimental conditions, such as the detector's geometry, the exact 
@@ -590,7 +610,7 @@ paths, but it was observed for the drift speed that we do not have a perfect
 knowledge of the RTPC's conditions. Therefore, the first set of the drift paths 
 is not accurate. For this reason, we chose to calculate the drift paths in a 
 way that does not require an exact knowledge of the conditions in the chamber 
-and is instead based on our experimental data.  \\
+and is instead based on our experimental data.  
 
 In our alternative method, we use the identified elastic ($e ~ ^{4}He 
 \rightarrow e ~ ^{4}He$) events to extract the drift paths. For these events, 
@@ -599,7 +619,7 @@ electron. Then the electrons' drift paths can be extracted from comparing the
 experimentally measured hits in the RTPC to the trajectory of a similar 
 simulated $^{4}He$. In this technique, the drift paths are obtained 
 independently of our knowledge of the exact conditions in the RTPC, in 
-particular the electric field and the gas mixture have no impact. \\
+particular the electric field and the gas mixture have no impact. 
 
 Due to the magnetic field, the drift paths are not linear. This is handled by 
 the following procedure, in which we perform the drift paths' extraction in 
@@ -612,9 +632,9 @@ which measured a hit. In the second pass, we refine the initial
 correlation between the radius and the time using the initial drift paths, and 
 we extract final drift paths. To take into account the variations of the magnetic 
 field and therefore the varying Lorentz angle, the extraction 
-is made in $z$ bins along the RTPC. \\
+is made in $z$ bins along the RTPC. 
 
-The procedure steps are:\\
+The procedure steps are:
 \begin{itemize}
 \item We first select a sample of well identified elastic events in our experimental data. Using the
    kinematics of the scattered electrons in these events, we generate in GEANT4
@@ -699,7 +719,7 @@ We performed a third pass in which the R(TDC) correlation is refined using the
 drift paths from the second pass and new drift paths were extracted. As a 
 result, we observed no difference between the drift paths of the second and the 
 third passes. In other words, extracting the drift paths from two iterations 
-gives us stable drift paths. \\
+gives us stable drift paths. 
  
 The first drift paths were extracted using the elastic events from the early 
 1.204 GeV dataset. In order to ensure the consistency of these drift paths over 
@@ -720,7 +740,7 @@ reconstruction codes such that the reconstructed position of each hit becomes:
 \phi_{exp}(z, TDC) = \phi _{hit\_pad} - \Delta \phi (z, TDC).
 \end{equation} 
 
-~~~~It is important to note that the drift paths have shown strong sensitivity 
+It is important to note that the drift paths have shown strong sensitivity 
 to the other RTPC calibrations. Therefore, we performed iterative extractions 
 of the drift paths and, as a results, obtained more good tracks with a signal 
 to background ratio largely improved. Figure \ref{fig:sdist_comp_pass1v1_v6} 
@@ -754,7 +774,7 @@ units. Since each charged particle deposits a certain amount of energy
 ($\small{\frac{dE}{dX}}$) when crossing a material, we can identify particles 
 based on this variable. The ($\small{\frac{dE}{dX}}$) depends on the 
 characteristics of the particle, such as its energy, mass and charge, and the 
-nature of the medium as well. \\
+nature of the medium as well. 
 
 $\small{\frac{dE}{dX}}$ can be calculated using the Bethe-Bloch formula \cite{bethe_block}:
 \begin{eqnarray}
@@ -772,7 +792,7 @@ the electron mass and the constant $K$ is equal to $4 \pi N_{A}
 r^{2}_{e}m_{e}c^{2}$ = 0.307075 MeV mol$^{-1}$ cm$^{2}$. $Z$, $A$, $I$, $\rho$ 
 are the effective charge, atomic number, mean excitation energy and mass 
 density of the medium. In the RTPC, these constants are equal to 66, 126.79 mg 
-mol$^{-1}$, 99.79 eV and 1.03 mg/cm$^3$, respectively. \\
+mol$^{-1}$, 99.79 eV and 1.03 mg/cm$^3$, respectively. 
 
 Experimentally, $\small{\frac{dE}{dX}}$ can be calculated from the collected ADCs as: 
 \begin{equation}
@@ -783,7 +803,7 @@ recorded amplitude in each pad $i$, and $G_{i}$ is its gain. The $vtl$ is the
 total visible length of the track in the active drift volume. This is of course 
 assuming the energy loss in the drift region is small in regard to the total 
 energy of the particle, which is true except close to our detection 
-threshold.\\
+threshold.
 
 The electron collection system of the RTPC has 3200 readout pads. The gain of 
 each pad is the ratio between the deposited energy and the output recorded 
@@ -792,13 +812,13 @@ comparing the experimental recorded $\small{\frac{dE}{dX}}$ to the expected
 values calculated from the Bethe-Bloch formula. The second technique is based 
 on comparing the experimental ADCs to the GEANT4 simulated ones, track by 
 track. We latter refined this second method by comparing the ADCs of each pad 
-to the average ADCs of the other pads in the same track.\\
+to the average ADCs of the other pads in the same track.
 
 The two techniques were investigated for the EG6 experiment using the elastic 
 events from the 1.206 GeV data set. The first method involves a series of 
 equations to be solved to obtain the gains.
  
-~~~~The second method requires improvements in the simulation, in order to 
+The second method requires improvements in the simulation, in order to 
 match the real experiment. In summary, these improvements are:
 \begin{itemize}
 \item Implementation in the simulation of the previously extracted 
@@ -871,7 +891,7 @@ conclude that extracting the gains from comparing data to simulation in terms
 of the ADCs of the individual tracks gives more precise gains than solving the 
 series of equations. Figure \ref{fig:pad_row_col} shows the gains from the 
 second method, where the dotted squares refer to the dead or noisy pads. These 
-are the ones that are implemented in the EG6 reconstruction codes.\\
+are the ones that are implemented in the EG6 reconstruction codes.
 
 
 \begin{figure}[tpb]
@@ -917,7 +937,7 @@ module's pads are involved in both some low and high dEdx events. For instance,
 figure \ref{fig:Chann_706} shows the average ADC versus TDC distributions for 
 the recorded hits in one of these pads in the left module. For the calibration 
 procedures, the events with low dEdx were excluded as we do not fully 
-understand their nature, see figure \ref{fig:dedx_cal_left}.\\
+understand their nature, see figure \ref{fig:dedx_cal_left}.
 \begin{figure}[tbp]
 \centering
 \includegraphics[scale=0.4]{fig_rtpc/Chan_706_1.png}
@@ -964,7 +984,7 @@ presented in chapter 4 appears to be strict enough.
 
 \subsection{Noise rejection}
 \label{sec:noise_rejection}
-~~~~The RTPC was designed to reduce noise and contribution from M\o ller 
+The RTPC was designed to reduce noise and contribution from M\o ller 
 electrons via the first and second 1 atm gas gaps. During data taking, the 
 readout thresholds of the RTPC were set low to avoid efficiency problems, with 
 the effect of recording more electronic noise. The latter effect is illustrated 
@@ -1056,7 +1076,7 @@ channels previously ignored due to high occupancy.
 
 \clearpage
 \section{Tracking resolution}
-~~~~The RTPC tracking resolution is defined as the spread of the reconstructed 
+The RTPC tracking resolution is defined as the spread of the reconstructed 
 track vertex, angles and momentum with respect to their true values. In the EG6 
 experiment, we use the cleanly identified elastic events to estimate the RTPC 
 resolutions. The CLAS detector nominally provides electron detection with an 
@@ -1064,7 +1084,7 @@ angular resolution around 1 and 4 mrad in $\theta$ and $\phi$, and a momentum
 resolution ($\frac{\Delta p}{p}$) around 0.5$\%$ \cite{CLASref}. The z-vertex 
 resolution is about 3 mm for an extended target in the presence of the 
 solenoid, as can be observed experimentally from the target window, figure 
-\ref{fig:electron_z_vertex_res}. \\
+\ref{fig:electron_z_vertex_res}. 
 \begin{figure}[tbp]
    \centering
    \includegraphics[height=6.2cm]{fig_rtpc/clas_z_resolution.png}
@@ -1082,7 +1102,7 @@ of the RTPC separately. The distributions are fitted with a Gaussian and the
 extracted widths are listed in table \ref{table:rtpc_resolutions}.  One can see 
 that for the resolution, the two modules of the RTPC show almost the same 
 performance. These resolutions will be used to match the simulated data to the 
-experimental ones, as will be shown in the following chapter.\\
+experimental ones, as will be shown in the following chapter.
 
 One notices slight shifts in $\Delta z$, $\Delta \phi$, and $\Delta \theta$ distributions. The reason of the shifts may rise from our non-perfect knowledge of the exact conditions in the chamber, such as the magnetic field, that affect the reconstructed parameters of the tracks. The reconstructed momenta show 10-15$\%$ systematic shifts compared to the calculated values.
 
