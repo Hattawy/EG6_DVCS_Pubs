@@ -3,7 +3,7 @@
 
 \section{The EG6 RTPC}
 
-~~~~At 6 GeV incident electron beam energy, the recoil $^{4}He$ nuclei from the coherent DVCS channel, have an average momentum around 200 MeV/c. CLAS cannot detect such low energy particles, for exemple protons are detected with a threshold of about 250 MeV/c, which will be even worse for helium. In order to detect such low-energy recoils a Radial TPC (RTPC), similar to the one used during the BoNuS run \cite{BONUS}, was added to CLAS. In 2009, the CLAS-EG6 group \cite{proposal} has built this RTPC, figure \ref{fig:RTPC2} shows a close photo of the RTPC, while figure \ref{fig:RTPC_xscetion} shows a schematic drawing of its internal structure. It is a 200 mm-long and 150 mm-diameter TPC, composed of two electronically separated modules, each covering about 150$^{\circ}$ of the azimuthal angle. The RTPC tracks the charged particles through the ionization centers they leave in the gas-filled detection volume. Then, the ionized electrons drift under the effect of an electric field and are amplified by a gas electron multiplier system before to be detected on collection pads.
+~~~~At 6 GeV incident electron beam energy, the recoil $^{4}He$ nuclei from the coherent DVCS channel, have an average momentum around 200 MeV/c. CLAS cannot detect such low energy particles, for exemple protons are detected with a threshold of about 250 MeV/c, which will be even higher for helium. In order to detect such low-energy recoils a Radial TPC (RTPC), similar to the one used during the BoNuS run \cite{BONUS}, was added to CLAS. In 2009, the CLAS-EG6 group \cite{proposal} has built this RTPC, figure \ref{fig:RTPC2} shows a close photo of the RTPC, while figure \ref{fig:RTPC_xscetion} shows a schematic drawing of its internal structure. It is a 200 mm-long and 150 mm-diameter TPC, composed of two electronically separated modules, each covering about 150$^{\circ}$ of the azimuthal angle. The RTPC tracks the charged particles through the ionization centers they leave in the gas-filled detection volume. Then, the ionized electrons drift under the effect of an electric field and are amplified by a gas electron multiplier system before to be detected on collection pads.
 
 
 \begin{figure}[tp]
@@ -100,10 +100,10 @@ wide. Each group of 16 pads is connected to a pre-amplifier before the recorded
 signals are carried to the acquisition electronics. There are 20 rows and 5 
 columns of pre-amplifiers per module. This readout system records the charge 
 information in time bins, in which the charge is measured in 
-Analog-to-Digital-Converter (ADC) units, while the time is recorded in 
-Time-to-Digital-Converter (TDC) units, in which each TDC is equal to 114 ns.  
-This measurement indicating the time taken by the electrons to drift from the 
-ionization point to the readout board. 
+Analog-to-Digital-Converter (ADC) units, while the 114 ns width of the time bins 
+will be refered as Time-to-Digital-Converter (TDC) units.  
+From this measurement, we deduce the time taken by the electrons to drift from the 
+ionization point to the readout board.
 
  
 \subsection{Working principle}
@@ -150,8 +150,8 @@ first step is the rejection of out-of-time hits and the noise reduction, as
 will be explained in section \ref{sec:noise_rejection}. The second step is the 
 spatial reconstruction of the hits, using the extracted drift speed and drift 
 paths. For each registered hit, the position of the initial ionization is 
-obtained from the recorded time (TDC) and from the position of its pad.  In the 
-third step, the reconstructed nearby hits are linked together in  chains.  The 
+obtained from the recorded time (TDC) and from the position of its pad. In the 
+third step, the reconstructed nearby hits are linked together in chains. The 
 maximum distance between two adjacent hits must be less than 10.5 mm to chain 
 them. Then, the number of hits per chain is required to be greater than 10 hits 
 in order to proceed to the fitting step. \\
@@ -159,7 +159,7 @@ in order to proceed to the fitting step. \\
 A fit to a chain of hits is performed in two iterations. In the first 
 iteration, the hits of the chain are fitted with a helix. The helix fit is 
 based on a circle fit in the $x-y$ plane followed by a linear fit in the $s-z$ 
-plane for the hits of the chain, where $s=\sqrt{x^2+y^2}$.  In the second 
+plane for the hits of the chain, where $s=\sqrt{x^2+y^2}$. In the second 
 iteration, the residual between the fit and each hit is calculated. If the 
 hit's residual is greater than 5 mm, the hit is excluded from the chain. Then 
 the hits are re-fitted with the same previous helix fit giving five final 
@@ -183,35 +183,37 @@ and $r_{0}$ [70, 150] ([130,180]) mm.
 ~~~~Reconstructing a trajectory from the recorded time information of the 
 electrons requires a good knowledge of their drift speed and drift paths.  
 Also, the gains of the readout pads are required to calculate $\frac{dE}{dx}$ 
-from the recorded ADCs. The drift paths and the gain calibration of the RTPC 
+from the recorded ADCs. The determination of the drift paths and the gain 
+calibration of the RTPC 
 require well identified events, so we decided to use elastic scattering 
-($e^{4}He \rightarrow e^{4}He$). We had specific calibration runs with 1-pass 
-beam energies of 1.024 and 1.269 GeV in order to enhance the cross section of 
-the elastic process at large angles, which is highly suppressed at higher beam 
-energy.\\
+($e^{4}He \rightarrow e^{4}He$). However, the cross section of 
+the elastic process at detectable angles is highly suppressed at higher beam 
+energy, so we had specific calibration runs with 1-pass 
+beam energies of 1.024 and 1.269 GeV. \\
 
 A GEANT4 simulation for the RTPC has been developed to help reproduce these 
 events in order to properly extract the drift paths and the gains. Their 
 extractions are based on comparing the experimentally identified $^4He$ elastic 
 tracks to the GEANT4 simulated ones. Indeed, the kinematics of each elastic 
 $^4He$ can be calculated from the electron measured in CLAS and then simulated 
-in GEANT4. The output of the simulation is then compared with the measured 
-signals to determine the drift paths. \\
+in GEANT4. The output of the simulation gives an expected trajectory that we then
+match to to the measured signals to determine the drift paths. \\
 
 This process is iterative since good tracks need to be identified at the 
-beginning of the process. For this analysis, we started from a MAGBOLTZ 
+beginning of the process and as the calibration improves, more good tracks 
+are identified. For this analysis, we started from a MAGBOLTZ 
 calibration, which was then improved with the method described above with 
-several iterations. In particular, changes in the alignment of the RTPC with 
-respect to the beamline, detailed in CLAS-NOTE~\cite{eg6beamoffset}. In the 
-following subsections, we present here only the selection of the RTPC tracks 
-and elastic events for the last iteration of our calibration process. It is 
-then followed by details on the techniques of calibration.   
+several iterations. In particular, it is important that the alignment of the 
+RTPC with respect to the beamline is properly implemented (see details in
+CLAS-NOTE~\cite{eg6beamoffset}). As the process evolved and was improved over 
+time, we present in the following subsections only the method used for the last 
+iteration of our calibration process.
 
 \subsection{Event selection}
 ~~~~Figure \ref{fig:RTPC_track} shows a drawing of a segment of the RTPC, where a $^4He$ track (in 
 green) crosses the volume of the RTPC, producing a chain of ionization points 
 within the drift gas. The released electrons follow the drift paths (in black) 
-towards the readout board under the effect of the  electromagnetic field 
+towards the readout board under the effect of the electromagnetic field 
 between the anode and the cathode. The electrons released close to the cathode 
 take the maximum drift time ($TDC_{max}$) to reach the readout pads, while the 
 electrons released close to the anode take the minimum time ($TDC_{min} = 15$ the 
@@ -229,7 +231,8 @@ $edist$.\\
 \caption{Schematic of a segment of the RTPC in a plane perpendicular to the 
 beam line, with a $^4He$ track (in green) crossing the volume. See the text for 
 description of the various elements and notations. $sdist$ and $edist$ are 
-defined position as shown in this sketch.} \label{fig:RTPC_track}
+distances between first and last hits and boundaries of the RTPC as shown in 
+this sketch.} \label{fig:RTPC_track}
 \end{figure}
 
 Because the two modules of the RTPC are electronically separated, we will 
@@ -244,19 +247,17 @@ angles.
 \begin{itemize}
 \item The number of active pads in the track is greater than 3. 
 
-\item We apply a cut on the vertex position in $z$ of the reconstructed tracks 
-   to insure it is in the RTPC volume, i.e. $z$ $\in$ [-80,80] mm, as 
+\item The vertex position in $z$ is in the RTPC volume, i.e. $z$ $\in$ [-80,80] mm, as 
    illustrated in figure \ref{fig:rtpc_zz}.  
 
-\item We request a positive radius of curvature ($r_{0}>0$): the $^4He$ is a positively 
+\item The radius of curvature is positive ($r_{0}>0$): the $^4He$ is a positively 
    charged nucleus and the reconstructed track in the RTPC must have positive 
    radius of curvature. In other words, it travels in a clockwise direction if 
    one looks into the electron beam. The curvature distribution of the 
    collected RTPC tracks is shown in figure \ref{fig:rtpc_ro}.
 
-\item We check the quality of the helix fit with a $\chi^{2}$ cut (< 3.5). The 
-   quality of the fit ($\chi^{2}$) is defined as:
-
+\item The helix fit is well reconstructed with a $\chi^{2} < 3.5$. The 
+   quality of the fit ($\chi^{2}$) being defined as:
 \begin{equation}
    \chi^{2} = \frac{\displaystyle \left(\frac{DOCA}{\sigma_r}\right)^2 
        + \sum_{i = 1}^{ N_{pts}} \left(\frac{r^{pt}_{i} 
@@ -268,12 +269,12 @@ where $\frac{DOCA}{\sigma_r}$ is the beam-spot constraint, $r^{pt}_{i}$,
 $\phi^{pt}_{i}$, $z^{pt}_{i}$ are the radial, azimuthal, longitudinal 
 coordinates of each reconstructed hit "$i$". ($r^{helix}_{i}$,
 $\phi^{helix}_{i}$, $z^{helix}_{i}$) is the point on the helix fit that is 
-closest, in Euclidean (3D) space, to the reconstructed hit $i$. The resolutions 
+closest to the reconstructed hit $i$. The resolutions 
 are defined as ($\sigma_{r}$, $\sigma_{\phi}$, $\sigma_{z}$) = (0.53 mm, 
-2$^{\circ}$, 1.2 mm) based on the size
-of the readout pads were kept identical for all calibration iterations. These 
+2$^{\circ}$, 1.2 mm) based only on the size
+of the readout pads and were kept identical for all calibration iterations. These 
 resolutions were derived by CLAS-BoNus experiment \cite{BONUS}. $N_{pts}$ is 
-the total number of the hits in the chain.  Figure \ref{fig:rrtpc_X2} shows the 
+the total number of the hits in the chain. Figure \ref{fig:rrtpc_X2} shows the 
 $\chi^{2}$ distributions for the positive tracks which originate within the 
 RTPC.
 
@@ -284,8 +285,7 @@ RTPC.
 \label{fig:rtpc_zz}
 \end{figure}  
 
-
-\item $sdist$ ($\in$ [-2.0,2.0] mm) and $edist$ ($\in$ [-1,5] mm ) cuts: the 
+\item $sdist$ ($\in$ [-2.0,2.0] mm) and $edist$ ($\in$ [-1,5] mm ): these 
    cuts are applied to ensure that a track is on time, i.e. the first 
    ionization point is close to the cathode and the last point is close to the 
    anode. For both $sdist$ and $edist$, positive values correspond to tracking 
@@ -354,7 +354,7 @@ RTPC.
 \end{itemize}
 
 
-\subsubsection{Elastic selection}
+\subsubsection{Elastic scattering event selection}
    The elastic process on $^{4}He$ is defined as:
 \begin{equation}
 \centering
@@ -362,7 +362,7 @@ e(k) + ^{4}He(p) \rightarrow e(k') + ^{4}He(p')
 \end{equation}
 with the symbols in parenthesis representing the four-momenta of the particles. \\
 
- In addition to the previously good-track requirements, in order to select the elastic events we impose further constraints. The co-planarity between the scattered electron and the recoil $^4He$ is ensured using a $\Delta \phi$ (=$\phi_{e}-\phi_{^{4}He}$) cut as shown in Figure \ref{fig:delta_phi_elastic}. Like for $\Delta z$, the $\Delta \phi$ 2$\sigma$ cut is dependent on $z$ to account for variations. Our final parametrizations can be found in Appendix \ref{app:RTPC_appendix} as well.\\
+ In addition to the good-track requirements described above, to select elastic events we impose further constraints. The co-planarity between the scattered electron and the recoil $^4He$ is ensured using a $\Delta \phi$ (=$\phi_{e}-\phi_{^{4}He}$) cut as shown in Figure \ref{fig:delta_phi_elastic}. Like for $\Delta z$, the $\Delta \phi$ 2$\sigma$ cut is dependent on $z$ to account for systematic variations. Our final parametrizations can be found in Appendix \ref{app:RTPC_appendix} as well.\\
 
 An additional elastic cut is performed by comparing the measured $^4He$ polar angle to the calculated one, based on the measured electron in CLAS. Indeed, from momentum conservation the $^4He$ polar angle can be calculated as:
 \begin{eqnarray}
@@ -395,13 +395,12 @@ with the conventions for the variables as in equation \ref{equ:theta_helium}.
 Figure \ref{fig:W_elastic} shows the W distribution of the events that have a 
 good track in the RTPC and the identified elastic events. One can see the good 
 agreement between the helium-4 real mass and the mean value of the identified 
-elastic events. The difference in width is related to the different resolutions 
-of the corresponding CLAS sectors. The reaction products are emitted back to 
-back resulting in only small regions of overlapping acceptances between the 
-RTPC and CLAS enhancing this effect. The reason for this is that local 
-variations of the resolution can be much more important than ones averaged over 
-the full detector.
-\\
+elastic events. The difference in width is related to differences in 
+resolution in CLAS.
+The large effect is due to the reaction products being emitted back to 
+back resulting in a small overall acceptance for the process. This result is
+therefore very sensitive to the local 
+variations of the resolution, which can be rather important in CLAS.\\
 
 \begin{figure}[tbp]
 \includegraphics[scale=0.32]{fig_rtpc/fit_W_distribution_l.png}
@@ -418,12 +417,12 @@ electric and magnetic fields within the chamber.
 
 
 \subsubsection{Checking the initial good track requirements}
-~~~~In this section, we recheck the individual good track requirements 
-presented in section \ref{good_track_req}, where we apply the other good track 
-and elastic requirements and watch the individual variables.
+~~~~In this section, we study some of the good track requirements 
+presented in section \ref{good_track_req}. We apply here all the good track 
+and elastic requirements but the one related to the ploted variable.
 
 Figure \ref{fig:2-z-vertex} presents the z-vertex distributions of the elastic 
-events, where all the good track and elastic requirements were applied. One 
+events. One 
 sees that the initial [-80:80] mm cuts on the helium z-vertex appear to be 
 suitable cuts to ensure that the reconstructed tracks are within the physical 
 volume of the RTPC.
@@ -437,7 +436,7 @@ events in the two modules of the RTPC.}
 
 In figure \ref{fig:2-r0}, we show the distribution of the radius of curvature 
 for the identified elastic tracks in the RTPC. One sees that applying the other 
-good track and elastic conditions will eliminate all the negative tracks and 
+good track and elastic conditions eliminate all the negative tracks as well as
 the tracks with $r_{0}$ less than 30 mm.
 \begin{figure}[tp]
    \centering
@@ -449,9 +448,9 @@ track and elastic events}.
 \end{figure} 
 
 The distributions of $sdist$ and $edist$ for the identified elastic $^4$He 
-elastic tracks, figure \ref{fig:2-sdist-edist}, show that most of the tails, 
+elastic tracks, figure \ref{fig:2-sdist-edist}, show that the tails, 
 which are mostly due to electronic noise, are removed. Therefore, making 
-tighter cuts would not cause changes in the calibration as the tracks in the 
+tighter cuts would not cause significant changes in the calibration as the 
 tail regions are cleaned by the other good track and elastic cuts.
 
 \begin{figure}[tp]
@@ -466,7 +465,7 @@ applied to select the good tracks.}
 
 
 
-\subsection{drift paths and drift speed calibration}
+\subsection{Drift paths and drift speed calibration}
 
 \subsubsection{Drift speed parametrization}
 ~~~~The electrons follow their drift paths with a certain speed, named drift 

@@ -118,44 +118,53 @@ experiments with an inner electro-magnetic calorimeter made of PbWO crystals
 to detect the photons emitted at low angle and with a solenoid to keep the 
 Moller electrons produced along the beam line to get into our detectors.
 
-\begin{figure*}[tbp]
-\caption{\label{fig:exclu} Exclusivity cuts}
-\includegraphics[width=17.2cm]{all_coh_exc_cuts.png}
-\end{figure*}
-
-In order to insure the coherence of the process, we also detect the recoiling 
+In order to ensure the coherence of the process, we also detect the recoiling 
 helium-4 nuclei. We built a small and light radial time projection chamber 
 (RTPC) to detect recoiling helium nuclei down to energies of few MeVs. The 
 chamber, shown in figure~\ref{fig:rtpc}, is surrounding the gaseous target 
 filled with 6~atm helium-4 and is 20 cm long with a 3 cm radial drift 
 length. The detector was specifically calibrated for helium-4 nuclei using 
 elastic scattering produced with a 1.2~GeV electron beam.
-
-\begin{figure}[htbp]
-\caption{\label{fig:rtpc} RTPC description}
-\includegraphics[width=8cm]{RTPC.png}
-\end{figure}
+To ensure that the process is exclusive, we apply cuts on 
+several kinematic variables (figure~\ref{fig:exclu}) such as missing energy,
+mass and momentum. The cuts are chosen to represent consistently 3 half width 
+at half maximum in order to avoid any bias in the selection.
 
 %\section{DVCS Events Selection}
-Explain exclusivity cuts
+
+\begin{figure}[tb!]
+\caption{\label{fig:rtpc} RTPC description}
+\includegraphics[width=7.4cm]{RTPC.png}
+\end{figure}
+
+
+\begin{figure*}[t!]
+\caption{\label{fig:exclu} Exclusivity cuts}
+\includegraphics[width=16.0cm]{all_coh_exc_cuts.png}
+\end{figure*}
 
 We identified several background contributions to the DVCS process, in 
-particular accidental events and exclusive deeply virtual $\pi^0$ production (DV$\pi^0$P). The accidental
-events happen when an helium nuclei is mistakenly associated with our event, this 
-possibility is suppressed by the limited phase space allowed but enhanced by the
-low time resolution of the RTPC (~200 ns). We evaluated this contribution by
+particular accidental events and exclusive deeply virtual 
+$\pi^0$ production (DV$\pi^0$P). The accidental
+events where the different particles come from different events are 
+suppressed by the limited phase space allowed by the exclusivity cuts. We 
+estimate the accidental events to represent 4.1\% of our sample. This relatively 
+large number is due to the small cross section of the DVCS. We evaluated this contribution by
 selecting events passing all our cuts but with particles originating from 
-different verteces. With this method, we found this background to represent 
-4.1\%. The DV$\pi^0$P events can easily be mistaken
-with DVCS events when one of the two photons of $\pi^0$ decay is produced at
-low energy in the laboratory frame. In order to estimate the importance of
-this background, we developped an event generator DV$\pi^0$P 
-that we calibrated to match our experimental yields. We used this generator together 
-with a GEANT3~\cite{} simulation of our detection system to estimate the ratio 
-of acceptance between measured DV$\pi^0$P and DV$\pi^0$P that would pass our 
+different verteces. 
+
+Another important source of background is the deeply virtual 
+$\pi^0$ production (DV$\pi^0$P), which can easily be mistaken
+with DVCS when one of the two photons of the $\pi^0$ decay is produced at
+low energy in the laboratory frame. To estimate the importance of
+this background, we developped an event generator 
+that we calibrated to match our measured experimental yield of exclusive 
+$pi^0$. We used this generator together 
+with a GEANT3 simulation of our detection system to estimate the ratio 
+of acceptance between DV$\pi^0$P where the two photons are detected and those
+where only one photon is detected and would pass our 
 DVCS selection cuts. This ratio obtained from simulation is then multiplied by 
-the measured yield of DV$\pi^0$P events, indicating a contamination of XX to XX\%. 
-%(We NEED a figure of that in the note!!!)
+the measured yield of DV$\pi^0$P events, indicating a contamination of 2 to 4\%. 
 
 Systematic errors
 
