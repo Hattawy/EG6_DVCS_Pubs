@@ -1,9 +1,0 @@
-#! /bin/bash
-
-./Clean
-
-pdflatex HeliumCohDVCS.tex
-pdflatex HeliumCohDVCS.tex
-
-rm HeliumCohDVCS.aux HeliumCohDVCS.bbl HeliumCohDVCS.blg HeliumCohDVCS.log HeliumCohDVCS.out HeliumCohDVCS.maf 
-rm HeliumCohDVCS.mtc HeliumCohDVCS.mtc1 HeliumCohDVCS.nlo
