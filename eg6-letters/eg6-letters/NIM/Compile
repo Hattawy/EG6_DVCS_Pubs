@@ -1,0 +1,5 @@
+#! /bin/bash
+pdflatex -shell-escape EG6_RTPC_NIM.tex
+pdflatex -shell-escape EG6_RTPC_NIM.tex
+rm -f *.tex~ EG6_RTPC_NIM.mtc1 EG6_RTPC_NIM.aux EG6_RTPC_NIM.dvi EG6_RTPC_NIM.lof EG6_RTPC_NIM.log EG6_RTPC_NIM.out EG6_RTPC_NIM.lot EG6_RTPC_NIM.toc EG6_RTPC_NIM.brf EG6_RTPC_NIM.maf EG6_RTPC_NIM.mtc EG6_RTPC_NIM.mtc0 EG6_RTPC_NIM.nlo
+
