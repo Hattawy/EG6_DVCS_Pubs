@@ -34,18 +34,37 @@ the following set of criteria is assumed to be a good electron.
 \paragraph{Initial requirements}
 
 \begin{itemize}
-\item Negative charge: the torus magnet generates a field which has mainly azimuthal components. Hence, the trajectory of a negative particle will be bent towards the beam line direction without changing azimuth. Consequently, information on its charge is accessible from the curvature of its trajectory.           
 
-\item $(DC_{stat}, EC_{stat}, SC_{stat}, CC_{stat}) > 0$: these status variables are linked to the number of hits and the thresholds in the different sub-detectors of CLAS. Thus, we select the electrons which have positive status in the different sub-detectors as a first step to reduce the noise in the data sample.
+\item Negative charge: the torus magnet generates a field which has mainly 
+   azimuthal components. Hence, the trajectory of a negative particle will be 
+   bent towards the beam line direction without changing azimuth.  
+   Consequently, information on its charge is accessible from the curvature of 
+   its trajectory.           
 
-\item $stat$ > 0: this variable is positive if the trajectory of a particle passes the two steps of the tracking in the DCs, Hit-Based Tracking (HBT) and Time-Based Tracking (TBT).
+\item $(DC_{stat}, EC_{stat}, SC_{stat}, CC_{stat}) > 0$: these status 
+   variables are linked to the number of hits and the thresholds in the 
+   different sub-detectors of CLAS. Thus, we select the electrons which have 
+   positive status in the different sub-detectors as a first step to reduce the 
+   noise in the data sample.
+
+\item $stat$ > 0: this variable is positive if the trajectory of a particle 
+   passes the two steps of the tracking in the DCs, Hit-Based Tracking (HBT) 
+   and Time-Based Tracking (TBT).
 
 \item Momentum cut ($p_{e^{-}}$ > 0.8 GeV/c): during the data acquisition, the 
    EC threshold was set to 200 $mV$ corresponding to electrons having a minimum 
    momentum of about 0.7 GeV/c. In this analysis, we apply a conservative cut 
    of 0.8 GeV/c to be above this threshold.
 
-\item Vertex cut: the target is centered at -64 cm with respect to the center of CLAS. Figure \ref{fig:z_cut} shows the reconstructed z-vertices for the collected negative particles. One sees two sharp peaks corresponding to the two aluminum windows at the ends of the target. These particles have to be rejected as they originate from outside the target. As will be emphasized later, we need an accurate determination of the electron's vertex to ensure the correspondence between the final-state particles, which all have to originate from the same point.       
+
+\item Vertex cut: the target is centered at -64 cm with respect to the center 
+   of CLAS. Figure \ref{fig:z_cut} shows the reconstructed z-vertices for the 
+   collected negative particles. One sees two sharp peaks corresponding to the 
+   two aluminum windows at the ends of the target. These particles have to be 
+   rejected as they originate from outside the target. As will be emphasized 
+   later, we need an accurate determination of the electron's vertex to ensure 
+   the correspondence between the final-state particles, which all have to 
+   originate from the same point.       
  
 \begin{figure}[tp]
 \centering
@@ -342,7 +361,7 @@ as left and right sides. The cuts are:
 
 \item Track helix-fit quality: figure \ref{fig:rtpc_X2} shows the $\chi^{2}$ 
    distributions for the positive tracks originating within the RTPC. We apply 
-   $\chi^{2}$~<~3.5 to select good $^4$He tracks.
+   $\chi^{2}$~<~3.0 to select good $^4$He tracks.
 
 \item $sdist$ and $edist$ cuts: figures \ref{fig:rtpc_sdist} and \ref{fig:rtpc_edist} show the $sdist$ and $edist$ distributions, for the positive tracks, originated within the RTPC, and having good $\chi^{2}$ values.
 
@@ -363,7 +382,8 @@ the RTPC. We chose the cut -80  mm < z < 80 mm to select good tracks.}
 \begin{minipage}[c]{.46\linewidth}
 \hspace{-0.3in}
 \includegraphics[height=6.0cm]{fig_analysis/rtpc_X2.png}
-\caption{$\chi^{2}$ distribution for the tracks in the two modules of the RTPC, with the cut we require to select good tracks: $\chi^{2}$ < 3.5.}
+\caption{$\chi^{2}$ distribution for the tracks in the two modules of the RTPC, 
+with the cut we require to select good tracks: $\chi^{2}$ < 3.}
 \vspace{0.5in}
 \label{fig:rtpc_X2}
 \end{minipage}
@@ -374,13 +394,15 @@ the RTPC. We chose the cut -80  mm < z < 80 mm to select good tracks.}
 \begin{minipage}[c]{.46\linewidth}
 \hspace{-0.3in}
 \includegraphics[height=6.0cm]{fig_analysis/rtpc_sdist.png}
-\caption{$sdist$ distribution for the positive tracks in the RTPC. $|sdist|$~<~2.0 mm cut is applied to select good tracks.} 
+\caption{$sdist$ distribution for the positive tracks in the RTPC.  
+-3~<~$sdist$~<~2.0 mm cut is applied to select good tracks.} 
 \label{fig:rtpc_sdist}
 \end{minipage} \hfill
 \begin{minipage}[c]{.46\linewidth}
 \hspace{-0.3in}
 \includegraphics[height=6.0cm]{fig_analysis/rtpc_edist.png}
-\caption{$edist$ distribution for the positive tracks in the RTPC. We require $-1.0$~mm~<~$edist$~<~5.0 mm to select good tracks.}
+\caption{$edist$ distribution for the positive tracks in the RTPC. We require 
+$-2.0$~mm~<~$edist$~<~3.0 mm to select good tracks.}
 \label{fig:rtpc_edist}
 \end{minipage}
 \end{figure}
