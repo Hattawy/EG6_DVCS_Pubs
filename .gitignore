@@ -3,9 +3,8 @@
 ._*.png
 *.epub
 *.mobi
-EG6_analysis_note_v2.pdf
+EG6_analysis_note_*.pdf
 2nd_round_comments.pdf
-*.pdf
 *.log
 *.aux
 *.spl
