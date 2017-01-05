@@ -5,7 +5,9 @@
 *.mobi
 EG6_analysis_note_v2.pdf
 2nd_round_comments.pdf
-*.pdf
+EG6_analysis_note_vf_Dec2016.pdf
+final_round_comments.pdf
+*.mtc0
 *.log
 *.aux
 *.spl
