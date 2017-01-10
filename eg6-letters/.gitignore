@@ -14,9 +14,14 @@ HeliumCohDVCS.pdf
 ._*.png
 *.epub
 *.mobi
-EG6_analysis_note_v2.pdf
+EG6_analysis_note_*.pdf
 2nd_round_comments.pdf
-*.pdf
+<<<<<<< HEAD
+=======
+EG6_analysis_note_vf_Dec2016.pdf
+final_round_comments.pdf
+*.mtc0
+>>>>>>> af543d24ecac9d7968f3832e58a0f2096bf6307b
 *.log
 *.aux
 *.spl
