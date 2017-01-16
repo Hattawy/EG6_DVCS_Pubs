@@ -14,12 +14,14 @@ HeliumCohDVCS.pdf
 ._*.png
 *.epub
 *.mobi
-EG6_RTPC_NIM.pdf
 EG6_analysis_note_*.pdf
 2nd_round_comments.pdf
+<<<<<<< HEAD
+=======
 EG6_analysis_note_vf_Dec2016.pdf
 final_round_comments.pdf
 *.mtc0
+>>>>>>> af543d24ecac9d7968f3832e58a0f2096bf6307b
 *.log
 *.aux
 *.spl
@@ -31,9 +33,5 @@ final_round_comments.pdf
 *.auxlock
 *.out
 *.brf
-<<<<<<< HEAD
 
 >>>>>>> eb25573b5c10e6b9c07a8e43b20a12b8c11a9fb9
-=======
-eg6-letters/long-paper/prc-dvcshelium.pdf
->>>>>>> cab100009420f07a0a28346d6bc11572ccd548ee
