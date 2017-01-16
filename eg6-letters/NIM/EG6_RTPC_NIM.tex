@@ -30,10 +30,10 @@ state. The CEBAF Large Acceptance Spectrometer (CLAS) at JLab has been used for
 similar studies on proton targets, however it cannot track recoils with momenta 
 less than 250 MeV/c. In 2009, we carried out measurements on $^4$He target 
 using CLAS spectrometer, which was upgraded with the RTPC during the CLAS-EG6 
-experimental run. The detector was positioned directly around the gaseous 
-target, allowing a detection threshold of $~$100  MeV/c for $^4$He. This 
-article discuses the RTPC design, work principle, developed calibration methods 
-and detector performance.
+experimental run. The detector was positioned directly around a gaseous target, 
+allowing a detection threshold of $~$100  MeV/c for $^4$He. This article 
+discuses the RTPC design, work principle, developed calibration methods and 
+detector performance.
 \end{abstract}
 
 \maketitle
@@ -44,49 +44,51 @@ and detector performance.
 
 The CEBAF Large Acceptance Spectrometer (CLAS)~\cite{CLASref} is installed in 
 the Hall-B of the Thomas Jefferson National Accelerator Facility (TJNAF), 
-Newport News, Virginia, USA. The accelerator of TJNAF provides a high power 
-electron beam of energy up to 6 GeV and 100$\%$ duty cycle to three 
-experimental Halls (A, B, C). The CLAS spectrometer is composed of several 
-sub-detectors and two magnets. The spectrometer was designed to track charged 
-particles at momentum greater than 250 MeV/c as well as detecting real photons.  
-Figure~\ref{fig:CLAS} shows CLAS detector, ordered with respect to their radial 
-distance from the center as:
+Newport News, Virginia, USA. The accelerator of TJNAF provides, simultaneously, 
+a high power electron beam of energy up to 6 GeV and 100$\%$ duty cycle to 
+three experimental Halls (A, B, C). The CLAS spectrometer, located in Hall-B, 
+is composed of several sub-detectors and two magnets. The spectrometer was 
+designed to track charged particles of momentum greater than 250 MeV/c as well 
+as detecting real photons. Figure~\ref{fig:CLAS} shows a three dimensional 
+representation of the CLAS detector, ordered with respect to their radial 
+distance from the beam line as:
 
 \begin{itemize}
  \item Three regions of Drift Chambers (DC) for tracking of charged 
     particles~\cite{DCref}.
- \item Superconducting toroidal magnet which enables the tracking by bending 
-    the trajectories.
- \item Cherenvkov Counters (CC) to separate electrons from negative 
-    pions~\cite{CCref}.
+ \item Superconducting toroidal magnet which enables the tracking in the DC by 
+    bending the trajectories.
+ \item Cherenvkov Counters (CC) to help in separating electrons from negative 
+    particles, such as pions ~\cite{CCref}.
  \item Scintillation Counters (SC) to identify hadrons via measuring their 
     Time-Of-Flight (TOF)~\cite{TOFref}.
- \item Forward Electromagnetic Calorimeter (EC) to detect showering particles 
-    (electrons and photons) and neutrons~\cite{ECref}.
+ \item Forward Electromagnetic Calorimeter (EC) which measures the energy of 
+    the showering particles (electrons and photons) and neutrons~\cite{ECref}.
 \end{itemize}
 
 \begin{figure}[tbp]
 \centering \includegraphics[scale=0.3]{fig/test_clas.png}
-\caption{Three dimensional representation of the primary CLAS setup represents 
-   the geometry and the relative position of each subsystem. From outside, the 
-electromagnetic calorimeter (green), time-of-flight system (red), Cherenkov 
-counters (purple), three drift chamber regions (blue) and the superconducting 
-torus coils (yellow).} 
-\label{fig:CLAS}
+\caption{A three dimensional representation of the primary CLAS setup 
+   represents the geometry and the relative position of each subsystem. From 
+   outside, the electromagnetic calorimeter (green), time-of-flight system 
+   (red), Cherenkov counters (purple), three drift chamber regions (blue) and 
+the superconducting torus coils (yellow).} \label{fig:CLAS}
 \end{figure}
 
-In the basic setup of CLAS, the real photons are detected by the forward EC, 
-covering polar angles from 8$^{\circ}$ to 45$^{\circ}$. With a 6 GeV electron 
-beam, a large part of the DVCS photons are produced at polar angles below 
-15$^{\circ}$, where the acceptance of the EC is small. In the CLAS-E1DVCS 
-experiment (2005), CLAS was upgraded with the addition of an Inner Calorimeter 
-(IC). This calorimeter covers polar angles between 5$^{\circ}$ and 
-15$^{\circ}$. The IC is constructed from 424 lead-tungstate (PbWO$_{4}$) 
-crystals. Each crystal is 16 cm long (corresponding to 17 radiation lengths) 
-with a 1.33~$\times$~1.33 cm$^2$ front surface and a 1.6~$\times$~1.6 cm$^2$ 
-back surface. The energy resolution is around 3 to 4$\%$ for photon energies 
-between 2 GeV and 5 GeV and the angular resolution is between 3 to 5 mrad for 
-the same energy range \cite{Hyon-suk}.
+The DVCS process is the exclusive electroproduction of a real photon from a 
+quark of a hadronic target ($H$), $eH \rightarrow e' H' \gamma$. In the basic 
+setup of CLAS, the real photons are detected by the forward EC, which covers 
+polar angles from 8$^{\circ}$ to 45$^{\circ}$. With a 6 GeV electron beam, the 
+majority of the DVCS photons are produced at polar angles below 15$^{\circ}$, 
+where the acceptance of the EC is poor. In CLAS-E1DVCS experiment (2005), CLAS 
+was upgraded with the addition of an Inner Calorimeter (IC). The IC is 
+constructed from 424 lead-tungstate (PbWO$_{4}$) crystals, covering polar 
+angles between 5$^{\circ}$ and 15$^{\circ}$. Each crystal is 16 cm long ,
+corresponding to 17 radiation lengths, with a 1.33~$\times$~1.33 cm$^2$ front 
+surface and a 1.6~$\times$~1.6 cm$^2$ back surface. The achieved energy 
+resolution is around 3 to 4$\%$ for photon energies between 2 GeV and 5 GeV and 
+the angular resolution is between 3 to 5 mrad for the same energy range 
+\cite{Hyon-suk}.
 
 The developed RTPC has been used during a three months experimental run in 2009 
 with a longitudinally polarized electron beam of energy 6.064 GeV projected 
@@ -98,14 +100,13 @@ major rule in finding the momentum of the charged particles in the RTPC by
 bending their tracks curvature.
 
 In this paper we report the progress in designing and calibrating a radial TPC 
-that had been used with JLab-CLAS spectrometer. This paper is organized in this 
-way: section \ref{prev_tpc} presents an overview of the TPCs history and 
+that had been used with JLab-CLAS spectrometer. This paper is organized as 
+follows: section \ref{prev_tpc} presents an overview of the TPCs history and 
 previous usage, section \ref{sec_design} details the physics considerations for 
 the RTPC design and its internal structure, while section \ref{sec_readout} 
-points the properties of the read-out system.  The calibration strategies for 
-such a detector is discussed in section \ref{sec_calib}. Finally, the 
-performance of the RTPC is described
-in section \ref{sec_perf}.
+points the properties of the read-out system. The calibration strategies for 
+such a detector are discussed in section \ref{sec_calib}. Finally, the 
+performance of the RTPC is described in section \ref{sec_perf}.
 
 \section{TPC technology} \label{prev_tpc}
 In the late 1970s, David R. Nygren presented the concept of the Time projection 
@@ -276,7 +277,8 @@ speed of the electrons in the RTPC.\\
 \begin{figure}[tb]
 \centering
 \includegraphics[scale=0.35]{fig/RTPC_2.png}
-\caption[]{\small\sf A schematic drawing of a $^{4}He$ track (in green) traversing the drift region, with the drift paths followed by the electrons (in black). } 
+\caption[]{A schematic drawing of a $^{4}He$ track (in green) traversing the 
+drift region, with the drift paths followed by the electrons (in black). } 
 \label{fig:RTPC_signals}
 \end{figure}
 
@@ -304,14 +306,14 @@ the longitudinal position along the RTPC with its center at zero.}
 
 \begin{figure}[tb]
    \centering
-   \includegraphics[scale=0.40]{fig/TDC_profile.png}
+   \includegraphics[scale=0.3]{fig/TDC_profile.png}
    \caption[]{Time profile of the collected hits in one experimental run.  } 
    \label{fig:TDC_profile}
 \end{figure}
 
 \begin{figure}[tb]
 \centering
-\includegraphics[scale=0.4]{fig/RunNumber_61551_TDCmax_Zslice.png}
+\includegraphics[scale=0.36]{fig/RunNumber_61551_TDCmax_Zslice.png}
 \caption{Time profile distribution for the collected hits in one experimental 
 run. } \label{fig:RunNumber_61551_TDCmax_Zslice}
 \end{figure}
@@ -329,7 +331,7 @@ reconstructions code.
 
 \begin{figure}[tb]
 \hspace*{-1.8cm}
-\includegraphics[scale=0.28]{fig/Drift_run_number_1.png}
+\includegraphics[scale=0.26]{fig/Drift_run_number_1.png}
 \caption{$TDC_{Nbmax/2}$ versus the experimental run numbers (time).  } 
 \label{fig:Drift_run_number_1}
 \end{figure}
