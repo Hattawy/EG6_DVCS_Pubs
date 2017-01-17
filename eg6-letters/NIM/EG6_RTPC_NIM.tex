@@ -115,17 +115,16 @@ electric and magnetic fields within a sensitive gas volume. The ionized
 electrons are collected by a position-sensitive electron collection system.  
 Later in 1997, F.~Sauli introduced the Gas Electron Multiplier (GEM) as an 
 effective gas-gain element to improve the tracking efficiency of the TPCs 
-\ref{gem_sauli}. Currently, the TPCs are widely used in physics experiments, 
+\ref{gem_sauli}. Nowadays, the TPCs are widely used in physics experiments, 
 such as high-energy physics (ALEPH, DELPHI), heavy-ion physics (STAR, ALICE) 
 and rare-event searches (XENON, NEXT).
-
 
 The first implementation of a radial TPC with JLab-CLAS spectrometer has been 
 performed by the BoNuS experiment \cite{BONUS} in 2005. The success of the 
 BoNuS-RTPC in detecting the slow protons motivated the development of this new 
-RTPC. For the channel of interests of our experiments, the recoiled $^{4}He$ 
-nuclei have momentum per charge around 150 MeV/c, the detection of these 
-particles was the primary motivation for designing this detector. 
+RTPC. For the channels of interest in CLAS-EG6 experiment, the recoiled 
+$^{4}He$ nuclei have momentum per charge around 150 MeV/c. The detection of 
+these low-energy nuclei was the primary motivation for designing this detector. 
 
  
 \section{CLAS-EG6 RTPC design} \label{sec_design}
@@ -133,22 +132,21 @@ The design of CLAS-EG6 RTPC has been chosen according to physics and
 experimental considerations. At 6 GeV incident electron beam energy, the recoil 
 $^{4}He$ nuclei, from the coherent DVCS channel, have an average momentum (per 
 charge) around 125 MeV/c, while the "standard" CLAS detects charged particles 
-with a threshold of 250 MeV/c. On the experimental site, The chosen design has 
-to fit within the available space of a 5 Tesla Solenoid magnet that surrounds 
-the target \cite{Hyon-suk}. Figure \ref{fig:RTPC2} shows an experimental view 
-of the RTPC before inserting it into the solenoid. 
+with a threshold of 250 MeV/c. On the experimental site, the chosen design has 
+to fit within the available space inside a 5 Tesla Solenoid magnet that 
+surrounds the target \cite{Hyon-suk}. Figure \ref{fig:RTPC2} shows an 
+experimental view of the RTPC before being inserted into the solenoid. 
 
 
-The CLAS-EG6 RTPC is a 200~mm long with a 150~mm diameter time projection 
-chamber. While a charged particle traverses a gas-sensitive volume, the ionized 
-electrons are released and drift outward perpendicularly to the beam direction.  
-These electrons are then amplified by three layers of GEMs and detected on 4.45 
-by 5~mm pads. As for CLAS-BoNuS, the EG6-RTPC has two detection parts but 
-unlike BoNuS they are part of a single chamber. Each part has independent GEM 
-amplification systems that cover around 80\% of the azimuthal angle. Under the 
-effect of the electromagnetic field, the ionization electrons drift to the 
-readout system on the external shell with a curved trajectory as can be seen in 
-the figure~\ref{fig:RTPC_1_4}.
+The CLAS-EG6 RTPC is a 200~mm long with a 150~mm diameter TPC. While a charged 
+particle traverses a gas-sensitive volume, the ionized electrons are released 
+and drift, under the effect of an applied electromagnetic field, outward 
+perpendicularly to the beam direction. These electrons are then amplified by 
+three layers of GEMs and detected by a curved readout system on the external 
+shell as can be seen in the figure~\ref{fig:RTPC_1_4}. As for CLAS-BoNuS, the 
+EG6-RTPC has two detection halves but unlike BoNuS they are part of a single 
+chamber. Each half has independent GEM amplification systems that cover around 
+80\% of the azimuthal angle.
 
 \begin{figure}[tb]
 \centering
@@ -160,42 +158,42 @@ the figure~\ref{fig:RTPC_1_4}.
 \begin{figure}[tb]
 \centering
 \includegraphics[scale=0.28]{fig/RTPC_1_all.png}
-\caption{Schematic drawing of the RTPC taken on a plane perpendicular to the 
-beam line, see text for description of the elements.} \label{fig:RTPC_1_4}
+\caption{Schematic drawing of CLAS-EG6 RTPC taken on a plane perpendicular to 
+the beam line, see text for description of the elements.} 
+\label{fig:RTPC_1_4}
 \end{figure} 
 
-As seen in figure~\ref{fig:RTPC_1_4}, the RTPC has the following substructure, 
-from the beam axis to the exterior::\\
+As seen in figure~\ref{fig:RTPC_1_4}, the CLAS-EG6 RTPC has the following 
+substructure, from the beam line to the exterior:\\
 \begin{itemize}
    \item The target extends along the RTPC's central z-axis, with a diameter of 
       6 mm. It is enclosed in a 27-$\mu$m-thick Kapton wall.
 
-   \item The first gas gap extends from 3 mm to 20 mm radial distance. It is 
-   filled with $^{4}He$ gas at 1~atm. During run, this region is swarmed by 
-   Moller electrons induced by the beam, such that filling this region with a 
-   light gas like $^{4}He$ minimizes secondary interactions. This region is 
-   surrounded by a 4 $\mu$m thick window made of aluminized Mylar and connected 
-to ground.                                                                 
-
+   \item The first gas gap extends from 3 mm to 20 mm radial distances. It is 
+      filled with $^{4}He$ gas at 1~atm. During run, this region is swarmed by 
+      M\o ller electrons induced by the beam, such that filling this region 
+      with a light gas like $^{4}He$ minimizes secondary interactions. This 
+      region is surrounded by a 4 $\mu$m thick window made of aluminized Mylar 
+      and connected to ground.                                                                
    \item The gap region extends between 20~mm and 30~mm and is filled with a 
-      gas mixture of 80$\%$ Neon and 20$\%$ Dimethyl Ether (DME).  This region 
+      gas mixture of 80$\%$ Neon and 20$\%$ Dimethyl Ether (DME). This region 
       is surrounded by a 4~$\mu$m thick window made of aluminized Mylar, which 
       serves as the cathode.
 
    \item The drift region is filled with the Ne-DME gas mixture, it extends 
       from the cathode to the first Gas Electron Multiplier(GEM), 60 mm away 
-      from the central axis. The electric field in this region is around 
-      500~V/cm (???) and perpendicular to the beam. Field cages are installed 
-      at both ends of the detector in this region. Progressive voltage 
-      depending on radial position is applied on these to maintain a uniform 
-      electric field perpendicular to the beam line at the edges of the RTPC.
+      from the beam axis. The electric field in this region is around 500~V/cm 
+      (???) and perpendicular to the beam. Field cages are installed at both 
+      ends of the detector in this region. Progressive voltage depending on 
+      radial position is applied on these to maintain a uniform electric field 
+      perpendicular to the beam line at the edges of the RTPC.
    
-   \item The GEM system is composed of three GEMs located at radii, 60 mm, 63 
-      mm and 66 mm, they amplify the electrons to make a measurable signal. In 
-      this configuration, the first GEM layer represents the anode.
+   \item The electron amplification system is composed of three GEMs located at 
+      radii, 60 mm, 63 mm and 66 mm. In this configuration, the first GEM layer 
+      represents the anode.
 
    \item The readout board has internal radius of 69~mm and collects the 
-      charges, preamplifiers are plugged directly on its outer side and are 
+      charges. Preamplifiers are plugged directly on the outer side and are 
       transmitting the signal to the data acquisition electronics.
 \end{itemize}
 
@@ -206,19 +204,19 @@ to ground.
 \label{fig:GEMs}
 \end{figure}
 
-The GEM amplification has been mainly chosen for this detector for their 
-flexibility, allowing the curved amplification surface. Also GEM are known to 
-create less sparks than in other gaseous detectors, which is a good thing for 
-the detection of slow nuclei like $^4$He. GEMs are made from an insulator layer 
-(here Kapton) sandwiched between two 5 $\mu$m copper layers. The mesh of each 
-GEM layer is chemically etched with 50$\mu$m diameter holes in double-conical 
-cross section shapes as can be seen in figure~\ref{fig:GEMs}. A potential 
-difference of 400 V is applied between the two copper layers of each GEM 
-creating a very strong electric field in the holes. Such strong fields lead to 
-high ionization from initial electrons and therefore amplification of the 
-signal. Also, a potential difference of 150 V is set between the GEMs to push 
-the amplified electrons toward the readout pads. The gain of each GEM layer is 
-of order 100.\\
+The GEM system has been mainly chosen for this detector for its flexibility, 
+allowing the curved amplification surface. Also GEMs are known to create less 
+sparks than in other gaseous detectors, which provides a cleaner detection of 
+slow nuclei like $^4$He. GEMs are made from an insulator layer, Kapton in our 
+case, sandwiched between two 5 $\mu$m copper layers. The mesh of each GEM layer 
+is chemically etched with 50$\mu$m diameter holes in double-conical cross 
+section shapes as can be seen in figure~\ref{fig:GEMs}. A potential difference 
+of 400 V is applied between the two copper layers of each GEM creating a very 
+strong electric field in the holes. Such strong fields lead to high ionization 
+from initial electrons and therefore amplification of the signal. Also, a 
+potential difference of 150 V is set between the GEMs to push the amplified 
+electrons toward the readout pads. The gain of each GEM layer is of order 100, 
+making a total gain of about $10^{6}$.\\
 
 \section{Readout System} \label{sec_readout}
 The RTPC electron collecting system has 3200 readout pads. These collection 
