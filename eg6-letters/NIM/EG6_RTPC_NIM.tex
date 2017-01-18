@@ -14,8 +14,8 @@
 % the following line is for submission, including submission to the arXiv!!
 %\hspace{5.2in} \mbox{Fermilab-Pub-04/xxx-E}
 
-\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{A New Radial Time 
-Projection Chamber for CLAS at JLab}}
+\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{A Radial Time 
+Projection Chamber for $\alpha$ detection in CLAS at JLab}}
 \input author_list.tex  
 
 \date{\today}
@@ -32,8 +32,8 @@ less than 250 MeV/c. In 2009, we carried out measurements on $^4$He target
 using CLAS spectrometer, which was upgraded with the RTPC during the CLAS-EG6 
 experimental run. The detector was positioned directly around a gaseous target, 
 allowing a detection threshold of $~$100  MeV/c for $^4$He. This article 
-discuses the RTPC design, work principle, developed calibration methods and 
-detector performance.
+discuses the RTPC design, work principle, calibration methods and 
+performances.
 \end{abstract}
 
 \maketitle
@@ -50,45 +50,43 @@ three experimental Halls (A, B, C). The CLAS spectrometer, located in Hall-B,
 is composed of several sub-detectors and two magnets. The spectrometer was 
 designed to track charged particles of momentum greater than 250 MeV/c as well 
 as detecting real photons. Figure~\ref{fig:CLAS} shows a three dimensional 
-representation of the CLAS detector, ordered with respect to their radial 
-distance from the beam line as:
-
+representation of the baseline CLAS spectrometer, here is a list of the main elements
+depicted in the figure:
 \begin{itemize}
- \item Three regions of Drift Chambers (DC) for tracking of charged 
-    particles~\cite{DCref}.
- \item Superconducting toroidal magnet which enables the tracking in the DC by 
-    bending the trajectories.
- \item Cherenvkov Counters (CC) to help in separating electrons from negative 
-    particles, such as pions ~\cite{CCref}.
- \item Scintillation Counters (SC) to identify hadrons via measuring their 
-    Time-Of-Flight (TOF)~\cite{TOFref}.
- \item Forward Electromagnetic Calorimeter (EC) which measures the energy of 
-    the showering particles (electrons and photons) and neutrons~\cite{ECref}.
+ \item The three regions of Drift Chambers (DC) used for the tracking of charged 
+    particles~\cite{DCref} (in blue on the figure).
+ \item The superconducting toroidal magnet (in yellow) bends the trajectories 
+    of charged particles, thus allowing momentum measurement with the DC tracking information.
+ \item The Cherenvkov Counters (CC) used to separate electrons from other negative 
+    particles, such as pions, at lower energies~\cite{CCref} (in pink).
+ \item The Scintillation Counters (SC) used to identify hadrons by measuring their 
+    Time-Of-Flight (TOF)~\cite{TOFref} (in red).
+ \item The Electromagnetic Calorimeter (EC) used to separate electrons from other negative 
+    particles at higher energies and to detect neutral particles (neutrons and 
+    photons in particular)~\cite{ECref} (in green).
 \end{itemize}
 
 \begin{figure}[tbp]
 \centering \includegraphics[scale=0.3]{fig/test_clas.png}
-\caption{A three dimensional representation of the primary CLAS setup 
-   represents the geometry and the relative position of each subsystem. From 
-   outside, the electromagnetic calorimeter (green), time-of-flight system 
-   (red), Cherenkov counters (purple), three drift chamber regions (blue) and 
-the superconducting torus coils (yellow).} \label{fig:CLAS}
+\caption{A three dimensional representation of the baseline CLAS setup. The
+   full description is given in the text.} \label{fig:CLAS}
 \end{figure}
 
-The DVCS process is the exclusive electroproduction of a real photon from a 
-quark of a hadronic target ($H$), $eH \rightarrow e' H' \gamma$. In the basic 
-setup of CLAS, the real photons are detected by the forward EC, which covers 
-polar angles from 8$^{\circ}$ to 45$^{\circ}$. With a 6 GeV electron beam, the 
+The measurement of the DVCS process ($eH \rightarrow e' H' \gamma$, where 
+$H$ is a hadron) necessitates some adaptations in this setup. Indeed, the EC 
+covers only polar angles from 8$^{\circ}$ to 45$^{\circ}$ with a very small
+acceptance at the lowest angles. With a 6 GeV electron beam on a proton target, the 
 majority of the DVCS photons are produced at polar angles below 15$^{\circ}$, 
-where the acceptance of the EC is poor. In CLAS-E1DVCS experiment (2005), CLAS 
-was upgraded with the addition of an Inner Calorimeter (IC). The IC is 
+where the acceptance of the EC is poor. To resolve this issue an additional 
+Inner Calorimeter (IC) has been built for the E01-113 experiment (2005). The IC is 
 constructed from 424 lead-tungstate (PbWO$_{4}$) crystals, covering polar 
-angles between 5$^{\circ}$ and 15$^{\circ}$. Each crystal is 16 cm long ,
-corresponding to 17 radiation lengths, with a 1.33~$\times$~1.33 cm$^2$ front 
-surface and a 1.6~$\times$~1.6 cm$^2$ back surface. The achieved energy 
+angles between 5$^{\circ}$ and 15$^{\circ}$. Each crystal is 16 cm long,
+corresponding to 17 radiation lengths. The achieved energy 
 resolution is around 3 to 4$\%$ for photon energies between 2 GeV and 5 GeV and 
 the angular resolution is between 3 to 5 mrad for the same energy range 
-\cite{Hyon-suk}.
+\cite{Hyon-suk}. The amount of background from Moller electron is however
+very problematic at such small angles, so a 5 Tesla solenoid magnet has been
+added around the target as a magnetic shield against the low energy background.
 
 The developed RTPC has been used during a three months experimental run in 2009 
 with a longitudinally polarized electron beam of energy 6.064 GeV projected 
