@@ -1,0 +1,6 @@
+#! /bin/bash
+pdflatex -shell-escape dvcs_he4_prl.tex
+pdflatex -shell-escape dvcs_he4_prl.tex
+pdflatex -shell-escape dvcs_he4_prl.tex
+rm -f *.tex~ dvcs_he4_prl.mtc1 dvcs_he4_prl.aux dvcs_he4_prl.dvi dvcs_he4_prl.lof dvcs_he4_prl.log dvcs_he4_prl.out dvcs_he4_prl.lot dvcs_he4_prl.toc dvcs_he4_prl.brf dvcs_he4_prl.maf dvcs_he4_prl.mtc dvcs_he4_prl.mtc0 dvcs_he4_prl.nlo dvcs_he4_prl.bbl dvcs_he4_prl.blg
+
