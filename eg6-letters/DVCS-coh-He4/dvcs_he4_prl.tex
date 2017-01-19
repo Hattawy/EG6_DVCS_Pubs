@@ -1,6 +1,10 @@
 \documentclass[nofootinbib,twocolumn,showpacs,prl,superscriptaddress,secnumarabic,amssymb,nobibnotes,aps,floatfix]{revtex4}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+
 %
 \def\Dirac#1{#1\hskip-5pt/}
 %
@@ -43,17 +47,65 @@
 \date{\today}
 %
 \begin{abstract}
-We report the first exclusive measurements of deeply virtual Compton scattering (DVCS) off a nucleus, where all the products of the reaction including the recoil $^4$He nucleus were detected. The experiment was performed using the Jefferson Lab CEBAF Large Acceptance Spectrometer (CLAS) enhanced with a radial time projection chamber (RTPC) to detect the recoiling $^4$He nuclei. We measure large beam spin asymmetries comparable to the proton's ones and extract in a model independent way, the single chirally-even generalized parton distribution of the $^4$He nucleus. These are pioneering measurements and will lead the way toward the 3D imaging of the partonic structure of nuclei. 
+We report the first exclusive measurements of deeply virtual Compton scattering 
+(DVCS) off a nucleus, where all the products of the reaction including the 
+recoil $^4$He nucleus were detected. The experiment was performed using the 
+Jefferson Lab CEBAF Large Acceptance Spectrometer (CLAS) enhanced with a radial 
+time projection chamber (RTPC) to detect the recoiling $^4$He nuclei. We 
+measure large beam spin asymmetries comparable to the proton's ones and extract 
+in a model independent way, the single chirally-even generalized parton 
+distribution of the $^4$He nucleus. These are pioneering measurements and will 
+lead the way toward the 3D imaging of the partonic structure of nuclei.  
 \end{abstract}
 \pacs{Valid PACS appear here}
 
 \maketitle 
 
-A wealth of information on the quantum chromodynamics (QCD) structure of hadrons lies in the correlations between the momentum and spatial degrees of freedom of the constituent partons. Such correlations are accessible via the generalized parton distributions (GPDs). The GPDs correspond to the coherence between quantum states of different (or same) helicity, longitudinal momentum, and transverse position. In an impact parameter space, they can be interpreted as a distribution in the transverse plane of partons carrying a certain longitudinal momentum \cite{Burkardt:2000za,Diehl:2002he,Belitsky:2002ep}. A crucial feature of GPDs is the access to the transverse position of partons which, combined with their longitudinal momentum, leads to the total angular momentum of partons \cite{Burkardt:2005hp}. Deep virtual Compton scattering (DVCS) corresponding to hard exclusive electroproduction of a real photon, is considered the cleanest probes to access GPDs and thus study the 3D imaging of nucleons and nuclei.
+A wealth of information on the quantum chromodynamics (QCD) structure of 
+hadrons lies in the correlations between the momentum and spatial degrees of 
+freedom of the fundamental constituent partons, quarks and gluons. Such 
+correlations are accessible via the generalized parton distributions (GPDs).  
+The GPDs correspond to the coherence between quantum states of different (or 
+same) helicity, longitudinal momentum, and transverse position. In an impact 
+parameter space, they can be interpreted as a distribution in the transverse 
+plane of partons carrying a certain longitudinal momentum 
+\cite{Burkardt:2000za,Diehl:2002he,Belitsky:2002ep}. A crucial feature of GPDs 
+is the access to the transverse position of partons which, combined with their 
+longitudinal momentum, leads to the total angular momentum of partons 
+\cite{Burkardt:2005hp}. Deep virtual Compton scattering (DVCS) corresponding to 
+hard exclusive electroproduction of a real photon, which is considered as the 
+cleanest probe to access GPDs and thus study the 3D imaging of nucleons and 
+nuclei.
 
-DVCS measurements have been the focus of a worldwide effort \cite{Stepanyan:2001sm,Airapetian,Chekanov:2003ya,Aktas:2005ty,Chen:2006na,Munoz Camacho:2006hx,Girod:2007aa,Gavalian:2009,Seder:2015,Pisano:2015,Jo:2015ema} involving several accelerator facilities such as Jefferson Lab (JLab), HERA and  CERN. The vast majority of the experiments focused on the study of the nucleon's structure. The deuterium was also investigated at HERMES and JLab \cite{Mazouz:2007aa} mainly as a neutron target. Studying the 3D imaging of the nucleon is terms of its fundamental constituents is a very important goal. Understanding how these distributions are modified to provide the binding and structure in a nucleus is as fascinating of a question and an integral part of our quest of using QCD to explore nuclear matter. The study of nuclear DVCS is still in its infancy due to the challenging detection of the low energy recoil nucleus. Until very recently, the HERMES experiment \cite{Ellinghaus:2002zw} was the only one to measure DVCS off heavier nuclei such as $^4$He, N, Ne, Kr and Xe, where only the scattered electron and the real photon are detected. In this paper, we report the first exclusive measurements of DVCS off $^4$He where all products of the reaction are detected including the recoiling $^4$He nucleus.
+DVCS measurements have been the focus of a worldwide effort 
+\cite{Stepanyan:2001sm,Airapetian,Chekanov:2003ya,Aktas:2005ty,Chen:2006na,Munoz 
+Camacho:2006hx,Girod:2007aa,Gavalian:2009,Seder:2015,Pisano:2015,Jo:2015ema} 
+involving several accelerator facilities such as Jefferson Lab (JLab), HERA and  
+CERN. The vast majority of the experiments focused on the study of the 
+nucleon's structure. The deuterium was also investigated at HERMES and JLab 
+\cite{Mazouz:2007aa} mainly as a neutron target. However, studying the 3D 
+imaging of the nucleon is a very important goal, understanding how these 
+distributions are modified to provide the binding and structure in a nucleus is 
+as fascinating of a question and an integral part of our quest of using QCD to 
+explore nuclear matter. 
 
-
+A DVCS process on a nuclear target differ from single nucleon scattering in 
+providing access to the measure two DVCS channels. In the coherent DVCS 
+channel, the target nucleus remains intact and recoils as a whole while 
+emitting a real photon ($eA \rightarrow e' A' \gamma$), allowing to measure the 
+nuclear GPDs of the target. In the incoherent channel, the nucleus breaks up 
+and the DVCS takes place on a bound nucleon that emits the final photon ($eA 
+\rightarrow e' N' \gamma$ X), enabling the GPDs measurement of the bound 
+nucleons and to study the medium modifications of the nucleons in the nuclear 
+medium via the GPDs.  Figure \ref{fig:diags} illustrates the dominant mechanism 
+for the coherent DVCS channel on $^4$He. At sufficiently large squared electron 
+momentum transfer $Q^2$ ($= -(k-k')^{2}$) and small squared momentum transfer 
+$t$ ($= (p-p')^{2}$), the QCD factorization theorem predicts that the DVCS 
+handbag diagram can be factorized into two parts, hard and soft parts 
+\cite{Freund_Collins,Ji_Osborne}. The hard part includes photons-quark 
+interaction and it is calculable through perturbative methods, while the 
+soft/non-perturbative part is parametrized in terms of GPDs, which embed the 
+partonic structure of the hadron.  
 
 \begin{figure}[tb]
 \includegraphics[width=6.5cm]{figs/DVCS_diagram.pdf}
@@ -62,25 +114,72 @@ DVCS measurements have been the focus of a worldwide effort \cite{Stepanyan:2001
 \label{fig:diags}
 \end{figure}
 
+%introduction
+The GPDs are defined for each quark flavor and gluon as matrix
+elements of the light cone operators \cite{Belitsky}, describing the transition 
+between the initial and final states of a hadron. The GPDs depend on two 
+longitudinal momentum fraction variables ($x$, $\xi$) and on the momentum 
+transfer $t$ to the target. $x$ is the average longitudinal momentum fraction 
+of the parton involved in the process and $\xi$ is the longitudinal fraction of 
+the momentum transfer $t$, which is related to the Bjorken variable $x_{B}$: 
+$\xi\approx {{x_B}\over{2-x_B}}$, where $x_B=\frac{Q^2}{2M\nu}$ with
+the proton mass $M$ and $\nu=E_e-E_{e^\prime}$. The GPDs $x$ variable cannot be 
+measured experimentally in a DVCS reaction. Hence, we measure the GPDs 
+convolutions on $x$, the so-called Compton Form Factors (CFF) 
+\cite{Guidal:2013rya}.  In a DVCS process, the number of GPDs needed to 
+parametrize the partonic structure of a hadron depends on the different 
+configurations between the spin of the hadron and the helicity direction of the 
+struck quark.  Therefore, the partonic structure of spin zero nuclei, such as 
+$^4He$ and $^{12}C$, is parametrized by only one GPD ($H_{A}(x,\xi,t)$) at 
+leading twist, while 4 GPDs arise in the nucleon case.  In this work, we have 
+chose the $^4$He nucleus as our target of interest because of it's spinless 
+nature and it shows a clear EMC effect \cite{JSeely}, in addition of having a 
+high density and it is a well-known few-body system.
+
+The study of nuclear DVCS is still in its infancy due to the challenging 
+detection of the low-energy recoil nuclei in fixed target experiments. Until 
+very recently, the HERMES experiment \cite{Ellinghaus:2002zw} was the only one 
+to measure DVCS off heavier nuclei such as $^4$He, N, Ne, Kr and Xe, where only 
+the scattered electron and the real photon are detected. In this paper, we 
+report the first exclusive measurements of coherent DVCS channel off $^4$He 
+where all products of the reaction are detected including the recoiling $^4$He 
+nucleus. The incoherent DVCS channel measurement from the same data set in in 
+preparation and will reported in another publication. 
+
+%experimental setup
+
 \begin{figure}[tb]
 \includegraphics[width=6.5cm,angle=-90]{figs/RTPC.pdf}
 \vspace{-0.9cm}
-\caption{Left: A picture of the \it{eg6} RTPC before insertion into the solenoid. Right: A cross section of the \it{eg6} RTPC perpendicular to the beam direction. An illustration of a $^4$He track originating from the pressurized straw target is shown along with the electrons produced in the drift region.}
+\caption{Left: A picture of the CLAS-EG6 RTPC before insertion into the 
+   solenoid.  Right: A cross section of the CLAS-EG6 RTPC perpendicular to the 
+beam direction. An illustration of a $^4$He track originating from the 
+pressurized straw target is shown along with the electrons produced in the 
+drift region.}
 \label{fig:RTPC}
 \end{figure}
 
+%DVCS selection
 \begin{figure}[tb]
 \includegraphics[width=8.9cm]{figs/coh_exc_cuts.pdf}
-\vspace{-0.9cm}
-\caption{}
+\caption{ The coherent DVCS exclusivity cuts. The black
+distributions represent the coherent DVCS events candidate. The shaded
+distributions represent the events which passed all the exclusivity cuts
+except the quantity plotted. The vertical red lines represent $3\sigma$ cuts.}
 \label{fig:kin-cuts}
 \end{figure}
 
 
+%asymmetries 
 \begin{figure}[tb]
 \includegraphics[width=8.9cm]{figs/coherent-ALU.pdf}
-\vspace{-0.9cm}
-\caption{}
+\caption{The coherent $A_{LU}$ as a function of $\phi$ in
+   $Q^{2}$(top panel), $x_{B}$ (middle panel), and $-t$ (bottom panel) bins.  
+   The error bars represent the statistical and the systematic uncertainties 
+   added quadratically, shown on top in green are error bars representing only 
+   the statistical uncertainties. The brown bands represent the systematic
+uncertainties, including the normalisation systematic uncertainties. The red
+curves represent fits in the form of equation \ref{eq:A_LU-coh}.}
 \label{fig:alu}
 \end{figure}
 
@@ -91,15 +190,64 @@ DVCS measurements have been the focus of a worldwide effort \cite{Stepanyan:2001
 \label{fig:alu90}
 \end{figure}
 
+%CFF
+we extract the GPD $H$ in a model independent way (figure~\ref{fig:CFF}). This 
+is possible using the beam-spin asymmetry ($A_{LU}$) expression for spin-zero 
+target at leading twist~\cite{BM_2009}:
+\small
+\begin{equation}
+\begin{split}
+A_{LU}(\phi) =~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\
+ \frac{\alpha_{0}(\phi) \, \Im m(\mathcal{H}_{A})}
+{\alpha_{1}(\phi) + \alpha_{2}(\phi) \, \Re e(\mathcal{H}_{A}) + \alpha_{3}(\phi) \, 
+\big( 
+\Re e(\mathcal{H}_{A})^{2} + \Im m(\mathcal{H}_{A})^{2} \big)}
+\label{eq:A_LU-coh}
+\end{split}
+\end{equation}
+\normalsize
+%
+where $\Im m(\mathcal{H}_{A})$ and $\Re e(\mathcal{H}_{A})$ are the imaginary and real parts of the CFF $\mathcal{H}_{A}$ associated to the GPD $H_A$. The $\alpha_{i}$'s are $\phi$-dependent kinematical factors that depend on the nuclear form factor $F_A$ and the independent variables $Q^2$, $x_{B}$ and $t$. These factors are simplified as:
+%
+\small
+\begin{eqnarray}
+   \alpha_0 (\phi) & = &\frac{x_{A}(1+\epsilon^2)^2}{y} S_{++}(1) \sin(\phi)\\
+    \alpha_1 (\phi) & = & c_0^{BH}+c_1^{BH} \cos({\phi})+c_2^{BH} \cos(2\phi)\\ 
+   \alpha_2 (\phi) & = & \frac{x_{A}(1+\epsilon^2)^2}{y}  \left( C_{++}(0) +  
+C_{++}(1) cos(\phi) \right)\\
+\alpha_3 (\phi) &=& \frac{x^{2}_{A}t(1+\epsilon^2)^2}{y} {\mathcal P}_1(\phi) 
+{\mathcal P}_2(\phi) \cdot 2 \frac{2-2y+y^2 + \frac{\epsilon^2}{2}y^2}{1 + 
+\epsilon^2}
+\end{eqnarray}
+\normalsize
+%
+
+Where $S{++}(1)$, $C_{++}(0)$, and $C_{++}(1)$ are the Fourier harmonics in the 
+leptonic tensor. Their explicit expressions can be found in .  
+
+
 
 \begin{figure}[tb]
 \includegraphics[width=8.9cm]{figs/updated_CFFs.pdf}
 \vspace{-0.9cm}
-\caption{}
+\caption{The model-independent extraction of the imaginary (blue points) and
+real (red points) parts of the $^4$He CFF $\mathcal{H}_A$, as functions of
+$Q^{2}$ (on the top right), $x_B$ (on the top left), and $t$ (on the bottom).}
 \label{fig:CFF_HA}
 \end{figure}
 
+%interpretations 
 
+
+
+
+%conclusion
+
+
+
+
+
+%Acknowledgments
 
 We thank the staff of the Accelerator and Physics Divisions
 at Jefferson Lab for making this experiment possible.
@@ -172,16 +320,30 @@ Phys.\ Rev.\ Lett. {\bf 114}, 032001 (2015).
 S.~Pisano {\it et al.} [CLAS Collaboration],
 Phys.\ Rev.\ D {\bf 91}, 052014 (2015).
 
-\bibitem{Jo:2015ema} 
-  H.~S.~Jo {\it et al.} [CLAS Collaboration],
+\bibitem{Jo:2015ema} H.~S.~Jo {\it et al.} [CLAS Collaboration],
   Phys.\ Rev.\ Lett.\  {\bf 115}, no. 21, 212003 (2015)
 
 \bibitem{Mazouz:2007aa} 
   M.~Mazouz {\it et al.} [Jefferson Lab Hall A Collaboration],
    Phys.\ Rev.\ Lett.\  {\bf 99}, 242501 (2007)
 
-\bibitem{Ellinghaus:2002zw} 
-  F.~Ellinghaus {\it et al.} [HERMES Collaboration],
+\bibitem{Freund_Collins}
+A.~Freund and J.C.~Collins, Phys.\ Rev.\ D {\bf 59}, 074009 (1998)
+
+\bibitem{Ji_Osborne}
+   X.-D.~Ji and J.~Osborne, Phys.\ Rev.\ D {\bf 58}, 094018 (1998)
+
+\bibitem{Belitsky}
+A.~V.~Belitsky and A.~V.~Radyushkin, Phys.\ Rept.\ vol. 418 (2005)
+
+\bibitem{Guidal:2013rya}
+ M.~Guidal, H.~Moutarde and M.~Vanderhaeghen,
+ Rept.\ Prog.\ Phys.\  {\bf 76}, 066202 (2013)
+
+\bibitem{JSeely}
+ J. Seely {\it et al.} Phys.\ Rev.\ Lett.\ {\bf 103}, 202301 (2009)
+
+\bibitem{Ellinghaus:2002zw} F.~Ellinghaus {\it et al.} [HERMES Collaboration],
   AIP Conf.\ Proc.\  {\bf 675}, 303 (2003)
 
 \end{thebibliography}
