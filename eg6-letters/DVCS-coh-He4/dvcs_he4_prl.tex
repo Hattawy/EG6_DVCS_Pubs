@@ -91,11 +91,11 @@ explore nuclear matter.
 
 A DVCS process on a nuclear target differ from single nucleon scattering in 
 providing access to the measure two DVCS channels. In the coherent DVCS 
-channel, the target nucleus remains intact and recoils as a whole while 
+channel, the target nucleus ($A$) remains intact and recoils as a whole while 
 emitting a real photon ($eA \rightarrow e' A' \gamma$), allowing to measure the 
 nuclear GPDs of the target. In the incoherent channel, the nucleus breaks up 
-and the DVCS takes place on a bound nucleon that emits the final photon ($eA 
-\rightarrow e' N' \gamma$ X), enabling the GPDs measurement of the bound 
+and the DVCS takes place on a bound nucleon ($N$) that emits the final photon 
+($eA \rightarrow e' N' \gamma$ X), enabling the GPDs measurement of the bound 
 nucleons and to study the medium modifications of the nucleons in the nuclear 
 medium via the GPDs.  Figure \ref{fig:diags} illustrates the dominant mechanism 
 for the coherent DVCS channel on $^4$He. At sufficiently large squared electron 
@@ -172,17 +172,16 @@ MeV/c. In order to ensure the exclusivity of the our coherent DVCS channel, we
 built a small and light radial time projection chamber (RTPC) to detect 
 recoiling nuclei down to energies of few MeVs. Figure~\ref{fig:RTPC} presents 
 our cylindrical RTPC, which is 20 cm long and 15 cm diameter, surrounding the 
-$^4$He gaseous target, with a 3 cm radial drift length. The detector was 
-specifically calibrated for $^4$He nuclei using elastic scattering produced 
-with a 1.2~GeV electron beam.
-
+$^4$He gaseous target and being inside the available space inside the solenoid 
+, with a 3 cm radial drift length. The detector was specifically calibrated for 
+$^4$He nuclei using elastic scattering produced with a 1.2~GeV electron beam.
 
 
 \begin{figure}[tb]
 \includegraphics[width=7.0cm,angle=-90]{figs/RTPC.pdf}
 \vspace{-0.9cm}
 \caption{Left: A picture of the CLAS-EG6 RTPC before insertion into the 
-   solenoid.  Right: A cross section of the CLAS-EG6 RTPC perpendicular to the 
+   solenoid. Right: A cross section of the CLAS-EG6 RTPC perpendicular to the 
 beam direction. An illustration of a $^4$He track originating from the 
 pressurized straw target is shown along with the electrons produced in the 
 drift region.}
@@ -220,8 +219,81 @@ except the quantity plotted. The vertical red lines represent $3\sigma$ cuts.}
 \label{fig:kin-cuts}
 \end{figure}
 
+\begin{figure}[tb]
+\hspace{-0.45cm}
+\includegraphics[width=9.0cm]{figs/Q2_xB_t_Coh.pdf}
+\caption{The $Q^{2}$ as a function of $x_{B}$ (left) and the $Q^{2}$ as a 
+function of $-t$ (right) for the identified coherent DVCS events after the 
+exclusivity cuts.}
+\label{fig:kin-coverage}
+\end{figure}
 
-%asymmetries 
+
+
+
+%asymmetries
+
+We identified several background contributions to the DVCS process, in 
+particular accidental events and exclusive deeply virtual $\pi^0$ production 
+(DV$\pi^0$P). The accidental
+events where the different particles come from different events are 
+suppressed by the limited phase space allowed by the exclusivity cuts. We 
+estimate the accidental events to represent 4.1\% of our sample. This 
+relatively large number is due to the small cross section of the DVCS. We 
+evaluated this contribution by selecting events passing all our cuts but with 
+particles originating from different vertices. 
+
+Another important source of background is the deeply virtual 
+$\pi^0$ production (DV$\pi^0$P), which can easily be mistaken
+with DVCS when one of the two photons of the $\pi^0$ decay is produced at
+low energy in the laboratory frame. To estimate the importance of
+this background, we developped an event generator 
+that we calibrated to match our measured experimental yield of exclusive 
+$pi^0$. We used this generator together 
+with a GEANT3 simulation of our detection system to estimate the ratio 
+of acceptance between DV$\pi^0$P where the two photons are detected and those
+where only one photon is detected and would pass our 
+DVCS selection cuts. This ratio obtained from simulation is then multiplied by 
+the measured yield of DV$\pi^0$P events, indicating a contamination of 2 to 4\%. 
+The study of systematics errors showed that the main contributions come from 
+the choice of the DVCS exclusivity cuts (8\%) and the large binning size 
+(5.1\%). However added quadratically, these errors sum up to 10\% which remain 
+for all bins well below the statistical errors.
+
+
+The beam-spin asymmetry is measurable using a polarized lepton beam on an 
+unpolarized target (U). It is convenient to use the beam-spin asymmetry as a 
+DVCS observable because most of the experimental normalization and acceptance 
+issues cancel out in the asymmetry ratio. It is defined as in terms of the 
+cross sections as:
+  \begin{equation}
+  A_{LU} = \frac{d^{5}\sigma^{+} - d^{5}\sigma^{-} }
+                {d^{5}\sigma^{+} + d^{5}\sigma^{-}}.
+    \label{BSA_equation}
+  \end{equation}
+  where $d^{5}\sigma^{+}$($d^{5}\sigma^{-}$) is the DVCS differential cross section for a positive (negative) beam helicity.
+
+
+
+
+In terms of the collected number of events in each beam-helicity state 
+($N^{+}$, $N^{-}$), A LU can be
+expressed as:
+
+\begin{equation}
+A_{LU} = \frac{1}{P_{B}} \frac{N^{+} - N^{-}}{N^{+} + N^{-} }.
+\end{equation}
+%
+where $P_{B}$ is the beam polarization, and $N^{+}$ and $N^{-}$ are the number of events detected with positive and negative electron helicity, respectively. The statistical uncertainty of $A_{LU}$ is
+%
+\begin{equation}
+   \sigma_{A_{LU}} = \frac{1}{P_{B}} \sqrt{ \frac{1 - (P_{B}A_{LU})^{2}}{N}}
+\end{equation}
+%
+where $N (N^{+} + N^{-}) $ is the total number of measured events.
+%
+
+
 \begin{figure}[tb]
 \includegraphics[width=8.9cm]{figs/coherent-ALU.pdf}
 \caption{The coherent $A_{LU}$ as a function of $\phi$ in
