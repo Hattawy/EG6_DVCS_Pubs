@@ -105,13 +105,7 @@ diagram can be factorized into two parts, hard and soft parts
 \cite{Freund_Collins,Ji_Osborne}. The hard part includes photons-quark 
 interaction and it is calculable through perturbative methods, while the 
 soft/non-perturbative part is parametrized in terms of GPDs, which embed the 
-partonic structure of the hadron. Experimentally, the DVCS reaction is 
-indistinguishable from the Bethe-Heitler (BH) process, which is the reaction 
-where the final photon is emitted either from the incoming or the outgoing 
-leptons. The BH process is not sensitive to GPDs and does not carry information 
-about the partonic structure of the hadronic target. The BH cross section is 
-calculable from the well-known electromagnetic form factors.
-
+partonic structure of the hadron.  
 \begin{figure}[tb]
 \includegraphics[width=6.5cm]{figs/DVCS_diagram.pdf}
 \vspace{-0.cm}
@@ -154,6 +148,70 @@ independent way for the first time ever. The incoherent DVCS channel
 measurement from the same data set in in preparation and will reported in 
 another publication. 
 
+This work presents the first exclusive measurement of the beam-spin asymmetry 
+of the reaction $e~^{4}He\rightarrow e'~^{4}He~\gamma$.This DVCS sensitive 
+observable is measurable using a polarized lepton beam on an unpolarized target 
+(U). It is convenient to use the beam-spin asymmetry as a DVCS observable 
+because most of the experimental normalization and acceptance issues cancel out 
+in the asymmetry ratio. It is defined in terms of the cross sections as:
+  \begin{equation}
+  A_{LU} = \frac{d^{5}\sigma^{+} - d^{5}\sigma^{-} }
+                {d^{5}\sigma^{+} + d^{5}\sigma^{-}}.
+    \label{BSA_equation}
+  \end{equation}
+where $d^{5}\sigma^{+}$($d^{5}\sigma^{-}$) is the DVCS differential cross 
+section for a positive (negative) beam helicity. Experimentally, the DVCS 
+reaction is indistinguishable from the Bethe-Heitler (BH) process, where the 
+final photon is emitted either from the incoming or the outgoing leptons. The 
+BH process is not sensitive to GPDs and does not carry information about the 
+partonic structure of the hadronic target, and it's amplitude is calculable 
+from the well-known electromagnetic form factors.
+
+The photon-electroproduction cross section can be decomposed into a BH,
+a DVCS, and an interference terms. At leading twist, the amplitudes of the 
+three terms can be decomposed into a finite sum of Fourier harmonics, the 
+so-called BMK formalism, as shown for the nucleon DVCS in 
+\cite{Belitsky:2001ns} and for the spinless nuclei in 
+\cite{Kirchner:2003wt,Belitsky:2008bz}. Therefore, the beam-spin asymmetry 
+($A_{LU}$) with the two opposite helicities of a longitudinally-polarized 
+electron beam (L) on a spin-zero target (U) can be written as:
+\small
+\begin{equation}
+\begin{split}
+A_{LU}(\phi) =~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\
+ \frac{\alpha_{0}(\phi) \, \Im m(\mathcal{H}_{A})}
+{\alpha_{1}(\phi) + \alpha_{2}(\phi) \, \Re e(\mathcal{H}_{A}) + \alpha_{3}(\phi) \, 
+\big( 
+\Re e(\mathcal{H}_{A})^{2} + \Im m(\mathcal{H}_{A})^{2} \big)}
+\label{eq:A_LU-coh}
+\end{split}
+\end{equation}
+\normalsize
+where $\Im m(\mathcal{H}_{A})$ and $\Re e(\mathcal{H}_{A})$ are the imaginary 
+and real parts of the $^4$He CFF $\mathcal{H}_{A}$ associated to the GPD $H_A$.  
+The $\alpha_{i}$'s are $\phi$-dependent kinematical factors that depend on the 
+nuclear form factor ($F_{A}(t)$) and the independent variables $Q^2$, $x_{B}$ 
+and $t$. These factors are simplified as:
+\small
+\begin{eqnarray}
+   \alpha_0 (\phi) & = &\frac{x_{A}(1+\epsilon^2)^2}{y} S_{++}(1) \sin(\phi)\\
+    \alpha_1 (\phi) & = & c_0^{BH}+c_1^{BH} \cos({\phi})+c_2^{BH} \cos(2\phi)\\ 
+   \alpha_2 (\phi) & = & \frac{x_{A}(1+\epsilon^2)^2}{y}  \left( C_{++}(0) +  
+C_{++}(1) cos(\phi) \right)\\
+\alpha_3 (\phi) &=& \frac{x^{2}_{A}t(1+\epsilon^2)^2}{y} {\mathcal P}_1(\phi) 
+{\mathcal P}_2(\phi) \cdot 2 \frac{2-2y+y^2 + \frac{\epsilon^2}{2}y^2}{1 + 
+\epsilon^2}
+\end{eqnarray}
+\normalsize
+
+Where $S{++}(1)$, $C_{++}(0)$, and $C_{++}(1)$ are the Fourier harmonics in the 
+leptonic tensor. Their explicit expressions can be found in 
+\cite{Belitsky:2008bz}. Therefore, Using the $\alpha_{i}$ factors, one can 
+obtain in a totally model-independent way $\Im m(\mathcal{H}_{A})$ and $\Re 
+e(\mathcal{H}_{A})$ from fitting the experimental $A_{LU}$ as a function of 
+$\phi$, the azimuthal angle between the ($e$,$e'$) and ($\gamma^{*}$,$^4$He$'$) 
+planes, for given values of $Q^2$, $x_{B}$, and $t$.
+
 %experimental setup
 
 The experiment, CLAS-EG6, took place in the experimental Hall-B of Jefferson 
@@ -162,12 +220,12 @@ factor polarized electrons into three experimental Halls (A, B, C). The data
 were collected over three months via projecting a 6.064 GeV longitudinally 
 polarized beam, (83$\%$ polarization), on a 6 atm gaseous $^4$He target.  The 
 Hall-B Large Acceptance Spectrometer (CLAS) basic design \cite{CLAS_ref} was 
-upgraded, during the CLAS-E1DVCS1 experimental run \cite{Girod:2007aa} in 2005, 
-with a specially designed electromagnetic calorimeter, Inner calorimeter (IC).  
-The IC has extended the photon detection acceptance of CLAS, which is 
+supplemented, during the CLAS-E1DVCS1 experimental run \cite{Girod:2007aa} in 
+2005, with a specially designed electromagnetic calorimeter, Inner calorimeter 
+(IC). The IC has extended the photon detection acceptance of CLAS, which is 
 originally from 15$^{\circ}$ to 45$^{\circ}$, to polar angle reach as minimum 
-as 4$^{\circ}$. During the same experiment, a 5 Tesla solenoid was added around 
-the target to shield the inner detectors from the low-energy M\o ller 
+as 4$^{\circ}$.  During the same experiment, a 5 Tesla solenoid was added 
+around the target to shield the inner detectors from the low-energy M\o ller 
 electrons.
 
 At 6 GeV incident electron beam energy, the recoil $^4$He nuclei, from the 
@@ -184,11 +242,11 @@ $^4$He nuclei using elastic scattering produced with a 1.2~GeV electron beam.
 
 \begin{figure}[tb]
 \includegraphics[width=7.0cm,angle=-90]{figs/RTPC.pdf}
-\vspace{-0.9cm}
+\vspace{-1.1cm}
 \caption{Left: A picture of the CLAS-EG6 RTPC before insertion into the 
    solenoid. Right: A cross section of the CLAS-EG6 RTPC perpendicular to the 
-beam direction. An illustration of a $^4$He track originating from the 
-pressurized straw target is shown along with the electrons produced in the 
+   beam direction. An illustration of a $^4$He track originating from the 
+   pressurized straw target is shown along with the electrons produced in the 
 drift region.}
 \label{fig:RTPC}
 \end{figure}
@@ -206,31 +264,31 @@ is applied on the DVCS candidates in order to ensure that the interaction
 occurs at the partonic level and the applicability of the factorization in the 
 DVCS handbag diagram. Once the three final state particles were identified with 
 their 3-momentum vectors, the exclusivity of the coherent DVCS events were 
-ensured by applied a set of 3$\sigma$ exclusivity cuts. The exclusive cuts are: 
-the co-planarity angle ($\Delta \phi$), missing energy, missing mass squared 
-and missing transverse momentum in the $e'~^4He'~\gamma~X$ final state 
-configuration, the missing mass squared in the $e'~^4He'~X$ and $e'~\gamma~X$ 
-configurations, and finally the cone angle ($\theta$) between the measured real 
-photon and the missing particle in the $e'~^4He'~X$ configuration.  
-Figure~\ref{fig:kin-cuts} presents four of the applied exclusivity cuts.
+ensured by applying a set of exclusive cuts, which are: the co-planarity angle 
+($\Delta \phi$), missing energy, missing mass squared and missing transverse 
+momentum in the $e'^4He'\gamma X$ final state configuration, the missing mass 
+squared in the $e'^4He'X$ and $e'\gamma X$ configurations, and finally the cone 
+angle ($\theta$) between the measured real photon and the missing particle in 
+the $e'^4He'X$ configuration. Figure~\ref{fig:kin-cuts} presents four of the 
+applied exclusivity cuts, where 3$\sigma$ cuts are applied on all the exclusive 
+quantities except the missing energy, for which a [-0.45,0.5] GeV cut was 
+adopted to reduce the background contribution.
 
 \begin{figure}[tb]
 \includegraphics[width=8.9cm]{figs/coh_exc_cuts.pdf}
 \caption{Four of the seven coherent DVCS exclusivity cuts. The black 
 distributions represent the coherent DVCS events candidate. The shaded 
 distributions represent the events which passed all the exclusivity cuts except 
-the quantity plotted. The vertical red lines represent $3\sigma$ cuts. The 
-distributions from left to right and from top to bottoms are: $\Delta \phi$, 
-missing energy and missing mass squared in $e'~^4He'~\gamma~X$, and the cone 
-angle ($\theta$) between the measured and the calculated final state real 
-photon.}
+the quantity plotted. The vertical red lines represent the applied exclusivity 
+cuts. The distributions from left to right and from top to bottoms are: $\Delta 
+\phi$, missing energy and missing mass squared in $e'^4He'\gamma X$, and the 
+cone angle ($\theta$) between the measured and the calculated photons.}
 \label{fig:kin-cuts}
 \end{figure}
-After all the particle identification requirements on the individual particle 
-of the coherent DVCS events and after all the exclusivity cuts, we ended up 
-with about 3500 events. Figure \ref{fig:kin-coverage} presents the 
-($Q^{2}$,$x_{B}$) and ($Q^{2}$,$-t$) kinematic coverage of the collected DVCS 
-events. 
+After all the requirements on the individual final state particles of the 
+coherent DVCS events and the exclusivity cuts, we ended up with about 3500 
+events. Figure \ref{fig:kin-coverage} presents the ($Q^{2}$,$x_{B}$) and 
+($Q^{2}$,$-t$) kinematic coverage of the collected DVCS events. 
 
 \begin{figure}[tb]
 \hspace{-0.45cm}
@@ -263,70 +321,45 @@ then multiplied by the measured yield of DV$\pi^0$P events, indicating a
 contamination of 2 to 4\%. The study of systematics errors showed that the main 
 contributions come from the choice of the DVCS exclusivity cuts (8\%) and the 
 large binning size (5.1\%). However added quadratically, these errors sum up to 
-10\% which remain for all bins well below the statistical errors.
+10\%, which remain for all bins well below the statistical errors.
 
-
-The beam-spin asymmetry is our DVCS observable, which is measurable using a 
-polarized lepton beam on an unpolarized target (U). It is convenient to use the 
-beam-spin asymmetry as a DVCS observable because most of the experimental 
-normalization and acceptance issues cancel out in the asymmetry ratio. It is 
-defined in terms of the cross sections as:
-  \begin{equation}
-  A_{LU} = \frac{d^{5}\sigma^{+} - d^{5}\sigma^{-} }
-                {d^{5}\sigma^{+} + d^{5}\sigma^{-}}.
-    \label{BSA_equation}
-  \end{equation}
-  where $d^{5}\sigma^{+}$($d^{5}\sigma^{-}$) is the DVCS differential cross 
-  section for a positive (negative) beam helicity. $A_{LU}$ can be simplified 
-  in terms of the collected number of events in each beam-helicity state 
-  ($N^{+}$, $N^{-}$) as:
+$A_{LU}$ can be simplified in terms of the collected number of events in each 
+beam-helicity state ($N^{+}$, $N^{-}$) as:
 \begin{equation}
 A_{LU} = \frac{1}{P_{B}} \frac{N^{+} - N^{-}}{N^{+} + N^{-} }.
 \end{equation}
 where $P_{B}$ is the beam polarization, and $N^{+}$ and $N^{-}$ are the number 
-of events detected with positive and negative electron helicity, respectively.  
-The statistical uncertainty of $A_{LU}$ is
+of DVCS events detected with positive and negative electron helicity with 
+respect to the beam direction. The statistical uncertainty of $A_{LU}$ is
 \begin{equation}
    \sigma_{A_{LU}} = \frac{1}{P_{B}} \sqrt{ \frac{1 - (P_{B}A_{LU})^{2}}{N}}
 \end{equation}
 where $N (N^{+} + N^{-}) $ is the total number of measured events.
 
-%CFF
-we extract the GPD $H$ in a model independent way (figure~\ref{fig:CFF_HA}).  
-This is possible using the beam-spin asymmetry ($A_{LU}$) expression for 
-spin-zero target at leading twist \cite{Kirchner:2003wt,Belitsky:2008bz}:
-\small
-\begin{equation}
-\begin{split}
-A_{LU}(\phi) =~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\
- \frac{\alpha_{0}(\phi) \, \Im m(\mathcal{H}_{A})}
-{\alpha_{1}(\phi) + \alpha_{2}(\phi) \, \Re e(\mathcal{H}_{A}) + \alpha_{3}(\phi) \, 
-\big( 
-\Re e(\mathcal{H}_{A})^{2} + \Im m(\mathcal{H}_{A})^{2} \big)}
-\label{eq:A_LU-coh}
-\end{split}
-\end{equation}
-\normalsize
-where $\Im m(\mathcal{H}_{A})$ and $\Re e(\mathcal{H}_{A})$ are the imaginary 
-and real parts of the CFF $\mathcal{H}_{A}$ associated to the GPD $H_A$. The 
-$\alpha_{i}$'s are $\phi$-dependent kinematical factors that depend on the 
-nuclear form factor $F_A$ and the independent variables $Q^2$, $x_{B}$ and $t$.  
-These factors are simplified as:
-\small
-\begin{eqnarray}
-   \alpha_0 (\phi) & = &\frac{x_{A}(1+\epsilon^2)^2}{y} S_{++}(1) \sin(\phi)\\
-    \alpha_1 (\phi) & = & c_0^{BH}+c_1^{BH} \cos({\phi})+c_2^{BH} \cos(2\phi)\\ 
-   \alpha_2 (\phi) & = & \frac{x_{A}(1+\epsilon^2)^2}{y}  \left( C_{++}(0) +  
-C_{++}(1) cos(\phi) \right)\\
-\alpha_3 (\phi) &=& \frac{x^{2}_{A}t(1+\epsilon^2)^2}{y} {\mathcal P}_1(\phi) 
-{\mathcal P}_2(\phi) \cdot 2 \frac{2-2y+y^2 + \frac{\epsilon^2}{2}y^2}{1 + 
-\epsilon^2}
-\end{eqnarray}
-\normalsize
+Due to our limited statistics only, a two-dimensional binning is carried out in 
+this work. The strongest dependence of $A_{LU}$ is on the azimuthal angle 
+($\phi$). Thus, the coherent measured ranges of $Q^{2}$, $x_{B}$ and $t$ are 
+binned statistically into three bins. Then, the identified DVCS events in each 
+bin are binned into nine bins in $\phi$.  Therefore, we are left
+with $Q^{2}$-$\phi$ bins integrated over the full ranges of $x_{B}$ and $t$, 
+$x_{B}$-$\phi$ bins integrated over $Q^{2}$ and $t$, and $t$-$\phi$ bins 
+integrated over $Q^{2}$ and $x_{B}$.
 
-Where $S{++}(1)$, $C_{++}(0)$, and $C_{++}(1)$ are the Fourier harmonics in the 
-leptonic tensor. Their explicit expressions can be found in . 
-
+Figure \ref{fig:A_LU-coh} presents the coherent $A_{LU}$ for the three
+sets of two-dimensional bins. The asymmetries are fitted with the form of
+equation \ref{eq:A_LU-coh}, where the real and the imaginary part of the CFF
+$\mathcal{H}_{A}$ are the free parameters in the fit. Figure \ref{fig:alu90} 
+shows the $Q^2$, $x_{B}$, and $-t$-dependencies of the fitted $A_{LU}$ signals 
+at $\phi$~=~90$^{\circ}$. The $x_{B}$ and $-t$-dependencies are compared to 
+theoretical calculations performed by S.~Liuti and K.~Taneja 
+\cite{simonetta_2}.  Their model relies on the impulse approximation and uses 
+advanced spectral function of the nuclei to calculate the nuclear GPDs and then 
+the observables. The calculations were carried out at slightly different 
+kinematics than ours but provide already some guidance. The experimental 
+results appear to have larger asymmetries compared to the calculations.  These 
+differences may arise from nuclear effects which are not taken into account in 
+the model, such as long-range interactions. Our measurements also agree with 
+those of HERMES, considering their large uncertainties.
 
 
 \begin{figure}[tb]
@@ -335,25 +368,35 @@ leptonic tensor. Their explicit expressions can be found in .
    $Q^{2}$(top panel), $x_{B}$ (middle panel), and $-t$ (bottom panel) bins.  
    The error bars represent the statistical and the systematic uncertainties 
    added quadratically, shown on top in green are error bars representing only 
-   the statistical uncertainties. The brown bands represent the systematic
-uncertainties, including the normalisation systematic uncertainties. The red
-curves represent fits in the form of equation \ref{eq:A_LU-coh}.}
+   the statistical uncertainties. The bluish-gray bands represent the 
+   systematic uncertainties, including the normalisation systematic 
+uncertainties. The red curves represent fits in the form of equation 
+\ref{eq:A_LU-coh}.}
 \label{fig:alu}
 \end{figure}
 
 \begin{figure}[tb]
 \includegraphics[width=8.9cm]{figs/coherent-ALU_90.pdf}
-\vspace{-0.9cm}
-\caption{}
+\caption{The $Q^{2}$ (left), $x_{B}$ (middle), and $-t$-dependencies (right) of
+   the coherent $A_{LU}$ at $\phi$~=~90$^{\circ}$ (black squares). On the 
+   middle plot: the full-red and the dashed-blue curves are theoretical 
+   calculations from \cite{simonetta_2}. On the right: the green circles are 
+   the HERMES $-A_{LU}$ (positron beam was used) inclusive measurements 
+   \cite{HERMES_BSA}, the colored curves represent theoretical calculations 
+from \cite{simonetta_2}.}
 \label{fig:alu90}
 \end{figure}
 
 \begin{figure}[tb]
 \includegraphics[width=8.9cm]{figs/Coherent_CFF.pdf}
-\vspace{-0.9cm}
 \caption{The model-independent extraction of the imaginary (blue points) and
 real (red points) parts of the $^4$He CFF $\mathcal{H}_A$, as functions of
-$Q^{2}$ (on the top right), $x_B$ (on the top left), and $t$ (on the bottom).}
+$Q^{2}$ (on the top right), $x_B$ (on the top left), and $t$ (on the bottom).  
+The full red curves are calculations based on the impulse approximation from
+\cite{Vadim_priv}. The black-dashed curves in the right plots are calculations 
+from a convolution model based on the VGG model for the nucleons' GPDs 
+\cite{Guidal_priv}. The blue long-dashed curve on the top-right plot is from
+the off-shell calculations based on reference \cite{GonzalezHernandez:2012jv}.}
 \label{fig:CFF_HA}
 \end{figure}
 
@@ -467,6 +510,9 @@ A.~V.~Belitsky and A.~V.~Radyushkin, Phys.\ Rept.\ vol. 418 (2005)
 \bibitem{CLAS_ref}
    B.A. Mecking {\it et al.}, Nucl.\ Inst.\ and Meth.\ A 503, 513 (2003)
 
+\bibitem{Belitsky:2001ns} A.~V.~Belitsky, D.~Mueller and A.~Kirchner,
+     Nucl.\ Phys.\ B {\bf 629}, 323 (2002)
+
 \bibitem{Kirchner:2003wt} 
    A.~Kirchner and D.~Mueller, Eur.\ Phys.\ J.\ C {\bf 32}, 347 (2003)
 
@@ -476,6 +522,28 @@ A.~V.~Belitsky and A.~V.~Radyushkin, Phys.\ Rept.\ vol. 418 (2005)
 
 \bibitem{Ellinghaus:2002zw} F.~Ellinghaus {\it et al.} [HERMES Collaboration],
   AIP Conf.\ Proc.\  {\bf 675}, 303 (2003)
+
+\bibitem{simonetta_2}
+   S.~Liuti and K.~Taneja, Phys.\ Rev.\ C {\bf 72}, 032201 (2005)
+
+\bibitem{HERMES_BSA}
+   A. Airapetian et al. (HERMES Collaboration), Phys.\ Rev.\ C {\bf 81}, 035202 
+   (2010)
+
+\bibitem{Vadim_priv}
+   Private communications with V.~Guzey based on: 
+   V.~Guzey, Phys.\ Rev.\ C {\bf 78}, 025211 (2008).
+
+\bibitem{Guidal_priv}
+   Private communications with M.~Guidal based on: M.~Guidal, M.~V.~Polyakov, 
+   A.~V.~Radyushkin and M.~Vanderhaeghen, Phys.\ Rev.\ D {\bf 72}, 054013
+   (2005).
+
+\bibitem{GonzalezHernandez:2012jv} 
+   Private communications with S.~Liuti based on: J.~O.~Gonzalez-Hernandez, 
+   S.~Liuti, G.~R.~Goldstein and K.~Kathuria,
+   Phys.\ Rev.\ C {\bf 88}, no. 6, 065206, (2013).
+
 
 \end{thebibliography}
 
