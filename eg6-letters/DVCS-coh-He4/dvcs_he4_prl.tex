@@ -108,8 +108,8 @@ soft/non-perturbative part is parametrized in terms of GPDs, which embed the
 partonic structure of the hadron.  
 \begin{figure}[tb]
 \includegraphics[width=6.5cm]{figs/DVCS_diagram.pdf}
-\vspace{-0.cm}
-\caption{Deep virtual Compton scattering process in the handbag approximation.}
+\caption{Representation of the leading-order, twist-2, handbag diagram of the 
+DVCS process off $^4$He.}
 \label{fig:diags}
 \end{figure}
 
@@ -258,21 +258,36 @@ in the final state. Electrons were identified by passing the fiducial cuts and
 having signals in all the sub-detectors of CLAS spectrometer (drift chambers, 
 Cherenkov counters, the standard CLAS electromagnetic calorimeter, and 
 scintillators). $^4$He tracks were identified by passing all the geometrical, 
-timing and quality cuts in the RTPC detector. The most energetic IC photon was 
-considered as the DVCS photon candidate. Next, a $Q^{2}>1~[GeV^{2}/c^{2}]$ cut 
-is applied on the DVCS candidates in order to ensure that the interaction 
-occurs at the partonic level and the applicability of the factorization in the 
-DVCS handbag diagram. Once the three final state particles were identified with 
-their 3-momentum vectors, the exclusivity of the coherent DVCS events were 
-ensured by applying a set of exclusive cuts, which are: the co-planarity angle 
-($\Delta \phi$), missing energy, missing mass squared and missing transverse 
-momentum in the $e'^4He'\gamma X$ final state configuration, the missing mass 
-squared in the $e'^4He'X$ and $e'\gamma X$ configurations, and finally the cone 
-angle ($\theta$) between the measured real photon and the missing particle in 
-the $e'^4He'X$ configuration. Figure~\ref{fig:kin-cuts} presents four of the 
-applied exclusivity cuts, where 3$\sigma$ cuts are applied on all the exclusive 
-quantities except the missing energy, for which a [-0.45,0.5] GeV cut was 
-adopted to reduce the background contribution.
+timing and quality cuts in the RTPC detector. In principle, with constant beam 
+luminosity, target density and pressure, the event rate has to be constant over 
+the experimental time. Due to the changes in the experimental conditions, such 
+as changing a trigger in a detector, a slight shift in the beam position or a 
+system failure somewhere, this rate changes. We minimize the effects of these 
+changes on the reconstructed events by selecting the good runs. To this aim, we 
+monitor the ratio between the number of the good tracks reconstructed in the 
+RTPC to number of the detected good electrons in the CLAS detector as a 
+function of run number \cite{eg6_note}.
+
+Even though the DVCS reaction has only one real photon in the final state, 
+events with more than one good photon are not discarded at this stage. This is 
+motivated by the fact that some photons correspond to random coincidences and 
+discarding these events results in losing good events. Then, events with one or 
+more $\pi^{0}$ are removed from the coherent DVCS sample. After that, the most 
+energetic IC photon was considered as the DVCS photon candidate. Next, a 
+$Q^{2}>1~[GeV^{2}/c^{2}]$ cut is applied on the DVCS candidates in order to 
+ensure that the interaction occurs at the partonic level and the applicability 
+of the factorization in the DVCS handbag diagram.  Once the three final state 
+particles were identified with their 3-momentum vectors, the exclusivity of the 
+coherent DVCS events were ensured by applying a set of exclusive cuts, which 
+are: the co-planarity angle ($\Delta \phi$), missing energy, missing mass 
+squared and missing transverse momentum in the $e'^4He'\gamma X$ final state 
+configuration, the missing mass squared in the $e'^4He'X$ and $e'\gamma X$ 
+configurations, and finally the cone angle ($\theta$) between the measured real 
+photon and the missing particle in the $e'^4He'X$ configuration.  
+Figure~\ref{fig:kin-cuts} presents four of the applied exclusivity cuts, where 
+3$\sigma$ cuts are applied on all the exclusive quantities except the missing 
+energy, for which a [-0.45,0.5] GeV cut was adopted to reduce the background 
+contribution. Finally, 
 
 \begin{figure}[tb]
 \includegraphics[width=8.9cm]{figs/coh_exc_cuts.pdf}
@@ -345,14 +360,14 @@ with $Q^{2}$-$\phi$ bins integrated over the full ranges of $x_{B}$ and $t$,
 $x_{B}$-$\phi$ bins integrated over $Q^{2}$ and $t$, and $t$-$\phi$ bins 
 integrated over $Q^{2}$ and $x_{B}$.
 
-Figure \ref{fig:A_LU-coh} presents the coherent $A_{LU}$ for the three
+Figure \ref{fig:alu} presents the coherent $A_{LU}$ for the three
 sets of two-dimensional bins. The asymmetries are fitted with the form of
 equation \ref{eq:A_LU-coh}, where the real and the imaginary part of the CFF
 $\mathcal{H}_{A}$ are the free parameters in the fit. Figure \ref{fig:alu90} 
 shows the $Q^2$, $x_{B}$, and $-t$-dependencies of the fitted $A_{LU}$ signals 
 at $\phi$~=~90$^{\circ}$. The $x_{B}$ and $-t$-dependencies are compared to 
 theoretical calculations performed by S.~Liuti and K.~Taneja 
-\cite{simonetta_2}.  Their model relies on the impulse approximation and uses 
+\cite{simonetta_2}. Their model relies on the impulse approximation and uses 
 advanced spectral function of the nuclei to calculate the nuclear GPDs and then 
 the observables. The calculations were carried out at slightly different 
 kinematics than ours but provide already some guidance. The experimental 
@@ -387,34 +402,70 @@ from \cite{simonetta_2}.}
 \label{fig:alu90}
 \end{figure}
 
+As has been advertised previously, the $^4$He CFF $\mathcal{H}_A$ can be 
+extracted from fitting the experimentally measured coherent $A_{LU}$ in a 
+totally model independent way, which is not the case of nucleon targets. For 
+the later, four CFFs exist and extracting them is always made by making 
+limitations according some theoretical models and by neglecting some CFFs 
+\cite{Jo:2015ema}. Figure \ref{fig:CFF_HA} presents our extracted imaginary and 
+real parts of the CFF $\mathcal{H}_A$ as function of the kinematical variable 
+($Q^{2}$, $x_B$,$-t$), and compared to some theoretical calculations.
+
 \begin{figure}[tb]
 \includegraphics[width=8.9cm]{figs/Coherent_CFF.pdf}
-\caption{The model-independent extraction of the imaginary (blue points) and
-real (red points) parts of the $^4$He CFF $\mathcal{H}_A$, as functions of
-$Q^{2}$ (on the top right), $x_B$ (on the top left), and $t$ (on the bottom).  
-The full red curves are calculations based on the impulse approximation from
-\cite{Vadim_priv}. The black-dashed curves in the right plots are calculations 
-from a convolution model based on the VGG model for the nucleons' GPDs 
-\cite{Guidal_priv}. The blue long-dashed curve on the top-right plot is from
-the off-shell calculations based on reference \cite{GonzalezHernandez:2012jv}.}
+\caption{The model-independent extraction of the imaginary (top panel) and
+real (bottom panel) parts of the $^4$He CFF $\mathcal{H}_A$, as functions of
+$Q^{2}$ (right panel), $x_B$ (middle panel), and $t$ (left panel). The full red 
+curves are calculations based on an on-shell model from
+\cite{Vadim_priv}. The black-dashed curves are calculations from a convolution 
+model based on the VGG model for the nucleons' GPDs \cite{Guidal_priv}. The 
+blue long-dashed curve on the top-right plot is from
+an off-shell model based on \cite{GonzalezHernandez:2012jv}.}
 \label{fig:CFF_HA}
 \end{figure}
 
-%interpretations 
+We display in figure \ref{fig:CFF_HA} calculations for $\mathcal{H}_A$ from 
+three GPD models: On-shell, Convolution, and off-shell models. In the On-shell 
+model \cite{Vadim_priv}, a nucleus is assumed to be composed of 
+non-relativistic non-interacting nucleons, and these nucleons interact 
+independently with the probe. For the nucleons, the GPDs are modeled according 
+to the dual parametrization \cite{Guzey:2006xi}. In the Convolution model, the 
+same assumption has been made for the nucleus, while the nucleon GPDs were 
+extracted from the VGG model, which is based on the double distributions ansatz 
+\cite{DD_model}. The Off-shell model \cite{GonzalezHernandez:2012jv} relies on 
+the impulse approximation also, but uses advanced spectral function of the 
+nuclei that accounts for all configurations of the final nuclear system and the 
+binding effects between the nucleons.
 
-
+In figure \ref{fig:CFF_HA}, within the given uncertainties, the extracted CFF 
+shows a slight dependence on $Q^{2}$, $x_B$, and $-t$, which are in agreement 
+with the theoretical calculations. One can see a difference between the 
+precision of the extracted imaginary and real parts, which is expected because 
+$\alpha_2$ is suppressed compared to $\alpha_0$ contribution. However, we note 
+that the error bars are finite and that the fit converge without placing any 
+bound on the CFF, which is necessary on proton targets.
 
 
 %conclusion
-
-
-
-
+In summary, we presented the first exclusive measurement of the coherent DVCS 
+off $^4$He using CLAS spectrometer, supplemented with an inner calorimeter, a 5 
+Tesla solenoid, and a specially designed radial TPC. This dataset represents a 
+unique source for the nuclear DVCS global dataset, which will be used to 
+constrain GPD models. The measured beam-spin asymmetries show a very strong 
+signal and allowed to perform the first fully model-independent extraction of 
+the $^4$He CFF $\mathcal{H}_A$. The extracted CFFs, while limited by 
+statistics, are in a good agreement with the available GPD models. This opens 
+many new perspectives to study the nuclear structure within the GPDs framework 
+and pave the way for future more precise measurements at JLab 12~GeV program 
+and possibly at the Electron-Ion Collider (EIC) to achieve better understanding 
+of the nuclear effects.
 
 %Acknowledgments
 
-We thank the staff of the Accelerator and Physics Divisions
-at Jefferson Lab for making this experiment possible.
+We acknowledge the staff of the Accelerator and Physics Divisions at Jefferson 
+Lab for making this experiment possible. This work is supported by the U.S.  
+Department of Energy, Office of Science, Office of Nuclear Physics contract 
+DE-AC05-06OR23177.
 
 \begin{thebibliography}{99}
 
@@ -523,6 +574,10 @@ A.~V.~Belitsky and A.~V.~Radyushkin, Phys.\ Rept.\ vol. 418 (2005)
 \bibitem{Ellinghaus:2002zw} F.~Ellinghaus {\it et al.} [HERMES Collaboration],
   AIP Conf.\ Proc.\  {\bf 675}, 303 (2003)
 
+\bibitem{eg6_note}
+M. Hattawy {\it et al.} (CLAS-EG6 Working Group), CLAS internal analysis note, 
+2016.
+
 \bibitem{simonetta_2}
    S.~Liuti and K.~Taneja, Phys.\ Rev.\ C {\bf 72}, 032201 (2005)
 
@@ -534,10 +589,16 @@ A.~V.~Belitsky and A.~V.~Radyushkin, Phys.\ Rept.\ vol. 418 (2005)
    Private communications with V.~Guzey based on: 
    V.~Guzey, Phys.\ Rev.\ C {\bf 78}, 025211 (2008).
 
+\bibitem{Guzey:2006xi} V.~Guzey and T.~Teckentrup,
+     Phys.\ Rev.\ D {\bf 74}, 054027 (2006)
+
 \bibitem{Guidal_priv}
    Private communications with M.~Guidal based on: M.~Guidal, M.~V.~Polyakov, 
    A.~V.~Radyushkin and M.~Vanderhaeghen, Phys.\ Rev.\ D {\bf 72}, 054013
    (2005).
+
+\bibitem{DD_model}
+I.~V.~Musatov and A.~V.~Radyushkin, Phys.\ Rev.\ D {\bf 61}, 074027 (2000).
 
 \bibitem{GonzalezHernandez:2012jv} 
    Private communications with S.~Liuti based on: J.~O.~Gonzalez-Hernandez, 
