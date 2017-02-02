@@ -107,35 +107,157 @@ part is parametrized in terms of GPDs, which embed the partonic structure of
 the hadron. The GPDs depend on three variables $x$, $\xi$ and $t$, which are 
 indicated in Figure \ref{fig:diags} for the DVCS process. In DVCS, $\xi$ can 
 be related to the Bjorken variable $x_{B}$: $\xi\approx {{x_B}\over{2-x_B}}$, 
-where $x_B=\frac{Q^2}{2M\nu}$ with the proton mass $M$ and 
+where $x_B=\frac{Q^2}{2M\nu}$ with $M$ the proton mass and 
 $\nu=E_e-E_{e^\prime}$. One can easily access $t$ as the squared momentum 
 transfered to the target, however the $x$ variable cannot be experimentally 
 accessed in a DVCS reaction. Hence, we measure only complex Compton Form 
 Factors (CFF) [need reference] defined as: [add FORMULA for CFFs]. 
 
-The study of nuclear DVCS is still in its infancy due to the challenging 
-detection of the low-energy recoil nuclei in fixed target experiments. Until 
-very recently, the HERMES experiment \cite{Ellinghaus:2002zw} was the only one 
-to measure DVCS off heavier nuclei such as $^4$He, N, Ne, Kr and Xe, where only 
-the scattered electron and the real photon are detected. In this paper, we 
-report the first exclusive measurements of the coherent DVCS channel off $^4$He 
-where all products of the reaction are detected including the recoiling $^4$He 
-nucleus. Following this exclusive measurement, the $^4$He CFF 
-($\mathcal{H}_{A}$) will be extracted experimentally in a fully model 
-independent way for the first time ever. The incoherent DVCS channel 
-measurement from the same data set in in preparation and will reported in 
-another publication. 
+The main challenge to study nuclear DVCS is to ensure the exclusivity of the 
+reaction. Until now, the only available data set of nuclear DVCS
+was from the HERMES experiment \cite{Ellinghaus:2002zw}, where exclusivity is 
+based on kinematic cuts on the measured scattered electron and real photon only. 
+The measurement was performed on a large set of nuclei ($^4$He, N, Ne, Kr and 
+Xe) but has been critisized for mixing coherent and incoherent processes 
+[ref]. In this regard, the direct detection of the low-energy recoil nuclei is the best way to
+garanty that the nuclei is intact and that the reaction did not occur on a 
+bound nucleon. The CEBAF Large Acceptance Spectrometer (CLAS) setting  in the
+Hall-B of JLab being already optimized for DVCS measurments 
+[refs], we built a dedicated radial time projection chamber (RTPC) for 
+the detection of the recoiling low energy nuclei in order to complete this
+experimental setting. The $^4$He nucleus is an ideal experimental target in
+this regard as it is light enough to be detected in such a setting, while it
+is subject to significant nuclear effects \cite{JSeely} and has rather high 
+density. Using a helium target leads to another important advantage, the number of GPDs 
+defined for a hadron depends on its spin. The structure of a spin zero nuclei, such as 
+$^4He$, is parametrized by only one chiral even GPD ($H_{A}(x,\xi,t)$) at 
+leading twist, while 4 GPDs arise in the nucleon case. That significantly
+simplifies the interpretation of the data and allow a model independent
+extraction of the $^4$He CFF ($\mathcal{H}_{A}$) that will be presented at the
+end of this letter. 
 
-In a DVCS process, the number of GPDs needed to 
-parametrize the partonic structure of a hadron depends on the different 
-configurations between the spin of the hadron and the helicity direction of the 
-struck quark.  Therefore, the partonic structure of spin zero nuclei, such as 
-$^4He$ and $^{12}C$, is parametrized by only one GPD ($H_{A}(x,\xi,t)$) at 
-leading twist, while 4 GPDs arise in the nucleon case.  In this work, we have 
-chose the $^4$He nucleus as our target of interest because of it's spinless 
-nature and it shows a clear EMC effect \cite{JSeely}, in addition of having a 
-high density and it is a well-known few-body system.
+%experimental setup
 
+The experiment E08-024 took place in the experimental Hall-B of Jefferson 
+laboratory (JLab) in 2009 using the nearly 100\% duty factor longitudinally 
+polarized electron beam (83$\%$ polarization) at its full energy of 6.064 
+GeV. The data were collected over three months using a 6 atm gaseous $^4$He 
+target placed in the center of CLAS. For DVCS experiments, the CLAS base line 
+design \cite{CLAS_ref} is supplemented with an inner calorimeter (IC) and a
+solenoid. The IC extends the photon detection acceptance of CLAS, which is 
+originally from 15$^{\circ}$ to 45$^{\circ}$, to polar angle as low 
+as 4$^{\circ}$. At these small angles the low-energy M\o{}ller 
+electrons produced in the target form a very high rate background that is
+suppressed by a 5 Tesla solenoid placed around the target. 
+
+Because the coherent DVCS cross section is peaked at low $-t$, the recoil 
+$^4$He nuclei produced in DVCS have a low average momentum around 250 MeV/c.
+The CLAS cannot detect such low energy $\alpha$ particles, so in order to 
+ensure the exclusivity of the measurement, we 
+built a small and light RTPC to complement CLAS. Figure~\ref{fig:RTPC} presents 
+the design of this RTPC that is surrounding the 
+$^4$He gaseous target and inside the solenoid magnet.
+The detector was specifically calibrated for the detection of
+$^4$He nuclei using elastic scattering produced with a 1.2~GeV electron beam.
+
+
+\begin{figure}[tb]
+\vspace{-1.1cm}
+\includegraphics[width=7.0cm,angle=-90]{figs/RTPC.pdf}
+\vspace{-1.1cm}
+\caption{Left: A picture of the E08-024 RTPC before insertion into the 
+   solenoid. Right: A cross section of the E08-024 RTPC perpendicular to the 
+   beam direction. An illustration of a $^4$He track originating from the 
+   pressurized straw target is shown along with the electrons produced in the 
+   drift region.}
+\label{fig:RTPC}
+\end{figure}
+
+%DVCS selection
+To identify the coherent DVCS events, we first select events where one 
+electron, one $^4$He and at least one photon are detected in the final state. 
+Electrons are identified by using fiducial cuts and detecting a good
+signals in all the sub-detectors of the base line CLAS (drift chambers, 
+Cherenkov counters, electromagnetic calorimeter, and time of flight 
+scintillators). The $^4$He tracks are identified with fiducial, 
+timing and track quality cuts in the RTPC detector. In addition,
+we apply a vertex matching cut to make sure the electron and the helium
+nuclei originate from the same place. The photons are detected either
+in the IC or the CLAS electromagnetic calorimeter, note that even though the 
+DVCS reaction has only one real photon in the final state, 
+events with more than one good photon are not discarded at this stage. This is 
+motivated by the fact that soft photons are likely to be produced in random 
+coincidences, but cannot be mistaken for DVCS photons which are always at high
+energies ($>2$ GeV).
+
+Then, events with one or 
+more $\pi^{0}$ are removed from the coherent DVCS sample. After that, the most 
+energetic IC photon was considered as the DVCS photon candidate. Next, a 
+$Q^{2}>1~[GeV^{2}/c^{2}]$ cut is applied on the DVCS candidates in order to 
+ensure that the interaction occurs at the partonic level and the applicability 
+of the factorization in the DVCS handbag diagram.  Once the three final state 
+particles were identified with their 3-momentum vectors, the exclusivity of the 
+coherent DVCS events were ensured by applying a set of exclusive cuts, which 
+are: the co-planarity angle ($\Delta \phi$), missing energy, missing mass 
+squared and missing transverse momentum in the $e'^4He'\gamma X$ final state 
+configuration, the missing mass squared in the $e'^4He'X$ and $e'\gamma X$ 
+configurations, and finally the cone angle ($\theta$) between the measured real 
+photon and the missing particle in the $e'^4He'X$ configuration.  
+Figure~\ref{fig:kin-cuts} presents four of the applied exclusivity cuts, where 
+3$\sigma$ cuts are applied on all the exclusive quantities except the missing 
+energy, for which a [-0.45,0.5] GeV cut was adopted to reduce the background 
+contribution. Finally, 
+
+\begin{figure}[tb]
+\includegraphics[width=8.9cm]{figs/coh_exc_cuts.pdf}
+\caption{Four of the seven coherent DVCS exclusivity cuts. The black 
+distributions represent the coherent DVCS events candidate. The shaded 
+distributions represent the events which passed all the exclusivity cuts except 
+the quantity plotted. The vertical red lines represent the applied exclusivity 
+cuts. The distributions from left to right and from top to bottoms are: $\Delta 
+\phi$, missing energy and missing mass squared in $e'^4He'\gamma X$, and the 
+cone angle ($\theta$) between the measured and the calculated photons.}
+\label{fig:kin-cuts}
+\end{figure}
+After all the requirements on the individual final state particles of the 
+coherent DVCS events and the exclusivity cuts, we ended up with about 3500 
+events. Figure \ref{fig:kin-coverage} presents the ($Q^{2}$,$x_{B}$) and 
+($Q^{2}$,$-t$) kinematic coverage of the collected DVCS events. 
+
+\begin{figure}[tb]
+\hspace{-0.45cm}
+\includegraphics[width=9.0cm]{figs/Q2_xB_t_Coh.pdf}
+\caption{The $Q^{2}$ as a function of $x_{B}$ (left) and the $Q^{2}$ as a 
+function of $-t$ (right) for the identified coherent DVCS events after the 
+exclusivity cuts.}
+\label{fig:kin-coverage}
+\end{figure}
+
+Even with all the previously presented exclusive cuts, the selected events are
+not all true DVCS events. We identified several background contributions to the 
+coherent DVCS process, in particular accidental events and exclusive Deeply 
+Virtual $\pi^0$ Production (DV$\pi^0$P). The accidental events where the 
+different particles come from different events are suppressed by the limited 
+phase space allowed by the exclusivity cuts. We estimate the accidental events 
+to represent 4.1\% of our sample. This relatively large number is due to the 
+small cross section of the DVCS. We evaluated this contribution by selecting 
+events passing all our cuts but with particles originating from different 
+vertices. Regarding the DV$\pi^0$P, which can easily be mistaken with DVCS when 
+one of the two photons of the $\pi^0$ decay is produced at low energy in the 
+laboratory frame. To estimate the importance of this background, we developed 
+an event generator that we calibrated to match our measured experimental yield 
+of exclusive $\pi^0$. We used this generator together with a GEANT3 simulation 
+of our detection system to estimate the ratio of acceptance between DV$\pi^0$P 
+where the two photons are detected and those where only one photon is detected 
+and would pass our DVCS selection cuts. This ratio obtained from simulation is 
+then multiplied by the measured yield of DV$\pi^0$P events, indicating a 
+contamination of 2 to 4\%. The study of systematics errors showed that the main 
+contributions come from the choice of the DVCS exclusivity cuts (8\%) and the 
+large binning size (5.1\%). However added quadratically, these errors sum up to 
+10\%, which remain for all bins well below the statistical errors.
+
+%asymmetries
+Different observables are available in DVCS, the cross sections, the BSA...
 This work presents the first exclusive measurement of the beam-spin asymmetry 
 of the reaction $e~^{4}He\rightarrow e'~^{4}He~\gamma$. This DVCS sensitive 
 observable is measurable using a polarized lepton beam on an unpolarized target 
@@ -203,132 +325,6 @@ the $\alpha_{i}$ factors, one can obtain in a totally model-independent way
 $\Im m(\mathcal{H}_{A})$ and $\Re e(\mathcal{H}_{A})$ from fitting the 
 experimental $A_{LU}$ as a function of $\phi$ for given values of $Q^2$, 
 $x_{B}$, and $t$.
-
-%experimental setup
-
-The experiment, CLAS-EG6, took place in the experimental Hall-B of Jefferson 
-laboratory (JLab) in 2009. JLab delivers, simultaneously, a nearly 100\% duty 
-factor polarized electrons into three experimental Halls (A, B, C). The data 
-were collected over three months via projecting a 6.064 GeV longitudinally 
-polarized beam, (83$\%$ polarization), on a 6 atm gaseous $^4$He target.  The 
-Hall-B Large Acceptance Spectrometer (CLAS) basic design \cite{CLAS_ref} was 
-supplemented, during the CLAS-E1DVCS1 experimental run \cite{Girod:2007aa} in 
-2005, with a specially designed electromagnetic calorimeter, Inner calorimeter 
-(IC). The IC has extended the photon detection acceptance of CLAS, which is 
-originally from 15$^{\circ}$ to 45$^{\circ}$, to polar angle reach as minimum 
-as 4$^{\circ}$.  During the same experiment, a 5 Tesla solenoid was added 
-around the target to shield the inner detectors from the low-energy M\o ller 
-electrons.
-
-At 6 GeV incident electron beam energy, the recoil $^4$He nuclei, from the 
-coherent DVCS channel, have an average momentum (per charge) around 125 MeV/c, 
-while the CLAS spectrometer detects charged particles with a threshold of 250 
-MeV/c. In order to ensure the exclusivity of the our coherent DVCS channel, we 
-built a small and light radial time projection chamber (RTPC) to detect 
-recoiling nuclei down to energies of few MeVs. Figure~\ref{fig:RTPC} presents 
-our cylindrical RTPC, which is 20 cm long and 15 cm diameter, surrounding the 
-$^4$He gaseous target and being inside the available space inside the solenoid 
-, with a 3 cm radial drift length. The detector was specifically calibrated for 
-$^4$He nuclei using elastic scattering produced with a 1.2~GeV electron beam.
-
-
-\begin{figure}[tb]
-\includegraphics[width=7.0cm,angle=-90]{figs/RTPC.pdf}
-\vspace{-1.1cm}
-\caption{Left: A picture of the CLAS-EG6 RTPC before insertion into the 
-   solenoid. Right: A cross section of the CLAS-EG6 RTPC perpendicular to the 
-   beam direction. An illustration of a $^4$He track originating from the 
-   pressurized straw target is shown along with the electrons produced in the 
-drift region.}
-\label{fig:RTPC}
-\end{figure}
-
-%DVCS selection
-Identifying the coherent DVCS candidates is the first step of the data 
-analysis. These events have one electron, one $^4$He, and at least one photon 
-in the final state. Electrons were identified by passing the fiducial cuts and 
-having signals in all the sub-detectors of CLAS spectrometer (drift chambers, 
-Cherenkov counters, the standard CLAS electromagnetic calorimeter, and 
-scintillators). $^4$He tracks were identified by passing all the geometrical, 
-timing and quality cuts in the RTPC detector. In principle, with constant beam 
-luminosity, target density and pressure, the event rate has to be constant over 
-the experimental time. Due to the changes in the experimental conditions, such 
-as changing a trigger in a detector, a slight shift in the beam position or a 
-system failure somewhere, this rate changes. We minimize the effects of these 
-changes on the reconstructed events by selecting the good runs. To this aim, we 
-monitor the ratio between the number of the good tracks reconstructed in the 
-RTPC to number of the detected good electrons in the CLAS detector as a 
-function of run number \cite{eg6_note}.
-
-Even though the DVCS reaction has only one real photon in the final state, 
-events with more than one good photon are not discarded at this stage. This is 
-motivated by the fact that some photons correspond to random coincidences and 
-discarding these events results in losing good events. Then, events with one or 
-more $\pi^{0}$ are removed from the coherent DVCS sample. After that, the most 
-energetic IC photon was considered as the DVCS photon candidate. Next, a 
-$Q^{2}>1~[GeV^{2}/c^{2}]$ cut is applied on the DVCS candidates in order to 
-ensure that the interaction occurs at the partonic level and the applicability 
-of the factorization in the DVCS handbag diagram.  Once the three final state 
-particles were identified with their 3-momentum vectors, the exclusivity of the 
-coherent DVCS events were ensured by applying a set of exclusive cuts, which 
-are: the co-planarity angle ($\Delta \phi$), missing energy, missing mass 
-squared and missing transverse momentum in the $e'^4He'\gamma X$ final state 
-configuration, the missing mass squared in the $e'^4He'X$ and $e'\gamma X$ 
-configurations, and finally the cone angle ($\theta$) between the measured real 
-photon and the missing particle in the $e'^4He'X$ configuration.  
-Figure~\ref{fig:kin-cuts} presents four of the applied exclusivity cuts, where 
-3$\sigma$ cuts are applied on all the exclusive quantities except the missing 
-energy, for which a [-0.45,0.5] GeV cut was adopted to reduce the background 
-contribution. Finally, 
-
-\begin{figure}[tb]
-\includegraphics[width=8.9cm]{figs/coh_exc_cuts.pdf}
-\caption{Four of the seven coherent DVCS exclusivity cuts. The black 
-distributions represent the coherent DVCS events candidate. The shaded 
-distributions represent the events which passed all the exclusivity cuts except 
-the quantity plotted. The vertical red lines represent the applied exclusivity 
-cuts. The distributions from left to right and from top to bottoms are: $\Delta 
-\phi$, missing energy and missing mass squared in $e'^4He'\gamma X$, and the 
-cone angle ($\theta$) between the measured and the calculated photons.}
-\label{fig:kin-cuts}
-\end{figure}
-After all the requirements on the individual final state particles of the 
-coherent DVCS events and the exclusivity cuts, we ended up with about 3500 
-events. Figure \ref{fig:kin-coverage} presents the ($Q^{2}$,$x_{B}$) and 
-($Q^{2}$,$-t$) kinematic coverage of the collected DVCS events. 
-
-\begin{figure}[tb]
-\hspace{-0.45cm}
-\includegraphics[width=9.0cm]{figs/Q2_xB_t_Coh.pdf}
-\caption{The $Q^{2}$ as a function of $x_{B}$ (left) and the $Q^{2}$ as a 
-function of $-t$ (right) for the identified coherent DVCS events after the 
-exclusivity cuts.}
-\label{fig:kin-coverage}
-\end{figure}
-
-%asymmetries
-Even with all the previously presented exclusive cuts, the selected events are
-not all true DVCS events. We identified several background contributions to the 
-coherent DVCS process, in particular accidental events and exclusive Deeply 
-Virtual $\pi^0$ Production (DV$\pi^0$P). The accidental events where the 
-different particles come from different events are suppressed by the limited 
-phase space allowed by the exclusivity cuts. We estimate the accidental events 
-to represent 4.1\% of our sample. This relatively large number is due to the 
-small cross section of the DVCS. We evaluated this contribution by selecting 
-events passing all our cuts but with particles originating from different 
-vertices. Regarding the DV$\pi^0$P, which can easily be mistaken with DVCS when 
-one of the two photons of the $\pi^0$ decay is produced at low energy in the 
-laboratory frame. To estimate the importance of this background, we developed 
-an event generator that we calibrated to match our measured experimental yield 
-of exclusive $\pi^0$. We used this generator together with a GEANT3 simulation 
-of our detection system to estimate the ratio of acceptance between DV$\pi^0$P 
-where the two photons are detected and those where only one photon is detected 
-and would pass our DVCS selection cuts. This ratio obtained from simulation is 
-then multiplied by the measured yield of DV$\pi^0$P events, indicating a 
-contamination of 2 to 4\%. The study of systematics errors showed that the main 
-contributions come from the choice of the DVCS exclusivity cuts (8\%) and the 
-large binning size (5.1\%). However added quadratically, these errors sum up to 
-10\%, which remain for all bins well below the statistical errors.
 
 $A_{LU}$ can be simplified in terms of the collected number of events in each 
 beam-helicity state ($N^{+}$, $N^{-}$) as:
@@ -450,6 +446,9 @@ and pave the way for future more precise measurements at JLab 12~GeV program
 and possibly at the Electron-Ion Collider (EIC) to achieve better understanding 
 of the nuclear effects.
 
+The incoherent DVCS channel 
+measurement from the same data set in in preparation and will reported in 
+another publication. 
 %Acknowledgments
 
 We acknowledge the staff of the Accelerator and Physics Divisions at Jefferson 
