@@ -115,26 +115,34 @@ where $x_B=\frac{Q^2}{2M\nu}$ with $M$ the proton mass and
 $\nu=E_e-E_{e^\prime}$. One can easily access $t$ as the squared momentum 
 transferred to the target, however the $x$ variable cannot be experimentally 
 accessed in a DVCS reaction. Hence, we measure only complex Compton Form 
-Factors (CFF) \cite{Guidal:2013rya}. That is, for a GPD at a given ($x,\xi,t$), 
-we can measure experimentally the real ($\mathcal{P} 
-\int_{0}^{1}dx[GPD(x,\xi,t)-GPD(-x,\xi,t)] \, C^{+}(x,\xi)$, with $\mathcal{P}$ 
-stands for the Cauchy principal value integral and $C^{+}(x,\xi)$ is a 
-coefficient function ($=  \frac{1}{x-\xi} + \frac{1}{x+\xi}$)) and the 
-imaginary $(GPD(\xi,\xi,t)-GPD(-\xi,\xi,t)$) parts of it's corresponding CFF.
+Factors (CFF) \cite{Guidal:2013rya} defined as:
+\begin{align}
+\begin{split}
+\Re e(&\mathcal{H}_{A}) = \\
+    &\mathcal{P} 
+\int_{0}^{1}dx[H_A(x,\xi,t)-H_A(-x,\xi,t)] \, C^{+}(x,\xi), 
+\end{split} \\
+\Im m(&\mathcal{H}_{A}) = H_A(\xi,\xi,t)-H_A(-\xi,\xi,t),
+\end{align}
+with $H_A$ the GPD, $\mathcal{P}$ 
+the Cauchy principal value integral and $C^{+}(x,\xi)$ a 
+coefficient function ($=  \frac{1}{x-\xi} + \frac{1}{x+\xi}$)).
 
-The main challenge in exploring nuclear DVCS is to ensure the exclusivity of 
+The main challenge to study nuclear DVCS is to ensure the exclusivity of 
 the reaction. Until now, the only available data set of nuclear DVCS
 was from the HERMES experiment \cite{Ellinghaus:2002zw}, where exclusivity is 
 based on kinematic cuts on the measured scattered electron and real photon only. 
 The measurement was performed on a large set of nuclei ($^4$He, N, Ne, Kr and 
-Xe) but has been criticized for mixing coherent and incoherent processes 
-\cite{HERMES_BSA}. In this regard, the direct detection of the low-energy 
+Xe) but the mixing of the coherent and incoherent processes could affect the
+measurement significantly \cite{Guzey:2003jh}. In this regard, the direct 
+detection of the low-energy 
 recoil nuclei is the best way to guarantee that the nucleus is intact and that 
-the reaction did not occur on a bound nucleon. The CEBAF Large Acceptance 
-Spectrometer (CLAS) setting  in the Hall-B of JLab being already optimized for 
+the reaction did not occur on a bound nucleon. The 
+CEBAF Large Acceptance 
+Spectrometer (CLAS) setting  in the Hall-B of JLab is already optimized for 
 DVCS measurements 
-\cite{Mecking:2003zu,Girod:2007aa,Gavalian:2009,Seder:2015,Pisano:2015,Jo:2015ema}, 
-we built a dedicated radial time projection chamber (RTPC) for the detection of 
+\cite{Girod:2007aa,Gavalian:2009,Seder:2015,Pisano:2015,Jo:2015ema}, 
+so we built a dedicated radial time projection chamber (RTPC) for the detection of 
 the recoiling low energy nuclei in order to complete this experimental setting.  
 The $^4$He nucleus is an ideal experimental target in this regard as it is 
 light enough to be detected in such a setting, while it
@@ -162,12 +170,12 @@ in the target form a very high rate background that is
 suppressed by a 5 Tesla solenoid placed around the target. 
 
 Because the coherent DVCS cross section is peaked at low $-t$, the recoil 
-$^4$He nuclei produced in DVCS have a low average momentum ($p/q$) around 150 
-MeV/c. The CLAS spectrometer cannot detect such low energy $\alpha$ particles, 
+$^4$He nuclei produced in DVCS have a low average momentum around 300 
+MeV/c. CLAS cannot detect such low energy $\alpha$ particles, 
 so in order to ensure the exclusivity of the measurement, we built a small and 
 light RTPC to complement CLAS. Figure~\ref{fig:RTPC} presents the design of 
-this RTPC that is surrounding the $^4$He gaseous target and inside the solenoid 
-magnet. The detector was specifically calibrated for the detection of
+this RTPC and the $^4$He gaseous target in its center. The detector was 
+specifically calibrated for the detection of
 $^4$He nuclei using elastic scattering produced with a 1.2~GeV electron beam.
 
 
@@ -291,7 +299,6 @@ three terms can be approximated as a finite sum of Fourier harmonics as shown
 for the nucleon in \cite{Belitsky:2001ns} and for the spin-zero targets in 
 \cite{Kirchner:2003wt,Belitsky:2008bz}. Based on these calculations, the 
 beam-spin asymmetry ($A_{LU}$) of a spin-zero hadron can then be expressed as:
-
 \small
 \begin{equation}
 \begin{split}
@@ -400,37 +407,34 @@ nuclei that accounts for all configurations of the final nuclear system and the
 binding effects between the nucleons.
 [These need to be renamed on the figure, it does not make sense to call differently
 models that are identical. We should also request the projections from Vadim
-model: hep-ph/0509158. (Mohammad to Raphael, the projections shown in figure 5 
-are for Carbon-12. Why would we added them?]
+model: hep-ph/0509158.]
 
-In figure \ref{fig:CFF_HA}, within the given uncertainties, the extracted CFF 
-shows a slight dependence on $Q^{2}$, $x_B$, and $-t$, which are in agreement 
+The results of Figure \ref{fig:CFF_HA} show that the extraction of the CFF
+from the beam spin asymmetry is possible without any model dependent 
+assumptions. The amplitude and the dependences observed as a function of 
+$Q^{2}$, $x_B$, and $-t$ are in agreement 
 with the theoretical calculations. One can see a difference between the 
-precision of the extracted imaginary and real parts, which is expected because 
-$\alpha_2$ is suppressed compared to $\alpha_0$ contribution. However, we note 
-that the error bars are finite and that the fit converge without placing any 
-bound on the CFF, which is necessary on proton targets.
+precision of the extracted imaginary and real parts, which is expected from
+equation \ref{eq:A_LU-coh} because $\alpha_2$ is smaller than $\alpha_0$. 
+While these results are not precise enough to discriminate between the models,
+they are very promising for future exeperiments as they show our hability
+to directly extract the CFF of the helium nucleus in a completely model
+independent way.
 
 
 %conclusion
 In summary, we presented the first exclusive measurement of the coherent DVCS 
-off $^4$He using CLAS spectrometer, supplemented with an inner calorimeter, a 5 
-Tesla solenoid, and a specially designed radial TPC. This dataset represents a 
-unique source for the nuclear DVCS global dataset, which will be used to 
-constrain GPD models. The measured beam-spin asymmetries show a very strong 
-signal and allowed to perform the first fully model-independent extraction of 
-the $^4$He CFF $\mathcal{H}_A$. The extracted CFFs, while limited by 
-statistics, are in a good agreement with the available GPD models. This opens 
-many new perspectives to study the nuclear structure within the GPDs framework 
-and pave the way for future more precise measurements at JLab 12~GeV program 
-and possibly at the Electron-Ion Collider (EIC) to achieve better understanding 
-of the nuclear effects.
+off $^4$He using the CLAS spectrometer supplemented  
+by a specially designed RTPC. This dataset represents a 
+unique source as the first exclusive coherent nuclear DVCS measurement, which 
+can be used to directly constrain GPD models. The measured beam-spin asymmetries 
+show a signal stronger than for the proton and allow to perform a fully 
+model-independent extraction of the $^4$He CFF $\mathcal{H}_A$. The extracted 
+CFF is in a good agreement with the available models. This opens 
+many new perspectives to study the nuclear structure within the GPD framework 
+and pave the way for future more precise measurements at JLab 12~GeV to 
+eventualy localize nuclear effects in the transverse plane.
 
-The incoherent DVCS channel 
-measurement from the same data set in in preparation and will reported in 
-another publication. 
-
-[order biblio]
 
 %Acknowledgments
 
@@ -584,17 +588,17 @@ Phys.\ Rev.\ D {\bf 58}, 094018 (1998)
 F.~Ellinghaus {\it et al.} [HERMES Collaboration],
 AIP Conf.\ Proc.\  {\bf 675}, 303 (2003)
 
-\bibitem{HERMES_BSA}
-A. Airapetian et al. (HERMES Collaboration), 
-Phys.\ Rev.\ C {\bf 81}, 035202 (2010)
-
-\bibitem{Mecking:2003zu} 
-   B.~A.~Mecking {\it et al.} [CLAS Collaboration],
-   Nucl.\ Instrum.\ Meth.\ A {\bf 503}, 513 (2003).
+\bibitem{Guzey:2003jh} 
+  V.~Guzey and M.~Strikman,
+  Phys.\ Rev.\ C {\bf 68}, 015204 (2003)
 
 \bibitem{JSeely}
 J. Seely {\it et al.} 
 Phys.\ Rev.\ Lett.\ {\bf 103}, 202301 (2009)
+
+\bibitem{Mecking:2003zu} 
+   B.~A.~Mecking {\it et al.} [CLAS Collaboration],
+   Nucl.\ Instrum.\ Meth.\ A {\bf 503}, 513 (2003).
 
 \bibitem{Belitsky:2001ns}
 A.~V.~Belitsky, D.~Mueller and A.~Kirchner,
