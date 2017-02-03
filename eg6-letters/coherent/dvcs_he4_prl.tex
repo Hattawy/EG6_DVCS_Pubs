@@ -1,14 +1,35 @@
-\documentclass[nofootinbib,twocolumn,showpacs,prl,superscriptaddress,secnumarabic,amssymb,nobibnotes,aps,floatfix,preprint]{revtex4}
+\RequirePackage{lineno}
+\documentclass[preprint,nofootinbib,showpacs,prl,superscriptaddress,secnumarabic,amssymb,nobibnotes,aps,floatfix]{revtex4}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
-
 %
 \def\Dirac#1{#1\hskip-5pt/}
 %
+\newcommand*\patchAmsMathEnvironmentForLineno[1]{%
+\expandafter\let\csname old#1\expandafter\endcsname\csname #1\endcsname
+\expandafter\let\csname oldend#1\expandafter\endcsname\csname end#1\endcsname
+\renewenvironment{#1}%
+{\linenomath\csname old#1\endcsname}%
+{\csname oldend#1\endcsname\endlinenomath}}%
+\newcommand*\patchBothAmsMathEnvironmentsForLineno[1]{%
+\patchAmsMathEnvironmentForLineno{#1}%
+\patchAmsMathEnvironmentForLineno{#1*}}%
+\AtBeginDocument{%
+\patchBothAmsMathEnvironmentsForLineno{equation}%
+\patchBothAmsMathEnvironmentsForLineno{align}%
+\patchBothAmsMathEnvironmentsForLineno{flalign}%
+\patchBothAmsMathEnvironmentsForLineno{alignat}%
+\patchBothAmsMathEnvironmentsForLineno{gather}%
+\patchBothAmsMathEnvironmentsForLineno{multline}%
+}
+
+
+%
 \begin{document}
+\linenumbers
 
 \title{First Exclusive Measurement of Deep Virtual Compton Scattering off $^4$He: Toward the 3D tomography of nuclei}
 
@@ -45,15 +66,14 @@
 
 %
 \date{\today}
-%
 \begin{abstract}
 We report the first fully exclusive measurement of deeply virtual Compton 
 scattering (DVCS) off a nucleus for $A>1$. The experiment used the 6 GeV 
-electron beam from Jefferson Lab projected onto a $^4$He target in the center of the CEBAF 
-Large Acceptance Spectrometer (CLAS). An additional radial time projection 
-chamber (RTPC) was used to detect the recoiling $^4$He nuclei and ensure the 
-exclusivity of the process. We measured beam spin asymmetries significantly
-larger than the one observed on proton targets and extract,
+electron beam from Jefferson Lab projected onto a $^4$He target in the center 
+of the CEBAF Large Acceptance Spectrometer (CLAS). An additional radial time 
+projection chamber (RTPC) was used to detect the recoiling $^4$He nuclei and 
+ensure the exclusivity of the process. We measured beam spin asymmetries 
+significantly larger than the one observed on proton targets and extract,
 in a completely model independent way, the chiral even generalized parton 
 distribution (GPD) of the $^4$He nucleus. This pioneering measurement 
 leads the way toward the 3D imaging of the partonic structure of nuclei.
