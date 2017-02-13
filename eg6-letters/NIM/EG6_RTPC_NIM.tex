@@ -501,13 +501,11 @@ the effects of individual pads with this method.
 
 \subsection{Noise Rejection}
 
-(To be written by Nathan) 
-
 \begin{figure}[tb]\centering
 \includegraphics[scale=0.27]{fig/noisy_pad_before_rejection2.png}
 \includegraphics[scale=0.27]{fig/noisy_pad_after_rejection2.png}
-\caption{}
-\label{fig:noisy_pad_before_rejection}
+\caption{The ADC vs. TDC spectrum for an example noisy channel before (top) and after (bottom) noise rejection algorithms.  Only hits associated with tracks are included, and the selection of events and tracks is the same in both plots.}
+\label{fig:noise}
 \end{figure}
 
 %\begin{figure}[tb]
@@ -533,10 +531,10 @@ the hits that are 5 mm or farther from the first fit are excluded.
 
 For the energy deposit, $\frac{dE}{dx}$ is calculated in this way:
 \begin{equation}
- \left\langle \frac{dE}{dX} \right\rangle= \frac{\sum\limits_{i} \frac{ADC_{i}}{Gi}}{vtl}
+ \left\langle \frac{dE}{dX} \right\rangle= \frac{\sum\limits_{i} \frac{ADC_{i}}{G_i}}{L}
 \end{equation}
-Where the sum runs over all the hits of the track and $G_{i}$ is the gain of 
-the associated pad. The $vtl$ is the visible track length in the active drift 
+Where the sum runs over all the hits of the track, $G_{i}$ is the gain of 
+the associated pad, and $L$ is the visible track length in the active drift 
 volume. 
 
 (We need some performance studies here: Mohammad)
