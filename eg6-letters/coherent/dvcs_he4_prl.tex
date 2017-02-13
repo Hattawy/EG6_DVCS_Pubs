@@ -278,7 +278,7 @@ measurable by the difference of cross sections of the reaction at opposite beam
 helicities normalized to the total cross section. It is written as:
   \begin{equation}
   A_{LU} = \frac{d^{5}\sigma^{+} - d^{5}\sigma^{-} }
-                {d^{5}\sigma^{+} + d^{5}\sigma^{-}}.
+                {d^{5}\sigma^{+} + d^{5}\sigma^{-}},
     \label{BSA_equation}
   \end{equation}
 where $d^{5}\sigma^{+(-)}$ is the DVCS differential cross 
@@ -286,96 +286,102 @@ section for a positive (negative) beam helicity. Experimentally, $A_{LU}$
 can be expressed in terms of the measured number of events in each 
 beam-helicity state ($N^{+}$, $N^{-}$) as:
 \begin{equation}
-A_{LU} = \frac{1}{P_{B}} \frac{N^{+} - N^{-}}{N^{+} + N^{-} }.
+A_{LU} = \frac{1}{P_{B}} \frac{N^{+} - N^{-}}{N^{+} + N^{-} },
 \end{equation}
 where $P_{B}$ is the beam polarization, and $N^{+}$ and $N^{-}$ are the number 
 of DVCS events detected with positive and negative electron helicity with 
 respect to the beam direction. In this ratio most of uncertainties of the 
 experimental normalization and in detector efficiencies will cancel out. 
 
-To interpret DVCS, one has to keep in mind that this reaction is 
-indistinguishable from the Bethe-Heitler (BH) process, where the final photon 
-is emitted either from the incoming or the outgoing leptons. At leading twist 
-and leading order, the deeply virtual photon production cross section is 
-composed of BH, DVCS, and interference terms. The amplitudes of the 
-three terms can be approximated as a finite sum of Fourier harmonics, as shown 
-for the nucleon in \cite{Belitsky:2001ns} and for the spin-zero targets in 
-\cite{Kirchner:2003wt,Belitsky:2008bz}. Based on these calculations, the 
-beam-spin asymmetry ($A_{LU}$) of a spin-zero hadron can then be expressed as:
+The DVCS reaction is experimentally indistinguishable from the well-known 
+Bethe-Heitler (BH) process, where the final photon is emitted either from the 
+incoming or the outgoing leptons. At leading twist and leading order, the 
+deeply virtual photon production cross section is composed of BH, DVCS, and 
+interference terms. While the BH is not sensitive to GPDs and does not carry 
+information about the partonic structure of the hadronic target, its 
+interference with the DVCS reaction is sensitive to GPDs enhancing the DVCS 
+small cross section at the kinematical regions explored at Jefferson Lab. The 
+amplitudes of the three terms can be approximated as a finite sum of Fourier 
+harmonics, as shown for the nucleon in \cite{Belitsky:2001ns} and for the 
+spin-zero targets in \cite{Kirchner:2003wt,Belitsky:2008bz}. Based on these 
+approximations, the beam-spin asymmetry ($A_{LU}$) of a spin-zero hadron can 
+then be expressed as:
 \small
 \begin{equation}
 \begin{split}
 A_{LU}(\phi) =~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\
  \frac{\alpha_{0}(\phi) \, \Im m(\mathcal{H}_{A})}
 {\alpha_{1}(\phi) + \alpha_{2}(\phi) \, \Re e(\mathcal{H}_{A}) + \alpha_{3}(\phi) \, 
-\big( 
-\Re e(\mathcal{H}_{A})^{2} + \Im m(\mathcal{H}_{A})^{2} \big)}
+\big( \Re e(\mathcal{H}_{A})^{2} + \Im m(\mathcal{H}_{A})^{2} \big)},
 \label{eq:A_LU-coh}
 \end{split}
 \end{equation}
 \normalsize
 where $\Im m(\mathcal{H}_{A})$ and $\Re e(\mathcal{H}_{A})$ are the imaginary 
-and real parts of the $^4$He CFF $\mathcal{H}_{A}$ associated with the GPD $H_A$,
-and $\phi$ is the azimuthal angle between the ($e$,$e'$) and 
-($\gamma^{*}$,$^4$He$'$) planes. The $\alpha_{i}$'s are $\phi$-dependent 
-kinematical factors that depend on the nuclear form factor ($F_{A}(t)$) and the 
-independent variables $Q^2$, $x_{B}$ and $t$. These factors are expressed as:
+and real parts of the $^4$He CFF $\mathcal{H}_{A}$ that depends on the GPD 
+$H_A$. In Eq.~\ref{eq:A_LU-coh}, $\phi$ is the azimuthal angle between the 
+($e$,$e'$) and ($\gamma^{*}$,$^4$He$'$) planes. The $\alpha_i$’s are kinematic 
+factors that depend on azimuthal angle $\phi$, the nuclear form factor 
+$F_A(t)$, $Q^2$, and $x_B$. These factors are expressed as:
 \small
 \begin{eqnarray}
-   \alpha_0 (\phi) & = &\frac{x_{A}(1+\epsilon^2)^2}{y} S_{++}(1) \sin(\phi)\\
-    \alpha_1 (\phi) & = & c_0^{BH}+c_1^{BH} \cos({\phi})+c_2^{BH} \cos(2\phi)\\ 
-   \alpha_2 (\phi) & = & \frac{x_{A}(1+\epsilon^2)^2}{y}  \left( C_{++}(0) +  
-C_{++}(1) cos(\phi) \right)\\
+   \alpha_0 (\phi) & = &\frac{x_{A}(1+\epsilon^2)^2}{y} S_{++}(1) \sin(\phi),\\
+    \alpha_1 (\phi) & = & c_0^{BH}+c_1^{BH} \cos({\phi})+c_2^{BH} 
+   \cos(2\phi),\\ \alpha_2 (\phi) & = & \frac{x_{A}(1+\epsilon^2)^2}{y}  \left( 
+C_{++}(0) +  C_{++}(1) cos(\phi) \right),\\
 \alpha_3 (\phi) &=& \frac{x^{2}_{A}t(1+\epsilon^2)^2}{y} {\mathcal P}_1(\phi) 
 {\mathcal P}_2(\phi) \cdot 2 \frac{2-2y+y^2 + \frac{\epsilon^2}{2}y^2}{1 + 
-\epsilon^2}
+\epsilon^2},
 \end{eqnarray}
 \normalsize
-Where $x_{A} = \frac{x_{B}M_{N}}{M_{A}}$ with $M_{A}$ the $^4$He mass and 
-$\mathcal{P}_1(\phi)$ and $\mathcal {P}_2(\phi)$ the Bethe-Heitler
-propagators. The factors $c_{0,1,2}^{BH}$, $c_0^{DVCS}$, $c_{0,1}^{INT}$ and
-$s_1^{INT}$ are the Fourier coefficients of the BH, and $S{++}(1)$, $C_{++}(0)$, 
-and $C_{++}(1)$ are the Fourier harmonics in the leptonic tensor. The 
-explicit expressions of these terms can be found in \cite{Belitsky:2008bz}. 
-We see that by using the $\sin(\phi)$ and $\cos(\phi)$ contributions, it is 
-possible to extract 
-$\Im m(\mathcal{H}_{A})$ and $\Re e(\mathcal{H}_{A})$ from the beam spin
+where $x_{A} = \frac{x_{B}M_{N}}{M_{A}}$ with $M_{A}$($M_{N}$) is the $^4$He 
+(nucleon) mass, $\epsilon = \frac{2x_{A}M_{A}}{\sqrt{Q^{2}}}$ and 
+$y=\frac{Q^{2}}{2x_{A}M_{A}E_{beam}}$, $\mathcal{P}_1(\phi)$ and $\mathcal 
+{P}_2(\phi)$ are the Bethe-Heitler propagators. The factors $c_{0,1,2}^{BH}$, 
+$c_0^{DVCS}$, $c_{0,1}^{INT}$ and $s_1^{INT}$ are the Fourier coefficients of 
+the BH, and $S_{++}(1)$, $C_{++}(0)$, and $C_{++}(1)$ are the Fourier harmonics 
+in the leptonic tensor.  The explicit expressions of these terms can be found 
+in \cite{Belitsky:2008bz}.  We see that by using the $\sin(\phi)$ and 
+$\cos(\phi)$ contributions, it is possible to extract $\Im m(\mathcal{H}_{A})$ 
+and $\Re e(\mathcal{H}_{A})$ from the beam spin
 asymmetry. 
 
-Due to limited statistics, we only bin  our data two-dimensionally 
- in the azimuthal angle ($\phi$) and one of the kinemtical variables 
-$Q^{2}$, $x_{B}$ and $t$. Figure \ref{fig:alu} presents $A_{LU}$ for the three
-sets of binning. The asymmetries are fitted with the form of
-equation \ref{eq:A_LU-coh}, where the real and imaginary part of the CFF
-$\mathcal{H}_{A}$ are the free parameters of the fit. We identified two main 
-backgrounds to our measurement, accidental coincidences and exclusive, coherent 
-$\pi^0$ production. The accidentals have particles originating from different 
-events, and we estimate their  contribution to be 4.1\% of our sample. We 
-evaluated this contribution by selecting events passing all our cuts but with 
-an electron and helium originating from different vertices. Regarding the 
-$\pi^0$ production, it can easily be mistaken for DVCS when one of the two 
-photons from the $\pi^0$ decay is produced at low energy in the laboratory 
-frame and remains undetected. To estimate the importance of this background, we 
-developed an event generator calibrated on the experimental yield of exclusive 
-$\pi^0$ measured by our experiment. We used this generator together with a 
-GEANT3 simulation of our detector to estimate the ratio between the number of 
-$\pi^0$ events where the two photons are detected and those that is 
-misidentified as DVCS events. This ratio is then multiplied by the measured 
-yield of exclusive $\pi^0$ events to correct the DVCS data. Depending on the 
-kinematics, we found contaminations of 2 to 4\%. The study of systematics 
-uncertainties showed that the main contributions come from the choice of the 
-DVCS exclusivity cuts (8\%) and the large binning size (5.1\%). However, added 
-quadratically,the total systematic uncertainty is about 10\%, which is 
-significantly smaller than statistical uncertainties in all kinematical bins. 
-Figure \ref{fig:alu90} shows the $Q^2$, $x_{B}$, and $-t$-dependencies of the 
-fitted $A_{LU}$ signals at $\phi$~=~90$^{\circ}$. The $x_{B}$ and 
+In this work the azimuthal dependence of the BSA, $A_{LU}$, has been studied 
+for a wide range of kinematics. We identified two main backgrounds to our 
+measurement, accidental coincidences and exclusive coherent $\pi^0$ production.  
+The accidentals have particles originating from different events, and we 
+estimate their  contribution to be 4.1\% of our sample. We evaluated this 
+contribution by selecting events passing all our cuts but with an electron and 
+helium originating from different vertices. Regarding the $\pi^0$ production, 
+it can easily be mistaken for DVCS when one of the two photons from the $\pi^0$ 
+decay is produced at low energy in the laboratory frame and remains undetected.  
+To estimate the importance of this background, we developed an event generator 
+calibrated on the experimental yield of exclusive $\pi^0$ measured by our 
+experiment. We used this generator together with a GEANT3 simulation of our 
+detector to estimate the ratio between the number of $\pi^0$ events where the 
+two photons are detected and those that is misidentified as DVCS events. This 
+ratio is then multiplied by the measured yield of exclusive $\pi^0$ events to 
+correct the DVCS data.  Depending on the kinematics, we found contaminations of 
+2 to 4\%. The study of systematics uncertainties showed that the main 
+contributions come from the choice of the DVCS exclusivity cuts (8\%) and the 
+large binning size (5.1\%). However, added quadratically,the total systematic 
+uncertainty is about 10\%, which is significantly smaller than statistical 
+uncertainties in all kinematical bins. 
+
+Due to limited statistics, dependence on the kinematical variables $Q^2$, 
+$x_B$, and $t$ has been studied separately. In Figure \ref{fig:alu}, $A_{LU}$ 
+for the three sets of binning is presented. The curves on the plots are fits 
+with the function presented in Eq.~\ref{eq:A_LU-coh}, where the real and 
+imaginary part of the CFF $\mathcal{H}_{A}$ are the free parameters of the fit. 
+In Figure \ref{fig:alu90} the $Q^2$, $x_{B}$, and $-t$-dependencies of the 
+fitted $A_{LU}$ signals at $\phi$~=~90$^{\circ}$ are shown. The $x_{B}$ and 
 $-t$-dependencies are compared to theoretical calculations performed by 
-S.~Liuti and K.~Taneja \cite{simonetta_2}. Their model relies on the impulse 
+S.~Liuti and K.~Taneja \cite{simonetta_2}. The model relies on the impulse 
 approximation and uses advanced spectral functions of nuclei. The calculations 
 are at slightly different kinematics than our data but still provide some 
 guidance. The experimental results appear to have larger asymmetries than the 
-calculations. These differences may arise from nuclear effects which are not 
-taken into account in the model, such as long-range interactions.
+calculations. These differences may arise from nuclear effects, such as 
+long-rage interactions, which are not taken into account in the model.
 
 \begin{figure}[tb]
 \includegraphics[width=8.9cm]{figs/coherent-ALU.pdf}
@@ -416,18 +422,19 @@ an off-shell model based on \cite{GonzalezHernandez:2012jv}.}
 \label{fig:CFF_HA}
 \end{figure}
 
-We display in figure \ref{fig:CFF_HA} our extraction of the $^4$He CFF 
-$\mathcal{H}_A$, together with theoretical calculations from two models, 
-labelled {\em convolution} and {\em off-shell}. In the convolution 
-model \cite{Vadim_priv}, the nucleus is assumed to be composed of 
-non-relativistic and non-interacting nucleons, where these nucleons interact 
-independently with the probe. The Convolution-Dual model is based on nucleon 
-GPDs from the dual parametrization \cite{Guzey:2006xi}, where the 
-Convolution-VGG uses nucleon GPDs  from the VGG model and is based on the 
-double distributions ansatz \cite{DD_model}. The off-shell model 
-\cite{GonzalezHernandez:2012jv} relies on the impulse approximation and uses 
-advanced spectral functions of  nuclei that account for all configurations of 
-the final nuclear system and the binding effects between the nucleons.
+The $Q^2$, $X_B$, and $t$ dependencies of the $^4$He CFF $\mathcal{H}_A$ 
+extracted from the fit to the azimuthal dependence of $A_{LU}$ are shown in 
+Figure \ref{fig:CFF_HA}. Curves on the graphs are model calculations, labelled 
+{\it convolution} and {\it off-shell}. In the convolution model 
+\cite{Vadim_priv}, the nucleus is assumed to be composed of non-relativistic 
+and non-interacting nucleons, where these nucleons interact independently with 
+the probe. The Convolution-Dual model is based on nucleon GPDs from the dual 
+parametrization \cite{Guzey:2006xi}, where the Convolution-VGG uses nucleon 
+GPDs  from the VGG model and is based on the double distributions ansatz 
+\cite{DD_model}. The off-shell model \cite{GonzalezHernandez:2012jv} relies on 
+the impulse approximation and uses advanced spectral functions of  nuclei that 
+account for all configurations of the final nuclear system and the binding 
+effects between the nucleons.
 
 The results in Figure \ref{fig:CFF_HA} show that the extraction of the CFF
 from the beam spin asymmetry is possible without any model dependent 
@@ -435,26 +442,24 @@ assumptions. The amplitude and the dependencies observed as a function of
 $Q^{2}$, $x_B$, and $-t$ are in agreement 
 with the theoretical calculations. One can see a difference between the 
 precision of the extracted imaginary and real parts, which is expected from
-equation \ref{eq:A_LU-coh} because $\alpha_2$ is smaller than $\alpha_0$. 
-While these results are not precise enough to discriminate between the models,
-they are very promising for future experiments and demonstrate our ability
-to directly extract the CFF of the helium nucleus in a completely model
+Eq.~\ref{eq:A_LU-coh} because $\alpha_2$ is smaller than $\alpha_0$. While the 
+accuracy of our results does not allow to discriminate between the models, they 
+demonstrate possibility of extraction of the CFF of spin 0 target in a model 
 independent way.
 
 
 %conclusion
-In summary, we present the first exclusive measurement of coherent DVCS 
-off $^4$He using the CLAS spectrometer supplemented  
-by a specially designed RTPC. This dataset represents a 
-unique source as the first exclusive coherent nuclear DVCS measurement which 
-can be used to directly constrain GPD models. The measured beam-spin asymmetries 
-show a signal stronger than for the proton and allow to perform a fully 
-model-independent extraction of the $^4$He CFF $\mathcal{H}_A$. The extracted 
-CFF is in a good agreement with the available models. This opens 
-many new perspectives to study the nuclear structure within the GPD framework 
-and paves the way for future, more precise measurements at JLab 12~GeV to 
-eventualy localize nuclear effects in the transverse plane.
-
+In summary, we presented the first exclusive measurement of coherent DVCS off 
+$^4$He using the CLAS spectrometer supplemented with a Radial Time Projection 
+Chamber and a high pressure gaseous target. This setup allowed detection of the 
+low energy $^4$He recoils in order to ensure the DVCS exclusivity.
+The azimuthal dependence of the measured beam spin asymmetry ($A_{LU}$) has 
+been used to extract, in model independent way, the real and the imaginary 
+parts of the $^4$He CFF, $\mathcal{H}_A$. The extracted CFF is in a good 
+agreement with predictions of the available models. This first fully exclusive 
+experiment opens new perspectives for studying the nuclear structure with the 
+GPD framework and paves a way for future measurements at JLAB using 12 GeV 
+CEBAF and upgraded equipment.
 
 %Acknowledgments
 
