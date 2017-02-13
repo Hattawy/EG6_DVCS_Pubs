@@ -499,13 +499,13 @@ So it seems that even with several iterations, we could not decipher properly
 the effects of individual pads with this method.
 
 \subsection{Noise Rejection}
-Two different noise signatures were identified in the raw data and removed in software prior to track reconstruction.  
+Two independent noise signatures were identified in the raw data and removed in software prior to track reconstruction.  Both are transient and isolated to a subset of the readout channels. 
 
-The first is a transient oscillatory noise located early in the readout time window, shown in the top panel of Figure~\ref{fig:noise} for a particularly noisy channel.  Its amplitude is not dissimilar to those of real tracks, and about 18\% of the readout channels exhibit large contributions from this noise characteristic.  Due to its unique time-energy correlation for the given channels, the noise could be removed on an event by event and channel by channel basis without significant loss of good signals, and the result is illustrated in the bottom panel of Figure~\ref{fig:noise}.
+The first is an oscillatory noise located early in the readout time window, shown in the top panel of Figure~\ref{fig:noise} for a particularly noisy channel.  Its amplitude is not dissimilar to those of real tracks, and about 18\% of the readout channels exhibit large contributions from this noise characteristic.  Due to its unique time-energy correlation for the given channels, the noise could be removed on an event by event and channel by channel basis without significant loss of good signals, and the result is illustrated in the bottom panel of Figure~\ref{fig:noise}.
 
-The second is a coherent noise affecting about 25\% of the pramplifiers, where the signature is simultaneous hits in most of the 16 channels in a preamp group.  This noise signature is also transient.  An event-based technique to identify and remove it was developed based on counting simultaneous hits in preamp group, and, if sufficiently large, perform a dynamic pedestal subtraction based on the average ADC of the channels' neighbors within the preamp group.
+The second is a coherent noise affecting about 25\% of the pramplifiers, where the signature is simultaneous hits in most of the 16 channels in a preamp group.   An event-based technique to identify and remove it was developed based on counting simultaneous hits in preamp group, and, if sufficiently large, perform a dynamic pedestal subtraction based on the average ADC of the channels' neighbors within the preamp group.
 
-The source of these noises was not determined, but rejection techniques allowed to reconstruct 10\% more good tracks and recover 70 channels that were previously ignored due to high noise levels.
+The sources of these effects were not determined, but rejection techniques allowed to reconstruct 10\% more good tracks with no significant loss and recover 70 channels that were previously ignored due to high noise levels.
 
 \begin{figure}[tb]\centering
 \includegraphics[scale=0.27]{fig/noisy_pad_before_rejection2.png}
