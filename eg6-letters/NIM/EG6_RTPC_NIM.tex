@@ -22,18 +22,15 @@ Projection Chamber for $\alpha$ detection in CLAS at JLab}}
 
 \begin{abstract}
 A new Radial Time Projection Chamber (RTPC) was developed at Jefferson 
-laboratory (JLab) to track low-energy nuclear recoils for the purpose of 
-measuring nuclear exclusive channels, such as, coherent Deeply Virtual Compton 
-Scattering (DVCS) and coherent production of mesons on $^4$He. In such 
-processes, $^4$He nucleus remains intact and recoils as a whole in the final 
+Laboratory (JLab) to track low-energy nuclear recoils for the purpose of 
+measuring exclusive nuclear channels, such as coherent Deeply Virtual Compton 
+Scattering (DVCS) and coherent meson production on $^4$He. In such 
+processes, the $^4$He nucleus remains intact and recoils as a whole in the final 
 state. The CEBAF Large Acceptance Spectrometer (CLAS) at JLab has been used for 
 similar studies on proton targets, however it cannot track recoils with momenta 
-less than 250 MeV/c. In 2009, we carried out measurements on $^4$He target 
-using CLAS spectrometer, which was supplemented with the RTPC during the 
-CLAS-EG6 experimental run. The detector was positioned directly around a 
-gaseous target, allowing a detection threshold as low as $~$100  MeV/c for 
-$^4$He. This article discuses the RTPC design, work principle, calibration 
-methods and performances.
+less than 250 MeV/c. In 2009, we carried out measurements using the CLAS spectrometer supplemented by the RTPC positioned directly around a gaseous $^4$He target, allowing a detection threshold as low as $~$100  MeV/c for 
+$^4$He. This article discuses the design, work principle, calibration 
+methods and performances of the RTPC.
 \end{abstract}
 
 \maketitle
@@ -42,25 +39,24 @@ methods and performances.
 
 \section{Introduction} \label{sec:level1}
 
-The CEBAF Large Acceptance Spectrometer (CLAS)~\cite{CLASref} is installed in 
-the Hall-B of the Thomas Jefferson National Accelerator Facility (TJNAF), 
-Newport News, Virginia, USA. The accelerator of TJNAF provides, simultaneously, 
-a high power electron beam of energy up to 6 GeV and 100$\%$ duty cycle to 
-three experimental Halls (A, B, C). The CLAS spectrometer, located in Hall-B, 
+Thomas Jefferson National Accelerator Facility (TJNAF),
+in Newport News, Virginia, USA, provides 
+high power electron beams of energy up to 6 GeV and 100$\%$ duty cycle to 
+three experimental Halls (A, B, C) simultaneously. The CLAS spectrometer, located in Hall-B, 
 is composed of several sub-detectors and two magnets. The spectrometer was 
 designed to track charged particles of momentum greater than 250 MeV/c as well 
 as detecting real photons. Figure~\ref{fig:CLAS} shows a three dimensional 
 representation of the baseline CLAS spectrometer:
 \begin{itemize}
- \item The three regions of Drift Chambers (DC) used for the tracking of charged 
+ \item Three regions of Drift Chambers (DC) used for the tracking of charged 
     particles~\cite{DCref} (in blue on the figure).
- \item The superconducting toroidal magnet (in yellow) bends the trajectories 
+ \item Superconducting toroidal magnet (in yellow) bends the trajectories 
     of charged particles, thus allowing momentum measurement with the DC tracking information.
- \item The Cherenvkov Counters (CC) used to separate electrons from other negative 
+ \item Cherenvkov Counters (CC) used to distinguish electrons from other negative 
     particles, such as pions, at lower energies~\cite{CCref} (in pink).
- \item The Scintillation Counters (SC) used to identify hadrons by measuring their 
-    Time-Of-Flight (TOF)~\cite{TOFref} (in red).
- \item The Electromagnetic Calorimeter (EC) used to separate electrons from other negative 
+ \item Scintillation Counters (SC) used to identify hadrons by measuring their 
+    time of flight (TOF)~\cite{TOFref} (in red).
+ \item Electromagnetic Calorimeters (EC) used to distinguish electrons from other negative 
     particles at higher energies and to detect neutral particles (neutrons and 
     photons in particular)~\cite{ECref} (in green).
 \end{itemize}
@@ -71,42 +67,43 @@ representation of the baseline CLAS spectrometer:
    full description is given in the text.} \label{fig:CLAS}
 \end{figure}
 
-The measurement of the DVCS process ($eH \rightarrow e' H' \gamma$, where 
-$H$ is a hadron) necessitates some adaptations in this setup. Indeed, the EC 
-covers only polar angles from 8$^{\circ}$ to 45$^{\circ}$ with a very small
-acceptance at the lowest angles. With a 6 GeV electron beam on a proton target, the 
-majority of the DVCS photons are produced at polar angles below 15$^{\circ}$, 
-where the acceptance of the EC is poor. To resolve this issue an additional 
-Inner Calorimeter (IC) has been built for the E01-113 experiment (2005). The IC is 
+Measurement of the DVCS process ($eH \rightarrow e' H' \gamma$, where 
+$H$ is a hadron) necessitates some adaptations in this setup.
+With a 6 GeV electron beam, the 
+majority of DVCS photons are produced at very forward angles where the  
+acceptance of the EC is poor. To extend the range, an additional 
+Inner Calorimeter (IC) was built for the E01-113 experiment in 2005. The IC is 
 constructed from 424 lead-tungstate (PbWO$_{4}$) crystals, covering polar 
 angles between 5$^{\circ}$ and 15$^{\circ}$. Each crystal is 16 cm long,
 corresponding to 17 radiation lengths. The achieved energy 
-resolution is around 3 to 4$\%$ for photon energies between 2 GeV and 5 GeV and 
-the angular resolution is between 3 to 5 mrad for the same energy range 
-\cite{Hyon-suk}. The amount of background from Moller electron is however
-very problematic at such small angles, so a 5 Tesla solenoid magnet has been
-added around the target as a magnetic shield against the low energy background.
+resolution is around 3 to 4$\%$ for photon energies between 2 GeV and 5 GeV, with
+an angular resolution between 3 and 5 mrad 
+\cite{Hyon-suk}. 
 
-The developed RTPC has been used during a three months experimental run in 2009 
-with a longitudinally polarized electron beam of energy 6.064 GeV projected 
-onto a gaseous $^{4}$He target to measure asymmetries in Deep Virtual Compton 
-Scattering (DVCS)~\cite{proposal} and exclusive meson production. Moreover, a 
-5~T solenoid was placed around the RTPC-target system to shield the detectors 
-close to the beam line from Mollers electrons. The solenoid field plays also a 
-major rule in finding the momentum of the charged particles in the RTPC by 
-bending their tracks curvature.
+%M{\o}ller electrons can be
+%very problematic at such small angles, so a 5 Tesla solenoid magnet has been
+%added around the target as a magnetic shield against this low energy background.
 
-In this paper we report the progress in designing and calibrating a radial TPC 
-that had been used with JLab-CLAS spectrometer. This paper is organized as 
-follows: section \ref{prev_tpc} presents an overview of the TPCs history and 
-previous usage, section \ref{sec_design} details the physics considerations for 
-the RTPC design and its internal structure, while section \ref{sec_readout} 
-points the properties of the read-out system. The calibration strategies for 
-such a detector are discussed in section \ref{sec_calib}. Finally, the 
+For coherent nuclear processes, the RTPC was developed to extend the tracking range of CLAS to low energy nuclei and was used during a one month experimental run in 2009 
+with a longitudinally polarized electron beam of energy 6.064 GeV incident 
+on a gaseous $^{4}$He target.
+%, with the goal of measuring asymmetries in Deep Virtual Compton 
+%Scattering (DVCS)~\cite{proposal} and exclusive meson production.
+
+Moreover, a 
+5~T solenoid was placed around the RTPC-target system to shield the IC and RTPC from the large flux of low energy M{\o}ller electrons. The solenoid field serves also as the
+analyzing magnet for charged particle tracking by the RTPC.
+
+In this paper we report the design, calibration, and performance of the radial TPC, organized as follows.
+Section \ref{prev_tpc} presents an overview of the history of TPCs.
+Section \ref{sec_design} details the physics considerations for 
+our RTPC's design and internal structure. Section \ref{sec_readout} 
+describes the properties of the read-out system.  Calibration strategies are
+discussed in section \ref{sec_calib}. Finally, the 
 performance of the RTPC is described in section \ref{sec_perf}.
 
 \section{TPC technology} \label{prev_tpc}
-In the late 1970s, David R. Nygren presented the concept of the Time projection 
+In the late 1970s, David R. Nygren presented the concept of the Time Projection 
 Chambers (TPCs) as a new tool to track charged particles based on combining 
 electric and magnetic fields within a sensitive gas volume. The ionized 
 electrons are collected by a position-sensitive electron collection system.  
@@ -116,10 +113,10 @@ effective gas-gain element to improve the tracking efficiency of the TPCs
 such as high-energy physics (ALEPH, DELPHI), heavy-ion physics (STAR, ALICE) 
 and rare-event searches (XENON, NEXT).
 
-The first implementation of a radial TPC with JLab-CLAS spectrometer has been 
+The first implementation of a radial TPC was  
 performed by the BoNuS experiment \cite{BONUS} in 2005. The success of the 
 BoNuS-RTPC in detecting the slow protons motivated the development of this new 
-RTPC. For the channels of interest in CLAS-EG6 experiment, the recoiled 
+RTPC. For the channels of interest in CLAS-EG6 experiment, the recoiling 
 $^{4}$He nuclei have momentum per charge around 150 MeV/c. The detection of 
 these low-energy nuclei was the primary motivation for designing this detector. 
 
