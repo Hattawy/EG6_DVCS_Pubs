@@ -109,7 +109,7 @@ electric and magnetic fields within a sensitive gas volume. The ionized
 electrons are collected by a position-sensitive electron collection system.  
 Later in 1997, F.~Sauli introduced the Gas Electron Multiplier (GEM) as an 
 effective gas-gain element to improve the tracking efficiency of the TPCs 
-\ref{gem_sauli}. Nowadays, the TPCs are widely used in physics experiments, 
+\ref{gem_sauli}. Presently, TPCs are widely used in physics experiments, 
 such as high-energy physics (ALEPH, DELPHI), heavy-ion physics (STAR, ALICE) 
 and rare-event searches (XENON, NEXT).
 
@@ -123,17 +123,16 @@ these low-energy nuclei was the primary motivation for designing this detector.
  
 \section{CLAS-EG6 RTPC design} \label{sec_design}
 The design of CLAS-EG6 RTPC has been chosen according to physics and 
-experimental considerations. At 6 GeV incident electron beam energy, the recoil 
-$^{4}$He nuclei, from the coherent DVCS channel, have an average momentum (per 
-charge) around 125 MeV/c, while the "standard" CLAS detects charged particles 
-with a threshold of 250 MeV/c. On the experimental site, the chosen design has 
-to fit within the available space inside a 5 Tesla Solenoid magnet that 
-surrounds the target \cite{Hyon-suk}. Figure \ref{fig:RTPC2} shows an 
-experimental view of the RTPC before being inserted into the solenoid. 
+experimental requirements.  At 6 GeV incident electron beam energy, the recoil 
+$^{4}$He nuclei from coherent DVCS have an average momentum (per 
+charge) around 125 MeV/c, while the ``standard'' CLAS detects charged particles 
+above a threshold of 250 MeV/c. The chosen design also has 
+to fit within the available space inside a 5 Tesla Solenoid magnet
+surrounding the target \cite{Hyon-suk}. Figure \ref{fig:RTPC2} shows a photograph of the RTPC before being inserted into the solenoid. 
 
 
-The CLAS-EG6 RTPC is a 200~mm long with a 150~mm diameter TPC. While a charged 
-particle traverses a gas-sensitive volume, the ionized electrons are released 
+The CLAS-EG6 RTPC is a 200~mm long cylinder with a diameter of 150~mm. While a charged 
+particle traverses the sensitive gas volume, ionized electrons are released 
 and drift, under the effect of an applied electromagnetic field, outward 
 perpendicularly to the beam direction. These electrons are then amplified by 
 three layers of GEMs and detected by a curved readout system on the external 
@@ -502,7 +501,7 @@ The first is an oscillatory noise located early in the readout time window, show
 
 The second is a coherent noise affecting about 25\% of the pramplifiers, where the signature is simultaneous hits in most of the 16 channels in a preamp group.   An event-based technique to identify and remove it was developed based on counting simultaneous hits in preamp group, and, if sufficiently large, perform a dynamic pedestal subtraction based on the average ADC of the channels' neighbors within the preamp group.
 
-The sources of these effects were not determined, but rejection techniques allowed to reconstruct 10\% more good tracks with no significant loss and recover 70 channels that were previously ignored due to high noise levels.
+The sources of these effects were not determined, but rejection techniques allowed to reconstruct 10\% more good tracks, with no significant loss, and recover 70 channels that were previously ignored due to excessive noise levels.
 
 \begin{figure}[tb]\centering
 \includegraphics[scale=0.27]{fig/noisy_pad_before_rejection2.png}
