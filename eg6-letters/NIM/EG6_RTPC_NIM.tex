@@ -22,18 +22,15 @@ Projection Chamber for $\alpha$ detection in CLAS at JLab}}
 
 \begin{abstract}
 A new Radial Time Projection Chamber (RTPC) was developed at Jefferson 
-laboratory (JLab) to track low-energy nuclear recoils for the purpose of 
-measuring nuclear exclusive channels, such as, coherent Deeply Virtual Compton 
-Scattering (DVCS) and coherent production of mesons on $^4$He. In such 
-processes, $^4$He nucleus remains intact and recoils as a whole in the final 
+Laboratory (JLab) to track low-energy nuclear recoils for the purpose of 
+measuring exclusive nuclear channels, such as coherent Deeply Virtual Compton 
+Scattering (DVCS) and coherent meson production on $^4$He. In such 
+processes, the $^4$He nucleus remains intact and recoils as a whole in the final 
 state. The CEBAF Large Acceptance Spectrometer (CLAS) at JLab has been used for 
 similar studies on proton targets, however it cannot track recoils with momenta 
-less than 250 MeV/c. In 2009, we carried out measurements on $^4$He target 
-using CLAS spectrometer, which was supplemented with the RTPC during the 
-CLAS-EG6 experimental run. The detector was positioned directly around a 
-gaseous target, allowing a detection threshold as low as $~$100  MeV/c for 
-$^4$He. This article discuses the RTPC design, work principle, calibration 
-methods and performances.
+less than 250 MeV/c. In 2009, we carried out measurements using the CLAS spectrometer supplemented by the RTPC positioned directly around a gaseous $^4$He target, allowing a detection threshold as low as $~$100  MeV/c for 
+$^4$He. This article discuses the design, work principle, calibration 
+methods and performances of the RTPC.
 \end{abstract}
 
 \maketitle
@@ -42,26 +39,24 @@ methods and performances.
 
 \section{Introduction} \label{sec:level1}
 
-The CEBAF Large Acceptance Spectrometer (CLAS)~\cite{CLASref} is installed in 
-the Hall-B of the Thomas Jefferson National Accelerator Facility (TJNAF), 
-Newport News, Virginia, USA. The accelerator of TJNAF provides, simultaneously, 
-a high power electron beam of energy up to 6 GeV and 100$\%$ duty cycle to 
-three experimental Halls (A, B, C). The CLAS spectrometer, located in Hall-B, 
+Thomas Jefferson National Accelerator Facility (TJNAF),
+in Newport News, Virginia, USA, provides 
+high power electron beams of energy up to 6 GeV and 100$\%$ duty cycle to 
+three experimental Halls (A, B, C) simultaneously. The CLAS spectrometer, located in Hall-B, 
 is composed of several sub-detectors and two magnets. The spectrometer was 
 designed to track charged particles of momentum greater than 250 MeV/c as well 
 as detecting real photons. Figure~\ref{fig:CLAS} shows a three dimensional 
-representation of the baseline CLAS spectrometer, here is a list of the main elements
-depicted in the figure:
+representation of the baseline CLAS spectrometer:
 \begin{itemize}
- \item The three regions of Drift Chambers (DC) used for the tracking of charged 
+ \item Three regions of Drift Chambers (DC) used for the tracking of charged 
     particles~\cite{DCref} (in blue on the figure).
- \item The superconducting toroidal magnet (in yellow) bends the trajectories 
+ \item Superconducting toroidal magnet (in yellow) bends the trajectories 
     of charged particles, thus allowing momentum measurement with the DC tracking information.
- \item The Cherenvkov Counters (CC) used to separate electrons from other negative 
+ \item Cherenvkov Counters (CC) used to distinguish electrons from other negative 
     particles, such as pions, at lower energies~\cite{CCref} (in pink).
- \item The Scintillation Counters (SC) used to identify hadrons by measuring their 
-    Time-Of-Flight (TOF)~\cite{TOFref} (in red).
- \item The Electromagnetic Calorimeter (EC) used to separate electrons from other negative 
+ \item Scintillation Counters (SC) used to identify hadrons by measuring their 
+    time of flight (TOF)~\cite{TOFref} (in red).
+ \item Electromagnetic Calorimeters (EC) used to distinguish electrons from other negative 
     particles at higher energies and to detect neutral particles (neutrons and 
     photons in particular)~\cite{ECref} (in green).
 \end{itemize}
@@ -72,72 +67,72 @@ depicted in the figure:
    full description is given in the text.} \label{fig:CLAS}
 \end{figure}
 
-The measurement of the DVCS process ($eH \rightarrow e' H' \gamma$, where 
-$H$ is a hadron) necessitates some adaptations in this setup. Indeed, the EC 
-covers only polar angles from 8$^{\circ}$ to 45$^{\circ}$ with a very small
-acceptance at the lowest angles. With a 6 GeV electron beam on a proton target, the 
-majority of the DVCS photons are produced at polar angles below 15$^{\circ}$, 
-where the acceptance of the EC is poor. To resolve this issue an additional 
-Inner Calorimeter (IC) has been built for the E01-113 experiment (2005). The IC is 
+Measurement of the DVCS process ($eH \rightarrow e' H' \gamma$, where 
+$H$ is a hadron) necessitates some adaptations in this setup.
+With a 6 GeV electron beam, the 
+majority of DVCS photons are produced at very forward angles where the  
+acceptance of the EC is poor. To extend the range, an additional 
+Inner Calorimeter (IC) was built for the E01-113 experiment in 2005. The IC is 
 constructed from 424 lead-tungstate (PbWO$_{4}$) crystals, covering polar 
 angles between 5$^{\circ}$ and 15$^{\circ}$. Each crystal is 16 cm long,
 corresponding to 17 radiation lengths. The achieved energy 
-resolution is around 3 to 4$\%$ for photon energies between 2 GeV and 5 GeV and 
-the angular resolution is between 3 to 5 mrad for the same energy range 
-\cite{Hyon-suk}. The amount of background from Moller electron is however
-very problematic at such small angles, so a 5 Tesla solenoid magnet has been
-added around the target as a magnetic shield against the low energy background.
+resolution is around 3 to 4$\%$ for photon energies between 2 GeV and 5 GeV, with
+an angular resolution between 3 and 5 mrad 
+\cite{Hyon-suk}. 
 
-The developed RTPC has been used during a three months experimental run in 2009 
-with a longitudinally polarized electron beam of energy 6.064 GeV projected 
-onto a gaseous $^{4}$He target to measure asymmetries in Deep Virtual Compton 
-Scattering (DVCS)~\cite{proposal} and exclusive meson production. Moreover, a 
-5~T solenoid was placed around the RTPC-target system to shield the detectors 
-close to the beam line from Mollers electrons. The solenoid field plays also a 
-major rule in finding the momentum of the charged particles in the RTPC by 
-bending their tracks curvature.
+%M{\o}ller electrons can be
+%very problematic at such small angles, so a 5 Tesla solenoid magnet has been
+%added around the target as a magnetic shield against this low energy background.
 
-In this paper we report the progress in designing and calibrating a radial TPC 
-that had been used with JLab-CLAS spectrometer. This paper is organized as 
-follows: section \ref{prev_tpc} presents an overview of the TPCs history and 
-previous usage, section \ref{sec_design} details the physics considerations for 
-the RTPC design and its internal structure, while section \ref{sec_readout} 
-points the properties of the read-out system. The calibration strategies for 
-such a detector are discussed in section \ref{sec_calib}. Finally, the 
+For coherent nuclear processes, the RTPC was developed to extend the tracking range of CLAS to low energy nuclei and was used during a one month experimental run in 2009 
+with a longitudinally polarized electron beam of energy 6.064 GeV incident 
+on a gaseous $^{4}$He target.
+%, with the goal of measuring asymmetries in Deep Virtual Compton 
+%Scattering (DVCS)~\cite{proposal} and exclusive meson production.
+
+Moreover, a 
+5~T solenoid was placed around the RTPC-target system to shield the IC and RTPC from the large flux of low energy M{\o}ller electrons. The solenoid field serves also as the
+analyzing magnet for charged particle tracking by the RTPC.
+
+In this paper we report the design, calibration, and performance of the radial TPC, organized as follows.
+Section \ref{prev_tpc} presents an overview of the history of TPCs.
+Section \ref{sec_design} details the physics considerations for 
+our RTPC's design and internal structure. Section \ref{sec_readout} 
+describes the properties of the read-out system.  Calibration strategies are
+discussed in section \ref{sec_calib}. Finally, the 
 performance of the RTPC is described in section \ref{sec_perf}.
 
 \section{TPC technology} \label{prev_tpc}
-In the late 1970s, David R. Nygren presented the concept of the Time projection 
+In the late 1970s, David R. Nygren presented the concept of the Time Projection 
 Chambers (TPCs) as a new tool to track charged particles based on combining 
 electric and magnetic fields within a sensitive gas volume. The ionized 
 electrons are collected by a position-sensitive electron collection system.  
 Later in 1997, F.~Sauli introduced the Gas Electron Multiplier (GEM) as an 
 effective gas-gain element to improve the tracking efficiency of the TPCs 
-\ref{gem_sauli}. Nowadays, the TPCs are widely used in physics experiments, 
+\ref{gem_sauli}. Presently, TPCs are widely used in physics experiments, 
 such as high-energy physics (ALEPH, DELPHI), heavy-ion physics (STAR, ALICE) 
 and rare-event searches (XENON, NEXT).
 
-The first implementation of a radial TPC with JLab-CLAS spectrometer has been 
+The first implementation of a radial TPC was  
 performed by the BoNuS experiment \cite{BONUS} in 2005. The success of the 
 BoNuS-RTPC in detecting the slow protons motivated the development of this new 
-RTPC. For the channels of interest in CLAS-EG6 experiment, the recoiled 
-$^{4}He$ nuclei have momentum per charge around 150 MeV/c. The detection of 
+RTPC. For the channels of interest in CLAS-EG6 experiment, the recoiling 
+$^{4}$He nuclei have momentum per charge around 150 MeV/c. The detection of 
 these low-energy nuclei was the primary motivation for designing this detector. 
 
  
 \section{CLAS-EG6 RTPC design} \label{sec_design}
 The design of CLAS-EG6 RTPC has been chosen according to physics and 
-experimental considerations. At 6 GeV incident electron beam energy, the recoil 
-$^{4}He$ nuclei, from the coherent DVCS channel, have an average momentum (per 
-charge) around 125 MeV/c, while the "standard" CLAS detects charged particles 
-with a threshold of 250 MeV/c. On the experimental site, the chosen design has 
-to fit within the available space inside a 5 Tesla Solenoid magnet that 
-surrounds the target \cite{Hyon-suk}. Figure \ref{fig:RTPC2} shows an 
-experimental view of the RTPC before being inserted into the solenoid. 
+experimental requirements.  At 6 GeV incident electron beam energy, the recoil 
+$^{4}$He nuclei from coherent DVCS have an average momentum (per 
+charge) around 125 MeV/c, while the ``standard'' CLAS detects charged particles 
+above a threshold of 250 MeV/c. The chosen design also has 
+to fit within the available space inside a 5 Tesla Solenoid magnet
+surrounding the target \cite{Hyon-suk}. Figure \ref{fig:RTPC2} shows a photograph of the RTPC before being inserted into the solenoid. 
 
 
-The CLAS-EG6 RTPC is a 200~mm long with a 150~mm diameter TPC. While a charged 
-particle traverses a gas-sensitive volume, the ionized electrons are released 
+The CLAS-EG6 RTPC is a 200~mm long cylinder with a diameter of 150~mm. While a charged 
+particle traverses the sensitive gas volume, ionized electrons are released 
 and drift, under the effect of an applied electromagnetic field, outward 
 perpendicularly to the beam direction. These electrons are then amplified by 
 three layers of GEMs and detected by a curved readout system on the external 
@@ -168,9 +163,9 @@ substructure, from the beam line to the exterior:\\
       6 mm. It is enclosed in a 27-$\mu$m-thick Kapton wall.
 
    \item The first gas gap extends from 3 mm to 20 mm radial distances. It is 
-      filled with $^{4}He$ gas at 1~atm. During run, this region is swarmed by 
+      filled with $^{4}$He gas at 1~atm. During run, this region is swarmed by 
       M\o ller electrons induced by the beam, such that filling this region 
-      with a light gas like $^{4}He$ minimizes secondary interactions. This 
+      with a light gas like $^{4}$He minimizes secondary interactions. This 
       region is surrounded by a 4 $\mu$m thick window made of aluminized Mylar 
       and connected to ground.                                                                
    \item The gap region extends between 20~mm and 30~mm and is filled with a 
@@ -262,7 +257,7 @@ identification.
 \subsection{Drift Speed Parametrization}
 
 We can measure the drift speed using the tracks detected in the RTPC, in figure 
-\ref{fig:RTPC_signals} we represent a typical $^{4}He$ track (in green). After 
+\ref{fig:RTPC_signals} we represent a typical $^{4}$He track (in green). After 
 it causes ionization in the drift region, the released electrons (in black) 
 drift to the detection plane under the effect of the electric field. The 
 electrons released close to the cathode take the most time to reach the readout 
@@ -273,7 +268,7 @@ speed of the electrons in the RTPC.\\
 \begin{figure}[tb]
 \centering
 \includegraphics[scale=0.35]{fig/RTPC_2.png}
-\caption[]{A schematic drawing of a $^{4}He$ track (in green) traversing the 
+\caption[]{A schematic drawing of a $^{4}$He track (in green) traversing the 
 drift region, with the drift paths followed by the electrons (in black). } 
 \label{fig:RTPC_signals}
 \end{figure}
@@ -346,7 +341,7 @@ knowledge is limited to a millimeter precision. These problems, already
 encountered for the BoNuS RTPC calibration (ref), have motivated the 
 acquisition of specific calibration runs. These are taken with lower energy 
 electron beam (1.20 and 1.27 GeV) to enhance the cross section of the elastic 
-process ($e ^{4}He \rightarrow e ^{4}He$). In this process the knowledge of the 
+process ($e^{4}$He$\rightarrow e^{4}$He). In this process the knowledge of the 
 electron kinematic gives us the helium nuclei kinematic and therefore allow us 
 to calibrate our drift paths independently of our knowledge of the exact 
 conditions in the chamber.
@@ -384,7 +379,7 @@ maximum TDCs ($\sim75$).}
    \item For these selected hits, we look at $\Delta\phi$ ($\Delta \phi$ = 
       $\phi_{sim.}$ - $\phi_{hit\_pad}$) versus TDC. We clearly obtain a 
       correlation shown in figure~\ref{fig:1st_pass_delta_phi}. This $\Delta 
-      \phi$ change with TDC shows the drift in $phi$ of the electrons due to 
+      \phi$ change with TDC shows the azimuthal drift of the electrons due to 
       the Lorentz angle. 
 
       \begin{figure}[tb]
@@ -500,14 +495,19 @@ So it seems that even with several iterations, we could not decipher properly
 the effects of individual pads with this method.
 
 \subsection{Noise Rejection}
+Two independent noise signatures were identified in the raw data and removed in software prior to track reconstruction.  Both are transient and isolated to a subset of the readout channels. 
 
-(To be written by Nathan) 
+The first is an oscillatory noise located early in the readout time window, shown in the top panel of Figure~\ref{fig:noise} for a particularly noisy channel.  Its amplitude is not dissimilar to those of real tracks, and about 18\% of the readout channels exhibit large contributions from this noise characteristic.  Due to its unique time-energy correlation for the given channels, the noise could be removed on an event by event and channel by channel basis without significant loss of good signals, and the result is illustrated in the bottom panel of Figure~\ref{fig:noise}.
+
+The second is a coherent noise affecting about 25\% of the pramplifiers, where the signature is simultaneous hits in most of the 16 channels in a preamp group.   An event-based technique to identify and remove it was developed based on counting simultaneous hits in preamp group, and, if sufficiently large, perform a dynamic pedestal subtraction based on the average ADC of the channels' neighbors within the preamp group.
+
+The sources of these effects were not determined, but rejection techniques allowed to reconstruct 10\% more good tracks, with no significant loss, and recover 70 channels that were previously ignored due to excessive noise levels.
 
 \begin{figure}[tb]\centering
 \includegraphics[scale=0.27]{fig/noisy_pad_before_rejection2.png}
 \includegraphics[scale=0.27]{fig/noisy_pad_after_rejection2.png}
-\caption{}
-\label{fig:noisy_pad_before_rejection}
+\caption{The ADC vs. TDC spectrum for an example noisy channel before (top) and after (bottom) noise rejection algorithms.  Only hits associated with tracks are included, and the selection of events and tracks is the same in both plots.}
+\label{fig:noise}
 \end{figure}
 
 %\begin{figure}[tb]
@@ -531,12 +531,12 @@ neighbors and next to neighbors. Then, we fit the chains that have a minimum of
 together with the beam line are fitted with a helix. For the second iteration, 
 the hits that are 5 mm or farther from the first fit are excluded.
 
-For the energy deposit, $\frac{dE}{dx}$ is calculated in this way:
+For energy deposition, the mean $\frac{dE}{dx}$ is calculated as
 \begin{equation}
- \left\langle \frac{dE}{dX} \right\rangle= \frac{\sum\limits_{i} \frac{ADC_{i}}{Gi}}{vtl}
+ \left\langle \frac{dE}{dX} \right\rangle= \frac{\sum\limits_{i} \frac{ADC_{i}}{G_i}}{L},
 \end{equation}
-Where the sum runs over all the hits of the track and $G_{i}$ is the gain of 
-the associated pad. The $vtl$ is the visible track length in the active drift 
+where the sum runs over all the hits of the track, $G_{i}$ is the gain of 
+the associated pad, and $L$ is the visible track length in the active drift 
 volume. 
 
 (We need some performance studies here: Mohammad)
