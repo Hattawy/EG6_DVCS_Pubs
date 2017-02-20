@@ -1,0 +1,139 @@
+
+%\documentclass[a4paper,11pt,twoside]{ThesisStyle}
+\documentclass[a4paper,11pt,twoside]{article}
+
+\date{\today}
+\include{formatAndDefs}
+\begin{document}
+
+\title{\centering{Investigating the Fermi motion effects on the incoherent DVCS 
+channel}}
+\maketitle
+
+In our DVCS analysis, we considered the initial proton of the incoherent 
+channel to be at rest, while this is not totally true because of the Fermi 
+motion. Does this assumption is a good approximation? what other options can be 
+used to minimize this effect on the calculated exclusive quantities?\\
+
+Figure \ref{fig:handbag} presents the leading order handbag diagram of the 
+incoherent DVCS channel off $^4$He, where the nucleus breaks and the DVCS 
+occurs on a bound nucleon. Ideally, the transferred momentum squared ($t$) is 
+defined using the initial and the final nucleons' 4-vectors as $(p-p')^{2}$.  
+Then as a DVCS requirement, $t$ has to be greater than a certain value 
+($t_{min}$), that is defined using the kinematics of the incoming and the 
+scattered electrons. Due to the knowledge lack of the initial proton's 
+momentum, this cut maybe inaccurate causes loosing some good DVCS events. In 
+this work, we try to tackle this issue and check the stability of the 
+reconstructed beam-spin asymmetry, as being our DVCS observable.\\ 
+
+\begin{figure}[h!]
+\includegraphics[height=10.0cm]{fig/handbag_incoherent.pdf}
+\caption{Representation of the leading order handbag diagram of the incoherent 
+DVCS process off $^4$He}
+\label{fig:handbag}
+\end{figure}
+
+Typically, the transferred momentum squared $t$ is equal to the transferred 
+momentum squared ($t'$) defined between the virtual photon and the final-state 
+real photon, as shown in Figure \ref{fig:handbag}.  While defining the momentum 
+transferred as $t'$ is a good way to pass the Fermi motion effect on the 
+initial bound proton, it is more smeared than than $t$ due to bigger energy 
+resolutions of the photons. Figure \ref{fig:tprime} shows the distributions of 
+the coherent and the incoherent relative difference between $t$ and $t'$. One 
+can see that the coherent DVCS channel, the distributions is symmetric and 
+centered at zero as expected due to our good knowledge on the initial $^4$He 
+target, while it is not exactly the case for the incoherent case due to the 
+Fermi motion.\\            
+
+\begin{figure}[h!]
+\includegraphics[height=5.0cm]{fig/T_tprime_Coh.png}
+\includegraphics[height=5.0cm]{fig/T_tprime_InCoh.png}
+\caption{On the left: the coherent relative difference between $t$ and $t'$.  
+On the right: the incoherent relative difference.}
+\label{fig:tprime}
+\end{figure}
+
+In the following, we check the effects of defining the transferred momentum 
+squared as $t$ and $t'$ on the exclusive distributions and on the reconstructed 
+beam-spin asymmetries. Figure \ref{fig:cuts_t} presents the exclusive 
+distributions of the incoherent DVCS events where the transferred momentum
+squared is defined as $t$, while it is define as $t'$ in figure 
+\ref{fig:cuts_tprime}. To minimize the smearing effects of $t'$ on the 
+exclusive distributions, 2$\sigma$ exclusive cuts were optimized compared to 
+3$\sigma$ cuts which were applied in the $t$ case. In terms of collected 
+statistics, the 2$\sigma$ cuts using $t'$ gave almost the same statistics using 
+$t$. From comparing the exclusive distributions, especially the $ep\gamma$ 
+missing energy and the missing mass squared, one sees that using $t'$ gives 
+more Gaussian missing energy distributions and cleaner missing mass squared 
+distribution.\\      
+
+\begin{figure}[h!]
+\includegraphics[height=15.0cm]{fig/old_all_incoh_exc_cuts.pdf}
+\caption{The old set of exclusive cuts with $t$>$t_{min}$. The black
+   distributions represent the incoherent DVCS events candidate. The shaded
+   distributions represent the events which passed all the exclusivity cuts
+   except the quantity plotted. The vertical red lines represent the applied
+exclusivity, 3$\sigma$ cuts.}
+\label{fig:cuts_t}
+\end{figure}
+
+\begin{figure}[h!]
+   \includegraphics[height=15.0cm]{fig/all_incoh_exc_cuts_test.pdf}
+   \caption{New set of exclusive cuts with $t'$>$t_{min}$. The black
+      distributions represent the incoherent DVCS events candidate. The shaded
+      distributions represent the events which passed all the exclusivity cuts
+      except the quantity plotted. The vertical red lines represent the applied 
+   exclusivity, 2$\sigma$ cuts.}
+\label{fig:cuts_tprime}
+\end{figure}
+
+Figure \ref{fig:bsa_incoh_bins} shows our measured incoherent beam-spin
+asymmetries, for the three sets of the two-dimensional bins, in the two 
+scinarios of defining the transferred momentum squared. The $Q^2$, $x_{B}$, and 
+$-t$-dependencies of $A_{LU}$ at $\phi$=~90$^{\circ}$ (the $\alpha$ parameter 
+of the fit) are shown in figure \ref{fig:incoh_Q2_xB_t_ALU}.
+
+
+
+\begin{figure}[h!]
+   \includegraphics[height=6.0cm]{fig/ALU_phi_p_Q2.pdf}
+   \includegraphics[height=6.0cm]{fig/ALU_phi_p_x.pdf}
+   \includegraphics[height=6.0cm]{fig/ALU_phi_p_t.pdf}
+\caption{The reconstructed incoherent $A_{LU}$ as a function of the angle 
+   $\phi$ in $Q^2$, $x_B$, and $-t$ bins, respectively from top to bottom using 
+$t$>$t_{min}$ in black squares, and $t'$>$t_{min}$ in red squares.}
+   \label{fig:bsa_incoh_bins}
+\end{figure}
+
+\begin{figure}[h!]
+   \centering
+   \includegraphics[height=6.0cm]{fig/ALU_90_p_vs_Q2_shortscenrario.pdf}\\
+   \includegraphics[height=6.0cm]{fig/ALU_90_p_vs_x_shortscenrario.pdf}\\
+   \includegraphics[height=6.0cm]{fig/ALU_90_p_vs_t_shortscenrario.pdf}
+   \caption{The $Q^{2}$ (top), $x_{B}$ (middle), and $-t$-dependencies (bottom) 
+      of the incoherent $A_{LU}$ at $\phi$~=~90$^{\circ}$, using the 
+   $t$>$t_{min}$ cut and the corresponding exclusive cuts in black squares, and 
+in red squares using the $t'$>$t_{min}$ and it's exclusive cuts.  The curves 
+are theoretical calculations. On the bottom: the green circles are the HERMES 
+$-A_{LU}$ (positron beam was used) inclusive measurements.}
+\label{fig:incoh_Q2_xB_t_ALU}
+\end{figure}
+
+
+
+\section*{Conclusions}
+In summary, we have studied the effects of Fermi motion on the measured 
+incoherent beam-spin asymmetries by defining the transferred momentum squared 
+through the nucleons in one case and through the photons in the other case. In 
+terms of collected statistics, 2$\sigma$ exclusive cuts using the photons 
+produced the same statistics as 3$\sigma$ cuts. The exclusive distributions 
+using $t'$, through the photons, have shown more acceptable distributions in 
+terms of being more symmetric in some cases and cleaner on others. The 
+reconstructed asymmetries in the two cases of defining the transferred momentum 
+squared are compatible and while the given error bars. As a suggestion, we 
+would like to consider the $t'$ analysis as the final set for publications 
+unless a major objections appear.
+
+
+
+\end{document}

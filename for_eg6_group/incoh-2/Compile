@@ -1,0 +1,12 @@
+#! /bin/bash
+
+./Clean
+
+pdflatex Incoh.tex
+bibtex   Incoh
+pdflatex Incoh.tex
+pdflatex Incoh.tex
+
+rm Incoh.aux Incoh.bbl Incoh.blg Incoh.log Incoh.out Incoh.maf 
+rm Incoh.mtc Incoh.mtc1 Incoh.nlo
+rm formatAndDefs.aux
