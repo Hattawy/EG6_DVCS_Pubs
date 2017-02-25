@@ -1,0 +1,265 @@
+
+%\documentclass[a4paper,11pt,twoside]{ThesisStyle}
+\documentclass[a4paper,11pt,twoside]{article}
+
+
+
+
+\date{\today}
+\include{formatAndDefs}
+\begin{document}
+
+
+\section{Comments from Whitney}
+
+\begin{itemize}
+\item In general I think there are too many figures for a PRL.
+Figures 1-5 can probably be removed or reduced.
+
+\item "Deeply Virtual Compton Scattering" -> "deeply virtual Compton
+scattering (DVCS)"
+\textcolor{blue}{ }
+  
+\item "Radial Time Projection Chamber" -> "radial time projection chamber
+(RTPC)"
+\textcolor{blue}{ }
+  
+\item "Beam Spin Asymmetries" -> "beam spin asymmetries"
+\textcolor{blue}{ }
+  
+\item "Compton Form Factors" -> "Compton form factors"
+\textcolor{blue}{ }
+  
+\item "Generalized Parton Distribution" -> "generalized parton distribution"
+\textcolor{blue}{ }
+  
+\item Line 17: "Quantum Chromodynamics (QCD)" -> "quantum chromodynamics
+(QCD)"
+\textcolor{blue}{ }
+  
+\item Line 19: "development of the Generalized Parton Distributions (GPDs)
+..." -> "development of the generalized parton distribution (GPD) ...",
+assuming the acronym isn't already defined in abstract.
+\textcolor{blue}{ }
+  
+\item Line 23: Unnecessary comma.
+\textcolor{blue}{ }
+  
+\item Line 23: Last sentence in paragraph could be improved. It is at a
+critical location in the paper so you might want to reword for clarity.
+\textcolor{blue}{ }
+  
+\item "In impact parameter space, the GPDs are indeed interpreted as a tomography of 
+the
+transverse plane for partons carrying a certain longitudinal momentum"
+
+Perhaps ...
+
+"Impact parameter GPDs provide a tomographic image of the partons
+carrying fixed values of longitudinal momentum."
+\textcolor{blue}{ }
+  
+\item Line 28: "Deeply Virtual Compton Scattering" -> "deeply virtual Compton
+scattering" and remove "(DVCS)" if acronym defined  in  abstract.
+\textcolor{blue}{ }
+  
+\item Line 29: ", i.e. the " -> ", \textit{i.e.}, the"
+\textcolor{blue}{ }
+  
+\item Line 34: Technically "JLab" isn't an acronym since it has lower case
+letters -- it is just another name. Furthermore, if you are going to
+define the JLab acronym anyway, shouldn't you do the same for CERN and
+HERA? I suggest just leaving it as "JLab" or "Jefferson Lab".
+\textcolor{blue}{ }
+  
+\item Line 48: "Figure 1" -> "FIG. 1"
+\textcolor{blue}{ }
+  
+\item Line 50: Sentence is hard to read. Maybe define the invariants $Q^2$ and t
+in one sentence. Then describe the kinematic regime for factorization.
+\textcolor{blue}{ }
+  
+\item Line 59: Oxford comma?  "x, $\xi$, and t"
+\textcolor{blue}{ }
+  
+\item Line 59: "Figure 1" -> "FIG. 1"
+\textcolor{blue}{ }
+  
+\item Line 61: " with M the proton mass ..." ->
+", $\nu = k^0-k^{\prime0}$, and M is the proton mass." Note that t is
+already defined defined (see Line 50 comment).
+\textcolor{blue}{ }
+  
+\item Line 65: "Compton Form Factors" -> "Compton form factors"
+\textcolor{blue}{ }
+  
+\item Line 66: "... defined as" -> "... defined at leading order as"
+The coefficient function is the LO one and it should be noted.
+\textcolor{blue}{ }
+  
+\item Line 69: Paragraph needs improved. Perhaps get to the point quickly ...
+"The HERMES experiment measured this process with a few nuclear targets
+(N, Ne, KR, and XE), however, they did not measure the recoil nucleus.
+Therefore, the coherence of the reaction possibly suffers from large
+contaminations ..."
+\textcolor{blue}{ }
+  
+\item Line 79: Shouldn't "CLAS" have already been defined in the abstract?
+\textcolor{blue}{ }
+  
+\item Line 83: Is this the first definition of RTPC? (But note the correct
+capitalization of "radial time projection chamber")
+\textcolor{blue}{ }
+  
+\item Line 85:  The sentence beginning here seems out of place. "... while it
+is subject to significant nuclear effects". Is this accidental mixing
+with the incoherent paper?
+\textcolor{blue}{ }
+  
+\item Line 100: "at energy of " -> "at an energy of"
+\textcolor{blue}{ }
+  
+\item Line 115: "In Figure 2 a picture of RTPC installed in the experimental
+hall, and the rendering showing detector components and the 4 He
+detection concept are presented." ->
+"Presented in FIG. 2 are a picture of RTPC installed in the experimental
+hall and a diagram showing the basic detection technique."
+\textcolor{blue}{ }
+  
+\item Line 134: "The photons are detected in either the IC or
+the CLAS electromagnetic calorimeter." Is this true?
+\textcolor{blue}{ }
+  
+
+\item Line 146: "events with ... " -> "events with $Q^2$ > 1 GeV$^2$/c$^2$."
+\textcolor{blue}{ }
+  
+\item Line 160: "After these requirements, we ... " -> "About 3200 events pass
+these requirements and are shown in FIG. 4..."
+\textcolor{blue}{ }
+  
+\end{enumerate}
+
+
+\section{Comments from Hovanes}
+
+\begin{enumerate}
+\item In the abstract there is a statement about the BSA size relative to
+the BSA on the proton, but there
+is not such statement or comparison in the article (I might have missed
+it). I would suggest either removing
+this statement from the abstract or add graph(s) comparing the two BSAs
+to support such a statement.
+\textcolor{blue}{ }
+  
+\item line 36 : "allowed extraction of the tomography of the nucleon" could
+be changed "allowed for extraction
+of the three-dimensional picture of the nucleon" . The way "tomography"
+is used in lines 24 and 37 is a little
+unusual.
+\textcolor{blue}{ }
+  
+\item line 49 : "hand bag diagram" -> "hand-bag diagram"
+\textcolor{blue}{ }
+  
+\item line 78 : I suggest removing "and that the reaction did not occur on
+a bound nucleon".
+\textcolor{blue}{ }
+  
+\item line 80 : CLAS was not designed for study of DVCS, therefore the
+statement that it is optimized for DVCS
+is not a justified statement. One can simply say " ... in Hall-B at
+Jefferson Lab has been previously used for DVCS
+measurements on nucleon."
+\textcolor{blue}{ }
+  
+\item Line 194 : "and a solenoid." -> "and a solenoid magnet."
+\textcolor{blue}{ }
+  
+\item Line 198 "... 5 Tesla solenoid ..." -> "... 5 Tesla solenoid magnet
+... "
+\textcolor{blue}{ }
+  
+\item Figure 3 : The histograms titles need to be removed from the top of
+the graphs and put as x-axis titles.
+\textcolor{blue}{ }
+  
+\item Line 196 " ... that depends ..." -> "... that depend ..." .
+\textcolor{blue}{ }
+  
+\item Line 152 and line 198 : The font for 'He4 changes throughout the paper.
+\textcolor{blue}{ }
+  
+\item Figures 3, 5, 6, 7 : axis titles labels and legends are totally
+illegible. At some point these will have to be improved.
+\textcolor{blue}{ }
+  
+\item Line 271. I am not sure how the results in Figure 7 support the
+argument that the extraction of CFF is
+model independent. The applicability of Eq. 5 presumably determines if
+this extraction is model independent or not,
+either way the fits would produce some results.
+\textcolor{blue}{ }
+  
+\end{enumerate}
+
+
+
+
+
+\section{Comments from Eric}
+I will concur with other remarks that you may try to concentrate on a reduced 
+set of figures. It is always difficult to squeeze everything in the PRL and I 
+apologize in advance for my next remark asking to potentially say more. It 
+would be valuable to have a direct comparison between proton and He4 on the 
+basis of the amplitude of the asymmetries at 90°. The ratio He4/proton would 
+give the so-called generalized EMC ratio that already encode some nuclear 
+effects. It would be interesting to know whether or not this comparison yields 
+conclusive physics input.
+\textcolor{blue}{ }
+  
+\section{Comments from Lamiaa}
+
+\begin{enumerate}
+
+\item Would it possible to define some acronyms in the abstract especially the ones that will be used again there like DVCS (some published PRLs did, e.g. the latest CLAS PRL of 2015, they used CLAS acronym w/o. definition (!), defined GPDs acronym in the abstract to avoid writing generalized parton distributions twice, and all others including JLab were defined in the core. 
+
+I believe according to the abbreviation guidelines below, you could either define the acronym DVCS using deeply virtual Compton scattering or Deeply Virtual Compton Scattering but e.g. the above letter used the former!
+\textcolor{blue}{ }
+  
+\item In Eq. 1 $\&$ 2 you gave the expression of the real and comlplex CFF amplitudes, hence, shouldn't be "real and complex amplitudes" in line 66?
+\textcolor{blue}{ }
+  
+\item While the PRL link below contains some comments about the letter length, number of words, and figures size which It will be nice to review, I have a comment about some figures:
+   a. To gain some space you could move a figure's caption a little bit up using:
+   
+
+         vglue -xxxcm caption{}               ! e.g. vglue -0.5cm
+
+  
+   b. Some figures are more shifted to the left, e.g. Fig. 3, Fig. 5, 6 $\&$ 7, if centering under\\
+
+       begin{figure*}\\
+       centering \\
+         includegraphics[]{}\\
+          vglue -0.55cm caption{}\\
+          label\\
+         end{figure*}\\
+
+       is not doing the job. You could force it by adding vspace*{-xxxcm} just after begin{figure*}.
+       (a simple trick that works!)
+\textcolor{blue}{ }
+  
+\item It will be nice to rephrase some sentences to read better such as:
+    a. Line 207, "The explicit expressions of these terms can be found in [40] and show that, by using the sin( $\phi$) and cos( $\phi$) contributions, it is possible to extract Im(HA) and Re(HA) from the beam spin asymmetry." 
+     b. Line 236, "However, added quadratically,the total systematic uncertainty is about 10%, which is signifi cantly smaller than statistical uncertainties in all kinematical bins." 
+     c. Line 278, "While the accuracy of our results does not allow to discriminate between the models, they demonstrate possibility of extraction of the CFF of spin 0 target in a model independent way." 
+\textcolor{blue}{ }
+  
+\item Line 256, $Q^2$, $x_B$, and t dependencies.........
+\textcolor{blue}{ }
+  
+\end{enumerate}
+
+
+\end{document}

@@ -1,0 +1,12 @@
+#! /bin/bash
+
+./Clean
+
+pdflatex eg6_comments.tex
+bibtex   eg6_comments
+pdflatex eg6_comments.tex
+pdflatex eg6_comments.tex
+
+rm eg6_comments.aux eg6_comments.bbl eg6_comments.blg eg6_comments.log eg6_comments.out eg6_comments.maf 
+rm eg6_comments.mtc eg6_comments.mtc1 eg6_comments.nlo
+rm formatAndDefs.aux
