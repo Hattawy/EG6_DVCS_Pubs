@@ -132,7 +132,8 @@ obtain new information about the momentum and spatial degrees of freedom of the
 quarks and gluons inside hadrons 
 \cite{Mueller:1998fv,Ji:1996ek,Ji:1996nm,Radyushkin:1996nd,Radyushkin:1997ki}.
 In impact parameter space the GPDs are indeed interpreted as a tomography of 
-the transverse plane for partons carrying a certain longitudinal momentum 
+the transverse plane for partons carrying a given fraction of the proton 
+longitudinal momentum 
 \cite{Burkardt:2000za,Diehl:2002he,Belitsky:2002ep,Burkardt:2005hp}. 
 
 The most promising way to access GPDs experimentally is through the measurement 
@@ -144,7 +145,7 @@ has been the focus of worldwide efforts
 Camacho:2006hx,Girod:2007aa,Mazouz:2007aa,Gavalian:2009,Seder:2015,Pisano:2015,Jo:2015ema} 
 involving several accelerator facilities such as Jefferson Lab, HERA and  CERN.  
 The vast majority of these measurements focused on the study of proton 
-structure and allowed for extraction of the three-dimensional picture of the 
+structure and allowed for an extraction of the three-dimensional picture of the 
 nucleon (for details on the formalism, see 
 \cite{Goeke:2001tz,Diehl:2003ny,Ji:2004gf,Belitsky:2005qn,Boffi:2007yc,Guidal:2013rya}).
 This framework is also applicable to nuclei, giving access to completely new 
@@ -177,9 +178,9 @@ variables $x$, $\xi$, and $t$ as introduced in FIG.~\ref{fig:diags}. The
 parameter $\xi$ relates to the Bjorken variable $x_{B}$: $\xi\approx 
 {{x_B}\over{2-x_B}}$, where $x_B=\frac{Q^2}{2M\nu}$, $\nu=k^0-k^{0\prime}$, and 
 $M$ is the proton mass. The parameter $x$ is the quark's internal loop momentum 
-fraction and cannot be accessed experimentally. In the experiment we measure 
-Compton form factors (CFF) \cite{Guidal:2013rya}, for which their real and 
-complex amplitudes are defined at leading order as
+fraction and cannot be accessed experimentally. We in fact measure 
+Compton form factors (CFF) \cite{Guidal:2013rya}, which are
+complex amplitudes defined as:
 
 \begin{align}
 \begin{split}
@@ -244,7 +245,7 @@ beam.
 
 \begin{figure}[tb]
 \vspace{-1.1cm}
-\includegraphics[width=7.0cm,angle=-90]{figs/RTPC.pdf}
+\includegraphics[width=6.5cm,angle=-90]{figs/RTPC.pdf}
 \vspace{-1.1cm}
 \caption{Left: A picture of the E08-024 RTPC before insertion into the 
    solenoid. Right: A cross section of the E08-024 RTPC perpendicular to the 
@@ -288,7 +289,7 @@ two photons. About 3200 events pass these requirements. Their kinematic
 distributions are shown in FIG.~\ref{fig:kin-coverage}.
 
 \begin{figure}[tb]
-\includegraphics[width=8.9cm]{figs/coh_exc_cuts.pdf}
+\includegraphics[width=8cm]{figs/coh_exc_cuts.pdf}
 \caption{Four of the six coherent DVCS exclusivity cuts. The black 
 distributions represent the coherent DVCS events candidate. The shaded 
 distributions represent the events which passed all the exclusivity cuts except 
@@ -302,7 +303,7 @@ between the measured and the calculated photons.}
 
 \begin{figure}[tb]
 \hspace{-0.45cm}
-\includegraphics[width=9.0cm]{figs/Q2_xB_t_Coh.pdf}
+\includegraphics[width=8.0cm]{figs/Q2_xB_t_Coh.pdf}
 \caption{Coherent DVCS event distributions for $Q^{2}$ as a function of 
 $x_{B}$ (left) and $Q^{2}$ as a function of $-t$ (right) after the 
 exclusivity cuts.}
@@ -311,7 +312,7 @@ exclusivity cuts.}
 
 %asymmetries
 In this work, the physics observable extracted using coherent DVCS events is
-the Beam Spin Asymmetry (BSA). The BSA on an unpolarized target, $A_{LU}$, is 
+the beam spin asymmetry (BSA). The BSA on an unpolarized target, $A_{LU}$, is 
 measured as the difference of cross sections of the reaction at opposite beam 
 helicities normalized to the total cross section:
   \begin{equation}
@@ -338,13 +339,13 @@ a combination of the form factors and GPDs. At our kinematics, the cross
 section of real photon electroproduction is dominated by the BH 
 contribution, while the DVCS contribution is very small. Its effect is however
 enhanced in the observables sensitive to the interference term, {\it e.g.} 
-beam spin asymmetry. The three terms entering the cross section calculation,
-the BH and DVCS amplitudes squared and their interference term, 
-can be decomposed into a finite sum of Fourier harmonics in the azimuthal angle
+BSA. The three terms entering the cross section calculation,
+the BH and DVCS amplitudes squared and their interference term depend on the
+azimuthal angle
 $\phi$ between the $(e,e^\prime)$ and $(\gamma^*,^4$He$^\prime)$ planes, as
 shown for the nucleon in \cite{Belitsky:2001ns} and for the spin-zero targets
-in \cite{Kirchner:2003wt,Belitsky:2008bz}. Based on this work, the beam-spin 
-asymmetry of a spin-zero hadron can be expressed as
+in \cite{Kirchner:2003wt,Belitsky:2008bz}. Based on this work, the BSA 
+of a spin-zero hadron can be expressed as
 \begin{equation}
 \begin{split}
 &A_{LU}(\phi) = \\
@@ -356,28 +357,14 @@ asymmetry of a spin-zero hadron can be expressed as
 \end{equation}
 where $\Im m(\mathcal{H}_{A})$ and $\Re e(\mathcal{H}_{A})$ are the imaginary 
 and real parts of the $^4$He CFF $\mathcal{H}_{A}$ and depend on the GPD $H_A$.  
-The kinematic factors $\alpha_i$ depend on azimuthal angle $\phi$, the nuclear 
-form factor $F_A(t)$, $Q^2$ and $x_B$. These factors are written as
-\begin{align}
-   \alpha_0 (\phi) & = \frac{x_{A}(1+\epsilon^2)^2}{y} S_{++}(1) \sin(\phi), \\
-   \alpha_1 (\phi) & = c_0^{BH}+c_1^{BH} \cos({\phi})+c_2^{BH} \cos(2\phi), \\ 
-   \alpha_2 (\phi) & = \frac{x_{A}(1+\epsilon^2)^2}{y}  \left( 
-      C_{++}(0) +  C_{++}(1) cos(\phi) \right), \\
-   \alpha_3 (\phi) &= \frac{x^{2}_{A}t(1+\epsilon^2)^2}{y} {\mathcal P}_1(\phi) 
-      {\mathcal P}_2(\phi) \cdot 2 \frac{2-2y+y^2 + \frac{\epsilon^2}{2}y^2}{1 + 
-      \epsilon^2},
-\end{align}
-where $x_{A} = \frac{x_{B}M_{N}}{M_{A}}$ with $M_{A}$($M_{N}$) the $^4$He 
-(nucleon) mass, $\epsilon = \frac{2x_{A}M_{A}}{\sqrt{Q^{2}}}$ and 
-$y=\frac{Q^{2}}{2x_{A}M_{A}E_{beam}}$, and $\mathcal{P}_1(\phi)$ and $\mathcal 
-{P}_2(\phi)$ are the Bethe-Heitler propagators. The factors $c_{0,1,2}^{BH}$, 
-$c_0^{DVCS}$, $c_{0,1}^{INT}$ and $s_1^{INT}$ are the Fourier coefficients of 
-the BH, and $S_{++}(1)$, $C_{++}(0)$, and $C_{++}(1)$ are the Fourier harmonics 
-in the leptonic tensor.  The explicit expressions of these terms can be found 
-in \cite{Belitsky:2008bz} and show that, by using the $\sin(\phi)$ and 
-$\cos(\phi)$ contributions, it is possible to extract $\Im m(\mathcal{H}_{A})$ 
-and $\Re e(\mathcal{H}_{A})$ from the beam spin
-asymmetry. 
+The explicit expression of the kinematic factors $\alpha_i$ are written in 
+\cite{Belitsky:2008bz}, they are functions of Fourier harmonics in the 
+azimuthal angle $\phi$, the nuclear form factor $F_A(t)$, $Q^2$ and $x_B$,
+$x_{A} = \frac{x_{B}M_{N}}{M_{A}}$, $y=\frac{Q^{2}}{2x_{A}M_{A}E_{beam}}$, and 
+$\epsilon = \frac{2x_{A}M_{A}}{\sqrt{Q^{2}}}$, where $M_{A}$($M_{N}$) is the $^4$He 
+(nucleon) mass. Using the different $\sin(\phi)$ and $\cos(\phi)$ contributions 
+in these factors, it is possible to extract unequivocally both imaginary and real 
+parts of $\mathcal{H}_{A}$ from the BSA. 
 
 In this work the azimuthal dependence of the BSA, $A_{LU}$, has been studied 
 for a wide range of kinematics. We identified two main backgrounds to our 
@@ -409,15 +396,19 @@ parts of the CFF $\mathcal{H}_{A}$ are the free parameters of the fit.  In
 FIG.~\ref{fig:alu90} the $Q^2$, $x_{B}$, and $t$-dependencies of the fitted 
 $A_{LU}$ at $\phi$~=~90$^{\circ}$ are shown. The $x_{B}$ and $t$-dependencies 
 are compared to theoretical calculations performed by S.~Liuti and K.~Taneja 
-\cite{simonetta_2}. The model relies on the impulse approximation and uses 
-advanced spectral functions of nuclei. The calculations are at slightly 
+\cite{simonetta_2}. The model takes into account the effect on the quark 
+distribution of the virtuality of the nucleon ({\it i.e.} with four-momentum 
+squared not equal to the square of their mass). The calculations are at slightly 
 different kinematics than our data but still provide some guidance. The 
-experimental results appear to have larger asymmetries than the calculations.  
-These differences may arise from nuclear effects, such as long-rage 
-interactions, which are not taken into account in the model.
+experimental results appear to have a larger asymmetries than the calculations
+in the $x_B = 0.307$ bin. The difference may arise from the theoretical 
+uncertainty in the determination of the crossing point between the 
+antishadowing region, where the parton nuclear distribution is larger than the 
+nucleon one, and the EMC effect region, where the nuclear effect reverses its 
+sign.
 
 \begin{figure}[tb]
-\includegraphics[width=8.9cm]{figs/coherent-ALU.pdf}
+\includegraphics[width=8cm]{figs/coherent-ALU.pdf}
 \caption{The coherent $A_{LU}$ as a function of $\phi$. Results are presented
    for different $Q^{2}$ bins (top panel), $x_{B}$ bins (middle panel), and $t$ 
    bins (bottom panel).  The error bars represent the statistical 
@@ -427,22 +418,21 @@ our fits with the form of equation \ref{eq:A_LU-coh}.}
 \label{fig:alu}
 \end{figure}
 
-\begin{figure}[tb]
-\includegraphics[width=8.9cm]{figs/coherent-ALU_90.pdf}
+\begin{figure*}[tb]
+\includegraphics[width=17cm]{figs/coherent-ALU_90.pdf}
 \caption{The $Q^{2}$ (left), $x_{B}$ (middle), and $t$-dependencies (right) of
    the $A_{LU}$ at $\phi$~=~90$^{\circ}$ (black squares). On the 
    middle plot: the full-red and the dashed-blue curves are theoretical 
    calculations from \cite{simonetta_2}. On the right: the green circles are 
    the HERMES $-A_{LU}$ (positron beam was used) inclusive measurements 
    \cite{Airapetian}, the colored curves represent theoretical calculations 
-   %\cite{HERMES_BSA}, the colored curves represent theoretical calculations 
    from \cite{simonetta_2}.}
 \label{fig:alu90}
-\end{figure}
+\end{figure*}
 
 
 \begin{figure}[tb]
-\includegraphics[width=8.9cm]{figs/Coherent_CFF.pdf}
+\includegraphics[width=8cm]{figs/Coherent_CFF.pdf}
 \caption{The model-independent extraction of the imaginary (top panel) and
 real (bottom panel) parts of the $^4$He CFF $\mathcal{H}_A$, as functions of
 $Q^{2}$ (right panel), $x_B$ (middle panel), and $t$ (left panel). The full red 
@@ -463,13 +453,11 @@ nucleons, each interacting independently with the probe. The Convolution-Dual
 model is based on nucleon GPDs from the dual parametrization 
 \cite{Guzey:2006xi}, where the Convolution-VGG uses nucleon GPDs  from the VGG 
 model and is based on the double distributions ansatz \cite{DD_model}. The 
-off-shell model \cite{GonzalezHernandez:2012jv} relies on the impulse 
-approximation and uses advanced spectral functions of  nuclei that account for 
-all configurations of the final nuclear system and the binding effects between 
-the nucleons.
+off-shell model is the same as in Figure \ref{fig:alu90} using an improved
+GPD model for the nucleon \cite{GonzalezHernandez:2012jv}.
 
 The results in FIG.~\ref{fig:CFF_HA} show that the extraction of the CFF
-from the beam spin asymmetry is possible without any model dependent 
+from the BSA is possible without any model dependent 
 assumptions. The amplitude and the dependencies observed as a function of 
 $Q^{2}$, $x_B$, and $t$ are in agreement with the theoretical expectations. One 
 can see a difference between the precision of the extracted imaginary and real 
@@ -486,7 +474,7 @@ $^4$He using the CLAS spectrometer supplemented with a Radial Time Projection
 Chamber and a high pressure gaseous target. This setup allowed detection of the 
 low energy $^4$He recoils in order to ensure an exclusive measurement of the
 coherent DVCS process.
-The azimuthal dependence of the measured beam spin asymmetry ($A_{LU}$) has 
+The azimuthal dependence of the measured BSA ($A_{LU}$) has 
 been used to extract, in model independent way, the real and the imaginary 
 parts of the $^4$He CFF, $\mathcal{H}_A$. The extracted CFF is in  
 agreement with predictions of the available models. This first fully exclusive 
@@ -696,7 +684,6 @@ I.~V.~Musatov and A.~V.~Radyushkin,
 Phys.\ Rev.\ D {\bf 61}, 074027 (2000).
 
 \bibitem{GonzalezHernandez:2012jv}
-Private communications with S.~Liuti based on: 
 J.~O.~Gonzalez-Hernandez, S.~Liuti, G.~R.~Goldstein and K.~Kathuria,
 Phys.\ Rev.\ C {\bf 88}, no. 6, 065206, (2013).
 
