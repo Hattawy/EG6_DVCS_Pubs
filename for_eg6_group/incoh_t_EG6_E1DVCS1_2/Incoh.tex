@@ -1,0 +1,199 @@
+
+%\documentclass[a4paper,11pt,twoside]{ThesisStyle}
+\documentclass[a4paper,11pt,twoside]{article}
+\author{M. Hattawy}
+\date{\today}
+\include{formatAndDefs}
+\begin{document}
+
+\title{\centering{Follow up on the incoherent t, t'}}
+\maketitle
+
+\section{Overview}
+In our DVCS analysis, we considered the initial proton of the incoherent 
+channel to be at rest, while this is not totally true because of the Fermi 
+motion. Does this assumption is a good approximation? What other options can be 
+used to minimize this effect on the calculated exclusive quantities?\\
+
+Figure \ref{fig:handbag} presents the leading order handbag diagram of the 
+incoherent DVCS channel off $^4$He. Ideally, the transferred momentum squared 
+($t$) is defined using the initial and the final nucleons' 4-vectors as 
+$(p-p')^{2}$. Then as a DVCS requirement, $t$ has to be greater than a certain 
+value ($t_{min}$), which is defined using the kinematics of the incoming and 
+the scattered electrons. Due to the knowledge lack of the initial proton's 
+momentum, this cut maybe inaccurate, causes loosing some good DVCS events and 
+leading to inaccurate determination of the exclusivity cuts.\\ 
+
+\begin{figure}[h!]
+\centering
+   \includegraphics[height=8.0cm]{fig/handbag_incoherent.pdf}
+\caption{Representation of the leading order handbag diagram of the incoherent 
+DVCS process off $^4$He}
+\label{fig:handbag}
+\end{figure}
+
+\section{Investigating the free proton DVCS data}
+
+Typically, the transferred momentum squared $t$ is equal to the transferred 
+momentum squared ($t'$) defined between the virtual photon and the final-state 
+real photon, as shown in Figure \ref{fig:handbag}.  While defining the momentum 
+transferred as $t'$ is a good way to pass the Fermi motion effect on the 
+initial bound proton, $t'$ suffers from the radiative effects. In this work, we 
+study the radiative effects on $t'$ using the CLAS available free proton DVCS 
+data sets, E1-DVCS1 and E1-DVCS2.
+
+Figure \ref{fig:tprime_eg6} presents the collected incoherent DVCS events from 
+EG6 data binned into four bins in $t$. In order to evaluate the radiative 
+effects on $t'$ we carried out a full analysis on E1-DVCS1 and E1-DVCS2 data 
+sets (free proton data). The collected free proton DVCS events in the two data 
+sets were binned into similar bins as our incoherent DVCS events. The results 
+are presented in figure \ref{fig:tprime_e1dvcs2}.  While the EG6 incoherent 
+DVCS events show a relatively more smeared $\frac{t'-t}{t}$ distributions than 
+the free proton data sets, the free proton sets show a significant shifts 
+specially at low $t$ values.  
+
+\begin{figure}[h!]
+\centering
+\includegraphics[height=19.0cm]{fig/t_tprime_Incoh.pdf}
+\caption{The EG6 incoherent DVCS sample. The first row presents the four bins 
+in $t$. The second row shows the distribution of $t'$ for the DVCS events in 
+each bin in $t$ in the first row plots. The third row shows $\frac{t'-t}{t}$.  
+The 4$^{th}$ shows $\frac{t-t'}{t'}$, and the 5$^{th}$ shows $t-t'$.}
+\label{fig:tprime_eg6}
+\end{figure}
+
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[height=19.0cm]{fig/E1-dvcs1-t_tprime_Incoh.pdf}
+%\caption{The E1-DVCS1 free proton DVCS sample. See the caption of figure 
+%\ref{fig:tprime_eg6} for plots description.}
+%\label{fig:tprime_e1dvcs1}
+%\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[height=19.0cm]{fig/before_corrections_E1-dvcs2-t_tprime_Incoh.pdf}
+\caption{The E1-DVCS2 free proton DVCS sample BEFORE correcting $t'$. See the 
+caption of figure \ref{fig:tprime_eg6} for plots description.}
+\label{fig:tprime_e1dvcs2}
+\end{figure}
+
+
+\section{$t'$ correction}
+One can see from the free proton DVCS sample, figure \ref{fig:tprime_e1dvcs2}, 
+that $t'$ is slightly shifted compared to $t$, which is considered as the true 
+value in the free proton case. This shift in $t'$ is mainly induced by the 
+radiative effects on the leptons. Before considering $t'$ in the incoherent EG6 
+analysis, $t'$ has to be corrected and the reconstructed free proton 
+asymmetries have to be verified in order to estimate the associated systematic 
+uncertainties. Figure \ref{fig:corrections_tprime_e1dvcs2} presents the 
+distributions of $t-t'$ as a function of $t'$ for the free proton DVCS sample 
+from E1-DVCS2 data before and after correcting $t'$. In figure 
+\ref{fig:after_tprime_e1dvcs2}, the distributions of figure 
+\ref{fig:tprime_e1dvcs2} are shown after the $t'$ corrections.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[height=10.0cm]{fig/before_corrections_tprimet_t_InCoh.pdf}
+\includegraphics[height=10.0cm]{fig/after_corrections_tprimet_t_InCoh.pdf}
+\caption{On top: $t-t'$ as a function of $t'$ for the E1-DVCS2 free proton DVCS 
+sample BEFORE correcting $t'$. The red line is the extracted correction for 
+$t'$. On bottom: $t-t'$ as a function of $t'$ after correcting $t'$.}
+\label{fig:corrections_tprime_e1dvcs2}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[height=19.0cm]{fig/after_corrections_E1-dvcs2-t_tprime_Incoh.pdf}
+\caption{The E1-DVCS2 free proton DVCS sample AFTER correcting $t'$. See the 
+caption of figure \ref{fig:tprime_eg6} for plots description.}
+\label{fig:after_tprime_e1dvcs2}
+\end{figure}
+
+
+
+
+
+\section{Comparing the $t$ and the corrected $t'$ asymmetries in the E1-DVCS2 
+data set}
+Here we compare the E1-DVCS2 free proton DVCS beam-spin asymmetries using $t$ 
+and the corrected $t'$ to estimate the associated systematic uncertainties.  
+Figure \ref{t_tprime_ALU_phi} presents the reconstructed $A_{LU}$ as a function 
+of $\phi$ in the same binning as the incoherent EG6 DVCS channel. The binning 
+in $t$ and the corrected $t'$ are the same. Figure \ref{fig:t_tprime_ALU_90} 
+presents the $A_{LU}$ at $\phi = 90^{\circ}$ from the fits in figure 
+\ref{fig:t_tprime_ALU_phi}, as a function of $t$ and the corrected $t'$ showing 
+the estimated systematic uncertainties. No induced systematic uncertainties are 
+observed on the $Q^{2}$ and $x_B$, while some appear on $t$, which will be 
+added to the EG6 incoherent asymmetries. 
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[height=6.0cm]{fig/E1DVCS2-ALU_phi_p_Q2.pdf}
+\includegraphics[height=6.0cm]{fig/E1DVCS2-ALU_phi_p_x.pdf}
+\includegraphics[height=6.0cm]{fig/E1DVCS2-ALU_phi_p_t.pdf}
+\caption{The reconstructed $A_{LU}$ as a function of $\phi$ for the collected 
+E1-DVCS2 free proton DVCS sample using $t$ in black points and using the 
+corrected $t'$ in red points. The lines represent fits in the form of 
+$\frac{\alpha sin(\phi)}{1+\beta cos(\phi)}$ for the two sets of analysis.}
+\label{fig:t_tprime_ALU_phi}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[height=7.0cm]{fig/E1DVCS2-ALU_90_p_vs_Q2_shortscenrario.pdf}
+\includegraphics[height=7.0cm]{fig/E1DVCS2-ALU_90_p_vs_x_shortscenrario.pdf}
+\includegraphics[height=7.0cm]{fig/E1DVCS2-ALU_90_p_vs_t_shortscenrario.pdf}
+\caption{$A_{LU}$ at $\phi = 90^{\circ}$ from the fits in figure 
+\ref{fig:t_tprime_ALU_phi} as a function of $t$ in black points and as a 
+function of the corrected $t'$ in red points.}
+\label{fig:t_tprime_ALU_90}
+\end{figure}
+
+
+\section{EG6 Incoherent DVCS channel}
+Here we apply the $t'$ corrections that were extracted from the free proton 
+asymmetries  to the EG6 incoherent DVCS channel. Then, the asymmetries using 
+$t$ are compared to the ones reconstructed using the corrected $t'$. The 
+results are presented in figures \ref{fig:alu} and \ref{fig:alu90}.
+
+\begin{figure}[tb]
+   \centering
+\includegraphics[width=15cm]{fig/ALU_phi_p_Q2.pdf}
+\includegraphics[width=15cm]{fig/ALU_phi_p_x.pdf}
+\includegraphics[width=15cm]{fig/ALU_phi_p_t.pdf}
+\caption{The EG6 incoherent $A_{LU}$ as a function of $\phi$. Results are 
+   presented for different $Q^{2}$ bins (top panel), $x_{B}$ bins (middle 
+panel), and $t$ bins (bottom panel) using $t$ in black points and using the 
+corrected $t'$ in red points.  The red curves are the results of our fits with 
+the form $\frac{\alpha sin(\phi)}{1+ \beta cos(\phi)}$.}
+\label{fig:alu}
+\end{figure}
+
+\begin{figure}[tb]
+   \centering
+\includegraphics[width=12cm]{fig/ALU_90_p_vs_Q2_shortscenrario.pdf}
+\includegraphics[width=12cm]{fig/ALU_90_p_vs_x_shortscenrario.pdf}
+\includegraphics[width=12cm]{fig/ALU_90_p_vs_t_shortscenrario.pdf}
+\caption{The EG6 incoherent $Q^{2}$ (left), $x_{B}$ (middle), and 
+$t$-dependencies (right) of the $A_{LU}$ at $\phi$~=~90$^{\circ}$ using $t$ in 
+black points and using the corrected $t'$ in red points. }
+\label{fig:alu90}
+\end{figure}
+
+
+
+
+\section{Conclusions}
+We improved the EG6 incoherent DVCS channel via the $t'$ that is calculated 
+using the virtual and the final state real photons with corrections based on 
+similar analysis on the free proton DVCS sample using the same setup of CLAS 
+detector. The $Q^{2}$ and $x_B$ dependences of the asymmetries have shown 
+slight changes using $t'$ rather than $t$, while the effect is bigger on the 
+t-dependence, with overall changes are compatible with the statistical error 
+bars.  Based on the free proton DVCS data, no induced systematic uncertainties 
+are observed on the $Q^{2}$ and $x_B$, while some appear on $t$, which will be 
+added to the EG6 incoherent asymmetries.
+
+\end{document}
