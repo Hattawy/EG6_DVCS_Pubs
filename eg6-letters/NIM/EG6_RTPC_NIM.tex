@@ -27,10 +27,10 @@ exclusive nuclear channels, such as coherent Deeply Virtual Compton Scattering
 and coherent meson production on $^4$He. In such processes, the $^4$He nucleus
 remains intact and recoils as a whole in the final state. The CEBAF Large
 Acceptance Spectrometer (CLAS) has been used for similar studies on proton
-targets, however it cannot track recoils with momenta less than 250 MeV/c. In
+targets, however it cannot track low energy $\alpha$ particles. In
 2009, we carried out measurements using the CLAS spectrometer supplemented by
 the RTPC positioned directly around a gaseous $^4$He target, allowing a detection
-threshold as low as $~$100  MeV/c for $^4$He. This article discuses the design,
+threshold as low as $~$150  MeV/c for $^4$He. This article discuses the design,
 work principle, calibration methods and performances of the RTPC.
 \end{abstract}
 
@@ -68,54 +68,29 @@ representation of the baseline CLAS spectrometer:
 \end{figure}
 
 Measurement of the Deeply Virtual Compton Scattering (DVCS) process
-($eH \rightarrow e' H' \gamma$, where $H$ is a hadron) necessitates some adaptations
-in this setup.  With a 6 GeV electron beam, the majority of DVCS photons are produced
-at very forward angles where the acceptance of the EC is poor. To extend the range,
-an additional Inner Calorimeter (IC) was built for the E01-113 experiment in 2005.
+($eH \rightarrow e' H' \gamma$, where $H$ is a hadron) necessitates an upgrade
+of this setup.  With a 6 GeV electron beam, the majority of DVCS photons are produced
+at very forward angles, where the acceptance of the EC is poor. To extend the detection range,
+an inner calorimeter (IC) was built for the E01-113 experiment in 2005.
 The IC is constructed from 424 lead-tungstate (PbWO$_{4}$) crystals, covering polar 
 angles between 5$^{\circ}$ and 15$^{\circ}$. Each crystal is 16 cm long, corresponding
 to 17 radiation lengths. The achieved energy resolution is around 3 to 4$\%$ for photon
 energies between 2 GeV and 5 GeV, with an angular resolution between 3 and 5 mrad 
-\cite{Hyon-suk}. 
-
-%M{\o}ller electrons can be
-%very problematic at such small angles, so a 5 Tesla solenoid magnet has been
-%added around the target as a magnetic shield against this low energy background.
-For coherent nuclear processes, the RTPC was developed to extend the tracking
-range of CLAS to low energy nuclei and was used during a one month experimental run
-in 2009 with a longitudinally polarized electron beam of energy 6.064 GeV incident 
+\cite{Hyon-suk}. To protect this detector from the large flux of low energy M{\o}ller 
+electrons, a 5~T solenoid was placed around the target to shield the IC. 
+In addition, the recoil nuclei of the coherent DVCS on helium was detected 
+using a RTPC developed to track low energy nuclear fragments. The solenoid field
+serving as the analyzing magnet for the particle tracking in the RTPC. This 
+setup was used during a three months experimental run
+in 2009 with a longitudinally polarized electron beam of 6.064 GeV incident 
 on a gaseous $^{4}$He target.
-%, with the goal of measuring asymmetries in Deep Virtual Compton 
-%Scattering (DVCS)~\cite{proposal} and exclusive meson production.
 
-Moreover, a 5~T solenoid was placed around the RTPC-target system to shield the IC
-and RTPC from the large flux of low energy M{\o}ller electrons. The solenoid field
-serves also as the analyzing magnet for charged particle tracking by the RTPC.
 
 In this paper we report the design, calibration, and performance of the radial TPC,
-organized as follows.  Section \ref{prev_tpc} presents an overview of the history of
-TPCs.  Section \ref{sec_design} details the physics considerations for our RTPC's
+organized as follows. Section \ref{sec_design} details the physics considerations for our RTPC's
 design and internal structure. Section \ref{sec_readout} describes the properties
-of the read-out system.  Calibration strategies are discussed in section \ref{sec_calib}.
+of the read-out system. Calibration strategies are discussed in section \ref{sec_calib}.
 Finally, the performance of the RTPC is described in section \ref{sec_perf}.
-
-\section{TPC technology} \label{prev_tpc}
-In the late 1970s, David R. Nygren presented the concept of the Time Projection 
-Chambers (TPCs) as a new tool to track charged particles based on combining 
-electric and magnetic fields within a sensitive gas volume. The ionized 
-electrons are collected by a position-sensitive electron collection system.  
-Later in 1997, F.~Sauli introduced the Gas Electron Multiplier (GEM) as an 
-effective gas-gain element to improve the tracking efficiency of the TPCs 
-\ref{gem_sauli}. Presently, TPCs are widely used in physics experiments, 
-such as high-energy physics (ALEPH, DELPHI), heavy-ion physics (STAR, ALICE) 
-and rare-event searches (XENON, NEXT).
-
-The first implementation of a radial TPC was performed by the BoNuS experiment
-\cite{BONUS} in 2005. The success of the BoNuS-RTPC in detecting the slow protons
-motivated the development of this new RTPC. For the channels of interest in
-CLAS-EG6 experiment, the recoiling $^{4}$He nuclei have momentum per charge
-around 150 MeV/c. The detection of these low-energy nuclei was the primary
-motivation for designing this detector. 
 
 
 \section{CLAS-EG6 RTPC design} \label{sec_design}
