@@ -168,12 +168,13 @@ is set between the GEMs to push the electrons toward the next GEM and eventually
 the readout pads. The gain of each GEM layer is of order 100, making a total gain 
 of about $10^{6}$. {\bf \color{red} We should quote a realistic overall gain or nothing.}\\
 
-{\bf \color{red} We should shortly discuss the choice of drift gas.}
+{\bf \color{red} To be added:
+
+Discuss the choice of drift gas
+
+Discuss the self supporting mechanic of the GEMs.}
 
 \section{Readout System} \label{sec_readout}
-
-The RTPC electron collection system has 3200 readout pads. These elements are
-located at the end of the amplification region, 69 mm from the central axis.
 
 \begin{figure}[tb]
    \centering
@@ -183,7 +184,9 @@ located at the end of the amplification region, 69 mm from the central axis.
 pre-amplifier.} \label{fig:PADs}
 \end{figure}
 
-Figure \ref{fig:PADs} shows a schematic drawing of the size and the alignment 
+The RTPC electron collection system has 3200 readout pads. These elements are
+located at the end of the amplification region, 69 mm from the central axis.
+Figure \ref{fig:PADs} shows a schematic drawing of the size and 
 configuration of the pads. Each readout pad is 5 mm in length and 4.45 mm in 
 width.  The shift between the rows allows to reduce aliasing. Each half of the 
 RTPC has 40 rows and 40 columns of pads. The shaded region in figure~\ref{fig:PADs}
@@ -193,29 +196,39 @@ the electrons to drift from the ionization point to the readout board.  Signal
 amplitude is is measured with an Analog-to-Digital-Converter (ADC) without
 specific normalization. 
 
-Mention ALTRO chip and reference.
+{\bf \color{red} 
+Andrea:
 
-Sparcification.  3 consecutive ADC samples above a threshold of ?, and the three
-samples before and after.
+- Mention ALTRO chip and reference.
 
-Missing items in description:
+- Sparcification method (3 consecutive ADC samples above a threshold of xxx ?, and three
+samples before and after)
 
-Detail the electronic setup: Andrea ? or other Italians?
+- Preamplifiers were from Bonus ?
 
-The gas mixture choice: ???
+- Basics of JLab fADC (is there a reference?)
 
-Discuss HV setting: ???
+- Other relevant information ?
+}
 
 \section{Calibration} \label{sec_calib}
-Two quantities are recorded for each detected electron at the readout board, 
-time (TDCs) and signal amplitude (ADCs) (/!\\ are those amplitude or charge 
-preamps ???). The timing information provides trajectory determination 
-resulting in momentum per unit charge measurement. Going from a collection of 
-the TDCs to a momentum measurement requires good knowledge of the drift speed 
-and paths followed by the electrons released in the gas. The recorded ADCs give 
+
+{\bf \color{red} The use of the term TDC is improper and should be removed
+everywhere. Replace by T.}
+
+Two quantities are recorded at the readout board, 
+time (T) and signal amplitude (ADC). The timing information is used to infer 
+the origin of the charge and then the trajectory of the detected particle
+resulting in momentum measurement. Going from a collection of 
+times to a momentum measurement requires a good knowledge of the drift speed 
+and drift paths followed by the electrons released in the gas. The recorded ADCs give 
 the deposited energy per unit of length ($\small{\frac{dE}{dX}}$) which, 
 together with the momentum calculated from the trajectory, enables particle 
 identification.
+
+In this section we will detail the methods used to calibrate the drift speed,
+drift paths and gains of the detector. Note that for drift speed and drift
+path we use the symetry of the detector and ...
 
 {\bf Don't we want to have description and quality of elastic event selection in here somewhere?}
 
