@@ -227,14 +227,21 @@ together with the momentum calculated from the trajectory, enables particle
 identification.
 
 In this section we will detail the methods used to calibrate the drift speed,
-drift paths and gains of the detector. Note that for drift speed and drift
-path we use the symetry of the detector and ...
+drift paths and gains of the detector. Drift speed and paths were initially
+calculated using the MAGBOLTZ~\cite{MAGBOLTZ} program, then refined using
+data to account for variations of the run conditions. We still always assume 
+cylindrical symmetry in the chamber for the calibration, such that none of
+the parameters depend on the asimuthal angle $\phi$. The initial MAGBOLTZ
+calibration was improved through several iterations of the
+process described below, each iteration increasing the number of events 
+properly reconstructed in the RTPC. The figures presented in this section
+are the one obtained while performing the last iteration of this long 
+calibration process.
 
-{\bf Don't we want to have description and quality of elastic event selection in here somewhere?}
 
 \subsection{Drift Speed Parametrization}
 
-We measure the drift speed using tracks detected in the RTPC. In figure 
+We determine the drift speed using tracks reconstructed in the RTPC. In figure 
 \ref{fig:RTPC_signals}, a typical $^{4}$He track is represented (in green). After 
 it causes ionization in the drift region, the released electrons (in black) 
 drift to the cylindrical detection plane under the effect of the electric field. The 
