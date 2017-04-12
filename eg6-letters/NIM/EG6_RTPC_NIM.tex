@@ -11,9 +11,6 @@
 \begin{document}
 
 
-% the following line is for submission, including submission to the arXiv!!
-%\hspace{5.2in} \mbox{Fermilab-Pub-04/xxx-E}
-
 \title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{A Radial Time 
 Projection Chamber for $\alpha$ detection in CLAS at JLab}}
 \input author_list.tex  
@@ -35,8 +32,6 @@ work principle, calibration methods and performances of the RTPC.
 \end{abstract}
 
 \maketitle
-
-%\tableofcontents
 
 \section{Introduction} \label{sec:level1}
 
@@ -84,7 +79,7 @@ serving as the analyzing magnet for the particle tracking in the RTPC. This
 setup was used during a three months experimental run
 in 2009 with a longitudinally polarized electron beam of 6.064 GeV incident 
 on a gaseous $^{4}$He target.
-
+{\bf \color{red} Add beam current or luminosity.}
 
 In this paper we report the design, calibration, and performance of the radial TPC,
 organized as follows. Section \ref{sec_design} details the physics considerations for our RTPC's
@@ -202,7 +197,9 @@ Andrea:
 - Mention ALTRO chip and reference.
 
 - Sparcification method (3 consecutive ADC samples above a threshold of xxx ?, and three
-samples before and after)
+samples before and after) 
+
+- Mention trigger time.
 
 - Preamplifiers were from Bonus ?
 
@@ -246,7 +243,7 @@ We determine the drift speed using tracks reconstructed in the RTPC. In figure
 it causes ionization in the drift region, the released electrons (in black) 
 drift to the cylindrical detection plane under the effect of the electric field. The 
 electrons released close to the cathode take the most time to reach the readout 
-pads, but geometrical symmetry insures they always travel the same 
+pads, but cylindrical symmetry insures they always travel the same 
 distance. By identifying the maximum TDC measured, we can infer the drift 
 speed of the electrons in the RTPC.\\
 
@@ -258,26 +255,13 @@ drift region, with the drift paths followed by the electrons (in black). }
 \label{fig:RTPC_signals}
 \end{figure}
 
-We first measure the drift speed along the 200 mm RTPC's length to take into 
-account variations in the electric and magnetic field, some of which are known 
-(see figure \ref{fig:B_MAP}) some might be due to slight shifts in the 
-geometry. We verified this by looking at the TDC profile generated in the 
-chamber by all our tracks (see figure \ref{fig:TDC_profile}). The time profile 
-of registered hits clearly show the dropping edge expected from the geometrical 
-considerations previously mentioned. We define a value named $TDC_{Max/2}$ at 
+To measure the drift speed, we use the time profile of all hits in the 
+chamber shown in figure \ref{fig:TDC_profile}. We can clearly observe the 
+dropping edge expected from geometrical considerations. We define a value $T_{Max/2}$ at 
 which the dropping edge passes half the maximum number of hits in the 
-histogram, and this value is inversely proportional to the drift speed. The
-result in figure \ref{fig:RunNumber_61551_TDCmax_Zslice} shows the dependence of
-the drift speed on position along the beam line axis in the chamber. 
-
-\begin{figure}[tb]
-   \centering
-   \includegraphics[scale=0.35]{fig/B_MAP.png}
-   \caption[]{Schematic drawing of the solenoid magnetic field vectors inside the 
-   RTPC. The $y$-axis is the radial distance from the center of the target, and the
-   $x$-axis is the longitudinal position along the RTPC (with its center at $z=0$).} 
-\label{fig:B_MAP}
-\end{figure}
+histogram. This value is measure in bins along the 200 mm RTPC's length to take into 
+account variations in the electric and magnetic field in the RTPC (see figure 
+\ref{fig:RunNumber_61551_TDCmax_Zslice}). 
 
 \begin{figure}[tb]
    \centering
@@ -293,16 +277,20 @@ the drift speed on position along the beam line axis in the chamber.
 run. } \label{fig:RunNumber_61551_TDCmax_Zslice}
 \end{figure}
 
-Due to the non perfect experimental conditions including variations in the 
-gas mixture, the drift speed might also change during the month long experimental run.  
-Figure \ref{fig:Drift_run_number_1} shows the $TDC_{Max/2}$ values for 
+Due to the non perfect experimental conditions, in particular variations in the 
+gas mixture\footnote{It was noted during the experiment that leaks appeared
+and the gas flow had to be increased in few occasions to compensate for this.}, 
+the drift speed changes during the three months long experimental run.  
+Figure \ref{fig:Drift_run_number_1} shows the $T_{Max/2}$ values for 
 individual runs (approximately 2 hours long). We observe a significant 
-variation over time and accounted for these changes in the drift speed in the
-track reconstruction. Dealing with such situations is 
-possible by adapting the drift speed as a function of 
-geometry and time (we did not see any correlation between the effects). These 
+variation of the drift speed over time and accounted for it in the drift 
+speed used for the track reconstruction. 
+
+In summary, we obtain from our calibration a parametrization of the drift speed 
+as a function of both position along the beam axis and run number (we did not 
+observe any correlation between the effects). These 
 functions were extracted for our entire data set and implemented in the 
-reconstructions code.
+track reconstructions code.
 
 \begin{figure}[tb]
 \hspace*{-1.8cm}
@@ -312,94 +300,47 @@ reconstructions code.
 \end{figure}
 
    
-\subsection{Drift Paths Parametrization}
+\subsection{Drift Paths Calibration}
 
-The drift paths are the trajectories the electrons follows in the gas. The 
-standard software to calculate drift paths is the MAGBOLTZ program 
-~\cite{MAGBOLTZ}, which requires knowledge of the detector's 
-geometry, the exact composition of the gas mixture, and of course the electric 
-and the magnetic fields. We used such calculations as a first calibration, but, 
-as can be seen with the drift speed, conditions are far from stable in the 
-chamber. Moreover, because we use a thin foil as a cathode, the geometry 
-knowledge is limited to millimeter precision. These problems, already 
-encountered for the BoNuS RTPC calibration (ref), motivated the 
+The drift path is the trajectory followed by the electrons released through 
+ionization in the gas. Software exists to calculate the drift paths, in particular
+MAGBOLTZ~\cite{MAGBOLTZ}, but it requires knowledge of the detector's 
+geometry, gas mixture composition, and of course the electric and magnetic 
+fields over the whole volume of the detector. We used such calculation as a 
+first calibration, but, 
+as can be seen with the drift speed, gas composition is far from stable in the 
+chamber. Moreover, the 4 $\mu$m foil used as a cathode is easily deformed, such
+that we expect the geometry accuracy to be around the millimeter precision. 
+These problems, already 
+encountered for the BoNuS RTPC calibration~\cite{BONUS-NIM}, motivated the 
 acquisition of specific calibration runs. These are taken with a lower energy 
 electron beam (1.20 and 1.27 GeV) to enhance the cross section of the elastic 
-process ($e^{4}$He$\rightarrow e^{4}$He). In this process, measurement of only the 
-electron kinematics gives the Helium nucleus's kinematic and therefore allows 
-to calibrate the drift paths independently of our knowledge of the exact 
-conditions in the chamber.
+process ($e^{4}$He$\rightarrow e^{4}$He)
+{\bf \color{red} Specify luminosity ?}. In this process, the measurement of
+electron kinematics allows to calculate the Helium nucleus kinematic. It is
+by comparing this calculated kinematic to the measured one that we fine tune
+the drift paths independently of our knowledge of the exact conditions in the 
+chamber.
 
-The drift paths' parametrization is possible using identified elastic events 
-from our experiment and a simulated copy of them in a GEANT4 
-simulation~\cite{GEANT4}. Then by comparing the calculated GEANT4 position of 
-the Helium nuclei to the corresponding hits measured in the chamber, we 
-can reconstruct the electrons drift path in the RTPC. However, because of the 
-magnetic field, the drift paths are not linear. So to perform the extraction, 
+The drift paths are ajusted using a set of identified elastic events 
+from our lower beam energy run. Based on the kinematic of the electrons in
+these events, we generate the helium nucleus in a GEANT4 
+simulation~\cite{GEANT4} of our RTPC. Then we compare the calculated GEANT4 trajectory of 
+the Helium nuclei to the hits measured in the chamber. 
+
+Because of the 
+magnetic field, the drift paths are not linear in the RTPC. So to perform the extraction, 
 we make a first approximation with a linear dependence between the radius of 
-emission and the TDC of detection, and then refine our result. As it happens, 
+emission and the time of detection, and then refine our result. As it happens, 
 the curvature is minimal and this process converge already on the second 
 iteration. 
 
-The steps of the extraction procedure are as follows, where we work
-in a polar coordinate system ($R$,$\phi$).  The azimuthal difference between
-the measured and simulated hit position is $\Delta\phi$.
-
-\begin{figure}[tb]
-\centering
-%\hspace{-0.95cm}
-\includegraphics[scale=0.37]{fig/TdcR_check_p1_10.png}
-\caption{$R$ versus TDC distribution for the simulated hits in a single 
-$z$-bin. The maximum $R$ is 60 mm (close to the anode) at minimum TDCs 
-(the trigger time is 15), and the minimum $R$ is 30 mm (close to the cathode) at 
-maximum TDCs ($\sim75$).}
-\label{fig:R_correlation}
-\end{figure} 
-
-\begin{enumerate}
-
-   \item The linear assumption between R and time (TDC) is necessary to link the 
-      generated hits from GEANT4 to physical hits. Figure 
-      \ref{fig:R_correlation} shows our initial $R$ versus TDC. 
-
-   \item For these selected hits, we look at $\Delta\phi$ ($\phi_{sim.}-\phi_{hit\_pad}$)
-     versus TDC. We clearly obtain a 
-      correlation shown in figure~\ref{fig:1st_pass_delta_phi}. The relationship
-      between $\Delta\phi$ and TDC encodes the azimuthal drift of the electrons due to 
-      the Lorentz angle. 
-
-      \begin{figure}[tb]
-         \centering
-         \includegraphics[scale=0.37]{fig/TdcPhi_p1_10.png}
-         \caption{$\Delta \phi$ versus TDC distribution for the simulated hits 
-         with $z$ near 35 mm.}
-         \label{fig:1st_pass_delta_phi}
-      \end{figure}
-
-   \item Using this first measurement, we can calculate a new correlation 
-      between $R$ and TDC. The result, shown in figure~\ref{fig:R_TDC}, is very 
-      close to linear and explains the fast convergence of our procedure. 
-
-
-      \begin{figure}[tb]
-         \centering
-         \includegraphics[scale=0.37]{fig/R_TDC.png}
-         \caption{The calculated $R$ versus the time is corrected by the 
-         parameters of $\Delta \phi$ from the first pass.}
-         \label{fig:R_TDC}
-      \end{figure}
-
-
-   \item In the second pass, we associate simulated helium positions to 
-      physical hits according to their calculated correlation and obtain new 
-      $\Delta \phi$ distributions.
-
-   \item We finally parametrize the $\Delta\phi$ distributions with a fit as 
-      can be seen in figure~\ref{fig:DELTA_PHI_TDC}, which shows the final 
-      $\Delta \phi$ versus TDC with a black line representing our drift paths 
-      fit.
-\end{enumerate}
-
+At the end of the extraction procedure, where we work in a polar coordinate 
+system ($R$,$\phi$), the azimuthal difference between the detection pad and 
+the ionization point ($\Delta\phi$) is extracted as a function of time. 
+In figure~\ref{fig:DELTA_PHI_TDC}, we show the resulting data points for one 
+bin, where the drift paths is easily identified and eventually fitted for 
+implementation in our reconstruction codes.
 
 \begin{figure}[tb]
 \centering
@@ -412,7 +353,8 @@ the final drift paths in this slice.}
 
 To verify the stability of the drift paths, this procedure was carried out 
 using both the 1.204 GeV data from the beginning of the run period and the 
-1.269 GeV data from the end of the run period. We found very similar drift paths
+1.269 GeV data from the end of the run period (shown in blue on 
+figure~\ref{fig:Drift_run_number_1}). Strangely, we found very similar drift paths
 for the two data sets and concluded that any changes in the system only
 significantly affected the drift speed.
 
@@ -596,7 +538,9 @@ volume.
 
 \bibitem{GEANT4}
 http://geant4.cern.ch
-
+ 	
+\bibitem{BONUS-NIM}
+Howard C. Fenker et al., BoNuS: Development and Use of a Radial TPC using Cylindrical GEMs, Nucl. Instrum. Meth. A592, 273-286 (2008)
 \end{thebibliography}
 
 \end{document}
