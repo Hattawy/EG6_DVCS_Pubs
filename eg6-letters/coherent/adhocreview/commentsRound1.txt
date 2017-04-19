@@ -1,0 +1,141 @@
+Hi Nathan,
+The comments on your paper from the reviewers are listed below. Overall the committee was very impressed with the paper and the results. We think it has a good chance for PRL.
+We would like to look over the corrected manuscript as a quick final check before it is released to the collaboration.
+Best regards,
+Dan, Kevin and Nick
+
+
+reviewer 1
+-------------
+I have read the publication and examined some references and additional sources to clarify my understanding.  I am far from an expert on DVCS.  Using the additional sources I believe I was able to understand the full content of the article.  For the most part it is well written and contains the essential information, which is what one expects for a PRL.  I can therefore approve this publication as written.
+I will offer a few suggestions and describe where I was confused for a bit so that the authors can consider whether there are ways to improve.
+A minor point in the abstract is the use of
+CEBAF machine è CEBAF electron accelerator
+[17-69]  Introduction  
+Since I am not an expert I referred to several  ref. and tother resources for clarification and I discovered that the introduction is a nicely worded summary of the salient points mentioned in most discussions: hard process, factorization, known nuclear effects such as EMC , def. of the GPDs and the CFF,..  So I cannot offer any suggestions or improvements on the theoretical justification.
+[71You make a statement about Hermes assumption and mention the improvement obtained by specifically eliminating incoherent contributions rather htan assume they are small. You show the ALU  results which seem to be in agreement.  I was expecting some additional comment that the paper verified Hermes assumption in the comparison since there appears to be a good overlap in the third graph.
+[83]  I would move the mention of the RTCP from this paragraph and just state the theoretical reason for studying Helium.  I would put all the RTCP discussion together in the [111] paragraph.  I just thought of it as here is why you study He and here is how as two different statements that could be separate.
+[148] exclusivity cuts
+I would add a sentence that reminds the reader thatè the final state contains only a scattered electron, recoil He4 and a photon which leads to cuts that require constiency with this exclusive final state.
+[172-200] It took me a while to understand that the functional form provided by reference 40 left only the amplitudes undetermined.  While the paragraph clearly states this I started off on the wrong track in imagining how the analysis would proceed. So perhaps a concluding or introductory statement that reminds the reader that because only the amplitudes are unknown one can extract values by fitting.
+The plot fig 4 shows the phi dependence of the ALU where the function (5) is used as the functional form and CFFs functions are varied to to mathc the data.
+
+
+Reviewer 2
+---------------
+line 45:  e missing in equation?
+line 49: FIG -> Fig. (be consistent through the whole paper with the standard)
+line 50: hand-bag-> "hand-bag" 
+is it the convention in previous literature to hypenate this phrase?
+1line 51: i find this sentence a little clunky... suggest
+at large virtual photon’s 4-momentum square .. and small-> for large squared 4-momentum transfer, Q^2 (=k - k') and  small 
+line 53 the bracketed text makes the sentence long - could this not be mentioned at start of line 51 so the terms are understood before the definitions of Q2 and t ?
+line 71: coherence in the reaction  .. photon -> enhancement of the coherent DVCS yield was achieved solely by the restriction of  the kinematics for the final state electron and photon
+Do you need to define what you mean by coherent - is it understandable to the general reader?
+line 73: That measurement-> The measurement
+line 75: mixing of .. significantly -> inabililty to isolate a clean coherent DVCS yield influences the results obtained.  
+line 79 The CEBAF.. -> should this senetence not be the first tsentence of the following paragraph? It seems odd here
+line 82: nucleon -> nucleon targets
+line 85 detection -> the detection
+line 89 significant nuclear effects -> it is not clear from the text what this is referring to. Could be in its detection or in the GPDs or , ..
+line 118:  and 6mm -> , 6mm
+lin 119: with 27 - > with a 27 
+line 120 using elastic -> utilising elastic
+line 121 elastic -> elastic,  (4He(e,e')4He)       ?
+line 124  .. -> Electrons are identified using their measured momentum, time, and energy obtained from the the CLAS drift chambers, Cerenkov counters, scintillator counters, and electromagnetic calorimeters. [would you not at least need a reference describing this?]
+line 126 general reader will not know what "fiducial" is - either omit or add explanatory sentence. 
+line 130: is there any reference for the RTPC operation that you can use here?
+line 133 from the same position -> from a common reaction vertex in the target cell.
+line 139: the phrase "in random coincidence" is not clear. Do you mean another photon produced from another reaction in the beam bunch? pion decay?  "Cannot" is a strong statement - is it really impossible to get a high energy random photon? 
+you say this "motivated"  keeping more than one photon  - then say in next sentence that others are useless background and can cleanly get rid of them anyway - why keep them, or if you do why mention it in the paper? 
+Is one reason for keeping more than one photon at this stage not for assesing any pi0 background?
+(I later found you discuss this around line 204 - perhaps things are OK as they are but i would be tempted to include something clearer here)
+line 145: units are italicised
+line 153: The most relevant ... GeV) -> The experimental data for the most relevant observables, along with the applied cuts, is shown in Fig. 2.   Put the detailed text ( in brackets) into the figure caption?
+Fig 2 caption: candidate -> candidates
+          photons -> photon
+line 164: difference of cross sections of the reaction at opposite beam helicities normalized -> difference of the cross sections for the reaction with opposite beam helicities, normalized
+line 166 for a -> for 
+line 169 expressed in terms of helicity-state yields-> can be extracted from the reaction yields for the two helicities
+line 171 beam polarization -> degree of longitudinal polarization for the incident electron beam ?
+maybe quote a typical value for this ?
+line 173 where the real -> in which the real 
+line 175 real photon electroproduction -> confusing way of putting it - sounds like the electrons are produced by real photons! maybe "electroproduction of real photons" or similar.. 
+line 178 is a -> includes a 
+line 179 At our - > For our 
+line 180 real photon electroproduction (see above) 
+line 183 sensitive -> which are sensitive
+line 184 the BH and DVCS amplitudes squared -> the square of the BH and DVCS amplitudes 
+line 185 term -> term, 
+line 218 that is -> that are
+line 228 dependence -> the dependence of the extracted asymmetries 
+line 230 three sets of binning is presented  -> for bins in each of the three variables are 
+line 240 their mass -> the nucleon mass
+line 241 slightly different kinematics  -> this leave the reader wondering how different. Can this be concisely stated - maybe in the caption ?
+line 248 EMC used without definition or explanation - surely there needs to be some reference and maybe even a brief discussion?
+line 281 in model -> in a model
+line 287 a way - > the way 
+
+
+Reviewer 3
+-----------
+Overall, I think its well written and only minor corrections are needed. 
+I quote my comments per line:
+
+Abstract:
+CEBAF Large Acceptance Spectrometer —>  CEBAF Large Acceptance Spectrometer (CLAS)
+The measure beam spin asymmetry —> he measure beam-spin asymmetry
+in a completely model independent way —> in a completely model-independent way
+
+
+Main Body:
+General Comment: Use correct format for referring figures in main body. For example, “see FIG. 1” should be written as “see Fig. 1” (in accordance to the Phys Rev guidelines for authors). When your sentence starts with “FIG.” you should type the whole word. For example LINE49 "FIG. 1 Illustrates" … should be changed to "Figure 1 illustrates”  This has to be corrected trhoughout the document 
+L34: HERA and CERN —>HERA, and CERN
+L46: scattered electron notation is missed
+L81: previously used for DVCS —> previously used successfully for DVCS
+L81: on nucleon —> on the nucleon
+L85: of low energy recoiling light nuclei —> of low-energy recoiling light nuclei
+L92 spin zero nucleus —> spin-zero nucleus
+L99: 100% duty factor, longitudinally —>100% duty factor, and longitudinally 
+Fig. 2: Text on figure is too small. I would only leave necessary information and increase font size. A citation on where on can get more details on this figure would be nice. 
+L112”   have a low average momentum around 300 MeV/c —> have, on average, a low momentum (~300 MeV/c)
+L115: Presented in FIG. 2—> Figure 2 shows
+L131: track quality —> track-quality 
+L132: energy loss —> energy-loss
+L133: vertex matching —> vertex-matching
+Fig 3. Labels are too small
+L152: you refer to missing-mass squared cut twice. One comment here: The missing-mass squared, the missing-energy, and the missing momentum are all correlated cuts… 
+L159: to [-0.45, 0.5]: These values dont agree with the lines in your figure. 
+L164 the beam spin asymmetry —> the beam-spin asymmetry
+L168: Would be nice to list again how you get to 5 fold differential results (fron Q,x, t, phi..)
+L171: Maybe beneficial to mention here how often was helicity flipped 
+L174: The DVCS and well known —> The DVCS and the well-known
+Paragraph at L185-191 needs rewording: DVCS amplitudes squared and their —>DVCS amplitudes squared, and their 
+for the nucleon in [38]—> for the nucleon in Ref. [38]
+targets in [39,40] —> targets in Refs. [39,40]
+L195: written in [40], they  —> written in Ref. [40] and they
+L196: Q^2 and x_B —> Q^2, and x_B
+L200: to extract unequivocally —> to unequivocally extract
+L201: for the BSA. —> from the BSA by fits to a function 
+L202: In this work the —> In this work, the
+L203: Specify the wide range of kinematics
+L204: to our measurements, accidental … and exclusive—>  to our measurements: 1) accidental … and 2) exclusive ...
+L207: we estimate their —> we estimated their
+L210: Regarding the pi^0 production, it can easily be —> The pi^0 production can be easily
+L214: the importance —> the effect
+L219: between the number of pi^0 —> between the pi^0
+L226 and 228: Hard to understand uncertainties in terms of percentages when you talk about BSA. When you have BSA of 0.0 then with the percentage you get a precise measurement, which is not correct. Values instead of percentages are more appropriate here. 
+L234: Eq. 5 —> Eq. (5). When you refer to equations the number has to always go within parenthesis
+L241: (i.e. with four-momentum… )—> (i.e. off-shellness of the nucleon)  
+L254: FiG
+L263: Figure
+L265 FIG
+L271: Eq. 5 —> Eq. (5)
+L289: JLAB —> JLab
+Figure 7: model from [42] —> model from Ref. [42] / model based on [46] —> model as described in [46]
+L291: Is that the correct CLAS acknowledgement? It doesnt look like it is.
+
+References: Remove brackets of collaborations
+
+
+
