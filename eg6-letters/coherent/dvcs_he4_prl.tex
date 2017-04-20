@@ -165,7 +165,7 @@ process off $^4$He.}
 One must overcome two major experimental challenges in measuring coherent 
 nuclear DVCS, $eA\rightarrow e^\prime A^\prime\gamma$. First, the cross section 
 of coherent scattering is suppressed due to the nuclear form factor, and 
-second, the recoil nucleus ($A^\prime$) must be detected to ensure coherence.  
+second, the intact recoil nucleus ($A^\prime$) must be detected to ensure coherence.  
 Figure \ref{fig:diags} illustrates the handbag diagram for coherent DVCS on 
 $^4$He, where four-vectors of the electrons, photons, and $^4$He are denoted by
 $k/k^\prime$, $q/q^\prime$, and $p/p^\prime$ respectively. 
@@ -203,9 +203,7 @@ measurement significantly \cite{Guzey:2003jh}.  Accordingly, direct detection
 of the low-energy recoil nucleus is critical in guaranteeing the nucleus 
 remains intact. 
 
-The $^4$He nucleus is an 
-ideal experimental target in this regard, as it is light enough to be detected 
-in such a setting, while it is subject to significant nuclear effects 
+The $^4$He nucleus is an ideal experimental target for DVCS on nuclei, as it is light enough to be detected in such a setting, while it is subject to significant nuclear effects 
 \cite{JSeely} and has rather high density. A helium target leads to another 
 important advantage, as the number of GPDs defined for a hadron depends on its 
 spin. The structure of a spin-zero nucleus, such as $^4$He, is parametrized by 
@@ -214,16 +212,12 @@ arise in the nucleon case. This significantly simplifies the interpretation of
 the data and allows a model independent extraction of the $^4$He CFF 
 ($\mathcal{H}_{A}$) presented at the end of this letter. 
 
-The CEBAF large acceptance spectrometer in Hall-B at 
-Jefferson Lab has been previously used successfully for DVCS measurements on the nucleon
-\cite{Girod:2007aa,Gavalian:2009,Seder:2015,Pisano:2015,Jo:2015ema}.
-
-In order to measure DVCS on $^4$He with a fully exclusive final state, we built 
-a specialized radial time projection chamber (RTPC) for the detection and 
-identification of low-energy recoiling light nuclei. 
-
-%experimental setup
-
+The CEBAF large acceptance spectrometer in Hall-B at Jefferson Lab has been
+previously used successfully for DVCS measurements on the nucleon
+\cite{Girod:2007aa,Gavalian:2009,Seder:2015,Pisano:2015,Jo:2015ema}.  In order
+to extend its capabilities to nuclear DVCS with a fully exclusive final state,
+we built a specialized radial time projection chamber (RTPC) for the detection
+and identification of low-energy recoiling light nuclei. 
 The experiment E08-024 took place in Hall-B at Jefferson Lab in 2009 using the 
 nearly 100\% duty factor, longitudinally polarized electron beam (83$\%$ 
 polarization) at an energy of 6.064 GeV. The data were collected over 40 days 
@@ -347,9 +341,8 @@ contribution, while the DVCS contribution is very small. Its effect is however
 enhanced in the observables sensitive to the interference term, {\it e.g.} 
 BSA. The three terms entering the cross section calculation,
 the square of the BH and DVCS amplitudes and their interference term, depend on the
-azimuthal angle
-$\phi$ between the $(e,e^\prime)$ and $(\gamma^*,^4$He$^\prime)$ planes, as
-shown for the nucleon in Ref.~\cite{Belitsky:2001ns} and for the spin-zero targets
+azimuthal angle $\phi$ between the $(e,e^\prime)$ and $(\gamma^*,^4$He$^\prime)$ planes,
+as shown for the nucleon in Ref.~\cite{Belitsky:2001ns} and for the spin-zero targets
 in Refs.~\cite{Kirchner:2003wt,Belitsky:2008bz}. Based on this work, the BSA 
 of a spin-zero hadron can be expressed as
 \begin{equation}
@@ -370,13 +363,14 @@ $x_{A} = \frac{x_{B}M_{N}}{M_{A}}$, $y=\frac{Q^{2}}{2x_{A}M_{A}E_{beam}}$, and
 $\epsilon = \frac{2x_{A}M_{A}}{\sqrt{Q^{2}}}$, where $M_{A}$($M_{N}$) is the $^4$He 
 (nucleon) mass. Using the different $\sin(\phi)$ and $\cos(\phi)$ contributions 
 in these factors, it is possible to unequivocally extract both imaginary and real 
-parts of $\mathcal{H}_{A}$ from the BSA. 
+parts of $\mathcal{H}_{A}$ by fitting the $A_{LU}(\phi)$ distrubution.
 
 In this work, the azimuthal dependence of the beam-spin asymmetry has been studied 
-for a wide range of kinematics ($Q^2$ between 1 and 2.2 GeV$^2$/c$^2$, $x_B$ between 0.1 and 0.3, and $-t$ between 0.07 and 0.16 GeV$^2$/c$^2$). We identified two main backgrounds to our 
-measurement, accidental coincidences and exclusive coherent $\pi^0$ production.  
-The accidentals have particles originating from different events, and we 
-estimated their contribution to be 4.1\% of our sample. We evaluated this 
+for a wide range of kinematics ($Q^2$ between 1 and 2.2 GeV$^2$/c$^2$, $x_B$ between
+0.1 and 0.3, and $-t$ between 0.07 and 0.16 GeV$^2$/c$^2$). We identified two main
+backgrounds to our measurement, accidental coincidences and exclusive coherent
+$\pi^0$ production.  The accidentals have particles originating from different events,
+and we estimated their contribution to be 4.1\% of our sample. We evaluated this 
 contribution by selecting events passing all our cuts but with an electron and 
 helium originating from different vertices. The $\pi^0$ production can easily
 be mistaken for DVCS when one of the two photons from the $\pi^0$ 
@@ -384,15 +378,16 @@ decay is produced at low energy in the laboratory frame and remains undetected.
 To estimate the effect of this background, we developed an event generator 
 tuned on the experimental yield of exclusive $\pi^0$ measured by our 
 experiment. We used this generator together with a GEANT3 simulation of our 
-detector to estimate the ratio between the number of $\pi^0$ events where the 
-two photons are detected and those that are misidentified as DVCS events. This 
+detector to estimate the ratio of the number of $\pi^0$ events where the 
+two photons are detected to those that are misidentified as DVCS events. This 
 ratio is then multiplied by the measured yield of exclusive $\pi^0$ events to 
 correct the DVCS data.  Depending on the kinematics, we found contaminations of 
-2 to 4\%. The study of systematic uncertainties showed that the main 
-contributions come from the choice of the DVCS exclusivity cuts (8\%) and the 
-large binning size (5.1\%), where the values are relative and for $A_{LU}$ at $\phi=90^\circ$.
-However, added quadratically, the total systematic uncertainty is about 10\%,
-which is significantly smaller than statistical  uncertainties in all kinematical bins. 
+2 to 4\%.  Studies of systematic uncertainties showed that the main 
+contributions come from the choice of DVCS exclusivity cuts (8\%) and the 
+large binning size (5.1\%), where the values are relative and quoted for $A_{LU}$
+at $\phi=90^\circ$.  Added quadratically, the total systematic uncertainty
+is about 10\% at $90^\circ$ (or 0.03, absolute), which is significantly smaller
+than the statistical uncertainties in all kinematical bins. 
 
 Due to limited statistics, dependence of the extracted asymmetries on the kinematical variables $Q^2$, 
 $x_B$, and $t$ has been studied separately. In Fig.~\ref{fig:alu}, $A_{LU}$ for 
