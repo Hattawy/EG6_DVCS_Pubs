@@ -77,15 +77,16 @@ In addition, the recoil nuclei of the coherent DVCS on helium was detected
 using a RTPC developed to track low energy nuclear fragments. The solenoid field
 serving as the analyzing magnet for the particle tracking in the RTPC. This 
 setup was used during a three months experimental run
-in 2009 with a longitudinally polarized electron beam of 6.064 GeV incident 
-on a gaseous $^{4}$He target.
+in 2009 with a longitudinally polarized electron beam of {\color{blue} 130 nA 
+and energy of 6.064 GeV} incident on a gaseous $^{4}$He target.
 {\bf \color{red} Add beam current or luminosity.}
 
-In this paper we report the design, calibration, and performance of the radial TPC,
-organized as follows. Section \ref{sec_design} details the physics considerations for our RTPC's
-design and internal structure. Section \ref{sec_readout} describes the properties
-of the read-out system. Calibration strategies are discussed in section \ref{sec_calib}.
-Finally, the performance of the RTPC is described in section \ref{sec_perf}.
+In this paper we report the design, calibration, and performance of the radial 
+TPC, organized as follows. Section \ref{sec_design} details the physics 
+considerations for our RTPC's design and internal structure. Section 
+\ref{sec_readout} describes the properties of the read-out system. Calibration 
+strategies are discussed in section \ref{sec_calib}. Finally, the performance 
+of the RTPC is described in section \ref{sec_perf}.
 
 
 \section{CLAS RTPC design} \label{sec_design}
@@ -150,20 +151,20 @@ from the beam line and towards larger radius:\\
 
 The GEM technology has been chosen for this RTPC for its flexibility, 
 allowing a curved amplification surface. Also, GEMs are known to rarely create 
-sparks{\bf \color{red} Need reference.}, which is important when trying to 
-detect highly ionizing slow nuclei that deposit large amount of energy. The 
-GEMs for this RTPC are made from a Kapton insulator layer 
-{\bf \color{red} Thickness?} sandwiched between two 5 $\mu$m copper
-layers. The mesh of each GEM layer is chemically etched with 50$\mu$m diameter
-holes with double-conical shapes as illustrated in figure~\ref{fig:GEMs}. A
-potential difference of 400 V {\bf \color{red} To be checked and set as above.} 
-is applied between the two copper layers of the
-GEM, creating a very strong electric field in each hole leading to high ionization 
-and therefore amplification of the incoming electrons. A 
-potential of 150 V {\bf \color{red} To be checked.} 
-is set between the GEMs to push the electrons toward the next GEM and eventually 
-the readout pads. The gain of each GEM layer is of order 100, making a total gain 
-of about $10^{6}$. {\bf \color{red} We should quote a realistic overall gain or nothing.}\\
+sparks{\color{blue} \cite{GEM_ref}}, which is important when trying to detect 
+highly ionizing slow nuclei that deposit large amount of energy. The GEMs for 
+this RTPC are made from a Kapton insulator layer, {\color{blue}50~$\mu$m 
+thick}, sandwiched between two 5~$\mu$m copper layers. The mesh of each GEM 
+layer is chemically etched with 50~$\mu$m diameter holes with double-conical 
+shapes as illustrated in figure~\ref{fig:GEMs}. A potential difference of 400 V 
+{\bf \color{red} To be checked and set as above.} is applied between the two 
+copper layers of the GEM, creating a very strong electric field in each hole 
+leading to high ionization and therefore amplification of the incoming 
+electrons. A potential of 150 V {\bf \color{red} To be checked.} is set between 
+the GEMs to push the electrons toward the next GEM and eventually the readout 
+pads. The gain of each GEM layer is of order 100, making a total gain of about 
+$10^{6}$.  {\bf \color{red} We should quote a realistic overall gain or 
+nothing.}\\
 
 {\bf \color{red} To be added:
 
@@ -385,14 +386,13 @@ much closer to the expected Bethe-Bloch curve than prior to calibration, the
 results shown in figure~\ref{fig:dedx_p_exp_1st} are not very satisfactory.
 
 \begin{figure}[tb]
-   \includegraphics[scale=0.26]{fig/dedx_p_exp_1st.png}
-   \caption{$\small{\frac{dE}{dX}}$ vs. $p$ distribution for the left half of the 
-      RTPC (left) and for the right half (right). Here, $\small{\frac{dE}{dX}}$ 
-   is calculated using the gains of the first method.  The lines are 
-theoretical expectations from Bethe-Bloch formula for $^4$He, $^3$He, $^3$H and 
-$^2$H (d).{\bf \color{red} Mohammad: Did you multiply p/c by 2 in the figure? If no 
-change the caption, if yes check remove the single charge nuclei from the figure 
-because there is a consistency issue.}}
+   \centering
+   \includegraphics[scale=0.45]{fig/f_dedx_p_exp_1st.pdf}
+   \caption{$\small{\frac{dE}{dX}}$ vs. $p/q$ distribution for the left half of 
+      the RTPC (left) and for the right half (right). Here, 
+      $\small{\frac{dE}{dX}}$ is calculated using the gains of the first 
+      method.  The lines are theoretical expectations from Bethe-Bloch formula 
+   for $^4$He, $^3$He, $^3$H and $^2$H (d).}
 \label{fig:dedx_p_exp_1st}
 \end{figure}
 
@@ -414,6 +414,7 @@ from these we concluded that the gains of the
 second method match best the theoretical lines.
 
 \begin{figure}[tb]
+   \centering
 \includegraphics[scale=0.350]{fig/EVENT_adc_tdc.png}
 \caption{Simulated (upper) and experimental (lower) ADCs and TDCs distributions 
 of a track. The colors indicate the pads, same color in top and bottom indicate 
@@ -423,14 +424,12 @@ that they are the same pad.}
 
 \begin{figure}[tb]
 \centering
-\includegraphics[scale=0.26]{fig/dedx_p_exp_2nd.png}
-\caption{$\small{\frac{dE}{dX}}$ vs. $p$ distribution for the left half of the 
-   RTPC (left) and for the right half (right). Here, $\small{\frac{dE}{dX}}$ is 
-   calculated using the gains of the second method.  The lines are theoretical 
-   expectations from Bethe-Bloch formula for $^4$He, $^3$He, $^3$H and $^2$H 
-(d).{\bf \color{red} Mohammad: Did you multiply p/c by 2 in the figure? If no 
-change the caption, if yes check remove the single charge nuclei from the figure 
-because there is a consistency issue.}}
+\includegraphics[scale=0.45]{fig/f_dedx_p_exp_2nd.pdf}
+\caption{$\small{\frac{dE}{dX}}$ vs. $p/q$ distribution for the left half of 
+   the RTPC (left) and for the right half (right). Here, 
+   $\small{\frac{dE}{dX}}$ is calculated using the gains of the second method.  
+   The lines are theoretical expectations from Bethe-Bloch formula for $^4$He, 
+$^3$He, $^3$H and $^2$H (d).}
 \label{fig:dedx_p_exp_2nd}
 \end{figure}
 
@@ -515,6 +514,10 @@ photons in the CLAS spectrometer.
    Hyon-Suk Jo, Etude de la Diffusion Compton Profond{\'e}ment Virtuelle Sur le 
    Nucl{\'e}on avec le D{\'e}tecteur CLAS de Jefferson Lab: Mesure des Sections 
    Efficaces polaris{\'e}es et non polaris{\'e}es, IPNO-Thesis, 2007.
+
+\bibitem{GEM_ref}
+   J. Beringer et al. (Particle Data Group), Particle detectors at 
+   accelerators, Phys. Rev. D 86, 010001, pages: 339-368, 2012.
 
 \bibitem{gem_sauli}
    F. Sauli, GEM: A new concept for electron amplification in gas detectors, 
