@@ -77,17 +77,16 @@ In addition, the recoil nuclei of the coherent DVCS on helium was detected
 using a RTPC developed to track low energy nuclear fragments. The solenoid field
 serving as the analyzing magnet for the particle tracking in the RTPC. This 
 setup was used during a three months experimental run
-in 2009 with a longitudinally polarized electron beam of {\color{blue} 130 nA 
-and energy of 6.064 GeV} incident on a gaseous $^{4}$He target.
-{\bf \color{red} Add beam current or luminosity.}
+in 2009 with a longitudinally polarized electron beam of 130 nA 
+and energy of 6.064 GeV incident on a gaseous $^{4}$He target.
+{\bf \color{red} Add luminosity.}
 
 In this paper we report the design, calibration, and performance of the radial 
-TPC, organized as follows. Section \ref{sec_design} details the physics 
-considerations for our RTPC's design and internal structure. Section 
-\ref{sec_readout} describes the properties of the read-out system. Calibration 
-strategies are discussed in section \ref{sec_calib}. Finally, the performance 
-of the RTPC is described in section \ref{sec_perf}.
-
+TPC, organized as follows. In section \ref{sec_design}, we detail the design 
+and internal structure of the detector. Section \ref{sec_readout} is focused 
+on the properties of the read-out system. Calibration 
+strategies are discussed in section \ref{sec_calib}. Finally, the performances
+of the RTPC are described in section \ref{sec_perf}.
 
 \section{CLAS RTPC design} \label{sec_design}
 
@@ -125,7 +124,7 @@ from the beam line and towards larger radius:\\
       region is surrounded by a 4 $\mu$m thick window made of aluminized Mylar 
       and electronically grounded.
    \item The second gap region extends between 20~mm and 30~mm and is filled with a 
-      gas mixture of 80$\%$ Neon and 20$\%$ Dimethyl Ether (DME). This region 
+      gas mixture of 80$\%$ neon and 20$\%$ dimethyl ether (DME). This region 
       is surrounded by a 4~$\mu$m thick window made of aluminized Mylar, which 
       serves as the cathode and is set at 4260~V.
    \item The drift region is filled with the same Ne-DME gas mixture and extends 
@@ -156,21 +155,36 @@ highly ionizing slow nuclei that deposit large amount of energy. The GEMs for
 this RTPC are made from a Kapton insulator layer, {\color{blue}50~$\mu$m 
 thick}, sandwiched between two 5~$\mu$m copper layers. The mesh of each GEM 
 layer is chemically etched with 50~$\mu$m diameter holes with double-conical 
-shapes as illustrated in figure~\ref{fig:GEMs}. A potential difference of 400 V 
-{\bf \color{red} To be checked and set as above.} is applied between the two 
+shapes as illustrated in figure~\ref{fig:GEMs}. A potential difference of 275 V 
+is applied between the two 
 copper layers of the GEM, creating a very strong electric field in each hole 
 leading to high ionization and therefore amplification of the incoming 
-electrons. A potential of 150 V {\bf \color{red} To be checked.} is set between 
+electrons. A high potential of about 1600 V/cm is set between 
 the GEMs to push the electrons toward the next GEM and eventually the readout 
-pads. The gain of each GEM layer is of order 100, making a total gain of about 
-$10^{6}$.  {\bf \color{red} We should quote a realistic overall gain or 
-nothing.}\\
+pads. \\
 
-{\bf \color{red} To be added:
+The drift gas used in the experiment is a 80-20\% neon-DME mixtur, this choice 
+has been made in order to balance the good drift properties with a reasonnable
+Lorentz angle. Calculations using the MAGBOLTZ program~\cite{MAGBOLTZ} 
+showed that with the perpendicular 5~T field, we would have a Lorentz angle of 
+about {\bf \color{red} (To be added) } with this mixture. As can be seen, the
+Lorentz angle is already significant, a larger angle would increase significantly
+the length of the drift paths as the electron would spiral around the beam line.
+{\bf \color{red} (To be continued commenting on higher/lower proportion of gas 
+and other gas) }
 
-Discuss the choice of drift gas
-
-Discuss the self supporting mechanic of the GEMs.}
+One of the important problematic to develop the radial TPC was to obtain a 
+good support structure of the GEM foils, allowing an easy installation of the 
+GEM in good conditions and with high precision. At the same time, we wanted to 
+keep the material budget small in the forward region where we detect other 
+particles in subsequent detectors. We successfuly realized these prerequisites 
+by using fiber glass rings glued to each ends of the GEM foils to form self 
+supporting cylinders that could be installed independently in the RTPC after 
+all gluing and soldering operations.  Because the rigidity of the high 
+rigidity of the GEM foil, the strcture was selfsupporting and only the 
+backward part of the cylinder was fixed to the main mechanical structure. This 
+design only left a light fiberglass ring in the forward region, reducing to a 
+minimum secondary interactions.
 
 \section{Readout System} \label{sec_readout}
 
@@ -188,7 +202,7 @@ Figure \ref{fig:PADs} shows a schematic drawing of the size and
 configuration of the pads. Each readout pad is 5 mm in length and 4.45 mm in 
 width.  The shift between the rows allows to reduce aliasing. Each half of the 
 RTPC has 40 rows and 40 columns of pads. The shaded region in figure~\ref{fig:PADs}
-shows how pads are grouped to 16 channels pre-amplifiers.  A Time to Digital
+shows how pads are grouped to 16 channels pre-amplifiers. A Time to Digital
 Converter (TDC) with 114~ns samples is used to measure the time taken by
 the electrons to drift from the ionization point to the readout board.  Signal
 amplitude is is measured with an Analog-to-Digital-Converter (ADC) without
@@ -249,7 +263,7 @@ it causes ionization in the drift region, the released electrons (in black)
 drift to the cylindrical detection plane under the effect of the electric field. The 
 electrons released close to the cathode take the most time to reach the readout 
 pads, but cylindrical symmetry insures they always travel the same 
-distance. By identifying the maximum TDC measured, we can infer the drift 
+distance. By identifying the maximum time T measured, we can infer the drift 
 speed of the electrons in the RTPC.\\
 
 \begin{figure}[tb]
@@ -300,7 +314,7 @@ track reconstructions code.
 \begin{figure}[tb]
 \hspace*{-1.8cm}
 \includegraphics[scale=0.26]{fig/Drift_run_number_1.png}
-\caption{$TDC_{Nbmax/2}$ versus the experimental run numbers (time).  } 
+\caption{$T_{Nbmax/2}$ versus the experimental run numbers (time).  } 
 \label{fig:Drift_run_number_1}
 \end{figure}
 
@@ -350,7 +364,7 @@ implementation in our reconstruction codes.
 \begin{figure}[tb]
 \centering
 \includegraphics[scale=0.37]{fig/FitResult_p2_10.png}
-\caption{$\Delta \phi$ versus TDC distribution in the second pass for tracks
+\caption{$\Delta \phi$ versus T distribution in the second pass for tracks
 near 35 mm longitudinal position along the RTPC. The black line represents 
 the final drift paths in this slice.}
 \label{fig:DELTA_PHI_TDC}
@@ -416,7 +430,7 @@ second method match best the theoretical lines.
 \begin{figure}[tb]
    \centering
 \includegraphics[scale=0.350]{fig/EVENT_adc_tdc.png}
-\caption{Simulated (upper) and experimental (lower) ADCs and TDCs distributions 
+\caption{Simulated (upper) and experimental (lower) ADC and T distributions 
 of a track. The colors indicate the pads, same color in top and bottom indicate 
 that they are the same pad.}
 \label{fig:EVENT_adc_tdc}
@@ -445,7 +459,7 @@ The sources of these effects were not determined, but rejection techniques allow
 \begin{figure}[tb]\centering
 \includegraphics[scale=0.27]{fig/noisy_pad_before_rejection2.png}
 \includegraphics[scale=0.27]{fig/noisy_pad_after_rejection2.png}
-\caption{The ADC vs. TDC spectrum for an example noisy channel before (top) and after (bottom) noise rejection algorithms.  Only hits associated with tracks are included, and the selection of events and tracks is the same in both plots.}
+\caption{The ADC vs. T spectrum for an example noisy channel before (top) and after (bottom) noise rejection algorithms.  Only hits associated with tracks are included, and the selection of events and tracks is the same in both plots.}
 \label{fig:noise}
 \end{figure}
 
