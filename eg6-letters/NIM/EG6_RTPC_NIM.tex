@@ -403,11 +403,14 @@ including drift paths, but also the spread of the charges along the path
 before reaching the pad, so that the simulated hits match the experimental 
 ones. Moreover, the simulation has to match the data acquisition (DAQ) features 
 that can lead to cutting out hits. After setting the simulation properly, we 
-compared simulation to experiment on an event by event basis as in 
+compared simulation to experiment on an event by event basis as shown in 
 figure~\ref{fig:EVENT_adc_tdc}. In this step, the gain for each pad is defined 
-as the ratio of the measured ADCs to the simulated deposited energy.
-Then, the ADC value of each pad is compared to 
-the ADCs of the other pads inside each track.
+as the ratio of the measured ADCs to the simulated deposited energy.  
+{\color{blue} Then, the gain of each readout pad is corrected by a factor, that 
+is defined as the ratio of the ADC value of each pad to the ADCs of the other 
+pads inside each track to make sure that the recorded ADCs by a given pad are 
+similar to the recorded ADCs recorded by other pads in the same track.}
+
 {\bf \color{red} Mohammad: Detail are missing here.}
 Results of this second method are shown in Figure~\ref{fig:dedx_p_exp_2nd},
 from these we concluded that the gains of the 
