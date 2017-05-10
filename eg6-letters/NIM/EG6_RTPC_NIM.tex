@@ -77,16 +77,16 @@ In addition, the recoil nuclei of the coherent DVCS on helium was detected
 using a RTPC developed to track low energy nuclear fragments. The solenoid field
 serving as the analyzing magnet for the particle tracking in the RTPC. This 
 setup was used during a three months experimental run
-in 2009 with a longitudinally polarized electron beam of 6.064 GeV incident 
-on a gaseous $^{4}$He target.
-{\bf \color{red} Add beam current or luminosity.}
+in 2009 with a longitudinally polarized electron beam of 130 nA 
+and energy of 6.064 GeV incident on a gaseous $^{4}$He target.
+{\bf \color{red} Add luminosity.}
 
-In this paper we report the design, calibration, and performance of the radial TPC,
-organized as follows. Section \ref{sec_design} details the physics considerations for our RTPC's
-design and internal structure. Section \ref{sec_readout} describes the properties
-of the read-out system. Calibration strategies are discussed in section \ref{sec_calib}.
-Finally, the performance of the RTPC is described in section \ref{sec_perf}.
-
+In this paper we report the design, calibration, and performance of the radial 
+TPC, organized as follows. In section \ref{sec_design}, we detail the design 
+and internal structure of the detector. Section \ref{sec_readout} is focused 
+on the properties of the read-out system. Calibration 
+strategies are discussed in section \ref{sec_calib}. Finally, the performances
+of the RTPC are described in section \ref{sec_perf}.
 
 \section{CLAS RTPC design} \label{sec_design}
 
@@ -124,7 +124,7 @@ from the beam line and towards larger radius:\\
       region is surrounded by a 4 $\mu$m thick window made of aluminized Mylar 
       and electronically grounded.
    \item The second gap region extends between 20~mm and 30~mm and is filled with a 
-      gas mixture of 80$\%$ Neon and 20$\%$ Dimethyl Ether (DME). This region 
+      gas mixture of 80$\%$ neon and 20$\%$ dimethyl ether (DME). This region 
       is surrounded by a 4~$\mu$m thick window made of aluminized Mylar, which 
       serves as the cathode and is set at 4260~V.
    \item The drift region is filled with the same Ne-DME gas mixture and extends 
@@ -150,26 +150,41 @@ from the beam line and towards larger radius:\\
 
 The GEM technology has been chosen for this RTPC for its flexibility, 
 allowing a curved amplification surface. Also, GEMs are known to rarely create 
-sparks{\bf \color{red} Need reference.}, which is important when trying to 
-detect highly ionizing slow nuclei that deposit large amount of energy. The 
-GEMs for this RTPC are made from a Kapton insulator layer 
-{\bf \color{red} Thickness?} sandwiched between two 5 $\mu$m copper
-layers. The mesh of each GEM layer is chemically etched with 50$\mu$m diameter
-holes with double-conical shapes as illustrated in figure~\ref{fig:GEMs}. A
-potential difference of 400 V {\bf \color{red} To be checked and set as above.} 
-is applied between the two copper layers of the
-GEM, creating a very strong electric field in each hole leading to high ionization 
-and therefore amplification of the incoming electrons. A 
-potential of 150 V {\bf \color{red} To be checked.} 
-is set between the GEMs to push the electrons toward the next GEM and eventually 
-the readout pads. The gain of each GEM layer is of order 100, making a total gain 
-of about $10^{6}$. {\bf \color{red} We should quote a realistic overall gain or nothing.}\\
+sparks{\color{blue} \cite{GEM_ref}}, which is important when trying to detect 
+highly ionizing slow nuclei that deposit large amount of energy. The GEMs for 
+this RTPC are made from a Kapton insulator layer, {\color{blue}50~$\mu$m 
+thick}, sandwiched between two 5~$\mu$m copper layers. The mesh of each GEM 
+layer is chemically etched with 50~$\mu$m diameter holes with double-conical 
+shapes as illustrated in figure~\ref{fig:GEMs}. A potential difference of 275 V 
+is applied between the two 
+copper layers of the GEM, creating a very strong electric field in each hole 
+leading to high ionization and therefore amplification of the incoming 
+electrons. A high potential of about 1600 V/cm is set between 
+the GEMs to push the electrons toward the next GEM and eventually the readout 
+pads. \\
 
-{\bf \color{red} To be added:
+The drift gas used in the experiment is a 80-20\% neon-DME mixtur, this choice 
+has been made in order to balance the good drift properties with a reasonnable
+Lorentz angle. Calculations using the MAGBOLTZ program~\cite{MAGBOLTZ} 
+showed that with the perpendicular 5~T field, we would have a Lorentz angle of 
+about {\bf \color{red} (To be added) } with this mixture. As can be seen, the
+Lorentz angle is already significant, a larger angle would increase significantly
+the length of the drift paths as the electron would spiral around the beam line.
+{\bf \color{red} (To be continued commenting on higher/lower proportion of gas 
+and other gas) }
 
-Discuss the choice of drift gas
-
-Discuss the self supporting mechanic of the GEMs.}
+One of the important problematic to develop the radial TPC was to obtain a 
+good support structure of the GEM foils, allowing an easy installation of the 
+GEM in good conditions and with high precision. At the same time, we wanted to 
+keep the material budget small in the forward region where we detect other 
+particles in subsequent detectors. We successfuly realized these prerequisites 
+by using fiber glass rings glued to each ends of the GEM foils to form self 
+supporting cylinders that could be installed independently in the RTPC after 
+all gluing and soldering operations.  Because the rigidity of the high 
+rigidity of the GEM foil, the strcture was selfsupporting and only the 
+backward part of the cylinder was fixed to the main mechanical structure. This 
+design only left a light fiberglass ring in the forward region, reducing to a 
+minimum secondary interactions.
 
 \section{Readout System} \label{sec_readout}
 
@@ -187,7 +202,7 @@ Figure \ref{fig:PADs} shows a schematic drawing of the size and
 configuration of the pads. Each readout pad is 5 mm in length and 4.45 mm in 
 width.  The shift between the rows allows to reduce aliasing. Each half of the 
 RTPC has 40 rows and 40 columns of pads. The shaded region in figure~\ref{fig:PADs}
-shows how pads are grouped to 16 channels pre-amplifiers.  A Time to Digital
+shows how pads are grouped to 16 channels pre-amplifiers. A Time to Digital
 Converter (TDC) with 114~ns samples is used to measure the time taken by
 the electrons to drift from the ionization point to the readout board.  Signal
 amplitude is is measured with an Analog-to-Digital-Converter (ADC) without
@@ -248,7 +263,7 @@ it causes ionization in the drift region, the released electrons (in black)
 drift to the cylindrical detection plane under the effect of the electric field. The 
 electrons released close to the cathode take the most time to reach the readout 
 pads, but cylindrical symmetry insures they always travel the same 
-distance. By identifying the maximum TDC measured, we can infer the drift 
+distance. By identifying the maximum time T measured, we can infer the drift 
 speed of the electrons in the RTPC.\\
 
 \begin{figure}[tb]
@@ -299,7 +314,7 @@ track reconstructions code.
 \begin{figure}[tb]
 \hspace*{-1.8cm}
 \includegraphics[scale=0.26]{fig/Drift_run_number_1.png}
-\caption{$TDC_{Nbmax/2}$ versus the experimental run numbers (time).  } 
+\caption{$T_{Nbmax/2}$ versus the experimental run numbers (time).  } 
 \label{fig:Drift_run_number_1}
 \end{figure}
 
@@ -349,7 +364,7 @@ implementation in our reconstruction codes.
 \begin{figure}[tb]
 \centering
 \includegraphics[scale=0.37]{fig/FitResult_p2_10.png}
-\caption{$\Delta \phi$ versus TDC distribution in the second pass for tracks
+\caption{$\Delta \phi$ versus T distribution in the second pass for tracks
 near 35 mm longitudinal position along the RTPC. The black line represents 
 the final drift paths in this slice.}
 \label{fig:DELTA_PHI_TDC}
@@ -385,14 +400,13 @@ much closer to the expected Bethe-Bloch curve than prior to calibration, the
 results shown in figure~\ref{fig:dedx_p_exp_1st} are not very satisfactory.
 
 \begin{figure}[tb]
-   \includegraphics[scale=0.26]{fig/dedx_p_exp_1st.png}
-   \caption{$\small{\frac{dE}{dX}}$ vs. $p$ distribution for the left half of the 
-      RTPC (left) and for the right half (right). Here, $\small{\frac{dE}{dX}}$ 
-   is calculated using the gains of the first method.  The lines are 
-theoretical expectations from Bethe-Bloch formula for $^4$He, $^3$He, $^3$H and 
-$^2$H (d).{\bf \color{red} Mohammad: Did you multiply p/c by 2 in the figure? If no 
-change the caption, if yes check remove the single charge nuclei from the figure 
-because there is a consistency issue.}}
+   \centering
+   \includegraphics[scale=0.45]{fig/f_dedx_p_exp_1st.pdf}
+   \caption{$\small{\frac{dE}{dX}}$ vs. $p/q$ distribution for the left half of 
+      the RTPC (left) and for the right half (right). Here, 
+      $\small{\frac{dE}{dX}}$ is calculated using the gains of the first 
+      method.  The lines are theoretical expectations from Bethe-Bloch formula 
+   for $^4$He, $^3$He, $^3$H and $^2$H (d).}
 \label{fig:dedx_p_exp_1st}
 \end{figure}
 
@@ -403,19 +417,23 @@ including drift paths, but also the spread of the charges along the path
 before reaching the pad, so that the simulated hits match the experimental 
 ones. Moreover, the simulation has to match the data acquisition (DAQ) features 
 that can lead to cutting out hits. After setting the simulation properly, we 
-compared simulation to experiment on an event by event basis as in 
+compared simulation to experiment on an event by event basis as shown in 
 figure~\ref{fig:EVENT_adc_tdc}. In this step, the gain for each pad is defined 
-as the ratio of the measured ADCs to the simulated deposited energy.
-Then, the ADC value of each pad is compared to 
-the ADCs of the other pads inside each track.
+as the ratio of the measured ADCs to the simulated deposited energy.  
+{\color{blue} Then, the gain of each readout pad is corrected by a factor, that 
+is defined as the ratio of the ADC value of each pad to the ADCs of the other 
+pads inside each track to make sure that the recorded ADCs by a given pad are 
+similar to the recorded ADCs recorded by other pads in the same track.}
+
 {\bf \color{red} Mohammad: Detail are missing here.}
 Results of this second method are shown in Figure~\ref{fig:dedx_p_exp_2nd},
 from these we concluded that the gains of the 
 second method match best the theoretical lines.
 
 \begin{figure}[tb]
+   \centering
 \includegraphics[scale=0.350]{fig/EVENT_adc_tdc.png}
-\caption{Simulated (upper) and experimental (lower) ADCs and TDCs distributions 
+\caption{Simulated (upper) and experimental (lower) ADC and T distributions 
 of a track. The colors indicate the pads, same color in top and bottom indicate 
 that they are the same pad.}
 \label{fig:EVENT_adc_tdc}
@@ -423,14 +441,12 @@ that they are the same pad.}
 
 \begin{figure}[tb]
 \centering
-\includegraphics[scale=0.26]{fig/dedx_p_exp_2nd.png}
-\caption{$\small{\frac{dE}{dX}}$ vs. $p$ distribution for the left half of the 
-   RTPC (left) and for the right half (right). Here, $\small{\frac{dE}{dX}}$ is 
-   calculated using the gains of the second method.  The lines are theoretical 
-   expectations from Bethe-Bloch formula for $^4$He, $^3$He, $^3$H and $^2$H 
-(d).{\bf \color{red} Mohammad: Did you multiply p/c by 2 in the figure? If no 
-change the caption, if yes check remove the single charge nuclei from the figure 
-because there is a consistency issue.}}
+\includegraphics[scale=0.45]{fig/f_dedx_p_exp_2nd.pdf}
+\caption{$\small{\frac{dE}{dX}}$ vs. $p/q$ distribution for the left half of 
+   the RTPC (left) and for the right half (right). Here, 
+   $\small{\frac{dE}{dX}}$ is calculated using the gains of the second method.  
+   The lines are theoretical expectations from Bethe-Bloch formula for $^4$He, 
+$^3$He, $^3$H and $^2$H (d).}
 \label{fig:dedx_p_exp_2nd}
 \end{figure}
 
@@ -446,7 +462,7 @@ The sources of these effects were not determined, but rejection techniques allow
 \begin{figure}[tb]\centering
 \includegraphics[scale=0.27]{fig/noisy_pad_before_rejection2.png}
 \includegraphics[scale=0.27]{fig/noisy_pad_after_rejection2.png}
-\caption{The ADC vs. TDC spectrum for an example noisy channel before (top) and after (bottom) noise rejection algorithms.  Only hits associated with tracks are included, and the selection of events and tracks is the same in both plots.}
+\caption{The ADC vs. T spectrum for an example noisy channel before (top) and after (bottom) noise rejection algorithms.  Only hits associated with tracks are included, and the selection of events and tracks is the same in both plots.}
 \label{fig:noise}
 \end{figure}
 
@@ -515,6 +531,10 @@ photons in the CLAS spectrometer.
    Hyon-Suk Jo, Etude de la Diffusion Compton Profond{\'e}ment Virtuelle Sur le 
    Nucl{\'e}on avec le D{\'e}tecteur CLAS de Jefferson Lab: Mesure des Sections 
    Efficaces polaris{\'e}es et non polaris{\'e}es, IPNO-Thesis, 2007.
+
+\bibitem{GEM_ref}
+   J. Beringer et al. (Particle Data Group), Particle detectors at 
+   accelerators, Phys. Rev. D 86, 010001, pages: 339-368, 2012.
 
 \bibitem{gem_sauli}
    F. Sauli, GEM: A new concept for electron amplification in gas detectors, 
