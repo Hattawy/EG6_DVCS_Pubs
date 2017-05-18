@@ -79,12 +79,11 @@ serving as the analyzing magnet for the particle tracking in the RTPC. This
 setup was used during a three months experimental run
 in 2009 with a longitudinally polarized electron beam of 130 nA 
 and energy of 6.064 GeV incident on a gaseous $^{4}$He target.
-{\bf \color{red} Add luminosity.}
 
 In this paper we report the design, calibration, and performance of the radial 
 TPC, organized as follows. In section \ref{sec_design}, we detail the design 
-and internal structure of the detector. Section \ref{sec_readout} is focused 
-on the properties of the read-out system. Calibration 
+and internal structure of the detector. Section \ref{sec_readout} describes 
+the properties of the read-out system. Calibration 
 strategies are discussed in section \ref{sec_calib}. Finally, the performances
 of the RTPC are described in section \ref{sec_perf}.
 
@@ -201,31 +200,79 @@ located at the end of the amplification region, 69 mm from the central axis.
 Figure \ref{fig:PADs} shows a schematic drawing of the size and 
 configuration of the pads. Each readout pad is 5 mm in length and 4.45 mm in 
 width.  The shift between the rows allows to reduce aliasing. Each half of the 
-RTPC has 40 rows and 40 columns of pads. The shaded region in figure~\ref{fig:PADs}
-shows how pads are grouped to 16 channels pre-amplifiers. A Time to Digital
-Converter (TDC) with 114~ns samples is used to measure the time taken by
-the electrons to drift from the ionization point to the readout board.  Signal
-amplitude is is measured with an Analog-to-Digital-Converter (ADC) without
-specific normalization. 
+RTPC has 40 rows and 40 columns of pads. The shaded region in figure~\ref{fig:PADs} 
+shows how pads are grouped to 16 channels pre-amplifiers. The pre-amplifier boards, 
+already employed in the BoNuS RTPC \cite{BONUS-NIM}, serve the dual purpose of 
+inverting the RTPC signals polarity -- from negative to positive -- to match the 
+requirements of the subsequent readout system, and driving the 6m long ribbon 
+cable that connects to it.
 
-{\bf \color{red} 
-Andrea:
+The readout system is based on the Front End Electronic (FEE) boards originally 
+developed for the ALICE TPC readout system at Cern~\cite{ALICE-FEE}. Each 
+readout channel is made of three main components: a charge sensitive, low 
+impedance shaping amplifier, a 10 bit, 25-MHz digitizer, and a digital circuit 
+that implements online-processing algorithms (pedestal subtraction, zero 
+suppression, ad tail cancellation). The amplifier is implemented in a 
+fully-analogue ASIC, PASA~\cite{ALICE-PASA}, while the subsequent signal 
+digitization and elaboration part is implemented in a digital ASIC, 
+ALTRO~\cite{ALICE-ALTRO}. Both ASICs host 16 channels. The full readout 
+chain is implemented on a single Front End Card (FEC), hosting 128 channels. 
+FECs are hosted in custom crates, mounted close to the detector. A Readout 
+Control Unit (ROC) board is used to distribute the trigger signal to FECs 
+and for data readout. Each RCU can handle up to 25 FECs. Communication 
+between ROC and FECs is performed trough a custom backplane, implementing 
+a low-voltage signal bus. The RCU communicates with the CLAS DAQ system 
+trough a 200 MB/s optical link, connected to a data acquisition PC hosting 
+a ReadOut Receiver Card (RORC). This PC hosts the readout controller 
+application (ROC) used to interface with the CLAS DAQ system. An Ethernet 
+link is also present, for slow-controls and monitoring.
 
-- Mention ALTRO chip and reference.
+Triggering and data-readout scheme is as follows. When a Level-1 (L1) trigger 
+is received by a FEC-board, a programmable number of samples $N_0$ is digitized 
+and stored in a data memory, and hence processed by the digital circuit. Upon 
+arrival of Level-2 trigger, the latest processed samples are saved in a 
+multi-event memory, invididual to each-channel, ready for readout by the RCU. 
+In our setup, the RCU receives the trigger signal from the CLAS Trigger 
+Supervisor system, and distributes both L1 and L2 signals to all the FECs in 
+the crate, with a definite L1-L2 trigger latency. Such latency is programmable, 
+and has to be longh enough to accomodate the digitization of the $N_0$ samples 
+per channel. In the current implementation, $N_0=100$ samples/channel are 
+acquired for each trigger, operating ALTRO at the reduced sampling frequency 
+of $10 MHz$. The L1-L2 latency is thus fixed to 15 $\mu$s.
 
-- Sparcification method (3 consecutive ADC samples above a threshold of xxx ?, and three
-samples before and after) 
+The trigger signal also initiates RCU readout operation from FEC boards. All 
+the measured samples from active channels are reported, together with a channel 
+identifier and a timestamp, to the ROC application, that in turns sends them on 
+the main event builder. During data reconstruction, the acquired samples are 
+processed to obtain, for each readout pad, the accumulated charge (ADC) and 
+the pulse time (T). Since pulse time was obtained as the time-stamp of the 
+first sample above threshold, referred to to the trigger time, the resolution 
+is equivalent to the ALTRO sampling time, 100~ns.
 
-- Mention trigger time T=15.
+\begin{figure}[tb]
+   \centering
+   \includegraphics[width=.5\textwidth]{fig/ReadoutScheme.png}
+   \caption[]{Schematic representation of the RTPC readout system, showing} 
+   \label{fig:ReadoutScheme}
+\end{figure}
 
-- Preamplifiers were from Bonus ?
+In order to reduce the data size, ALTRO is operated in zero-suppression mode: 
+only samples above a programmable threshold are stored in the ALTRO on-board 
+memory and then written to tape. A glitch-filter permits to reject spurious 
+pulses due to noise, by requiring the presence of a minimum number of samples 
+over threshold $N_{MINSEQ}$ to validate a sample. To properly reconstruct 
+the signal shape, $N_{PRE}$ samples before threshold-crossing and $N_{POST}$ 
+samles after the signal returns below threshold are saved. In the present 
+configuration, $N_{MINSEQ}=N_{PRE}=N_{POST}=3$, while threshold is set 
+just above the noise level. 
 
-- Basics of JLab fADC (is there a reference?)
-
-- Mention max rate we ran 
-
-- Other relevant information ?
-}
+In order to read all the detector readout pads, four FEC crates are used, 
+each equipped with 6 boards, plus a ROC. A schematic of the readout system, 
+for a single crate, is reported in figure~\ref{fig:ReadoutScheme}. This 
+configuration permits to reduce the dead time associated to FEC readout 
+operations, scaling linearly with the number of boards in the crate. During 
+the 2009 run, the system was succesfully operated with a DAQ rate of 3.1 kHz, 
+with a live time of $70 \%$.
 
 \section{Calibration} \label{sec_calib}
 
@@ -535,6 +582,20 @@ photons in the CLAS spectrometer.
 \bibitem{GEM_ref}
    J. Beringer et al. (Particle Data Group), Particle detectors at 
    accelerators, Phys. Rev. D 86, 010001, pages: 339-368, 2012.
+
+ \bibitem{ALICE-FEE}
+ L. Musa et al., The ALICE TPC front end electronics, 2003 IEEE Nuclear 
+ Science Symposium, 2003, pp. 3647-3651 Vol.5
+ 
+ \bibitem{ALICE-PASA}
+   H.~K.~Soltveit {\it et al.},
+   ``The Preamplifier shaper for the ALICE TPC-Detector,''
+   Nucl.\ Instrum.\ Meth.\ A {\bf 676} (2012) 106
+ 
+ \bibitem{ALICE-ALTRO},
+ R. E. Bosch, {\it et al.}, ``The ALTRO chip: a 16-channel A/D converter and 
+ digital processor for gas detectors'', IEEE Transactions on Nuclear Science, 
+ vol. 50, no. 6, pp. 2460-2469, Dec. 2003.
 
 \bibitem{gem_sauli}
    F. Sauli, GEM: A new concept for electron amplification in gas detectors, 
