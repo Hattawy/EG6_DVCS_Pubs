@@ -149,10 +149,10 @@ from the beam line and towards larger radius:\\
 
 The GEM technology has been chosen for this RTPC for its flexibility, 
 allowing a curved amplification surface. Also, GEMs are known to rarely create 
-sparks{\color{blue} \cite{GEM_ref}}, which is important when trying to detect 
+sparks~\cite{GEM_ref}, which is important when trying to detect 
 highly ionizing slow nuclei that deposit large amount of energy. The GEMs for 
-this RTPC are made from a Kapton insulator layer, {\color{blue}50~$\mu$m 
-thick}, sandwiched between two 5~$\mu$m copper layers. The mesh of each GEM 
+this RTPC are made from a Kapton insulator layer, 50~$\mu$m 
+thick, sandwiched between two 5~$\mu$m copper layers. The mesh of each GEM 
 layer is chemically etched with 50~$\mu$m diameter holes with double-conical 
 shapes as illustrated in figure~\ref{fig:GEMs}. A potential difference of 275 V 
 is applied between the two 
@@ -162,15 +162,14 @@ electrons. A high potential of about 1600 V/cm is set between
 the GEMs to push the electrons toward the next GEM and eventually the readout 
 pads. \\
 
-The drift gas used in the experiment is a 80-20\% neon-DME mixtur, this choice 
-has been made in order to balance the good drift properties with a reasonnable
+The drift gas used in the experiment is a 80-20\% neon-DME mixture, this choice 
+has been made in order to balance the energy deposit with a reasonnable
 Lorentz angle. Calculations using the MAGBOLTZ program~\cite{MAGBOLTZ} 
 showed that with the perpendicular 5~T field, we would have a Lorentz angle of 
-about {\bf \color{red} (To be added) } with this mixture. As can be seen, the
-Lorentz angle is already significant, a larger angle would increase significantly
-the length of the drift paths as the electron would spiral around the beam line.
-{\bf \color{red} (To be continued commenting on higher/lower proportion of gas 
-and other gas) }
+about 23$^\circ$ with this mixture. This is already significant and a heavier
+gas would have larger angle increasing significantly
+the length of the drift paths as the electron would 
+make a long spiral around the beam line before to reach the GEMs. 
 
 One of the important problematic to develop the radial TPC was to obtain a 
 good support structure of the GEM foils, allowing an easy installation of the 
@@ -180,7 +179,7 @@ particles in subsequent detectors. We successfuly realized these prerequisites
 by using fiber glass rings glued to each ends of the GEM foils to form self 
 supporting cylinders that could be installed independently in the RTPC after 
 all gluing and soldering operations.  Because the rigidity of the high 
-rigidity of the GEM foil, the strcture was selfsupporting and only the 
+rigidity of the GEM foil, the structure was selfsupporting and only the 
 backward part of the cylinder was fixed to the main mechanical structure. This 
 design only left a light fiberglass ring in the forward region, reducing to a 
 minimum secondary interactions.
@@ -381,8 +380,7 @@ These problems, already
 encountered for the BoNuS RTPC calibration~\cite{BONUS-NIM}, motivated the 
 acquisition of specific calibration runs. These are taken with a lower energy 
 electron beam (1.20 and 1.27 GeV) to enhance the cross section of the elastic 
-process ($e^{4}$He$\rightarrow e^{4}$He)
-{\bf \color{red} Specify luminosity ?}. In this process, the measurement of
+process ($e^{4}$He$\rightarrow e^{4}$He). In this process, the measurement of
 electron kinematics allows to calculate the Helium nucleus kinematic. It is
 by comparing this calculated kinematic to the measured one that we fine tune
 the drift paths independently of our knowledge of the exact conditions in the 
@@ -465,14 +463,12 @@ before reaching the pad, so that the simulated hits match the experimental
 ones. Moreover, the simulation has to match the data acquisition (DAQ) features 
 that can lead to cutting out hits. After setting the simulation properly, we 
 compared simulation to experiment on an event by event basis as shown in 
-figure~\ref{fig:EVENT_adc_tdc}. In this step, the gain for each pad is defined 
+figure~\ref{fig:EVENT_adc_tdc}. In this step, the gain for each pad is calculated 
 as the ratio of the measured ADCs to the simulated deposited energy.  
-{\color{blue} Then, the gain of each readout pad is corrected by a factor, that 
-is defined as the ratio of the ADC value of each pad to the ADCs of the other 
-pads inside each track to make sure that the recorded ADCs by a given pad are 
-similar to the recorded ADCs recorded by other pads in the same track.}
-
-{\bf \color{red} Mohammad: Detail are missing here.}
+Then, these gains are refined using correcting factors obtained from a 
+sample of good tracks. For each track, we calculate the corrected 
+energy deposit on a pad and compare it to the average
+deposit recorded by the other pads. 
 Results of this second method are shown in Figure~\ref{fig:dedx_p_exp_2nd},
 from these we concluded that the gains of the 
 second method match best the theoretical lines.
