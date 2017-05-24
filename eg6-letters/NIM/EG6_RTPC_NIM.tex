@@ -509,8 +509,8 @@ The sources of these effects were not determined, but rejection techniques allow
 \label{fig:noise}
 \end{figure}
 
-\section{Track Reconstruction}\label{sec_perf}
 
+\section{Track Reconstruction}\label{sec_rec}
 In order to reconstruct tracks we first select good hits. This means rejecting 
 out-of-time hits and hits linked to the electronic noise. The second step is 
 to reconstruct the spacial origin of the hits using the extracted drift speed and drift path 
@@ -531,8 +531,28 @@ where the sum runs over all the hits of the track, $G_{i}$ is the gain of
 the associated pad, and $L$ is the visible track length in the active drift 
 volume. 
 
-{\bf \color{red} Mohammad: We need some performance studies here, I remember we had
-figures showing efficiency, we need to add them.}
+\section{Performance Studies}\label{sec_perfor}
+The previous discussions have shown that the two modules of the RTPC have 
+slightly different yield, however this yield should not be linked to a 
+different performance of the RTPC. The differences are mainly due to 
+complicated convolution of CLAS and the RTPC acceptances. We measured the 
+efficiency of the RTPC using the elastic scattering on $^4$He, where the 
+exclusive elastic yield is compared to the inclusive yield for the two modules 
+of the detector. Here the inclusive yields are the number of electrons in the 
+elastic invariant mass peak whose corresponding elastically scattered $^4$He 
+would have been in the acceptance of the RTPC, and the exclusive yields require 
+the additional detection of the $^4$He. As a result, we found that the left and 
+the right modules have similar efficiencies except near the target windows, as 
+shown in figure \ref{fig:rtpc_eff}.
+
+\begin{figure}[tb]
+\centering
+\includegraphics[width=8cm]{fig/tpceff.png}
+\caption{The RTPC $^4$He detection efficiency as a function of the longitudinal 
+   position along the detector.
+ \label{fig:rtpc_eff}}
+ \end{figure}
+
 
 \section{Conclusion}
 
