@@ -97,10 +97,9 @@ of the 5 Tesla solenoid magnet surrounding the target \cite{Hyon-suk}.
 
 \begin{figure}[tb]
 \centering
-\includegraphics[scale=0.28]{fig/RTPC_1_all.png}
-\caption{Schematic drawing of CLAS RTPC in a plane perpendicular to 
-the beam direction.  See text for description of the elements.} 
-\label{fig:RTPC_1_4}
+\includegraphics[{trim={0 12cm 0 0},clip, scale=0.4}]{fig_2017/RTPC_1_all.pdf}
+\caption{Schematic drawing of CLAS RTPC in a plane perpendicular to the beam 
+direction.  See text for description of the elements.} \label{fig:RTPC_1_4}
 \end{figure} 
 
 The CLAS RTPC is a 250~mm long cylinder of 158~mm diameter, leaving just enough 
@@ -230,23 +229,23 @@ Triggering and data-readout scheme is as follows. When a Level-1 (L1) trigger
 is received by a FEC-board, a programmable number of samples $N_0$ is digitized 
 and stored in a data memory, and hence processed by the digital circuit. Upon 
 arrival of Level-2 trigger, the latest processed samples are saved in a 
-multi-event memory, invididual to each-channel, ready for readout by the RCU. 
+multi-event memory, individual to each-channel, ready for readout by the RCU.  
 In our setup, the RCU receives the trigger signal from the CLAS Trigger 
 Supervisor system, and distributes both L1 and L2 signals to all the FECs in 
 the crate, with a definite L1-L2 trigger latency. Such latency is programmable, 
-and has to be longh enough to accomodate the digitization of the $N_0$ samples 
-per channel. In the current implementation, $N_0=100$ samples/channel are 
-acquired for each trigger, operating ALTRO at the reduced sampling frequency 
-of $10 MHz$. The L1-L2 latency is thus fixed to 15 $\mu$s.
+and has to be long enough to accommodate the digitization of the $N_0$ samples 
+per channel.  In the current implementation, $N_0=100$ samples/channel are 
+acquired for each trigger, operating ALTRO at the reduced sampling frequency of 
+$10 MHz$. The L1-L2 latency is thus fixed to 15 $\mu$s.
 
 The trigger signal also initiates RCU readout operation from FEC boards. All 
 the measured samples from active channels are reported, together with a channel 
-identifier and a timestamp, to the ROC application, that in turns sends them on 
-the main event builder. During data reconstruction, the acquired samples are 
-processed to obtain, for each readout pad, the accumulated charge (ADC) and 
-the pulse time (T). Since pulse time was obtained as the time-stamp of the 
-first sample above threshold, referred to to the trigger time, the resolution 
-is equivalent to the ALTRO sampling time, 100~ns.
+identifier and a time-stamp, to the ROC application, that in turns sends them 
+on the main event builder. During data reconstruction, the acquired samples are 
+processed to obtain, for each readout pad, the accumulated charge (ADC) and the 
+pulse time (T). Since pulse time was obtained as the time-stamp of the first 
+sample above threshold, referred to to the trigger time, the resolution is 
+equivalent to the ALTRO sampling time, 100~ns.
 
 \begin{figure}[tb]
    \centering
@@ -261,9 +260,9 @@ memory and then written to tape. A glitch-filter permits to reject spurious
 pulses due to noise, by requiring the presence of a minimum number of samples 
 over threshold $N_{MINSEQ}$ to validate a sample. To properly reconstruct 
 the signal shape, $N_{PRE}$ samples before threshold-crossing and $N_{POST}$ 
-samles after the signal returns below threshold are saved. In the present 
-configuration, $N_{MINSEQ}=N_{PRE}=N_{POST}=3$, while threshold is set 
-just above the noise level. 
+samples after the signal returns below threshold are saved. In the present 
+configuration, $N_{MINSEQ}=N_{PRE}=N_{POST}=3$, while threshold is set just 
+above the noise level. 
 
 In order to read all the detector readout pads, four FEC crates are used, 
 each equipped with 6 boards, plus a ROC. A schematic of the readout system, 
@@ -314,7 +313,8 @@ speed of the electrons in the RTPC.\\
 
 \begin{figure}[tb]
 \centering
-\includegraphics[scale=0.35]{fig/RTPC_2.png}
+%\includegraphics[scale=0.4][trim={0 5cm 0 0},clip]{fig_2017/RTPC_1_4.pdf}
+\includegraphics[{trim={0 12cm 0 0},clip, scale=0.4}]{fig_2017/RTPC_1_4.pdf}
 \caption[]{A schematic drawing of a $^{4}$He track (in green) traversing the 
 drift region, with the drift paths followed by the electrons (in black). } 
 \label{fig:RTPC_signals}
@@ -408,7 +408,7 @@ implementation in our reconstruction codes.
 
 \begin{figure}[tb]
 \centering
-\includegraphics[scale=0.37]{fig/FitResult_p2_10.png}
+\includegraphics[scale=0.42]{fig_2017/FitResult_p2_11.pdf}
 \caption{$\Delta \phi$ versus T distribution in the second pass for tracks
 near 35 mm longitudinal position along the RTPC. The black line represents 
 the final drift paths in this slice.}
