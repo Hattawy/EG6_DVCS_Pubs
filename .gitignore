@@ -25,6 +25,7 @@ dvcs_he4_prl.pdf
 *.nfs000000*
 *.bbl
 *.blg
+*.end
 *.dpth
 *.toc
 *.auxlock
