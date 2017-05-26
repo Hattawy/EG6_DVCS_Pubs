@@ -85,7 +85,7 @@ TPC, organized as follows. In section \ref{sec_design}, we detail the design
 and internal structure of the detector. Section \ref{sec_readout} describes 
 the properties of the read-out system. Calibration 
 strategies are discussed in section \ref{sec_calib}. Finally, the performances
-of the RTPC are described in section \ref{sec_perf}.
+of the RTPC are described in section \ref{sec_perfor}.
 
 \section{CLAS RTPC design} \label{sec_design}
 
@@ -274,12 +274,9 @@ with a live time of $70 \%$.
 
 \section{Calibration} \label{sec_calib}
 
-{\bf \color{red} The use of the term TDC is improper and should be removed
-everywhere. Replace by T.}
-
-Two quantities are recorded at the readout board, 
-time (T) and signal amplitude (ADC). The timing information is used to infer 
-the origin of the charge and then the trajectory of the detected particle
+Two quantities are recorded at the readout board, time (T) and signal amplitude 
+(ADC). The timing information is used to infer the origin of the charge and 
+then the trajectory of the detected particle
 resulting in momentum measurement. Going from a collection of 
 times to a momentum measurement requires a good knowledge of the drift speed 
 and drift paths followed by the electrons released in the gas. The recorded ADCs give 
