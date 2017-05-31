@@ -197,7 +197,7 @@ RTPC has 40 rows and 40 columns of pads. The shaded region in figure~\ref{fig:PA
 shows how pads are grouped to 16 channels pre-amplifiers. The pre-amplifier boards, 
 already employed in the BoNuS RTPC \cite{BONUS-NIM}, serve the dual purpose of 
 inverting the RTPC signals polarity -- from negative to positive -- to match the 
-requirements of the subsequent readout system, and driving the 6m long ribbon 
+requirements of the subsequent readout system, and driving the 6~m long ribbon 
 cable that connects to it.
 
 The readout system is based on the Front End Electronic (FEE) boards originally 
@@ -239,8 +239,8 @@ identifier and a time-stamp, to the ROC application, that in turns sends them
 on the main event builder. During data reconstruction, the acquired samples are 
 processed to obtain, for each readout pad, the accumulated charge (ADC) and the 
 pulse time (T). Since pulse time was obtained as the time-stamp of the first 
-sample above threshold, referred to to the trigger time, the resolution is 
-equivalent to the ALTRO sampling time, 100~ns.
+sample above threshold, the resolution is equivalent to the ALTRO sampling 
+time, 100~ns.
 
 \begin{figure}[tb]
    \centering
@@ -269,8 +269,7 @@ with a live time of $70 \%$.
 
 \section{Calibration} \label{sec_calib}
 
-Two quantities are recorded at the readout board, time (T) and signal amplitude 
-(ADC). The timing information is used to infer the origin of the charge and 
+The timing information is used to infer the origin of the charge and 
 then the trajectory of the detected particle
 resulting in momentum measurement. Going from a collection of 
 times to a momentum measurement requires a good knowledge of the drift speed 
@@ -282,7 +281,7 @@ identification.
 In this section we will detail the methods used to calibrate the drift speed,
 drift paths and gains of the detector. Drift speed and paths were initially
 calculated using the MAGBOLTZ~\cite{MAGBOLTZ} program, then refined using
-data to account for variations of the run conditions. We still always assume 
+data to account for variations of the run conditions. We always assume 
 cylindrical symmetry in the chamber for the calibration, such that none of
 the parameters depend on the asimuthal angle $\phi$. The initial MAGBOLTZ
 calibration was improved through several iterations of the
@@ -300,7 +299,7 @@ it causes ionization in the drift region, the released electrons (in black)
 drift to the cylindrical detection plane under the effect of the electric field. The 
 electrons released close to the cathode take the most time to reach the readout 
 pads, but cylindrical symmetry insures they always travel the same 
-distance. By identifying the maximum time T measured, we can infer the drift 
+distance. By identifying the maximum time measured ($T_{Max}$), we can infer the drift 
 speed of the electrons in the RTPC.\\
 
 \begin{figure}[tb]
