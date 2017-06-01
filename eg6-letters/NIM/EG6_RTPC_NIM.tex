@@ -22,13 +22,12 @@ A new Radial Time Projection Chamber (RTPC) was developed at Jefferson
 Laboratory to track low-energy nuclear recoils for the purpose of measuring
 exclusive nuclear channels, such as coherent Deeply Virtual Compton Scattering
 and coherent meson production on $^4$He. In such processes, the $^4$He nucleus
-remains intact and recoils as a whole in the final state. The CEBAF Large
-Acceptance Spectrometer (CLAS) has been used for similar studies on proton
-targets, however it cannot track low energy $\alpha$ particles. In
+remains intact in the final state, however the CEBAF Large
+Acceptance Spectrometer (CLAS) cannot track the low energy $\alpha$ particles. In
 2009, we carried out measurements using the CLAS spectrometer supplemented by
 the RTPC positioned directly around a gaseous $^4$He target, allowing a detection
-threshold as low as $~$150  MeV/c for $^4$He. This article discuses the design,
-work principle, calibration methods and performances of the RTPC.
+threshold as low as 300~MeV/c for $^4$He. This article discuses the design,
+work principle, calibration methods and performances of this RTPC.
 \end{abstract}
 
 \maketitle
@@ -37,10 +36,10 @@ work principle, calibration methods and performances of the RTPC.
 
 Thomas Jefferson National Accelerator Facility (TJNAF), in Newport News, Virginia,
 USA, provides high power electron beams of energy up to 6 GeV and 100$\%$ duty cycle
-to three experimental Halls (A, B, C) simultaneously. The CLAS spectrometer, located
-in Hall-B, is composed of several sub-detectors and two magnets. The spectrometer
-was designed to track charged particles of momentum greater than 250 MeV/c as well 
-as detecting real photons. Figure~\ref{fig:CLAS} shows a three dimensional 
+to three experimental Halls (A, B, C) simultaneously. The CLAS 
+spectrometer~\cite{CLASref}, located
+in Hall-B, is composed of several sub-detectors and two magnets. 
+Figure~\ref{fig:CLAS} shows a three dimensional 
 representation of the baseline CLAS spectrometer:
 \begin{itemize}
  \item Three regions of Drift Chambers (DC) for the tracking of charged 
@@ -76,8 +75,8 @@ electrons, a 5~T solenoid was placed around the target to shield the IC.
 In addition, the recoil nuclei of the coherent DVCS on helium was detected 
 using a RTPC developed to track low energy nuclear fragments. The solenoid field
 serving as the analyzing magnet for the particle tracking in the RTPC. This 
-setup was used during a three months experimental run
-in 2009 with a longitudinally polarized electron beam of 130 nA 
+setup was used during a three months experimental run~\cite{proposal1,proposal2}
+in 2009 with a longitudinally polarized electron beam of 130~nA 
 and energy of 6.064 GeV incident on a gaseous $^{4}$He target.
 
 In this paper we report the design, calibration, and performance of the radial 
@@ -85,7 +84,7 @@ TPC, organized as follows. In section \ref{sec_design}, we detail the design
 and internal structure of the detector. Section \ref{sec_readout} describes 
 the properties of the read-out system. Calibration 
 strategies are discussed in section \ref{sec_calib}. Finally, the performances
-of the RTPC are described in section \ref{sec_perf}.
+of the RTPC are described in section \ref{sec_perfor}.
 
 \section{CLAS RTPC design} \label{sec_design}
 
@@ -93,7 +92,7 @@ With a 6 GeV incident electron energy, the recoiling $^{4}$He nuclei from cohere
 DVCS have an average momentum around 250 MeV/c. Such low energy $\alpha$ 
 particles are stopped very rapidly, so the RTPC was designed to be as close 
 as possible to the target and fitting within the 230~mm diameter 
-of the 5 Tesla solenoid magnet surrounding the target \cite{Hyon-suk}. 
+of the 5 Tesla solenoid magnet surrounding the target. 
 
 \begin{figure}[tb]
 \centering
@@ -120,14 +119,14 @@ from the beam line and towards larger radius:\\
       filled with $^{4}$He gas at 1~atm to minimize secondary interactions from
       M\o ller electrons scattered by the beam. This 
       region is surrounded by a 4 $\mu$m thick window made of aluminized Mylar 
-      and electronically grounded.
+      is electronically grounded.
    \item The second gap region extends between 20~mm and 30~mm and is filled with a 
       gas mixture of 80$\%$ neon and 20$\%$ dimethyl ether (DME). This region 
       is surrounded by a 4~$\mu$m thick window made of aluminized Mylar, which 
       serves as the cathode and is set at 4260~V.
    \item The drift region is filled with the same Ne-DME gas mixture and extends 
       from the cathode to the first Gas Electron Multiplier(GEM), 60 mm away 
-      from the beam axis. The electric field in this region is about 550~V/cm 
+      from the beam axis. The average electric field in this region is about 550~V/cm 
       and perpendicular to the beam.
    \item The electron amplification system is composed of three GEMs located at 
       radii of 60, 63 and 66 mm. In this configuration, the first GEM layer 
@@ -142,31 +141,27 @@ from the beam line and towards larger radius:\\
 \begin{figure}[tbp]
 \centering
 \includegraphics[scale=0.70]{fig/GEM_photo.jpg}
-\caption{Picture of a GEM foil similar to the one used for our RTPC.} 
+\caption{Picture of a GEM foil similar to the one used for our RTPC. {\color{red} Source?}} 
 \label{fig:GEMs}
 \end{figure}
 
-The GEM technology has been chosen for this RTPC for its flexibility, 
-allowing a curved amplification surface. Also, GEMs are known to rarely create 
+The GEM technology has been chosenfor its flexibility as it
+allows for a curved amplification surface. Also, GEMs are known to rarely create 
 sparks~\cite{GEM_ref}, which is important when trying to detect 
 highly ionizing slow nuclei that deposit large amount of energy. The GEMs for 
 this RTPC are made from a Kapton insulator layer, 50~$\mu$m 
 thick, sandwiched between two 5~$\mu$m copper layers. The mesh of each GEM 
 layer is chemically etched with 50~$\mu$m diameter holes with double-conical 
-shapes as illustrated in figure~\ref{fig:GEMs}. A potential difference of 275 V 
-is applied between the two 
-copper layers of the GEM, creating a very strong electric field in each hole 
-leading to high ionization and therefore amplification of the incoming 
-electrons. A high potential of about 1600 V/cm is set between 
-the GEMs to push the electrons toward the next GEM and eventually the readout 
-pads. \\
+shapes as illustrated in figure~\ref{fig:GEMs}. The potential difference 
+applied between the two copper layers of the GEM creates a very strong 
+electric field in each hole leading to high ionization and amplification. 
 
 The drift gas used in the experiment is a 80-20\% neon-DME mixture, this choice 
 has been made in order to balance the energy deposit with a reasonnable
 Lorentz angle. Calculations using the MAGBOLTZ program~\cite{MAGBOLTZ} 
 showed that with the perpendicular 5~T field, we would have a Lorentz angle of 
-about 23$^\circ$ with this mixture. This is already significant and a heavier
-gas would have larger angle increasing significantly
+about 23$^\circ$ with this gas mixture. This is already a significant angle,
+a heavier gas would have larger angle increasing significantly
 the length of the drift paths as the electron would 
 make a long spiral around the beam line before to reach the GEMs. 
 
@@ -177,8 +172,8 @@ keep the material budget small in the forward region where we detect other
 particles in subsequent detectors. We successfuly realized these prerequisites 
 by using fiber glass rings glued to each ends of the GEM foils to form self 
 supporting cylinders that could be installed independently in the RTPC after 
-all gluing and soldering operations.  Because the rigidity of the high 
-rigidity of the GEM foil, the structure was selfsupporting and only the 
+all gluing and soldering operations. The rigidity of the GEM foil is enough
+for the structure to be selfsupporting and only the 
 backward part of the cylinder was fixed to the main mechanical structure. This 
 design only left a light fiberglass ring in the forward region, reducing to a 
 minimum secondary interactions.
@@ -202,7 +197,7 @@ RTPC has 40 rows and 40 columns of pads. The shaded region in figure~\ref{fig:PA
 shows how pads are grouped to 16 channels pre-amplifiers. The pre-amplifier boards, 
 already employed in the BoNuS RTPC \cite{BONUS-NIM}, serve the dual purpose of 
 inverting the RTPC signals polarity -- from negative to positive -- to match the 
-requirements of the subsequent readout system, and driving the 6m long ribbon 
+requirements of the subsequent readout system, and driving the 6~m long ribbon 
 cable that connects to it.
 
 The readout system is based on the Front End Electronic (FEE) boards originally 
@@ -244,8 +239,8 @@ identifier and a time-stamp, to the ROC application, that in turns sends them
 on the main event builder. During data reconstruction, the acquired samples are 
 processed to obtain, for each readout pad, the accumulated charge (ADC) and the 
 pulse time (T). Since pulse time was obtained as the time-stamp of the first 
-sample above threshold, referred to to the trigger time, the resolution is 
-equivalent to the ALTRO sampling time, 100~ns.
+sample above threshold, the resolution is equivalent to the ALTRO sampling 
+time, 100~ns.
 
 \begin{figure}[tb]
    \centering
@@ -274,12 +269,8 @@ with a live time of $70 \%$.
 
 \section{Calibration} \label{sec_calib}
 
-{\bf \color{red} The use of the term TDC is improper and should be removed
-everywhere. Replace by T.}
-
-Two quantities are recorded at the readout board, 
-time (T) and signal amplitude (ADC). The timing information is used to infer 
-the origin of the charge and then the trajectory of the detected particle
+The timing information is used to infer the origin of the charge and 
+then the trajectory of the detected particle
 resulting in momentum measurement. Going from a collection of 
 times to a momentum measurement requires a good knowledge of the drift speed 
 and drift paths followed by the electrons released in the gas. The recorded ADCs give 
@@ -290,7 +281,7 @@ identification.
 In this section we will detail the methods used to calibrate the drift speed,
 drift paths and gains of the detector. Drift speed and paths were initially
 calculated using the MAGBOLTZ~\cite{MAGBOLTZ} program, then refined using
-data to account for variations of the run conditions. We still always assume 
+data to account for variations of the run conditions. We always assume 
 cylindrical symmetry in the chamber for the calibration, such that none of
 the parameters depend on the asimuthal angle $\phi$. The initial MAGBOLTZ
 calibration was improved through several iterations of the
@@ -308,7 +299,7 @@ it causes ionization in the drift region, the released electrons (in black)
 drift to the cylindrical detection plane under the effect of the electric field. The 
 electrons released close to the cathode take the most time to reach the readout 
 pads, but cylindrical symmetry insures they always travel the same 
-distance. By identifying the maximum time T measured, we can infer the drift 
+distance. By identifying the maximum time measured ($T_{Max}$), we can infer the drift 
 speed of the electrons in the RTPC.\\
 
 \begin{figure}[tb]
@@ -570,10 +561,6 @@ photons in the CLAS spectrometer.
    B.A. Mecking et al., The CEBAF large acceptance spectrometer, Nucl. Inst. 
    and Meth. A 503, 513 (2003).
 
-\bibitem{proposal}
-   K.Hafidi et al., Deeply virtual Comton scattering off $^{4}$He, Jlab 
-   proposal to PAC33 (2007).
-
 \bibitem{DCref}
    M.D. Mestayer et al., The CLAS drift chamber System, Nucl. Inst.  and Meth.  
    A 449, 81 (2000).
@@ -594,6 +581,14 @@ photons in the CLAS spectrometer.
    Hyon-Suk Jo, Etude de la Diffusion Compton Profond{\'e}ment Virtuelle Sur le 
    Nucl{\'e}on avec le D{\'e}tecteur CLAS de Jefferson Lab: Mesure des Sections 
    Efficaces polaris{\'e}es et non polaris{\'e}es, IPNO-Thesis, 2007.
+
+\bibitem{proposal1}
+   G Asryan et al., Meson spectroscopy in the Coherent Production on $^{4}$He with CLAS, Jlab 
+   proposal to PAC31 (2007).
+
+\bibitem{proposal2}
+   K. Hafidi et al., Deeply virtual Comton scattering off $^{4}$He, Jlab 
+   proposal to PAC33 (2008).
 
 \bibitem{GEM_ref}
    J. Beringer et al. (Particle Data Group), Particle detectors at 
