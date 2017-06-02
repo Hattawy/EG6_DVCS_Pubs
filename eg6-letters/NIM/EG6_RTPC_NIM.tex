@@ -105,7 +105,8 @@ The CLAS RTPC is a 250~mm long cylinder of 158~mm diameter, leaving just enough
 room to fit pre-amplifiers between the RTPC outer shell and the solenoid. The 
 electromagnetic field is directed perpendicularly to the beam direction, 
 such that drifting electrons are pushed away from the beam line. These electrons 
-are amplified by three layers of curved GEMs and detected by the readout system 
+are amplified by three layers of curved Gas Electron Multiplier 
+(GEM)~\cite{gem_sauli} and detected by the readout system 
 on the external shell of the detector as illustrated in the figure~\ref{fig:RTPC_1_4}. The CLAS 
 RTPC is segmented into two halves with independent GEM amplification systems that 
 cover about 80\% of the azimuthal angle.
@@ -125,7 +126,7 @@ from the beam line and towards larger radius:\\
       is surrounded by a 4~$\mu$m thick window made of aluminized Mylar, which 
       serves as the cathode and is set at 4260~V.
    \item The drift region is filled with the same Ne-DME gas mixture and extends 
-      from the cathode to the first Gas Electron Multiplier(GEM), 60 mm away 
+      from the cathode to the first GEM, 60 mm away 
       from the beam axis. The average electric field in this region is about 550~V/cm 
       and perpendicular to the beam.
    \item The electron amplification system is composed of three GEMs located at 
@@ -334,7 +335,7 @@ run. } \label{fig:RunNumber_61551_TDCmax_Zslice}
 \end{figure}
 
 Due to the non perfect experimental conditions, in particular variations in the 
-gas mixture\footnote{It was noted during the experiment that leaks appeared
+gas mixture~\footnote{It was noted during the experiment that leaks appeared
 and the gas flow had to be increased in few occasions to compensate for this.}, 
 the drift speed changes during the three months long experimental run.  
 Figure \ref{fig:Drift_run_number_1} shows the $T_{Max/2}$ values for 
@@ -366,32 +367,28 @@ fields over the whole volume of the detector. We used such calculation as a
 first calibration, but, 
 as can be seen with the drift speed, gas composition is far from stable in the 
 chamber. Moreover, the 4 $\mu$m foil used as a cathode is easily deformed, such
-that we expect the geometry accuracy to be around the millimeter precision. 
-These problems, already 
+that we expect the geometry accuracy to be of few millimeters, directly impacting 
+our knowledge of the electric field. These problems, already 
 encountered for the BoNuS RTPC calibration~\cite{BONUS-NIM}, motivated the 
-acquisition of specific calibration runs. These are taken with a lower energy 
+acquisition of specific calibration runs. These were taken with a lower energy 
 electron beam (1.20 and 1.27 GeV) to enhance the cross section of the elastic 
-process ($e^{4}$He$\rightarrow e^{4}$He). In this process, the measurement of
-electron kinematics allows to calculate the Helium nucleus kinematic. It is
+scatering ($e^{4}$He$\rightarrow e^{4}$He). In this process, the measurement of
+the electron kinematic allows to calculate the Helium nucleus kinematic. It is
 by comparing this calculated kinematic to the measured one that we fine tune
 the drift paths independently of our knowledge of the exact conditions in the 
 chamber.
 
-The drift paths are ajusted using a set of identified elastic events 
-from our lower beam energy run. Based on the kinematic of the electrons in
-these events, we generate the helium nucleus in a GEANT4 
-simulation~\cite{GEANT4} of our RTPC. Then we compare the calculated GEANT4 trajectory of 
-the Helium nuclei to the hits measured in the chamber. 
-
-Because of the 
+The drift paths are ajusted using a set of identified elastic events. We generate 
+a helium nucleus in a GEANT4 simulation~\cite{GEANT4} of our RTPC for each event
+based on the measured electron kinematic. Then, we compare the simulated trajectory of 
+the Helium nuclei to the hits measured in the chamber. Because of the 
 magnetic field, the drift paths are not linear in the RTPC. So to perform the extraction, 
 we make a first approximation with a linear dependence between the radius of 
 emission and the time of detection, and then refine our result. As it happens, 
 the curvature is minimal and this process converge already on the second 
 iteration. 
 
-At the end of the extraction procedure, where we work in a polar coordinate 
-system ($R$,$\phi$), the azimuthal difference between the detection pad and 
+At the end of the extraction procedure, the azimuthal difference between the detection pad and 
 the ionization point ($\Delta\phi$) is extracted as a function of time. 
 In figure~\ref{fig:DELTA_PHI_TDC}, we show the resulting data points for one 
 bin, where the drift paths is easily identified and eventually fitted for 
@@ -409,7 +406,7 @@ the final drift paths in this slice.}
 To verify the stability of the drift paths, this procedure was carried out 
 using both the 1.204 GeV data from the beginning of the run period and the 
 1.269 GeV data from the end of the run period (shown in blue on 
-figure~\ref{fig:Drift_run_number_1}). Strangely, we found very similar drift paths
+figure~\ref{fig:Drift_run_number_1}). Interestingly, we found very similar drift paths
 for the two data sets and concluded that any changes in the system only
 significantly affected the drift speed.
 
@@ -454,7 +451,7 @@ before reaching the pad, so that the simulated hits match the experimental
 ones. Moreover, the simulation has to match the data acquisition (DAQ) features 
 that can lead to cutting out hits. After setting the simulation properly, we 
 compared simulation to experiment on an event by event basis as shown in 
-figure~\ref{fig:EVENT_adc_tdc}. In this step, the gain for each pad is calculated 
+Figure~\ref{fig:EVENT_adc_tdc}. In this step, the gain for each pad is calculated 
 as the ratio of the measured ADCs to the simulated deposited energy.  
 Then, these gains are refined using correcting factors obtained from a 
 sample of good tracks. For each track, we calculate the corrected 
@@ -523,16 +520,18 @@ the associated pad, and $L$ is the visible track length in the active drift
 volume. 
 
 \section{Performance Studies}\label{sec_perfor}
+
 The previous discussions have shown that the two modules of the RTPC have 
-slightly different yield, however this yield should not be linked to a 
-different performance of the RTPC. The differences are mainly due to 
-complicated convolution of CLAS and the RTPC acceptances. We measured the 
-efficiency of the RTPC using the elastic scattering on $^4$He, where the 
-exclusive elastic yield is compared to the inclusive yield for the two modules 
-of the detector. Here the inclusive yields are the number of electrons in the 
-elastic invariant mass peak whose corresponding elastically scattered $^4$He 
-would have been in the acceptance of the RTPC, and the exclusive yields require 
-the additional detection of the $^4$He. As a result, we found that the left and 
+slightly different behavior and give also different particle yield. However, 
+this should not necessarily be linked to a different performance of the RTPC. 
+Indeed, there is a complicated convolution of CLAS and the RTPC acceptances 
+that can significantly affect the yields and the kinematic of the detected 
+particles. To clarify this question, we measured the 
+efficiency of the RTPC using the elastic scattering on $^4$He, by comparing the 
+ the inclusive yield based on electron detection only to the exclusive elastic 
+yield where we also detect the Helium recoil. We present in 
+Figure~\ref{fig:rtpc_eff} the results for the two modules 
+of the detector. We observe that the left and 
 the right modules have similar efficiencies except near the target windows, as 
 shown in figure \ref{fig:rtpc_eff}.
 
@@ -547,10 +546,10 @@ shown in figure \ref{fig:rtpc_eff}.
 
 \section{Conclusion}
 
-We reported on the construction, operation and calibration of a small RTPC 
-designed to measure helium-4 nuclei in high rate environnement. The operation
+We reported on the construction, operation and calibration of a small GEM based RTPC 
+designed to measure helium-4 nuclei in a high rate environnement. The operation
 of the detector was successful and allowed to detect helium nuclei at a rate
-of several kHz in coincidence with the detection of high energy electrons and 
+of 3.1 kHz in coincidence with the detection of high energy electrons and 
 photons in the CLAS spectrometer. 
 
 \input acknowledgement.tex  
@@ -590,9 +589,22 @@ photons in the CLAS spectrometer.
    K. Hafidi et al., Deeply virtual Comton scattering off $^{4}$He, Jlab 
    proposal to PAC33 (2008).
 
+\bibitem{gem_sauli}
+   F. Sauli, GEM: A new concept for electron amplification in gas detectors, 
+   Nucl. Instr. and Meth. A 386, 531 (1997).
+
 \bibitem{GEM_ref}
    J. Beringer et al. (Particle Data Group), Particle detectors at 
    accelerators, Phys. Rev. D 86, 010001, pages: 339-368, 2012.
+
+\bibitem{MAGBOLTZ}
+   S. Biagi, Monte Carlo simulation of electron drift and diffusion in counting 
+   gases under the influence of electric and magnetic fields, Nucl.  Inst. and 
+   Meth. in Phy. Res. A, vol. 421, pp. 234-240, 1999.
+
+\bibitem{BONUS-NIM}
+   Howard C. Fenker et al., BoNuS: Development and Use of a Radial TPC using 
+   Cylindrical GEMs, Nucl. Instrum. Meth. A592, 273-286 (2008)
 
  \bibitem{ALICE-FEE}
  L. Musa et al., The ALICE TPC front end electronics, 2003 IEEE Nuclear 
@@ -608,25 +620,10 @@ photons in the CLAS spectrometer.
  digital processor for gas detectors'', IEEE Transactions on Nuclear Science, 
  vol. 50, no. 6, pp. 2460-2469, Dec. 2003.
 
-\bibitem{gem_sauli}
-   F. Sauli, GEM: A new concept for electron amplification in gas detectors, 
-   Nucl. Instr. and Meth. A 386, 531 (1997).
-
-\bibitem{BONUS}
-   S. Tkachenko et al., Measurement of the nearly free neutron structure 
-   function using spectator tagging in inelastic $^{2}H(e,e'p)X$ scattering 
-   with CLAS,	Phys. Rev. C 89, 045206 (2014).
-
-\bibitem{MAGBOLTZ}
-   S. Biagi, Monte Carlo simulation of electron drift and diffusion in counting 
-   gases under the influence of electric and magnetic fields, Nucl.  Inst. and 
-   Meth. in Phy. Res. A, vol. 421, pp. 234-240, 1999.
-
 \bibitem{GEANT4}
 http://geant4.cern.ch
  	
-\bibitem{BONUS-NIM}
-Howard C. Fenker et al., BoNuS: Development and Use of a Radial TPC using Cylindrical GEMs, Nucl. Instrum. Meth. A592, 273-286 (2008)
+
 \end{thebibliography}
 
 \end{document}
