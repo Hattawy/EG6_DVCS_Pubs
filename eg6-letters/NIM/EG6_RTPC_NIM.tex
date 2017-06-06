@@ -46,7 +46,7 @@ representation of the baseline CLAS spectrometer:
     particles~\cite{DCref} (in blue on the figure).
  \item Superconducting toroidal magnet (in yellow) to bend the trajectories 
     of charged particles, thus allowing momentum measurement with the DC tracking information.
- \item Cherenvkov Counters (CC) to distinguish electrons from other negative 
+ \item Cerenkov Counters (CC) to distinguish electrons from other negative 
     particles, such as pions, at lower energies~\cite{CCref} (in pink).
  \item Scintillation Counters (SC) to identify hadrons by measuring their 
     time of flight (TOF)~\cite{TOFref} (in red).
@@ -146,7 +146,7 @@ from the beam line and towards larger radius:\\
 \label{fig:GEMs}
 \end{figure}
 
-The GEM technology has been chosenfor its flexibility as it
+The GEM technology has been chosen for its flexibility as it
 allows for a curved amplification surface. Also, GEMs are known to rarely create 
 sparks~\cite{GEM_ref}, which is important when trying to detect 
 highly ionizing slow nuclei that deposit large amount of energy. The GEMs for 
@@ -158,7 +158,7 @@ applied between the two copper layers of the GEM creates a very strong
 electric field in each hole leading to high ionization and amplification. 
 
 The drift gas used in the experiment is a 80-20\% neon-DME mixture, this choice 
-has been made in order to balance the energy deposit with a reasonnable
+has been made in order to balance the energy deposit with a reasonable
 Lorentz angle. Calculations using the MAGBOLTZ program~\cite{MAGBOLTZ} 
 showed that with the perpendicular 5~T field, we would have a Lorentz angle of 
 about 23$^\circ$ with this gas mixture. This is already a significant angle,
@@ -170,11 +170,11 @@ One of the important problematic to develop the radial TPC was to obtain a
 good support structure of the GEM foils, allowing an easy installation of the 
 GEM in good conditions and with high precision. At the same time, we wanted to 
 keep the material budget small in the forward region where we detect other 
-particles in subsequent detectors. We successfuly realized these prerequisites 
+particles in subsequent detectors. We successfully realized these prerequisites 
 by using fiber glass rings glued to each ends of the GEM foils to form self 
 supporting cylinders that could be installed independently in the RTPC after 
 all gluing and soldering operations. The rigidity of the GEM foil is enough
-for the structure to be selfsupporting and only the 
+for the structure to be self supporting and only the 
 backward part of the cylinder was fixed to the main mechanical structure. This 
 design only left a light fiberglass ring in the forward region, reducing to a 
 minimum secondary interactions.
@@ -202,7 +202,7 @@ requirements of the subsequent readout system, and driving the 6~m long ribbon
 cable that connects to it.
 
 The readout system is based on the Front End Electronic (FEE) boards originally 
-developed for the ALICE TPC readout system at Cern~\cite{ALICE-FEE}. Each 
+developed for the ALICE TPC readout system at CERN~\cite{ALICE-FEE}. Each 
 readout channel is made of three main components: a charge sensitive, low 
 impedance shaping amplifier, a 10 bit, 25-MHz digitizer, and a digital circuit 
 that implements online-processing algorithms (pedestal subtraction, zero 
@@ -214,7 +214,7 @@ chain is implemented on a single Front End Card (FEC), hosting 128 channels.
 FECs are hosted in custom crates, mounted close to the detector. A Readout 
 Control Unit (ROC) board is used to distribute the trigger signal to FECs 
 and for data readout. Each RCU can handle up to 25 FECs. Communication 
-between ROC and FECs is performed trough a custom backplane, implementing 
+between ROC and FECs is performed trough a custom back-plane, implementing 
 a low-voltage signal bus. The RCU communicates with the CLAS DAQ system 
 trough a 200 MB/s optical link, connected to a data acquisition PC hosting 
 a ReadOut Receiver Card (RORC). This PC hosts the readout controller 
@@ -265,7 +265,7 @@ each equipped with 6 boards, plus a ROC. A schematic of the readout system,
 for a single crate, is reported in figure~\ref{fig:ReadoutScheme}. This 
 configuration permits to reduce the dead time associated to FEC readout 
 operations, scaling linearly with the number of boards in the crate. During 
-the 2009 run, the system was succesfully operated with a DAQ rate of 3.1 kHz, 
+the 2009 run, the system was successfully operated with a DAQ rate of 3.1 kHz, 
 with a live time of $70 \%$.
 
 \section{Calibration} \label{sec_calib}
@@ -284,7 +284,7 @@ drift paths and gains of the detector. Drift speed and paths were initially
 calculated using the MAGBOLTZ~\cite{MAGBOLTZ} program, then refined using
 data to account for variations of the run conditions. We always assume 
 cylindrical symmetry in the chamber for the calibration, such that none of
-the parameters depend on the asimuthal angle $\phi$. The initial MAGBOLTZ
+the parameters depend on the azimuthal angle $\phi$. The initial MAGBOLTZ
 calibration was improved through several iterations of the
 process described below, each iteration increasing the number of events 
 properly reconstructed in the RTPC. The figures presented in this section
@@ -372,13 +372,13 @@ our knowledge of the electric field. These problems, already
 encountered for the BoNuS RTPC calibration~\cite{BONUS-NIM}, motivated the 
 acquisition of specific calibration runs. These were taken with a lower energy 
 electron beam (1.20 and 1.27 GeV) to enhance the cross section of the elastic 
-scatering ($e^{4}$He$\rightarrow e^{4}$He). In this process, the measurement of
+scattering ($e^{4}$He$\rightarrow e^{4}$He). In this process, the measurement of
 the electron kinematic allows to calculate the Helium nucleus kinematic. It is
 by comparing this calculated kinematic to the measured one that we fine tune
 the drift paths independently of our knowledge of the exact conditions in the 
 chamber.
 
-The drift paths are ajusted using a set of identified elastic events. We generate 
+The drift paths are adjusted using a set of identified elastic events. We generate 
 a helium nucleus in a GEANT4 simulation~\cite{GEANT4} of our RTPC for each event
 based on the measured electron kinematic. Then, we compare the simulated trajectory of 
 the Helium nuclei to the hits measured in the chamber. Because of the 
@@ -486,7 +486,7 @@ Two independent noise signatures were identified in the raw data and removed in 
 
 The first is an oscillatory noise located early in the readout time window, shown in the top panel of Figure~\ref{fig:noise} for a particularly noisy channel.  Its amplitude is not dissimilar to those of real tracks, and about 18\% of the readout channels exhibit large contributions from this noise characteristic.  Due to its unique time-energy correlation for the given channels, the noise could be removed on an event by event and channel by channel basis without significant loss of good signals, and the result is illustrated in the bottom panel of Figure~\ref{fig:noise}.
 
-The second is a coherent noise affecting about 25\% of the pramplifiers, where the signature is simultaneous hits in most of the 16 channels in a preamp group.   An event-based technique to identify and remove it was developed based on counting simultaneous hits in preamp group, and, if sufficiently large, perform a dynamic pedestal subtraction based on the average ADC of the channels' neighbors within the preamp group.
+The second is a coherent noise affecting about 25\% of the pre-amplifiers, where the signature is simultaneous hits in most of the 16 channels in a preamp group.   An event-based technique to identify and remove it was developed based on counting simultaneous hits in preamp group, and, if sufficiently large, perform a dynamic pedestal subtraction based on the average ADC of the channels' neighbors within the preamp group.
 
 The sources of these effects were not determined, but rejection techniques allowed to reconstruct 10\% more good tracks, with no significant loss, and recover 70 channels that were previously ignored due to excessive noise levels.
 
@@ -547,12 +547,12 @@ shown in figure \ref{fig:rtpc_eff}.
 \section{Conclusion}
 
 We reported on the construction, operation and calibration of a small GEM based RTPC 
-designed to measure helium-4 nuclei in a high rate environnement. The operation
+designed to measure helium-4 nuclei in a high rate environment. The operation
 of the detector was successful and allowed to detect helium nuclei at a rate
 of 3.1 kHz in coincidence with the detection of high energy electrons and 
 photons in the CLAS spectrometer. 
 
-\input acknowledgement.tex  
+\input acknowledgment.tex  
 
 \begin{thebibliography}{99}
 
