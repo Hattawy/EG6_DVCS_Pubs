@@ -98,18 +98,18 @@ of the 5 Tesla solenoid magnet surrounding the target.
 \centering
 \includegraphics[{trim={0 12cm 0 0},clip, scale=0.4}]{fig_2017/RTPC_1_all.pdf}
 \caption{Schematic drawing of CLAS RTPC in a plane perpendicular to the beam 
-direction.  See text for description of the elements.} \label{fig:RTPC_1_4}
+direction. See text for description of the elements.} \label{fig:RTPC_1_4}
 \end{figure} 
 
 The CLAS RTPC is a 250~mm long cylinder of 158~mm diameter, leaving just enough 
 room to fit pre-amplifiers between the RTPC outer shell and the solenoid. The 
 electromagnetic field is directed perpendicularly to the beam direction, 
 such that drifting electrons are pushed away from the beam line. These electrons 
-are amplified by three layers of curved Gas Electron Multiplier 
-(GEM)~\cite{gem_sauli} and detected by the readout system 
-on the external shell of the detector as illustrated in the figure~\ref{fig:RTPC_1_4}. The CLAS 
-RTPC is segmented into two halves with independent GEM amplification systems that 
-cover about 80\% of the azimuthal angle.
+are amplified by three layers of curved GEMs and detected by the readout system 
+on the external shell of the detector as illustrated in the 
+figure~\ref{fig:RTPC_1_4}. The CLAS RTPC is segmented into two halves with 
+independent GEM amplification systems that cover about 80\% of the azimuthal 
+angle.
 
 We detail here the different regions shown in figure~\ref{fig:RTPC_1_4} starting 
 from the beam line and towards larger radius:\\
@@ -135,15 +135,18 @@ from the beam line and towards larger radius:\\
       obtain a strong ($\sim$1600 V/cm) electric field between the GEM foils. A 
       275~V bias is applied to each GEM for amplification.
    \item The readout board has an internal radius of 69~mm and collects charge
-     from the GEMs. Preamplifiers are plugged directly on its outer side and
+     from the GEMs. Pre-amplifiers are plugged directly on its outer side and
      transmit the signal to the data acquisition electronics.
 \end{itemize}
 
 \begin{figure}[tbp]
 \centering
 \includegraphics[scale=0.70]{fig/GEM_photo.jpg}
-\caption{Picture of a GEM foil similar to the one used for our RTPC. {\color{red} Source?}} 
-\label{fig:GEMs}
+\caption{Image of a typical GEM foil similar to the one used for our RTPC 
+\cite{GEM_ref_pic}.} 
+   
+   
+   \label{fig:GEMs}
 \end{figure}
 
 The GEM technology has been chosen for its flexibility as it
@@ -174,10 +177,10 @@ particles in subsequent detectors. We successfully realized these prerequisites
 by using fiber glass rings glued to each ends of the GEM foils to form self 
 supporting cylinders that could be installed independently in the RTPC after 
 all gluing and soldering operations. The rigidity of the GEM foil is enough
-for the structure to be self supporting and only the 
-backward part of the cylinder was fixed to the main mechanical structure. This 
-design only left a light fiberglass ring in the forward region, reducing to a 
-minimum secondary interactions.
+for the structure to be self-supporting and only the backward part of the 
+cylinder was fixed to the main mechanical structure. This design only left a 
+light fiberglass ring in the forward region, reducing to a minimum secondary 
+interactions.
 
 \section{Readout System} \label{sec_readout}
 
@@ -264,9 +267,9 @@ In order to read all the detector readout pads, four FEC crates are used,
 each equipped with 6 boards, plus a ROC. A schematic of the readout system, 
 for a single crate, is reported in figure~\ref{fig:ReadoutScheme}. This 
 configuration permits to reduce the dead time associated to FEC readout 
-operations, scaling linearly with the number of boards in the crate. During 
-the 2009 run, the system was successfully operated with a DAQ rate of 3.1 kHz, 
-with a live time of $70 \%$.
+operations, scaling linearly with the number of boards in the crate. During the 
+2009 run, the system was successfully operated with a DAQ rate of 3.1 kHz, with 
+a live time of $70 \%$.
 
 \section{Calibration} \label{sec_calib}
 
@@ -378,15 +381,17 @@ by comparing this calculated kinematic to the measured one that we fine tune
 the drift paths independently of our knowledge of the exact conditions in the 
 chamber.
 
-The drift paths are adjusted using a set of identified elastic events. We generate 
-a helium nucleus in a GEANT4 simulation~\cite{GEANT4} of our RTPC for each event
-based on the measured electron kinematic. Then, we compare the simulated trajectory of 
-the Helium nuclei to the hits measured in the chamber. Because of the 
-magnetic field, the drift paths are not linear in the RTPC. So to perform the extraction, 
-we make a first approximation with a linear dependence between the radius of 
-emission and the time of detection, and then refine our result. As it happens, 
-the curvature is minimal and this process converge already on the second 
-iteration. 
+The drift paths are adjusted using a set of identified elastic events from our 
+lower beam energy run. Based on the kinematic of the electrons in these events, 
+we generate the helium nucleus in a GEANT4 simulation~\cite{GEANT4} of our 
+RTPC. Then we compare the calculated GEANT4 trajectory of the Helium nuclei to 
+the hits measured in the chamber. 
+
+Because of the magnetic field, the drift paths are not linear in the RTPC. So 
+to perform the extraction, we make a first approximation with a linear 
+dependence between the radius of emission and the time of detection, and then 
+refine our result. As it happens, the curvature is minimal and this process 
+converge already on the second iteration. 
 
 At the end of the extraction procedure, the azimuthal difference between the detection pad and 
 the ionization point ($\Delta\phi$) is extracted as a function of time. 
@@ -486,14 +491,24 @@ Two independent noise signatures were identified in the raw data and removed in 
 
 The first is an oscillatory noise located early in the readout time window, shown in the top panel of Figure~\ref{fig:noise} for a particularly noisy channel.  Its amplitude is not dissimilar to those of real tracks, and about 18\% of the readout channels exhibit large contributions from this noise characteristic.  Due to its unique time-energy correlation for the given channels, the noise could be removed on an event by event and channel by channel basis without significant loss of good signals, and the result is illustrated in the bottom panel of Figure~\ref{fig:noise}.
 
-The second is a coherent noise affecting about 25\% of the pre-amplifiers, where the signature is simultaneous hits in most of the 16 channels in a preamp group.   An event-based technique to identify and remove it was developed based on counting simultaneous hits in preamp group, and, if sufficiently large, perform a dynamic pedestal subtraction based on the average ADC of the channels' neighbors within the preamp group.
+The second is a coherent noise affecting about 25\% of the preamplifiers, where 
+the signature is simultaneous hits in most of the 16 channels in a preamp 
+group.   An event-based technique to identify and remove it was developed based 
+on counting simultaneous hits in preamp group, and, if sufficiently large, 
+perform a dynamic pedestal subtraction based on the average ADC of the 
+channels' neighbors within the preamp group.
 
-The sources of these effects were not determined, but rejection techniques allowed to reconstruct 10\% more good tracks, with no significant loss, and recover 70 channels that were previously ignored due to excessive noise levels.
+The sources of these effects were not determined, but rejection techniques 
+allowed to reconstruct 10\% more good tracks, with no significant loss, and 
+recover 70 channels that were previously ignored due to excessive noise levels.
 
 \begin{figure}[tb]\centering
 \includegraphics[scale=0.27]{fig/noisy_pad_before_rejection2.png}
 \includegraphics[scale=0.27]{fig/noisy_pad_after_rejection2.png}
-\caption{The ADC vs. T spectrum for an example noisy channel before (top) and after (bottom) noise rejection algorithms.  Only hits associated with tracks are included, and the selection of events and tracks is the same in both plots.}
+\caption{The ADC vs. T spectrum for an example noisy channel before (top) and 
+after (bottom) noise rejection algorithms.  Only hits associated with tracks 
+are included, and the selection of events and tracks is the same in both 
+plots.}
 \label{fig:noise}
 \end{figure}
 
@@ -546,8 +561,8 @@ shown in figure \ref{fig:rtpc_eff}.
 
 \section{Conclusion}
 
-We reported on the construction, operation and calibration of a small GEM based RTPC 
-designed to measure helium-4 nuclei in a high rate environment. The operation
+We reported on the construction, operation and calibration of a small RTPC 
+designed to measure helium-4 nuclei in high rate environment. The operation
 of the detector was successful and allowed to detect helium nuclei at a rate
 of 3.1 kHz in coincidence with the detection of high energy electrons and 
 photons in the CLAS spectrometer. 
@@ -589,9 +604,9 @@ photons in the CLAS spectrometer.
    K. Hafidi et al., Deeply virtual Comton scattering off $^{4}$He, Jlab 
    proposal to PAC33 (2008).
 
-\bibitem{gem_sauli}
-   F. Sauli, GEM: A new concept for electron amplification in gas detectors, 
-   Nucl. Instr. and Meth. A 386, 531 (1997).
+\bibitem{GEM_ref_pic}
+   F. Sauli, The Gas Electron Multiplier (GEM): Operating Principles and 
+   Applications, Nucl. Instr. and Meth, A805(2016)2
 
 \bibitem{GEM_ref}
    J. Beringer et al. (Particle Data Group), Particle detectors at 
