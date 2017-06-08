@@ -1,5 +1,5 @@
 #! /bin/bash
-pdflatex -shell-escape EG6_analysis_note_vf_Dec2016.tex
-pdflatex -shell-escape EG6_analysis_note_vf_Dec2016.tex
-rm -f *.tex~ EG6_analysis_note_vf_Dec2016.mtc1 EG6_analysis_note_vf_Dec2016.aux EG6_analysis_note_vf_Dec2016.dvi EG6_analysis_note_vf_Dec2016.lof EG6_analysis_note_vf_Dec2016.log EG6_analysis_note_vf_Dec2016.out EG6_analysis_note_vf_Dec2016.lot EG6_analysis_note_vf_Dec2016.toc data_analysis.log experimental_setup.log ref.log RTPC.log EG6_analysis_note_vf_Dec2016.brf EG6_analysis_note_vf_Dec2016.maf EG6_analysis_note_vf_Dec2016.mtc EG6_analysis_note_vf_Dec2016.mtc0 EG6_analysis_note_vf_Dec2016.nlo formatAndDefs.aux TitlePage.aux
+pdflatex -shell-escape EG6_analysis_note_vf.tex
+pdflatex -shell-escape EG6_analysis_note_vf.tex
+rm -f *.tex~ EG6_analysis_note_vf.mtc1 EG6_analysis_note_vf.aux EG6_analysis_note_vf.dvi EG6_analysis_note_vf.lof EG6_analysis_note_vf.log EG6_analysis_note_vf.out EG6_analysis_note_vf.lot EG6_analysis_note_vf.toc data_analysis.log experimental_setup.log ref.log RTPC.log EG6_analysis_note_vf.brf EG6_analysis_note_vf.maf EG6_analysis_note_vf.mtc EG6_analysis_note_vf.mtc0 EG6_analysis_note_vf.nlo formatAndDefs.aux TitlePage.aux
 
