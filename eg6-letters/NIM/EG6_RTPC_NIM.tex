@@ -80,15 +80,15 @@ in 2009 with a longitudinally polarized electron beam of 130~nA
 and energy of 6.064 GeV incident on a gaseous $^{4}$He target.
 
 The original design of the RTPC~\cite{BONUS-NIM} was developed for the BoNuS 
-experiment at Jefferson Lab which took data in CLAS in 2005. An enhanced design 
-for use in the 2009 DVCS experiment is described in section \ref{sec_design} 
+experiment at Jefferson Lab which took data in CLAS in 2005. An enhanced design, 
+used in the 2009 DVCS experiment, is described in section \ref{sec_design} 
 of this paper. Significant improvements were made to the RTPC mechanical 
 structure and fabrication technique that both increased the acceptance and 
 reduced the amount of material in the path of the outgoing particles. The 
 data acquisition system described in section \ref{sec_readout} was reconfigured 
 to increase the event readout rate. The calibration strategy and results for 
-the RTPC are discussed in section \ref{sec_calib}. Finally, the performances
-of the RTPC are described in section \ref{sec_perfor}.
+the RTPC are discussed in section \ref{sec_calib}. Finally, the overall performance
+of the RTPC is described in section \ref{sec_perfor}.
 
 \section{CLAS RTPC design} \label{sec_design}
 
@@ -111,12 +111,12 @@ electromagnetic field is directed perpendicularly to the beam direction,
 such that drifting electrons are pushed away from the beam line. These electrons 
 are amplified by three layers of curved GEMs and detected by the readout system 
 on the external shell of the detector as illustrated in the 
-figure~\ref{fig:RTPC_1_4}. The CLAS RTPC is segmented into two halves with 
+Fig.~\ref{fig:RTPC_1_4}. The CLAS RTPC is segmented into two halves with 
 independent GEM amplification systems that cover about 80\% of the azimuthal 
 angle.
 
-We detail here the different regions shown in figure~\ref{fig:RTPC_1_4} starting 
-from the beam line and towards larger radius:\\
+We detail here the different regions shown in Fig.~\ref{fig:RTPC_1_4} starting 
+from the beam line towards larger radius:\\
 \begin{itemize}
    \item First, the 6 atm helium-4 target extends along the beam line axis, it 
       is 284~mm long with a 3~mm radius wall made of a 27-$\mu$m-thick Kapton.
@@ -124,9 +124,9 @@ from the beam line and towards larger radius:\\
       filled with $^{4}$He gas at 1~atm to minimize secondary interactions from
       M\o ller electrons scattered by the beam. This 
       region is surrounded by a 4 $\mu$m thick window made of aluminized Mylar 
-      is electronically grounded.
+      that is electronically grounded.
    \item The second gap region extends between 20~mm and 30~mm and is filled with a 
-      gas mixture of 80$\%$ neon and 20$\%$ dimethyl ether (DME). This region 
+      gas mixture of 80$\%$ neon (Ne) and 20$\%$ dimethyl ether (DME). This region 
       is surrounded by a 4~$\mu$m thick window made of aluminized Mylar, which 
       serves as the cathode and is set at 4260~V.
    \item The drift region is filled with the same Ne-DME gas mixture and extends 
@@ -153,34 +153,35 @@ from the beam line and towards larger radius:\\
    \label{fig:GEMs}
 \end{figure}
 
-The GEM technology has been chosen for its flexibility as it
-allows for a curved amplification surface. Also, GEMs are known to rarely create 
-sparks~\cite{GEM_ref}, which is important when trying to detect 
+The GEM technology has been chosen for the flexibility of the GEM foils,
+which can be easily used to produce a curved amplification surface. Also, 
+GEMs are known to have relatively low sparks rate~\cite{GEM_ref}, which 
+is important when trying to detect 
 highly ionizing slow nuclei that deposit large amount of energy. The GEMs for 
 this RTPC are made from a Kapton insulator layer, 50~$\mu$m 
 thick, sandwiched between two 5~$\mu$m copper layers. The mesh of each GEM 
 layer is chemically etched with 50~$\mu$m diameter holes with double-conical 
-shapes as illustrated in figure~\ref{fig:GEMs}. The potential difference 
+shapes as illustrated in Fig.~\ref{fig:GEMs}. The potential difference 
 applied between the two copper layers of the GEM creates a very strong 
 electric field in each hole leading to high ionization and amplification. 
 
-The drift gas used in the experiment is a 80-20\% neon-DME mixture, this choice 
+The drift gas used in the experiment is a 80-20\% Ne-DME mixture, this choice 
 has been made in order to balance the energy deposit with a reasonable
 Lorentz angle. Calculations using the MAGBOLTZ program~\cite{MAGBOLTZ} 
 showed that with the perpendicular 5~T field, we would have a Lorentz angle of 
 about 23$^\circ$ with this gas mixture. This is already a significant angle,
 a heavier gas would have larger angle increasing significantly
 the length of the drift paths as the electron would 
-make a long spiral around the beam line before to reach the GEMs. 
+make a long spiral around the beam line to reach the GEMs. 
 
-One of the important problematic to develop the radial TPC was to obtain a 
-good support structure of the GEM foils, allowing an easy installation of the 
-GEM in good conditions and with high precision. At the same time, we wanted to 
+One of the important challenge in developing the radial TPC was how to obtain a 
+good support structure of the GEM foils to allow a tractable but highly precise 
+installation of the GEMs. At the same time, we wanted to 
 keep the material budget small in the forward region where we detect other 
 particles in subsequent detectors. We successfully realized these prerequisites 
 by using fiber glass rings glued to each ends of the GEM foils to form self 
 supporting cylinders that could be installed independently in the RTPC after 
-all gluing and soldering operations. The rigidity of the GEM foil is enough
+all gluing and soldering operations. The rigidity of the GEM foils was enough
 for the structure to be self-supporting and only the backward part of the 
 cylinder was fixed to the main mechanical structure. This design only left a 
 light fiberglass ring in the forward region, reducing to a minimum secondary 
@@ -198,14 +199,14 @@ pre-amplifier.} \label{fig:PADs}
 
 The RTPC electron collection system has 3200 readout pads. These elements are
 located at the end of the amplification region, 69 mm from the central axis.
-Figure \ref{fig:PADs} shows a schematic drawing of the size and 
+Figure~\ref{fig:PADs} shows a schematic drawing of the size and 
 configuration of the pads. Each readout pad is 5 mm in length and 4.45 mm in 
-width.  The shift between the rows allows to reduce aliasing. Each half of the 
-RTPC has 40 rows and 40 columns of pads. The shaded region in figure~\ref{fig:PADs} 
+width. The shift between the rows permits the reduction of aliasing. Each half of the 
+RTPC has 40 rows and 40 columns of pads. The shaded region in Fig.~\ref{fig:PADs} 
 shows how pads are grouped to 16 channels pre-amplifiers. The pre-amplifier boards, 
 already employed in the BoNuS RTPC~\cite{BONUS-NIM}, serve the dual purpose of 
 inverting the RTPC signals polarity -- from negative to positive -- to match the 
-requirements of the subsequent readout system, and driving the 6~m long ribbon 
+requirements of the subsequent readout system, and driv the 6~m long ribbon 
 cable that connects to it.
 
 The readout system is based on the Front End Electronic (FEE) boards originally 
@@ -213,20 +214,21 @@ developed for the ALICE TPC readout system at CERN~\cite{ALICE-FEE}. Each
 readout channel is made of three main components: a charge sensitive, low 
 impedance shaping amplifier, a 10 bit, 25-MHz digitizer, and a digital circuit 
 that implements online-processing algorithms (pedestal subtraction, zero 
-suppression, ad tail cancellation). The amplifier is implemented in a 
+suppression, and tail cancellation). The amplifier is implemented in a 
 fully-analogue ASIC, PASA~\cite{ALICE-PASA}, while the subsequent signal 
 digitization and elaboration part is implemented in a digital ASIC, 
 ALTRO~\cite{ALICE-ALTRO}. Both ASICs host 16 channels. The full readout 
 chain is implemented on a single Front End Card (FEC), hosting 128 channels. 
-FECs are hosted in custom crates, mounted close to the detector. A Readout 
-Control Unit (ROC) board is used to distribute the trigger signal to FECs 
-and for data readout. Each RCU can handle up to 25 FECs. Communication 
-between ROC and FECs is performed trough a custom back-plane, implementing 
-a low-voltage signal bus. The RCU communicates with the CLAS DAQ system 
+FECs are hosted in custom crates, mounted close to the detector. A readout 
+control unit (RCU) board is used to distribute the trigger signal to FECs 
+and for data readout. Each RCU can handle up to 25 FECs with communication 
+between them performed trough a 
+custom back-plane, implementing a low-voltage signal bus. The RCU communicates 
+with the CLAS data acquisition (DAQ) system 
 trough a 200 MB/s optical link, connected to a data acquisition PC hosting 
-a ReadOut Receiver Card (RORC). This PC hosts the readout controller 
-application (ROC) used to interface with the CLAS DAQ system. An Ethernet 
-link is also present, for slow-controls and monitoring.
+a ReadOut Receiver Card (RORC) used to interface with 
+the CLAS DAQ system. An Ethernet link is also present, for slow-controls and 
+monitoring.
 
 Triggering and data-readout scheme is as follows. When a Level-1 (L1) trigger 
 is received by a FEC-board, a programmable number of samples $N_0$ is digitized 
@@ -239,7 +241,7 @@ the crate, with a definite L1-L2 trigger latency. Such latency is programmable,
 and has to be long enough to accommodate the digitization of the $N_0$ samples 
 per channel.  In the current implementation, $N_0=100$ samples/channel are 
 acquired for each trigger, operating ALTRO at the reduced sampling frequency of 
-$10 MHz$. The L1-L2 latency is thus fixed to 15 $\mu$s.
+$10$~MHz. The L1-L2 latency is thus fixed to 15 $\mu$s.
 
 The trigger signal also initiates RCU readout operation from FEC boards. All 
 the measured samples from active channels are reported, together with a channel 
@@ -248,7 +250,7 @@ on the main event builder. During data reconstruction, the acquired samples are
 processed to obtain, for each readout pad, the accumulated charge (ADC) and the 
 pulse time (T). Since pulse time was obtained as the time-stamp of the first 
 sample above threshold, the resolution is equivalent to the ALTRO sampling 
-time, 100~ns.
+time of 100~ns.
 
 \begin{figure}[tb]
    \centering
@@ -269,9 +271,9 @@ above the noise level.
 
 In order to read all the detector readout pads, four FEC crates are used, 
 each equipped with 6 boards, plus a ROC. A schematic of the readout system, 
-for a single crate, is reported in figure~\ref{fig:ReadoutScheme}. This 
+for a single crate, is reported in Fig.~\ref{fig:ReadoutScheme}. This 
 configuration permits to reduce the dead time associated to FEC readout 
-operations, scaling linearly with the number of boards in the crate. During the 
+operations and to scale linearly with the number of boards in the crate. During the 
 2009 run, the system was successfully operated with a DAQ rate of 3.1 kHz, with 
 a live time of $70 \%$.
 
@@ -283,7 +285,7 @@ resulting in momentum measurement. Going from a collection of
 times to a momentum measurement requires a good knowledge of the drift speed 
 and drift paths followed by the electrons released in the gas. The recorded ADCs give 
 the deposited energy per unit of length ($\small{\frac{dE}{dX}}$) which, 
-together with the momentum calculated from the trajectory, enables particle 
+together with the momentum calculated from the trajectory, enable the particle 
 identification.
 
 In this section we will detail the methods used to calibrate the drift speed,
@@ -301,8 +303,8 @@ calibration process.
 
 \subsection{Drift Speed Parametrization}
 
-We determine the drift speed using tracks reconstructed in the RTPC. In figure 
-\ref{fig:RTPC_signals}, a typical $^{4}$He track is represented (in green). After 
+We determine the drift speed using tracks reconstructed in the RTPC. In 
+Fig.~\ref{fig:RTPC_signals}, a typical $^{4}$He track is represented (in green). After 
 it causes ionization in the drift region, the released electrons (in black) 
 drift to the cylindrical detection plane under the effect of the electric field. The 
 electrons released close to the cathode take the most time to reach the readout 
@@ -320,12 +322,12 @@ drift region, with the drift paths followed by the electrons (in black). }
 \end{figure}
 
 To measure the drift speed, we use the time profile of all hits in the 
-chamber shown in figure \ref{fig:TDC_profile}. We can clearly observe the 
+chamber shown in Fig.~\ref{fig:TDC_profile}. We can clearly observe the 
 dropping edge expected from geometrical considerations. We define a value $T_{Max/2}$ at 
 which the dropping edge passes half the maximum number of hits in the 
-histogram. This value is measure in bins along the 200 mm RTPC's length to take into 
-account variations in the electric and magnetic field in the RTPC (see figure 
-\ref{fig:RunNumber_61551_TDCmax_Zslice}). 
+histogram. This value was measured in bins along the 200 mm RTPC's length to take into 
+account variations in the electric and magnetic field in the RTPC (see 
+Fig.~\ref{fig:RunNumber_61551_TDCmax_Zslice}). 
 
 \begin{figure}[tb]
    \centering
@@ -345,7 +347,7 @@ Due to the non perfect experimental conditions, in particular variations in the
 gas mixture~\footnote{It was noted during the experiment that leaks appeared
 and the gas flow had to be increased in few occasions to compensate for this.}, 
 the drift speed changes during the three months long experimental run.  
-Figure \ref{fig:Drift_run_number_1} shows the $T_{Max/2}$ values for 
+Figure~\ref{fig:Drift_run_number_1} shows the $T_{Max/2}$ values for 
 individual runs (approximately 2 hours long). We observe a significant 
 variation of the drift speed over time and accounted for it in the drift 
 speed used for the track reconstruction. 
@@ -359,8 +361,7 @@ speed used for the track reconstruction.
 
 
 In summary, we obtain from our calibration a parametrization of the drift speed 
-as a function of both position along the beam axis and run number (we did not 
-observe any correlation between the effects). These 
+as a function of both position along the beam axis and the run number. These 
 functions were extracted for our entire data set and implemented in the 
 track reconstructions code.
    
@@ -380,15 +381,14 @@ encountered for the BoNuS RTPC calibration~\cite{BONUS-NIM}, motivated the
 acquisition of specific calibration runs. These were taken with a lower energy 
 electron beam (1.20 and 1.27 GeV) to enhance the cross section of the elastic 
 scattering ($e^{4}$He$\rightarrow e^{4}$He). In this process, the measurement of
-the electron kinematic allows to calculate the Helium nucleus kinematic. It is
-by comparing this calculated kinematic to the measured one that we fine tune
-the drift paths independently of our knowledge of the exact conditions in the 
-chamber.
+the electron kinematic allows to calculate directly the Helium nucleus one. 
+By comparing this calculated kinematic to the measurement in the RTPC, we fine tuned
+the drift paths independently of our knowledge of the exact chamber's conditions.
 
 The drift paths are adjusted using a set of identified elastic events from our 
-lower beam energy run. Based on the kinematic of the electrons in these events, 
-we generate the helium nucleus in a GEANT4 simulation~\cite{GEANT4} of our 
-RTPC. Then we compare the calculated GEANT4 trajectory of the Helium nuclei to 
+lower beam energy run. Based on the kinematic of electrons in these events, 
+we generate the helium nucleus in our RTPC GEANT4 simulation~\cite{GEANT4}. Then 
+we compare the calculated GEANT4 trajectory of the Helium nuclei to 
 the hits measured in the chamber. 
 
 Because of the magnetic field, the drift paths are not linear in the RTPC. So 
@@ -399,7 +399,7 @@ converge already on the second iteration.
 
 At the end of the extraction procedure, the azimuthal difference between the detection pad and 
 the ionization point ($\Delta\phi$) is extracted as a function of time. 
-In figure~\ref{fig:DELTA_PHI_TDC}, we show the resulting data points for one 
+In Fig.~\ref{fig:DELTA_PHI_TDC}, we show the resulting data points for one 
 bin, where the drift paths is easily identified and eventually fitted for 
 implementation in our reconstruction codes.
 
@@ -415,7 +415,7 @@ the final drift paths in this slice.}
 To verify the stability of the drift paths, this procedure was carried out 
 using both the 1.204 GeV data from the beginning of the run period and the 
 1.269 GeV data from the end of the run period (shown in blue on 
-figure~\ref{fig:Drift_run_number_1}). Interestingly, we found very similar drift paths
+Fig.~\ref{fig:Drift_run_number_1}). Interestingly, we found very similar drift paths
 for the two data sets and concluded that any changes in the system only
 significantly affected the drift speed.
 
@@ -439,7 +439,7 @@ attributed equally to each readout channel contributing to the track, and each
 channel's gain is averaged over many tracks. This gain calibration method is
 inherently iterative, and, while it does result in measured $\small{\frac{dE}{dX}}$
 much closer to the expected Bethe-Bloch curve than prior to calibration, the
-results shown in figure~\ref{fig:dedx_p_exp_1st} are not very satisfactory.
+results shown in Fig.~\ref{fig:dedx_p_exp_1st} are not very satisfactory.
 
 \begin{figure}[tb]
    \centering
@@ -457,16 +457,16 @@ GEANT4 by similar simulated tracks (using the same elastic events than for the d
 paths calibration). This requires a very good GEANT4 simulation 
 including drift paths, but also the spread of the charges along the path
 before reaching the pad, so that the simulated hits match the experimental 
-ones. Moreover, the simulation has to match the data acquisition (DAQ) features 
+ones. Moreover, the simulation has to match the DAQ features 
 that can lead to cutting out hits. After setting the simulation properly, we 
 compared simulation to experiment on an event by event basis as shown in 
-Figure~\ref{fig:EVENT_adc_tdc}. In this step, the gain for each pad is calculated 
+Fig.~\ref{fig:EVENT_adc_tdc}. In this step, the gain for each pad is calculated 
 as the ratio of the measured ADCs to the simulated deposited energy.  
 Then, these gains are refined using correcting factors obtained from a 
 sample of good tracks. For each track, we calculate the corrected 
 energy deposit on a pad and compare it to the average
 deposit recorded by the other pads. 
-Results of this second method are shown in Figure~\ref{fig:dedx_p_exp_2nd},
+Results of this second method are shown in Fig.~\ref{fig:dedx_p_exp_2nd},
 from these we concluded that the gains of the 
 second method match best the theoretical lines.
 
@@ -493,7 +493,14 @@ $^3$He, $^3$H and $^2$H (d).}
 \subsection{Noise Rejection}
 Two independent noise signatures were identified in the raw data and removed in software prior to track reconstruction.  Both are transient and isolated to a subset of the readout channels. 
 
-The first is an oscillatory noise located early in the readout time window, shown in the top panel of Figure~\ref{fig:noise} for a particularly noisy channel.  Its amplitude is not dissimilar to those of real tracks, and about 18\% of the readout channels exhibit large contributions from this noise characteristic.  Due to its unique time-energy correlation for the given channels, the noise could be removed on an event by event and channel by channel basis without significant loss of good signals, and the result is illustrated in the bottom panel of Figure~\ref{fig:noise}.
+The first is an oscillatory noise located early in the readout time window, 
+shown in the top panel of Fig.~\ref{fig:noise} for a particularly noisy 
+channel. Its amplitude is not dissimilar to those of real tracks, and about 
+18\% of the readout channels exhibit large contributions from this noise 
+characteristic. Due to its unique time-energy correlation for the given 
+channels, the noise could be removed on an event by event and channel by 
+channel basis without significant loss of good signals. The result of the
+procedure is illustrated in the bottom panel of Fig.~\ref{fig:noise}.
 
 The second is a coherent noise affecting about 25\% of the preamplifiers, where 
 the signature is simultaneous hits in most of the 16 channels in a preamp 
@@ -519,15 +526,15 @@ plots.}
 
 \section{Track Reconstruction}\label{sec_rec}
 In order to reconstruct tracks we first select good hits. This means rejecting 
-out-of-time hits and hits linked to the electronic noise. The second step is 
+out-of-time hits as well as the hits linked to the electronic noise. The second step is 
 to reconstruct the spacial origin of the hits using the extracted drift speed and drift path 
 parameters. For each registered hit, we calculate a position of emission from 
 the recorded time and the position of the recording pad. The third step 
 is to create chains of hits. The maximum distance between two close adjacent 
-hits has to be less than 10.5 mm to chain them, this roughly correspond to 
-neighbors and next to neighbors. Then, we fit the chains that have a minimum of 
-10 hits. We make the fit in two iterations, first, all the hits of the chain 
-together with the beam line are fitted with a helix. For the second iteration, 
+hits has to be less than 10.5 mm to chain them, which roughly corresponds to 
+neighbors and next to neighbors. Then, we fit with a helix the chains that have a minimum of 
+10 hits. We make the fit in two iterations, first with all the hits of the chain 
+and the beam line, then, in the second iteration, 
 the hits that are 5 mm or farther from the first fit are excluded.
 
 For energy deposition, the mean $\frac{dE}{dx}$ is calculated as
@@ -547,9 +554,9 @@ Indeed, there is a complicated convolution of CLAS and the RTPC acceptances
 that can significantly affect the yields and the kinematic of the detected 
 particles. To clarify this question, we measured the 
 efficiency of the RTPC using the elastic scattering on $^4$He, by comparing the 
- the inclusive yield based on electron detection only to the exclusive elastic 
-yield where we also detect the Helium recoil. We present in 
-Figure~\ref{fig:rtpc_eff} the results for the two modules 
+inclusive yield based only on electron detection to the exclusive elastic 
+yield where the Helium recoil is also detected. We present in 
+Fig.~\ref{fig:rtpc_eff} the results for the two modules 
 of the detector. We observe that the left and 
 the right modules have similar efficiencies except near the target windows.
 
