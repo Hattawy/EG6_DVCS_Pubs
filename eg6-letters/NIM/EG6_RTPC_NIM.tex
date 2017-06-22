@@ -301,7 +301,6 @@ properly reconstructed in the RTPC. The figures presented in this section
 are the ones obtained while performing the last iteration of this long 
 calibration process.
 
-
 \subsection{Drift Speed Parametrization}
 
 We determine the drift speed using tracks reconstructed in the RTPC. In 
@@ -551,17 +550,54 @@ volume.
 
 \section{Performance Studies}\label{sec_perfor}
 
+The primary data sample used for calibration and performance assessment of the
+RTPC was elastic scattering with a 1.2 GeV electron beam.  The electron's momentum
+and direction is measured with CLAS, which uniquely determines the expected recoiling
+$^4$He kinematics.  Matching requirements between reconstructed and expected $z$-vertex
+and direction of the RTPC track provides a clean selection of elastically-scattered
+$^4$He, showin in Fig.~\ref{fig:w}.
+
+
+\begin{figure}[tb]\centering
+  \includegraphics[width=8cm]{fig/fit_W_distribution_l.png}
+  \caption{The $W$ distribution calculated from electron kinematics before (``inclusive'')
+  and after (``exclusive'') requiring a matching track in the RTPC.\label{fig:w}}
+\end{figure}
+
+
+\subsection{Resolution}
+Elastic scattering was used to estimate the tracking resolution of the RTPC 
+based on the residual between the expected and measured $^4$He tracks.  The RTPC
+resolutions, after removing contributions from the electron, are shown in Table
+~\ref{tab:reso}, and are very similar for the two halves of the RTPC.  Note, the
+$\theta$- and $z$-resolutions are highly correlated.
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|cccc|}
+  \hline
+& $\sigma_{z}$ &  $\sigma_{\theta}$ & $\sigma_{\phi}$ & $\sigma_{p}$\\
+\hline
+Left &  6.0 mm & 3.8$^{\circ}$ & 1.9$^{\circ}$ & 9$\%$ \\
+Right & 7.4 mm & 4.0$^{\circ}$ & 1.9$^{\circ}$ & 8$\%$\\
+\hline
+\end{tabular}
+\caption{The resolutions of the two modules of the RTPC for $z$-vertex, polar and azimuthal angles, and momentum.}
+\label{tab:reso}
+\end{center}
+\end{table}
+
+
+\subsection{Efficiency}
 The previous discussions have shown that the two modules of the RTPC have 
 slightly different behavior and give also different particle yield. However, 
 this should not necessarily be linked to a different performance of the RTPC. 
 Indeed, there is a complicated convolution of CLAS and the RTPC acceptances 
-that can significantly affect the yields and the kinematic of the detected 
-particles. To clarify this question, we measured the 
-efficiency of the RTPC using the elastic scattering on $^4$He, by comparing the 
-inclusive yield based only on electron detection to the exclusive elastic 
-yield where the Helium recoil is also detected. We present in 
-Fig.~\ref{fig:rtpc_eff} the results for the two modules 
-of the detector. We observe that the left and 
+that can significantly affect the yields and kinematics of the detected 
+particles. To clarify this question, we measured the efficiency of the RTPC
+using elastic scattering on $^4$He by comparing the inclusive yield, based
+only on electron detection, to the exclusive elastic yield, where the Helium
+recoil is also detected (see Fig.~\ref{fig:w}). We present in Fig.~\ref{fig:rtpc_eff}
+the results for the two modules of the detector. We observe that the left and 
 the right modules have similar efficiencies except near the target windows.
 
 \begin{figure}[tb]
@@ -573,7 +609,7 @@ the right modules have similar efficiencies except near the target windows.
  \end{figure}
 
 
-\section{Conclusion}
+ \section{Conclusion}
 
 We reported on the construction, operation and calibration of a small RTPC 
 designed to measure helium-4 nuclei in high rate environment. The operation
