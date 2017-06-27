@@ -18,39 +18,38 @@ Projection Chamber for $\alpha$ detection in CLAS at JLab}}
 \begin{abstract}
 A new Radial Time Projection Chamber (RTPC) was developed at Jefferson 
 Laboratory to track low-energy nuclear recoils for the purpose of measuring
-exclusive nuclear channels, such as coherent Deeply Virtual Compton Scattering
+exclusive nuclear reactions, such as coherent Deeply Virtual Compton Scattering
 and coherent meson production on $^4$He. In such processes, the $^4$He nucleus
 remains intact in the final state, however the CEBAF Large
 Acceptance Spectrometer (CLAS) cannot track the low energy $\alpha$ particles. In
 2009, we carried out measurements using the CLAS spectrometer supplemented by
 the RTPC positioned directly around a gaseous $^4$He target, allowing a detection
-threshold as low as 300~MeV/c for $^4$He. This article discuses the design,
-work principle, calibration methods and performances of this RTPC.
+threshold as low as 12~MeV for $^4$He. This article discuses the design,
+work principle, calibration methods and the performance of this RTPC.
 \end{abstract}
 
 \maketitle
 
 \section{Introduction} \label{sec:level1}
 
-Until recently, Thomas Jefferson National Accelerator Facility (TJNAF), in 
-Newport News, Virginia, USA, has provided high power electron beams of energy 
-up to 6 GeV and 100$\%$ duty cycle to three experimental Halls (A, B, C) 
+Until recently, Thomas Jefferson National Accelerator Facility, in 
+Newport News, Virginia, USA, has provided high power electron beams of 
+up to 6 GeV energy and 100$\%$ duty cycle to three experimental Halls (A, B, C) 
 simultaneously. The CLAS spectrometer~\cite{CLASref}, located
-in Hall-B, is composed of several sub-detectors and two magnets. 
-Figure~\ref{fig:CLAS} shows a three dimensional 
+in Hall-B, is based on a superconducting toroidal magnet and composed of 
+several sub-detectors. Figure~\ref{fig:CLAS} shows a three dimensional 
 representation of the baseline CLAS spectrometer:
 \begin{itemize}
  \item Three regions of Drift Chambers (DC) for the tracking of charged 
-    particles~\cite{DCref} (in blue on the figure).
+       particles~\cite{DCref} (in blue on the figure).
  \item Superconducting toroidal magnet (in yellow) to bend the trajectories 
-    of charged particles, thus allowing momentum measurement with the DC tracking information.
- \item Cerenkov Counters (CC) to distinguish electrons from other negative 
-    particles, such as pions, at lower energies~\cite{CCref} (in pink).
- \item Scintillation Counters (SC) to identify hadrons by measuring their 
-    time of flight (TOF)~\cite{TOFref} (in red).
- \item Electromagnetic Calorimeters (EC) to distinguish electrons from other negative 
-    particles at higher energies and to detect neutral particles (neutrons and 
-    photons in particular)~\cite{ECref} (in green).
+       of charged particles, thus allowing momentum measurement with the DC tracking information.
+ \item Threshold Cherenkov Counters (CC) for electron identification at momenta 
+       $<2.7$ GeV~\cite{CCref} (in pink).
+ \item Scintillation Counters (SC) to identify charged hadrons by measuring their 
+       time of flight (TOF)~\cite{TOFref} (in red).
+ \item Electromagnetic Calorimeters (EC) for identification of electrons, 
+       photons and neutrons~\cite{ECref} (in green).
 \end{itemize}
 
 \begin{figure}[tbp]
@@ -68,11 +67,13 @@ The IC is constructed from 424 lead-tungstate (PbWO$_{4}$) crystals, covering po
 angles between 5$^{\circ}$ and 15$^{\circ}$. Each crystal is 16 cm long, corresponding
 to 17 radiation lengths. The achieved energy resolution is around 3 to 4$\%$ for photon
 energies between 2 GeV and 5 GeV, with an angular resolution between 3 and 5 mrad 
-\cite{Hyon-suk}. To protect this detector and CLAS from the large flux of low energy M{\o}ller 
-electrons, a 5~T solenoid was placed around the target to shield the IC. 
-In addition, the recoil nuclei from the coherent DVCS on helium was detected 
-using a RTPC developed to track low energy nuclear fragments. The solenoid field
-serving as the analyzing magnet for particle tracking in the RTPC. This 
+\cite{Hyon-suk}. To protect the CLAS detector and the IC from the large flux 
+of low energy M{\o}ller 
+electrons, a 5~T solenoid was placed around the target to shield the detectors. 
+To detect recoiling $\alpha$ particles from the coherent DVCS on helium, a new 
+radial time projection chamber was developed to track low energy nuclear 
+fragments. The solenoid field was used to track and measure momentum of 
+particles in RTPC. This 
 setup was used during a three months experimental run~\cite{proposal1,proposal2}
 in 2009 with a longitudinally polarized electron beam of 130~nA 
 and energy of 6.064 GeV incident on a gaseous $^{4}$He target.
@@ -91,10 +92,10 @@ of the RTPC is described in section \ref{sec_perfor}.
 \section{RTPC design} \label{sec_design}
 
 With a 6 GeV incident electron energy, the recoiling $^{4}$He nuclei from coherent 
-DVCS have an average momentum around 250 MeV/c. Such low energy $\alpha$ 
+DVCS have an average momentum around 300 MeV/c (12 MeV kinetic energy). Such low energy $\alpha$ 
 particles are stopped very rapidly, so the RTPC was designed to be as close 
-as possible to the target and fitting within the 230~mm diameter 
-of the 5 Tesla solenoid magnet surrounding the target. 
+as possible to the target and fit inside the 230 mm diameter bore of the 
+5 Tesla solenoid magnet. 
 
 \begin{figure}[tb]
 \centering
@@ -107,7 +108,7 @@ The new CLAS RTPC is a 250~mm long cylinder of 158~mm diameter, leaving just eno
 room to fit pre-amplifiers between the RTPC outer shell and the solenoid. The 
 electric field is directed perpendicularly to the beam direction, 
 such that drifting electrons are pushed away from the beam line. These electrons 
-are amplified by three layers of curved gas electron multipliers (GEM) and 
+are amplified by three layers of cylindrical gas electron multipliers (GEM) and 
 detected by the readout system 
 on the external shell of the detector as illustrated in the 
 Fig.~\ref{fig:RTPC_1_4}. The RTPC is segmented into two halves with 
@@ -118,14 +119,14 @@ angle.
 We detail here the different regions shown in Fig.~\ref{fig:RTPC_1_4} starting 
 from the beam line towards larger radius:\\
 \begin{itemize}
-   \item First, the 6 atm helium-4 target extends along the beam line axis; it 
-      is 284~mm long with a 3~mm radius wall made of a 27-$\mu$m-thick Kapton.
+   \item The 6 atm helium-4 target extends along the beam line axis; it 
+      is a 284~mm long, 6~mm in diameter straw with a 27-$\mu$m Kapton wall.
    \item The first gas gap covers a radial range from 3 mm to 20 mm. It is 
       filled with $^{4}$He gas at 1~atm to minimize secondary interactions from
-      M\o ller electrons scattered by the beam. This 
+      M\o{}ller electrons scattered by the beam. This 
       region is surrounded by a 4 $\mu$m thick window made of aluminized Mylar 
       that is electronically grounded.
-   \item The second gap region extends between 20~mm and 30~mm and is filled with a 
+   \item The second gap region extends between 20~mm and 30~mm and is filled with the 
       gas mixture of 80$\%$ neon (Ne) and 20$\%$ dimethyl ether (DME). This region 
       is surrounded by a 4~$\mu$m thick window made of aluminized Mylar, which 
       serves as the cathode and is set at 4260~V.
@@ -153,10 +154,10 @@ from the beam line towards larger radius:\\
 
 The GEM technology has been chosen for the flexibility of the GEM foils,
 which can be easily used to produce a curved amplification surface. Also, 
-GEMs are known to have relatively low sparks rate~\cite{GEM_ref}, which 
+GEMs are known to have relatively low spark rate~\cite{GEM_ref}, which 
 is important when trying to detect 
 highly ionizing slow nuclei that deposit large amount of energy. The GEMs for 
-this RTPC are made from a Kapton insulator layer, 50~$\mu$m 
+this RTPC are made from a Kapton insulator layer, 300~$\mu$m 
 thick, sandwiched between two 5~$\mu$m copper layers. The mesh of each GEM 
 layer is chemically etched with 50~$\mu$m diameter holes with double-conical 
 shapes as illustrated in Fig.~\ref{fig:GEMs}. The potential difference 
@@ -181,9 +182,9 @@ particles in subsequent detectors. We successfully realized these prerequisites
 by using fiber glass rings glued to each end of the GEM foils to form self 
 supporting cylinders that could be installed independently in the RTPC after 
 all gluing and soldering operations. The rigidity of the GEM foils was enough
-for the structure to be self-supporting and only the backward part of the 
-cylinder was fixed to the main mechanical structure. This design only left a 
-light fiberglass ring in the forward region, reducing to a minimum secondary 
+for the structure to be self-supporting and only the upstream end of the cylinder 
+was fixed to the main mechanical structure. This design only left a 
+light fiberglass ring in the downstream end, reducing to a minimum secondary 
 interactions.
 
 \section{Readout System} \label{sec_readout}
@@ -298,18 +299,17 @@ the parameters depend on the azimuthal angle $\phi$. The initial MAGBOLTZ
 calibration was improved through several iterations of the
 process described below, each iteration increasing the number of events 
 properly reconstructed in the RTPC. The figures presented in this section
-are the ones obtained while performing the last iteration of this long 
+are the ones obtained while performing the last iteration of this
 calibration process.
 
 \subsection{Drift Speed Parametrization}
 
-We determine the drift speed using tracks reconstructed in the RTPC. In 
-Fig.~\ref{fig:RTPC_signals}, a typical $^{4}$He track is represented (in green). After 
-it causes ionization in the drift region, the released electrons (in black) 
+After the ionization, the released electrons 
 drift to the cylindrical detection plane under the effect of the electric field. The 
 electrons released close to the cathode take the most time to reach the readout 
-pads, but cylindrical symmetry insures they always travel the same 
-distance. By identifying the maximum time measured ($T_{Max}$), we can infer the drift 
+pads, but cylindrical symmetry insures that they always travel the same 
+distance. We illustrate this in Fig.~\ref{fig:RTPC_signals}, where we depict a 
+typical $^{4}$He track. By measuring the maximum time ($T_{Max}$), we can infer the drift 
 speed of the electrons in the RTPC.\\
 
 \begin{figure}[tb]
@@ -370,7 +370,7 @@ track reconstructions code.
 \subsection{Drift Paths Calibration}
 
 The drift path is the trajectory followed by the electrons released through 
-ionization in the gas. Software exists to calculate the drift paths, in particular
+ionization in the gas. Software exists to calculate them, in particular
 MAGBOLTZ~\cite{MAGBOLTZ}, but it requires knowledge of the detector's 
 geometry, gas mixture composition, and of course the electric and magnetic 
 fields over the whole volume of the detector. We used such calculation as a 
@@ -383,16 +383,15 @@ encountered for the BoNuS RTPC calibration~\cite{BONUS-NIM}, motivated the
 acquisition of specific calibration runs. These were taken with a lower energy 
 electron beam (1.20 and 1.27 GeV) to enhance the cross section of the elastic 
 scattering ($e^{4}$He$\rightarrow e^{4}$He). In this process, the measurement of
-the electron kinematic allows to calculate directly the Helium nucleus one. 
-By comparing this calculated kinematic to the measurement in the RTPC, we fine tuned
-the drift paths independently of our knowledge of the exact chamber's conditions.
+the electron kinematic allows to calculate directly the kinematic of the Helium nucleus. 
+By comparing the alpha particle's calculated momentum and angle of recoil to the 
+measurement in the RTPC, we tuned the drift paths independently of our 
+knowledge of the exact chamber's conditions.
 
-The drift paths are adjusted using a set of identified elastic events from our 
-lower beam energy run. Based on the kinematic of electrons in these events, 
+Based on the kinematic of electrons in the calibration data, 
 we generate the helium nucleus in our RTPC GEANT4 simulation~\cite{GEANT4}. Then 
 we compare the calculated GEANT4 trajectory of the Helium nuclei to 
 the hits measured in the chamber. 
-
 Because of the magnetic field, the drift paths are not linear in the RTPC. So 
 to perform the extraction, we make a first approximation with a linear 
 dependence between the radius of emission and the time of detection, and then 
@@ -424,37 +423,8 @@ significantly affected the drift speed.
 \subsection{Gain Calibration}
 
 The gain of each pad is defined as the ratio between the actual 
-deposited energy and the registered ADC value. We tested two different 
-methods to extract such gains, with varying degrees of success.
-
-The first method is based on the measured average $\small{\frac{dE}{dX}}$
-and the expected value based on the Bethe-Bloch formula. The total energy
-deposition for each $^4$He track is calculated as the sum of all ADC hits
-attributed to the track. The path length of that energy deposition is
-calculated as the distance along the reconstructed trajectory between the first
-and last hits on the track and corrected to account for regions
-of bad channels along the track. The measured average energy loss is then the
-ratio of deposited energy and path length. The Bethe-Bloch formula is
-evaluated at the track's reconstructed momentum, and the ratio with the measured
-$\small{\frac{dE}{dX}}$ is taken as a gain scaling factor. This average gain is
-attributed equally to each readout channel contributing to the track, and each
-channel's gain is averaged over many tracks. This gain calibration method is
-inherently iterative, and, while it does result in measured $\small{\frac{dE}{dX}}$
-much closer to the expected Bethe-Bloch curve than prior to calibration, the
-results shown in Fig.~\ref{fig:dedx_p_exp_1st} are not very satisfactory.
-
-\begin{figure*}[tb]
-   \centering
-   \includegraphics[scale=0.73]{fig_2017/f_dedx_p_exp_1st.pdf}
-   \caption{$\small{\frac{dE}{dX}}$ vs. $p/q$ distribution for the left half of 
-      the RTPC (left) and for the right half (right). Here, 
-      $\small{\frac{dE}{dX}}$ is calculated using the gains of the first 
-      method.  The lines are theoretical expectations from Bethe-Bloch formula 
-   for $^4$He (red), $^3$He (black), $^3$H (blue), $^2$H (pink) and protons (grey).}
-\label{fig:dedx_p_exp_1st}
-\end{figure*}
-
-The second method is to compare the experimental ADCs to the energy deposited 
+deposited energy and the registered ADC value. 
+To do so we compare the experimental ADCs to the energy deposited 
 for each pad individually in GEANT4 by similar simulated tracks (using the 
 same elastic events as for the drift 
 paths calibration). This requires a very good GEANT4 simulation 
@@ -463,15 +433,14 @@ before reaching the pad, so that the simulated hits match the experimental
 ones. Moreover, the simulation has to match the DAQ features 
 that can lead to cutting out hits. After setting the simulation properly, we 
 compared simulation to experiment on an event by event basis as shown in 
-Fig.~\ref{fig:EVENT_adc_tdc}. In this step, the gain for each pad is calculated 
+Fig.~\ref{fig:EVENT_adc_tdc}. The gain for each pad is calculated 
 as the ratio of the measured ADCs to the simulated deposited energy.  
 Then, these gains are refined using correcting factors obtained from a 
 sample of good tracks. For each track, we calculate the corrected 
 energy deposit on a pad and compare it to the average
-deposit recorded by the other pads. 
-Results of this second method are shown in Fig.~\ref{fig:dedx_p_exp_2nd},
-from these we concluded that the gains of the 
-second method match best the theoretical lines.
+deposit recorded by the other pads. This last step was implemented to 
+avoid any bias from this simulation based calibration method.
+Final results are shown in Fig.~\ref{fig:dedx_p_exp_2nd}.
 
 \begin{figure}[tb!]
    \centering
@@ -486,15 +455,16 @@ that they are the same pad.}
 \centering
 \includegraphics[scale=0.73]{fig_2017/f_dedx_p_exp_2nd.pdf}
 \caption{$\small{\frac{dE}{dX}}$ vs. $p/q$ distribution for the left half of 
-   the RTPC (left) and for the right half (right). Here, 
-   $\small{\frac{dE}{dX}}$ is calculated using the gains of the second method.  
+   the RTPC (left) and for the right half (right) after gain calibration.  
    The lines are theoretical expectations from Bethe-Bloch formula for $^4$He 
    (red), $^3$He (black), $^3$H (blue), $^2$H (pink) and protons (grey).}
 \label{fig:dedx_p_exp_2nd}
 \end{figure*}
 
 \subsection{Noise Rejection}
-Two independent noise signatures were identified in the raw data and removed in software prior to track reconstruction.  Both are transient and isolated to a subset of the readout channels. 
+Two independent noise signatures were identified in the raw data and removed 
+in software prior to track reconstruction. Both are transient and isolated to 
+a subset of the readout channels. 
 
 The first is an oscillatory noise located early in the readout time window, 
 shown in the top panel of Fig.~\ref{fig:noise} for a particularly noisy 
