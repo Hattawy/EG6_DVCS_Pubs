@@ -16,40 +16,40 @@ Projection Chamber for $\alpha$ detection in CLAS at JLab}}
 \date{\today}
 
 \begin{abstract}
-A new Radial Time Projection Chamber (RTPC) was developed at Jefferson 
+A new Radial Time Projection Chamber (RTPC) was developed at the Jefferson 
 Laboratory to track low-energy nuclear recoils for the purpose of measuring
 exclusive nuclear reactions, such as coherent Deeply Virtual Compton Scattering
-and coherent meson production on $^4$He. In such processes, the $^4$He nucleus
+and coherent meson production off $^4$He. In such processes, the $^4$He nucleus
 remains intact in the final state, however the CEBAF Large
 Acceptance Spectrometer (CLAS) cannot track the low energy $\alpha$ particles. In
 2009, we carried out measurements using the CLAS spectrometer supplemented by
 the RTPC positioned directly around a gaseous $^4$He target, allowing a detection
 threshold as low as 12~MeV for $^4$He. This article discuses the design,
-work principle, calibration methods and the performance of this RTPC.
+principle of operation, calibration methods and the performances of this RTPC.
 \end{abstract}
 
 \maketitle
 
 \section{Introduction} \label{sec:level1}
 
-Until recently, Thomas Jefferson National Accelerator Facility, in 
+Until recently, the Thomas Jefferson National Accelerator Facility, in 
 Newport News, Virginia, USA, has provided high power electron beams of 
-up to 6 GeV energy and 100$\%$ duty cycle to three experimental Halls (A, B, C) 
+up to 6 GeV energy and 100$\%$ duty factor to three experimental Halls (A, B, C) 
 simultaneously. The CLAS spectrometer~\cite{CLASref}, located
 in Hall-B, is based on a superconducting toroidal magnet and composed of 
 several sub-detectors. Figure~\ref{fig:CLAS} shows a three dimensional 
 representation of the baseline CLAS spectrometer:
 \begin{itemize}
- \item Three regions of Drift Chambers (DC) for the tracking of charged 
-       particles~\cite{DCref} (in blue on the figure).
- \item Superconducting toroidal magnet (in yellow) to bend the trajectories 
+ \item Three regions of Drift Chambers for the tracking of charged 
+       particles~\cite{DCref}.
+ \item Superconducting toroidal magnet to bend the trajectories 
        of charged particles, thus allowing momentum measurement with the DC tracking information.
- \item Threshold Cherenkov Counters (CC) for electron identification at momenta 
-       $<2.7$ GeV~\cite{CCref} (in pink).
- \item Scintillation Counters (SC) to identify charged hadrons by measuring their 
-       time of flight (TOF)~\cite{TOFref} (in red).
+ \item Threshold Cherenkov Counters for electron identification at momenta 
+       $<2.7$ GeV~\cite{CCref}.
+ \item Scintillation Counters to identify charged hadrons by measuring their 
+       time of flight~\cite{TOFref}.
  \item Electromagnetic Calorimeters (EC) for identification of electrons, 
-       photons and neutrons~\cite{ECref} (in green).
+       photons and neutrons~\cite{ECref}.
 \end{itemize}
 
 \begin{figure}[tbp]
@@ -64,11 +64,8 @@ of this setup.  With a 6 GeV electron beam, the majority of DVCS photons are pro
 at very forward angles, where the acceptance of the EC is poor. To extend the detection range,
 an inner calorimeter (IC) was built for the E01-113 experiment in 2005~\cite{FX}.
 The IC is constructed from 424 lead-tungstate (PbWO$_{4}$) crystals, covering polar 
-angles between 5$^{\circ}$ and 15$^{\circ}$. Each crystal is 16 cm long, corresponding
-to 17 radiation lengths. The achieved energy resolution is around 3 to 4$\%$ for photon
-energies between 2 GeV and 5 GeV, with an angular resolution between 3 and 5 mrad 
-\cite{Hyon-suk}. To protect the CLAS detector and the IC from the large flux 
-of low energy M{\o}ller 
+angles between 5$^{\circ}$ and 15$^{\circ}$~\cite{Hyon-suk}. To protect the 
+CLAS detector and the IC from the large flux of low energy M{\o}ller 
 electrons, a 5~T solenoid was placed around the target to shield the detectors. 
 To detect recoiling $\alpha$ particles from the coherent DVCS on helium, a new 
 radial time projection chamber was developed to track low energy nuclear 
@@ -123,17 +120,15 @@ from the beam line towards larger radius:\\
       is a 284~mm long, 6~mm in diameter straw with a 27-$\mu$m Kapton wall.
    \item The first gas gap covers a radial range from 3 mm to 20 mm. It is 
       filled with $^{4}$He gas at 1~atm to minimize secondary interactions from
-      M\o{}ller electrons scattered by the beam. This 
-      region is surrounded by a 4 $\mu$m thick window made of aluminized Mylar 
-      that is electronically grounded.
+      M\o{}ller electrons scattered by the beam. This region is surrounded by 
+      a 4 $\mu$m thick window made of grounded aluminized Mylar.
    \item The second gap region extends between 20~mm and 30~mm and is filled with the 
       gas mixture of 80$\%$ neon (Ne) and 20$\%$ dimethyl ether (DME). This region 
-      is surrounded by a 4~$\mu$m thick window made of aluminized Mylar, which 
-      serves as the cathode and is set at 4260~V.
+      is surrounded by a 4~$\mu$m thick window made of aluminized Mylar set at 4260~V 
+      to serve as the cathode.
    \item The drift region is filled with the same Ne-DME gas mixture and extends 
-      from the cathode to the first GEM, 60 mm away 
-      from the beam axis. The average electric field in this region is about 550~V/cm 
-      and perpendicular to the beam.
+      from the cathode to the first GEM, 60 mm away from the beam axis. The average 
+      electric field in this region is perpendicular to the beam and about 550~V/cm.
    \item The electron amplification system is composed of three GEMs located at 
       radii of 60, 63 and 66 mm. In this configuration, the first GEM layer 
       serves as the anode and each subsequent GEM is set at a lower Voltage to
@@ -170,8 +165,8 @@ for proper particle identification, with a reasonable
 Lorentz angle. Calculations using the MAGBOLTZ program~\cite{MAGBOLTZ} 
 showed that with the axial 5~T field, we would have a Lorentz angle of 
 about 23$^\circ$ with this gas mixture. This is already a significant angle,
-a heavier gas would have larger angle increasing significantly
-the length of the drift paths as the electron would 
+and heavier gas have a tendency to give larger angle, increasing significantly
+the length of the drift paths as the electrons would 
 make a long spiral around the beam line to reach the GEMs. 
 
 One of the important challenge in developing the radial TPC was how to obtain a 
@@ -181,7 +176,7 @@ keep the material budget small in the forward region where we detect other
 particles in subsequent detectors. We successfully realized these prerequisites 
 by using fiber glass rings glued to each end of the GEM foils to form self 
 supporting cylinders that could be installed independently in the RTPC after 
-all gluing and soldering operations. The rigidity of the GEM foils was enough
+gluing and soldering operations. The rigidity of the GEM foils was enough
 for the structure to be self-supporting and only the upstream end of the cylinder 
 was fixed to the main mechanical structure. This design only left a 
 light fiberglass ring in the downstream end, reducing to a minimum secondary 
@@ -223,8 +218,8 @@ readout channel is made of three main components: a charge sensitive, low
 impedance shaping amplifier, a 10 bit, 25-MHz digitizer, and a digital circuit 
 that implements online-processing algorithms (pedestal subtraction, zero 
 suppression, and tail cancellation). The amplifier is implemented in a 
-fully-analogue ASIC, PASA~\cite{ALICE-PASA}, while the subsequent signal 
-digitization and elaboration part is implemented in a digital ASIC, 
+fully-analogue ASIC, PASA~\cite{ALICE-PASA}, while the signal 
+digitization and elaboration part is implemented in the digital ASIC, 
 ALTRO~\cite{ALICE-ALTRO}. Both ASICs host 16 channels. The full readout 
 chain is implemented on a single Front End Card (FEC), hosting 128 channels. 
 FECs are hosted in custom crates, mounted close to the detector. A readout 
