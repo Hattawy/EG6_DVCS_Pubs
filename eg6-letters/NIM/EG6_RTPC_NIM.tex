@@ -40,7 +40,7 @@ in Hall-B, is based on a superconducting toroidal magnet and composed of
 several sub-detectors. Figure~\ref{fig:CLAS} shows a three dimensional 
 representation of the baseline CLAS spectrometer:
 \begin{itemize}
- \item Three regions of Drift Chambers for the tracking of charged 
+ \item Three regions of Drift Chambers (DC) for the tracking of charged 
        particles~\cite{DCref}.
  \item Superconducting toroidal magnet to bend the trajectories 
        of charged particles, thus allowing momentum measurement with the DC tracking information.
@@ -68,7 +68,7 @@ angles between 5$^{\circ}$ and 15$^{\circ}$~\cite{Hyon-suk}. To protect the
 CLAS detector and the IC from the large flux of low energy M{\o}ller 
 electrons, a 5~T solenoid was placed around the target to shield the detectors. 
 To detect recoiling $\alpha$ particles from the coherent DVCS on helium, a new 
-radial time projection chamber was developed to track low energy nuclear 
+radial time projection chamber (RTPC) was developed to track low energy nuclear 
 fragments. The solenoid field was used to track and measure momentum of 
 particles in RTPC. This 
 setup was used during a three months experimental run~\cite{proposal1,proposal2}
@@ -82,8 +82,8 @@ of this paper. Significant improvements were made to the RTPC mechanical
 structure and fabrication technique that both increased the acceptance and 
 reduced the amount of material in the path of the outgoing particles. The 
 data acquisition system described in section \ref{sec_readout} was reconfigured 
-to increase the event readout rate. The calibration strategy and results for 
-the RTPC are discussed in section \ref{sec_calib}. Finally, the overall performance
+to increase the event readout rate. The calibration methods 
+are discussed in section \ref{sec_calib}. Finally, the overall performance
 of the RTPC is described in section \ref{sec_perfor}.
 
 \section{RTPC design} \label{sec_design}
@@ -91,7 +91,7 @@ of the RTPC is described in section \ref{sec_perfor}.
 With a 6 GeV incident electron energy, the recoiling $^{4}$He nuclei from coherent 
 DVCS have an average momentum around 300 MeV/c (12 MeV kinetic energy). Such low energy $\alpha$ 
 particles are stopped very rapidly, so the RTPC was designed to be as close 
-as possible to the target and fit inside the 230 mm diameter bore of the 
+as possible to the target and fit inside the 230~mm diameter bore of the 
 5 Tesla solenoid magnet. 
 
 \begin{figure}[tb]
@@ -117,7 +117,7 @@ We detail here the different regions shown in Fig.~\ref{fig:RTPC_1_4} starting
 from the beam line towards larger radius:\\
 \begin{itemize}
    \item The 6 atm helium-4 target extends along the beam line axis; it 
-      is a 284~mm long, 6~mm in diameter straw with a 27-$\mu$m Kapton wall.
+      is a 284~mm long, 6~mm diameter straw with a 27-$\mu$m Kapton wall.
    \item The first gas gap covers a radial range from 3 mm to 20 mm. It is 
       filled with $^{4}$He gas at 1~atm to minimize secondary interactions from
       M\o{}ller electrons scattered by the beam. This region is surrounded by 
@@ -169,7 +169,7 @@ and heavier gas have a tendency to give larger angle, increasing significantly
 the length of the drift paths as the electrons would 
 make a long spiral around the beam line to reach the GEMs. 
 
-One of the important challenge in developing the radial TPC was how to obtain a 
+One of the important challenge in developing the radial TPC was to obtain a 
 good support structure for the GEM foils to allow a tractable 
 installation of the GEMs. At the same time, we wanted to 
 keep the material budget small in the forward region where we detect other 
@@ -201,7 +201,7 @@ RTPC has 40 rows and 40 columns of pads. The shaded region in Fig.~\ref{fig:PADs
 shows how pads are grouped to 16 channel pre-amplifiers. The pre-amplifier boards, 
 already employed in the BoNuS RTPC~\cite{BONUS-NIM}, serve the dual purpose of 
 inverting the RTPC signals polarity -- from negative to positive -- to match the 
-requirements of the subsequent readout system, and driv the 6~m long ribbon 
+requirements of the subsequent readout system, and drive the 6~m long ribbon 
 cable that connects to it.
 
 \begin{figure*}[tb]
@@ -346,8 +346,8 @@ and the gas flow had to be increased in few occasions to compensate for this.},
 the drift speed changes during the three months long experimental run.  
 Figure~\ref{fig:Drift_run_number_1} shows the $T_{Max/2}$ values for 
 individual runs (approximately 2 hours long). We observe a significant 
-variation of the drift speed over time and accounted for it in the drift 
-speed used for the track reconstruction. 
+variation of the drift speed over time that need to be accounted for 
+in track reconstruction.
 
 \begin{figure*}[tb]
 \centering
@@ -376,7 +376,7 @@ that we expect the geometry accuracy to be of few millimeters, directly impactin
 our knowledge of the electric field. These problems, already 
 encountered for the BoNuS RTPC calibration~\cite{BONUS-NIM}, motivated the 
 acquisition of specific calibration runs. These were taken with a lower energy 
-electron beam (1.20 and 1.27 GeV) to enhance the cross section of the elastic 
+electron beam (1.204 and 1.269 GeV) to enhance the cross section of the elastic 
 scattering ($e^{4}$He$\rightarrow e^{4}$He). In this process, the measurement of
 the electron kinematic allows to calculate directly the kinematic of the Helium nucleus. 
 By comparing the alpha particle's calculated momentum and angle of recoil to the 
@@ -417,9 +417,7 @@ significantly affected the drift speed.
 
 \subsection{Gain Calibration}
 
-The gain of each pad is defined as the ratio between the actual 
-deposited energy and the registered ADC value. 
-To do so we compare the experimental ADCs to the energy deposited 
+To calibrate the gains, we compare the experimental ADCs to the energy deposited 
 for each pad individually in GEANT4 by similar simulated tracks (using the 
 same elastic events as for the drift 
 paths calibration). This requires a very good GEANT4 simulation 
@@ -455,6 +453,8 @@ that they are the same pad.}
    (red), $^3$He (black), $^3$H (blue), $^2$H (pink) and protons (grey).}
 \label{fig:dedx_p_exp_2nd}
 \end{figure*}
+
+\section{Track Reconstruction}
 
 \subsection{Noise Rejection}
 Two independent noise signatures were identified in the raw data and removed 
@@ -492,10 +492,8 @@ plots.}
 \end{figure}
 
 
-\section{Track Reconstruction}\label{sec_rec}
-In order to reconstruct tracks we first select good hits. This means rejecting 
-out-of-time hits as well as the hits linked to the electronic noise. The second step is 
-to reconstruct the spacial origin of the hits using the extracted drift speed and drift path 
+\subsection{Track Fitting}\label{sec_rec}
+We start with reconstructing the spacial origin of the hits using the extracted drift speed and drift path 
 parameters. For each registered hit, we calculate a position of emission from 
 the recorded time and the position of the recording pad. The third step 
 is to create chains of hits. The maximum distance between two close adjacent 
@@ -555,7 +553,7 @@ Right & 7.4 mm & 4.0$^{\circ}$ & 1.9$^{\circ}$ & 8$\%$\\
 \subsection{Efficiency}
 The previous discussions have shown that the two modules of the RTPC have 
 slightly different behavior and give also different particle yield. However, 
-this should not necessarily be linked to a different performance of the RTPC. 
+this should not necessarily be linked to different efficiencies within the RTPC. 
 Indeed, there is a complicated convolution of CLAS and the RTPC acceptances 
 that can significantly affect the yields and kinematics of the detected 
 particles. To clarify this question, we measured the efficiency of the RTPC
@@ -578,8 +576,9 @@ the right modules have similar efficiencies except near the target windows.
 
 We reported on the construction, operation and calibration of a small RTPC 
 designed to measure helium-4 nuclei in high rate environment. The operation
-of the detector was successful and allowed to detect helium nuclei at a rate
-of 3.1 kHz in coincidence with the detection of high energy electrons and 
+of the detector was successful and allowed to detect helium nuclei with a 75\%
+efficiency and a readout rate
+of 3.1 kHz triggered by the detection of high energy electrons and 
 photons in the CLAS spectrometer. 
 
 \input acknowledgment.tex  
