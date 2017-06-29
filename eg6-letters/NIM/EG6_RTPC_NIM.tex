@@ -225,7 +225,7 @@ chain is implemented on a single Front End Card (FEC), hosting 128 channels.
 FECs are hosted in custom crates, mounted close to the detector. A readout 
 control unit (RCU) board is used to distribute the trigger signal to FECs 
 and for data readout. Each RCU can handle up to 25 FECs with communication 
-between them performed trough a 
+between them performed through a 
 custom back-plane, implementing a low-Voltage signal bus. The RCU communicates 
 with the CLAS data acquisition (DAQ) system 
 trough a 200 MB/s optical link, connected to a data acquisition PC hosting 
@@ -341,7 +341,8 @@ Fig.~\ref{fig:RunNumber_61551_TDCmax_Zslice}).
 \end{figure}
 
 Due to the non perfect experimental conditions, in particular variations in the 
-gas mixture~\footnote{It was noted during the experiment that leaks appeared
+gas mixture\footnote{It was noted during the experiment that leaks appeared,
+most likely in one of the $4 \mu$m foils between the beam and drift regions,
 and the gas flow had to be increased in few occasions to compensate for this.}, 
 the drift speed changes during the three months long experimental run.  
 Figure~\ref{fig:Drift_run_number_1} shows the $T_{Max/2}$ values for 
