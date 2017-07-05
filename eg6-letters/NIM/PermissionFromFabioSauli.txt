@@ -1,0 +1,27 @@
+Permission to use one of your GEM pictures
+
+Fabio Sauli <Fabio.Sauli@cern.ch>	Mon, Jul 3, 2017 at 2:29 PM
+To: "mhattawy@anl.gov" <mohammad.hattawy@gmail.com>
+Dear Mohammad,
+You certainly have my permission to reproduce the GEM picture in Fig. 3 of your paper.
+Good work
+Fabio
+
+Prof. Fabio Sauli
+TERA Foundation
+CERN-PH-UGC
+CH-1211 GENEVA
+SWITZERLAND
+fabio.sauli@cern.ch
+http://fabio.home.cern.ch/fabio/
+
+
+
+> On 3 Jul 2017, at 16:48, mhattawy@anl.gov <mohammad.hattawy@gmail.com> wrote:
+>
+> Dear Dr. Fabio,
+>     We have developed a cylindrical TPC at Jefferson Lab to detector the low energy nuclear recoils. You can find the first draft of this detector NIM paper on arXive at https://arxiv.org/abs/1706.10160. I would like to ask if I can use your GEM image in my article without an explicit permission from you. It is figure three in the previously provided draft.      
+>
+> Best regards,
+> Mohammad Hattawy.
+> Argonne National Lab. 
