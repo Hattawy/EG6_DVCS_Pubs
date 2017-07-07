@@ -67,7 +67,7 @@ experiment in 2005~\cite{FX}. The IC was constructed from 424 lead-tungstate
 (PbWO$_{4}$) crystals, covering polar angles between 5$^{\circ}$ and 
 15$^{\circ}$~\cite{Hyon-suk}. To protect the 
 CLAS detector and the IC from the large flux of low energy M{\o}ller 
-electrons, a 5~T solenoid was placed around the target to shield the detectors. 
+electrons, a 5~T solenoid magnet was placed around the target to shield the detectors. 
 To detect recoiling $\alpha$ particles from the coherent DVCS on helium, a new 
 radial time projection chamber (RTPC) was developed to track low energy nuclear 
 fragments. The solenoid field was used to track and measure momentum of 
@@ -94,8 +94,8 @@ of the RTPC is described in section \ref{sec_perfor}.
 With a 6 GeV incident electron energy, the recoiling $^{4}$He nuclei from coherent 
 DVCS have an average momentum around 300 MeV/c (12 MeV kinetic energy). Such low energy $\alpha$ 
 particles are stopped very rapidly, so the RTPC was designed to be as close 
-as possible to the target and fit inside the 230~mm diameter bore of the 
-5 Tesla solenoid magnet. 
+as possible to the target and fit inside the 230~mm diameter shell and cryostat 
+wall of the solenoid magnet bore. 
 
 \begin{figure}[tb]
 \centering
@@ -112,15 +112,14 @@ are amplified by three layers of cylindrical gas electron multipliers (GEM) and
 detected by the readout system 
 on the external shell of the detector as illustrated in the 
 Fig.~\ref{fig:RTPC_1_4}. The RTPC is segmented into two halves with 
-independent GEM amplification systems\footnote{The foils were produced by 
-Tech-Etch, Inc.} that cover about 80\% of the azimuthal 
+independent GEM amplification systems that cover about 80\% of the azimuthal 
 angle.
 
 We detail here the different regions shown in Fig.~\ref{fig:RTPC_1_4} starting 
 from the beam line towards larger radius:\\
 \begin{itemize}
    \item The 6 atm helium-4 target extends along the beam axis; it 
-      is a 284~mm long, 6~mm diameter straw with a 27-$\mu$m Kapton wall.
+      is a 284~mm long, 6~mm diameter Kapton straw with a 27-$\mu$m wall.
    \item The first gas gap covers the radial range from 3 mm to 20 mm. It is 
       filled with $^{4}$He gas at 1~atm to minimize secondary interactions from
       M\o{}ller electrons scattered by the beam. This region is surrounded by 
@@ -156,7 +155,8 @@ GEMs are known to have relatively low spark rate~\cite{GEM_ref}, which
 is important when trying to detect 
 highly ionizing slow nuclei that deposit large amount of energy. The GEMs for 
 this RTPC are made from a Kapton insulator layer, 300~$\mu$m 
-thick, sandwiched between two 5~$\mu$m copper layers. The mesh of each GEM 
+thick, sandwiched between two 5~$\mu$m copper layers\footnote{The GEM foils were produced by 
+Tech-Etch, Inc.}. The mesh of each GEM 
 layer is chemically etched with 50~$\mu$m diameter holes with double-conical 
 shapes as illustrated in Fig.~\ref{fig:GEMs}. The potential difference 
 applied between the two copper layers of the GEM creates a very strong 
@@ -197,7 +197,7 @@ located at the end of the amplification region, 69 mm from the central axis.
 Figure \ref{fig:PADs} illustrates the configuration of the 5 by 4.45 mm pads,
 where the shift between the rows was implemented to reduce aliasing. Each half of the 
 RTPC had 40 rows and 40 columns of pads. The shaded region in Fig.~\ref{fig:PADs} 
-shows how pads were grouped to 16 channels pre-amplifiers. The pre-amplifier boards, 
+shows how pads were grouped to 16 channels pre-amplifier boards. The pre-amplifier boards, 
 already employed in the BoNuS RTPC~\cite{BONUS-NIM}, serve the dual purpose of 
 inverting the RTPC signals polarity -- from negative to positive -- to match the 
 requirements of the subsequent readout system, and driving the 6-m long ribbon 
@@ -256,7 +256,7 @@ about $10^{34}$~cm$^{-2}$.s$^{-1}$ and a beam energy of 6.067 GeV.
 Finally, during data reconstruction, the acquired samples were processed to obtain, 
 for each readout pad, the accumulated charge (ADC) and the pulse time (T). Since 
 pulse time was obtained as the time-stamp of the first sample above threshold, 
-referred to to the trigger time, the resolution is equivalent to the ALTRO 
+referred to the trigger time, the resolution is equivalent to the ALTRO 
 sampling time, 100 ns.
 
 \section{Calibration} \label{sec_calib}
@@ -353,11 +353,11 @@ The drift path is the trajectory followed by the electrons released through
 ionization in the gas. We calculated them with
 MAGBOLTZ~\cite{MAGBOLTZ}, but it requires knowledge of the detector's 
 geometry, gas mixture composition, and of course the electric and magnetic 
-fields over the whole volume of the detector. We this calculation as a 
+fields over the whole volume of the detector. We used this calculation as a 
 first calibration, but, 
 as can be seen with the drift speed, conditions in the chamber were changing 
 over time. Moreover, the 4 $\mu$m foil used as a cathode is easily deformed, such
-that we expect the geometry accuracy to be of few millimeters, directly impacting 
+that we expect the geometrical accuracy to be of few millimeters, directly impacting 
 our knowledge of the electric field. These problems, already 
 encountered for the BoNuS RTPC calibration~\cite{BONUS-NIM}, motivated the 
 acquisition of specific calibration runs. These were taken with a lower energy 
@@ -460,7 +460,7 @@ channel basis without significant loss of good signals. The result of the
 procedure is illustrated in the bottom panel of Fig.~\ref{fig:noise}.
 
 The second noise signature was a coherent noise affecting about 25\% of the 
-amplifiers boards, when simultaneous hits in most of the 16 channels of the
+pre-amplifiers boards, when simultaneous hits in most of the 16 channels of the
 board were recorded. An event-based technique to identify and remove this noise was developed based 
 on counting simultaneous hits in each pre-amplifier group, and, if sufficiently large, 
 perform a dynamic pedestal subtraction based on the average ADC of neighboring 
