@@ -68,7 +68,7 @@ experiment in 2005~\cite{FX}. The IC was constructed from 424 lead-tungstate
 15$^{\circ}$~\cite{Hyon-suk}. To protect the 
 CLAS detector and the IC from the large flux of low energy M{\o}ller 
 electrons, a 5~T solenoid magnet was placed around the target to shield the detectors. 
-To detect recoiling $\alpha$ particles from the coherent DVCS on helium, a new 
+To detect recoiling $\alpha$ particles from the coherent DVCS on Helium, a new 
 radial time projection chamber (RTPC) was developed to track low energy nuclear 
 fragments. The solenoid field was used to track and measure momentum of 
 particles in the RTPC. The CLAS detector supplemented with both IC and RTPC was used 
@@ -118,8 +118,8 @@ angle.
 We detail here the different regions shown in Fig.~\ref{fig:RTPC_1_4} starting 
 from the beam line towards larger radius:\\
 \begin{itemize}
-   \item The 6 atm helium-4 target extends along the beam axis; it 
-      is a 284~mm long, 6~mm diameter Kapton straw with a 27-$\mu$m wall.
+  \item The 6-atm $^4$He target extends along the beam axis; it 
+      is a 284-mm-long, 6-mm-diameter Kapton straw with a 27-$\mu$m wall.
    \item The first gas gap covers the radial range from 3 mm to 20 mm. It is 
       filled with $^{4}$He gas at 1~atm to minimize secondary interactions from
       M\o{}ller electrons scattered by the beam. This region is surrounded by 
@@ -369,7 +369,7 @@ measurement in the RTPC, we tuned the drift paths independently of our
 knowledge of the chamber's conditions.
 
 Based on the kinematics of the electrons in the calibration data, 
-we generated the helium nucleus in our RTPC GEANT4 simulation~\cite{GEANT4}. Then,
+we generated the Helium nucleus in our RTPC GEANT4 simulation~\cite{GEANT4}. Then,
 we compared the calculated GEANT4 trajectory of the Helium nuclei to 
 the hits measured in the chamber. To perform this drift path extraction, 
 we made a first approximation assuming a linear dependence between the radius 
@@ -501,6 +501,9 @@ where the sum runs over all the hits of the track, $G_{i}$ is the gain of
 the associated pad, and $L$ is the visible track length in the active drift 
 volume. 
 
+\subsection{Energy Loss Corrections}\label{sec_eloss}
+Energy loss between the target and drift region was significant in the RTPC and necessitated a correction for optimal momentum reconstruction at the primary interaction vertex.  The dominant loss was in the 27-$\mu$m-thick Kapton target wall, with significant contributions also from the pressurized target gas and the foils before reaching the drift region.  Corrections were developed based on GEANT4 simulations with the full RTPC geometry and parameterized in terms of recoil curvature in the drift region and polar angle, separetely for all recoil hypotheses ($p$, $d$, $^3$H, $^3$He, $^4$He).  At our average coherent $^4$He DVCS kinematics, energy losses were about 5 MeV, while for $e-^4$He elastic scattering losses were about 3 MeV, which corresponds to momentum corrections of 25\% and 15\%, respectively.
+
 \section{Performance Studies}\label{sec_perfor}
 
 The primary data sample used for calibration and performance assessment of the
@@ -563,8 +566,8 @@ in this part of the left half of the detector
  \section{Conclusion}
 
 We reported on the construction, operation and calibration of a small RTPC 
-designed to measure helium-4 nuclei in high rate environment. The operation
-of the detector was successful and allowed to detect helium nuclei with a 75\%
+designed to measure Helium-4 nuclei in high rate environment. The operation
+of the detector was successful and allowed to detect Helium nuclei with a 75\%
 efficiency and a readout rate
 of 3.1 kHz triggered by the detection of high energy electrons and 
 photons in the CLAS spectrometer. 
