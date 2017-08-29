@@ -1,0 +1,133 @@
+----------------------------------------------------------------------
+Report of Referee A -- LG16705/Hattawy
+----------------------------------------------------------------------
+
+The manuscript "First Exclusive Measurement of Deeply Virtual Compton
+Scattering off 4He: Toward the 3D Tomography of Nuclei" presents first
+beam-spin asymmetry data of the exclusive scattering process off a
+pressurized 4-He gas target with the CLAS spectrometer at CEBAF.
+Deeply virtual Compton scattering (DVCS) is considered to be the
+cleanest probe for generalized parton distributions (GPDs) and has
+been applied to the proton in a number of experiments at HERA, CERN,
+and CEBAF, resulting in a three-dimensional image of the proton in
+terms of quarks and gluons. It is very interesting to apply this
+method to nuclei. A study of the 3D structure of nuclei is very
+interesting and important as a new approach to study modifications of
+the nucleon GPDs in the nuclear medium. A first step in this direction
+is done in the present paper for the spin-0 nucleus 4-He, which is
+described by a single GPD and therefore simplifies the interpretation.
+
+While there are previous data from the HERMES experiment with the
+detection of the scattered electron and the real photon only in the
+final state, the present CLAS experiment ensures the exclusivity of
+the measurement by additional detection of the recoil nucleus in a
+radial time projection chamber. This is an important improvement. The
+performance of this chamber is convincingly demonstrated in the
+calibration experiment [ref. 43] quoted in the manuscript. From the
+azimuthal dependence of the beam-spin asymmetry the real and imaginary
+parts of the 4-He Compton form factor were determined in a
+model-independent way. The data are in good agreement with the
+existing models.
+
+I have the following minor remarks, questions, or suggestions:
+
+1) page 4: As main background contributions accidental coincidences
+and coherent pi-0 production are discussed and quantified. For the
+Bethe-Heitler (BH) process, it is stated, that "the cross section for
+real photon electroproduction is dominated by BH, while the DVCS
+contribution is very small. However, the DVCS contribution is enhanced
+in the observables sensitive to the interference term, e.g. A_lu."
+Here, it would be highly desirable to have some quantitative
+information on the relative size of the DVCS contribution.
+
+2) page 5 (2. col. 2. paragraph: VGG model (explain or give reference
+[53] in the text also, it is given in the caption of Fig. 6).
+
+3) page 5 (2. col. middle): is is --> is
+
+Answer: Sorry for this, done.
+
+4) page 6: Fig. 5: wWy is the theoretical curve not shown in the left
+plot as a function of Q²? In the right plot only one curve is shown.
+Therefore, I suggest for the caption to say "and the curve is the
+theoretical calculation ..."
+
+Answer: The model in question does not contain any Q2 dependence by 
+construction. It would be therefore misleading to provide a straight 
+line as a prediction of the model, since it is an hypothesis used in 
+the model from the start.
+
+The paper is well structured, very clearly written and contains an
+introduction to the physics issues which also addresses a
+non-specialist reader. The figures are well chosen and adequately
+presented. After the points mentioned above have been addressed, I
+recommend to publish this paper in Physical Review Letters.
+
+----------------------------------------------------------------------
+Report of Referee B -- LG16705/Hattawy
+----------------------------------------------------------------------
+
+This manuscript deals with the measurement of beam spin asymmetry at JLab in the exclusive process of
+coherent deeply virtual Compton scattering (DVCS) off 4He (electron + 4He -> electron + photon + 4He). DVCS
+has been identified as a very promising tool to determine the Generalized Parton Distributions (GPD), one of
+the most modern and complete description of the hadron structure. Since more than 10 years the majority of
+DVCS measurements have been focused on the nucleon to provide information on its 3D structure. Only one
+publication is dedicated to measurements off nuclei (ranging from 4He to 14N, 20Ne, 85Kr and 131Xe). This
+experiment was achieved at HERMES (A. Airapetian et al. PRC81, 46 (2010)).
+While in the HERMES measurements using 27 GeV positrons only scattered lepton and photon are detected, in
+the JLab measurement using 6 GeV electrons all the outgoing particles including the low-energy recoiling 4He
+are detected to ensure the best exclusivity. Electron and photon are detected in the standard CLAS
+spectrometer completed by an inner calorimeter. A new and small TPC surrounding the target has been built to
+collect the low-energy 4He particle. There is no doubt that this experiment demonstrates the feasibility of
+measurement of coherent DVCS off nuclei. However if it is easy to extract the quantities ImHA and ReHA for a
+spinless nucleus what is the impact on the 4He structure? The results are more or less in agreement with the
+different present models. Is it possible to strengthen the conclusions or interpretations to deserve a publication
+in PRL?
+
+
+The text is rather well written but I have a few questions:
+- why is the Deltaphi distribution not symmetric (Fig. 2 top left)? What is the systematic effect on the azimuthal
+distributions from which the important quantities ImHA and ReHA are extracted?
+
+Answer: The asymmetry can come from various sources. The magnetic field shifts the phi of particles 
+depending on their mass and momentum. Uncertainties in the momentum reconstruction and magnetic field strength have the biggest
+effect on this observable. The offset is around ??? (mohammad can you get the exact value?) which will not affect our
+fits because of our large binning. 
+
+
+- the phi distributions (Fig. 4) present different sizes of statistical error bars. Is it due to the transition from the
+inner calorimeter to the calorimeter at larger angles? Is there an impact of this discontinuity on the 2 extracted
+quantities?
+
+Answer: DVCS events presented here are only measured in the inner calorimeter, the CLAS callorimeter is only used to
+reconstruct pi0 for their substraction from our sample. The variation of the error bars are mostly due to acceptance
+issues, because of the disposition of the detector, some specific kinematics happen to be more difficult to measure 
+in our setup and lead to larger error bars.
+
+
+- the formula ALU(phi) is only valid at leading order and leading twist and only for quarks (ignoring the gluon
+transversity). This should be stated.
+
+- can the authors give the formula of the 4 coefficients alpha i(phi) to ease the reader? They are the basis of the
+determination of the 2 important quantities.
+
+Answer: This is an article size issue, providing these equations would take some place. If the editorial board indicate
+that we have some room, we would gladly add them.
+
+
+- the experiment allows mainly only a determination of ImHA and not really of ReHA. To improve the situation
+you need either a good determination of the absolute cross section for single photon production or of the
+charge asymmetry. This could be also pointed for future experiments.
+
+
+
+- can you comment about the size of the twist-three contributions which are evaluated in the Ref 49 for
+different kinematics (“Refined analysis of photon leptoproduction off spinless target” from Belitsky and
+Mueller, PRD79, 014017 (2009))?
+- suggestions for improvement of notations:
+-- can you give a small space in the expression e4He->e’4He or in similar expressions in the text?
+-- 4He and 4He’ are used in the final state, can you unify the notation?
+- Improvement of the References:
+-- you give a rather exhaustive list of DVCS publications but the first H1 DVCS result is not quoted:
+H1, C. Adloff et al., Phys. Lett. B517, 47 (2001), hep-ex/0107005.
+-- Ref 43: Dupré (e with accent)
