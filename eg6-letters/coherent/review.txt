@@ -40,12 +40,19 @@ in the observables sensitive to the interference term, e.g. A_lu."
 Here, it would be highly desirable to have some quantitative
 information on the relative size of the DVCS contribution.
 
+Answer: Mohammad can you look into that with Vadim's code?
+
+
 2) page 5 (2. col. 2. paragraph: VGG model (explain or give reference
 [53] in the text also, it is given in the caption of Fig. 6).
+
+Answer: Done.
+
 
 3) page 5 (2. col. middle): is is --> is
 
 Answer: Sorry for this, done.
+
 
 4) page 6: Fig. 5: wWy is the theoretical curve not shown in the left
 plot as a function of Q²? In the right plot only one curve is shown.
@@ -56,6 +63,7 @@ Answer: The model in question does not contain any Q2 dependence by
 construction. It would be therefore misleading to provide a straight 
 line as a prediction of the model, since it is an hypothesis used in 
 the model from the start.
+
 
 The paper is well structured, very clearly written and contains an
 introduction to the physics issues which also addresses a
@@ -84,13 +92,15 @@ spinless nucleus what is the impact on the 4He structure? The results are more o
 different present models. Is it possible to strengthen the conclusions or interpretations to deserve a publication
 in PRL?
 
+Answer:
+
 
 The text is rather well written but I have a few questions:
 - why is the Deltaphi distribution not symmetric (Fig. 2 top left)? What is the systematic effect on the azimuthal
 distributions from which the important quantities ImHA and ReHA are extracted?
 
-Answer: The asymmetry can come from various sources. The magnetic field shifts the phi of particles 
-depending on their mass and momentum. Uncertainties in the momentum reconstruction and magnetic field strength have the biggest
+Answer: The asymmetry can come from various sources. The magnetic field shifts the phi of particles depending 
+on their mass and momentum. Uncertainties in the momentum reconstruction and magnetic field strength have the biggest
 effect on this observable. The offset is around ??? (mohammad can you get the exact value?) which will not affect our
 fits because of our large binning. 
 
@@ -108,10 +118,13 @@ in our setup and lead to larger error bars.
 - the formula ALU(phi) is only valid at leading order and leading twist and only for quarks (ignoring the gluon
 transversity). This should be stated.
 
+Answer: This is now stated right before the equation 5, where we give the expression of ALU.
+
+
 - can the authors give the formula of the 4 coefficients alpha i(phi) to ease the reader? They are the basis of the
 determination of the 2 important quantities.
 
-Answer: This is an article size issue, providing these equations would take some place. If the editorial board indicate
+Answer: This is an article size issue, providing these equations would take some place. If the editor indicate
 that we have some room, we would gladly add them.
 
 
@@ -119,15 +132,36 @@ that we have some room, we would gladly add them.
 you need either a good determination of the absolute cross section for single photon production or of the
 charge asymmetry. This could be also pointed for future experiments.
 
+Answer: It is true that based on eq 5, ALU is more sensitive to the imaginary part than the real part of HA.
+However, it is unclear to us that cross section measurements or charge asymmetry would lead to better results, specific
+studies taking into account realistic future experimental error bars would need to be performed to make such 
+a claim.
 
 
 - can you comment about the size of the twist-three contributions which are evaluated in the Ref 49 for
 different kinematics (“Refined analysis of photon leptoproduction off spinless target” from Belitsky and
 Mueller, PRD79, 014017 (2009))?
+
+Answer: ???
+
 - suggestions for improvement of notations:
 -- can you give a small space in the expression e4He->e’4He or in similar expressions in the text?
+
+Answer: Done.
+
+
 -- 4He and 4He’ are used in the final state, can you unify the notation?
+
+Answer: Done.
+
+
 - Improvement of the References:
 -- you give a rather exhaustive list of DVCS publications but the first H1 DVCS result is not quoted:
 H1, C. Adloff et al., Phys. Lett. B517, 47 (2001), hep-ex/0107005.
+
+Answer: Done.
+
+
 -- Ref 43: Dupré (e with accent)
+
+Answer: Done.
