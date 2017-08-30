@@ -51,7 +51,7 @@ Answer: Done.
 
 3) page 5 (2. col. middle): is is --> is
 
-Answer: Sorry for this, done.
+Answer: Sorry for this, it is corrected.
 
 
 4) page 6: Fig. 5: wWy is the theoretical curve not shown in the left
@@ -62,7 +62,9 @@ theoretical calculation ..."
 Answer: The model in question does not contain any Q2 dependence by 
 construction. It would be therefore misleading to provide a straight 
 line as a prediction of the model, since it is an hypothesis used in 
-the model from the start.
+the model from the start. In general, we can only provide what the 
+model authors have provided to us. This is the reason, some other
+curves are missing.
 
 
 The paper is well structured, very clearly written and contains an
@@ -111,8 +113,8 @@ quantities?
 
 Answer: DVCS events presented here are only measured in the inner calorimeter, the CLAS callorimeter is only used to
 reconstruct pi0 for their substraction from our sample. The variation of the error bars are mostly due to acceptance
-issues, because of the disposition of the detector, some specific kinematics happen to be more difficult to measure 
-in our setup and lead to larger error bars.
+issues. Because of the disposition of the detectors, some specific kinematics happen to be more difficult to measure 
+with our setup and lead to larger error bars.
 
 
 - the formula ALU(phi) is only valid at leading order and leading twist and only for quarks (ignoring the gluon
@@ -124,8 +126,8 @@ Answer: This is now stated right before the equation 5, where we give the expres
 - can the authors give the formula of the 4 coefficients alpha i(phi) to ease the reader? They are the basis of the
 determination of the 2 important quantities.
 
-Answer: This is an article size issue, providing these equations would take some place. If the editor indicate
-that we have some room, we would gladly add them.
+Answer: This is an article length issue, providing these equations would take some place. If the editor indicate
+that we have room for these, we would gladly add them.
 
 
 - the experiment allows mainly only a determination of ImHA and not really of ReHA. To improve the situation
