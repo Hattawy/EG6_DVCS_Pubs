@@ -97,7 +97,10 @@ spinless nucleus what is the impact on the 4He structure? The results are more o
 different present models. Is it possible to strengthen the conclusions or interpretations to deserve a publication
 in PRL?
 
-Answer: The statistical error bars of this measurement 
+Answer: The statistical error bars of this measurement do not allow to make any strong statement on the 4He 
+structure. The progress accomplished since previous measurements is however important, we demonstrated the
+feasability and the soundness of the method as we provide the first results for the exclusive nuclear DVCS
+and show that these results can be easily interpreted in term of GPD in a model independent way.
 
 
 The text is rather well written but I have a few questions:
