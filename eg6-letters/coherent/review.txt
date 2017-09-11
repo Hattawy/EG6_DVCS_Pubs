@@ -106,7 +106,7 @@ distributions from which the important quantities ImHA and ReHA are extracted?
 
 Answer: The asymmetry can come from various sources. The magnetic field shifts the phi of particles depending 
 on their mass and momentum. Uncertainties in the momentum reconstruction and magnetic field strength have the biggest
-effect on this observable. The offset is 0.17 degrees which we believe to be negligible effect in regard to our 20 
+effect on this observable. The offset is 0.17 degrees which is a negligible effect in regard to our 40 
 degrees bins and will not affect the extraction of the CFF with any significance. 
 
 
@@ -138,9 +138,10 @@ you need either a good determination of the absolute cross section for single ph
 charge asymmetry. This could be also pointed for future experiments.
 
 Answer: It is true that based on eq 5, ALU is more sensitive to the imaginary part than the real part of HA.
-However, it is unclear to us that cross section measurements or charge asymmetry would lead to better results, specific
-studies taking into account realistic future experimental error bars would need to be performed to make such 
-a claim.
+Also, we agree that cross section and charge asymmetry measurements would likely lead to better results for
+the measurement of the real part of the GPD. However, we feel that specific studies taking into account 
+realistic future experimental error bars on these observables would be needed in order to make such a claim 
+in the paper.
 
 
 - can you comment about the size of the twist-three contributions which are evaluated in the Ref 49 for
