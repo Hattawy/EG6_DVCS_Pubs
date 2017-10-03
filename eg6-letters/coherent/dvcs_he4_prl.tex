@@ -264,11 +264,28 @@ Belitsky:2008bz} as
 \end{split}
 \label{eq:A_LU-coh}
 \end{equation}
-Explicit expressions of the kinematic factors $\alpha_i$ are derived 
-from expressions in
-Ref.~\cite{Belitsky:2008bz} and are functions of Fourier harmonics in the 
-azimuthal angle $\phi$, the nuclear form factor $F_A(t)$ and kinematical
-factors. Using the different $\sin(\phi)$ and $\cos(\phi)$ contributions, 
+Where $F_A(t)$ is the nuclear form factor and explicit expressions of the 
+kinematic factors $\alpha_i$ are derived from expressions in Ref.~\cite{Belitsky:2008bz}
+These factors can be simplified as:
+\begin{equation}
+\begin{split}
+&\alpha_0 (\phi)  = \frac{x_{A}(1+\epsilon^2)^2}{y} S_{++}(1) \sin(\phi) \\
+&\alpha_1 (\phi)  =  c_0^{BH}+c_1^{BH} \cos({\phi})+c_2^{BH} \cos(2\phi) \\
+&\alpha_2 (\phi)  =  \frac{x_{A}(1+\epsilon^2)^2}{y}  \left( C_{++}(0) +  
+C_{++}(1) cos(\phi) \right) \\
+&\alpha_3 (\phi) = \frac{x^{2}_{A}t(1+\epsilon^2)^2}{y} {\mathcal P}_1(\phi) 
+{\mathcal P}_2(\phi) \cdot 2 \frac{2-2y+y^2 + \frac{\epsilon^2}{2}y^2}{1 + 
+\epsilon^2}
+\end{split}
+\end{equation}
+Where $S_{++}(1)$, $C_{++}(0)$ and $C_{++}(1)$ are the Fourier harmonics in the 
+leptonic tensor, and with ${\mathcal P}_1(\phi)$ and ${\mathcal P}_2(\phi)$ the BH
+propagators, which include only $\cos(\phi)$ dependencies. Their explicit 
+expressions can be found in Appendix~A of \cite{Armstrong:2017wfw}.  
+
+
+ and are functions of Fourier harmonics in the 
+azimuthal angle $\phi$,. Using the different $\sin(\phi)$ and $\cos(\phi)$ contributions, 
 both the imaginary and real parts of $\mathcal{H}_{A}$ can be extracted unambiguously
 by fitting the $A_{LU}(\phi)$ distribution.
 
@@ -321,7 +338,7 @@ nucleon one, and reverses the sign of the nuclear effect.
    middle plot: the full-red and the dashed-blue curves are theoretical 
    calculations from \cite{simonetta_2}. On the right: the green circles are 
    the HERMES $-A_{LU}$ (a positron beam was used) inclusive measurements 
-   \cite{Airapetian}, and the curves are the theoretical calculations 
+   \cite{Airapetian:2010nu}, and the curve is the theoretical calculation 
    from \cite{simonetta_2}. The grey bands represent the systematic errors.}
 \label{fig:alu90}
 \end{figure*}
@@ -376,7 +393,7 @@ parts of the $^4$He CFF, $\mathcal{H}_A$. The extracted CFF is in
 agreement with predictions of the available models. This first fully exclusive 
 experiment opens new perspectives for studying nuclear structure with the GPD 
 framework and paves the way for future measurements at JLab using 12 GeV CEBAF 
-and upgraded equipment.
+and upgraded equipment~\cite{Armstrong:2017wfw}.
 
 %Acknowledgments
 The authors thank the staff of the Accelerator and Physics Divisions at the 
@@ -608,6 +625,10 @@ Eur.\ Phys.\ J.\ C {\bf 32}, 347 (2003).
 \bibitem{Belitsky:2008bz}
 A.~V.~Belitsky and D.~Mueller,
 Phys.\ Rev.\ D {\bf 79}, 014017 (2009).
+
+\bibitem{Armstrong:2017wfw} 
+  W.~Armstrong {\it et al.},
+  arXiv:1708.00888 [nucl-ex].
 
 \bibitem{simonetta_2}
 S.~Liuti and S.K.~Taneja, 

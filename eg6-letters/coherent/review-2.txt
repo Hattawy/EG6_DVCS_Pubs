@@ -1,0 +1,35 @@
+----------------------------------------------------------------------
+Second Report of Referee A -- LG16705/Hattawy
+----------------------------------------------------------------------
+
+The authors have in my opinion responded adequately to the questions
+and suggestions made by the referees and improved the paper in the
+corresponding parts. Only the (small, formal, and not really
+important) remark that I made on the caption of Fig. 5 was not
+addressed and maybe was overlooked: In the right plot only one curve
+is shown. Therefore, I suggest to say in the caption: " .. and the
+curve is the theoretical calculation ...".
+
+Answer: Sorry, we missed that. This is corrected.
+
+
+In any case I recommend publication of this paper in PRL.
+
+----------------------------------------------------------------------
+Second Report of Referee B -- LG16705/Hattawy
+----------------------------------------------------------------------
+
+As I have said in my previous report this experiment demonstrates
+perfectly the feasibility of measurement of coherent DVCS off nuclei.
+The goal of the authors is also to extract ImHA and ReHA at leading
+order and leading twist. I really think that it is important to give
+to the reader the exact expressions of alphi_i(phi) (in Equation 5)
+even if the text will be a little longer. This is the basis of the
+fitting procedure.
+
+Answer: we added the formulas and a reference to the full expressions
+used for the fit.
+
+In the Figure 5, Reference 12 should be mentioned instead of Ref 11.
+
+Answer: Indeed, we modified it.
