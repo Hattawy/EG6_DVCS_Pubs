@@ -1,0 +1,140 @@
+Ms. Ref. No.:  NIMA-D-17-00685
+Title: A Radial Time Projection Chamber for $\alpha$ detection in CLAS at JLab
+Nuclear Inst. and Methods in Physics Research, A
+
+Dear Dr. Dupre,
+
+I have received the reviewers' comments on your paper that are appended below. They have advised  that your manuscript requires a major revision before it can considered for publication.  
+ 
+If you decide to revise the work, please submit a list of changes or a rebuttal against each point raised when you submit the revised manuscript.
+The revision should be submitted by
+10 Dec 2017 
+
+Revisions that do not address reviewer comments point-by-point will not be considered.
+
+To submit a revision, please go to https://ees.elsevier.com/nima/ and click "login" underneath the journal title banner.  You may then type in your user name/password and click "Author Login." 
+
+Your username is: dupre@ipno.in2p3.fr
+If you need to retrieve password details, please go to: 
+http://ees.elsevier.com/nima/automail_query.asp        
+
+On your Main Menu page is a folder entitled "Submissions Needing Revision".  You will find your submission record there.  Also, the reviewer(s) may have uploaded detailed comments on your manuscript. Click on the "Submissions Needing Revision" from your main menu, then click on "View Reviewer Attachments" to access any detailed comments from the reviewer(s) that may have been included. 
+
+With best regards,
+
+Daniela Bortoletto, PhD
+Editor
+Nuclear Inst. and Methods in Physics Research, A
+
+NOTE: While submitting the revised manuscript, please double check the author names provided in the submission so that authorship related changes are made in the revision stage. Any authorship-related change after acceptance will involve approval from co-authors and respective editor handling the submission and this may cause a significant delay in publishing your manuscript.
+
+Reviewers' comments:
+
+
+Reviewer #1: Dear Author, please find here a list of comments from my side.
+
+Summary: the article describes the layout, operation and performances of a Radial Time Projection Chamber with the electron amplification stage provided by three layers of GEM. The main novelty is the application of the electron multiplier for the amplification stage in a TPC on a semi-cylindrical shaped plane. The detector, originally built for the BoNuS experiment, is in fact formed by two semi-cylindrically shaped halves connected together, with the axis coincident with the beam line. 
+The detector was implemented to measure DVCS of electrons on different light nuclei and the performances were evaluated on electron - 4He elastic scattering runs.
+Chapter 1 describes the CLAS @ JLab detector, inside which the RTPC was installed and took data. 
+Chapter 2 focuses on the RTPC mechanical and electrical layout. From inner to outer, there are: the 4He gas target, a 4He gas gap, the actual time projection chamber. The time projection chamber is a 200 long detector composed by different gas gaps limited by concentric electrodes around the axis: cathode (R=30mm), G1(R=60mm), G2(R=63mm), G3(R=66mm), readout plane (R=69mm). Everything fits inside a 5T solenoidal magnetic field. It provides both time and charge measurements.
+Chapter 3 is a short description of the electronics and readout, mainly inherited from ALICE and BoNuS. The improvement stands in the higher readout rate capability.
+Chapter 4 talks about calibration of drift velocity, drift paths and energy loss measurements by the usage of simulations with MAGBOLTZ and tuning the results on elastic scattering data.
+Chapter 5 concentrates on track finding/fitting procedure and noise evaluation and subtraction.
+Chapter 6 reports on resolution and efficiency from the elastic scattering reconstruction of 2 GeV electrons on 4He and Chapter 7 concludes the paper.
+
+The article main points of interest are the followings:
+a)  the usage of GEMs as avalanche creators inside the time projection chamber. As far as I know other TPC with the wires substituted by GEM layers have been (or are being) realized, like ALICE TPC upgrade or the FOPI one (proposed for PANDA), but in those cases the GEM are planar and on the end plane of the TPC, not around the beamline.
+b) The shaping of the GEM foils around the target. However, since now a fully cylindrical GEM foil has been realized (for the KLOE-2 detector and for the next BESIII inner tracker) I would not call these "cylindrical" GEMs, but "semi-cylindrical" GEMs to point out the difference (which reflects in the construction procedure).
+Maybe these other experiments using GEMs should be mentioned due to the similarities, thought they are successive in time to this RTPC construction.
+Concerning the work description, it is mainly exhaustive, but in some points there are open questions that I would like to submit to the authors in the following.
+--------------------------------------------------
+
+Chapter by chapter comments:
+
+* Chapter 2:
+1)	As already said I would not speak of cylindrical GEMs but semi-cylindrical. Moreover, please add the reference to Sauli's paper [11] when speaking the first time about GEM in the text.
+2)	In my opinion, this chapter should highlight better which are the improvements w.r.t. BoNuS detector to underline the originality of this work. For example, better acceptance? Higher gain? Higher electric stability? Lower material budget? Please quote some old and new values, maybe in a table, to make them evident.
+3)	Relevant length and thicknesses of the various elements are reported in the text and in the figure, can you please add also the z position of the target w.r.t the detector? To give the complete information, I would also add the value of the induction gap electric field, which is the only missing field value and the value of the reached amplification gain with the three GEM.
+4)	When speaking of low spark rate the reference [12] is quoted, which is the PDG. Maybe it is better to quote more specific studies like the ones by Bachmann et al.
+5)	line 119: is the Kapton of the GEM foil really 300 mum thick? It is usually very thin, like 50 mum, in order to have low material budget and very high fields.
+
+* Chapter 3:
+6)	The description of the electronics looks to me a little not well organized, like a collection of info from previous descriptions from ALICE and BoNuS. It is a series of details, some of which not really relevant for the good understanding of the work described in the paper. So, I would put only some general info (the number of channels/pad, the number of time samples and their width for each channel and the number of  ADC samples and their width for each channel) with the reference where to find more material and just write explicitly the novelties, such as the fact that the acquisition rate was increased (footnote 2).
+7)	Also, I understand that fig. 5 comes from reference [14], updated with the values of the RTPC instead of the ALICE-TPC, but it seems to me that there are some parts of the picture which have to be fixed. I list them here:
+- why does it say 768 pads?
+- why 7.6 microsec?
+- the anode wire e grid make no sense here
+- why L1 and L2 (trigger levels?) 
+
+* Chapter 4:
+	/paragraph 4.1
+8)	I would really prefer to call it drift "velocity" instead of drift "speed"
+9)	I don't really understand the procedure to find the drift velocity described here and fig. 7. What is Nb_max e Nb_max/2? Why does T_max/2 correspond to Nb_max/2 and why is it used as T_max? If I make a quick calculation and use T_max ~ 65 * 100ns and a drift length of ~ 3cm /cos(23°) ~ 7.5 cm I get a v_drift ~ 1.15 cm/microsec << 5 cm/microsec which is the average value of drift velocity in drift chambers.
+The procedure according to me would be:
+- for each hit associated to a track, whose time information is available, take the drift time t_drift_i;
+- plot the distribution of these t_drift_i;
+- find the T_min = minimum t_drift_i and T_max = maximum t_drift_i
+- compute delta_t = T_max - T_min and extract the drift velocity by dividing the track length / delta_t. Figure 8 would have the delta_t instead of the T_max vs z.
+Please provide more details on the applied procedure, since I have the open questions I wrote before and I could not understand it properly. Moreover, please quote the value of the found drift velocity. Is it in accordance with the simulations?
+10)	Figure 6: why are T_min and T_max not at the drift gap extremities?
+
+        /paragraph 4.2
+11)	line 306: "in one bin" should be explained better. I understood it is the subdivision in bins of the z coordinate, but it was not so obvious at the first reading
+12)	Has the stability of the drift path been counterchecked with simulations varying the field according to the cathode radius variation? How much is the field variation if the radius have some mm of uncertainty?
+
+        /paragraph 4.3
+13)	The gain calibration is very quick. I would like more details, e.g. "setting the simulation properly" intends only GEANT4 or also MAGBOLTZ or GARFIELD? Were they used to simulate the drift and avalanche formation of the electrons? And the diffusion from the gas? Was a specific code written to simulate the electronics?
+14)	line 330: "correction factors" are mentioned. On what? Why haven't only good tracks been used for calibration? Lack of statistics?
+15)	When it says that the pad charge is "compared" to the neighboring ones, what happens next? Is it the noise reduction step described later? If so, please write it. 
+16)	Figure 11: I don't understand it. How many tracks does the histo contain? If the single pad has 128 channels, how many channels does the single bin contain? Moreover, is the dE calculated on pad by pad basis? In that case, why don't you put just one point in the histo for each pad? What is the mean number of channels or pads fired by one track? Sorry for the list of questions, but I could not understand the figure.
+17)	Figure 12 - please, put if after figure 11. Moreover, please change dEdx to dE/dx on y axis. Why are the left and right pictures so different? Talking about the deuteron band which is present only in the left figure and the smear on the top part of the right picture. 
+
+* Chapter 5
+	/paragraph 5.1	
+18)	Please detail a little bit more the procedure to remove the oscillatory noise. It says "event by event and channel by channel": if the ADC threshold is passed then a noise level is subtracted? If so, how is it calculated?
+        /paragraph 5.2
+19)	How was "10.5 mm" cut chosen? is it in xy plane or in 3-dimensions?
+20)	How was the "10 hits" cut chosen? What is the mean number of primary ionization in this gas mixture?
+21)	< dE/dx > is computed here as corrected Etot divided total track length. Usually the mean dE/dx is computed with the truncated mean of the specific energy losses of each hit. Isn't it possible to compute it like this here? dx for each hit can be (maybe) computed from the difference in the hit times. Sum dE_i / Sum dx_i is not equal to Sum (dE_i/dx_i).
+
+* Chapter 6
+	/paragraph 6.2
+22)	I understand that efficiency is a ratio between two integrals, each integral being the area of the Gaussian which fits the recoil mass distribution in the inclusive and exclusive case. If so, would it be possible to please draw both fits on the figure 14 and provide the integrals to compute the mean efficiency? If I misunderstood, please comment.
+
+* Chapter 7 
+23)	Is it "high rate environment" or "high readout rate"? They are connected, but what is the rate the RTPC underwent during data taking?
+24)	I understand the resolution and efficiency have been evaluated with the 2 GeV electrons. Is it foreseen to analyze also the 6 GeV electron runs, which were the actual data taking? Is there an evaluation of the foreseen RTPC performances in that case?
+
+----------------------------------------------
+Some general remarks on the layout:
+25)	I would add to the keywords also GEM or gas electron multipliers or multi pattern gas detectors (it depends on what is available).
+26)	Please put the units on the axis of every figure, together with the physical quantity. In some figures it is only written in the caption or in the text.
+27)	Sometimes to explain the dimension of something something like "250 mm long" (line 67) while some other times "84-mm-long" (on line 83) is written. Please make this uniform in the whole text (I just quoted two examples, but there are more in the text).
+28)	In footnote 2, BoNuS is written BONUS and somewhere else in the text also BoNus. Please uniform this to the correct one, which I think is BoNuS.
+29)	Please make the bibliography entries uniform: they are not all written with the same layout.
+
+List of in text corrections:
+30)	line 17: "GeV" --> "GeV/c"
+31)	line 26: "nuclei" --> "nucleus"
+32)	line 40: "to track" --> "to bend tracks"(since the magnetic field just bends the track and then the detector tracks them)
+33)	line 91: "second gap" --> "second gas gap"
+34)	line 110: "from the GEMs" -->  something like "after they have been multiplied by the GEMs" or "induced in the last gas gap" since the GEM is the amplification system.
+35)	line 131: "axial magnetic field" --> "solenoidal magnetic field"
+36)	line 133: "challenge" --> "challenges"
+37)	line 133-134: "radial TPC" it would be better to uniform the way to write it in the whole text (like, "RTPC")
+38)	line 167: "stage" --> "stages"
+39)	line 176: "ReadOut" should always be written in the same way (see line 168) unless this was specifically written in a different way in the cited articles
+40)	line 208: cm^{-1} . s^{-1} --> cm^{-1} \cdot s^{-1} (the dot is not in the center vertically)
+41)	line 208 again: "6.067" before it said "6.064", please fix the wrong one
+42)	line 263: "2%" --> I would put "around 2%"
+43)	line 268: "reconstructions" --> "reconstruction"
+44)	line 269: "Paths" --> "Path"
+45)	line 308: "codes" --> "code"
+46)	line 405: "electron's" --> "electron"
+47)	fig14 - caption: "W distribution" --> I would put "recoil mass W distribution"
+48)	table 1: sigma_p is actually sigma_p/p, since it is in percentage
+49)	line 432: "Helium-4" --> "4He" (for uniformity, as was written before)
+50)	line 488: There is an extra "," at the beginning of the item
+
+The topic of the article is interesting but I would recommend a revision. Please I would like the authors to address the questions asked and provide the required changes or explain why they think those changes are not necessary/correct. Thank you. Best regards.
+
