@@ -1,0 +1,10 @@
+#! /bin/bash
+
+./Clean
+
+pdflatex review-1.tex
+bibtex   review-1
+pdflatex review-1.tex
+pdflatex review-1.tex
+
+rm review-1.aux review-1.bbl review-1.blg review-1.log review-1.out review-1.maf review-1.mtc* review-1.nlo formatAndDefs.aux
