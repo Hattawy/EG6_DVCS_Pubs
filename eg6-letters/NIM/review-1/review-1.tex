@@ -10,213 +10,340 @@
 \begin{document}
 
 
-\section*{Reviewers' comments (11 Oct 2017)}
+\section*{Reviewers' comments (Oct. 11th, 2017)}
 
 Reviewer \#1: Dear Author, please find here a list of comments from my side.
 
-Summary: the article describes the layout, operation and performances of a Radial Time Projection Chamber with the electron amplification stage provided by three layers of GEM. The main novelty is the application of the electron multiplier for the amplification stage in a TPC on a semi-cylindrical shaped plane. The detector, originally built for the BoNuS experiment, is in fact formed by two semi-cylindrically shaped halves connected together, with the axis coincident with the beam line.\\
+Summary: the article describes the layout, operation and performances of a 
+Radial Time Projection Chamber with the electron amplification stage provided 
+by three layers of GEM. The main novelty is the application of the electron 
+multiplier for the amplification stage in a TPC on a semi-cylindrical shaped 
+plane. The detector, originally built for the BoNuS experiment, is in fact 
+formed by two semi-cylindrically shaped halves connected together, with the 
+axis coincident with the beam line.\\
  
-The detector was implemented to measure DVCS of electrons on different light nuclei and the performances were evaluated on electron - 4He elastic scattering runs.\\
+The detector was implemented to measure DVCS of electrons on different light 
+nuclei and the performances were evaluated on electron-$^4$He elastic 
+scattering runs.\\
 
-Chapter 1 describes the CLAS @ JLab detector, inside which the RTPC was installed and took data.\\ 
-Chapter 2 focuses on the RTPC mechanical and electrical layout. From inner to outer, there are: the 4He gas target, a 4He gas gap, the actual time projection chamber. The time projection chamber is a 200 long detector composed by different gas gaps limited by concentric electrodes around the axis: cathode (R=30mm), G1(R=60mm), G2(R=63mm), G3(R=66mm), readout plane (R=69mm). Everything fits inside a 5T solenoidal magnetic field. It provides both time and charge measurements.\\
-Chapter 3 is a short description of the electronics and readout, mainly inherited from ALICE and BoNuS. The improvement stands in the higher readout rate capability.\\
-Chapter 4 talks about calibration of drift velocity, drift paths and energy loss measurements by the usage of simulations with MAGBOLTZ and tuning the results on elastic scattering data.\\
-Chapter 5 concentrates on track finding/fitting procedure and noise evaluation and subtraction.\\
-Chapter 6 reports on resolution and efficiency from the elastic scattering reconstruction of 2 GeV electrons on 4He and Chapter 7 concludes the paper.\\
+Chapter 1 describes the CLAS@JLab detector, inside which the RTPC was installed 
+and took data. Chapter 2 focuses on the RTPC mechanical and electrical layout.  
+From inner to outer, there are: the $^4$He gas target, a $^4$He gas gap, the 
+actual time projection chamber. The time projection chamber is a 200~mm long 
+detector composed by different gas gaps limited by concentric electrodes around 
+the axis: cathode (R= 30~mm), G1(R= 60~mm), G2(R= 63~mm), G3(R= 66~mm), readout 
+plane (R= 69~mm). Everything fits inside a 5T solenoidal magnetic field. It 
+provides both time and charge measurements. Chapter 3 is a short description of 
+the electronics and readout, mainly inherited from ALICE and BoNuS. The 
+improvement stands in the higher readout rate capability. Chapter 4 talks about 
+calibration of drift velocity, drift paths and energy loss measurements by the 
+usage of simulations with MAGBOLTZ and tuning the results on elastic scattering 
+data. Chapter 5 concentrates on track finding/fitting procedure and noise 
+evaluation and subtraction. Chapter 6 reports on resolution and efficiency from 
+the elastic scattering reconstruction of 1 GeV electrons on 4He and Chapter 7 
+concludes the paper.\\
 
-The article main points of interest are the followings:\\
-a)  the usage of GEMs as avalanche creators inside the time projection chamber. As far as I know other TPC with the wires substituted by GEM layers have been (or are being) realized, like ALICE TPC upgrade or the FOPI one (proposed for PANDA), but in those cases the GEM are planar and on the end plane of the TPC, not around the beamline.\\
-b) The shaping of the GEM foils around the target. However, since now a fully cylindrical GEM foil has been realized (for the KLOE-2 detector and for the next BESIII inner tracker) I would not call these "cylindrical" GEMs, but "semi-cylindrical" GEMs to point out the difference (which reflects in the construction procedure).\\
+The article main points of interest are the followings:
 
-Maybe these other experiments using GEMs should be mentioned due to the similarities, thought they are successive in time to this RTPC construction.\\ 
+a) The usage of GEMs as avalanche creators inside the time projection chamber.  
+As far as I know other TPC with the wires substituted by GEM layers have been 
+(or are being) realized, like ALICE TPC upgrade or the FOPI one (proposed for 
+PANDA), but in those cases the GEM are planar and on the end plane of the TPC, 
+not around the beamline.
 
-Concerning the work description, it is mainly exhaustive, but in some points there are open questions that I would like to submit to the authors in the following.\\
---------------------------------------------------\\
+b) The shaping of the GEM foils around the target. However, since now a fully 
+cylindrical GEM foil has been realized (for the KLOE-2 detector and for the 
+next BESIII inner tracker) I would not call these "cylindrical" GEMs, but 
+"semi-cylindrical" GEMs to point out the difference (which reflects in the 
+construction procedure). Maybe these other experiments using GEMs should be 
+mentioned due to the similarities, thought they are successive in time to this 
+RTPC construction.\\ 
 
+Concerning the work description, it is mainly exhaustive, but in some points 
+there are open questions that I would like to submit to the authors in the 
+following.
+
+\newpage
 \section*{Chapter by chapter comments}
 
 \begin{enumerate}
 
 \subsection*{Chapter 2}
-\item As already said I would not speak of cylindrical GEMs but semi-cylindrical. Moreover, please add the reference to Sauli's paper [11] when speaking the first time about GEM in the text.
+\item As already said I would not speak of cylindrical GEMs but 
+   semi-cylindrical. Moreover, please add the reference to Sauli's paper [11] 
+   when speaking the first time about GEM in the text.\\
 \textcolor{blue}{ } 
 
-\item In my opinion, this chapter should highlight better which are the improvements w.r.t. BoNuS detector to underline the originality of this work. For example, better acceptance? Higher gain? Higher electric stability? Lower material budget? Please quote some old and new values, maybe in a table, to make them evident.
+\item In my opinion, this chapter should highlight better which are the 
+   improvements w.r.t. BoNuS detector to underline the originality of this 
+   work. For example, better acceptance? Higher gain? Higher electric 
+   stability? Lower material budget? Please quote some old and new values, 
+   maybe in a table, to make them evident.\\
 \textcolor{blue}{ } 
 
-\item Relevant length and thicknesses of the various elements are reported in the text and in the figure, can you please add also the z position of the target w.r.t the detector? To give the complete information, I would also add the value of the induction gap electric field, which is the only missing field value and the value of the reached amplification gain with the three GEM.
+\item Relevant length and thicknesses of the various elements are reported in 
+   the text and in the figure, can you please add also the z position of the 
+   target w.r.t the detector? To give the complete information, I would also 
+   add the value of the induction gap electric field, which is the only missing 
+   field value and the value of the reached amplification gain with the three 
+   GEM.\\
 \textcolor{blue}{ } 
 
-\item When speaking of low spark rate the reference [12] is quoted, which is the PDG. Maybe it is better to quote more specific studies like the ones by Bachmann et al.
+\item When speaking of low spark rate the reference [12] is quoted, which is 
+   the PDG. Maybe it is better to quote more specific studies like the ones by 
+   Bachmann et al.\\
 \textcolor{blue}{ } 
 
-\item line 119: is the Kapton of the GEM foil really 300 mum thick? It is usually very thin, like 50 mum, in order to have low material budget and very high fields.
+\item line 119: is the Kapton of the GEM foil really 300 mum thick? It is 
+   usually very thin, like 50 mum, in order to have low material budget and 
+   very high fields.\\
 \textcolor{blue}{ } 
 
 \subsection*{ Chapter 3}
-\item The description of the electronics looks to me a little not well organized, like a collection of info from previous descriptions from ALICE and BoNuS. It is a series of details, some of which not really relevant for the good understanding of the work described in the paper. So, I would put only some general info (the number of channels/pad, the number of time samples and their width for each channel and the number of  ADC samples and their width for each channel) with the reference where to find more material and just write explicitly the novelties, such as the fact that the acquisition rate was increased (footnote 2).
+\item The description of the electronics looks to me a little not well 
+   organized, like a collection of info from previous descriptions from ALICE 
+   and BoNuS. It is a series of details, some of which not really relevant for 
+   the good understanding of the work described in the paper. So, I would put 
+   only some general info (the number of channels/pad, the number of time 
+   samples and their width for each channel and the number of  ADC samples and 
+   their width for each channel) with the reference where to find more material 
+   and just write explicitly the novelties, such as the fact that the 
+   acquisition rate was increased (footnote 2).\\
 \textcolor{blue}{ } 
 
-\item Also, I understand that fig. 5 comes from reference [14], updated with the values of the RTPC instead of the ALICE-TPC, but it seems to me that there are some parts of the picture which have to be fixed. I list them here:
-- why does it say 768 pads?
-- why 7.6 microsec?
-- the anode wire e grid make no sense here
-- why L1 and L2 (trigger levels?) 
+\item Also, I understand that fig. 5 comes from reference [14], updated with 
+   the values of the RTPC instead of the ALICE-TPC, but it seems to me that 
+   there are some parts of the picture which have to be fixed. I list them 
+   here:\\
+- why does it say 768 pads?\\
+- why 7.6 microsec?\\
+- the anode wire e grid make no sense here\\
+- why L1 and L2 (trigger levels?) \\
 \textcolor{blue}{ } 
 
 \subsection*{ Chapter 4}
 	/paragraph 4.1
-\item I would really prefer to call it drift "velocity" instead of drift "speed"
+\item I would really prefer to call it drift "velocity" instead of drift 
+   "speed"\\
 \textcolor{blue}{ } 
 
-\item I don't really understand the procedure to find the drift velocity described here and fig. 7. What is $Nb_{max}$ e $Nb_{max/2}$? Why does $T_{max/2}$ correspond to $Nb_{max/2}$ and why is it used as $T_{max}$? If I make a quick calculation and use $T_{max}$ ~ 65 * 100ns and a drift length of ~ 3cm /cos(23°) ~ 7.5 cm I get a $v_{drift}$ ~ 1.15 cm/microsec << 5 cm/microsec which is the average value of drift velocity in drift chambers.
-The procedure according to me would be:
-- for each hit associated to a track, whose time information is available, take the drift time $t_{drift_{i}}$;
-- plot the distribution of these $t_{drift_{i}}$;
-- find the $T_{min}$ = minimum $t_{drift_{i}}$ and $T_{max}$ = maximum $t_{drift_{i}}$
-- compute $delta_{t} = T_{max} - T_{min}$ and extract the drift velocity by dividing the track length / $delta_{t}$. Figure 8 would have the $delta_{t}$ instead of the $T_{max}$ vs z.
-Please provide more details on the applied procedure, since I have the open questions I wrote before and I could not understand it properly. Moreover, please quote the value of the found drift velocity. Is it in accordance with the simulations?
+\item I don't really understand the procedure to find the drift velocity 
+   described here and fig. 7. What is $Nb_{max}$ e $Nb_{max/2}$? Why does 
+   $T_{max/2}$ correspond to $Nb_{max/2}$ and why is it used as $T_{max}$? If I 
+   make a quick calculation and use $T_{max}$ ~ 65 * 100ns and a drift length 
+   of ~ 3cm /cos(23°) ~ 7.5 cm I get a $v_{drift}$ ~ 1.15 cm/microsec << 5 
+   cm/microsec which is the average value of drift velocity in drift 
+   chambers.\\
+The procedure according to me would be:\\
+- for each hit associated to a track, whose time information is available, take 
+the drift time $t_{drift_{i}}$;\\
+- plot the distribution of these $t_{drift_{i}}$;\\
+- find the $T_{min}$ = minimum $t_{drift_{i}}$ and $T_{max}$ = maximum 
+$t_{drift_{i}}$\\
+- compute $delta_{t} = T_{max} - T_{min}$ and extract the drift velocity by 
+dividing the track length / $delta_{t}$. Figure 8 would have the $delta_{t}$ 
+instead of the $T_{max}$ vs z.\\
+Please provide more details on the applied procedure, since I have the open 
+questions I wrote before and I could not understand it properly. Moreover, 
+please quote the value of the found drift velocity. Is it in accordance with 
+the simulations?\\
 \textcolor{blue}{ } 
 
-\item Figure 6: why are $T_{min}$ and $T_{max}$ not at the drift gap extremities?
+\item Figure 6: why are $T_{min}$ and $T_{max}$ not at the drift gap 
+   extremities?\\
 \textcolor{blue}{ } 
 
         /paragraph 4.2
 
-\item line 306: "in one bin" should be explained better. I understood it is the subdivision in bins of the z coordinate, but it was not so obvious at the first reading
+\item line 306: "in one bin" should be explained better. I understood it is the 
+   subdivision in bins of the z coordinate, but it was not so obvious at the 
+   first reading\\
 \textcolor{blue}{ } 
 
-\item Has the stability of the drift path been counterchecked with simulations varying the field according to the cathode radius variation? How much is the field variation if the radius have some mm of uncertainty?
+\item Has the stability of the drift path been counterchecked with simulations 
+   varying the field according to the cathode radius variation? How much is the 
+   field variation if the radius have some mm of uncertainty?\\
 \textcolor{blue}{ } 
 
         /paragraph 4.3
-\item The gain calibration is very quick. I would like more details, e.g. "setting the simulation properly" intends only GEANT4 or also MAGBOLTZ or GARFIELD? Were they used to simulate the drift and avalanche formation of the electrons? And the diffusion from the gas? Was a specific code written to simulate the electronics?
+\item The gain calibration is very quick. I would like more details, e.g. 
+   "setting the simulation properly" intends only GEANT4 or also MAGBOLTZ or 
+   GARFIELD? Were they used to simulate the drift and avalanche formation of 
+   the electrons? And the diffusion from the gas? Was a specific code written 
+   to simulate the electronics?\\
 \textcolor{blue}{ } 
 
-\item line 330: "correction factors" are mentioned. On what? Why haven't only good tracks been used for calibration? Lack of statistics?
+\item line 330: "correction factors" are mentioned. On what? Why haven't only 
+   good tracks been used for calibration? Lack of statistics?\\
 \textcolor{blue}{ } 
 
-\item When it says that the pad charge is "compared" to the neighboring ones, what happens next? Is it the noise reduction step described later? If so, please write it. 
+\item When it says that the pad charge is "compared" to the neighboring ones, 
+   what happens next? Is it the noise reduction step described later? If so, 
+   please write it. \\
 \textcolor{blue}{ } 
 
-\item Figure 11: I don't understand it. How many tracks does the histo contain? If the single pad has 128 channels, how many channels does the single bin contain? Moreover, is the dE calculated on pad by pad basis? In that case, why don't you put just one point in the histo for each pad? What is the mean number of channels or pads fired by one track? Sorry for the list of questions, but I could not understand the figure.
+\item Figure 11: I don't understand it. How many tracks does the histo contain? 
+   If the single pad has 128 channels, how many channels does the single bin 
+   contain? Moreover, is the dE calculated on pad by pad basis? In that case, 
+   why don't you put just one point in the histo for each pad? What is the mean 
+   number of channels or pads fired by one track? Sorry for the list of 
+   questions, but I could not understand the figure.\\
 \textcolor{blue}{ } 
 
-\item Figure 12 - please, put if after figure 11. Moreover, please change dEdx to dE/dx on y axis. Why are the left and right pictures so different? Talking about the deuteron band which is present only in the left figure and the smear on the top part of the right picture. 
+\item Figure 12 - please, put if after figure 11. Moreover, please change dEdx 
+   to dE/dx on y axis. Why are the left and right pictures so different? 
+   Talking about the deuteron band which is present only in the left figure and 
+   the smear on the top part of the right picture. \\
 \textcolor{blue}{ } 
 
 \subsection*{ Chapter 5}
-	/paragraph 5.1	
-\item Please detail a little bit more the procedure to remove the oscillatory noise. It says "event by event and channel by channel": if the ADC threshold is passed then a noise level is subtracted? If so, how is it calculated?
-\textcolor{blue}{ } 
-        /paragraph 5.2
-\item How was "10.5 mm" cut chosen? is it in xy plane or in 3-dimensions?
-\textcolor{blue}{ } 
-
-\item How was the "10 hits" cut chosen? What is the mean number of primary ionization in this gas mixture?
+        /paragraph 5.1	\item Please detail a little bit more the procedure to 
+           remove the oscillatory noise. It says "event by event and channel by 
+           channel": if the ADC threshold is passed then a noise level is 
+           subtracted? If so, how is it calculated?\\
 \textcolor{blue}{ } 
 
-\item < dE/dx > is computed here as corrected Etot divided total track length. Usually the mean dE/dx is computed with the truncated mean of the specific energy losses of each hit. Isn't it possible to compute it like this here? dx for each hit can be (maybe) computed from the difference in the hit times. Sum $dE_{i}$/Sum $dx_{i}$ is not equal to Sum ($dE_{i}/dx_{i}$).
+/paragraph 5.2
+\item How was "10.5 mm" cut chosen? is it in xy plane or in 3-dimensions?\\
+\textcolor{blue}{ } 
+
+\item How was the "10 hits" cut chosen? What is the mean number of primary 
+   ionization in this gas mixture?\\
+\textcolor{blue}{ } 
+
+\item < dE/dx > is computed here as corrected Etot divided total track length. 
+   Usually the mean dE/dx is computed with the truncated mean of the specific 
+   energy losses of each hit. Isn't it possible to compute it like this here? 
+   dx for each hit can be (maybe) computed from the difference in the hit 
+   times. Sum $dE_{i}$/Sum $dx_{i}$ is not equal to Sum ($dE_{i}/dx_{i}$).\\
 \textcolor{blue}{ } 
 
 \subsection*{ Chapter 6}
-	/paragraph 6.2
-\item I understand that efficiency is a ratio between two integrals, each integral being the area of the Gaussian which fits the recoil mass distribution in the inclusive and exclusive case. If so, would it be possible to please draw both fits on the figure 14 and provide the integrals to compute the mean efficiency? If I misunderstood, please comment.
+
+        /paragraph 6.2
+\item I understand that efficiency is a ratio between two integrals, each 
+   integral being the area of the Gaussian which fits the recoil mass 
+   distribution in the inclusive and exclusive case. If so, would it be 
+   possible to please draw both fits on the figure 14 and provide the integrals 
+   to compute the mean efficiency? If I misunderstood, please comment.\\
 \textcolor{blue}{ } 
 
-\subsection*{ Chapter 7} 
-\item Is it "high rate environment" or "high readout rate"? They are connected, but what is the rate the RTPC underwent during data taking?
+\subsection*{ Chapter 7} \item Is it "high rate environment" or "high readout 
+   rate"? They are connected, but what is the rate the RTPC underwent during 
+   data taking?\\
 \textcolor{blue}{ } 
 
-\item I understand the resolution and efficiency have been evaluated with the 2 GeV electrons. Is it foreseen to analyze also the 6 GeV electron runs, which were the actual data taking? Is there an evaluation of the foreseen RTPC performances in that case?
+\item I understand the resolution and efficiency have been evaluated with the 2 
+   GeV electrons. Is it foreseen to analyze also the 6 GeV electron runs, which 
+   were the actual data taking? Is there an evaluation of the foreseen RTPC 
+   performances in that case?\\
 \textcolor{blue}{ } 
 
-----------------------------------------------
 \subsection*{ Some general remarks on the layout}
 
-\item I would add to the keywords also GEM or gas electron multipliers or multi pattern gas detectors (it depends on what is available).
+\item I would add to the keywords also GEM or gas electron multipliers or multi 
+   pattern gas detectors (it depends on what is available).\\
+\textcolor{blue}{Updated} 
+
+\item Please put the units on the axis of every figure, together with the 
+   physical quantity. In some figures it is only written in the caption or in 
+   the text.\\
 \textcolor{blue}{ } 
 
-\item Please put the units on the axis of every figure, together with the physical quantity. In some figures it is only written in the caption or in the text.
-\textcolor{blue}{ } 
+\item Sometimes to explain the dimension of something something like "250 mm 
+   long" (line 67) while some other times "84-mm-long" (on line 83) is written. 
+   Please make this uniform in the whole text (I just quoted two examples, but 
+   there are more in the text).\\
+\textcolor{blue}{Updated everywhere} 
 
-\item Sometimes to explain the dimension of something something like "250 mm long" (line 67) while some other times "84-mm-long" (on line 83) is written. Please make this uniform in the whole text (I just quoted two examples, but there are more in the text).
-\textcolor{blue}{ } 
+\item In footnote 2, BoNuS is written BONUS and somewhere else in the text also 
+   BoNus. Please uniform this to the correct one, which I think is BoNuS.\\
+\textcolor{blue}{Updated to BoNuS everywhere} 
 
-\item In footnote 2, BoNuS is written BONUS and somewhere else in the text also BoNus. Please uniform this to the correct one, which I think is BoNuS.
-\textcolor{blue}{ } 
-
-\item Please make the bibliography entries uniform: they are not all written with the same layout.
-\textcolor{blue}{ } 
+\item Please make the bibliography entries uniform: they are not all written 
+   with the same layout.\\
+\textcolor{blue}{Updated} 
 
 List of in text corrections:
 
-\item line 17: "GeV" --> "GeV/c"
-\textcolor{blue}{ } 
+\item line 17: "GeV" --> "GeV/c"\\
+\textcolor{blue}{Corrected} 
 
-\item line 26: "nuclei" --> "nucleus"
-\textcolor{blue}{ } 
+\item line 26: "nuclei" --> "nucleus"\\
+\textcolor{blue}{Corrected} 
 
-\item line 40: "to track" --> "to bend tracks"(since the magnetic field just bends the track and then the detector tracks them)
-\textcolor{blue}{ } 
+\item line 40: "to track" --> "to bend tracks"(since the magnetic field just 
+   bends the track and then the detector tracks them)\\
+\textcolor{blue}{Added} 
 
-\item line 91: "second gap" --> "second gas gap"
-\textcolor{blue}{ } 
+\item line 91: "second gap" --> "second gas gap"\\
+\textcolor{blue}{Added} 
 
-\item line 110: "from the GEMs" -->  something like "after they have been multiplied by the GEMs" or "induced in the last gas gap" since the GEM is the amplification system.
-\textcolor{blue}{ } 
+\item line 110: "from the GEMs" -->  something like "after they have been 
+   multiplied by the GEMs" or "induced in the last gas gap" since the GEM is 
+   the amplification system.\\
+\textcolor{blue}{Added} 
 
-\item line 131: "axial magnetic field" --> "solenoidal magnetic field"
-\textcolor{blue}{ } 
+\item line 131: "axial magnetic field" --> "solenoidal magnetic field"\\
+\textcolor{blue}{Replaced} 
 
-\item line 133: "challenge" --> "challenges"
-\textcolor{blue}{ } 
+\item line 133: "challenge" --> "challenges"\\
+\textcolor{blue}{Added} 
 
-\item line 133-134: "radial TPC" it would be better to uniform the way to write it in the whole text (like, "RTPC")
-\textcolor{blue}{ } 
+\item line 133-134: "radial TPC" it would be better to uniform the way to write 
+   it in the whole text (like, "RTPC")\\
+\textcolor{blue}{Uniformed} 
 
-\item line 167: "stage" --> "stages"
-\textcolor{blue}{ } 
+\item line 167: "stage" --> "stages"\\
+\textcolor{blue}{Corrected} 
 
-\item line 176: "ReadOut" should always be written in the same way (see line 168) unless this was specifically written in a different way in the cited articles
-\textcolor{blue}{ } 
+\item line 176: "ReadOut" should always be written in the same way (see line 
+   168) unless this was specifically written in a different way in the cited 
+   articles\\
+\textcolor{blue}{Uniformed} 
 
-\item line 208: cm$^{-1}$ . s$^{-1}$ --> cm$^{-1}$ cdot s$^{-1}$ (the dot is not in the center vertically)
-\textcolor{blue}{ } 
+\item line 208: cm$^{-1}$ . s$^{-1}$ --> cm$^{-1}$ cdot s$^{-1}$ (the dot is 
+   not in the center vertically)\\
+\textcolor{blue}{Corrected} 
 
 \item line 208 again: "6.067" before it said "6.064", please fix the wrong one
-\textcolor{blue}{ } 
+\textcolor{blue}{Corrected. It is 6.064} \\
 
-\item line 263: "2\%" --> I would put "around 2\%"
-\textcolor{blue}{ } 
+\item line 263: "2\%" --> I would put "around 2\%"\\
+\textcolor{blue}{Added} 
 
-\item line 268: "reconstructions" --> "reconstruction"
-\textcolor{blue}{ } 
+\item line 268: "reconstructions" --> "reconstruction"\\
+\textcolor{blue}{Corrected } 
 
-\item line 269: "Paths" --> "Path"
-\textcolor{blue}{ } 
+\item line 269: "Paths" --> "Path"\\
+\textcolor{blue}{Corrected} 
 
-\item line 308: "codes" --> "code"
-\textcolor{blue}{ } 
+\item line 308: "codes" --> "code"\\
+\textcolor{blue}{Corrected} 
 
-\item line 405: "electron's" --> "electron"
-\textcolor{blue}{ } 
+\item line 405: "electron's" --> "electron"\\
+\textcolor{blue}{Corrected} 
 
-\item fig14 - caption: "W distribution" --> I would put "recoil mass W distribution"
-\textcolor{blue}{ } 
+\item fig14 - caption: "W distribution" --> I would put "recoil mass W 
+   distribution"\\
+\textcolor{blue}{Added} 
 
-\item table 1: $sigma_{p}$ is actually $sigma_{p/p}$, since it is in percentage
-\textcolor{blue}{ } 
+\item table 1: $sigma_{p}$ is actually $sigma_{p/p}$, since it is in 
+   percentage\\
+\textcolor{blue}{Yes it is. Corrected } 
 
-\item line 432: "Helium-4" --> "4He" (for uniformity, as was written before)
-\textcolor{blue}{ } 
+\item line 432: "Helium-4" --> "4He" (for uniformity, as was written before)\\
+\textcolor{blue}{Changed to $^4$He} 
 
-\item line 488: There is an extra "," at the beginning of the item
-\textcolor{blue}{ } 
-
-The topic of the article is interesting but I would recommend a revision. Please I would like the authors to address the questions asked and provide the required changes or explain why they think those changes are not necessary/correct. Thank you. Best regards.
-
+\item line 488: There is an extra "," at the beginning of the item\\
+\textcolor{blue}{Cleaned}\\
+~\\
 \end{enumerate}
+
+The topic of the article is interesting but I would recommend a revision.  
+Please I would like the authors to address the questions asked and provide the 
+required changes or explain why they think those changes are not 
+necessary/correct. Thank you. Best regards.\\
+
 
 \end{document}
