@@ -30,10 +30,10 @@ principle of operation, calibration methods and performances of this RTPC.
 
 \maketitle
 
-%\begin{keywords}
-%Time projection chamber, gas electron multipliers, alpha particles, DVCS, 
-%Nuclear physics
-%\end{keywords}
+\begin{keywords}
+Time projection chamber, gas electron multipliers, alpha particles, DVCS, 
+Nuclear physics
+\end{keywords}
 
 \section{Introduction} \label{sec:level1}
 
@@ -412,27 +412,28 @@ only significantly affected the drift speed.
 
 \subsection{Gain Calibration}
 
-To calibrate the gains, we compared the experimental ADCs to the energy deposited 
-for each pad individually in GEANT4 by similar simulated tracks (using the 
-same elastic events as for the drift 
-paths calibration). This requires a very good GEANT4 simulation 
-including drift paths, but also the spread of the charge along the path
-before reaching the pad, so that the simulated hits match the experimental 
-ones. Moreover, the simulation has to match the DAQ features 
-that can lead to cutting out hits. After setting the simulation properly, we 
-compared simulation to experiment on an event by event basis as shown in 
-Figure~\ref{fig:EVENT_adc_tdc}. The gain for each pad was calculated as the 
-ratio of the measured ADCs to the simulated deposited energy.  Then, these 
-gains were refined using correction factors obtained from a sample of good 
-tracks. For each track, we calculate the corrected energy deposit on a pad and 
-compared it to the average
-deposit recorded by the other pads. This last step was implemented to 
-avoid any bias from this simulation based calibration method.
-Final results are shown in Figure~\ref{fig:dedx_p_exp_2nd}, where energy loss 
-of particles is plotted against momentum over charge ratio. One can clearly see 
-the band for $^4$He in its expected position.
+To calibrate the gains, we compared the experimental ADCs to the energy 
+deposited for each pad individually in GEANT4 by similar simulated tracks 
+(using the same elastic events as for the drift paths calibration). This 
+requires a very good GEANT4 simulation including drift paths and the spread of 
+the charge along the path before reaching the pad, so that the simulated hits 
+match the experimental ones. Moreover, the simulation has to match the DAQ 
+features that can lead to cutting out some hits. After setting the simulation 
+properly, we compared simulation to experiment on an event by event basis as 
+shown in Figure~\ref{fig:EVENT_adc_tdc}. The gain for each pad was calculated 
+as the ratio of the measured ADCs to the simulated deposited energy. Then, This 
+set of the gains was applied to the experimental data. We noticed that some 
+pads record lower ADCs than expected. For this reason, we wanted to make sure 
+that the recorded ADCs by a given pad are similar to the ADCs recorded by other 
+pads in the same track. At this step, we compared the mean ADCs of each
+pad to the mean ADCs of the whole track. This ratio is collected for each pad 
+from a sample of elastic events and a gain correction factor is extracted and 
+applied to the first extracted gain ratio giving a final gain for each readout 
+pad. Final results are shown in Figure~\ref{fig:dedx_p_exp_2nd}, where energy 
+loss of particles is plotted against momentum over charge ratio. One can 
+clearly see the band for $^4$He in its expected position.
 
-\begin{figure}[tb!]
+\begin{figure}[tb]
    \centering
 \includegraphics[scale=0.42]{Event_ADC_Graph_8799283.pdf}
 \caption{Simulated (upper) and experimental (lower) ADC and T distributions 
@@ -441,7 +442,7 @@ that they are the same pad.}
 \label{fig:EVENT_adc_tdc}
 \end{figure}
 
-\begin{figure*}[tb]
+\begin{figure*}[tp]
 \centering
 \includegraphics[scale=0.73]{f_dedx_p_exp_2nd.pdf}
 \caption{$\small{\frac{dE}{dX}}$ vs. $p/q$ distributions for the left (on the 

@@ -164,7 +164,7 @@ the simulations?\\
 \item Figure 6: why are $T_{min}$ and $T_{max}$ not at the drift gap 
    extremities?\\
    \textcolor{blue}{This is a schematic to illustrate the definitions of 
-   $T_{min}$ and $T_{max}$ for a chain hits. The figure can be modified if 
+   $T_{min}$ and $T_{max}$ in a chain of hits. The figure can be modified if 
 needed.} 
 
         /paragraph 4.2
@@ -172,12 +172,12 @@ needed.}
 \item line 306: "in one bin" should be explained better. I understood it is the 
    subdivision in bins of the z coordinate, but it was not so obvious at the 
    first reading\\
-\textcolor{blue}{Cleared} 
+\textcolor{blue}{The text is cleared} 
 
 \item Has the stability of the drift path been counter checked with simulations 
    varying the field according to the cathode radius variation? How much is the 
    field variation if the radius have some mm of uncertainty?\\
-\textcolor{blue}{We did not study this case.} 
+\textcolor{blue}{We did not study this case. } 
 
         /paragraph 4.3
 \item The gain calibration is very quick. I would like more details, e.g. 
@@ -185,16 +185,38 @@ needed.}
    GARFIELD? Were they used to simulate the drift and avalanche formation of 
    the electrons? And the diffusion from the gas? Was a specific code written 
    to simulate the electronics?\\
-\textcolor{blue}{ } 
+\textcolor{blue}{Only GEANT4 simulation was used in performing the gain 
+   calibration, where the drift paths are updated in the simulation. The 
+   electrons avalanche formation and the gas diffusion are performed though 
+GEANT4. We did not implement a detailed description to simulate the 
+electronics, but we did apply similar conditions to match the real DAQ, such as 
+the rejection of the signals from bad pads and conditions to ensure that each 
+pad must have at least 3 consecutive time bins, with ADC values above the 
+threshold, 35 ADCs, in order to be recorded. The text is cleared with more 
+details. } 
 
 \item line 330: "correction factors" are mentioned. On what? Why haven't only 
    good tracks been used for calibration? Lack of statistics?\\
-\textcolor{blue}{ } 
+\textcolor{blue}{Correction factor on the extracted gain for each pad. We used 
+the elastic $^4$He tracks as we could calculate the recoil $^4$He kinematics 
+from the scattered electron in CLAS to avoid any discrepancy from the RTPC.} 
 
 \item When it says that the pad charge is "compared" to the neighboring ones, 
    what happens next? Is it the noise reduction step described later? If so, 
    please write it. \\
-\textcolor{blue}{ } 
+\textcolor{blue}{The gain extraction is following this order: \\
+- pass 1: the gain of each pad is defined as the ratio between the mean 
+recorded experimental ADCs to the mean simulated ADCs in the same track. Then 
+for each pad, the gain ratios were collected from all the identified elastic 
+tracks and these gains were fitted by a Landau function to give a
+  first pass gain for each pad as the most probable value of the fit.\\
+ - pass2: to make sure that the recorded ADCs by a given pad are similar to the 
+ recorded ADCs by other pads in the same track, we refined this calibration 
+ after the extracted gains were applied to the experimental data. At this step, 
+ we compared the mean ADCs of each pad to the mean ADCs of the whole track. 
+ This ratio is collected from all the elastic events and a gain correction 
+ factor is extracted and applied giving a final gain for each pad.
+  } 
 
 \item Figure 11: I don't understand it. How many tracks does the histo contain? 
    If the single pad has 128 channels, how many channels does the single bin 
@@ -202,13 +224,41 @@ needed.}
    why don't you put just one point in the histo for each pad? What is the mean 
    number of channels or pads fired by one track? Sorry for the list of 
    questions, but I could not understand the figure.\\
-\textcolor{blue}{ } 
+   \textcolor{blue}{- It is for only one track (written in the caption).
+   - We dont understand your second question. A pad is a channel. Do you mean 
+how many pads are fired for a single track? Figure \ref{npd_track} shows the 
+number of active pads as a function of the momentum for the collected elastic 
+$^4$He tracks.\\
+- dE is calculated from the ADCs of the individual pads that read out hits 
+  corresponding to the same track. One needed to know the individual step size 
+  very precisely to put dEdx from the individual pads, which is not available.  
+  - Last question is addressed by figure \ref{npd_track}. The mean value is 
+    around 10 pads. }
 
-\item Figure 12 - please, put if after figure 11. Moreover, please change dEdx 
-   to dE/dx on y axis. Why are the left and right pictures so different? 
+\begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.45]{npd_p_elastic.png}
+   \caption{The number of active pads versus the measured momentum of the 
+   elastic $^4$He tracks. } \label{fig:npd_track}
+\end{figure}
+
+
+
+\item Figure 12 - please, put it after figure 11. Moreover, please change dEdx 
+   to dE/dx on y axis. Why are the left and right pictures so different?  
    Talking about the deuteron band which is present only in the left figure and 
    the smear on the top part of the right picture. \\
-\textcolor{blue}{ } 
+\textcolor{red}{- The figures layout will be updated.\\} 
+   
+\textcolor{blue}{- The y-axis label on figure 12 is updated.\\}
+\textcolor{blue}{- Regarding the lower peak in the left module of the RTPC, 
+   these events pass all the elastic requirements but for some reasons they 
+   have lower ADC values.  They represent around 7\% of all the elastic events.  
+   After extended studies, the nature of these particles is not identified yet.  
+   We note that this is a global phenomenon in the left module as 94\% of the 
+   left module's pads are involved in both some low and high dEdx events. For 
+   the calibration procedures, the events with low dEdx were excluded as we do 
+not fully understand their nature.} 
 
 \subsection*{ Chapter 5}
         /paragraph 5.1	
@@ -245,7 +295,9 @@ tracks.}
    energy losses of each hit. Isn't it possible to compute it like this here? 
    dx for each hit can be (maybe) computed from the difference in the hit 
    times. Sum $dE_{i}$/Sum $dx_{i}$ is not equal to Sum ($dE_{i}/dx_{i}$).\\
-\textcolor{blue}{ } 
+\textcolor{blue}{Maybe this would improve our calculations for dEdx by few 
+percent, but a precise hits ordering is needed to compute dEdx as you suggest, 
+which is not available in our setting.} 
 
 \subsection*{ Chapter 6}
 
