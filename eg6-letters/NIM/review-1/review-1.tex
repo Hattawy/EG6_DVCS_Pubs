@@ -79,7 +79,7 @@ following.
    work. For example, better acceptance? Higher gain? Higher electric 
    stability? Lower material budget? Please quote some old and new values, 
    maybe in a table, to make them evident.\\
-\textcolor{Red}{To the group: Can we do such a comparison? } 
+\textcolor{red}{To the group: Do we have such a comparison? } 
 
 \item Relevant length and thicknesses of the various elements are reported in 
    the text and in the figure, can you please add also the z position of the 
@@ -87,17 +87,28 @@ following.
    add the value of the induction gap electric field, which is the only missing 
    field value and the value of the reached amplification gain with the three 
    GEM.\\
-\textcolor{blue}{ } 
+\textcolor{blue}{- The target tube is the central z-axis of the detector. The 
+text is modified to make it clean.\\}
+\textcolor{red}{- Regarding the electric field, it was 2.8 kV/cm in BoNuS, does 
+anyone know our exact field in this gap?\\}
+\textcolor{blue}{- The gain of such GEM configuration has been studied by 
+   CERN's Gas Detector Development Group (Fabio Sauli, Progress with the Gas 
+   Electron Multiplier, 2nd Workshop on Advanced Transition Radiation Detectors 
+   for Accelerator and Space Applications (Bari, Sept. 4-7, 2003), Nucl. Instr. 
+   and Meth. A522(2004)93). The results, see the reference, demonstrate that 
+one should not simply add gains to each other for multilayer GEM 
+amplifications.  We did not evaluate precisely the overall gain in our chamber, 
+so we do not have a value for our RTPC GEM system at this point.}
 
 \item When speaking of low spark rate the reference [12] is quoted, which is 
    the PDG. Maybe it is better to quote more specific studies like the ones by 
    Bachmann et al.\\
-\textcolor{blue}{ } 
+\textcolor{blue}{Thanks. It has been replaced.} 
 
 \item line 119: is the Kapton of the GEM foil really 300 mum thick? It is 
    usually very thin, like 50 mum, in order to have low material budget and 
    very high fields.\\
-\textcolor{blue}{ } 
+\textcolor{blue}{Sorry typo. It is 50 $mu$m} 
 
 \subsection*{ Chapter 3}
 \item The description of the electronics looks to me a little not well 
@@ -109,7 +120,7 @@ following.
    their width for each channel) with the reference where to find more material 
    and just write explicitly the novelties, such as the fact that the 
    acquisition rate was increased (footnote 2).\\
-\textcolor{blue}{ } 
+\textcolor{red}{Raphael, Can you check here?} 
 
 \item Also, I understand that fig. 5 comes from reference [14], updated with 
    the values of the RTPC instead of the ALICE-TPC, but it seems to me that 
@@ -119,13 +130,14 @@ following.
 - why 7.6 microsec?\\
 - the anode wire e grid make no sense here\\
 - why L1 and L2 (trigger levels?) \\
-\textcolor{blue}{ } 
+\textcolor{red}{Raphael, Can you check here? } 
 
 \subsection*{ Chapter 4}
 	/paragraph 4.1
 \item I would really prefer to call it drift "velocity" instead of drift 
    "speed"\\
-\textcolor{blue}{ } 
+\textcolor{red}{To the group: We do have radial and azimuthal drift velocities, 
+but we measure the average of their sum. } 
 
 \item I don't really understand the procedure to find the drift velocity 
    described here and fig. 7. What is $Nb_{max}$ and $Nb_{max/2}$? Why does 
@@ -151,19 +163,21 @@ the simulations?\\
 
 \item Figure 6: why are $T_{min}$ and $T_{max}$ not at the drift gap 
    extremities?\\
-\textcolor{blue}{ } 
+   \textcolor{blue}{This is a schematic to illustrate the definitions of 
+   $T_{min}$ and $T_{max}$ for a chain hits. The figure can be modified if 
+needed.} 
 
         /paragraph 4.2
 
 \item line 306: "in one bin" should be explained better. I understood it is the 
    subdivision in bins of the z coordinate, but it was not so obvious at the 
    first reading\\
-\textcolor{blue}{ } 
+\textcolor{blue}{Cleared} 
 
-\item Has the stability of the drift path been counterchecked with simulations 
+\item Has the stability of the drift path been counter checked with simulations 
    varying the field according to the cathode radius variation? How much is the 
    field variation if the radius have some mm of uncertainty?\\
-\textcolor{blue}{ } 
+\textcolor{blue}{We did not study this case.} 
 
         /paragraph 4.3
 \item The gain calibration is very quick. I would like more details, e.g. 
@@ -197,19 +211,34 @@ the simulations?\\
 \textcolor{blue}{ } 
 
 \subsection*{ Chapter 5}
-        /paragraph 5.1	\item Please detail a little bit more the procedure to 
-           remove the oscillatory noise. It says "event by event and channel by 
-           channel": if the ADC threshold is passed then a noise level is 
-           subtracted? If so, how is it calculated?\\
-\textcolor{blue}{ } 
+        /paragraph 5.1	
+     
+\item Please detail a little bit more the procedure to remove the oscillatory 
+   noise. It says "event by event and channel by channel": if the ADC threshold 
+   is passed then a noise level is subtracted? If so, how is it calculated?\\
+\textcolor{red}{Nathan, Can you work on it. } 
 
 /paragraph 5.2
 \item How was "10.5 mm" cut chosen? is it in xy plane or in 3-dimensions?\\
-\textcolor{blue}{ } 
+\textcolor{blue}{The distance between hits are calculated in 3D. This cut has 
+been chosen because it enables us to jump longer gaps from dead areas of the 
+readout pads without increasing the level of spurious tracks.} 
 
 \item How was the "10 hits" cut chosen? What is the mean number of primary 
    ionization in this gas mixture?\\
-\textcolor{blue}{ } 
+   \textcolor{blue}{Figure \ref{fig:nb_hits} shows the number of hits 
+   distribution for the collected elastic $^4$He tracks from the 1.2 GeV 
+dataset. The mean number of hits is around 135 and the 10 hits cut at the 
+reconstruction level is a loose cut to reduce the level of the spurious 
+tracks.}
+
+\begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.45]{nb_hits.png}
+   \caption{the number of hits distribution for the collected elastic $^4$He 
+   tracks from the 1.2 GeV dataset.} \label{fig:nb_hits}
+\end{figure}
+
 
 \item < dE/dx > is computed here as corrected Etot divided total track length. 
    Usually the mean dE/dx is computed with the truncated mean of the specific 
@@ -226,18 +255,21 @@ the simulations?\\
    distribution in the inclusive and exclusive case. If so, would it be 
    possible to please draw both fits on the figure 14 and provide the integrals 
    to compute the mean efficiency? If I misunderstood, please comment.\\
-\textcolor{blue}{ } 
+\textcolor{red}{Nathan, do you still have the individual integrals? } 
 
-\subsection*{ Chapter 7} \item Is it "high rate environment" or "high readout 
-   rate"? They are connected, but what is the rate the RTPC underwent during 
-   data taking?\\
-\textcolor{blue}{ } 
+\subsection*{ Chapter 7} 
+
+\item Is it "high rate environment" or "high readout rate"? They are connected, 
+   but what is the rate the RTPC underwent during data taking?\\
+\textcolor{red}{Can we find such information in the logbook?} 
 
 \item I understand the resolution and efficiency have been evaluated with the 2 
    GeV electrons. Is it foreseen to analyze also the 6 GeV electron runs, which 
    were the actual data taking? Is there an evaluation of the foreseen RTPC 
    performances in that case?\\
-\textcolor{blue}{ } 
+\textcolor{blue}{Typically, the elastic reaction is used for such performance 
+evaluation. But the elastic cross sections is really small at 6 GeV beam 
+energy.} 
 
 \subsection*{ Some general remarks on the layout}
 

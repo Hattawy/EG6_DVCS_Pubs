@@ -31,8 +31,8 @@ principle of operation, calibration methods and performances of this RTPC.
 \maketitle
 
 %\begin{keywords}
-%\textcolor{red}{Raphael please add the list you provided originally},
-%gas electron multipliers.
+%Time projection chamber, gas electron multipliers, alpha particles, DVCS, 
+%Nuclear physics
 %\end{keywords}
 
 \section{Introduction} \label{sec:level1}
@@ -124,8 +124,9 @@ about 80\% of the azimuthal angle.
 We detail here the different regions shown in Figure~\ref{fig:RTPC_1_4} 
 starting from the beam line towards larger radius:\\
 \begin{itemize}
-  \item The 6~atm $^4$He target extends along the beam axis; it is a 284~mm 
-     long, 6~mm diameter Kapton straw with a 27~$\mu$m wall.
+  \item The 6~atm $^4$He target forms the detector central z-axis which is 
+     along the beamline ; it is a 284~mm long, 6~mm diameter Kapton straw with 
+     a 27~$\mu$m wall.
    \item The first gas gap covers the radial range from 3~mm to 20~mm. It is 
       filled with $^{4}$He gas at 1~atm to minimize secondary interactions from
       M\o{}ller electrons scattered by the beam. This region is surrounded by 
@@ -158,17 +159,17 @@ starting from the beam line towards larger radius:\\
 \end{figure}
 
 The GEM technology has been chosen for the flexibility of the GEM foils,
-which can be easily used to produce a curved amplification surface. Also, 
-GEMs are known to have relatively low spark rate~\cite{Beringer:1900zz}, which 
-is important when trying to detect 
-highly ionizing slow nuclei that deposit large amount of energy. The GEMs for 
-this RTPC are made from a Kapton insulator layer, 300~$\mu$m 
-thick, sandwiched between two 5~$\mu$m copper layers\footnote{The GEM foils were produced by 
-Tech-Etch, Inc.}. The mesh of each GEM 
-layer is chemically etched with 50~$\mu$m diameter holes with double-conical 
-shapes as illustrated in Figure~\ref{fig:GEMs}. The potential difference 
-applied between the two copper layers of the GEM creates a very strong electric 
-field in each hole leading to high ionization and amplification. 
+which can be easily used to produce a curved amplification surface. Also, GEMs 
+are known to have relatively low spark rate~\cite{Bachmann:2000kj}, which is 
+important when trying to detect highly ionizing slow nuclei that deposit large 
+amount of energy. The GEMs for this RTPC are made from a Kapton insulator 
+layer, 50~$\mu$m thick, sandwiched between two 5~$\mu$m copper 
+layers\footnote{The GEM foils were produced by Tech-Etch, Inc.}. The mesh of 
+each GEM layer is chemically etched with 50~$\mu$m diameter holes with 
+double-conical shapes as illustrated in Figure~\ref{fig:GEMs}. The potential 
+difference applied between the two copper layers of the GEM creates a very 
+strong electric field in each hole leading to high ionization and 
+amplification. 
 
 The drift gas used in the experiment is a 80-20\% Ne-DME mixture. This choice 
 has been made in order to balance the energy deposit, which is critical
@@ -363,22 +364,22 @@ ionization in the gas. We calculated them with
 MAGBOLTZ~\cite{Biagi:1999nwa}, but it requires knowledge of the detector's 
 geometry, gas mixture composition, and of course the electric and magnetic 
 fields over the whole volume of the detector. We used this calculation as a 
-first calibration, but, 
-as can be seen with the drift speed, conditions in the chamber were changing 
-over time. Moreover, the 4 $\mu$m foil used as a cathode is easily deformed, such
-that we expect the geometrical accuracy to be of few millimeters, directly impacting 
-our knowledge of the electric field. These problems, already 
-encountered for the BoNuS RTPC calibration~\cite{Fenker:2008zz}, motivated the 
-acquisition of specific calibration runs. These were taken with a lower energy 
-electron beam (1.204 and 1.269 GeV) to enhance the cross section of the elastic 
-scattering ($e^{4}$He$\rightarrow e^{4}$He). In this process, the measurement of
+first calibration, but, as can be seen with the drift speed, conditions in the 
+chamber were changing over time. Moreover, the 4 $\mu$m foil used as a cathode 
+is easily deformed, such that we expect the geometrical accuracy to be of few 
+millimeters, directly impacting our knowledge of the electric field. These 
+problems, already encountered for the BoNuS RTPC 
+calibration~\cite{Fenker:2008zz}, motivated the acquisition of specific 
+calibration runs. These were taken with a lower energy electron beam (1.204 and 
+1.269 GeV) to enhance the cross section of the elastic scattering 
+($e^{4}$He$\rightarrow e^{4}$He). In this process, the measurement of
 the electron kinematics allows to calculate directly the kinematics of the Helium nucleus. 
 By comparing the calculated momentum and angle of the recoil alpha particle to the 
 measurement in the RTPC, we tuned the drift paths independently of our 
 knowledge of the chamber's conditions.
 
-Based on the kinematics of the electrons in the calibration data, 
-we generated the Helium nucleus in our RTPC GEANT4 simulation~\cite{GEANT4}. Then,
+Based on the kinematics of the electrons in the calibration data, we generated 
+the Helium nucleus in our RTPC GEANT4 simulation~\cite{GEANT4}. Then,
 we compared the calculated GEANT4 trajectory of the Helium nuclei to 
 the hits measured in the chamber. To perform this drift path extraction, 
 we made a first approximation assuming a linear dependence between the radius 
@@ -387,11 +388,11 @@ result. Indeed, because of the magnetic field, the drift paths are not linear
 in the RTPC, but the curvature was minimal and this process converged already 
 on the second iteration. 
 
-At the end of the extraction procedure, the azimuthal difference between the detection pad and 
-the ionization point ($\Delta\phi$) was extracted as a function of time.  In 
-Figure~\ref{fig:DELTA_PHI_TDC}, we show the resulting data points for one bin, 
-where the drift path is easily identified and eventually fitted for 
-implementation in our reconstruction code.
+At the end of the extraction procedure, the azimuthal difference between the 
+detection pad and the ionization point ($\Delta\phi$) was extracted as a 
+function of time. In Figure~\ref{fig:DELTA_PHI_TDC}, we show the resulting data 
+points for one bin in z-coordinate of the RTPC, where the drift path is easily 
+identified and eventually fitted for implementation in our reconstruction code.
 
 \begin{figure}[tb]
 \centering
@@ -406,9 +407,8 @@ To verify the stability of the drift paths, this procedure was carried out
 using both the 1.204 GeV data from the beginning of the run period and the 
 1.269 GeV data from the end of the run period (shown in blue on 
 Figure~\ref{fig:Drift_run_number_1}). Interestingly, we found very similar 
-drift paths
-for the two data sets and concluded that any changes in the system only
-significantly affected the drift speed.
+drift paths for the two data sets and concluded that any changes in the system 
+only significantly affected the drift speed.
 
 \subsection{Gain Calibration}
 
@@ -659,11 +659,10 @@ photons in the CLAS spectrometer.
   Nucl.\ Instrum.\ Meth.\ A {\bf 805}, 2 (2016).
   %doi:10.1016/j.nima.2015.07.060
 
-\bibitem{Beringer:1900zz} 
-   J.~Beringer {\it et al.} [Particle Data Group],
-  Review of Particle Physics (RPP),
-  Phys.\ Rev.\ D {\bf 86}, 010001 (2012).
-  %doi:10.1103/PhysRevD.86.010001
+\bibitem{Bachmann:2000kj} S.~Bachmann {\it et al.},
+ Performance of GEM detectors in high intensity particle beams,
+ Nucl.\ Instrum.\ Meth.\ A {\bf 470}, 548 (2001).
+ %doi:10.1016/S0168-9002(01)00802-6
 
 \bibitem{Biagi:1999nwa} 
    S.~F.~Biagi,
