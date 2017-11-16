@@ -264,7 +264,10 @@ not fully understand their nature.}
 \item Please detail a little bit more the procedure to remove the oscillatory 
    noise. It says "event by event and channel by channel": if the ADC threshold 
    is passed then a noise level is subtracted? If so, how is it calculated?\\
-\textcolor{red}{Nathan, Can you work on it. } 
+\textcolor{blue}{The oscillatory noise was removed just by rejecting all hits 
+from a channel if too many of its hits fall on the noise curve in a given 
+event. No threshold/pedestal concept, just hit rejection if it looks like 
+noise. } 
 
 /paragraph 5.2
 \item How was "10.5 mm" cut chosen? is it in xy plane or in 3-dimensions?\\
@@ -293,9 +296,10 @@ tracks.}
    energy losses of each hit. Isn't it possible to compute it like this here? 
    dx for each hit can be (maybe) computed from the difference in the hit 
    times. Sum $dE_{i}$/Sum $dx_{i}$ is not equal to Sum ($dE_{i}/dx_{i}$).\\
-\textcolor{blue}{Maybe this would improve our calculations for dEdx by few 
-percent, but a precise hits ordering is needed to compute dEdx as you suggest, 
-which is not available in our setting.} 
+\textcolor{blue}{We actually did compute dEdx with  path-length and ADC- 
+truncations, and a linear fit to ADC vs path-length to get slope and fit 
+quality and dedx from fit. Unfortunately, it never seemed to give us much 
+improvement compared to Sum $dE_{i}$/Sum $dx_{i}$. } 
 
 \subsection*{ Chapter 6}
 
