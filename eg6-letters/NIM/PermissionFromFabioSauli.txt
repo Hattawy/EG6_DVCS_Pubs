@@ -20,7 +20,7 @@ http://fabio.home.cern.ch/fabio/
 > On 3 Jul 2017, at 16:48, mhattawy@anl.gov <mohammad.hattawy@gmail.com> wrote:
 >
 > Dear Dr. Fabio,
->     We have developed a cylindrical TPC at Jefferson Lab to detector the low energy nuclear recoils. You can find the first draft of this detector NIM paper on arXive at https://arxiv.org/abs/1706.10160. I would like to ask if I can use your GEM image in my article without an explicit permission from you. It is figure three in the previously provided draft.      
+>     We have developed a cylindrical TPC at Jefferson Lab to detect low-energy nuclear recoils. You can find the first draft of this detector NIM paper on arXive at https://arxiv.org/abs/1706.10160. I would like to ask if I can use your GEM image in my article without an explicit permission from you. It is figure three in the previously provided draft.      
 >
 > Best regards,
 > Mohammad Hattawy.
