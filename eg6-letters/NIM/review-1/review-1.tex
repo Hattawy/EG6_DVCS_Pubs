@@ -143,8 +143,8 @@ but we measure the average of their sum. }
    described here and fig. 7. What is $Nb_{max}$ and $Nb_{max/2}$? Why does 
    $T_{max/2}$ correspond to $Nb_{max/2}$ and why is it used as $T_{max}$? If I 
    make a quick calculation and use $T_{max}$ ~ 65 * 100ns and a drift length 
-   of ~ 3cm /cos(23°) ~ 7.5 cm I get a $v_{drift}$ ~ 1.15 cm/microsec << 5 
-   cm/microsec which is the average value of drift velocity in drift 
+   of ~ 3cm /cos(23$^{\circ}$) ~ 7.5 cm I get a $v_{drift}$ ~ 1.15 cm/microsec 
+   << 5 cm/microsec which is the average value of drift velocity in drift 
    chambers.\\
 The procedure according to me would be:\\
 - for each hit associated to a track, whose time information is available, take 
@@ -159,7 +159,12 @@ Please provide more details on the applied procedure, since I have the open
 questions I wrote before and I could not understand it properly. Moreover, 
 please quote the value of the found drift velocity. Is it in accordance with 
 the simulations?\\
-\textcolor{blue}{ } 
+\textcolor{red}{- The text has been updated to clarify the procedures.\\
+                - With T = 65*100~ns and drift length equal to 3cm/ 
+             cos(23$^{\circ}$, $v_{drift}$ = 0.501 cm/microsec which is 
+          consistent with our 0.61 cm/microsec from simulation. \\
+               - In deed, we use $delta_{t} = T_{max/2} - T_{min}$ in our 
+            reconstruction code.} 
 
 \item Figure 6: why are $T_{min}$ and $T_{max}$ not at the drift gap 
    extremities?\\
