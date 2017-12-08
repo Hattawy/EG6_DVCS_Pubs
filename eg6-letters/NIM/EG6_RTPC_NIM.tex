@@ -8,6 +8,7 @@
 \hypersetup{colorlinks=true, urlcolor=blue, citecolor=blue}
 \usepackage[displaymath]{lineno}
 \linenumbers
+\usepackage{dblfloatfix}    % To enable figures at the bottom of page
 \begin{document}
 
 \title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{A Radial Time 
@@ -125,8 +126,8 @@ starting from the beam line towards larger radius:\\
 \begin{itemize}
   \item The 6~atm $^4$He target extends along the beamline forming the detector 
      central axis; it is a 292~mm~long, 6~mm diameter Kapton straw with a 
-     27~$\mu$m wall. The detector and the target are centered at 64~cm to the 
-     left of CLAS's center.
+     27~$\mu$m wall. The detector and the target are centered at 64~cm upstream 
+     of the CLAS center.
    \item The first gas gap covers the radial range from 3~mm to 20~mm. It is 
       filled with $^{4}$He gas at 1~atm to minimize secondary interactions from
       M\o{}ller electrons scattered by the beam. This region is surrounded by 
@@ -246,16 +247,16 @@ after the signal returns below threshold were saved.
 
 The trigger signal also initiates RCU readout operation from FEC boards. All the 
 measured samples from active channels are reported, together with a channel 
-identifier and a timestamp, to the ROC application, that in turns sends them on 
+identifier and a timestamp, to the ROC application, that in turn sends them on 
 the main event builder. Readout from FECs occurs in ``block-transfer'' mode, 
 making use of the ALTRO internal multi-event buffer. This feature could be 
 exploited thanks to the new RCU boards developed for the RTPC readout 
 system\footnote{In the original BoNuS system, the U2F readout controller had no 
-multi-event capability and used a USB connection rather than fiber optics for 
-readout. These factors limited the maximum readout rate from the BoNuS detector 
-to about 500 Hz.}. In order to read all the detector readout pads, four FEC 
-crates were used, each equipped with 6 boards, plus a ROC. A schematic of the 
-readout system, for a single crate, is reported in 
+   multi-event capability and used a USB connection rather than fiber optics 
+   for readout. These factors limited the maximum readout rate from the BoNuS 
+detector to about 500 Hz.}. In order to read all the detector readout pads, 
+four FEC crates were used, each equipped with 6 boards, plus a ROC. A schematic 
+of the readout system, for a single crate, is reported in 
 Figure~\ref{fig:ReadoutScheme}. This configuration permitted to reduce the dead 
 time associated to FEC readout operations, which is scaling linearly with the 
 number of boards in the crate. During the 2009 run, the system was successfully 
@@ -388,9 +389,9 @@ we compared the calculated GEANT4 trajectory of the Helium nuclei to
 the hits measured in the chamber. To perform this drift path extraction, 
 we made a first approximation assuming a linear dependence between the radius 
 of emission of the charge and its time of detection, and then refined our 
-result. Indeed, because of the magnetic field, the drift paths are not linear 
-in the RTPC, but the curvature was minimal and this process converged already 
-on the second iteration. 
+result. Because of the magnetic field, the drift paths in RTPC are not linear 
+but the curvature is small and the refining  process converged already on the 
+second iteration.
 
 At the end of the extraction procedure, the azimuthal difference between the 
 detection pad and the ionization point ($\Delta\phi$) was extracted as a 
@@ -400,7 +401,7 @@ identified and eventually fitted for implementation in our reconstruction code.
 
 \begin{figure}[tb]
 \centering
-\includegraphics[scale=0.42]{FitResult_p2_11.pdf}
+\includegraphics[scale=0.46]{FitResult_p2_11.pdf}
 \caption{$\Delta \phi$ versus T distribution for tracks
 from one bin in longitudinal position along the RTPC. The black line represents 
 the final drift paths in this bin.}
@@ -410,9 +411,9 @@ the final drift paths in this bin.}
 To verify the stability of the drift paths, this procedure was carried out 
 using both the 1.204 GeV data from the beginning of the run period and the 
 1.269 GeV data from the end of the run period (shown in blue on 
-Figure~\ref{fig:Drift_run_number_1}). Interestingly, we found very similar 
-drift paths for the two data sets and concluded that any changes in the system 
-only significantly affected the drift speed.
+Figure~\ref{fig:Drift_run_number_1}). We found very similar drift paths for the 
+two data sets and concluded that any changes in the system only significantly 
+affected the drift speed.
 
 \subsection{Gain Calibration}
 
@@ -437,7 +438,7 @@ pad. Final results are shown in Figure~\ref{fig:dedx_p_exp_2nd}, where energy
 loss of particles is plotted against momentum over charge ratio. One can 
 clearly see the band for $^4$He in its expected position.
 
-\begin{figure}[tb]
+\begin{figure}[!t]
    \centering
 \includegraphics[scale=0.42]{Event_ADC_Graph_8799283.pdf}
 \caption{Simulated (upper) and experimental (lower) ADC and T distributions 
@@ -446,7 +447,7 @@ that they are the same pad.}
 \label{fig:EVENT_adc_tdc}
 \end{figure}
 
-\begin{figure*}[tp]
+\begin{figure*}[!h]
 \centering
 \includegraphics[scale=0.73]{f_dedx_p_exp_2nd.pdf}
 \caption{$\small{\frac{dE}{dX}}$ vs. $p/q$ distributions for the left (on the 
@@ -485,7 +486,8 @@ The sources of these effects were not determined, but rejection techniques
 allowed to reconstruct 10\% more good tracks and 
 recover 70 channels that were previously ignored due to excessive noise levels.
 
-\begin{figure}[tb!]\centering
+\begin{figure}[tb]
+   \centering
 \includegraphics[scale=0.25]{noisy_pad_before_rejection2.png}
 \includegraphics[scale=0.25]{noisy_pad_after_rejection2.png}
 \caption{The ADC vs. T spectrum for an example noisy channel before (top) and 
