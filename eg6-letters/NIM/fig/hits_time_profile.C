@@ -395,14 +395,14 @@ void hits_time_profile()
            ar1->SetLineColor(kBlue);
            ar1->SetLineStyle(7);
            ar1->SetLineWidth(4);
-           ar1->Draw();
+           //ar1->Draw();
 
    TArrow *ar2 = new TArrow(1,Nbmax/2.0,65.0,Nbmax/2.0,0.05,"|>");
            ar2->SetAngle(40);
            ar2->SetLineColor(kBlue);
            ar2->SetLineStyle(7);
            ar2->SetLineWidth(4);
-           ar2->Draw();
+           //ar2->Draw();
 
    TArrow *ar3 = new TArrow(65.3,10.0,65.3,Nbmax/2.0,0.05,"<|");
            ar3->SetAngle(40);
@@ -414,12 +414,12 @@ void hits_time_profile()
     TLatex *l1= new TLatex(25, Nbmax+120.0,"Nb_{max}");
             l1->SetTextSize(0.07);
             l1->SetTextColor(kBlue); 
-            l1->Draw("same");
+            //l1->Draw("same");
 
     TLatex *l2= new TLatex(25, Nbmax/2.0+120.0,"Nb_{max/2}");
             l2->SetTextSize(0.07);
             l2->SetTextColor(kBlue); 
-            l2->Draw("same");
+            //l2->Draw("same");
 
     TLatex *l3= new TLatex(65.0,-500.0,"T_{max/2}");
             l3->SetTextSize(0.07);
