@@ -83,12 +83,18 @@ been made clearer in this chapter.}
    field value and the value of the reached amplification gain with the three 
    GEM.\\
 \textcolor{blue}{ The text has been modified to clarify the z position of the 
-target with respect to the detector.\\}
-\textcolor{red}{- Regarding the electric field, it was 2.8 kV/cm in BoNuS, does 
-anyone know our exact field in this gap? Raph: This is indicated already, I am not sure what he
-means by "induction gap"\\}
-\textcolor{red}{We did not evaluate precisely the overall gain in our chamber.
-Can we quote a value from comparison with Bethe-Heitler or GEANT4?}
+target and the RTPC with respect to CLAS sectrometer.\\}
+\textcolor{red}{- Regarding the electric field in the induction gap, it was 2.8 
+kV/cm in BoNuS, does anyone know our exact field in this gap?\\}
+\textcolor{blue}{- The gain of such GEM configuration has been studied by 
+   CERN's Gas Detector Development Group (Fabio Sauli, Progress with the Gas 
+   Electron Multiplier, 2nd Workshop on Advanced Transition Radiation Detectors 
+   for Accelerator and Space Applications (Bari, Sept. 4-7, 2003), Nucl. Instr. 
+   and Meth. A522(2004)93). The results, see the reference, demonstrate that 
+one should not simply add gains to each other for multilayer GEM 
+amplifications.  We did not evaluate precisely the overall gain in our chamber, 
+so we do not have a value for our RTPC GEM system at this point.}
+>>>>>>> 10849ae3d4920c417e2d8b634ec1b3e86ec0ad03
 
 \item When speaking of low spark rate the reference [12] is quoted, which is 
    the PDG. Maybe it is better to quote more specific studies like the ones by 
@@ -133,8 +139,8 @@ but we measure the average of their sum. Raph: What is the link with the questio
    described here and fig. 7. What is $Nb_{max}$ and $Nb_{max/2}$? Why does 
    $T_{max/2}$ correspond to $Nb_{max/2}$ and why is it used as $T_{max}$? If I 
    make a quick calculation and use $T_{max}$ ~ 65 * 100ns and a drift length 
-   of ~ 3cm /cos(23°) ~ 7.5 cm I get a $v_{drift}$ ~ 1.15 cm/microsec << 5 
-   cm/microsec which is the average value of drift velocity in drift 
+   of ~ 3cm /cos(23$^{\circ}$) ~ 7.5 cm I get a $v_{drift}$ ~ 1.15 cm/microsec 
+   << 5 cm/microsec which is the average value of drift velocity in drift 
    chambers.\\
 The procedure according to me would be:\\
 - for each hit associated to a track, whose time information is available, take 
@@ -149,7 +155,13 @@ Please provide more details on the applied procedure, since I have the open
 questions I wrote before and I could not understand it properly. Moreover, 
 please quote the value of the found drift velocity. Is it in accordance with 
 the simulations?\\
-\textcolor{red}{Raph: I will modify the text for this.} 
+\textcolor{red}{- The text has been updated to clarify the procedures.\\
+                - With T = 65*100~ns and drift length equal to 3cm/ 
+             cos(23$^{\circ}$, $v_{drift}$ = 0.501 cm/microsec which is 
+          consistent with our 0.61 cm/microsec from simulation. \\
+               - In deed, we use $delta_{t} = T_{max/2} - T_{min}$ in our 
+            reconstruction code.} 
+>>>>>>> 10849ae3d4920c417e2d8b634ec1b3e86ec0ad03
 
 \item Figure 6: why are $T_{min}$ and $T_{max}$ not at the drift gap 
    extremities?\\
@@ -254,7 +266,10 @@ not fully understand their nature.}
 \item Please detail a little bit more the procedure to remove the oscillatory 
    noise. It says "event by event and channel by channel": if the ADC threshold 
    is passed then a noise level is subtracted? If so, how is it calculated?\\
-\textcolor{red}{Nathan, Can you work on it. } 
+\textcolor{blue}{The oscillatory noise was removed just by rejecting all hits 
+from a channel if too many of its hits fall on the noise curve in a given 
+event. No threshold/pedestal concept, just hit rejection if it looks like 
+noise. } 
 
 /paragraph 5.2
 \item How was "10.5 mm" cut chosen? is it in xy plane or in 3-dimensions?\\
@@ -283,9 +298,10 @@ tracks.}
    energy losses of each hit. Isn't it possible to compute it like this here? 
    dx for each hit can be (maybe) computed from the difference in the hit 
    times. Sum $dE_{i}$/Sum $dx_{i}$ is not equal to Sum ($dE_{i}/dx_{i}$).\\
-\textcolor{blue}{Maybe this would improve our calculations for dEdx by few 
-percent, but a precise hits ordering is needed to compute dEdx as you suggest, 
-which is not available in our setting.} 
+\textcolor{blue}{We actually did compute dEdx with  path-length and ADC- 
+truncations, and a linear fit to ADC vs path-length to get slope and fit 
+quality and dedx from fit. Unfortunately, it never seemed to give us much 
+improvement compared to Sum $dE_{i}$/Sum $dx_{i}$. } 
 
 \subsection*{ Chapter 6}
 
