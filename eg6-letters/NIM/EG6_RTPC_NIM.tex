@@ -220,62 +220,28 @@ polarity -- from negative to positive -- to match the requirements of the
 subsequent readout system, and driving the 6~m long ribbon cable that connects 
 to it.
 
-\begin{figure*}[tb]
-   \centering
-   \includegraphics[width=.75\textwidth]{ReadoutScheme.png}
-   \caption[]{Schematic representation of the RTPC readout system, showing
-   the different elements of the front end electronics.} 
-   \label{fig:ReadoutScheme}
-\end{figure*}
+%\begin{figure*}[tb]
+%   \centering
+%   \includegraphics[width=.75\textwidth]{ReadoutScheme.png}
+%   \caption[]{Schematic representation of the RTPC readout system, showing
+%   the different elements of the front end electronics.} 
+%   \label{fig:ReadoutScheme}
+%\end{figure*}
 
-The readout system, similar to the original BoNuS RTPC system~\cite{Fenker:2008zz}, 
-was based on the front end electronic boards originally developed for the ALICE 
-TPC readout system at CERN~\cite{ALICE-FEE}. The Front End Card (FEC) hosted 
-the analogue receiver circuit and the subsequent amplification and digitization 
-stages, based on the PASA~\cite{Soltveit:2012jp} and 
-ALTRO~\cite{EsteveBosch:2003bj} ASICS. A Readout Control Unit (RCU) board was 
-used to distribute the trigger signal to FECs and for data readout, with each 
-RCU handling up to 25 FECs. Communication between readout controller 
-application (ROC) and FECs was performed trough a custom backplane, 
-implementing a low-voltage signal bus. The RCU communicated with the CLAS DAQ 
-system trough a 200 MB/s optical link, connected to a data acquisition PC 
-hosting a readout receiver card. This PC hosted the ROC used to interface with 
-the CLAS DAQ system. An Ethernet link was also present, for slow-controls and 
-monitoring.
+The readout system was an upgraded version of the original BoNuS RTPC system~\cite{Fenker:2008zz}, 
+based ALICE-TPC front end electronic boards (FECs)~\cite{ALICE-FEE}. 
+Each FEC hosted 128 channels, providing amplification and digitization of the input signals.  For each event, 100 samples/channel were digitized by the ALTRO ASIC~\cite{EsteveBosch:2003bj}, operated at 10 MHz sampling frequency. In order to reduce the data size, the system was operated in zero-suppression mode, keeping data from $N_{PRE}=3$ samples before threshold crossing on the rising edge to $N_{POST}=3$ samples after threshold crossing on the falling edge. The theshold level was set on each channel just above the noise level.
 
-The standard CLAS electron trigger was used to initiate the RTPC readout. For each 
-event, 100 samples/channel were digitized and processed by the ALTRO ASIC. In order 
-to reduce the data size, ALTRO was operated in zero-suppression mode, keeping only 
-samples from channels above a programmable threshold set just above the noise level. 
-Samples were pre-processed 
-by a glitch-filter to reject noise and spurious pulses. To properly reconstruct the 
-signal shape, $N_{PRE}=3$ samples before threshold-crossing and $N_{POST}=3$ samples 
-after the signal returns below threshold were saved.
-
-The trigger signal also initiates RCU readout operation from FEC boards. All the 
-measured samples from active channels are reported, together with a channel 
-identifier and a timestamp, to the ROC application, that in turn sends them on 
-the main event builder. Readout from FECs occurs in ``block-transfer'' mode, 
-making use of the ALTRO internal multi-event buffer. This feature could be 
-exploited thanks to the new RCU boards developed for the RTPC readout 
-system\footnote{In the original BoNuS system, the U2F readout controller had no 
-   multi-event capability and used a USB connection rather than fiber optics 
-   for readout. These factors limited the maximum readout rate from the BoNuS 
-detector to about 500 Hz.}. In order to read all the detector readout pads, 
-four FEC crates were used, each equipped with 6 boards, plus a ROC. A schematic 
-of the readout system, for a single crate, is reported in 
-Figure~\ref{fig:ReadoutScheme}. This configuration permitted to reduce the dead 
-time associated to FEC readout operations, which is scaling linearly with the 
-number of boards in the crate. During the 2009 run, the system was successfully 
+A new custom backplane was developed to connect FECs to the Readout Control Unit (RCU)~\cite{RCU}, allowing fast (200 MB/s) communication between the boards. The RCU board, used to distribute the trigger signal to different FECs and read data, was equipped with a fast optical link for data transferring to the main event builder. These features, together with the ``block-transfer'' readout mode making use of the FECs multi-event buffer, allowed to reach a signifantly higher readout-rate compared to the original BoNuS system.  During the 2009 run, the system was successfully 
 operated with a DAQ rate of 3.1 kHz and a live time of $70 \%$, for a 
 luminosity of about $10^{34}$~cm$^{-2}\cdot$s$^{-1}$ and a beam energy of 
-6.064~GeV.
+6.064~GeV, to be compared with the 500 Hz obtained with the first BoNuS detector at similar run conditions.
 
-Finally, during data reconstruction, the acquired samples were processed to obtain, 
+During data reconstruction, the acquired samples were processed to obtain, 
 for each readout pad, the accumulated charge (ADC) and the pulse time (T). Since 
 pulse time was obtained as the time-stamp of the first sample above threshold, 
-referred to the trigger time, the resolution is equivalent to the ALTRO 
-sampling time, 100~ns.
+referred to the trigger time, the resolution was equivalent to the ALTRO 
+sampling time of 100~ns.
 
 \section{Calibration} \label{sec_calib}
 
@@ -686,13 +652,13 @@ photons in the CLAS spectrometer.
   %doi:10.1016/S0168-9002(98)01233-9
 
  \bibitem{ALICE-FEE}
- L. Musa et al., The ALICE TPC front end Electronics Nuclear Science Symposium 
+ L. Musa et al., The ALICE TPC front end Electronics, Nuclear Science Symposium 
  Conference Record, 2003 IEEE, 5 3647-3651 Vol.5, Oct (2003).
  
-\bibitem{Soltveit:2012jp} 
-   H.~K.~Soltveit {\it et al.},
-  The Preamplifier shaper for the ALICE TPC-Detector,
-  Nucl.\ Instrum.\ Meth.\ A {\bf 676}, 106 (2012).
+%\bibitem{Soltveit:2012jp} 
+%   H.~K.~Soltveit {\it et al.},
+%  The Preamplifier shaper for the ALICE TPC-Detector,
+%  Nucl.\ Instrum.\ Meth.\ A {\bf 676}, 106 (2012).
   %doi:10.1016/j.nima.2012.02.012
   %[arXiv:1203.3564 [physics.ins-det]].
  
@@ -702,6 +668,10 @@ photons in the CLAS spectrometer.
   detectors,
   IEEE Trans.\ Nucl.\ Sci.\  {\bf 50}, 2460 (2003).
   %doi:10.1109/TNS.2003.820629
+\bibitem{RCU}
+    C.~G.~Gutierrez et al., The ALICE TPC Readout Control Unit, IEEE Nuclear Science Symposium Conference Record, 1, 575 
+
+
 
 \bibitem{GEANT4}
 http://geant4.cern.ch
