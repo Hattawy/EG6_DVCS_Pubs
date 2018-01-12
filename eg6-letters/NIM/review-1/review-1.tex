@@ -132,8 +132,9 @@ droped this figure. }
 	/paragraph 4.1
 \item I would really prefer to call it drift "velocity" instead of drift 
    "speed"\\
-\textcolor{red}{To the group: We do have radial and azimuthal drift velocities, 
-but we measure the average of their sum. Raph: What is the link with the question?} 
+\textcolor{blue}{What is calibrated here is mainly a speed, as we are just looking 
+how fast electrons are going without regard at there direction, which is looked into 
+in the following paragraph.} 
 
 \item I don't really understand the procedure to find the drift velocity 
    described here and fig. 7. What is $Nb_{max}$ and $Nb_{max/2}$? Why does 
@@ -155,13 +156,16 @@ Please provide more details on the applied procedure, since I have the open
 questions I wrote before and I could not understand it properly. Moreover, 
 please quote the value of the found drift velocity. Is it in accordance with 
 the simulations?\\
-\textcolor{red}{- The text has been updated to clarify the procedures.\\
-                - With T = 65*100~ns and drift length equal to 3cm/ 
-             cos(23$^{\circ}$, $v_{drift}$ = 0.501 cm/microsec which is 
-          consistent with our 0.61 cm/microsec from simulation. \\
-               - In deed, we use $delta_{t} = T_{max/2} - T_{min}$ in our 
-            reconstruction code.} 
->>>>>>> 10849ae3d4920c417e2d8b634ec1b3e86ec0ad03
+\textcolor{blue}{The text has been updated to simplify and clarify the procedure 
+(in particular, some of the variable were not necessary). What we are doing is pretty 
+similar to what you describe, but we might have overlooked some informations in the
+original description. Hopefully it is now better.\\
+Trigger time is at time bin 15, so T = 50*100~ns = 5$\mu$s.
+The drift length is equal to 3cm/ cos(23$^{\circ}$ = 3.26 cm (I assume the 7.5 is a typo).
+Giving $v_{drift}$ = 0.65 cm/$\mu$s. These values are exactly what was anticipated by
+our early comparison of gaz mixtures based on MAGBOLTZ, so we assume there is no 
+problem there.\\} 
+\textcolor{red}{Actually the text still needs some work}
 
 \item Figure 6: why are $T_{min}$ and $T_{max}$ not at the drift gap 
    extremities?\\
@@ -172,7 +176,7 @@ the simulations?\\
 \item line 306: "in one bin" should be explained better. I understood it is the 
    subdivision in bins of the z coordinate, but it was not so obvious at the 
    first reading\\
-\textcolor{blue}{The text is cleared} 
+\textcolor{blue}{The text is cleared.} 
 
 \item Has the stability of the drift path been counter checked with simulations 
    varying the field according to the cathode radius variation? How much is the 
