@@ -132,9 +132,9 @@ droped this figure. }
 	/paragraph 4.1
 \item I would really prefer to call it drift "velocity" instead of drift 
    "speed"\\
-\textcolor{blue}{What is calibrated here is mainly a speed, as we are just looking 
-how fast electrons are going without regard at there direction, which is looked into 
-in the following paragraph.} 
+\textcolor{blue}{What is calibrated here is mainly the drift time, based 
+on your next question as well, we clarified the text about these.} 
+\textcolor{red}{To be implemented}
 
 \item I don't really understand the procedure to find the drift velocity 
    described here and fig. 7. What is $Nb_{max}$ and $Nb_{max/2}$? Why does 
@@ -189,21 +189,15 @@ problem there.\\}
    GARFIELD? Were they used to simulate the drift and avalanche formation of 
    the electrons? And the diffusion from the gas? Was a specific code written 
    to simulate the electronics?\\
-\textcolor{blue}{Only GEANT4 simulation was used in performing the gain 
-   calibration, where the drift paths are updated in the simulation. The 
-   electrons avalanche formation and the gas diffusion are performed though 
-GEANT4. We did not implement a detailed description to simulate the 
-electronics, but we did apply similar conditions to match the real DAQ, such as 
-the rejection of the signals from bad pads and conditions to ensure that each 
-pad must have at least 3 consecutive time bins, with ADC values above the 
-threshold, 35 ADCs, in order to be recorded. The text is cleared with more 
-details. } 
+\textcolor{blue}{The section has been extended to provide more details. We 
+implemented specific codes in our GEANT4 simulation to have a realistic 
+description of the electron drifts and of the DAQ process.} 
 
 \item line 330: "correction factors" are mentioned. On what? Why haven't only 
    good tracks been used for calibration? Lack of statistics?\\
-\textcolor{blue}{Correction factor on the extracted gain for each pad. We used 
-the elastic $^4$He tracks as we could calculate the recoil $^4$He kinematics 
-from the scattered electron in CLAS to avoid any discrepancy from the RTPC.} 
+\textcolor{blue}{We improved the gains by using a method based only on data,
+the text has been clarified on the topic. All these calibration procedures
+are performed with good tracks only.} 
 
 \item When it says that the pad charge is "compared" to the neighboring ones, 
    what happens next? Is it the noise reduction step described later? If so, 
@@ -215,8 +209,7 @@ for each pad, the gain ratios were collected from all the identified elastic
 tracks and these gains were fitted by a Landau function to give a
   first pass gain for each pad as the most probable value of the fit.\\
  - pass2: to make sure that the recorded ADCs by a given pad are similar to the 
- recorded ADCs by other pads in the same track, we refined this calibration 
- after the extracted gains were applied to the experimental data. At this step, 
+ recorded ADCs by other pads in the same track, we refined this calibration. For this, 
  we compared the mean ADCs of each pad to the mean ADCs of the whole track. 
  This ratio is collected from all the elastic events and a gain correction 
  factor is extracted and applied giving a final gain for each pad.
@@ -228,41 +221,20 @@ tracks and these gains were fitted by a Landau function to give a
    why don't you put just one point in the histo for each pad? What is the mean 
    number of channels or pads fired by one track? Sorry for the list of 
    questions, but I could not understand the figure.\\
-   \textcolor{blue}{- It is for only one track (written in the caption).
-   - We dont understand your second question. A pad is a channel. Do you mean 
-how many pads are fired for a single track? Figure \ref{npd_track} shows the 
-number of active pads as a function of the momentum for the collected elastic 
-$^4$He tracks.\\
-- dE is calculated from the ADCs of the individual pads that read out hits 
-  corresponding to the same track. One needed to know the individual step size 
-  very precisely to put dEdx from the individual pads, which is not available.  
-  - Last question is addressed by figure \ref{npd_track}. The mean value is 
-    around 10 pads. }
-
-\begin{figure}[h!]
-   \centering
-   \includegraphics[scale=0.45]{npd_p_elastic.png}
-   \caption{The number of active pads versus the measured momentum of the 
-   elastic $^4$He tracks. } \label{fig:npd_track}
-\end{figure}
-
-
+   \textcolor{blue}{This figure only displays one track. Pads are single channels, 
+the bins correspond to time (100 ns per bin). The dE is calculated overall in general,
+we use this pad by pad method only for calibration. The average number of pad per 
+track is 9, with most of the good tracks between 6 and 14.}
 
 \item Figure 12 - please, put it after figure 11. Moreover, please change dEdx 
    to dE/dx on y axis. Why are the left and right pictures so different?  
    Talking about the deuteron band which is present only in the left figure and 
    the smear on the top part of the right picture. \\
-\textcolor{red}{- The figures layout will be updated.\\} 
+\textcolor{red}{The figures layout will be updated.\\} 
    
-\textcolor{blue}{- The y-axis label on figure 12 is updated.\\}
-\textcolor{blue}{- Regarding the lower peak in the left module of the RTPC, 
-   these events pass all the elastic requirements but for some reasons they 
-   have lower ADC values.  They represent around 7\% of all the elastic events.  
-   After extended studies, the nature of these particles is not identified yet.  
-   We note that this is a global phenomenon in the left module as 94\% of the 
-   left module's pads are involved in both some low and high dEdx events. For 
-   the calibration procedures, the events with low dEdx were excluded as we do 
-not fully understand their nature.} 
+\textcolor{blue}{The y-axis label on figure 12 is updated. Regarding the lower 
+   peak in the left module of the RTPC, it is likely not deuterons. We added
+   a footnote to clarify the question.} 
 
 \subsection*{ Chapter 5}
         /paragraph 5.1	
@@ -271,41 +243,34 @@ not fully understand their nature.}
    noise. It says "event by event and channel by channel": if the ADC threshold 
    is passed then a noise level is subtracted? If so, how is it calculated?\\
 \textcolor{blue}{The oscillatory noise was removed just by rejecting all hits 
-from a channel if too many of its hits fall on the noise curve in a given 
-event. No threshold/pedestal concept, just hit rejection if it looks like 
-noise. } 
+from a channel if too many of these hits fall on the noise curve in a given 
+event. We did not use a threshold or pedestal concept, just a pad rejection 
+if we observe the oscillating noise in the event, the text was clarified.} 
 
 /paragraph 5.2
 \item How was "10.5 mm" cut chosen? is it in xy plane or in 3-dimensions?\\
 \textcolor{blue}{The distance between hits are calculated in 3D. This cut has 
-been chosen because it enables us to jump longer gaps from dead areas of the 
-readout pads without increasing the level of spurious tracks.} 
+been chosen because it enables to jump a one pad gap in case of a dead 
+channel.} 
 
 \item How was the "10 hits" cut chosen? What is the mean number of primary 
    ionization in this gas mixture?\\
-   \textcolor{blue}{Figure \ref{fig:nb_hits} shows the number of hits 
-   distribution for the collected elastic $^4$He tracks from the 1.2 GeV 
-dataset. The mean number of hits is around 135 and the 10 hits cut at the 
-reconstruction level is a loose cut to reduce the level of the spurious 
-tracks.}
-
-\begin{figure}[h!]
-   \centering
-   \includegraphics[scale=0.45]{nb_hits.png}
-   \caption{the number of hits distribution for the collected elastic $^4$He 
-   tracks from the 1.2 GeV dataset.} \label{fig:nb_hits}
-\end{figure}
-
+   \textcolor{blue}{This cut is set to avoid tracks made out of random noise and
+to limit computing time. The number of hits in good tracks at the end of the 
+analysis is always above 30, with a mean around 135, so this cut has no impact 
+on the good track selection.}
 
 \item < dE/dx > is computed here as corrected Etot divided total track length. 
    Usually the mean dE/dx is computed with the truncated mean of the specific 
    energy losses of each hit. Isn't it possible to compute it like this here? 
    dx for each hit can be (maybe) computed from the difference in the hit 
    times. Sum $dE_{i}$/Sum $dx_{i}$ is not equal to Sum ($dE_{i}/dx_{i}$).\\
-\textcolor{blue}{We actually did compute dEdx with  path-length and ADC- 
+\textcolor{blue}{We compute dEdx with path-length and ADC- 
 truncations, and a linear fit to ADC vs path-length to get slope and fit 
 quality and dedx from fit. Unfortunately, it never seemed to give us much 
-improvement compared to Sum $dE_{i}$/Sum $dx_{i}$. } 
+improvement compared to Sum $dE_{i}$/Sum $dx_{i}$. Note that, by the nature of 
+the FADC electronics used, our hits always correspond to 100 ns time bins such that
+each measured ADCs are almost dE/dx measurements already.}
 
 \subsection*{ Chapter 6}
 
@@ -315,21 +280,26 @@ improvement compared to Sum $dE_{i}$/Sum $dx_{i}$. }
    distribution in the inclusive and exclusive case. If so, would it be 
    possible to please draw both fits on the figure 14 and provide the integrals 
    to compute the mean efficiency? If I misunderstood, please comment.\\
-\textcolor{red}{Nathan, do you still have the individual integrals? } 
+\textcolor{blue}{This study has been performed by a student a long time
+ago and we do not have all the individual fits anymore.} 
 
 \subsection*{ Chapter 7} 
 
 \item Is it "high rate environment" or "high readout rate"? They are connected, 
    but what is the rate the RTPC underwent during data taking?\\
-\textcolor{red}{Can we find such information in the logbook?} 
+\textcolor{red}{The rate of protons is of MHz in the chamber with a readout of
+about 3kHz, so one could argue that it is both. Our point here is to emphasis
+the high rate however, as these slow protons deposit a lot of energy in the 
+chamber.} 
 
 \item I understand the resolution and efficiency have been evaluated with the 2 
    GeV electrons. Is it foreseen to analyze also the 6 GeV electron runs, which 
    were the actual data taking? Is there an evaluation of the foreseen RTPC 
    performances in that case?\\
-\textcolor{blue}{Typically, the elastic reaction is used for such performance 
-evaluation. But the elastic cross sections is really small at 6 GeV beam 
-energy.} 
+\textcolor{blue}{It is not possible to do such studies with the 6 GeV beam, because 
+of the lack of an exclusive process to use as elastic cross sections drops dramatically 
+in our acceptance at such high energy. We would have loved to and tried many alternate
+channels, but none was detectable with reasonnable statistics.} 
 
 \subsection*{ Some general remarks on the layout}
 
@@ -437,5 +407,7 @@ Please I would like the authors to address the questions asked and provide the
 required changes or explain why they think those changes are not 
 necessary/correct. Thank you. Best regards.\\
 
+\textcolor{blue}{We would like to thank the reviewer for the detailed remark that
+helped improving the manuscript significantly.}
 
 \end{document}

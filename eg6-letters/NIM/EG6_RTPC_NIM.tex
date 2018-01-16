@@ -393,30 +393,41 @@ affected the drift speed.
 To calibrate the gains, we compared the experimental ADCs to the energy 
 deposited for each pad individually in GEANT4 by similar simulated tracks 
 (using the same elastic events as for the drift paths calibration). This 
-requires a very good GEANT4 simulation including drift paths and the spread of 
-the charge along the path before reaching the pad, so that the simulated hits 
-match the experimental ones. Moreover, the simulation has to match the DAQ 
-features that can lead to cutting out some hits. After setting the simulation 
-properly, we compared simulation to experiment on an event by event basis as 
+requires a detailed simulation, including the drift paths and the diffusion of 
+the charges along the path before reaching the pad to 
+match the experimental data. We implemented in the GEANT4 simulation the
+drift path we obtained from the calibration described above and implemented an ad 
+hoc diffusion to match the average number of hits recorded in the simulation with
+the one from experimental data. To perform this step properly, we implemented in
+the simulation the details of the DAQ process to record hits. 
+
+We then compared this simulation to experiment on an event by event basis as 
 shown in Figure~\ref{fig:EVENT_adc_tdc}. The gain for each pad was calculated 
-as the ratio of the measured ADCs to the simulated deposited energy. Then, this 
-set of the gains was applied to the experimental data. We noticed that some 
-pads record lower ADCs than expected. For this reason, we wanted to make sure 
-that the recorded ADCs by a given pad are similar to the ADCs recorded by other 
-pads in the same track. At this step, we compared the mean ADCs of each
-pad to the mean ADCs of the whole track. This ratio is collected for each pad 
-from a sample of elastic events and a gain correction factor is extracted and 
-applied to the first extracted gain ratio giving a final gain for each readout 
-pad. Final results are shown in Figure~\ref{fig:dedx_p_exp_2nd}, where energy 
+as the ratio of the measured ADCs to the simulated deposited energy. This 
+provided our initial set of gains for each pads and it was applied to the 
+experimental data. However, after this calibration some pads recorded lower ADCs 
+than expected. So, we added a correction factor obtained by comparing  
+the energy deposit on a given pad to its neighbours. To do so, we compared, for 
+each track, the energy deposit on a pad to the energy deposit in the whole track. 
+The gain correction factors are extracted by averaging this ratio for a sample 
+of elastic events. Final results are shown in Figure~\ref{fig:dedx_p_exp_2nd}, where energy 
 loss of particles is plotted against momentum over charge ratio. One can 
-clearly see the band for $^4$He in its expected position.
+clearly see the band for $^4$He in its expected position\footnote{The lower peak 
+   in the left module of the RTPC comes from an unidentified problem in this half 
+   of the detector that concerns 7\% of all the elastic events. 
+   Our best guess is that these events are linked with a high voltage supply 
+   issue, that would sometimes bring the GEM gain down. These events pass all 
+   the elastic requirements and we found nothing that differenciates them 
+   from other events but their low recorded ADCs. For 
+   the calibration procedures, these events were therefore excluded.}.
 
 \begin{figure}[!t]
    \centering
 \includegraphics[scale=0.42]{Event_ADC_Graph_8799283.pdf}
 \caption{Simulated (upper) and experimental (lower) ADC and T distributions 
-of a track. The colors indicate the pads, same color in top and bottom indicate 
-that they are the same pad.}
+of a single track. The different colors indicate the signals from different pads, 
+the same color in the top and bottom figure indicate that the signal was registered
+on the same pad.}
 \label{fig:EVENT_adc_tdc}
 \end{figure}
 
@@ -441,16 +452,17 @@ a subset of the readout channels.
 
 The first is an oscillatory noise located early in the readout time window, 
 shown in the top panel of Figure~\ref{fig:noise} for a particularly noisy 
-channel.  Its amplitude is similar to those of real tracks. About 18\% of the 
-readout channels exhibit large contributions from this noise characteristic.  
-Due to its unique time-energy correlation for the given channels, the noise 
-could be removed on an event by event and channel by channel basis without 
-significant loss of good signals. The result of the
+channel. Its amplitude is similar to those of real tracks. About 18\% of the 
+readout channels exhibit large contributions from this noise.  
+Due to its unique time-energy correlation, we use a patern
+recognition algorithm and discard the hits coming from the channels that display 
+this behavior on an event by event basis. The result of the
 procedure is illustrated in the bottom panel of Figure~\ref{fig:noise}.
 
 The second noise signature was a coherent noise affecting about 25\% of the 
 pre-amplifiers boards, when simultaneous hits in most of the 16 channels of the
-board were recorded. An event-based technique to identify and remove this noise was developed based 
+board were recorded. An event-based technique to identify and remove this noise 
+was developed based 
 on counting simultaneous hits in each pre-amplifier group, and, if sufficiently large, 
 perform a dynamic pedestal subtraction based on the average ADC of neighboring 
 channels within this group.
@@ -528,6 +540,7 @@ based on the residual between the expected and measured $^4$He tracks.  The RTPC
 resolutions, after removing contributions from the electron, are shown in Table
 ~\ref{tab:reso}, and are very similar for the two halves of the RTPC.  Note that the
 $\theta$- and $z$-resolutions are highly correlated.
+
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{|l|cccc|}
@@ -538,7 +551,8 @@ Left &  5.3 mm & 3.8$^{\circ}$ & 1.9$^{\circ}$ & 9$\%$ \\
 Right & 6.5 mm & 4.0$^{\circ}$ & 1.9$^{\circ}$ & 8$\%$\\
 \hline
 \end{tabular}
-\caption{The resolutions of the two modules of the RTPC for $z$-vertex, polar and azimuthal angles, and momentum.}
+\caption{The resolutions of the two modules of the RTPC for $z$-vertex, 
+polar and azimuthal angles, and momentum.}
 \label{tab:reso}
 \end{center}
 \end{table}
