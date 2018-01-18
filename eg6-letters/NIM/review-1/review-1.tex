@@ -85,7 +85,7 @@ firmware of the electronics, this has been made clearer.}
 \textcolor{blue}{ The text has been modified to clarify the z position of the 
 target and the RTPC with respect to CLAS sectrometer.\\
 Regarding the electric field it is unclear what you call the induction gap. We
-provide these fields for the drift region and the inter-GEM regions which we 
+provide the fields for the drift region and the inter-GEM regions which we 
 find most relevant. If extra information is needed, please let us know.\\
 The gain of such triple GEM configuration has been studied by 
 CERN's Gas Detector Development Group (Fabio Sauli, Progress with the Gas 
@@ -93,7 +93,7 @@ Electron Multiplier, 2nd Workshop on Advanced Transition Radiation Detectors
 for Accelerator and Space Applications (Bari, Sept. 4-7, 2003), Nucl. Instr. 
 and Meth. A522(2004)93). We evaluated only the overall gain in our chamber, 
 the lack of calibration of some electronics elements makes it impossible for 
-us to extract a gain specific to the GEM system at this point.}
+us to extract a gain specific to our GEM system at this point.}
 
 \item When speaking of low spark rate the reference [12] is quoted, which is 
    the PDG. Maybe it is better to quote more specific studies like the ones by 
@@ -103,7 +103,7 @@ us to extract a gain specific to the GEM system at this point.}
 \item line 119: is the Kapton of the GEM foil really 300 mum thick? It is 
    usually very thin, like 50 mum, in order to have low material budget and 
    very high fields.\\
-\textcolor{blue}{Sorry typo. It is 50 $mu$m} 
+\textcolor{blue}{Sorry typo. It is 50 $\mu$m} 
 
 \subsection*{ Chapter 3}
 \item The description of the electronics looks to me a little not well 
@@ -134,7 +134,6 @@ droped this figure. }
    "speed"\\
 \textcolor{blue}{What is calibrated here is mainly the drift time, based 
 on your next question as well, we clarified the text about these.} 
-\textcolor{red}{To be implemented}
 
 \item I don't really understand the procedure to find the drift velocity 
    described here and fig. 7. What is $Nb_{max}$ and $Nb_{max/2}$? Why does 
@@ -165,7 +164,6 @@ The drift length is equal to 3cm/ cos(23$^{\circ}$ = 3.26 cm (I assume the 7.5 i
 Giving $v_{drift}$ = 0.65 cm/$\mu$s. These values are exactly what was anticipated by
 our early comparison of gaz mixtures based on MAGBOLTZ, so we assume there is no 
 problem there.\\} 
-\textcolor{red}{Actually the text still needs some work}
 
 \item Figure 6: why are $T_{min}$ and $T_{max}$ not at the drift gap 
    extremities?\\
@@ -181,7 +179,9 @@ problem there.\\}
 \item Has the stability of the drift path been counter checked with simulations 
    varying the field according to the cathode radius variation? How much is the 
    field variation if the radius have some mm of uncertainty?\\
-\textcolor{blue}{We did not study this case. } 
+\textcolor{blue}{No, we did not study this. Field variation of several \% is
+   possible, but note that our data driven calibration does not depend on
+   the electric field.} 
 
         /paragraph 4.3
 \item The gain calibration is very quick. I would like more details, e.g. 
@@ -202,17 +202,11 @@ are performed with good tracks only.}
 \item When it says that the pad charge is "compared" to the neighboring ones, 
    what happens next? Is it the noise reduction step described later? If so, 
    please write it. \\
-\textcolor{blue}{The gain extraction is following this order: \\
-- pass 1: the gain of each pad is defined as the ratio between the mean 
-recorded experimental ADCs to the mean simulated ADCs in the same track. Then 
-for each pad, the gain ratios were collected from all the identified elastic 
-tracks and these gains were fitted by a Landau function to give a
-  first pass gain for each pad as the most probable value of the fit.\\
- - pass2: to make sure that the recorded ADCs by a given pad are similar to the 
- recorded ADCs by other pads in the same track, we refined this calibration. For this, 
- we compared the mean ADCs of each pad to the mean ADCs of the whole track. 
- This ratio is collected from all the elastic events and a gain correction 
- factor is extracted and applied giving a final gain for each pad.
+\textcolor{blue}{ 
+ The ratio is collected from all the elastic events and a gain correction 
+ factor is extracted and applied giving a final gain for each pad. \\
+ The noise reduction process is completely independent of the calibration
+ and is performed before all other steps. We clarified the text in the article. 
   } 
 
 \item Figure 11: I don't understand it. How many tracks does the histo contain? 
@@ -230,9 +224,8 @@ track is 9, with most of the good tracks between 6 and 14.}
    to dE/dx on y axis. Why are the left and right pictures so different?  
    Talking about the deuteron band which is present only in the left figure and 
    the smear on the top part of the right picture. \\
-\textcolor{red}{The figures layout will be updated.\\} 
-   
-\textcolor{blue}{The y-axis label on figure 12 is updated. Regarding the lower 
+\textcolor{blue}{The figures layout is updated. The y-axis label on figure 12 
+   is also updated. Regarding the lower 
    peak in the left module of the RTPC, it is likely not deuterons. We added
    a footnote to clarify the question.} 
 
@@ -258,7 +251,8 @@ channel.}
    \textcolor{blue}{This cut is set to avoid tracks made out of random noise and
 to limit computing time. The number of hits in good tracks at the end of the 
 analysis is always above 30, with a mean around 135, so this cut has no impact 
-on the good track selection.}
+on the good track selection. We did not study the number of primary ionization, 
+since we are looking at low energy $\alpha$s, we assumed it is very large. }
 
 \item < dE/dx > is computed here as corrected Etot divided total track length. 
    Usually the mean dE/dx is computed with the truncated mean of the specific 
@@ -287,10 +281,9 @@ ago and we do not have all the individual fits anymore.}
 
 \item Is it "high rate environment" or "high readout rate"? They are connected, 
    but what is the rate the RTPC underwent during data taking?\\
-\textcolor{red}{The rate of protons is of MHz in the chamber with a readout of
-about 3kHz, so one could argue that it is both. Our point here is to emphasis
-the high rate however, as these slow protons deposit a lot of energy in the 
-chamber.} 
+\textcolor{blue}{The rate of slow protons is of MHz in the chamber with a readout of
+about 3kHz, so one could argue that it is both. However, our point there is to emphasis
+the high rate, as these slow protons deposit a lot of energy in the chamber.} 
 
 \item I understand the resolution and efficiency have been evaluated with the 2 
    GeV electrons. Is it foreseen to analyze also the 6 GeV electron runs, which 
