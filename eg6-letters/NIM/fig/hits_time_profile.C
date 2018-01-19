@@ -421,7 +421,7 @@ void hits_time_profile()
             l2->SetTextColor(kBlue); 
             //l2->Draw("same");
 
-    TLatex *l3= new TLatex(65.0,-500.0,"T_{max/2}");
+    TLatex *l3= new TLatex(65.0,-500.0,"T_{max}");
             l3->SetTextSize(0.07);
             l3->SetTextColor(kBlue); 
             l3->Draw("same");
