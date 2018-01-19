@@ -91,10 +91,10 @@
    Graph_Graph5->GetXaxis()->SetLabelSize(0.055);
    Graph_Graph5->GetXaxis()->SetTitleSize(0.07);
    Graph_Graph5->GetXaxis()->CenterTitle(true);
-   Graph_Graph5->GetYaxis()->SetTitle("T_{max/2}");
+   Graph_Graph5->GetYaxis()->SetTitle("T_{max}");
    Graph_Graph5->GetYaxis()->SetLabelSize(0.055);
    Graph_Graph5->GetYaxis()->SetTitleSize(0.07);
-   Graph_Graph5->GetYaxis()->SetTitleOffset(0.9);
+   Graph_Graph5->GetYaxis()->SetTitleOffset(1.0);
    Graph_Graph5->GetYaxis()->CenterTitle(true);
    gre->SetHistogram(Graph_Graph5);
  
