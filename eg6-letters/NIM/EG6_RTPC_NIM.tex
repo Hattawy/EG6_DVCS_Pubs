@@ -142,8 +142,8 @@ starting from the beam line towards larger radius:\\
       aluminized Mylar set at $-4260$~V to serve as the cathode.
    \item The drift region is filled with the same Ne-DME gas mixture and 
       extends from the cathode to the first GEM, 60~mm away from the beam axis.  
-      The average electric field in this region is perpendicular to the beam 
-      and average around 550~V/cm.
+      The electric field in this region is perpendicular to the beam and 
+      average around 550~V/cm.
    \item The electron amplification system is composed of three GEMs located at 
       radii of 60, 63 and 66~mm. In this configuration, the first GEM layer 
       serves as the anode and each subsequent GEM is set at a lower voltage to
@@ -176,7 +176,7 @@ difference applied between the two copper layers of the GEM creates a very
 strong electric field in each hole leading to high ionization and 
 amplification. 
 
-The drift gas used in the experiment is a 80-20\% Ne-DME mixture. This choice 
+The drift gas used in the experiment is a 80\%-20\% Ne-DME mixture. This choice 
 has been made in order to balance the energy deposit, which is critical
 for proper particle identification, with a reasonable
 Lorentz angle. Calculations using the MAGBOLTZ program~\cite{Biagi:1999nwa} 
@@ -217,18 +217,19 @@ Figure~\ref{fig:PADs} shows how pads were grouped to 16 channels pre-amplifier
 boards. The pre-amplifier boards, already employed in the BoNuS 
 RTPC~\cite{Fenker:2008zz}, serve the dual purpose of inverting the RTPC signals 
 polarity -- from negative to positive -- to match the requirements of the 
-subsequent readout system, and driving the 6~m long ribbon cable that connects 
-to it.
+subsequent readout system, and driving signals through the 6~m long ribbon 
+cable that connects to the readout system.
 
-The readout system was an upgraded version of the original BoNuS RTPC system~\cite{Fenker:2008zz}, 
-based ALICE-TPC front end electronic boards (FECs)~\cite{ALICE-FEE}. 
-Each FEC hosted 128 channels, providing amplification and digitization of the 
-input signals. For each event, 100 samples/channel were digitized by the ALTRO 
-ASIC~\cite{EsteveBosch:2003bj}, operated at 10~MHz sampling frequency. In order 
-to reduce the data size, the system was operated in zero-suppression mode, 
-keeping data from $N_{PRE}=3$ samples before threshold crossing on the rising 
-edge to $N_{POST}=3$ samples after threshold crossing on the falling edge. 
-The threshold level was set on each channel just above the noise level.
+The readout system was an upgraded version of the original BoNuS RTPC 
+system~\cite{Fenker:2008zz}, based on ALICE-TPC front end electronic boards 
+(FECs)~\cite{ALICE-FEE}.  Each FEC hosted 128 channels, providing amplification 
+and digitization of the input signals. For each event, 100 samples/channel were 
+digitized by the ALTRO ASIC~\cite{EsteveBosch:2003bj}, operated at 10~MHz 
+sampling frequency. In order to reduce the data size, the system was operated 
+in zero-suppression mode, keeping data from $N_{PRE}=3$ samples before 
+threshold crossing on the rising edge to $N_{POST}=3$ samples after threshold 
+crossing on the falling edge.  The threshold level was set on each channel just 
+above the noise level.
 
 A new custom backplane was developed to connect FECs to the Readout Control 
 Unit (RCU)~\cite{RCU}, allowing fast (200 MB/s) communication between the 
@@ -372,19 +373,12 @@ function of time. In Figure~\ref{fig:DELTA_PHI_TDC}, we show the resulting data
 points for one bin in z-coordinate of the RTPC, where the drift path is easily 
 identified and eventually fitted for implementation in our reconstruction code.
 
-To verify the stability of the drift paths, this procedure was carried out 
-using both the 1.204 GeV data from the beginning of the run period and the 
-1.269 GeV data from the end of the run period (shown in blue on 
-Figure~\ref{fig:Drift_run_number_1}). We found very similar drift paths for the 
-two data sets and concluded that any changes in the system only significantly 
-affected the drift speed.
-
 \begin{figure}[t]
 \centering
 \includegraphics[scale=0.48]{FitResult_p2_11.pdf}
 \caption{$\Delta \phi$ versus T distribution for tracks
 from one bin in longitudinal position along the RTPC. The black line represents 
-our firt of the drift path in this bin.}
+our fit of the drift path in this bin.}
 \label{fig:DELTA_PHI_TDC}
 \end{figure}
 
@@ -497,8 +491,8 @@ plots.}
 
 The tracking starts with reconstructing the spacial origin of the hits using 
 the extracted drift speed and drift path parameters. For each registered hit, 
-we calculate a position of emission from the signal time and the pad position.  
-The third step is to create chains of hits. The maximum distance between two 
+we calculate the position of emission from the signal time and the pad 
+position. Then, chains of hits are created. The maximum distance between two 
 close adjacent hits has to be less than 10.5 mm to chain them, which roughly 
 corresponds to neighbors and next to neighbors. We fit the chains with a helix 
 if they have a minimum of 10 hits. We then eliminate from the chain the hits 
@@ -537,9 +531,9 @@ $^4$He, shown in Figure~\ref{fig:w}.
 
 \begin{figure}[tb]\centering
   \includegraphics[width=8cm]{fit_W_distribution_l.png}
-  \caption{The recoil mass $W$ distribution calculated from electron kinematics 
-  before (``inclusive'') and after (``exclusive'') requiring a matching track 
-  in the RTPC.\label{fig:w}}
+  \caption{The recoil mass, $W$, distribution calculated from electron 
+  kinematics before (``inclusive'') and after (``exclusive'') requiring a 
+  matching track in the RTPC.\label{fig:w}}
 \end{figure}
 
 
