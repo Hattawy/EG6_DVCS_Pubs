@@ -1,0 +1,12 @@
+#! /bin/bash
+
+./Clean
+
+pdflatex 1st_adhoc_comments.tex
+bibtex   1st_adhoc_comments
+pdflatex 1st_adhoc_comments.tex
+pdflatex 1st_adhoc_comments.tex
+
+rm 1st_adhoc_comments.aux 1st_adhoc_comments.bbl 1st_adhoc_comments.blg 1st_adhoc_comments.log 1st_adhoc_comments.out 1st_adhoc_comments.maf 
+rm 1st_adhoc_comments.mtc* 1st_adhoc_comments.mtc1 1st_adhoc_comments.nlo
+rm formatAndDefs.aux
