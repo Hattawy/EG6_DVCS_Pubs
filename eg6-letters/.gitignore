@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 HeliumCohDVCS.aux
 HeliumCohDVCS.log
 HeliumCohDVCSNotes.bib
@@ -8,7 +7,6 @@ HeliumCohDVCS.pdf
 *.log
 *.aux
 *.blg
-=======
 .DS_Store
 ._.DS_Store
 ._*.png
@@ -16,12 +14,9 @@ HeliumCohDVCS.pdf
 *.mobi
 EG6_analysis_note_*.pdf
 2nd_round_comments.pdf
-<<<<<<< HEAD
-=======
 EG6_analysis_note_vf_Dec2016.pdf
 final_round_comments.pdf
 *.mtc0
->>>>>>> af543d24ecac9d7968f3832e58a0f2096bf6307b
 *.log
 *.aux
 *.spl
@@ -34,4 +29,3 @@ final_round_comments.pdf
 *.out
 *.brf
 
->>>>>>> eb25573b5c10e6b9c07a8e43b20a12b8c11a9fb9
