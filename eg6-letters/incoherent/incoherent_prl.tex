@@ -194,35 +194,38 @@ threshold in the Cherenkov counters. The protons were identified from
 positively charged tracks based on their time-of-flight measured 
 by the scintillator counters.  In addition, it was required that both the 
 electron and the proton in the event originated from the same vertex at the 
-target. The photons were detected in 
-either the IC or the CLAS electromagnetic calorimeter. All the clusters within 
-the IC fiducial region were assumed to be photons, while a timing cut is used 
-to clean the EC photons from neutrons. Note that even though the DVCS reaction 
-has only one real photon in the final state, events with more than one photon 
-were not discarded at this stage. These extra photons are mostly soft photons from accidental 
-coincidence which, as will be discussed below, the DVCS exclusivity cuts 
-eliminate easily. In the following selection stage, the most energetic photon 
-is considered as the DVCS photon candidate (see \cite{Hattawy:thesis} for 
-additional details on the particles identification).  
+target. The photons were detected in either the IC or the CLAS electromagnetic 
+calorimeter. All the clusters within the IC fiducial region were assumed to be 
+photons, while a timing cut is used to clean the EC photons from neutrons. Note 
+that even though the DVCS reaction has only one real photon in the final state, 
+events with more than one photon were not discarded at this stage. These extra 
+photons are mostly soft photons from accidental coincidence which, as will be 
+discussed below, the DVCS exclusivity cuts eliminate easily. In the following 
+selection stage, the most energetic photon is considered as the DVCS photon 
+candidate (see \cite{Hattawy:thesis} for additional details on the particles 
+identification).  
 
 Further requirements were applied to clean the identified initial set of 
 incoherent DVCS events from accidental and physics background events. First, 
 events were selected with Q$^{2}$ greater the 1 GeV$^2$ to ensure the 
 applicability of the DVCS handbag diagram, and with $\gamma^{*}p$ invariant 
-mass (W$=(q+p)^2$) greater than 2 GeV to avoid the nucleon resonance region.  
-The $t$, transferred momentum squared to the recoil proton assuming an 
-on-shell proton at rest, was required to be greater than a minimum allowed 
-value at given Q$^2$ and W ($t~>~t_{min}$).  Then, the exclusivity of the 
-incoherent DVCS events was ensured by imposing constraints on the kinematical 
-variables resulting from conserving the four-momentum in the reaction 
-$ep\rightarrow e'p'\gamma$. These kinematical variables are: the coplanarity 
-angle $\Delta\phi$ between the ($\gamma,\gamma^*$) and ($\gamma^*$,$p'$) 
-planes, the missing energy, mass, and transverse momentum of the $e'\gamma$ and 
-$e'p'\gamma$ systems, the missing mass squared of the $e'p'$ system, and the 
-angle $\theta$ between the measured photon and the missing momentum of the 
-$e'p'$ system. The experimental data for the most relevant exclusivity 
-variables are shown in FIG.~\ref{fig:kin-cuts}. We also rejected events where a 
-$\pi^0$ was identified by the invariant mass of two photons. At the end of
+mass (W$=(q+p)^2$) greater than 2 GeV to avoid the nucleon resonance region. 
+The $t$, transferred momentum squared to the recoil proton assuming an on-shell 
+proton at rest, was required to be greater than a minimum allowed value at 
+given Q$^2$ and W ($t>~t_{min}(=~- Q^{2}~\frac{2(1- x_{B})(1~-~\sqrt{1 
++~\epsilon^{2}})~+~\epsilon~^{2}}{4x_{B}(1-x_{B})+\epsilon^{2}}$,
+where $\epsilon^{2}=~\frac{4M^{2}_{p}x^{2}_{B}}{Q^{2}}$ and $M_{p}$ is the 
+proton mass). Then, the exclusivity of the incoherent DVCS events was ensured 
+by imposing constraints on the kinematical variables resulting from conserving 
+the four-momentum in the reaction $ep\rightarrow e'p'\gamma$.  These 
+kinematical variables are: the coplanarity angle $\Delta\phi$ between the 
+($\gamma,\gamma^*$) and ($\gamma^*$,$p'$) planes, the missing energy, mass, and 
+transverse momentum of the $e'\gamma$ and $e'p'\gamma$ systems, the missing 
+mass squared of the $e'p'$ system, and the angle $\theta$ between the measured 
+photon and the missing momentum of the $e'p'$ system. The experimental data for 
+the most relevant exclusivity variables are shown in FIG.~\ref{fig:kin-cuts}.  
+We also rejected events where a $\pi^0$ was identified by the invariant mass of 
+two photons. At the end of
 this selection process, about 30k events 
 passed all the requirements; their kinematic distributions are shown in 
 FIG.~\ref{fig:kin-coverage}.  
@@ -291,14 +294,16 @@ dominating the shape of the distribution.
 
 Due to limited statistics, the data were binned two-dimensionally into 36 bins.  
 That is, four bins in one of the kinematical variable of interest ($Q^{2}$, 
-$x_{B}$ or $t$) and nine bins in the azimuthal angle ($\phi$).  
+$x_{B}$, or $t$) and then nine bins in the azimuthal angle ($\phi$).   
 FIG.~\ref{fig:alu} presents the measured incoherent $A_{LU}$ as a function of 
-$\phi$ in bins of $Q^{2}$, $x_{B}$, and $t$. The curves on the plots are fits 
-of the form $\frac{a_{0}~sin(\phi)}{1+ a_{1}~cos(\phi)}$. The main contributions 
-to systematic uncertainties on these fits are from the choice of the DVCS 
-exclusivity cuts (6\%) and the large bin size (7\%). The systematic uncertainties
-sum up to less than 10\% for all data points and thus always remain significantly 
-smaller than the statistical errors.
+$\phi$ in bins of $Q^{2}$ (integarted over full $x_{B}$ and $t$ ranges), 
+$x_{B}$ (integarted over full $Q^{2}$ and $t$ ranges), and $t$ (integarted over 
+full $Q^{2}$ and $x_{B}$ ranges). The curves on the plots are fits of the form 
+$\frac{a_{0}~sin(\phi)}{1+ a_{1}~cos(\phi)}$.  The main contributions to 
+systematic uncertainties on these fits are from the choice of the DVCS 
+exclusivity cuts (6\%) and the large bin size (7\%). The systematic 
+uncertainties sum up to less than 10\% for all data points and thus always 
+remain significantly smaller than the statistical errors.
 
 \begin{figure}[tb]
 \includegraphics[width=8.9cm]{figs/incoherent_ALU_phi.pdf}
@@ -312,19 +317,20 @@ smaller than the statistical errors.
 \end{figure}
 
 
-We present in FIG.~\ref{fig:alu90} the dependence of the fitted $A_{LU}$ 
-values at $\phi$~=~90$^{\circ}$ on the kinematical variables $Q^2$, $x_{B}$, 
-and $t$. Within the given uncertainties, $A_{LU}$ does not indicate a strong 
-dependence on $Q^2$. The $x_{B}$ and $t$ dependencies are compared to 
-theoretical calculations performed by S.~Liuti and K.~Taneja 
-\cite{simonetta_2}. Their model uses nuclear spectral function and 
-considers mainly off-shell effects. The calculations are carried out at slightly 
-different kinematics than our data but still provide important guidance. The 
-experimental results appear to have smaller asymmetries especially at low 
-$x_{B}$ than the calculations. These differences may arise from nuclear 
-effects which are not taken into account in the model, such as long-range 
-interactions. On the graph for $-t$ dependence, we show previous measurements 
-by the HERMES collaboration \cite{Airapetian:2009cga}, in which only electrons
+FIG.~\ref{fig:alu90} presents the dependence of the fitted $A_{LU}$ values at 
+$\phi$~=~90$^{\circ}$ ($a_{0}$ parameter from the individual fits in 
+FIG.~\ref{fig:alu}) on the kinematical variables $Q^2$, $x_{B}$, and $t$.  
+Within the given uncertainties, $A_{LU}$ does not indicate a strong dependence 
+on $Q^2$.  The $x_{B}$ and $t$ dependencies are compared to theoretical 
+calculations performed by S.~Liuti and K.~Taneja \cite{simonetta_2}. Their 
+model uses a nuclear spectral function and considers mainly off-shell effects.  
+The calculations are carried out at slightly different kinematics than our data 
+but still provide important guidance. The experimental results appear to have 
+smaller asymmetries especially at low $x_{B}$ than the calculations. These 
+differences may arise from nuclear effects which are not taken into account in 
+the model, such as long-range interactions.  On the graph for $-t$ dependence, 
+we show previous measurements by the HERMES collaboration 
+\cite{Airapetian:2009cga}, in which only electrons
 and photons were measured. Due to the large experimental uncertainties of the HERMES 
 points, the two measurements are completely compatible. 
 
@@ -344,22 +350,21 @@ measurements for the incoherent (coherent) enriched region
 \end{figure}
 
 One can use the nuclear DVCS to measure a ``generalized'' EMC effect in order 
-to see if significant nuclear effects are also visible within the GPD framework. 
-To explore this idea, we construct 
-the ratio of $A_{LU}$ for bound protons to that on free proton target.  
-FIG.~\ref{fig:incoh_EMC_ratio_ALU_proton} presents the 
-BSA ratio based on interpolation of the free proton asymmetries from  
-CLAS \cite{Girod:2007aa} as a function of the kinematical variable
-$x_B$. The $A_{LU}$ ratios show a 20\%-40\% lower asymmetries for a bound proton compared 
-to the free proton mirroring a form of EMC effect but with a surprising 
-large effect, in particular at low $x_B$. The measurements disagree with the off-shell \cite{simonetta_2} 
-and the on-shell calculations that use the medium modified GPDs as calculated from 
-the quark-meson coupling model \cite{Guzey:2008fe}. In particular, the difference becomes
-large at lower $x_B$, 
-where the off-shell model predicts an enhancement of the ratio, where our experiment 
-shows a sharp drop. This measurement shows that an important nuclear effect is
-missing from the existing models in order to explain this strong quenching of
-the BSA.
+to see if significant nuclear effects are also visible within the GPD 
+framework.  To explore this idea, we construct the ratio of $A_{LU}$ for bound 
+protons to that on a free proton target. 
+FIG.~\ref{fig:incoh_EMC_ratio_ALU_proton} presents the BSA ratio based on 
+interpolation of the free proton asymmetries from  CLAS \cite{Girod:2007aa} as 
+a function of the kinematical variable $x_B$. The $A_{LU}$ ratios show 
+20\%-40\% lower asymmetries for a bound proton compared to the free proton 
+mirroring a form of EMC effect but with a surprising large modification, in 
+particular at low $x_B$. The measurements disagree with the off-shell 
+\cite{simonetta_2} and the on-shell calculations that use the medium modified 
+GPDs as calculated from the quark-meson coupling model \cite{Guzey:2008fe}. In 
+particular, the difference becomes large at lower $x_B$, where the off-shell 
+model predicts an enhancement of the ratio, where our experiment shows a sharp 
+drop. This measurement shows that an important nuclear effect is missing from 
+the existing models in order to explain this strong quenching of the BSA.
 
 \begin{figure}[tb]
 \centering
@@ -383,9 +388,8 @@ associated with incoherent DVCS off $^4$He using an upgraded setup of the CLAS
 spectrometer at Jefferson Lab. Our results were compared to model 
 calculations based on different assumptions of the nuclear medium effects at 
 the partonic level. The bound-proton BSA is largely suppressed compared to 
-the free proton BSA. This surprising result opens a new avenue 
-for progress in the understanding of the quarks and gluons behavior in the
-nuclear medium.
+the free proton BSA. This surprising result opens a new avenue for progress in 
+the understanding quarks and gluons in the nuclear medium.
 
 %Acknowledgments
 
