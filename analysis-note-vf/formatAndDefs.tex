@@ -7,7 +7,6 @@
 \usepackage{epigraph}
 \usepackage{lineno}
 
-
 %\usepackage{arev}
 %\usepackage[bitstream-charter]{mathdesign}
 %\usepackage[urw-garamond]{mathdesign}
@@ -16,6 +15,69 @@
 \usepackage[sc]{mathpazo}
 \linespread{1.05}   
 \usepackage[T1]{fontenc}
+
+\usepackage{nameref}
+
+
+
+\newcommand{\CA}{\mbox{CA}}
+\newcommand{\CoA}{\mbox{CoA}}
+\newcommand{\CeA}{\mbox{CeA}}
+\newcommand{\SSA}{\mbox{SSA}}
+\newcommand{\Bx}{x_{\rm B}}
+\newcommand{\cQ}{{\cal Q}}
+\newcommand{\GeV}{\mbox{GeV}}
+\newcommand{\ft}[2]{{\textstyle\frac{#1}{#2}}}
+\newcommand{\MS}{{$\overline{\mbox{MS}}$}}
+\newcommand{\Sym}{\mathop{\mbox{\large\bf S}}}
+
+\newcommand*{\eqnameformat}[1]{%
+  \textsf{#1}%
+}
+
+\makeatletter
+\@ifdefinable{\org@maketag@@@}{%
+  \let\org@maketag@@@\maketag@@@
+  \renewcommand*{\maketag@@@}[1]{%
+    \org@maketag@@@{%
+      \@ifundefined{eq@name}{#1}{%
+        \begin{tabular}[t]{@{}r@{}}%
+          #1\tabularnewline
+          \eqnameformat{\@nameuse{eq@name}}%
+        \end{tabular}%
+      }%
+    }%
+  }%
+}
+\newif\ifeqname@star
+\newcommand*{\eqname}{%
+  \@ifstar{\eqname@startrue\eqname@}{\eqname@starfalse\eqname@}%
+}
+\newcommand*{\eqname@}[2][]{%
+  \gdef\eq@name{#1}%
+  \ifx\eq@name\@empty
+  \else
+    \begingroup
+      \@ifundefined{GetTitleString}{%
+        \gdef\@currenteqlabelname{#2}%
+      }{%
+        \GetTitleString{#2}%
+        \global\let\@currenteqlabelname\GetTitleStringResult
+      }%
+      \let\@currentlabelname\@currenteqlabelname
+      \label{#1}%
+    \endgroup
+  \fi
+  %
+  \gdef\eq@name{#2}%
+  \ifx\eq@name\@empty
+    \global\let\eq@name\relax
+  \else
+    \ifeqname@star
+      \gdef\eq@name{\llap{#2}}%
+    \fi
+  \fi
+}
 
 
 
