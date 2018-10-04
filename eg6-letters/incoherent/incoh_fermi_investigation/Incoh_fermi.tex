@@ -1,0 +1,55 @@
+
+%\documentclass[a4paper,11pt,twoside]{ThesisStyle}
+\documentclass[a4paper,11pt,twoside]{article}
+
+\date{\today}
+\include{formatAndDefs}
+\begin{document}
+
+\title{\centering{Investigating the Fermi motion smearing on the incoherent 
+DVCS channel}}
+\maketitle
+
+Following our emails on investigating the Fermi motion effect on smearing our 
+t-bin values in the incoherent DVCS channel, here in figure \ref{fig:exp} I 
+show the $t$ distributions of our binning in $t$. On the simulation side, 
+figure \ref{fig:fermi} shows the initial proton's Fermi momentum distribution 
+of the simulated incoherent DVCS. To estimate the smearing of Fermi motion on 
+$t$ values, in figure \ref{fig:sim} I calculated $t$ by assuming that the 
+initial proton is at rest (first row of plots) and using the exact generated 
+initial proton kinematics (second row of plots). In the third row of figure 
+\ref{fig:sim}, I show the difference between the two calculated $t$ values for 
+the different bins.  
+
+\begin{figure}[h!]
+   \centering
+\includegraphics[height=6.0cm]{figs/t_n_Incoh.pdf}
+\caption{$t$ distributions for our experimental four bins in $t$.}
+\label{fig:exp}
+\end{figure}
+
+\begin{figure}[h!]
+   \centering
+\includegraphics[height=5.0cm]{figs/sim_Fermi_mom.png}
+\caption{The Fermi momentum distribution of the initial proton in the simulated 
+   incoherent DVCS events.
+   }
+\label{fig:fermi}
+\end{figure}
+
+\begin{figure}[h!]
+   \centering
+\includegraphics[height=14.0cm]{figs/sim_t_n_Incoh.pdf}
+\caption{$t$ distributions for the simulated incoherent DVCS events. From left 
+   to right are our four bins in $t$. In the first row of plots, $t$ is 
+   calculated assuming the initial proton is on-shell. In the second row plots, 
+   $t$ is calculated using the true generated momentum of the initial proton .  
+   In the third raw, I show the difference between the two calculated $t$ 
+   values.}
+   \label{fig:sim}
+\end{figure}
+
+
+
+
+\end{document}
