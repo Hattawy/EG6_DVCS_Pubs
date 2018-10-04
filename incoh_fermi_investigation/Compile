@@ -1,0 +1,12 @@
+#! /bin/bash
+
+./Clean
+
+pdflatex Incoh_fermi.tex
+bibtex   Incoh_fermi
+pdflatex Incoh_fermi.tex
+pdflatex Incoh_fermi.tex
+
+rm Incoh_fermi.aux Incoh_fermi.bbl Incoh_fermi.blg Incoh_fermi.log Incoh_fermi.out Incoh_fermi.maf 
+rm Incoh_fermi.mtc Incoh_fermi.mtc1 Incoh_fermi.nlo
+rm formatAndDefs.aux
