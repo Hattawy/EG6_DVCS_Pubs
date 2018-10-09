@@ -74,7 +74,7 @@ void incoherent_Handbag(void){
         l = new TLine(35, 65, 55, 65);l->Draw();
         l = new TLine(57, 38, 55, 65);l->Draw();
 
-        //arr = new TArrow(33, 38, 34.3, 55, 0.02,"|>"); arr->SetAngle(40);  arr->Draw();
+        arr = new TArrow(33, 38, 34.3, 55, 0.02,"|>"); arr->SetAngle(40);  arr->Draw();
         arr = new TArrow(35, 65, 45, 65, 0.02,"|>"); arr->SetAngle(40);  arr->Draw();
         arr = new TArrow(55, 65, 56.3, 48, 0.02,"|>"); arr->SetAngle(40);  arr->Draw();
 
@@ -92,7 +92,7 @@ void incoherent_Handbag(void){
        arcarrow->SetLineStyle(2);
        //arcarrow->Draw();
 
-       arr = new TArrow(51.0, 10, 52.0, 10, 0.03); arr->SetAngle(40);  arr->Draw();
+       //arr = new TArrow(51.0, 10, 52.0, 10, 0.03); arr->SetAngle(40);  arr->Draw();
 
        arcarrow = new TArc(45,115,35,240,315);
        arcarrow->SetNoEdges();
