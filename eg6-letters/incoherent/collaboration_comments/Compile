@@ -1,0 +1,13 @@
+#! /bin/bash
+
+./Clean
+
+pdflatex clas_comments.tex
+bibtex   clas_comments
+pdflatex clas_comments.tex
+pdflatex clas_comments.tex
+
+rm clas_comments.aux clas_comments.bbl clas_comments.blg 
+rm clas_comments.log clas_comments.out clas_comments.maf 
+rm clas_comments.mtc* clas_comments.nlo
+rm formatAndDefs.aux
