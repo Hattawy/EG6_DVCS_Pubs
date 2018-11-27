@@ -3,7 +3,7 @@ void incoh_exc_cuts_final()
 //=========Macro generated from canvas: aall_cuts/
 //=========  (Wed Oct  3 12:12:48 2018) by ROOT version6.09/01
    TCanvas *aall_cuts = new TCanvas("aall_cuts", "",0,0,900,1200);
-   gStyle->SetOptFit(1);
+   gStyle->SetOptFit(0);
    aall_cuts->Range(0,0,1,1);
    aall_cuts->SetFillColor(0);
    aall_cuts->SetBorderMode(0);
@@ -329,7 +329,7 @@ void incoh_exc_cuts_final()
    AText = ptstats->AddText("Std Dev   =   2.08");
    ptstats->SetOptStat(1110);
    ptstats->SetOptFit(111);
-   ptstats->Draw();
+   //ptstats->Draw();
    h2_delta_phi_InCoh__3->GetListOfFunctions()->Add(ptstats);
    ptstats->SetParent(h2_delta_phi_InCoh__3);
    h2_delta_phi_InCoh__3->SetFillColor(40);
