@@ -2,5 +2,8 @@
 pdflatex -shell-escape incoherent_prl.tex
 pdflatex -shell-escape incoherent_prl.tex
 pdflatex -shell-escape incoherent_prl.tex
-rm -f *.tex~ incoherent_prl.mtc1 incoherent_prl.aux incoherent_prl.dvi incoherent_prl.lof incoherent_prl.log incoherent_prl.out incoherent_prl.lot incoherent_prl.toc incoherent_prl.brf incoherent_prl.maf incoherent_prl.mtc incoherent_prl.mtc0 incoherent_prl.nlo incoherent_prl.bbl incoherent_prl.blg
+pdflatex -shell-escape responsereferee.tex
+pdflatex -shell-escape responsereferee.tex
+pdflatex -shell-escape responsereferee.tex
+rm -f *.tex~ *.mtc1 *.aux *.dvi *.lof *.log *.out *.lot *.toc *.brf *.maf *.mtc *.mtc0 *.nlo *.bbl *.blg
 
