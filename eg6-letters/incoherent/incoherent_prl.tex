@@ -36,18 +36,22 @@
 
 \date{\today}
 \begin{abstract}
-In the past two decades, deeply virtual Compton scattering of electrons has been successfully 
-used to advance our knowledge of the partonic structure of the free proton and investigate 
-correlations between the transverse position and the longitudinal momentum of quarks inside 
-the nucleon.  The structure of bound nucleons in nuclei has only been studied in inclusive
-deep-inelastic lepton scattering experiments off nuclear targets, showing a significant
-difference in longitudinal momentum distribution of quarks inside the bound nucleon, known as
-the EMC effect.  In this work, we report the first beam spin asymmetry (BSA) measurement of
-exclusive deeply virtual Compton scattering (DVCS) off a proton bound in $^4$He.  The data
-used here were accumulated using a $6$ GeV longitudinally polarized electron beam incident on
+In the past two decades, deeply virtual Compton scattering of electrons has 
+   been successfully used to advance our knowledge of the partonic structure of 
+   the free proton and investigate correlations between the transverse position 
+   and the longitudinal momentum of quarks inside the nucleon. Meanwhile, the 
+   structure of bound nucleons in nuclei has only been studied in inclusive 
+   deep-inelastic lepton scattering experiments off nuclear targets, showing a 
+   significant difference in longitudinal momentum distribution of quarks 
+   inside the bound nucleon, known as
+the EMC effect. In this work, we report the first beam spin asymmetry (BSA) 
+   measurement of exclusive deeply virtual Compton scattering (DVCS) off a 
+   proton bound in $^4$He.  The data used here were accumulated using a $6$ GeV 
+   longitudinally polarized electron beam incident on
 a pressurized $^4$He gaseous target placed within the CLAS spectrometer in Hall-B at the Thomas
 Jefferson National Accelerator Facility. The azimuthal angle ($\phi$) dependence of the BSA was
-studied in a wide range of virtual photon and scattered proton kinematics. The Q$^2$, x$_B$,
+studied in a wide range of virtual photon and scattered proton kinematics. The 
+   $Q^2$, $x_B$,
 and t dependencies of the BSA on the bound proton are compared with those on the free proton.
 In the whole kinematical region of our measurements, the BSA on the bound proton is smaller by
 20\% to 40\%, indicating possible medium modification of its partonic structure.
@@ -157,6 +161,7 @@ $\mathcal{H}$, $\mathcal{E}$, and $\tilde{\mathcal{H}}$ as
 \begin{equation}
    a_{0} \propto \operatorname{Im}( F_1 \mathcal{H}- \frac{t}{4M^2} F_2 
    \mathcal{E}+ \frac{x_B}{2}(F_1+F_2)\tilde{\mathcal{H}}),
+   \label{a0_cff}
 \end{equation}
 where $F_1$ and $F_2$ are the Dirac and Pauli form factors, respectively, and 
 $x_B$ the Bjorken scaling variable. The real and the imaginary parts of the CFF 
@@ -169,7 +174,7 @@ with $\mathcal{P}$ the Cauchy principal value integral and $C^{+}$ a
 coefficient function defined as $(1/(x-\xi) + 1/(x+\xi))$, where $\xi$ is the 
 skewing factor and can be related to $x_B$ by $\xi\approx {{x_B}\over{2-x_B}}$.  
 Similar expressions apply for the GPDs $E$, $\widetilde{H}$, and 
-$\widetilde{E}$ \cite{Guidal:2013rya}.
+$\widetilde{E}$ \cite{Guidal:2013rya}. At forward limit, $\xi\to 0$ and $t \to 0$, the GPD H reduces to quark anti-quark PDFs and its 0th moment in $x$ represents the elastic Dirac form-factor F$_1$.
 
 %experimental setup
 
@@ -214,11 +219,10 @@ t_{min}
    =-Q^{2}~\frac{2(1-~x_{B})(1~-~\sqrt{1~+~\epsilon^{2}})~+~\epsilon~^{2}}{4x_{B}(1-x_{B})+\epsilon^{2}},
 \end{equation}
 where $\epsilon^{2}=~\frac{4M^{2}_{p}x^{2}_{B}}{Q^{2}}$ and $M_{p}$ is the 
-proton mass. This cut was applied to avoid accepting events in unphysical 
-regions of kinematics for which it is not possible to calculate the radiative 
-effects. We specifically use the 
-kinematics of the photons to determine $t$ because the initial proton 
-kinematics is unknown due to Fermi motion. 
+proton mass. This cut was applied to avoid accepting events that appear in  
+unphysical regions of kinematics due to detector resolution and radiative 
+effects.  We specifically use the kinematics of the photons to determine $t$ 
+because the initial proton kinematics is unknown due to Fermi motion. 
 
 In the final sample, the exclusivity of the incoherent DVCS events was ensured 
 by imposing a series of constraints based on the four-momentum conservation in 
@@ -305,14 +309,15 @@ where $N^{+}$ and $N^{-}$ are the number of DVCS events for the positive and
 negative beam-helicity states, $P_{B}$ is the longitudinal beam polarization, 
 and C stands for the contamination percentage of the accidental coincidences.  
 
-In the kinematical phase-space of our experiment, the GPD $H$, which encodes
-the unpolarized density of partons, is
-expected to dominate the contribution in the BSA over the other three GPDs.  
-There, the $\phi$ dependence of $A_{LU}$ is mostly sensitive to the  imaginary 
-part of the CFF $\mathcal{H}$ through the parameter $a_0$ of 
-equation~\ref{eq:alu-simp}. The measurement of the free proton $A_{LU}$ 
-\cite{Girod:2007aa} has confirmed that the $a_0$ term dominates the shape of 
-the distribution.  
+In the kinematical phase-space of our experiment, the $\phi$ dependence of 
+$A_{LU}$ is most sensitive to the imaginary part of the CFFs through the $a_0$ 
+term of Eq.~\ref{eq:alu-simp}, as confirmed by high statistics measurements on 
+the free proton \cite{Girod:2007aa,Jo:2015ema}. In the determination of $a_0$ 
+in Eq.~\ref{a0_cff}, the CFF $\mathcal{E}$ and $\mathcal{\tilde {H}}$ are 
+suppressed due to form-factors and the smallness of the coefficients.  
+Therefore, the dominant contribution to the BSA comes from the CFF 
+$\mathcal{H}$ and hence the GPD $H$.
+
 
 Due to limited statistics, the data were binned two-dimensionally into 36 bins.  
 That is, four bins in one of the kinematical variable of interest ($Q^{2}$, 
@@ -404,11 +409,11 @@ bound-proton BSA is largely suppressed compared to the free proton BSA. This
 result is a first step in using a novel experimental method of understanding 
 the properties of bound nucleons directly from the basic degrees of freedom of 
 QCD, quarks and gluons. Planned experiments at Jefferson Lab will continue 
-and extend these studies of the bound nucleon structure using DVCS. We have 
-an experimental program using the CLAS12 detector in the experimental Hall-B, 
-called ALERT, to improve the DVCS measurements with the detection of nuclear
-fragments to better control the final state interactions and the initial state
-kinematic of the bound nucleon.
+and extend these studies of the bound nucleon structure using DVCS. We have an 
+experimental program called ALERT using the CLAS12 detector in the Hall-B of 
+Jefferson Lab. These experiments will improve the DVCS measurements with the 
+detection of nuclear fragments to better control the final state interactions 
+and the initial state kinematics of the bound nucleon.
 
 %Acknowledgments
 
