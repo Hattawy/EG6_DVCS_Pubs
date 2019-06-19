@@ -1,0 +1,12 @@
+#! /bin/bash
+
+./Clean
+
+pdflatex journal_proof1.tex
+bibtex   journal_proof1
+pdflatex journal_proof1.tex
+pdflatex journal_proof1.tex
+
+rm journal_proof1.aux journal_proof1.bbl journal_proof1.blg journal_proof1.log journal_proof1.out journal_proof1.maf 
+rm journal_proof1.mtc* journal_proof1.mtc1 journal_proof1.nlo
+rm formatAndDefs.aux
