@@ -1,0 +1,12 @@
+#! /bin/bash
+
+./Clean
+
+pdflatex authors_response_journal_proof2.tex
+bibtex   authors_response_journal_proof2
+pdflatex authors_response_journal_proof2.tex
+pdflatex authors_response_journal_proof2.tex
+
+rm authors_response_journal_proof2.aux authors_response_journal_proof2.bbl authors_response_journal_proof2.blg authors_response_journal_proof2.log authors_response_journal_proof2.out authors_response_journal_proof2.maf 
+rm authors_response_journal_proof2.mtc* authors_response_journal_proof2.mtc1 authors_response_journal_proof2.nlo
+rm formatAndDefs.aux
