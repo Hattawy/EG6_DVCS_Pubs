@@ -50,16 +50,95 @@ H_A$, leading the way toward 3D imaging of the partonic structure of nuclei.
 
 \section{Introduction}
 
+
+
+
 \section{Theoretical Framework}
 
 \subsection{The GPD Formalism}
 
+The theory of GPDs has been already reviewed in details in various 
+publications~\cite{Diehl:2003ny,Belitsky:2005qn,Boffi:2007yc,Guidal:2013rya},
+we summarized here only necessary elements to discuss our experimental results.
+we obtain real structure functions 
+$F^{q}(x,\xi,t)$, where $x+\xi$ and $x-\xi$ are the incoming and outgoing quark momenta 
+respectively and $t=\Delta^2$ the squared transferred momentum to the target as illustrated in 
+Fig. \ref{fig:GPD}. 
+
+\begin{figure}[tbp!]
+\center
+\includegraphics[width=10.0cm]{fig1/GPD.png}
+\caption{General representation for the GPDs of a nucleon represented by the triple lines and noted $N$.
+	Single lines can represent quarks or anti-quarks probed in the nucleon.}
+\label{fig:GPD}
+\end{figure}
+
+The different spin states possible lead to several independent GPDs for 
+any given hadron. The proper accounting of 
+the number of GPDs must be done with regard to the symmetries of the system.
+At leading order and leading twist, we find that there are $2(2J+1)^2$ GPDs for a particle of spin $J$, 
+$i.e.$ for a spin-0 hadron, like the helium-4 nucleus, we will
+have two GPDs, for a spin-1/2 hadron, like the proton, eight GPDs. Half of these involve a 
+parton helicity flip, they are called transversity GPDs and do not intervene 
+in the DVCS process. 
+
+As mentioned above, DVCS is the main experimental access to GPDs. However, this process does not offer
+a full access to the GPDs and we only access them integrated over $x$, in the following form:
+\begin{equation}
+	\int^1 _{-1} dx F^{q}(x,\xi,t) \left [ {1 \over x - \xi - i \epsilon} 
+	                                   \mp {1 \over x + \xi - i \epsilon} \right]. 
+\end{equation}
+To account for this and simplify equations, we define the complex Compton form factors (CFF,
+noted with curved $\mathcal{F}$ for a given GPD $F$) for each GPD as follows:
+\begin{equation}
+	\Re e (\mathcal{F}(\xi,t)) = \sum _q e^2_q \mathcal{P} \int^1_{-1} dx F^{q}(x,\xi,t)
+	      \left [ {1 \over x - \xi} \mp {1 \over x + \xi} \right], 
+\end{equation}
+\begin{equation}
+	\Im m (\mathcal{F}(\xi,t)) = - \pi \sum _q e^2_q \left [ F^{q}(\xi,\xi,t) \mp F^{q}(-\xi,\xi,t) \right]. 
+\end{equation} 
+These are the quantities directly present in the DVCS cross sections. We note that they are summed over
+the different quark flavors present in the hadron, as the electromagnetic probe do not differentiate
+quark flavors. A similar situation exists for TCS and DVMP giving only a partial access to the GPDs. 
+The double DVCS is a special case and it retains the full
+dependence of the GPDs in three independent variables.
+
+Experimentally, another process is indistinguishable from the DVCS. This is the Bethe-Heitler (BH) 
+process in which % TODO add BH figure
+the final state photon is emitted by the scattering lepton rather than the hadron. In this case the 
+photon-hadron interaction is the same as in elastic scattering and therefore such process depends on the
+target FFs rather than its GPDs. The DVCS and BH processes are experimentally indistinguishable as they
+have identical final states, such that they interfere in the squared photo-production amplitude of the
+exclusive photo-production process:
+\begin{equation}
+	|T|^2 = |T_{DVCS}|^2 + |T_{BH}|^2 + T_{DVCS}^* T_{BH} + T_{DVCS}T_{BH}^*. 
+\end{equation}
+The interference terms increase significantly the cross section in specific parts of the phase space
+and lead to significant charge and spin asymmetries. 
+
+Finally, we need to define our kinematics properly. We use the 
+conventions from Fig. \ref{fig:PhiAngle}. 
+In experiments, we generally use slightly different kinematic variables : 
+$-t = -(p_p-p_p^\prime)^2 = \Delta^2$ and 
+$x = {2\xi \over 1+\xi}$. 
+
+\begin{figure}[tbp!]
+\center
+\includegraphics[width=9cm]{fig1/finalplane.png}
+	\caption{Illustration of the scattering (or leptonic) and production (or hadronic) planes
+	in the DVCS process.} %TODO upgrade to a figure with phi_S
+\label{fig:PhiAngle}
+\end{figure}
+
+
+
 \subsection{Coherent nuclear DVCS}
 
 The reaction measured in the experiment is the coherent electro-production of a photon on helium
-$e+^4\!\!He \rightarrow e+\gamma+^4\!\!He$ at high 4-momentum transfer squared ($Q^2$). The leading order diagrams
+$e+^4\!\!He \rightarrow e+\gamma+^4\!\!He$ at high 4-momentum transfer squared ($Q^2$). The 
+leading order diagrams
 of this reaction are the coherent DVCS and BH processes. The nuclear coherent DVCS is 
-represented in Fig. \ref{fig:CohDiag}. As was detailed in the Chap. \ref{chap:pheno}, 
+represented in Fig. \ref{fig:CohDiag}. As  
 the two processes interfere at the amplitude level, which give rise to sizable spin asymmetries.
 In our experiment, we focused on the measurement of the beam-spin asymmetry (BSA) noted $A_{LU}$ with 
 $L$ for the longitudinally-polarized electron beam and $U$ the unpolarized target and defined as:  
