@@ -21,9 +21,10 @@ void Coherent_ALU_ratio()
    Can_r_1->SetFillColor(0);
    Can_r_1->SetBorderMode(0);
    Can_r_1->SetBorderSize(2);
-   Can_r_1->SetLeftMargin(0.22);
-   Can_r_1->SetTopMargin(0.02);
-   Can_r_1->SetBottomMargin(0.2);
+   Can_r_1->SetLeftMargin(0.18);
+   Can_r_1->SetRightMargin(0.04);
+   Can_r_1->SetTopMargin(0.0);
+   Can_r_1->SetBottomMargin(0.18);
    Can_r_1->SetFrameBorderMode(0);
    Can_r_1->SetFrameBorderMode(0);
    
@@ -39,16 +40,16 @@ void Coherent_ALU_ratio()
    HALU_RATIO_Q2__4->GetXaxis()->SetNdivisions(205);
    HALU_RATIO_Q2__4->GetXaxis()->SetLabelFont(22);
    HALU_RATIO_Q2__4->GetXaxis()->SetLabelSize(0.05);
-   HALU_RATIO_Q2__4->GetXaxis()->SetTitleSize(0.14);
-   HALU_RATIO_Q2__4->GetXaxis()->SetTitleOffset(1.5);
+   HALU_RATIO_Q2__4->GetXaxis()->SetTitleSize(0.07);
+   HALU_RATIO_Q2__4->GetXaxis()->SetTitleOffset(1.0);
    HALU_RATIO_Q2__4->GetXaxis()->SetTitleFont(22);
    HALU_RATIO_Q2__4->GetYaxis()->SetTitle("A_{LU}^{^{4}He}/A_{LU}^{p}(90^{#circ})");
    HALU_RATIO_Q2__4->GetYaxis()->CenterTitle(true);
    HALU_RATIO_Q2__4->GetYaxis()->SetNdivisions(511);
    HALU_RATIO_Q2__4->GetYaxis()->SetLabelFont(22);
    HALU_RATIO_Q2__4->GetYaxis()->SetLabelSize(0.05);
-   HALU_RATIO_Q2__4->GetYaxis()->SetTitleSize(0.14);
-   HALU_RATIO_Q2__4->GetYaxis()->SetTitleOffset(1.5);
+   HALU_RATIO_Q2__4->GetYaxis()->SetTitleSize(0.07);
+   HALU_RATIO_Q2__4->GetYaxis()->SetTitleOffset(1.0);
    HALU_RATIO_Q2__4->GetYaxis()->SetTitleFont(22);
    HALU_RATIO_Q2__4->GetZaxis()->SetLabelFont(22);
    HALU_RATIO_Q2__4->GetZaxis()->SetLabelSize(0.035);
@@ -56,23 +57,23 @@ void Coherent_ALU_ratio()
    HALU_RATIO_Q2__4->GetZaxis()->SetTitleFont(22);
    HALU_RATIO_Q2__4->Draw("");
    
-   Double_t This Work (x_{B} = 0.177_fx1092[3] = {
+   Double_t fx1092[3] = {
    1.144,
    1.422,
    1.892};
-   Double_t This Work (x_{B} = 0.177_fy1092[3] = {
+   Double_t fy1092[3] = {
    1.55242,
    2.13761,
    1.62405};
-   Double_t This Work (x_{B} = 0.177_fex1092[3] = {
+   Double_t fex1092[3] = {
    0,
    0,
    0};
-   Double_t This Work (x_{B} = 0.177_fey1092[3] = {
+   Double_t fey1092[3] = {
    0.857011,
    0.431313,
    0.808316};
-   TGraphErrors *gre = new TGraphErrors(3,This Work (x_{B} = 0.177_fx1092,This Work (x_{B} = 0.177_fy1092,This Work (x_{B} = 0.177_fex1092,This Work (x_{B} = 0.177_fey1092);
+   TGraphErrors *gre = new TGraphErrors(3,fx1092,fy1092,fex1092,fey1092);
    gre->SetName("This Work (x_{B} = 0.177");
    gre->SetTitle("This Work (x_{B} = 0.177");
    gre->SetFillColor(1);
@@ -81,28 +82,28 @@ void Coherent_ALU_ratio()
    gre->SetMarkerStyle(21);
    gre->SetMarkerSize(1.6);
    
-   TH1F *Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092 = new TH1F("Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092","This Work (x_{B} = 0.177",100,1.0692,1.9668);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->SetMinimum(0.5080576);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->SetMaximum(2.756274);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->SetDirectory(0);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->SetStats(0);
+   TH1F *Graph_ThissPWorksPoPxsPeQsP0dO1771092 = new TH1F("Graph_ThissPWorksPoPxsPeQsP0dO1771092","",100,1.0692,1.9668);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->SetMinimum(0.5080576);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->SetMaximum(2.756274);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->SetDirectory(0);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->SetLineColor(ci);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->GetXaxis()->SetLabelFont(22);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->GetXaxis()->SetLabelSize(0.05);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->GetXaxis()->SetTitleSize(0.9);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->GetXaxis()->SetTitleFont(22);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->GetYaxis()->SetLabelFont(22);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->GetYaxis()->SetLabelSize(0.05);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->GetYaxis()->SetTitleSize(0.06);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->GetYaxis()->SetTitleOffset(0);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->GetYaxis()->SetTitleFont(22);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->GetZaxis()->SetLabelFont(22);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->GetZaxis()->SetLabelSize(0.035);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->GetZaxis()->SetTitleSize(0.035);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771092->GetZaxis()->SetTitleFont(22);
-   gre->SetHistogram(Graph_This Work (x_{B} = 0.1771092);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->SetLineColor(ci);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->GetXaxis()->SetLabelFont(22);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->GetXaxis()->SetLabelSize(0.05);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->GetXaxis()->SetTitleSize(0.9);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->GetXaxis()->SetTitleFont(22);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->GetYaxis()->SetLabelFont(22);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->GetYaxis()->SetLabelSize(0.05);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->GetYaxis()->SetTitleSize(0.06);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->GetYaxis()->SetTitleOffset(0);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->GetYaxis()->SetTitleFont(22);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->GetZaxis()->SetLabelFont(22);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->GetZaxis()->SetLabelSize(0.035);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->GetZaxis()->SetTitleSize(0.035);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771092->GetZaxis()->SetTitleFont(22);
+   gre->SetHistogram(Graph_ThissPWorksPoPxsPeQsP0dO1771092);
    
    gre->Draw("p");
    TLine *line = new TLine(0.5,1,3.1,1);
@@ -117,7 +118,7 @@ void Coherent_ALU_ratio()
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
-   TLegendEntry *entry=leg->AddEntry("This Work (x_{B} = 0.177","CLAS-EG6: x_{B}= 0.18, -t= 0.10 [GeV^{2}]","P");
+   TLegendEntry *entry=leg->AddEntry("Graph_ThissPWorksPoPxsPeQsP0dO1771092","CLAS-EG6: x_{B}= 0.18, -t= 0.10 [GeV^{2}]","P");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
@@ -137,9 +138,10 @@ void Coherent_ALU_ratio()
    Can_r_2->SetFillColor(0);
    Can_r_2->SetBorderMode(0);
    Can_r_2->SetBorderSize(2);
-   Can_r_2->SetLeftMargin(0.22);
-   Can_r_2->SetTopMargin(0.02);
-   Can_r_2->SetBottomMargin(0.2);
+   Can_r_2->SetLeftMargin(0.18);
+   Can_r_2->SetRightMargin(0.04);
+   Can_r_2->SetTopMargin(0.0);
+   Can_r_2->SetBottomMargin(0.18);
    Can_r_2->SetFrameBorderMode(0);
    Can_r_2->SetFrameBorderMode(0);
    
@@ -153,16 +155,16 @@ void Coherent_ALU_ratio()
    HALU_RATIO_x__5->GetXaxis()->SetNdivisions(205);
    HALU_RATIO_x__5->GetXaxis()->SetLabelFont(22);
    HALU_RATIO_x__5->GetXaxis()->SetLabelSize(0.05);
-   HALU_RATIO_x__5->GetXaxis()->SetTitleSize(0.14);
-   HALU_RATIO_x__5->GetXaxis()->SetTitleOffset(1.5);
+   HALU_RATIO_x__5->GetXaxis()->SetTitleSize(0.07);
+   HALU_RATIO_x__5->GetXaxis()->SetTitleOffset(1.);
    HALU_RATIO_x__5->GetXaxis()->SetTitleFont(22);
    HALU_RATIO_x__5->GetYaxis()->SetTitle("A_{LU}^{^{4}He}/A_{LU}^{p} (90^{#circ})");
    HALU_RATIO_x__5->GetYaxis()->CenterTitle(true);
    HALU_RATIO_x__5->GetYaxis()->SetNdivisions(511);
    HALU_RATIO_x__5->GetYaxis()->SetLabelFont(22);
    HALU_RATIO_x__5->GetYaxis()->SetLabelSize(0.05);
-   HALU_RATIO_x__5->GetYaxis()->SetTitleSize(0.14);
-   HALU_RATIO_x__5->GetYaxis()->SetTitleOffset(1.5);
+   HALU_RATIO_x__5->GetYaxis()->SetTitleSize(0.07);
+   HALU_RATIO_x__5->GetYaxis()->SetTitleOffset(1.);
    HALU_RATIO_x__5->GetYaxis()->SetTitleFont(22);
    HALU_RATIO_x__5->GetZaxis()->SetLabelFont(22);
    HALU_RATIO_x__5->GetZaxis()->SetLabelSize(0.035);
@@ -170,23 +172,23 @@ void Coherent_ALU_ratio()
    HALU_RATIO_x__5->GetZaxis()->SetTitleFont(22);
    HALU_RATIO_x__5->Draw("");
    
-   Double_t This Work (-t = 0.10_fx1093[3] = {
+   Double_t fx1093[3] = {
    0.132,
    0.17,
    0.227};
-   Double_t This Work (-t = 0.10_fy1093[3] = {
+   Double_t fy1093[3] = {
    1.63394,
    1.67078,
    1.78805};
-   Double_t This Work (-t = 0.10_fex1093[3] = {
+   Double_t fex1093[3] = {
    0,
    0,
    0};
-   Double_t This Work (-t = 0.10_fey1093[3] = {
+   Double_t fey1093[3] = {
    0.888503,
    0.518536,
    1.23573};
-   gre = new TGraphErrors(3,This Work (-t = 0.10_fx1093,This Work (-t = 0.10_fy1093,This Work (-t = 0.10_fex1093,This Work (-t = 0.10_fey1093);
+   gre = new TGraphErrors(3,fx1093,fy1093,fex1093,fey1093);
    gre->SetName("This Work (-t = 0.10");
    gre->SetTitle("This Work (-t = 0.10");
    gre->SetFillColor(1);
@@ -195,7 +197,7 @@ void Coherent_ALU_ratio()
    gre->SetMarkerStyle(21);
    gre->SetMarkerSize(1.6);
    
-   TH1F *Graph_ThissPWorksPoPmItsPeQsP0dO101093 = new TH1F("Graph_ThissPWorksPoPmItsPeQsP0dO101093","This Work (-t = 0.10",100,0.1225,0.2365);
+   TH1F *Graph_ThissPWorksPoPmItsPeQsP0dO101093 = new TH1F("Graph_ThissPWorksPoPmItsPeQsP0dO101093","",100,0.1225,0.2365);
    Graph_ThissPWorksPoPmItsPeQsP0dO101093->SetMinimum(0.305174);
    Graph_ThissPWorksPoPmItsPeQsP0dO101093->SetMaximum(3.270926);
    Graph_ThissPWorksPoPmItsPeQsP0dO101093->SetDirectory(0);
@@ -216,19 +218,19 @@ void Coherent_ALU_ratio()
    Graph_ThissPWorksPoPmItsPeQsP0dO101093->GetZaxis()->SetLabelSize(0.035);
    Graph_ThissPWorksPoPmItsPeQsP0dO101093->GetZaxis()->SetTitleSize(0.035);
    Graph_ThissPWorksPoPmItsPeQsP0dO101093->GetZaxis()->SetTitleFont(22);
-   gre->SetHistogram(Graph_This Work (-t = 0.101093);
+   gre->SetHistogram(Graph_ThissPWorksPoPmItsPeQsP0dO101093);
    
    gre->Draw("p");
    
-   Double_t HERMES (-t = 0.018)_fx1094[1] = {
+   Double_t fx1094[1] = {
    0.072};
-   Double_t HERMES (-t = 0.018)_fy1094[1] = {
+   Double_t fy1094[1] = {
    0.91};
-   Double_t HERMES (-t = 0.018)_fex1094[1] = {
+   Double_t fex1094[1] = {
    0};
-   Double_t HERMES (-t = 0.018)_fey1094[1] = {
+   Double_t fey1094[1] = {
    0.19};
-   gre = new TGraphErrors(1,HERMES (-t = 0.018)_fx1094,HERMES (-t = 0.018)_fy1094,HERMES (-t = 0.018)_fex1094,HERMES (-t = 0.018)_fey1094);
+   gre = new TGraphErrors(1,fx1094,fy1094,fex1094,fey1094);
    gre->SetName("HERMES (-t = 0.018)");
    gre->SetTitle("HERMES (-t = 0.018)");
    gre->SetFillColor(1);
@@ -260,7 +262,7 @@ void Coherent_ALU_ratio()
    Graph_HERMESsPoPmItsPeQsP0dO018cP1094->GetZaxis()->SetLabelSize(0.035);
    Graph_HERMESsPoPmItsPeQsP0dO018cP1094->GetZaxis()->SetTitleSize(0.035);
    Graph_HERMESsPoPmItsPeQsP0dO018cP1094->GetZaxis()->SetTitleFont(22);
-   gre->SetHistogram(Graph_HERMES (-t = 0.018)1094);
+   gre->SetHistogram(Graph_HERMESsPoPmItsPeQsP0dO018cP1094);
    
    gre->Draw("p");
    
@@ -398,7 +400,7 @@ void Coherent_ALU_ratio()
    
    graph->Draw("c");
    
-   Double_t GS (-t=0.1)_fx1095[8] = {
+   Double_t fx1095[8] = {
    0.14,
    0.16,
    0.18,
@@ -407,7 +409,7 @@ void Coherent_ALU_ratio()
    0.24,
    0.26,
    0.28};
-   Double_t GS (-t=0.1)_fy1095[8] = {
+   Double_t fy1095[8] = {
    1.7478,
    1.655,
    1.5601,
@@ -416,7 +418,7 @@ void Coherent_ALU_ratio()
    1.3943,
    1.3855,
    1.4723};
-   Double_t GS (-t=0.1)_fex1095[8] = {
+   Double_t fex1095[8] = {
    0,
    0,
    0,
@@ -425,7 +427,7 @@ void Coherent_ALU_ratio()
    0,
    0,
    0};
-   Double_t GS (-t=0.1)_fey1095[8] = {
+   Double_t fey1095[8] = {
    0,
    0,
    0,
@@ -434,7 +436,7 @@ void Coherent_ALU_ratio()
    0,
    0,
    0};
-   gre = new TGraphErrors(8,GS (-t=0.1)_fx1095,GS (-t=0.1)_fy1095,GS (-t=0.1)_fex1095,GS (-t=0.1)_fey1095);
+   gre = new TGraphErrors(8,fx1095,fy1095,fex1095,fey1095);
    gre->SetName("GS (-t=0.1)");
    gre->SetTitle("GS (-t=0.1)");
    gre->SetFillStyle(1000);
@@ -463,11 +465,11 @@ void Coherent_ALU_ratio()
    Graph_GSsPoPmIteQ0dO1cP1095->GetZaxis()->SetLabelSize(0.035);
    Graph_GSsPoPmIteQ0dO1cP1095->GetZaxis()->SetTitleSize(0.035);
    Graph_GSsPoPmIteQ0dO1cP1095->GetZaxis()->SetTitleFont(22);
-   gre->SetHistogram(Graph_GS (-t=0.1)1095);
+   gre->SetHistogram(Graph_GSsPoPmIteQ0dO1cP1095);
    
    gre->Draw("c");
    
-   Double_t GS (-t=0.2)_fx1096[14] = {
+   Double_t fx1096[14] = {
    0.14,
    0.16,
    0.18,
@@ -482,7 +484,7 @@ void Coherent_ALU_ratio()
    0.36,
    0.38,
    0.4};
-   Double_t GS (-t=0.2)_fy1096[14] = {
+   Double_t fy1096[14] = {
    1.4312,
    1.3556,
    1.2792,
@@ -497,7 +499,7 @@ void Coherent_ALU_ratio()
    1.008,
    1.0648,
    1.4436};
-   Double_t GS (-t=0.2)_fex1096[14] = {
+   Double_t fex1096[14] = {
    0,
    0,
    0,
@@ -512,7 +514,7 @@ void Coherent_ALU_ratio()
    0,
    0,
    0};
-   Double_t GS (-t=0.2)_fey1096[14] = {
+   Double_t fey1096[14] = {
    0,
    0,
    0,
@@ -527,7 +529,7 @@ void Coherent_ALU_ratio()
    0,
    0,
    0};
-   gre = new TGraphErrors(14,GS (-t=0.2)_fx1096,GS (-t=0.2)_fy1096,GS (-t=0.2)_fex1096,GS (-t=0.2)_fey1096);
+   gre = new TGraphErrors(14,fx1096,fy1096,fex1096,fey1096);
    gre->SetName("GS (-t=0.2)");
    gre->SetTitle("GS (-t=0.2)");
    gre->SetFillStyle(1000);
@@ -557,7 +559,7 @@ void Coherent_ALU_ratio()
    Graph_GSsPoPmIteQ0dO2cP1096->GetZaxis()->SetLabelSize(0.035);
    Graph_GSsPoPmIteQ0dO2cP1096->GetZaxis()->SetTitleSize(0.035);
    Graph_GSsPoPmIteQ0dO2cP1096->GetZaxis()->SetTitleFont(22);
-   gre->SetHistogram(Graph_GS (-t=0.2)1096);
+   gre->SetHistogram(Graph_GSsPoPmIteQ0dO2cP1096);
    
    gre->Draw("c");
    line = new TLine(-0.05,1,0.83,1);
@@ -565,7 +567,8 @@ void Coherent_ALU_ratio()
    line->SetLineWidth(2);
    line->Draw();
    
-   leg = new TLegend(0.32,0.79,0.95,0.95,NULL,"brNDC");
+   leg = new TLegend(0.32,0.79,0.96,1,NULL,"brNDC");
+   leg->SetNColumns(2);
    leg->SetBorderSize(1);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
@@ -632,9 +635,10 @@ void Coherent_ALU_ratio()
    Can_r_3->SetFillColor(0);
    Can_r_3->SetBorderMode(0);
    Can_r_3->SetBorderSize(2);
-   Can_r_3->SetLeftMargin(0.22);
-   Can_r_3->SetTopMargin(0.02);
-   Can_r_3->SetBottomMargin(0.2);
+   Can_r_3->SetLeftMargin(0.18);
+   Can_r_3->SetRightMargin(0.04);
+   Can_r_3->SetTopMargin(0.0);
+   Can_r_3->SetBottomMargin(0.18);
    Can_r_3->SetFrameBorderMode(0);
    Can_r_3->SetFrameBorderMode(0);
    
@@ -648,16 +652,16 @@ void Coherent_ALU_ratio()
    HALU_RATIO_t__6->GetXaxis()->SetNdivisions(205);
    HALU_RATIO_t__6->GetXaxis()->SetLabelFont(22);
    HALU_RATIO_t__6->GetXaxis()->SetLabelSize(0.05);
-   HALU_RATIO_t__6->GetXaxis()->SetTitleSize(0.14);
-   HALU_RATIO_t__6->GetXaxis()->SetTitleOffset(1.5);
+   HALU_RATIO_t__6->GetXaxis()->SetTitleSize(0.07);
+   HALU_RATIO_t__6->GetXaxis()->SetTitleOffset(1.);
    HALU_RATIO_t__6->GetXaxis()->SetTitleFont(22);
    HALU_RATIO_t__6->GetYaxis()->SetTitle("A_{LU}^{^{4}He}/A_{LU}^{p} (90^{#circ})");
    HALU_RATIO_t__6->GetYaxis()->CenterTitle(true);
    HALU_RATIO_t__6->GetYaxis()->SetNdivisions(511);
    HALU_RATIO_t__6->GetYaxis()->SetLabelFont(22);
    HALU_RATIO_t__6->GetYaxis()->SetLabelSize(0.05);
-   HALU_RATIO_t__6->GetYaxis()->SetTitleSize(0.14);
-   HALU_RATIO_t__6->GetYaxis()->SetTitleOffset(1.5);
+   HALU_RATIO_t__6->GetYaxis()->SetTitleSize(0.07);
+   HALU_RATIO_t__6->GetYaxis()->SetTitleOffset(1.);
    HALU_RATIO_t__6->GetYaxis()->SetTitleFont(22);
    HALU_RATIO_t__6->GetZaxis()->SetLabelFont(22);
    HALU_RATIO_t__6->GetZaxis()->SetLabelSize(0.035);
@@ -665,15 +669,15 @@ void Coherent_ALU_ratio()
    HALU_RATIO_t__6->GetZaxis()->SetTitleFont(22);
    HALU_RATIO_t__6->Draw("");
    
-   Double_t HERMES (x_{B} = 0.072)_fx1097[1] = {
+   Double_t fx1097[1] = {
    0.018};
-   Double_t HERMES (x_{B} = 0.072)_fy1097[1] = {
+   Double_t fy1097[1] = {
    0.91};
-   Double_t HERMES (x_{B} = 0.072)_fex1097[1] = {
+   Double_t fex1097[1] = {
    0};
-   Double_t HERMES (x_{B} = 0.072)_fey1097[1] = {
+   Double_t fey1097[1] = {
    0.19};
-   gre = new TGraphErrors(1,HERMES (x_{B} = 0.072)_fx1097,HERMES (x_{B} = 0.072)_fy1097,HERMES (x_{B} = 0.072)_fex1097,HERMES (x_{B} = 0.072)_fey1097);
+   gre = new TGraphErrors(1,fx1097,fy1097,fex1097,fey1097);
    gre->SetName("HERMES (x_{B} = 0.072)");
    gre->SetTitle("HERMES (x_{B} = 0.072)");
    gre->SetFillColor(1);
@@ -684,32 +688,32 @@ void Coherent_ALU_ratio()
    gre->SetMarkerStyle(8);
    gre->SetMarkerSize(1.5);
    
-   TH1F *Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097 = new TH1F("Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097","HERMES (x_{B} = 0.072)",100,0,1.118);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->SetMinimum(0.682);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->SetMaximum(1.138);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->SetDirectory(0);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->SetStats(0);
+   TH1F *Graph_HERMESsPoPxsPeQsP0dO072cP1097 = new TH1F("Graph_HERMESsPoPxsPeQsP0dO072cP1097","HERMES (x_{B} = 0.072)",100,0,1.118);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->SetMinimum(0.682);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->SetMaximum(1.138);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->SetDirectory(0);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->SetLineColor(ci);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->GetXaxis()->SetLabelFont(22);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->GetXaxis()->SetLabelSize(0.05);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->GetXaxis()->SetTitleSize(0.9);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->GetXaxis()->SetTitleFont(22);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->GetYaxis()->SetLabelFont(22);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->GetYaxis()->SetLabelSize(0.05);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->GetYaxis()->SetTitleSize(0.06);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->GetYaxis()->SetTitleOffset(0);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->GetYaxis()->SetTitleFont(22);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->GetZaxis()->SetLabelFont(22);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->GetZaxis()->SetLabelSize(0.035);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->GetZaxis()->SetTitleSize(0.035);
-   Graph_HERMESsPoPx_{B}sPeQsP0dO072cP1097->GetZaxis()->SetTitleFont(22);
-   gre->SetHistogram(Graph_HERMES (x_{B} = 0.072)1097);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->SetLineColor(ci);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->GetXaxis()->SetLabelFont(22);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->GetXaxis()->SetLabelSize(0.05);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->GetXaxis()->SetTitleSize(0.9);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->GetXaxis()->SetTitleFont(22);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->GetYaxis()->SetLabelFont(22);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->GetYaxis()->SetLabelSize(0.05);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->GetYaxis()->SetTitleSize(0.06);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->GetYaxis()->SetTitleOffset(0);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->GetYaxis()->SetTitleFont(22);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->GetZaxis()->SetLabelFont(22);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->GetZaxis()->SetLabelSize(0.035);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->GetZaxis()->SetTitleSize(0.035);
+   Graph_HERMESsPoPxsPeQsP0dO072cP1097->GetZaxis()->SetTitleFont(22);
+   gre->SetHistogram(Graph_HERMESsPoPxsPeQsP0dO072cP1097);
    
    gre->Draw("p");
    
-   Double_t Guzey (x_{B}=0.137)_fx29[25] = {
+   Double_t fx29[25] = {
    0.077,
    0.094,
    0.111,
@@ -735,7 +739,7 @@ void Coherent_ALU_ratio()
    0.451,
    0.468,
    0.485};
-   Double_t Guzey (x_{B}=0.137)_fy29[25] = {
+   Double_t fy29[25] = {
    1.6778,
    1.5977,
    1.5296,
@@ -761,7 +765,7 @@ void Coherent_ALU_ratio()
    1.0652,
    1.0613,
    1.0581};
-   graph = new TGraph(25,Guzey (x_{B}=0.137)_fx29,Guzey (x_{B}=0.137)_fy29);
+   graph = new TGraph(25,fx29,fy29);
    graph->SetName("Guzey (x_{B}=0.137)");
    graph->SetTitle("Guzey (x_{B}=0.137)");
    graph->SetFillStyle(1000);
@@ -770,32 +774,32 @@ void Coherent_ALU_ratio()
    graph->SetMarkerStyle(21);
    graph->SetMarkerSize(1.2);
    
-   TH1F *Graph_GuzeysPoPx_{B}eQ0dO137cP29 = new TH1F("Graph_GuzeysPoPx_{B}eQ0dO137cP29","Guzey (x_{B}=0.137)",100,0.0362,0.5258);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->SetMinimum(0.99613);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->SetMaximum(1.73977);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->SetDirectory(0);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->SetStats(0);
+   TH1F *Graph_GuzeysPoPxeQ0dO137cP29 = new TH1F("Graph_GuzeysPoPxeQ0dO137cP29","Guzey (x_{B}=0.137)",100,0.0362,0.5258);
+   Graph_GuzeysPoPxeQ0dO137cP29->SetMinimum(0.99613);
+   Graph_GuzeysPoPxeQ0dO137cP29->SetMaximum(1.73977);
+   Graph_GuzeysPoPxeQ0dO137cP29->SetDirectory(0);
+   Graph_GuzeysPoPxeQ0dO137cP29->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->SetLineColor(ci);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->GetXaxis()->SetLabelFont(22);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->GetXaxis()->SetLabelSize(0.05);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->GetXaxis()->SetTitleSize(0.9);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->GetXaxis()->SetTitleFont(22);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->GetYaxis()->SetLabelFont(22);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->GetYaxis()->SetLabelSize(0.05);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->GetYaxis()->SetTitleSize(0.06);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->GetYaxis()->SetTitleOffset(0);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->GetYaxis()->SetTitleFont(22);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->GetZaxis()->SetLabelFont(22);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->GetZaxis()->SetLabelSize(0.035);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->GetZaxis()->SetTitleSize(0.035);
-   Graph_GuzeysPoPx_{B}eQ0dO137cP29->GetZaxis()->SetTitleFont(22);
-   graph->SetHistogram(Graph_Guzey (x_{B}=0.137)29);
+   Graph_GuzeysPoPxeQ0dO137cP29->SetLineColor(ci);
+   Graph_GuzeysPoPxeQ0dO137cP29->GetXaxis()->SetLabelFont(22);
+   Graph_GuzeysPoPxeQ0dO137cP29->GetXaxis()->SetLabelSize(0.05);
+   Graph_GuzeysPoPxeQ0dO137cP29->GetXaxis()->SetTitleSize(0.9);
+   Graph_GuzeysPoPxeQ0dO137cP29->GetXaxis()->SetTitleFont(22);
+   Graph_GuzeysPoPxeQ0dO137cP29->GetYaxis()->SetLabelFont(22);
+   Graph_GuzeysPoPxeQ0dO137cP29->GetYaxis()->SetLabelSize(0.05);
+   Graph_GuzeysPoPxeQ0dO137cP29->GetYaxis()->SetTitleSize(0.06);
+   Graph_GuzeysPoPxeQ0dO137cP29->GetYaxis()->SetTitleOffset(0);
+   Graph_GuzeysPoPxeQ0dO137cP29->GetYaxis()->SetTitleFont(22);
+   Graph_GuzeysPoPxeQ0dO137cP29->GetZaxis()->SetLabelFont(22);
+   Graph_GuzeysPoPxeQ0dO137cP29->GetZaxis()->SetLabelSize(0.035);
+   Graph_GuzeysPoPxeQ0dO137cP29->GetZaxis()->SetTitleSize(0.035);
+   Graph_GuzeysPoPxeQ0dO137cP29->GetZaxis()->SetTitleFont(22);
+   graph->SetHistogram(Graph_GuzeysPoPxeQ0dO137cP29);
    
    graph->Draw("c");
    
-   Double_t Guzey (x_{B}=0.177)_fx30[25] = {
+   Double_t fx30[25] = {
    0.077,
    0.094,
    0.111,
@@ -821,7 +825,7 @@ void Coherent_ALU_ratio()
    0.451,
    0.468,
    0.485};
-   Double_t Guzey (x_{B}=0.177)_fy30[25] = {
+   Double_t fy30[25] = {
    1.8461,
    1.78,
    1.7159,
@@ -847,7 +851,7 @@ void Coherent_ALU_ratio()
    1.0382,
    1.026,
    1.0147};
-   graph = new TGraph(25,Guzey (x_{B}=0.177)_fx30,Guzey (x_{B}=0.177)_fy30);
+   graph = new TGraph(25,fx30,fy30);
    graph->SetName("Guzey (x_{B}=0.177)");
    graph->SetTitle("Guzey (x_{B}=0.177)");
    graph->SetFillColor(28);
@@ -857,32 +861,32 @@ void Coherent_ALU_ratio()
    graph->SetMarkerStyle(22);
    graph->SetMarkerSize(1.2);
    
-   TH1F *Graph_GuzeysPoPx_{B}eQ0dO177cP30 = new TH1F("Graph_GuzeysPoPx_{B}eQ0dO177cP30","Guzey (x_{B}=0.177)",100,0.0362,0.5258);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->SetMinimum(0.93156);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->SetMaximum(1.92924);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->SetDirectory(0);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->SetStats(0);
+   TH1F *Graph_GuzeysPoPxeQ0dO177cP30 = new TH1F("Graph_GuzeysPoPxeQ0dO177cP30","Guzey (x_{B}=0.177)",100,0.0362,0.5258);
+   Graph_GuzeysPoPxeQ0dO177cP30->SetMinimum(0.93156);
+   Graph_GuzeysPoPxeQ0dO177cP30->SetMaximum(1.92924);
+   Graph_GuzeysPoPxeQ0dO177cP30->SetDirectory(0);
+   Graph_GuzeysPoPxeQ0dO177cP30->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->SetLineColor(ci);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->GetXaxis()->SetLabelFont(22);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->GetXaxis()->SetLabelSize(0.05);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->GetXaxis()->SetTitleSize(0.9);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->GetXaxis()->SetTitleFont(22);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->GetYaxis()->SetLabelFont(22);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->GetYaxis()->SetLabelSize(0.05);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->GetYaxis()->SetTitleSize(0.06);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->GetYaxis()->SetTitleOffset(0);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->GetYaxis()->SetTitleFont(22);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->GetZaxis()->SetLabelFont(22);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->GetZaxis()->SetLabelSize(0.035);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->GetZaxis()->SetTitleSize(0.035);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP30->GetZaxis()->SetTitleFont(22);
-   graph->SetHistogram(Graph_Guzey (x_{B}=0.177)30);
+   Graph_GuzeysPoPxeQ0dO177cP30->SetLineColor(ci);
+   Graph_GuzeysPoPxeQ0dO177cP30->GetXaxis()->SetLabelFont(22);
+   Graph_GuzeysPoPxeQ0dO177cP30->GetXaxis()->SetLabelSize(0.05);
+   Graph_GuzeysPoPxeQ0dO177cP30->GetXaxis()->SetTitleSize(0.9);
+   Graph_GuzeysPoPxeQ0dO177cP30->GetXaxis()->SetTitleFont(22);
+   Graph_GuzeysPoPxeQ0dO177cP30->GetYaxis()->SetLabelFont(22);
+   Graph_GuzeysPoPxeQ0dO177cP30->GetYaxis()->SetLabelSize(0.05);
+   Graph_GuzeysPoPxeQ0dO177cP30->GetYaxis()->SetTitleSize(0.06);
+   Graph_GuzeysPoPxeQ0dO177cP30->GetYaxis()->SetTitleOffset(0);
+   Graph_GuzeysPoPxeQ0dO177cP30->GetYaxis()->SetTitleFont(22);
+   Graph_GuzeysPoPxeQ0dO177cP30->GetZaxis()->SetLabelFont(22);
+   Graph_GuzeysPoPxeQ0dO177cP30->GetZaxis()->SetLabelSize(0.035);
+   Graph_GuzeysPoPxeQ0dO177cP30->GetZaxis()->SetTitleSize(0.035);
+   Graph_GuzeysPoPxeQ0dO177cP30->GetZaxis()->SetTitleFont(22);
+   graph->SetHistogram(Graph_GuzeysPoPxeQ0dO177cP30);
    
    graph->Draw("c");
    
-   Double_t Guzey (x_{B}=0.177)_fx31[25] = {
+   Double_t fx31[25] = {
    0.077,
    0.094,
    0.111,
@@ -908,7 +912,7 @@ void Coherent_ALU_ratio()
    0.451,
    0.468,
    0.485};
-   Double_t Guzey (x_{B}=0.177)_fy31[25] = {
+   Double_t fy31[25] = {
    1.7699,
    1.4384,
    1.3341,
@@ -934,7 +938,7 @@ void Coherent_ALU_ratio()
    1.0357,
    1.037,
    1.0387};
-   graph = new TGraph(25,Guzey (x_{B}=0.177)_fx31,Guzey (x_{B}=0.177)_fy31);
+   graph = new TGraph(25,fx31,fy31);
    graph->SetName("Guzey (x_{B}=0.177)");
    graph->SetTitle("Guzey (x_{B}=0.177)");
    graph->SetFillStyle(1000);
@@ -942,32 +946,32 @@ void Coherent_ALU_ratio()
    graph->SetMarkerStyle(20);
    graph->SetMarkerSize(1.2);
    
-   TH1F *Graph_GuzeysPoPx_{B}eQ0dO177cP31 = new TH1F("Graph_GuzeysPoPx_{B}eQ0dO177cP31","Guzey (x_{B}=0.177)",100,0.0362,0.5258);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->SetMinimum(0.96206);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->SetMaximum(1.84334);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->SetDirectory(0);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->SetStats(0);
+   TH1F *Graph_GuzeysPoPxeQ0dO177cP31 = new TH1F("Graph_GuzeysPoPxeQ0dO177cP31","Guzey (x_{B}=0.177)",100,0.0362,0.5258);
+   Graph_GuzeysPoPxeQ0dO177cP31->SetMinimum(0.96206);
+   Graph_GuzeysPoPxeQ0dO177cP31->SetMaximum(1.84334);
+   Graph_GuzeysPoPxeQ0dO177cP31->SetDirectory(0);
+   Graph_GuzeysPoPxeQ0dO177cP31->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->SetLineColor(ci);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->GetXaxis()->SetLabelFont(22);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->GetXaxis()->SetLabelSize(0.05);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->GetXaxis()->SetTitleSize(0.9);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->GetXaxis()->SetTitleFont(22);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->GetYaxis()->SetLabelFont(22);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->GetYaxis()->SetLabelSize(0.05);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->GetYaxis()->SetTitleSize(0.06);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->GetYaxis()->SetTitleOffset(0);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->GetYaxis()->SetTitleFont(22);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->GetZaxis()->SetLabelFont(22);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->GetZaxis()->SetLabelSize(0.035);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->GetZaxis()->SetTitleSize(0.035);
-   Graph_GuzeysPoPx_{B}eQ0dO177cP31->GetZaxis()->SetTitleFont(22);
-   graph->SetHistogram(Graph_Guzey (x_{B}=0.177)31);
+   Graph_GuzeysPoPxeQ0dO177cP31->SetLineColor(ci);
+   Graph_GuzeysPoPxeQ0dO177cP31->GetXaxis()->SetLabelFont(22);
+   Graph_GuzeysPoPxeQ0dO177cP31->GetXaxis()->SetLabelSize(0.05);
+   Graph_GuzeysPoPxeQ0dO177cP31->GetXaxis()->SetTitleSize(0.9);
+   Graph_GuzeysPoPxeQ0dO177cP31->GetXaxis()->SetTitleFont(22);
+   Graph_GuzeysPoPxeQ0dO177cP31->GetYaxis()->SetLabelFont(22);
+   Graph_GuzeysPoPxeQ0dO177cP31->GetYaxis()->SetLabelSize(0.05);
+   Graph_GuzeysPoPxeQ0dO177cP31->GetYaxis()->SetTitleSize(0.06);
+   Graph_GuzeysPoPxeQ0dO177cP31->GetYaxis()->SetTitleOffset(0);
+   Graph_GuzeysPoPxeQ0dO177cP31->GetYaxis()->SetTitleFont(22);
+   Graph_GuzeysPoPxeQ0dO177cP31->GetZaxis()->SetLabelFont(22);
+   Graph_GuzeysPoPxeQ0dO177cP31->GetZaxis()->SetLabelSize(0.035);
+   Graph_GuzeysPoPxeQ0dO177cP31->GetZaxis()->SetTitleSize(0.035);
+   Graph_GuzeysPoPxeQ0dO177cP31->GetZaxis()->SetTitleFont(22);
+   graph->SetHistogram(Graph_GuzeysPoPxeQ0dO177cP31);
    
    graph->Draw("c");
    
-   Double_t LT (x_{B}=0.137)_fx32[16] = {
+   Double_t fx32[16] = {
    0.0026,
    0.0139,
    0.0336,
@@ -984,7 +988,7 @@ void Coherent_ALU_ratio()
    0.4664,
    0.4861,
    0.4974};
-   Double_t LT (x_{B}=0.137)_fy32[16] = {
+   Double_t fy32[16] = {
    1.06064,
    1.06662,
    1.07201,
@@ -1001,7 +1005,7 @@ void Coherent_ALU_ratio()
    1.20748,
    1.21789,
    1.22326};
-   graph = new TGraph(16,LT (x_{B}=0.137)_fx32,LT (x_{B}=0.137)_fy32);
+   graph = new TGraph(16,fx32,fy32);
    graph->SetName("LT (x_{B}=0.137)");
    graph->SetTitle("LT (x_{B}=0.137)");
    graph->SetFillColor(1);
@@ -1009,32 +1013,32 @@ void Coherent_ALU_ratio()
    graph->SetLineColor(2);
    graph->SetLineWidth(3);
    
-   TH1F *Graph_LTsPoPx_{B}eQ0dO137cP32 = new TH1F("Graph_LTsPoPx_{B}eQ0dO137cP32","LT (x_{B}=0.137)",100,0,0.54688);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->SetMinimum(1.044378);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->SetMaximum(1.239522);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->SetDirectory(0);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->SetStats(0);
+   TH1F *Graph_LTsPoPxeQ0dO137cP32 = new TH1F("Graph_LTsPoPxeQ0dO137cP32","LT (x_{B}=0.137)",100,0,0.54688);
+   Graph_LTsPoPxeQ0dO137cP32->SetMinimum(1.044378);
+   Graph_LTsPoPxeQ0dO137cP32->SetMaximum(1.239522);
+   Graph_LTsPoPxeQ0dO137cP32->SetDirectory(0);
+   Graph_LTsPoPxeQ0dO137cP32->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_LTsPoPx_{B}eQ0dO137cP32->SetLineColor(ci);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->GetXaxis()->SetLabelFont(22);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->GetXaxis()->SetLabelSize(0.05);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->GetXaxis()->SetTitleSize(0.9);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->GetXaxis()->SetTitleFont(22);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->GetYaxis()->SetLabelFont(22);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->GetYaxis()->SetLabelSize(0.05);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->GetYaxis()->SetTitleSize(0.06);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->GetYaxis()->SetTitleOffset(0);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->GetYaxis()->SetTitleFont(22);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->GetZaxis()->SetLabelFont(22);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->GetZaxis()->SetLabelSize(0.035);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->GetZaxis()->SetTitleSize(0.035);
-   Graph_LTsPoPx_{B}eQ0dO137cP32->GetZaxis()->SetTitleFont(22);
-   graph->SetHistogram(Graph_LT (x_{B}=0.137)32);
+   Graph_LTsPoPxeQ0dO137cP32->SetLineColor(ci);
+   Graph_LTsPoPxeQ0dO137cP32->GetXaxis()->SetLabelFont(22);
+   Graph_LTsPoPxeQ0dO137cP32->GetXaxis()->SetLabelSize(0.05);
+   Graph_LTsPoPxeQ0dO137cP32->GetXaxis()->SetTitleSize(0.9);
+   Graph_LTsPoPxeQ0dO137cP32->GetXaxis()->SetTitleFont(22);
+   Graph_LTsPoPxeQ0dO137cP32->GetYaxis()->SetLabelFont(22);
+   Graph_LTsPoPxeQ0dO137cP32->GetYaxis()->SetLabelSize(0.05);
+   Graph_LTsPoPxeQ0dO137cP32->GetYaxis()->SetTitleSize(0.06);
+   Graph_LTsPoPxeQ0dO137cP32->GetYaxis()->SetTitleOffset(0);
+   Graph_LTsPoPxeQ0dO137cP32->GetYaxis()->SetTitleFont(22);
+   Graph_LTsPoPxeQ0dO137cP32->GetZaxis()->SetLabelFont(22);
+   Graph_LTsPoPxeQ0dO137cP32->GetZaxis()->SetLabelSize(0.035);
+   Graph_LTsPoPxeQ0dO137cP32->GetZaxis()->SetTitleSize(0.035);
+   Graph_LTsPoPxeQ0dO137cP32->GetZaxis()->SetTitleFont(22);
+   graph->SetHistogram(Graph_LTsPoPxeQ0dO137cP32);
    
    graph->Draw("c");
    
-   Double_t LT (x_{B}=0.307)_fx33[16] = {
+   Double_t fx33[16] = {
    0.0026,
    0.0139,
    0.0336,
@@ -1051,7 +1055,7 @@ void Coherent_ALU_ratio()
    0.4664,
    0.4861,
    0.4974};
-   Double_t LT (x_{B}=0.307)_fy33[16] = {
+   Double_t fy33[16] = {
    0.909493,
    0.896561,
    0.882353,
@@ -1068,7 +1072,7 @@ void Coherent_ALU_ratio()
    0.739485,
    0.734579,
    0.731844};
-   graph = new TGraph(16,LT (x_{B}=0.307)_fx33,LT (x_{B}=0.307)_fy33);
+   graph = new TGraph(16,fx33,fy33);
    graph->SetName("LT (x_{B}=0.307)");
    graph->SetTitle("LT (x_{B}=0.307)");
    graph->SetFillColor(1);
@@ -1076,40 +1080,40 @@ void Coherent_ALU_ratio()
    graph->SetLineColor(4);
    graph->SetLineWidth(3);
    
-   TH1F *Graph_LTsPoPx_{B}eQ0dO307cP33 = new TH1F("Graph_LTsPoPx_{B}eQ0dO307cP33","LT (x_{B}=0.307)",100,0,0.54688);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->SetMinimum(0.7140791);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->SetMaximum(0.9272579);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->SetDirectory(0);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->SetStats(0);
+   TH1F *Graph_LTsPoPxeQ0dO307cP33 = new TH1F("Graph_LTsPoPxeQ0dO307cP33","LT (x_{B}=0.307)",100,0,0.54688);
+   Graph_LTsPoPxeQ0dO307cP33->SetMinimum(0.7140791);
+   Graph_LTsPoPxeQ0dO307cP33->SetMaximum(0.9272579);
+   Graph_LTsPoPxeQ0dO307cP33->SetDirectory(0);
+   Graph_LTsPoPxeQ0dO307cP33->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_LTsPoPx_{B}eQ0dO307cP33->SetLineColor(ci);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->GetXaxis()->SetLabelFont(22);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->GetXaxis()->SetLabelSize(0.05);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->GetXaxis()->SetTitleSize(0.9);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->GetXaxis()->SetTitleFont(22);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->GetYaxis()->SetLabelFont(22);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->GetYaxis()->SetLabelSize(0.05);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->GetYaxis()->SetTitleSize(0.06);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->GetYaxis()->SetTitleOffset(0);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->GetYaxis()->SetTitleFont(22);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->GetZaxis()->SetLabelFont(22);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->GetZaxis()->SetLabelSize(0.035);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->GetZaxis()->SetTitleSize(0.035);
-   Graph_LTsPoPx_{B}eQ0dO307cP33->GetZaxis()->SetTitleFont(22);
-   graph->SetHistogram(Graph_LT (x_{B}=0.307)33);
+   Graph_LTsPoPxeQ0dO307cP33->SetLineColor(ci);
+   Graph_LTsPoPxeQ0dO307cP33->GetXaxis()->SetLabelFont(22);
+   Graph_LTsPoPxeQ0dO307cP33->GetXaxis()->SetLabelSize(0.05);
+   Graph_LTsPoPxeQ0dO307cP33->GetXaxis()->SetTitleSize(0.9);
+   Graph_LTsPoPxeQ0dO307cP33->GetXaxis()->SetTitleFont(22);
+   Graph_LTsPoPxeQ0dO307cP33->GetYaxis()->SetLabelFont(22);
+   Graph_LTsPoPxeQ0dO307cP33->GetYaxis()->SetLabelSize(0.05);
+   Graph_LTsPoPxeQ0dO307cP33->GetYaxis()->SetTitleSize(0.06);
+   Graph_LTsPoPxeQ0dO307cP33->GetYaxis()->SetTitleOffset(0);
+   Graph_LTsPoPxeQ0dO307cP33->GetYaxis()->SetTitleFont(22);
+   Graph_LTsPoPxeQ0dO307cP33->GetZaxis()->SetLabelFont(22);
+   Graph_LTsPoPxeQ0dO307cP33->GetZaxis()->SetLabelSize(0.035);
+   Graph_LTsPoPxeQ0dO307cP33->GetZaxis()->SetTitleSize(0.035);
+   Graph_LTsPoPxeQ0dO307cP33->GetZaxis()->SetTitleFont(22);
+   graph->SetHistogram(Graph_LTsPoPxeQ0dO307cP33);
    
    graph->Draw("c");
    
-   Double_t This Work (x_{B} = 0.177_fx1098[1] = {
+   Double_t fx1098[1] = {
    0.1};
-   Double_t This Work (x_{B} = 0.177_fy1098[1] = {
+   Double_t fy1098[1] = {
    2.214};
-   Double_t This Work (x_{B} = 0.177_fex1098[1] = {
+   Double_t fex1098[1] = {
    0};
-   Double_t This Work (x_{B} = 0.177_fey1098[1] = {
+   Double_t fey1098[1] = {
    0.515789};
-   gre = new TGraphErrors(1,This Work (x_{B} = 0.177_fx1098,This Work (x_{B} = 0.177_fy1098,This Work (x_{B} = 0.177_fex1098,This Work (x_{B} = 0.177_fey1098);
+   gre = new TGraphErrors(1,fx1098,fy1098,fex1098,fey1098);
    gre->SetName("This Work (x_{B} = 0.177");
    gre->SetTitle("This Work (x_{B} = 0.177");
    gre->SetFillColor(1);
@@ -1118,28 +1122,28 @@ void Coherent_ALU_ratio()
    gre->SetMarkerStyle(21);
    gre->SetMarkerSize(1.6);
    
-   TH1F *Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098 = new TH1F("Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098","This Work (x_{B} = 0.177",100,0,1.2);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->SetMinimum(1.595053);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->SetMaximum(2.832947);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->SetDirectory(0);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->SetStats(0);
+   TH1F *Graph_ThissPWorksPoPxsPeQsP0dO1771098 = new TH1F("Graph_ThissPWorksPoPxsPeQsP0dO1771098","This Work (x_{B} = 0.177",100,0,1.2);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->SetMinimum(1.595053);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->SetMaximum(2.832947);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->SetDirectory(0);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->SetLineColor(ci);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->GetXaxis()->SetLabelFont(22);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->GetXaxis()->SetLabelSize(0.05);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->GetXaxis()->SetTitleSize(0.9);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->GetXaxis()->SetTitleFont(22);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->GetYaxis()->SetLabelFont(22);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->GetYaxis()->SetLabelSize(0.05);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->GetYaxis()->SetTitleSize(0.06);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->GetYaxis()->SetTitleOffset(0);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->GetYaxis()->SetTitleFont(22);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->GetZaxis()->SetLabelFont(22);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->GetZaxis()->SetLabelSize(0.035);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->GetZaxis()->SetTitleSize(0.035);
-   Graph_ThissPWorksPoPx_{B}sPeQsP0dO1771098->GetZaxis()->SetTitleFont(22);
-   gre->SetHistogram(Graph_This Work (x_{B} = 0.1771098);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->SetLineColor(ci);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->GetXaxis()->SetLabelFont(22);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->GetXaxis()->SetLabelSize(0.05);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->GetXaxis()->SetTitleSize(0.9);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->GetXaxis()->SetTitleFont(22);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->GetYaxis()->SetLabelFont(22);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->GetYaxis()->SetLabelSize(0.05);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->GetYaxis()->SetTitleSize(0.06);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->GetYaxis()->SetTitleOffset(0);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->GetYaxis()->SetTitleFont(22);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->GetZaxis()->SetLabelFont(22);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->GetZaxis()->SetLabelSize(0.035);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->GetZaxis()->SetTitleSize(0.035);
+   Graph_ThissPWorksPoPxsPeQsP0dO1771098->GetZaxis()->SetTitleFont(22);
+   gre->SetHistogram(Graph_ThissPWorksPoPxsPeQsP0dO1771098);
    
    gre->Draw("p");
    line = new TLine(-0.02,1,0.5,1);
@@ -1147,7 +1151,8 @@ void Coherent_ALU_ratio()
    line->SetLineWidth(2);
    line->Draw();
    
-   leg = new TLegend(0.26,0.75,0.95,0.95,NULL,"brNDC");
+   leg = new TLegend(0.26,0.75,0.96,1,NULL,"brNDC");
+   leg->SetNColumns(2);
    leg->SetBorderSize(1);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);

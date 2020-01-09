@@ -89,16 +89,18 @@ void Coherent_CFF()
    multigraph->GetXaxis()->CenterTitle(true);
    multigraph->GetXaxis()->SetNdivisions(605);
    multigraph->GetXaxis()->SetLabelFont(22);
-   multigraph->GetXaxis()->SetLabelSize(0.07);
-   multigraph->GetXaxis()->SetTitleSize(0.128);
+   multigraph->GetXaxis()->SetLabelSize(0.08);
+   multigraph->GetXaxis()->SetTitleSize(0.14);
    multigraph->GetXaxis()->SetTitleFont(22);
    multigraph->GetYaxis()->SetTitle("#Jgothic(H_{A})");
    multigraph->GetYaxis()->CenterTitle(true);
    multigraph->GetYaxis()->SetLabelFont(22);
-   multigraph->GetYaxis()->SetLabelSize(0.07);
-   multigraph->GetYaxis()->SetTitleSize(0.128);
+   multigraph->GetYaxis()->SetLabelSize(0.08);
+   multigraph->GetYaxis()->SetTitleSize(0.14);
    multigraph->GetYaxis()->SetTitleOffset(0.8);
    multigraph->GetYaxis()->SetTitleFont(22);
+   multigraph->GetXaxis()->SetLimits(0.85,2.6);
+   multigraph->GetYaxis()->SetRangeUser(-2.0, 78.0);
    
    Double_t Graph0_fx10[21] = {
    1,
@@ -252,8 +254,8 @@ void Coherent_CFF()
    multigraph->GetXaxis()->CenterTitle(true);
    multigraph->GetXaxis()->SetNdivisions(605);
    multigraph->GetXaxis()->SetLabelFont(22);
-   multigraph->GetXaxis()->SetLabelSize(0.07);
-   multigraph->GetXaxis()->SetTitleSize(0.123);
+   multigraph->GetXaxis()->SetLabelSize(0.08);
+   multigraph->GetXaxis()->SetTitleSize(0.1);
    multigraph->GetXaxis()->SetTitleOffset(0.8);
    multigraph->GetXaxis()->SetTitleFont(22);
    multigraph->GetYaxis()->SetTitle("#Rgothic(H_{A})");
@@ -263,7 +265,10 @@ void Coherent_CFF()
    multigraph->GetYaxis()->SetTitleSize(0.123);
    multigraph->GetYaxis()->SetTitleOffset(0.8);
    multigraph->GetYaxis()->SetTitleFont(22);
-   
+   multigraph->GetXaxis()->SetLimits(0.85,2.6);
+   multigraph->GetYaxis()->SetRangeUser(-60, 65);
+ 
+
    Double_t Graph0_fx11[21] = {
    1,
    1.08,
@@ -424,7 +429,9 @@ void Coherent_CFF()
    multigraph->GetYaxis()->SetTitleSize(0.14);
    multigraph->GetYaxis()->SetTitleOffset(0);
    multigraph->GetYaxis()->SetTitleFont(22);
-   
+   multigraph->GetXaxis()->SetLimits(0.08,0.32);
+   multigraph->GetYaxis()->SetRangeUser(-2.0, 78.0);
+
    Double_t Graph0_fx12[21] = {
    0.1,
    0.11,
@@ -621,8 +628,8 @@ void Coherent_CFF()
    multigraph->GetXaxis()->SetTitle("x_{B}");
    multigraph->GetXaxis()->CenterTitle(true);
    multigraph->GetXaxis()->SetLabelFont(22);
-   multigraph->GetXaxis()->SetLabelSize(0.09);
-   multigraph->GetXaxis()->SetTitleSize(0.17);
+   multigraph->GetXaxis()->SetLabelSize(0.08);
+   multigraph->GetXaxis()->SetTitleSize(0.14);
    multigraph->GetXaxis()->SetTitleOffset(0.65);
    multigraph->GetXaxis()->SetTitleFont(22);
    multigraph->GetYaxis()->CenterTitle(true);
@@ -631,6 +638,8 @@ void Coherent_CFF()
    multigraph->GetYaxis()->SetTitleSize(0.06);
    multigraph->GetYaxis()->SetTitleOffset(0);
    multigraph->GetYaxis()->SetTitleFont(22);
+   multigraph->GetXaxis()->SetLimits(0.08,0.32);
+   multigraph->GetYaxis()->SetRangeUser(-60.0, 65.0);
    
    Double_t graphCFF_fx14[21] = {
    0.1,
@@ -837,6 +846,8 @@ void Coherent_CFF()
    multigraph->GetYaxis()->SetTitleSize(0.14);
    multigraph->GetYaxis()->SetTitleOffset(1.2);
    multigraph->GetYaxis()->SetTitleFont(22);
+   multigraph->GetXaxis()->SetLimits(0.05,0.17);
+   multigraph->GetYaxis()->SetRangeUser(-2.0, 78.0);
    
    Double_t graphCFF_fx16[21] = {
    0.05,
@@ -1176,8 +1187,8 @@ void Coherent_CFF()
    multigraph->GetXaxis()->SetTitle("-t [GeV^{2}]");
    multigraph->GetXaxis()->CenterTitle(true);
    multigraph->GetXaxis()->SetLabelFont(22);
-   multigraph->GetXaxis()->SetLabelSize(0.09);
-   multigraph->GetXaxis()->SetTitleSize(0.17);
+   multigraph->GetXaxis()->SetLabelSize(0.08);
+   multigraph->GetXaxis()->SetTitleSize(0.14);
    multigraph->GetXaxis()->SetTitleOffset(0.6);
    multigraph->GetXaxis()->SetTitleFont(22);
    multigraph->GetYaxis()->CenterTitle(true);
@@ -1186,6 +1197,8 @@ void Coherent_CFF()
    multigraph->GetYaxis()->SetTitleSize(0.06);
    multigraph->GetYaxis()->SetTitleOffset(0);
    multigraph->GetYaxis()->SetTitleFont(22);
+   multigraph->GetXaxis()->SetLimits(0.05,0.17);
+   multigraph->GetYaxis()->SetRangeUser(-60.0, 65.0);
    
    Double_t graphCFF_fx19[21] = {
    0.05,
