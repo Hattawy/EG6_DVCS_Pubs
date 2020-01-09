@@ -2,7 +2,7 @@ void Coherent_CFF()
 {
 //=========Macro generated from canvas: cc/
 //=========  (Wed Jan  8 16:10:15 2020) by ROOT version 6.14/04
-   TCanvas *cc = new TCanvas("cc", "",63,81,1050,850);
+   TCanvas *cc = new TCanvas("cc", "",63,81,1050,600);
    gStyle->SetOptFit(1);
    cc->Range(0,0,1,1);
    cc->SetFillColor(0);
@@ -18,7 +18,7 @@ void Coherent_CFF()
    TPad *cc_1 = new TPad("cc_1", "_1",0,0.555408,0.3779599,0.9888647);
    cc_1->Draw();
    cc_1->cd();
-   cc_1->Range(0.2666667,-2,2.6,78);
+   cc_1->Range(0.2666667,-3,2.6,68);
    cc_1->SetFillColor(0);
    cc_1->SetBorderMode(0);
    cc_1->SetBorderSize(2);
@@ -96,11 +96,11 @@ void Coherent_CFF()
    multigraph->GetYaxis()->CenterTitle(true);
    multigraph->GetYaxis()->SetLabelFont(22);
    multigraph->GetYaxis()->SetLabelSize(0.08);
-   multigraph->GetYaxis()->SetTitleSize(0.14);
+   multigraph->GetYaxis()->SetTitleSize(0.13);
    multigraph->GetYaxis()->SetTitleOffset(0.8);
    multigraph->GetYaxis()->SetTitleFont(22);
    multigraph->GetXaxis()->SetLimits(0.85,2.6);
-   multigraph->GetYaxis()->SetRangeUser(-2.0, 78.0);
+   multigraph->GetYaxis()->SetRangeUser(-3.0, 68.0);
    
    Double_t Graph0_fx10[21] = {
    1,
@@ -152,7 +152,7 @@ void Coherent_CFF()
    graph->SetFillColor(1);
    graph->SetFillStyle(1000);
    graph->SetLineColor(2);
-   graph->SetLineWidth(4);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_Graph010 = new TH1F("Graph_Graph010","Graph",100,0.84,2.76);
    Graph_Graph010->SetMinimum(15.01272);
@@ -222,7 +222,7 @@ void Coherent_CFF()
    gre->SetFillColor(1);
    gre->SetFillStyle(1000);
    gre->SetLineWidth(2);
-   gre->SetMarkerStyle(25);
+   gre->SetMarkerStyle(21);
    gre->SetMarkerSize(1.5);
    
    TH1F *Graph_Graph1083 = new TH1F("Graph_Graph1083","Graph",100,1.0671,1.9779);
@@ -255,18 +255,18 @@ void Coherent_CFF()
    multigraph->GetXaxis()->SetNdivisions(605);
    multigraph->GetXaxis()->SetLabelFont(22);
    multigraph->GetXaxis()->SetLabelSize(0.08);
-   multigraph->GetXaxis()->SetTitleSize(0.1);
-   multigraph->GetXaxis()->SetTitleOffset(0.8);
+   multigraph->GetXaxis()->SetTitleSize(0.10);
+   multigraph->GetXaxis()->SetTitleOffset(.86);
    multigraph->GetXaxis()->SetTitleFont(22);
    multigraph->GetYaxis()->SetTitle("#Rgothic(H_{A})");
    multigraph->GetYaxis()->CenterTitle(true);
    multigraph->GetYaxis()->SetLabelFont(22);
-   multigraph->GetYaxis()->SetLabelSize(0.07);
-   multigraph->GetYaxis()->SetTitleSize(0.123);
-   multigraph->GetYaxis()->SetTitleOffset(0.8);
+   multigraph->GetYaxis()->SetLabelSize(0.08);
+   multigraph->GetYaxis()->SetTitleSize(0.108);
+   multigraph->GetYaxis()->SetTitleOffset(0.88);
    multigraph->GetYaxis()->SetTitleFont(22);
    multigraph->GetXaxis()->SetLimits(0.85,2.6);
-   multigraph->GetYaxis()->SetRangeUser(-60, 65);
+   multigraph->GetYaxis()->SetRangeUser(-50, 65);
  
 
    Double_t Graph0_fx11[21] = {
@@ -319,7 +319,7 @@ void Coherent_CFF()
    graph->SetFillColor(1);
    graph->SetFillStyle(1000);
    graph->SetLineColor(2);
-   graph->SetLineWidth(4);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_Graph011 = new TH1F("Graph_Graph011","Graph",100,0.84,2.76);
    Graph_Graph011->SetMinimum(-5.58744);
@@ -352,7 +352,7 @@ void Coherent_CFF()
    TPad *cc_2 = new TPad("cc_2", "_2",0.3779599,0.555408,0.6725865,0.9888647);
    cc_2->Draw();
    cc_2->cd();
-   cc_2->Range(0.08,-2,0.32,78);
+   cc_2->Range(0.08,-3,0.32,68);
    cc_2->SetFillColor(0);
    cc_2->SetBorderMode(0);
    cc_2->SetBorderSize(2);
@@ -430,7 +430,7 @@ void Coherent_CFF()
    multigraph->GetYaxis()->SetTitleOffset(0);
    multigraph->GetYaxis()->SetTitleFont(22);
    multigraph->GetXaxis()->SetLimits(0.08,0.32);
-   multigraph->GetYaxis()->SetRangeUser(-2.0, 78.0);
+   multigraph->GetYaxis()->SetRangeUser(-3.0, 68.0);
 
    Double_t Graph0_fx12[21] = {
    0.1,
@@ -482,7 +482,7 @@ void Coherent_CFF()
    graph->SetFillColor(1);
    graph->SetFillStyle(1000);
    graph->SetLineColor(2);
-   graph->SetLineWidth(4);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_Graph012 = new TH1F("Graph_Graph012","Graph",100,0.08,0.32);
    Graph_Graph012->SetMinimum(4.57529);
@@ -527,7 +527,7 @@ void Coherent_CFF()
    graph->SetFillColor(1);
    graph->SetFillStyle(1000);
    graph->SetLineStyle(7);
-   graph->SetLineWidth(4);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_Graph113 = new TH1F("Graph_Graph113","Graph",100,0.08,0.32);
    Graph_Graph113->SetMinimum(7.481829);
@@ -597,7 +597,7 @@ void Coherent_CFF()
    gre->SetFillColor(1);
    gre->SetFillStyle(1000);
    gre->SetLineWidth(2);
-   gre->SetMarkerStyle(25);
+   gre->SetMarkerStyle(21);
    gre->SetMarkerSize(1.5);
    
    TH1F *Graph_Graph1085 = new TH1F("Graph_Graph1085","Graph",100,0.1227,0.2343);
@@ -629,8 +629,8 @@ void Coherent_CFF()
    multigraph->GetXaxis()->CenterTitle(true);
    multigraph->GetXaxis()->SetLabelFont(22);
    multigraph->GetXaxis()->SetLabelSize(0.08);
-   multigraph->GetXaxis()->SetTitleSize(0.14);
-   multigraph->GetXaxis()->SetTitleOffset(0.65);
+   multigraph->GetXaxis()->SetTitleSize(0.11);
+   multigraph->GetXaxis()->SetTitleOffset(.86);
    multigraph->GetXaxis()->SetTitleFont(22);
    multigraph->GetYaxis()->CenterTitle(true);
    multigraph->GetYaxis()->SetLabelFont(22);
@@ -639,7 +639,7 @@ void Coherent_CFF()
    multigraph->GetYaxis()->SetTitleOffset(0);
    multigraph->GetYaxis()->SetTitleFont(22);
    multigraph->GetXaxis()->SetLimits(0.08,0.32);
-   multigraph->GetYaxis()->SetRangeUser(-60.0, 65.0);
+   multigraph->GetYaxis()->SetRangeUser(-50.0, 65.0);
    
    Double_t graphCFF_fx14[21] = {
    0.1,
@@ -691,7 +691,7 @@ void Coherent_CFF()
    graph->SetFillColor(1);
    graph->SetFillStyle(1000);
    graph->SetLineColor(2);
-   graph->SetLineWidth(4);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_graphCFF14 = new TH1F("Graph_graphCFF14","graphCFF",100,0.08,0.32);
    Graph_graphCFF14->SetMinimum(-7.0855);
@@ -736,7 +736,7 @@ void Coherent_CFF()
    graph->SetFillColor(1);
    graph->SetFillStyle(1000);
    graph->SetLineStyle(7);
-   graph->SetLineWidth(4);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_Graph015 = new TH1F("Graph_Graph015","Graph",100,0.08,0.32);
    Graph_Graph015->SetMinimum(-4.197039);
@@ -769,7 +769,7 @@ void Coherent_CFF()
    TPad *cc_3 = new TPad("cc_3", "_3",0.6725865,0.555408,0.9672131,0.9888647);
    cc_3->Draw();
    cc_3->cd();
-   cc_3->Range(0.05,-2,0.17,78);
+   cc_3->Range(0.05,-3,0.17,68);
    cc_3->SetFillColor(0);
    cc_3->SetBorderMode(0);
    cc_3->SetBorderSize(2);
@@ -847,7 +847,7 @@ void Coherent_CFF()
    multigraph->GetYaxis()->SetTitleOffset(1.2);
    multigraph->GetYaxis()->SetTitleFont(22);
    multigraph->GetXaxis()->SetLimits(0.05,0.17);
-   multigraph->GetYaxis()->SetRangeUser(-2.0, 78.0);
+   multigraph->GetYaxis()->SetRangeUser(-3.0, 68.0);
    
    Double_t graphCFF_fx16[21] = {
    0.05,
@@ -899,7 +899,7 @@ void Coherent_CFF()
    graph->SetFillColor(1);
    graph->SetFillStyle(1000);
    graph->SetLineColor(2);
-   graph->SetLineWidth(4);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_graphCFF16 = new TH1F("Graph_graphCFF16","graphCFF",100,0.03,0.27);
    Graph_graphCFF16->SetMinimum(2.13912);
@@ -946,7 +946,7 @@ void Coherent_CFF()
    graph->SetFillColor(1);
    graph->SetFillStyle(1000);
    graph->SetLineStyle(7);
-   graph->SetLineWidth(4);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_Graph017 = new TH1F("Graph_Graph017","Graph",100,0.04,0.16);
    Graph_Graph017->SetMinimum(4.414668);
@@ -1044,7 +1044,7 @@ void Coherent_CFF()
    graph->SetFillStyle(1000);
    graph->SetLineColor(4);
    graph->SetLineStyle(9);
-   graph->SetLineWidth(4);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_graphCFF18 = new TH1F("Graph_graphCFF18","graphCFF",100,0.0235,0.2035);
    Graph_graphCFF18->SetMinimum(2.8863);
@@ -1071,15 +1071,15 @@ void Coherent_CFF()
    
    graph->Draw("c");
    
-   TLegend *leg = new TLegend(0.2,0.65,1,1,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.0,0.75,1,1,NULL,"brNDC");
    leg->SetBorderSize(1);
-   leg->SetTextSize(0.08);
+   leg->SetTextSize(0.1);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
-   TLegendEntry *entry=leg->AddEntry("Graph","CLAS-EG6","P");
+   TLegendEntry *entry=leg->AddEntry("Graph","CLAS (this work)","P");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
@@ -1087,26 +1087,10 @@ void Coherent_CFF()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("graphCFF","Convolution-Dual","L");
+   entry=leg->AddEntry("graphCFF","Convolution-Dual [x]","L");
    entry->SetLineColor(2);
    entry->SetLineStyle(1);
-   entry->SetLineWidth(4);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1);
-   entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph0","Convolution-VGG","L");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(7);
-   entry->SetLineWidth(4);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1);
-   entry->SetTextFont(42);
-   entry=leg->AddEntry("graphCFF","Off-shell model","L");
-   entry->SetLineColor(4);
-   entry->SetLineStyle(9);
-   entry->SetLineWidth(4);
+   entry->SetLineWidth(2);
    entry->SetMarkerColor(1);
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1);
@@ -1156,7 +1140,7 @@ void Coherent_CFF()
    gre->SetFillColor(1);
    gre->SetFillStyle(1000);
    gre->SetLineWidth(2);
-   gre->SetMarkerStyle(25);
+   gre->SetMarkerStyle(21);
    gre->SetMarkerSize(1.5);
    
    TH1F *Graph_Graph1087 = new TH1F("Graph_Graph1087","Graph",100,0.0753,0.1317);
@@ -1188,8 +1172,8 @@ void Coherent_CFF()
    multigraph->GetXaxis()->CenterTitle(true);
    multigraph->GetXaxis()->SetLabelFont(22);
    multigraph->GetXaxis()->SetLabelSize(0.08);
-   multigraph->GetXaxis()->SetTitleSize(0.14);
-   multigraph->GetXaxis()->SetTitleOffset(0.6);
+   multigraph->GetXaxis()->SetTitleSize(0.10);
+   multigraph->GetXaxis()->SetTitleOffset(0.86);
    multigraph->GetXaxis()->SetTitleFont(22);
    multigraph->GetYaxis()->CenterTitle(true);
    multigraph->GetYaxis()->SetLabelFont(22);
@@ -1198,7 +1182,7 @@ void Coherent_CFF()
    multigraph->GetYaxis()->SetTitleOffset(0);
    multigraph->GetYaxis()->SetTitleFont(22);
    multigraph->GetXaxis()->SetLimits(0.05,0.17);
-   multigraph->GetYaxis()->SetRangeUser(-60.0, 65.0);
+   multigraph->GetYaxis()->SetRangeUser(-50.0, 65.0);
    
    Double_t graphCFF_fx19[21] = {
    0.05,
@@ -1250,7 +1234,7 @@ void Coherent_CFF()
    graph->SetFillColor(1);
    graph->SetFillStyle(1000);
    graph->SetLineColor(2);
-   graph->SetLineWidth(4);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_graphCFF19 = new TH1F("Graph_graphCFF19","graphCFF",100,0.03,0.27);
    Graph_graphCFF19->SetMinimum(-7.1855);
@@ -1297,7 +1281,7 @@ void Coherent_CFF()
    graph->SetFillColor(1);
    graph->SetFillStyle(1000);
    graph->SetLineStyle(7);
-   graph->SetLineWidth(4);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_Graph020 = new TH1F("Graph_Graph020","Graph",100,0.04,0.16);
    Graph_Graph020->SetMinimum(-1.554739);
@@ -1324,7 +1308,7 @@ void Coherent_CFF()
    
    graph->Draw("c");
    
-   leg = new TLegend(0.2,0.81,1,1,NULL,"brNDC");
+   leg = new TLegend(0.0,0.80,1,1,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetTextSize(0.08);
    leg->SetLineColor(1);
@@ -1332,30 +1316,16 @@ void Coherent_CFF()
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
-   entry=leg->AddEntry("Graph","CLAS-EG6","P");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(25);
-   entry->SetMarkerSize(1.5);
-   entry->SetTextFont(42);
-   entry=leg->AddEntry("graphCFF","Convolution-Dual","L");
-   entry->SetLineColor(2);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(4);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1);
-   entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph0","Convolution-VGG","L");
+   entry=leg->AddEntry("Graph0","Convolution-VGG [x]","L");
    entry->SetLineColor(1);
    entry->SetLineStyle(7);
-   entry->SetLineWidth(4);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1);
+   entry->SetLineWidth(2);
    entry->SetTextFont(42);
+   TLegendEntry *entry2=leg->AddEntry("graph","Off-shell model [x]","L");
+   entry2->SetLineStyle(9);
+   entry2->SetLineWidth(2);
+   entry2->SetTextFont(42);
+   entry2->SetLineColor(4);
    leg->Draw();
    cc_6->Modified();
    cc->cd();

@@ -18,7 +18,7 @@ void Coherent_ALU_phi_90()
    TPad *Can_1 = new TPad("Can_1", "Helium DVCS_1",0,0,0.3779599,0.97423);
    Can_1->Draw();
    Can_1->cd();
-   Can_1->Range(0.2666667,-0.3645161,2.6,0.72);
+   Can_1->Range(0.2666667,-0.3645161,2.6,0.75);
    Can_1->SetFillColor(0);
    Can_1->SetBorderMode(0);
    Can_1->SetBorderSize(2);
@@ -29,7 +29,7 @@ void Coherent_ALU_phi_90()
    Can_1->SetFrameBorderMode(0);
    Can_1->SetFrameBorderMode(0);
    
-   TH2F *HALU_He_vs_Q2__1 = new TH2F("HALU_He_vs_Q2__1","",100,0.85,2.6,100,-0.1,0.72);
+   TH2F *HALU_He_vs_Q2__1 = new TH2F("HALU_He_vs_Q2__1","",100,0.94,2.2,100,-0.05,0.75);
    HALU_He_vs_Q2__1->SetStats(0);
 
    Int_t ci;      // for color index setting
@@ -78,7 +78,7 @@ void Coherent_ALU_phi_90()
    gre->SetTitle("This Work (<x_{B}>= 0.177, <-t> = 0.100)");
    gre->SetFillColor(1);
    gre->SetFillStyle(1000);
-   gre->SetLineWidth(3);
+   gre->SetLineWidth(2);
    gre->SetMarkerStyle(21);
    gre->SetMarkerSize(1.5);
    
@@ -107,6 +107,26 @@ void Coherent_ALU_phi_90()
    
    gre->Draw("p");
    
+   Double_t _sx21[3] = {
+   1.15,
+   1.42,
+   1.87};
+   Double_t _sy21[3] = {
+   0.279,
+   0.278,
+   0.275};
+
+   TGraph *graphS = new TGraph(3,_sx21,_sy21);
+   graphS->SetName("");
+   graphS->SetTitle("");
+   graphS->SetMarkerStyle(34);
+   graphS->SetMarkerSize(1.5);
+   graphS->SetMarkerColor(6);
+   graphS->SetLineStyle(9);
+   graphS->SetLineWidth(2);
+   graphS->SetLineColor(6);
+   graphS->Draw("l");
+
    Double_t _fx21[7] = {
    1,
    1,
@@ -154,7 +174,7 @@ void Coherent_ALU_phi_90()
    
    graph->Draw("f");
    
-   TLegend *leg = new TLegend(0.4,0.9,0.98,1,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.5,0.85,0.98,1,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetTextSize(0.05);
    leg->SetLineColor(1);
@@ -162,7 +182,7 @@ void Coherent_ALU_phi_90()
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
-   TLegendEntry *entry=leg->AddEntry("Graph0","x_{B}= 0.18, -t= 0.10 GeV^{2}","P");
+   TLegendEntry *entry=leg->AddEntry("Graph0","CLAS (this work)","P");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
@@ -170,6 +190,10 @@ void Coherent_ALU_phi_90()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
+   TLegendEntry *entry2=leg->AddEntry("graphS","Fucini et al. [x]","L");
+   entry2->SetLineStyle(9);
+   entry2->SetLineWidth(2);
+   entry2->SetLineColor(6);
    leg->Draw();
    TLine *line = new TLine(0.85,0,2.6,0);
    line->SetLineStyle(7);
@@ -181,7 +205,7 @@ void Coherent_ALU_phi_90()
    TPad *Can_2 = new TPad("Can_2", "Helium DVCS_2",0.3779599,0,0.6725865,0.97423);
    Can_2->Draw();
    Can_2->cd();
-   Can_2->Range(0.08,-0.3645161,0.31,0.72);
+   Can_2->Range(0.08,-0.3645161,0.31,0.75);
    Can_2->SetFillColor(0);
    Can_2->SetBorderMode(0);
    Can_2->SetBorderSize(2);
@@ -192,7 +216,7 @@ void Coherent_ALU_phi_90()
    Can_2->SetFrameBorderMode(0);
    Can_2->SetFrameBorderMode(0);
    
-   TH2F *HALU_He_vs_x__2 = new TH2F("HALU_He_vs_x__2","",100,0.08,0.31,100,-0.1,0.72);
+   TH2F *HALU_He_vs_x__2 = new TH2F("HALU_He_vs_x__2","",100,0.09,0.26,100,-0.05,0.75);
    HALU_He_vs_x__2->SetStats(0);
 
    ci = TColor::GetColor("#000099");
@@ -238,7 +262,7 @@ void Coherent_ALU_phi_90()
    gre->SetTitle("This Work (<-t>=0.100, <Q^{2}>= 1.492)");
    gre->SetFillColor(1);
    gre->SetFillStyle(1000);
-   gre->SetLineWidth(3);
+   gre->SetLineWidth(2);
    gre->SetMarkerStyle(21);
    gre->SetMarkerSize(1.5);
    
@@ -267,6 +291,26 @@ void Coherent_ALU_phi_90()
    
    gre->Draw("p");
    
+   Double_t _ax21[3] = {
+   0.132,
+   0.171,
+   0.225};
+   Double_t _ay21[3] = {
+   0.253,
+   0.267,
+   0.272};
+
+   TGraph *graphT = new TGraph(3,_ax21,_ay21);
+   graphT->SetName("");
+   graphT->SetTitle("");
+   graphT->SetMarkerStyle(34);
+   graphT->SetMarkerSize(1.5);
+   graphT->SetMarkerColor(6);
+   graphT->SetLineStyle(9);
+   graphT->SetLineWidth(2);
+   graphT->SetLineColor(6);
+   graphT->Draw("l");
+
    Double_t _fx22[7] = {
    0.1,
    0.1,
@@ -354,7 +398,7 @@ void Coherent_ALU_phi_90()
    graph->SetFillColor(1);
    graph->SetFillStyle(1000);
    graph->SetLineColor(2);
-   graph->SetLineWidth(3);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_Graph023 = new TH1F("Graph_Graph023","Graph",100,0,1.09364);
    Graph_Graph023->SetMinimum(0.02649906);
@@ -422,7 +466,7 @@ void Coherent_ALU_phi_90()
    graph->SetFillStyle(1000);
    graph->SetLineColor(4);
    graph->SetLineStyle(7);
-   graph->SetLineWidth(4);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_Graph124 = new TH1F("Graph_Graph124","Graph",100,0,1.09364);
    Graph_Graph124->SetMinimum(0.02860893);
@@ -452,7 +496,7 @@ void Coherent_ALU_phi_90()
    line->SetLineStyle(7);
    line->Draw();
    
-   leg = new TLegend(0.1,0.82,0.98,1,NULL,"brNDC");
+   leg = new TLegend(0.14,0.76,0.98,1,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetTextSize(0.05);
    leg->SetLineColor(1);
@@ -460,7 +504,7 @@ void Coherent_ALU_phi_90()
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
-   entry=leg->AddEntry("Graph0","-t= 0.10 GeV^{2}, Q^{2}= 1.5 GeV^{2}","P");
+   entry=leg->AddEntry("Graph0","CLAS (this work)","P");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
@@ -468,22 +512,26 @@ void Coherent_ALU_phi_90()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("LT (-t=0.100)","-t= 0.10 GeV^{2}, Q^{2}= 1.2 GeV^{2}","L");
+   entry=leg->AddEntry("LT (-t=0.100)","Gonzalez-H. et al. (low -t) [x]","L");
    entry->SetLineColor(2);
    entry->SetLineStyle(1);
-   entry->SetLineWidth(3);
+   entry->SetLineWidth(2);
    entry->SetMarkerColor(1);
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph1","-t= 0.20 GeV^{2}, Q^{2}= 2.1 GeV^{2}","L");
+   entry=leg->AddEntry("Graph1","Gonzalez-H. et al. (high -t) [x]","L");
    entry->SetLineColor(4);
    entry->SetLineStyle(7);
-   entry->SetLineWidth(4);
+   entry->SetLineWidth(2);
    entry->SetMarkerColor(1);
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
+   entry2=leg->AddEntry("graphS","Fucini et al. [x]","L");
+   entry2->SetLineStyle(9);
+   entry2->SetLineWidth(2);
+   entry2->SetLineColor(6);
    leg->Draw();
    Can_2->Modified();
    Can->cd();
@@ -492,7 +540,7 @@ void Coherent_ALU_phi_90()
    TPad *Can_3 = new TPad("Can_3", "Helium DVCS_3",0.6725865,0,0.9672131,0.97423);
    Can_3->Draw();
    Can_3->cd();
-   Can_3->Range(-0.005,-0.3645161,0.25,0.72);
+   Can_3->Range(-0.005,-0.3645161,0.25,0.75);
    Can_3->SetFillColor(0);
    Can_3->SetBorderMode(0);
    Can_3->SetBorderSize(2);
@@ -503,7 +551,7 @@ void Coherent_ALU_phi_90()
    Can_3->SetFrameBorderMode(0);
    Can_3->SetFrameBorderMode(0);
    
-   TH2F *HALU_He_vs_t__3 = new TH2F("HALU_He_vs_t__3","",100,-0.005,0.25,100,-0.1,0.72);
+   TH2F *HALU_He_vs_t__3 = new TH2F("HALU_He_vs_t__3","",100,0.055,0.15,100,-0.05,0.75);
    HALU_He_vs_t__3->SetStats(0);
 
    ci = TColor::GetColor("#000099");
@@ -547,7 +595,7 @@ void Coherent_ALU_phi_90()
    gre->SetFillColor(1);
    gre->SetFillStyle(1000);
    gre->SetLineColor(8);
-   gre->SetLineWidth(3);
+   gre->SetLineWidth(2);
    gre->SetMarkerColor(8);
    gre->SetMarkerStyle(8);
    gre->SetMarkerSize(1.5);
@@ -598,7 +646,7 @@ void Coherent_ALU_phi_90()
    gre->SetTitle("This Work (<x_{B}>=0.177, <Q^{2}>= 1.492)");
    gre->SetFillColor(1);
    gre->SetFillStyle(1000);
-   gre->SetLineWidth(3);
+   gre->SetLineWidth(2);
    gre->SetMarkerStyle(21);
    gre->SetMarkerSize(1.5);
    
@@ -627,6 +675,26 @@ void Coherent_ALU_phi_90()
    
    gre->Draw("p");
    
+   Double_t _bx21[3] = {
+   0.081,
+   0.094,
+   0.126};
+   Double_t _by21[3] = {
+   0.315,
+   0.264,
+   0.291};
+
+   TGraph *graphU = new TGraph(3,_bx21,_by21);
+   graphU->SetName("");
+   graphU->SetTitle("");
+   graphU->SetMarkerStyle(34);
+   graphU->SetMarkerSize(1.5);
+   graphU->SetMarkerColor(6);
+   graphU->SetLineStyle(9);
+   graphU->SetLineWidth(2);
+   graphU->SetLineColor(6);
+   graphU->Draw("l");
+
    Double_t _fx25[6] = {
    0.06,
    0.06,
@@ -712,7 +780,7 @@ void Coherent_ALU_phi_90()
    graph->SetFillColor(1);
    graph->SetFillStyle(1000);
    graph->SetLineColor(2);
-   graph->SetLineWidth(3);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_Graph026 = new TH1F("Graph_Graph026","Graph",100,0,0.54688);
    Graph_Graph026->SetMinimum(0.08097258);
@@ -742,7 +810,7 @@ void Coherent_ALU_phi_90()
    line->SetLineStyle(7);
    line->Draw();
    
-   leg = new TLegend(0.2,0.8,0.98,1,NULL,"brNDC");
+   leg = new TLegend(0.35,0.75,0.98,1,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetTextSize(0.05);
    leg->SetLineColor(1);
@@ -750,7 +818,7 @@ void Coherent_ALU_phi_90()
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
-   entry=leg->AddEntry("Graph0","x_{B}= 0.17, Q^{2}= 1.5 GeV^{2}","P");
+   entry=leg->AddEntry("Graph0","CLAS (this work)","P");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
@@ -758,7 +826,7 @@ void Coherent_ALU_phi_90()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("HERMES","x_{B}= 0.07, Q^{2}= 1.8 GeV^{2}","P");
+   entry=leg->AddEntry("HERMES","HERMES [x]","P");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
@@ -766,14 +834,18 @@ void Coherent_ALU_phi_90()
    entry->SetMarkerStyle(8);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("","x_{B}= 0.14, Q^{2}= 1.2 GeV^{2}","L");
+   entry=leg->AddEntry("gre","Gonzalez-H. et al. [x]","L");
    entry->SetLineColor(2);
    entry->SetLineStyle(1);
-   entry->SetLineWidth(3);
+   entry->SetLineWidth(2);
    entry->SetMarkerColor(1);
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
+   entry2=leg->AddEntry("graphS","Fucini et al. [x]","L");
+   entry2->SetLineStyle(9);
+   entry2->SetLineWidth(2);
+   entry2->SetLineColor(6);
    leg->Draw();
    Can_3->Modified();
    Can->cd();
