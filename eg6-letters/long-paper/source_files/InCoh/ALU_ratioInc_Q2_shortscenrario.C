@@ -16,7 +16,7 @@ void ALU_ratioInc_Q2_shortscenrario()
    Can->SetFrameBorderMode(0);
    Can->SetFrameBorderMode(0);
    
-   TH2F *HALU_RATIO_Q2__1 = new TH2F("HALU_RATIO_Q2__1","",100,0.5,4,100,-0.1,1.7);
+   TH2F *HALU_RATIO_Q2__1 = new TH2F("HALU_RATIO_Q2__1","",100,0.8,3.8,100,-0.1,1.5);
    HALU_RATIO_Q2__1->SetStats(0);
 
    Int_t ci;      // for color index setting
@@ -27,16 +27,17 @@ void ALU_ratioInc_Q2_shortscenrario()
    HALU_RATIO_Q2__1->GetXaxis()->CenterTitle(true);
    HALU_RATIO_Q2__1->GetXaxis()->SetNdivisions(605);
    HALU_RATIO_Q2__1->GetXaxis()->SetLabelFont(22);
-   HALU_RATIO_Q2__1->GetXaxis()->SetLabelSize(0.05);
-   HALU_RATIO_Q2__1->GetXaxis()->SetTitleSize(0.07);
+   HALU_RATIO_Q2__1->GetXaxis()->SetLabelSize(0.045);
+   HALU_RATIO_Q2__1->GetXaxis()->SetTitleSize(0.06);
    HALU_RATIO_Q2__1->GetXaxis()->SetTitleFont(22);
+   HALU_RATIO_Q2__1->GetXaxis()->SetTitleOffset(0.9);
    HALU_RATIO_Q2__1->GetYaxis()->SetTitle("A_{LU}^{Incoh}/A_{LU}^{p}(90#circ)");
    HALU_RATIO_Q2__1->GetYaxis()->CenterTitle(true);
    HALU_RATIO_Q2__1->GetYaxis()->SetNdivisions(605);
    HALU_RATIO_Q2__1->GetYaxis()->SetLabelFont(22);
-   HALU_RATIO_Q2__1->GetYaxis()->SetLabelSize(0.05);
-   HALU_RATIO_Q2__1->GetYaxis()->SetTitleSize(0.07);
-   HALU_RATIO_Q2__1->GetYaxis()->SetTitleOffset(0);
+   HALU_RATIO_Q2__1->GetYaxis()->SetLabelSize(0.045);
+   HALU_RATIO_Q2__1->GetYaxis()->SetTitleSize(0.06);
+   HALU_RATIO_Q2__1->GetYaxis()->SetTitleOffset(0.9);
    HALU_RATIO_Q2__1->GetYaxis()->SetTitleFont(22);
    HALU_RATIO_Q2__1->GetZaxis()->SetLabelFont(22);
    HALU_RATIO_Q2__1->GetZaxis()->SetLabelSize(0.035);
@@ -92,28 +93,26 @@ void ALU_ratioInc_Q2_shortscenrario()
    graph->SetHistogram(Graph_Graph1);
    
    graph->Draw("f");
-   TLine *line = new TLine(0.5,0,4,0);
+   TLine *line = new TLine(0.8,0,3.8,0);
    line->SetLineStyle(7);
    line->Draw();
    
-   TLegend *leg = new TLegend(0.44,0.83,0.92,0.92,NULL,"brNDC");
-   leg->SetBorderSize(1);
-   leg->SetTextSize(0.05);
-   leg->SetLineColor(1);
-   leg->SetLineStyle(1);
-   leg->SetLineWidth(1);
-   leg->SetFillColor(0);
-   leg->SetFillStyle(1001);
-   TLegendEntry *entry=leg->AddEntry("Graph","x_{B}= 0.27, -t= 0.51 GeV^{2}","P");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1.5);
-   entry->SetTextFont(42);
-   leg->Draw();
-   
+   Double_t _sx1[4] = {
+   1.40,
+   1.89,
+   2.34,
+   3.09};
+   Double_t _sy1[4] = {
+   0.980,
+   0.989,
+   0.988,
+   0.973};
+   TGraph *graphS = new TGraph(4,_sx1,_sy1);
+   graphS->SetLineStyle(9);
+   graphS->SetLineWidth(2);
+   graphS->SetLineColor(6);
+   graphS->Draw("l");
+
    Double_t fx1001[4] = {
    1.395,
    1.886,
@@ -139,7 +138,7 @@ void ALU_ratioInc_Q2_shortscenrario()
    gre->SetTitle("This Work (x_{B} = 0.255");
    gre->SetFillColor(1);
    gre->SetFillStyle(1000);
-   gre->SetLineWidth(3);
+   gre->SetLineWidth(2);
    gre->SetMarkerStyle(21);
    gre->SetMarkerSize(1.5);
    
@@ -167,6 +166,30 @@ void ALU_ratioInc_Q2_shortscenrario()
    gre->SetHistogram(Graph_ThissPWorksPoPx_sPeQsP0dO2551001);
    
    gre->Draw("p");
+
+   TLegend *leg = new TLegend(0.54,0.80,0.92,0.92,NULL,"brNDC");
+   leg->SetBorderSize(1);
+   leg->SetTextSize(0.05);
+   leg->SetLineColor(1);
+   leg->SetLineStyle(1);
+   leg->SetLineWidth(1);
+   leg->SetFillColor(0);
+   leg->SetFillStyle(1001);
+   TLegendEntry *entry=leg->AddEntry("gre","CLAS (This work)","P");
+   entry->SetLineColor(1);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1.5);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("graphS","Fucini et al. [x]","L");
+   entry->SetLineStyle(9);
+   entry->SetLineWidth(2);
+   entry->SetLineColor(6);
+   entry->SetTextFont(42);
+   leg->Draw();
+   
    Can->Modified();
    Can->cd();
    Can->SetSelected(Can);

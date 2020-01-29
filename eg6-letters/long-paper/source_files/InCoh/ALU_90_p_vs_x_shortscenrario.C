@@ -16,7 +16,7 @@ void ALU_90_p_vs_x_shortscenrario()
    Can_p_x->SetFrameBorderMode(0);
    Can_p_x->SetFrameBorderMode(0);
    
-   TH2F *HALU_p_vs_x__3 = new TH2F("HALU_p_vs_x__3","",100,0,0.7,100,-0.1,0.5);
+   TH2F *HALU_p_vs_x__3 = new TH2F("HALU_p_vs_x__3","",100,0,0.55,100,-0.1,0.45);
    HALU_p_vs_x__3->SetStats(0);
 
    Int_t ci;      // for color index setting
@@ -27,16 +27,17 @@ void ALU_90_p_vs_x_shortscenrario()
    HALU_p_vs_x__3->GetXaxis()->CenterTitle(true);
    HALU_p_vs_x__3->GetXaxis()->SetNdivisions(605);
    HALU_p_vs_x__3->GetXaxis()->SetLabelFont(22);
-   HALU_p_vs_x__3->GetXaxis()->SetLabelSize(0.05);
-   HALU_p_vs_x__3->GetXaxis()->SetTitleSize(0.07);
+   HALU_p_vs_x__3->GetXaxis()->SetLabelSize(0.045);
+   HALU_p_vs_x__3->GetXaxis()->SetTitleSize(0.06);
    HALU_p_vs_x__3->GetXaxis()->SetTitleFont(22);
+   HALU_p_vs_x__3->GetXaxis()->SetTitleOffset(0.9);
    HALU_p_vs_x__3->GetYaxis()->SetTitle("A_{LU}^{Incoh}(90#circ)");
    HALU_p_vs_x__3->GetYaxis()->CenterTitle(true);
    HALU_p_vs_x__3->GetYaxis()->SetNdivisions(605);
    HALU_p_vs_x__3->GetYaxis()->SetLabelFont(22);
-   HALU_p_vs_x__3->GetYaxis()->SetLabelSize(0.05);
-   HALU_p_vs_x__3->GetYaxis()->SetTitleSize(0.07);
-   HALU_p_vs_x__3->GetYaxis()->SetTitleOffset(0);
+   HALU_p_vs_x__3->GetYaxis()->SetLabelSize(0.045);
+   HALU_p_vs_x__3->GetYaxis()->SetTitleSize(0.06);
+   HALU_p_vs_x__3->GetYaxis()->SetTitleOffset(0.9);
    HALU_p_vs_x__3->GetYaxis()->SetTitleFont(22);
    HALU_p_vs_x__3->GetZaxis()->SetLabelFont(22);
    HALU_p_vs_x__3->GetZaxis()->SetLabelSize(0.035);
@@ -68,7 +69,6 @@ void ALU_90_p_vs_x_shortscenrario()
    gre->SetName("Graph0");
    gre->SetTitle("This Work (<-t>= 0.506, <Q^{2}>= 2.180)");
    gre->SetFillStyle(1000);
-   gre->SetLineWidth(3);
    gre->SetMarkerStyle(21);
    gre->SetMarkerSize(1.5);
    
@@ -186,7 +186,7 @@ void ALU_90_p_vs_x_shortscenrario()
    graph->SetFillColor(1);
    graph->SetFillStyle(1000);
    graph->SetLineColor(2);
-   graph->SetLineWidth(4);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_Graph14 = new TH1F("Graph_Graph14","LT (-t=0.095, Q^{2}= 1.2)",100,0,1.09364);
    Graph_Graph14->SetMinimum(0.01584945);
@@ -213,6 +213,22 @@ void ALU_90_p_vs_x_shortscenrario()
    
    graph->Draw("c");
    
+   Double_t _sx1[4] = {
+   0.163,
+   0.225,
+   0.283,
+   0.389};
+   Double_t _sy1[4] = {
+   0.199,
+   0.178,
+   0.169,
+   0.149};
+   TGraph *graphS = new TGraph(4,_sx1,_sy1);
+   graphS->SetLineStyle(9);
+   graphS->SetLineWidth(2);
+   graphS->SetLineColor(6);
+   graphS->Draw("l");
+
    Double_t Graph2_fx5[16] = {
    0.0053,
    0.0277,
@@ -253,7 +269,7 @@ void ALU_90_p_vs_x_shortscenrario()
    graph->SetFillColor(1);
    graph->SetFillStyle(1000);
    graph->SetLineColor(4);
-   graph->SetLineWidth(4);
+   graph->SetLineWidth(2);
    
    TH1F *Graph_Graph25 = new TH1F("Graph_Graph25","LT (-t=0.329, Q^{2}= 2.1)",100,0,1.09364);
    Graph_Graph25->SetMinimum(0.01233036);
@@ -279,7 +295,7 @@ void ALU_90_p_vs_x_shortscenrario()
    graph->SetHistogram(Graph_Graph25);
    
    graph->Draw("c");
-   TLine *line = new TLine(0,0,0.7,0);
+   TLine *line = new TLine(0,0,0.55,0);
    line->SetLineStyle(7);
    line->Draw();
    
@@ -290,7 +306,7 @@ void ALU_90_p_vs_x_shortscenrario()
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
-   TLegendEntry *entry=leg->AddEntry("Graph0","-t= 0.51 GeV^{2}, Q^{2}= 2.2 GeV^{2}","P");
+   TLegendEntry *entry=leg->AddEntry("Graph0","CLAS (This work)","P");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
@@ -298,21 +314,26 @@ void ALU_90_p_vs_x_shortscenrario()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph1","-t=0.10 GeV^{2}, Q^{2}= 1.2 GeV^{2}","L");
+   entry=leg->AddEntry("Graph1","Liuti et al. (low -t) [x]","L");
    entry->SetLineColor(2);
    entry->SetLineStyle(1);
-   entry->SetLineWidth(4);
+   entry->SetLineWidth(2);
    entry->SetMarkerColor(1);
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph2","-t=0.33 GeV^{2}, Q^{2}= 2.1 GeV^{2}","L");
+   entry=leg->AddEntry("Graph2","Liuti et al. (high -t) [x]","L");
    entry->SetLineColor(4);
    entry->SetLineStyle(1);
-   entry->SetLineWidth(4);
+   entry->SetLineWidth(2);
    entry->SetMarkerColor(1);
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("GraphS","Fucini et al. [x]","L");
+   entry->SetLineStyle(9);
+   entry->SetLineWidth(2);
+   entry->SetLineColor(6);
    entry->SetTextFont(42);
    leg->Draw();
    Can_p_x->Modified();

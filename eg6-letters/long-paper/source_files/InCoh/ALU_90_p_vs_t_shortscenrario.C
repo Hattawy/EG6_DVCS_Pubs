@@ -16,7 +16,7 @@ void ALU_90_p_vs_t_shortscenrario()
    Can_p_t->SetFrameBorderMode(0);
    Can_p_t->SetFrameBorderMode(0);
    
-   TH2F *HALU_p_vs_t__5 = new TH2F("HALU_p_vs_t__5","",100,0,1.2,100,-0.1,0.5);
+   TH2F *HALU_p_vs_t__5 = new TH2F("HALU_p_vs_t__5","",100,0,1.3,100,-0.1,0.45);
    HALU_p_vs_t__5->SetStats(0);
 
    Int_t ci;      // for color index setting
@@ -27,21 +27,18 @@ void ALU_90_p_vs_t_shortscenrario()
    HALU_p_vs_t__5->GetXaxis()->CenterTitle(true);
    HALU_p_vs_t__5->GetXaxis()->SetNdivisions(605);
    HALU_p_vs_t__5->GetXaxis()->SetLabelFont(22);
-   HALU_p_vs_t__5->GetXaxis()->SetLabelSize(0.05);
-   HALU_p_vs_t__5->GetXaxis()->SetTitleSize(0.07);
+   HALU_p_vs_t__5->GetXaxis()->SetLabelSize(0.045);
+   HALU_p_vs_t__5->GetXaxis()->SetTitleSize(0.06);
    HALU_p_vs_t__5->GetXaxis()->SetTitleFont(22);
+   HALU_p_vs_t__5->GetXaxis()->SetTitleOffset(.9);
    HALU_p_vs_t__5->GetYaxis()->SetTitle("A_{LU}^{Incoh}(90#circ)");
    HALU_p_vs_t__5->GetYaxis()->CenterTitle(true);
    HALU_p_vs_t__5->GetYaxis()->SetNdivisions(605);
    HALU_p_vs_t__5->GetYaxis()->SetLabelFont(22);
-   HALU_p_vs_t__5->GetYaxis()->SetLabelSize(0.05);
-   HALU_p_vs_t__5->GetYaxis()->SetTitleSize(0.07);
-   HALU_p_vs_t__5->GetYaxis()->SetTitleOffset(0);
+   HALU_p_vs_t__5->GetYaxis()->SetLabelSize(0.045);
+   HALU_p_vs_t__5->GetYaxis()->SetTitleSize(0.06);
+   HALU_p_vs_t__5->GetYaxis()->SetTitleOffset(.9);
    HALU_p_vs_t__5->GetYaxis()->SetTitleFont(22);
-   HALU_p_vs_t__5->GetZaxis()->SetLabelFont(22);
-   HALU_p_vs_t__5->GetZaxis()->SetLabelSize(0.035);
-   HALU_p_vs_t__5->GetZaxis()->SetTitleSize(0.035);
-   HALU_p_vs_t__5->GetZaxis()->SetTitleFont(22);
    HALU_p_vs_t__5->Draw("");
    
    Double_t Graph0_fx1006[4] = {
@@ -68,7 +65,6 @@ void ALU_90_p_vs_t_shortscenrario()
    gre->SetName("Graph0");
    gre->SetTitle("This Work (<x_{B}>=0.267, <Q^{2}>= 2.180)");
    gre->SetFillStyle(1000);
-   gre->SetLineWidth(3);
    gre->SetMarkerStyle(21);
    gre->SetMarkerSize(1.5);
    
@@ -146,6 +142,22 @@ void ALU_90_p_vs_t_shortscenrario()
    
    graph->Draw("f");
    
+   Double_t _sx1[4] = {
+   0.136,
+   0.281,
+   0.492,
+   1.09 };
+   Double_t _sy1[4] = {
+   0.137,
+   0.154,
+   0.169,
+   0.186};
+   TGraph *graphS = new TGraph(4,_sx1,_sy1);
+   graphS->SetLineStyle(9);
+   graphS->SetLineWidth(2);
+   graphS->SetLineColor(6);
+   graphS->Draw("l");
+
    Double_t Graph1_fx1007[2] = {
    0.201,
    0.418};
@@ -164,7 +176,7 @@ void ALU_90_p_vs_t_shortscenrario()
    gre->SetFillColor(1);
    gre->SetFillStyle(1000);
    gre->SetLineColor(8);
-   gre->SetLineWidth(3);
+   gre->SetLineWidth(2);
    gre->SetMarkerColor(8);
    gre->SetMarkerStyle(8);
    gre->SetMarkerSize(1.5);
@@ -212,9 +224,9 @@ void ALU_90_p_vs_t_shortscenrario()
    gre->SetFillColor(1);
    gre->SetFillStyle(1000);
    gre->SetLineColor(8);
-   gre->SetLineWidth(3);
+   gre->SetLineWidth(2);
    gre->SetMarkerColor(8);
-   gre->SetMarkerStyle(4);
+   gre->SetMarkerStyle(8);
    gre->SetMarkerSize(1.5);
    
    TH1F *Graph_Graph21008 = new TH1F("Graph_Graph21008","Graph",100,0.0204,0.0996);
@@ -282,7 +294,7 @@ void ALU_90_p_vs_t_shortscenrario()
    graph->SetFillColor(1);
    graph->SetFillStyle(1000);
    graph->SetLineColor(2);
-   graph->SetLineWidth(3);
+   graph->SetLineWidth(2);
    graph->SetMarkerColor(2);
    graph->SetMarkerStyle(21);
    graph->SetMarkerSize(1.5);
@@ -386,7 +398,7 @@ void ALU_90_p_vs_t_shortscenrario()
    gre->SetFillColor(1);
    gre->SetFillStyle(1000);
    gre->SetLineColor(4);
-   gre->SetLineWidth(3);
+   gre->SetLineWidth(2);
    gre->SetMarkerColor(4);
    gre->SetMarkerStyle(22);
    gre->SetMarkerSize(1.5);
@@ -415,56 +427,41 @@ void ALU_90_p_vs_t_shortscenrario()
    gre->SetHistogram(Graph_Graph41009);
    
    gre->Draw("c");
-   TLine *line = new TLine(0,0,1.2,0);
+   TLine *line = new TLine(0,0,1.3,0);
    line->SetLineStyle(7);
    line->Draw();
    
-   TLegend *leg = new TLegend(0.49,0.58,0.919,0.9182,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.49,0.62,0.919,0.9182,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
-   TLegendEntry *entry=leg->AddEntry("Graph0","x_{B}=0.27, Q^{2}= 2.2 GeV^{2}","P");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
+   TLegendEntry *entry=leg->AddEntry("Graph0","CLAS (This work)","P");
    entry->SetMarkerColor(1);
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph2","x_{B}=0.11, Q^{2}= 2.8 GeV^{2}","P");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
-   entry->SetMarkerColor(8);
-   entry->SetMarkerStyle(4);
-   entry->SetMarkerSize(1.5);
-   entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph1","x_{B}=0.11, Q^{2}= 2.8 GeV^{2}","P");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
+   entry=leg->AddEntry("Graph1","HERMES [x]","P");
    entry->SetMarkerColor(8);
    entry->SetMarkerStyle(8);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph3","x_{B}=0.13, Q^{2}= 1.2 GeV^{2}","L");
+   entry=leg->AddEntry("Graph3","Liuti et al. (low x_{B}) [x]","L");
    entry->SetLineColor(2);
    entry->SetLineStyle(1);
-   entry->SetLineWidth(3);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1);
+   entry->SetLineWidth(2);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph4","x_{B}=0.24, Q^{2}= 2.1 GeV^{2}","L");
+   entry=leg->AddEntry("Graph4","Liuti et al. (high x_{B}) [x]","L");
    entry->SetLineColor(4);
    entry->SetLineStyle(1);
-   entry->SetLineWidth(3);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1);
+   entry->SetLineWidth(2);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("GraphS","Fucini et al. [x]","L");
+   entry->SetLineStyle(9);
+   entry->SetLineWidth(2);
+   entry->SetLineColor(6);
    entry->SetTextFont(42);
    leg->Draw();
    Can_p_t->Modified();

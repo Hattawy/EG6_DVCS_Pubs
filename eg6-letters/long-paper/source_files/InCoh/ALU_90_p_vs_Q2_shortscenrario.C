@@ -16,7 +16,7 @@ void ALU_90_p_vs_Q2_shortscenrario()
    Can_p_Q2->SetFrameBorderMode(0);
    Can_p_Q2->SetFrameBorderMode(0);
    
-   TH2F *HALU_p_vs_Q2__1 = new TH2F("HALU_p_vs_Q2__1","",100,0.5,4.5,100,-0.1,0.5);
+   TH2F *HALU_p_vs_Q2__1 = new TH2F("HALU_p_vs_Q2__1","",100,0.8,3.8,100,-0.1,0.45);
    HALU_p_vs_Q2__1->SetStats(0);
 
    Int_t ci;      // for color index setting
@@ -25,23 +25,18 @@ void ALU_90_p_vs_Q2_shortscenrario()
    HALU_p_vs_Q2__1->SetLineColor(ci);
    HALU_p_vs_Q2__1->GetXaxis()->SetTitle("Q^{2} [GeV^{2}]");
    HALU_p_vs_Q2__1->GetXaxis()->CenterTitle(true);
-   HALU_p_vs_Q2__1->GetXaxis()->SetNdivisions(605);
    HALU_p_vs_Q2__1->GetXaxis()->SetLabelFont(22);
-   HALU_p_vs_Q2__1->GetXaxis()->SetLabelSize(0.05);
-   HALU_p_vs_Q2__1->GetXaxis()->SetTitleSize(0.07);
+   HALU_p_vs_Q2__1->GetXaxis()->SetLabelSize(0.045);
+   HALU_p_vs_Q2__1->GetXaxis()->SetTitleSize(0.06);
    HALU_p_vs_Q2__1->GetXaxis()->SetTitleFont(22);
+   HALU_p_vs_Q2__1->GetXaxis()->SetTitleOffset(0.9);
    HALU_p_vs_Q2__1->GetYaxis()->SetTitle("A_{LU}^{Incoh}(90#circ)");
    HALU_p_vs_Q2__1->GetYaxis()->CenterTitle(true);
-   HALU_p_vs_Q2__1->GetYaxis()->SetNdivisions(605);
    HALU_p_vs_Q2__1->GetYaxis()->SetLabelFont(22);
-   HALU_p_vs_Q2__1->GetYaxis()->SetLabelSize(0.05);
-   HALU_p_vs_Q2__1->GetYaxis()->SetTitleSize(0.07);
-   HALU_p_vs_Q2__1->GetYaxis()->SetTitleOffset(0);
+   HALU_p_vs_Q2__1->GetYaxis()->SetLabelSize(0.045);
+   HALU_p_vs_Q2__1->GetYaxis()->SetTitleSize(0.06);
+   HALU_p_vs_Q2__1->GetYaxis()->SetTitleOffset(0.9);
    HALU_p_vs_Q2__1->GetYaxis()->SetTitleFont(22);
-   HALU_p_vs_Q2__1->GetZaxis()->SetLabelFont(22);
-   HALU_p_vs_Q2__1->GetZaxis()->SetLabelSize(0.035);
-   HALU_p_vs_Q2__1->GetZaxis()->SetTitleSize(0.035);
-   HALU_p_vs_Q2__1->GetZaxis()->SetTitleFont(22);
    HALU_p_vs_Q2__1->Draw("");
    
    Double_t Graph0_fx1001[4] = {
@@ -68,7 +63,7 @@ void ALU_90_p_vs_Q2_shortscenrario()
    gre->SetName("Graph0");
    gre->SetTitle("Graph");
    gre->SetFillStyle(1000);
-   gre->SetLineWidth(3);
+   gre->SetLineWidth(2);
    gre->SetMarkerStyle(21);
    gre->SetMarkerSize(1.5);
    
@@ -80,19 +75,6 @@ void ALU_90_p_vs_Q2_shortscenrario()
 
    ci = TColor::GetColor("#000099");
    Graph_Graph01001->SetLineColor(ci);
-   Graph_Graph01001->GetXaxis()->SetLabelFont(22);
-   Graph_Graph01001->GetXaxis()->SetLabelSize(0.05);
-   Graph_Graph01001->GetXaxis()->SetTitleSize(0.9);
-   Graph_Graph01001->GetXaxis()->SetTitleFont(22);
-   Graph_Graph01001->GetYaxis()->SetLabelFont(22);
-   Graph_Graph01001->GetYaxis()->SetLabelSize(0.05);
-   Graph_Graph01001->GetYaxis()->SetTitleSize(0.06);
-   Graph_Graph01001->GetYaxis()->SetTitleOffset(0);
-   Graph_Graph01001->GetYaxis()->SetTitleFont(22);
-   Graph_Graph01001->GetZaxis()->SetLabelFont(22);
-   Graph_Graph01001->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph01001->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph01001->GetZaxis()->SetTitleFont(22);
    gre->SetHistogram(Graph_Graph01001);
    
    gre->Draw("p");
@@ -129,40 +111,46 @@ void ALU_90_p_vs_Q2_shortscenrario()
 
    ci = TColor::GetColor("#000099");
    Graph_Graph1->SetLineColor(ci);
-   Graph_Graph1->GetXaxis()->SetLabelFont(22);
-   Graph_Graph1->GetXaxis()->SetLabelSize(0.05);
-   Graph_Graph1->GetXaxis()->SetTitleSize(0.9);
-   Graph_Graph1->GetXaxis()->SetTitleFont(22);
-   Graph_Graph1->GetYaxis()->SetLabelFont(22);
-   Graph_Graph1->GetYaxis()->SetLabelSize(0.05);
-   Graph_Graph1->GetYaxis()->SetTitleSize(0.06);
-   Graph_Graph1->GetYaxis()->SetTitleOffset(0);
-   Graph_Graph1->GetYaxis()->SetTitleFont(22);
-   Graph_Graph1->GetZaxis()->SetLabelFont(22);
-   Graph_Graph1->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph1->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph1->GetZaxis()->SetTitleFont(22);
    graph->SetHistogram(Graph_Graph1);
    
    graph->Draw("f");
-   
-   TLegend *leg = new TLegend(0.4,0.82,0.919,0.9182,NULL,"brNDC");
+
+   Double_t _sx1[4] = {
+   1.40,
+   1.89,
+   2.34,
+   3.10};
+   Double_t _sy1[4] = {
+   0.233,
+   0.198,
+   0.174,
+   0.136};
+   TGraph *graphS = new TGraph(4,_sx1,_sy1);
+   graphS->SetLineStyle(9);
+   graphS->SetLineWidth(2);
+   graphS->SetLineColor(6);
+   graphS->Draw("l");
+
+   TLegend *leg = new TLegend(0.5,0.76,0.919,0.9182,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
-   TLegendEntry *entry=leg->AddEntry("Graph","x_{B}= 0.27, -t= 0.51 GeV^{2}","P");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
+   TLegendEntry *entry;
+   entry=leg->AddEntry("clas","CLAS (this work)","p");
    entry->SetMarkerColor(1);
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
+   entry=leg->AddEntry("Scope","Fucini et al. [x]","l");
+   entry->SetLineStyle(9);
+   entry->SetLineWidth(2);
+   entry->SetLineColor(6);
+   entry->SetTextFont(42);
    leg->Draw();
-   TLine *line = new TLine(0.5,0,4.5,0);
+   TLine *line = new TLine(0.8,0,3.8,0);
    line->SetLineStyle(7);
    line->Draw();
    Can_p_Q2->Modified();
