@@ -16,7 +16,7 @@ void ALU_ratioInc_t_shortscenrario()
    Can_R_t->SetFrameBorderMode(0);
    Can_R_t->SetFrameBorderMode(0);
    
-   TH2F *HALU_RATIO_t__6 = new TH2F("HALU_RATIO_t__6","",100,0,1.18,100,0.23,1.8);
+   TH2F *HALU_RATIO_t__6 = new TH2F("HALU_RATIO_t__6","",100,0,1.18,100,0.23,1.7);
    HALU_RATIO_t__6->SetStats(0);
 
    Int_t ci;      // for color index setting
@@ -60,13 +60,6 @@ void ALU_ratioInc_t_shortscenrario()
    TGraph *graph = new TGraph(8,_fx14,_fy14);
    graph->SetFillColor(40);
    graph->SetFillStyle(1000);
- 
-   TH1F *Graph_Graph14 = new TH1F("Graph_Graph14","",100,0,2.194);
-
-   ci = TColor::GetColor("#000099");
-   Graph_Graph14->SetLineColor(ci);
-   graph->SetHistogram(Graph_Graph14);
-   
    graph->Draw("f");
 
    Double_t Graph0_fx1013[4] = {
@@ -90,16 +83,10 @@ void ALU_ratioInc_t_shortscenrario()
    0.153175,
    0.573514};
    TGraphErrors *gre = new TGraphErrors(4,Graph0_fx1013,Graph0_fy1013,Graph0_fex1013,Graph0_fey1013);
+   gre->SetName("Graph0");
    gre->SetLineWidth(2);
    gre->SetMarkerStyle(21);
    gre->SetMarkerSize(1.5);
-   
-   TH1F *Graph_Graph01013 = new TH1F("Graph_Graph01013","Graph",100,0.049,1.177);
-
-   ci = TColor::GetColor("#000099");
-   Graph_Graph01013->SetLineColor(ci);
-   gre->SetHistogram(Graph_Graph01013);
-   
    gre->Draw("p");
    
    Double_t _sx1[4] = {
@@ -113,6 +100,7 @@ void ALU_ratioInc_t_shortscenrario()
    0.987,
    0.987};
    TGraph *graphS = new TGraph(4,_sx1,_sy1);
+   graphS->SetName("GraphS");
    graphS->SetLineStyle(9);
    graphS->SetLineWidth(2);
    graphS->SetLineColor(6);
@@ -127,17 +115,12 @@ void ALU_ratioInc_t_shortscenrario()
    Double_t Graph1_fey1014[1] = {
    0.23};
    gre = new TGraphErrors(1,Graph1_fx1014,Graph1_fy1014,Graph1_fex1014,Graph1_fey1014);
+   gre->SetName("GraphH");
    gre->SetLineColor(8);
    gre->SetLineWidth(2);
    gre->SetMarkerColor(8);
    gre->SetMarkerStyle(8);
    gre->SetMarkerSize(1.5);
-   
-   TH1F *Graph_Graph11014 = new TH1F("Graph_Graph11014","Graph",100,0.1,1.3);
-   ci = TColor::GetColor("#000099");
-   Graph_Graph11014->SetLineColor(ci);
-   gre->SetHistogram(Graph_Graph11014);
-   
    gre->Draw("p");
    
    Double_t Graph2_fx15[16] = {
@@ -175,14 +158,9 @@ void ALU_ratioInc_t_shortscenrario()
    1.27342,
    1.27951};
    graph = new TGraph(16,Graph2_fx15,Graph2_fy15);
+   graph->SetName("Graph2");
    graph->SetLineColor(2);
    graph->SetLineWidth(2);
-   
-   TH1F *Graph_Graph215 = new TH1F("Graph_Graph215","Graph",100,0,0.54688);
-   ci = TColor::GetColor("#000099");
-   Graph_Graph215->SetLineColor(ci);
-   graph->SetHistogram(Graph_Graph215);
-   
    graph->Draw("c");
    
    Double_t Graph3_fx16[16] = {
@@ -220,14 +198,10 @@ void ALU_ratioInc_t_shortscenrario()
    1.08121,
    1.08359};
    graph = new TGraph(16,Graph3_fx16,Graph3_fy16);
+   graph->SetName("Graph3");
    graph->SetLineColor(4);
    graph->SetLineWidth(2);
-   
-   TH1F *Graph_Graph316 = new TH1F("Graph_Graph316","Graph",100,0,0.54688);
-   ci = TColor::GetColor("#000099");
-   Graph_Graph316->SetLineColor(ci);
-   graph->SetHistogram(Graph_Graph316);
-   
+   graph->SetLineStyle(7);
    graph->Draw("c");
    
    Double_t Graph4_fx17[13] = {
@@ -259,81 +233,25 @@ void ALU_ratioInc_t_shortscenrario()
    1.0175,
    1.02};
    graph = new TGraph(13,Graph4_fx17,Graph4_fy17);
+   graph->SetName("Graph4");
    graph->SetLineWidth(2);
-   
-   TH1F *Graph_Graph417 = new TH1F("Graph_Graph417","Graph",100,0,0.875);
-   ci = TColor::GetColor("#000099");
-   Graph_Graph417->SetLineColor(ci);
-   graph->SetHistogram(Graph_Graph417);
-   
+   graph->SetLineStyle(5);
    graph->Draw("c");
    
-   Double_t Graph5_fx18[7] = {
-   0.2,
-   0.3,
-   0.4,
-   0.5,
-   0.6,
-   0.7,
-   0.8};
-   Double_t Graph5_fy18[7] = {
-   1.0278,
-   1.0352,
-   1.0404,
-   1.0443,
-   1.0474,
-   1.0499,
-   1.052};
-   graph = new TGraph(7,Graph5_fx18,Graph5_fy18);
-   graph->SetLineStyle(3);
-   graph->SetLineWidth(2);
-   
-   TH1F *Graph_Graph518 = new TH1F("Graph_Graph518","Graph",100,0.14,0.86);
-   Graph_Graph518->SetMinimum(1.02538);
-   Graph_Graph518->SetMaximum(1.05442);
-   Graph_Graph518->SetDirectory(0);
-   Graph_Graph518->SetStats(0);
-
-   ci = TColor::GetColor("#000099");
-   Graph_Graph518->SetLineColor(ci);
-   graph->SetHistogram(Graph_Graph518);
-   
-   graph->Draw("c");
-   
-   TLegend *leg = new TLegend(0.15,0.71,0.82,0.92,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.15,0.74,0.82,0.92,NULL,"brNDC");
    leg->SetNColumns(2);
    leg->SetBorderSize(1);
-   TLegendEntry *entry=leg->AddEntry("gre","CLAS (This work)","P");
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1.5);
+   TLegendEntry *entry=leg->AddEntry("Graph0","CLAS (This work)","P");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph1","HERMES [x]","P");
-   entry->SetMarkerColor(8);
-   entry->SetMarkerStyle(8);
-   entry->SetMarkerSize(1.5);
+   entry=leg->AddEntry("GraphH","HERMES [x]","P");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph2","Liuti et al. (low x) [x]","L");
-   entry->SetLineColor(2);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(2);
+   entry=leg->AddEntry("Graph2","Liuti et al. (low -t) [x]","L");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph4","Guzey et al. (low x) [x]","L");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(2);
+   entry=leg->AddEntry("Graph4","Guzey et al. [x]","L");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph3","Liuti et al. (high x) [x]","L");
-   entry->SetLineColor(4);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(2);
+   entry=leg->AddEntry("Graph3","Liuti et al. (high -t) [x]","L");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph5","Guzey et al. (high x) [x]","L");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(3);
-   entry->SetLineWidth(2);
-   entry->SetTextFont(42);
-   entry=leg->AddEntry("graphS","Fucini et al. [x]","L");
+   entry=leg->AddEntry("GraphS","Fucini et al. [x]","L");
    entry->SetLineStyle(9);
    entry->SetLineWidth(2);
    entry->SetLineColor(6);

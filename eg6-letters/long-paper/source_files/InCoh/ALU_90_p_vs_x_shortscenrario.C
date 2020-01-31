@@ -26,23 +26,19 @@ void ALU_90_p_vs_x_shortscenrario()
    HALU_p_vs_x__3->GetXaxis()->SetTitle("x_{B}");
    HALU_p_vs_x__3->GetXaxis()->CenterTitle(true);
    HALU_p_vs_x__3->GetXaxis()->SetNdivisions(605);
-   HALU_p_vs_x__3->GetXaxis()->SetLabelFont(22);
+   HALU_p_vs_x__3->GetXaxis()->SetLabelFont(42);
    HALU_p_vs_x__3->GetXaxis()->SetLabelSize(0.045);
    HALU_p_vs_x__3->GetXaxis()->SetTitleSize(0.06);
-   HALU_p_vs_x__3->GetXaxis()->SetTitleFont(22);
+   HALU_p_vs_x__3->GetXaxis()->SetTitleFont(42);
    HALU_p_vs_x__3->GetXaxis()->SetTitleOffset(0.9);
    HALU_p_vs_x__3->GetYaxis()->SetTitle("A_{LU}^{Incoh}(90#circ)");
    HALU_p_vs_x__3->GetYaxis()->CenterTitle(true);
    HALU_p_vs_x__3->GetYaxis()->SetNdivisions(605);
-   HALU_p_vs_x__3->GetYaxis()->SetLabelFont(22);
+   HALU_p_vs_x__3->GetYaxis()->SetLabelFont(42);
    HALU_p_vs_x__3->GetYaxis()->SetLabelSize(0.045);
    HALU_p_vs_x__3->GetYaxis()->SetTitleSize(0.06);
    HALU_p_vs_x__3->GetYaxis()->SetTitleOffset(0.9);
-   HALU_p_vs_x__3->GetYaxis()->SetTitleFont(22);
-   HALU_p_vs_x__3->GetZaxis()->SetLabelFont(22);
-   HALU_p_vs_x__3->GetZaxis()->SetLabelSize(0.035);
-   HALU_p_vs_x__3->GetZaxis()->SetTitleSize(0.035);
-   HALU_p_vs_x__3->GetZaxis()->SetTitleFont(22);
+   HALU_p_vs_x__3->GetYaxis()->SetTitleFont(42);
    HALU_p_vs_x__3->Draw("");
    
    Double_t Graph0_fx1003[4] = {
@@ -67,34 +63,9 @@ void ALU_90_p_vs_x_shortscenrario()
    0.04804572};
    TGraphErrors *gre = new TGraphErrors(4,Graph0_fx1003,Graph0_fy1003,Graph0_fex1003,Graph0_fey1003);
    gre->SetName("Graph0");
-   gre->SetTitle("This Work (<-t>= 0.506, <Q^{2}>= 2.180)");
-   gre->SetFillStyle(1000);
+   gre->SetLineWidth(2);
    gre->SetMarkerStyle(21);
    gre->SetMarkerSize(1.5);
-   
-   TH1F *Graph_Graph01003 = new TH1F("Graph_Graph01003","This Work (<-t>= 0.506, <Q^{2}>= 2.180)",100,0.1392,0.4128);
-   Graph_Graph01003->SetMinimum(0.08494681);
-   Graph_Graph01003->SetMaximum(0.2198366);
-   Graph_Graph01003->SetDirectory(0);
-   Graph_Graph01003->SetStats(0);
-
-   ci = TColor::GetColor("#000099");
-   Graph_Graph01003->SetLineColor(ci);
-   Graph_Graph01003->GetXaxis()->SetLabelFont(22);
-   Graph_Graph01003->GetXaxis()->SetLabelSize(0.05);
-   Graph_Graph01003->GetXaxis()->SetTitleSize(0.9);
-   Graph_Graph01003->GetXaxis()->SetTitleFont(22);
-   Graph_Graph01003->GetYaxis()->SetLabelFont(22);
-   Graph_Graph01003->GetYaxis()->SetLabelSize(0.05);
-   Graph_Graph01003->GetYaxis()->SetTitleSize(0.06);
-   Graph_Graph01003->GetYaxis()->SetTitleOffset(0);
-   Graph_Graph01003->GetYaxis()->SetTitleFont(22);
-   Graph_Graph01003->GetZaxis()->SetLabelFont(22);
-   Graph_Graph01003->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph01003->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph01003->GetZaxis()->SetTitleFont(22);
-   gre->SetHistogram(Graph_Graph01003);
-   
    gre->Draw("p");
    
    Double_t _fx3[8] = {
@@ -120,30 +91,6 @@ void ALU_90_p_vs_x_shortscenrario()
    graph->SetTitle("");
    graph->SetFillColor(40);
    graph->SetFillStyle(1000);
-   
-   TH1F *Graph_Graph3 = new TH1F("Graph_Graph3","",100,0.055,0.595);
-   Graph_Graph3->SetMinimum(0);
-   Graph_Graph3->SetMaximum(0.02014898);
-   Graph_Graph3->SetDirectory(0);
-   Graph_Graph3->SetStats(0);
-
-   ci = TColor::GetColor("#000099");
-   Graph_Graph3->SetLineColor(ci);
-   Graph_Graph3->GetXaxis()->SetLabelFont(22);
-   Graph_Graph3->GetXaxis()->SetLabelSize(0.05);
-   Graph_Graph3->GetXaxis()->SetTitleSize(0.9);
-   Graph_Graph3->GetXaxis()->SetTitleFont(22);
-   Graph_Graph3->GetYaxis()->SetLabelFont(22);
-   Graph_Graph3->GetYaxis()->SetLabelSize(0.05);
-   Graph_Graph3->GetYaxis()->SetTitleSize(0.06);
-   Graph_Graph3->GetYaxis()->SetTitleOffset(0);
-   Graph_Graph3->GetYaxis()->SetTitleFont(22);
-   Graph_Graph3->GetZaxis()->SetLabelFont(22);
-   Graph_Graph3->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph3->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph3->GetZaxis()->SetTitleFont(22);
-   graph->SetHistogram(Graph_Graph3);
-   
    graph->Draw("f");
    
    Double_t Graph1_fx4[16] = {
@@ -187,30 +134,6 @@ void ALU_90_p_vs_x_shortscenrario()
    graph->SetFillStyle(1000);
    graph->SetLineColor(2);
    graph->SetLineWidth(2);
-   
-   TH1F *Graph_Graph14 = new TH1F("Graph_Graph14","LT (-t=0.095, Q^{2}= 1.2)",100,0,1.09364);
-   Graph_Graph14->SetMinimum(0.01584945);
-   Graph_Graph14->SetMaximum(1404.577);
-   Graph_Graph14->SetDirectory(0);
-   Graph_Graph14->SetStats(0);
-
-   ci = TColor::GetColor("#000099");
-   Graph_Graph14->SetLineColor(ci);
-   Graph_Graph14->GetXaxis()->SetLabelFont(22);
-   Graph_Graph14->GetXaxis()->SetLabelSize(0.05);
-   Graph_Graph14->GetXaxis()->SetTitleSize(0.9);
-   Graph_Graph14->GetXaxis()->SetTitleFont(22);
-   Graph_Graph14->GetYaxis()->SetLabelFont(22);
-   Graph_Graph14->GetYaxis()->SetLabelSize(0.05);
-   Graph_Graph14->GetYaxis()->SetTitleSize(0.06);
-   Graph_Graph14->GetYaxis()->SetTitleOffset(0);
-   Graph_Graph14->GetYaxis()->SetTitleFont(22);
-   Graph_Graph14->GetZaxis()->SetLabelFont(22);
-   Graph_Graph14->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph14->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph14->GetZaxis()->SetTitleFont(22);
-   graph->SetHistogram(Graph_Graph14);
-   
    graph->Draw("c");
    
    Double_t _sx1[4] = {
@@ -265,41 +188,16 @@ void ALU_90_p_vs_x_shortscenrario()
    980.425};
    graph = new TGraph(16,Graph2_fx5,Graph2_fy5);
    graph->SetName("Graph2");
-   graph->SetTitle("LT (-t=0.329, Q^{2}= 2.1)");
-   graph->SetFillColor(1);
-   graph->SetFillStyle(1000);
+   graph->SetLineStyle(7);
    graph->SetLineColor(4);
    graph->SetLineWidth(2);
-   
-   TH1F *Graph_Graph25 = new TH1F("Graph_Graph25","LT (-t=0.329, Q^{2}= 2.1)",100,0,1.09364);
-   Graph_Graph25->SetMinimum(0.01233036);
-   Graph_Graph25->SetMaximum(1078.466);
-   Graph_Graph25->SetDirectory(0);
-   Graph_Graph25->SetStats(0);
-
-   ci = TColor::GetColor("#000099");
-   Graph_Graph25->SetLineColor(ci);
-   Graph_Graph25->GetXaxis()->SetLabelFont(22);
-   Graph_Graph25->GetXaxis()->SetLabelSize(0.05);
-   Graph_Graph25->GetXaxis()->SetTitleSize(0.9);
-   Graph_Graph25->GetXaxis()->SetTitleFont(22);
-   Graph_Graph25->GetYaxis()->SetLabelFont(22);
-   Graph_Graph25->GetYaxis()->SetLabelSize(0.05);
-   Graph_Graph25->GetYaxis()->SetTitleSize(0.06);
-   Graph_Graph25->GetYaxis()->SetTitleOffset(0);
-   Graph_Graph25->GetYaxis()->SetTitleFont(22);
-   Graph_Graph25->GetZaxis()->SetLabelFont(22);
-   Graph_Graph25->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph25->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph25->GetZaxis()->SetTitleFont(22);
-   graph->SetHistogram(Graph_Graph25);
-   
    graph->Draw("c");
+
    TLine *line = new TLine(0,0,0.55,0);
    line->SetLineStyle(7);
    line->Draw();
    
-   TLegend *leg = new TLegend(0.4,0.7,0.919,0.9182,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.5,0.7,0.92,0.92,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
@@ -307,28 +205,10 @@ void ALU_90_p_vs_x_shortscenrario()
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
    TLegendEntry *entry=leg->AddEntry("Graph0","CLAS (This work)","P");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
    entry=leg->AddEntry("Graph1","Liuti et al. (low -t) [x]","L");
-   entry->SetLineColor(2);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(2);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1);
    entry->SetTextFont(42);
    entry=leg->AddEntry("Graph2","Liuti et al. (high -t) [x]","L");
-   entry->SetLineColor(4);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(2);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1);
    entry->SetTextFont(42);
    entry=leg->AddEntry("GraphS","Fucini et al. [x]","L");
    entry->SetLineStyle(9);
