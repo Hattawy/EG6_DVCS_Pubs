@@ -9,6 +9,7 @@
 \usepackage{microtype}
 \usepackage{epigraph}
 \usepackage{lineno}
+\usepackage{natbib}
 %\usepackage[scaled]{helvet}
 %\usepackage[pagebackref,hyperindex=true]{hyperref}
 %\usepackage{pdfpages}
@@ -50,25 +51,28 @@ H_A$, leading the way toward 3D imaging of the partonic structure of nuclei.
 
 \section{Introduction}
 
-The developpement of the three dimensional structure functions to study the nucleon 
-in the past decades is the opportunity to revisit the quark structure of the nucleus
-with this new perspective. This new approach to the structure of the nucleus in terms 
-of quarks and gluons is particularly needed as it remains today the subject of numerous
+In the past few decades, the study of the proton structure has made significant progress
+thanks to the theoretical and experimental developpements with three dimensional 
+structure functions \cite{Anselmino:2015uka}. These studies can be generalized to the
+nucleus and offer a unique opportunity to revisit the quark structure of the nucleus
+with an original perspective. This new approach is particularly needed as the quark
+structure of the nucleus remains today the subject of numerous
 controvercies. Indeed, while much progress has been made in measuring the nuclear
-parton distribution functions (PDFs) and in particular the EMC effect \cite{}. The 
-observed shape of the distribution remains fundamentaly unexplained, in particular
-in the intermediate $x$ range, where are observed the anti-shadowing and the EMC 
-effects \cite{}.  
+parton distribution functions (PDFs), the observed shape of the PDF ratio, known as
+EMC effect, remains fundamentaly unexplained \cite{Norton:2003cb,Malace:2014uea,Hen:2016kwk}.
 
-In particular, the generalized parton distributions (GPDs) can be probed through
-spin assymetries in the deeply virtual Compton scattering (DVCS) process in a very 
-convenient way. Moreover, on nuclear targets of spin-0, the extraction can be 
-simplified with the reduction of the number of GPDs. The measurement of the nuclear
-DVCS is however a challenging task, first attempts from the HERMES collaboration 
-\cite{} did not lead to important progress, but more recent measurements from the
-CLAS collaboration \cite{} have been much more promising. We extend in this article 
+In nuclei, the generalized parton distributions (GPDs) can be probed conveniently through
+spin assymetries in the deeply virtual Compton scattering (DVCS) 
+process~\cite{Diehl:2003ny,Belitsky:2005qn,Guidal:2013rya}. Indeed, the exclusive
+production of a photon limits the possibilities of final state interactions in the nuclear 
+medium. Moreover, with a nuclear targets of spin-0 the extraction of the GPD from the DVCS data 
+is significantly simplified with the reduction to a single GPD intervening in the process. The 
+measurement of the nuclear DVCS is however challenging experimentally, first attempts from 
+the HERMES collaboration \cite{Airapetian:2009cga} lead to imprecise results. We present here
+more recent and detailed measurements from the CLAS collaboration already partially presented
+in previous letters \cite{Hattawy:2017woc,Hattawy:2018liu}. We extend in this article 
 the description of the nuclear DVCS CLAS experiment, detail the methods used for the
-measurement and publish for the first time the full results for each channel measured.
+data analysis and produce the full experimental results for each channel measured.
 
 
 \section{Theoretical Framework}
@@ -217,15 +221,18 @@ C_{++}(1) cos(\phi) \right)\\
 \end{eqnarray}
 %\normalsize
 where $S_{++}(1)$, $C_{++}(0)$, and $C_{++}(1)$ are the Fourier harmonics in the 
-leptonic tensor \cite{Belitsky:2008bz} and $x_{A} = \frac{M_{p}\cdot x}{M_{^4\!He}}$. 
+leptonic tensor \cite{Belitsky:2008bz}, their explicit expression can be found in 
+appendix \ref{sec:eq}, and $x_{A} = \frac{M_{p}\cdot x}{M_{^4\!He}}$. 
+
 %Their explicit expressions can be found in Appendix 
 %\ref{app:Helium_cross_section}.  
 
 The Eq. \ref{eq:A_LU-coh} is particularly convenient to perform an extraction of 
 the $\Im m(\mathcal{H}_{A})$ and $\Re e(\mathcal{H}_{A})$ through a fit of the BSA as 
 a function of $\phi$. As can be seen in Fig. \ref{fig:alphas}, the form of each 
-$\alpha$ coefficient is known and characteristic, such that a fit is easy. The only caveat
-is the large difference of magnitude between the $\alpha$ factors, which will lead to 
+$\alpha$ coefficient has a characteristic $\phi$ dependence, such that a fit can
+easily separate their respective contributions. The only caveat
+is the large difference of magnitude between the $\alpha$ factors, which can lead to 
 rather different error propagation for the two parts of the CFF.
 
 \begin{figure}[tbp!]
@@ -236,21 +243,26 @@ rather different error propagation for the two parts of the CFF.
 \label{fig:alphas}
 \end{figure}
 
+An important issue with the use of this theoretical framework is the large mass of the 
+helium nuclei. In principle, this could lead to significant target mass corrections...
+REF? \cite{Braun:2012bg}
+
+
 \subsection{Incoherent nuclear DVCS}
 
 The incoherent nuclear DVCS process, is the DVCS off a bound nucleon in a nucleus
 as represented in Fig. \ref{fig:InCohDiag} for an helium-4 target. The remnants of 
 the nucleus ($X$) contain only the missing three nucleons. 
 The theory for incoherent DVCS on the nucleon is largely based on the free proton theory
-already reviewed in Chap. \ref{chap:pheno}. Two important differences in the 
-reaction need to be accounted however, the different initial state and the addition of 
+already reviewed many times in the litterature~\cite{Diehl:2003ny,Belitsky:2005qn,Guidal:2013rya}. 
+Two important differences need to be accounted for however, the different initial state and the addition of 
 final state effects. In the initial state, the intrinsic Fermi motion of the nucleons in the nucleus 
 lead to an uncertainty on the exact kinematic of the reaction. Moreover, in general the nucleon 
 is in an off-shell state that is not exactly identical to its final state. In the final state, 
 interactions between the outgoing nucleon from the DVCS reaction and remnants of the nuclear 
 target are possible, including possible charge exchange. The latter
 leading to contamination from other channels, in particular charge exchange can lead to
-large differences in this background. 
+a large contribution from such background reaction. 
 
 \begin{figure}[tbp!]
 \center
@@ -266,18 +278,20 @@ constraining the range of initial Fermi motion and final interactions possible. 
 calculation is available to correct for the reminder of these effects yet. Since, modern calculations exist 
 for such effects in DIS \cite{Cosyn:2017ekf}, we can expect them to be extended to the DVCS 
 process as more data becomes available. Another avenue of progress
-on this topic will be the use of experimental techniques like tagging to control them. This process
-and how it can help with these issues will be discussed
-in details at the end of the present chapter.
+on this topic will be the use of experimental techniques like tagging. This process
+can help to control both initial and final state effects by detecting the nuclear remnant.
+In the tagged process the target breaks in two providing directly the initial state
+of the struck nucleon, while a measured backward nuclear fragment limits significantly the
+impact of final state effects.
 
-\subsection{The HERMES nuclear DVCS measurements}
+\section{Past nuclear DVCS measurements}
 
 The first measurement of nuclear DVCS has been performed by the HERMES collaboration 
 \cite{Airapetian:2009cga}.
 This experiment covered an array of nuclear target and looked at the $A$ dependence of the
-BSA signal. The results, presented in Fig. \ref{fig:HERMES1} and \ref{fig:HERMES2}, suffer
+BSA signal. Thier results, presented in Fig. \ref{fig:HERMES1} and \ref{fig:HERMES2}, suffer
 from large error bars, which makes them consistent with the free proton data and prevents us to
-reach strong conclusions about the nuclear effect. Yet, in the coherent DVCS case a rather
+reach strong conclusions about any nuclear effect. Yet, in the coherent DVCS case a rather
 strong effect was expected, leading to a conflict between the HERMES results and theoretical
 expectations. 
 
@@ -297,12 +311,12 @@ expectations.
 \label{fig:HERMES2}
 \end{figure}
 
-An issue with the HERMES measurement and how it is obtained from data has been raised in
+An important issue with the HERMES measurement and how it is obtained from data has been raised in
 \cite{Guzey:2003jh} to explain the discrepancy with theoretical expectations.
 The main concern is that the DVCS process is not fully detected and the scattered target
 is instead reconstructed through a missing mass measurement of the other reaction products. The 
-issue with this method is that the detector resolution is not good enough to separate the 
-coherent and incoherent channels. 
+issue with this method is that the detector resolution may not be good enough to separate the 
+coherent and incoherent channels properly. 
 Instead, the results are labeled "coherent enriched" and "incoherent enriched" at low and high 
 $-t$, respectively. This label is based on the assumption that the very different behavior of the
 cross sections of the two channels in $t$ will lead to a clear differentiation. However, the
@@ -319,19 +333,18 @@ result and was designed specifically to solve these two issues of low statistics
 The CLAS experiment had for main objective to explore the coherent DVCS on helium-4 and assess if
 the predicted BSA increase could be observed and if GPDs could be extracted from it. In order to
 perform this measurement however, several instrumentation challenges need to be passed. First, to
-measure the scattered electron and the low angle photon of the DVCS, for which we used CLAS in its 
+measure the scattered electron and the low angle photon of the DVCS, we used CLAS in its 
 DVCS setup, $i.e.$ with the addition of a low angle calorimeter and a solenoid magnet. Second, the
-helium recoil need to be measured to ensure the exclusivity of the reaction. In this section, we 
+helium recoil need to be measured to ensure the exclusivity in the coherent channel. In this section, we 
 will rapidly describe the particular detector setup used in our experiment. 
 
 \subsection{The CLAS detector}
 
-CLAS is installed in the hall B of the JLab main accelerator. It has for main objective to study the 
-multi-particles final states
+The CLAS spectrometer \cite{Mecking:2003zu} is installed in the hall-B of the JLab main 
+accelerator. It has for main objective to study the multi-particles final states
 that cannot be reconstructed with arm spectrometers. Its historic use to measure DVCS in many different 
 configurations made it an ideal place for this new DVCS measurement.  
-
-The CLAS spectrometer \cite{Mecking:2003zu} is composed of six identical radial 
+CLAS is composed of six identical radial 
 sectors separated by a toroidal magnet and each sector is made of four detectors 
 as shown in Fig. \ref{fig:CLAS}.  Three regions of drift chambers \cite{Mestayer:2000we} 
 are placed in the solenoid area to reconstruct the charge particle's tracks and 
@@ -369,7 +382,7 @@ The inner calorimeter, illustrated in Fig. \ref{fig:IC} is a homogeneous
 calorimeter composed 424 lead tungstate 
 (PbWO) crystals read out by $5 \times 5$ mm$^2$ avalanche photo-diodes (APDs). 
 It covers angles from 4 to 15 degrees. However, placing a detector at such low angles makes it 
-particularly sensitive to the Moller electrons scattered at low angles.
+particularly sensitive to the Moller electrons scattered from the target at small angles.
 
 \begin{figure}[tbp!]
 \center
@@ -407,7 +420,8 @@ detect slow protons out of a deuterium target \cite{Baillie:2011za}. In such an 
 charges are projected toward large radii 
 rather than towards the endcaps, as is more traditional in time 
 projection chambers. This design allows to reduce significantly the drift time and reduce the 
-amount of pile-up from accidental events. The RTPC has been described in more 
+amount of pile-up from accidental events. The RTPC design, its operation, calibration and 
+the track reconstruction have been described in more 
 details elsewhere \cite{Dupre:2017upj}, here is a summary of key elements.
 
 In order to detect the recoil helium nuclei from a DVCS reaction, we first need 
@@ -462,8 +476,7 @@ The electrons are detected with the baseline CLAS detectors, the drift chamber m
 of the electron and the large signal in both the Cerenkov counter and electromagnetic calorimeter
 provide the identification. A signal of good quality is also required in the 
 time-of-flight system, which serves as a time reference for other detectors. In particular, it 
-serves for the identification of the protons, which is based on a 
-time-of-flight measurement. Several 
+serves for the identification of the protons. Several 
 fiducial cuts are applied to ensure that particles did not go through part of the inner calorimeter 
 or the solenoid, as well as to reject the edges of the detectors, where efficiency is rapidly 
 decreasing. Kinematic corrections are also applied to the electrons and protons to correct for energy loss
@@ -604,7 +617,7 @@ the exclusive $\pi^0$ production has no such asymmetry. This has been checked wi
 $\pi^0$ production data, for which no significant level of BSA has been measured.
 
 The second important source of background comes from accidentals. Despite the many exclusivity cuts, it is 
-possible to have particles from different events getting combining and pass all the cuts and get 
+possible to have particles from different events getting combined and pass all the cuts and get 
 into the data sample. To evaluate the number of such events, we invert the vertex selection 
 of the two charged 
 particles of the process, electron and helium (or proton in the incoherent case), and request that they
@@ -664,7 +677,7 @@ in the initial state to calculate $t^\prime$. As it is not obvious which solutio
 we studied the difference between them by analyzing the data independently using the two 
 definitions. We found no significant difference between them, as is 
 illustrated in Fig. \ref{fig:ttpComp}. We use in our final results $t$,
-which is the correct definition.
+which is the correct definition with the slightly poorer resolution.
 
 \begin{figure}[tbp!]
 \center
@@ -711,7 +724,7 @@ detection is a strong help to isolate the effects of the coherent DVCS process f
 \label{fig:CohALU90}
 \end{figure}
 
-In order to compare to models, we extract the BSA at 90° in Fig. \ref{fig:CohALU90}. The model 
+We extract the BSA at 90° in Fig. \ref{fig:CohALU90}, the model 
 compared to the data \cite{Liuti:2005gi} is based on the idea that the main nuclear effects are 
 included by accounting for the nucleon off-shellness and kinematics in nuclei with a nuclear
 spectral function. It appears that the model undershoot our results systematically. However, 
@@ -891,6 +904,11 @@ both in the initial state and the final state.
 	% Add Sergio and ERC!
  Put your acknowledgments here.
 \end{acknowledgments}
+
+\appendix
+\section{Detailed equations}
+\label{sec:eq}
+ tests
 
 % Create the reference section using BibTeX:
 \bibliography{hadro.bib}

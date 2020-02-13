@@ -1,9 +1,9 @@
 # /bin/bash
 
 pdflatex prc-dvcshelium.tex
-pdflatex prc-dvcshelium.tex
 bibtex prc-dvcshelium
+pdflatex prc-dvcshelium.tex
 pdflatex prc-dvcshelium.tex
 #dvipdf prc-dvcshelium.dvi
 
-rm -f *.aux *.bbl *.blg *.dvi *.log 
+rm -f *.aux *.bbl *.blg *.dvi *.log *.out
