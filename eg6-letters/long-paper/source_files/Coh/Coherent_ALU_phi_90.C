@@ -138,7 +138,7 @@ void Coherent_ALU_phi_90()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
-   TLegendEntry *entry2=leg->AddEntry("graphS","Fucini et al. [x]","L");
+   TLegendEntry *entry2=leg->AddEntry("graphS","Fucini et al. [31]","L");
    entry2->SetLineStyle(9);
    entry2->SetLineWidth(2);
    entry2->SetLineColor(6);
@@ -349,7 +349,7 @@ void Coherent_ALU_phi_90()
    line->SetLineStyle(7);
    line->Draw();
    
-   leg = new TLegend(0.14,0.76,0.98,1,NULL,"brNDC");
+   leg = new TLegend(0.29,0.76,0.98,1,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetTextSize(0.05);
    leg->SetLineColor(1);
@@ -365,7 +365,7 @@ void Coherent_ALU_phi_90()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("LT (-t=0.100)","Gonzalez-H. et al. (low -t) [x]","L");
+   entry=leg->AddEntry("LT (-t=0.100)","Liuti et al. (low -t) [29]","L");
    entry->SetLineColor(2);
    entry->SetLineStyle(1);
    entry->SetLineWidth(2);
@@ -373,7 +373,7 @@ void Coherent_ALU_phi_90()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph1","Gonzalez-H. et al. (high -t) [x]","L");
+   entry=leg->AddEntry("Graph1","Liuti et al. (high -t) [29]","L");
    entry->SetLineColor(4);
    entry->SetLineStyle(7);
    entry->SetLineWidth(2);
@@ -381,7 +381,7 @@ void Coherent_ALU_phi_90()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
-   entry2=leg->AddEntry("graphS","Fucini et al. [x]","L");
+   entry2=leg->AddEntry("graphS","Fucini et al. [31]","L");
    entry2->SetLineStyle(9);
    entry2->SetLineWidth(2);
    entry2->SetLineColor(6);
@@ -663,7 +663,7 @@ void Coherent_ALU_phi_90()
    line->SetLineStyle(7);
    line->Draw();
    
-   leg = new TLegend(0.35,0.75,0.98,1,NULL,"brNDC");
+   leg = new TLegend(0.44,0.75,0.98,1,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetTextSize(0.05);
    leg->SetLineColor(1);
@@ -679,7 +679,7 @@ void Coherent_ALU_phi_90()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("HERMES","HERMES [x]","P");
+   entry=leg->AddEntry("HERMES","HERMES [10]","P");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
@@ -687,7 +687,7 @@ void Coherent_ALU_phi_90()
    entry->SetMarkerStyle(8);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("gre","Gonzalez-H. et al. [x]","L");
+   entry=leg->AddEntry("gre","Liuti et al. [29]","L");
    entry->SetLineColor(2);
    entry->SetLineStyle(1);
    entry->SetLineWidth(2);
@@ -695,7 +695,7 @@ void Coherent_ALU_phi_90()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
-   entry2=leg->AddEntry("graphS","Fucini et al. [x]","L");
+   entry2=leg->AddEntry("graphS","Fucini et al. [31]","L");
    entry2->SetLineStyle(9);
    entry2->SetLineWidth(2);
    entry2->SetLineColor(6);

@@ -78,12 +78,12 @@ void ALU_ratioInc_Q2_shortscenrario()
    1.40,
    1.89,
    2.34,
-   3.09};
+   3.10};
    Double_t _sy1[4] = {
-   0.980,
-   0.989,
-   0.988,
-   0.973};
+   0.9038,
+   0.9687,
+   0.9904,
+   0.9759};
    TGraph *graphS = new TGraph(4,_sx1,_sy1);
    graphS->SetLineStyle(9);
    graphS->SetLineWidth(2);
@@ -130,7 +130,7 @@ void ALU_ratioInc_Q2_shortscenrario()
    leg->SetFillStyle(1001);
    TLegendEntry *entry=leg->AddEntry("gre","CLAS (This work)","P");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("graphS","Fucini et al. [x]","L");
+   entry=leg->AddEntry("graphS","Fucini et al. [37]","L");
    entry->SetLineStyle(9);
    entry->SetLineWidth(2);
    entry->SetLineColor(6);

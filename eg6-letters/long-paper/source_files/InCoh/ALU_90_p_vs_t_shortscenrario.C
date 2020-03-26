@@ -92,15 +92,19 @@ void ALU_90_p_vs_t_shortscenrario()
    graph->Draw("f");
    
    Double_t _sx1[4] = {
-   0.136,
-   0.281,
-   0.492,
-   1.09 };
+   0.145,
+   0.282,
+   0.490,
+   1.11 };
    Double_t _sy1[4] = {
-   0.137,
-   0.154,
-   0.169,
-   0.186};
+   0.1455,
+   0.1644,
+   0.1902,
+   0.1728};
+// 0.140,
+// 0.155,
+// 0.173,
+// 0.165};
    TGraph *graphS = new TGraph(4,_sx1,_sy1);
    graphS->SetLineStyle(9);
    graphS->SetLineWidth(2);
@@ -286,7 +290,7 @@ void ALU_90_p_vs_t_shortscenrario()
    line->SetLineStyle(7);
    line->Draw();
    
-   TLegend *leg = new TLegend(0.47,0.64,0.92,0.92,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.46,0.64,0.92,0.92,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
@@ -295,10 +299,10 @@ void ALU_90_p_vs_t_shortscenrario()
    leg->SetFillStyle(1001);
    TLegendEntry *entry=leg->AddEntry("Graph0","CLAS (This work)","P");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph1","HERMES [x]","P");
-   entry=leg->AddEntry("Graph3","Liuti et al. (low x_{B}) [x]","L");
-   entry=leg->AddEntry("Graph4","Liuti et al. (high x_{B}) [x]","L");
-   entry=leg->AddEntry("GraphS","Fucini et al. [x]","L");
+   entry=leg->AddEntry("Graph1","HERMES [10]","P");
+   entry=leg->AddEntry("Graph3","Liuti et al. (low x_{B}) [29]","L");
+   entry=leg->AddEntry("Graph4","Liuti et al. (high x_{B}) [29]","L");
+   entry=leg->AddEntry("GraphS","Fucini et al. [37]","L");
    entry->SetLineStyle(9);
    entry->SetLineWidth(2);
    entry->SetLineColor(6);

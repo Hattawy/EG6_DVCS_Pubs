@@ -95,10 +95,10 @@ void ALU_ratioInc_x_shortscenrario()
    0.283,
    0.388};
    Double_t _sy1[4] = {
-   0.972,
-   0.994,
-   0.989,
-   0.971};
+   0.8430,
+   0.9967,
+   0.9937,
+   0.9742};
    TGraph *graphS = new TGraph(4,_sx1,_sy1);
    graphS->SetName("GraphS");
    graphS->SetLineStyle(9);
@@ -231,15 +231,15 @@ void ALU_ratioInc_x_shortscenrario()
    leg->SetBorderSize(1);
    TLegendEntry *entry=leg->AddEntry("Graph0","CLAS (This work)","P");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("GraphH","HERMES [x]","P");
+   entry=leg->AddEntry("GraphH","HERMES [10]","P");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph2","Liuti et al. (low -t) [x]","L");
+   entry=leg->AddEntry("Graph2","Liuti et al. (low -t) [29]","L");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph4","Guzey et al. [x]","L");
+   entry=leg->AddEntry("Graph4","Guzey et al. [34]","L");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph3","Liuti et al. (high -t) [x]","L");
+   entry=leg->AddEntry("Graph3","Liuti et al. (high -t) [29]","L");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("GraphS","Fucini et al. [x]","L");
+   entry=leg->AddEntry("GraphS","Fucini et al. [37]","L");
    entry->SetLineStyle(9);
    entry->SetLineWidth(2);
    entry->SetLineColor(6);
