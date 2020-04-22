@@ -4,13 +4,14 @@ void all_coh_exc_cuts()
 //=========  (Mon Mar 30 18:54:02 2020) by ROOT version 6.14/04
    TCanvas *all_cus = new TCanvas("all_cus", "",1,1,1200,976);
    gStyle->SetOptFit(1);
+   gStyle->SetOptStat(0);
    all_cus->Range(0,0,1,1);
    all_cus->SetFillColor(0);
    all_cus->SetBorderMode(0);
    all_cus->SetBorderSize(0);
-   all_cus->SetLeftMargin(0.2);
-   all_cus->SetRightMargin(0.05);
-   all_cus->SetBottomMargin(0.2);
+   all_cus->SetLeftMargin(0.1);
+   all_cus->SetRightMargin(0.04);
+   all_cus->SetBottomMargin(0.18);
    all_cus->SetFrameBorderMode(0);
   
 // ------------>Primitives in pad: all_cus_1
@@ -21,9 +22,10 @@ void all_coh_exc_cuts()
    all_cus_1->SetFillColor(0);
    all_cus_1->SetBorderMode(0);
    all_cus_1->SetBorderSize(2);
-   all_cus_1->SetLeftMargin(0.2);
-   all_cus_1->SetRightMargin(0.05);
-   all_cus_1->SetBottomMargin(0.2);
+   all_cus_1->SetLeftMargin(0.1);
+   all_cus_1->SetRightMargin(0.04);
+   all_cus_1->SetBottomMargin(0.18);
+   all_cus_1->SetTopMargin(0.015);
    all_cus_1->SetFrameBorderMode(0);
    all_cus_1->SetFrameBorderMode(0);
    
@@ -122,20 +124,6 @@ void all_coh_exc_cuts()
    h2_delta_phi_Coh__904->SetMaximum(402.6);
    h2_delta_phi_Coh__904->SetEntries(3509);
    
-   TPaveStats *ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   TText *ptstats_LaTex = ptstats->AddText("Entries = 3509   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = 0.1615");
-   ptstats_LaTex = ptstats->AddText("Std Dev   = 0.6296");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_delta_phi_Coh__904->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_delta_phi_Coh__904);
    h2_delta_phi_Coh__904->SetFillColor(40);
 
    Int_t ci;      // for color index setting
@@ -146,11 +134,11 @@ void all_coh_exc_cuts()
    h2_delta_phi_Coh__904->GetXaxis()->CenterTitle(true);
    h2_delta_phi_Coh__904->GetXaxis()->SetNdivisions(505);
    h2_delta_phi_Coh__904->GetXaxis()->SetLabelFont(22);
-   h2_delta_phi_Coh__904->GetXaxis()->SetLabelSize(0.075);
-   h2_delta_phi_Coh__904->GetXaxis()->SetTitleSize(0.09);
+   h2_delta_phi_Coh__904->GetXaxis()->SetLabelSize(0.070);
+   h2_delta_phi_Coh__904->GetXaxis()->SetTitleSize(0.08);
    h2_delta_phi_Coh__904->GetXaxis()->SetTitleFont(22);
    h2_delta_phi_Coh__904->GetYaxis()->SetLabelFont(22);
-   h2_delta_phi_Coh__904->GetYaxis()->SetLabelSize(0.075);
+   h2_delta_phi_Coh__904->GetYaxis()->SetLabelSize(0.065);
    h2_delta_phi_Coh__904->GetYaxis()->SetTitleSize(0.075);
    h2_delta_phi_Coh__904->GetYaxis()->SetTitleOffset(1.2);
    h2_delta_phi_Coh__904->GetYaxis()->SetTitleFont(22);
@@ -367,11 +355,11 @@ void all_coh_exc_cuts()
    h_delta_phi_Coh__905->SetEntries(17243);
    h_delta_phi_Coh__905->SetLineWidth(2);
    h_delta_phi_Coh__905->GetXaxis()->SetLabelFont(22);
-   h_delta_phi_Coh__905->GetXaxis()->SetLabelSize(0.075);
+   h_delta_phi_Coh__905->GetXaxis()->SetLabelSize(0.070);
    h_delta_phi_Coh__905->GetXaxis()->SetTitleSize(0.075);
    h_delta_phi_Coh__905->GetXaxis()->SetTitleFont(22);
    h_delta_phi_Coh__905->GetYaxis()->SetLabelFont(22);
-   h_delta_phi_Coh__905->GetYaxis()->SetLabelSize(0.075);
+   h_delta_phi_Coh__905->GetYaxis()->SetLabelSize(0.065);
    h_delta_phi_Coh__905->GetYaxis()->SetTitleSize(0.075);
    h_delta_phi_Coh__905->GetYaxis()->SetTitleOffset(1.2);
    h_delta_phi_Coh__905->GetYaxis()->SetTitleFont(22);
@@ -476,20 +464,6 @@ void all_coh_exc_cuts()
    h2_delta_phi_Coh__906->SetMaximum(402.6);
    h2_delta_phi_Coh__906->SetEntries(3509);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3509   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = 0.1615");
-   ptstats_LaTex = ptstats->AddText("Std Dev   = 0.6296");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_delta_phi_Coh__906->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_delta_phi_Coh__906);
    h2_delta_phi_Coh__906->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -498,11 +472,11 @@ void all_coh_exc_cuts()
    h2_delta_phi_Coh__906->GetXaxis()->CenterTitle(true);
    h2_delta_phi_Coh__906->GetXaxis()->SetNdivisions(505);
    h2_delta_phi_Coh__906->GetXaxis()->SetLabelFont(22);
-   h2_delta_phi_Coh__906->GetXaxis()->SetLabelSize(0.075);
-   h2_delta_phi_Coh__906->GetXaxis()->SetTitleSize(0.09);
+   h2_delta_phi_Coh__906->GetXaxis()->SetLabelSize(0.070);
+   h2_delta_phi_Coh__906->GetXaxis()->SetTitleSize(0.08);
    h2_delta_phi_Coh__906->GetXaxis()->SetTitleFont(22);
    h2_delta_phi_Coh__906->GetYaxis()->SetLabelFont(22);
-   h2_delta_phi_Coh__906->GetYaxis()->SetLabelSize(0.075);
+   h2_delta_phi_Coh__906->GetYaxis()->SetLabelSize(0.065);
    h2_delta_phi_Coh__906->GetYaxis()->SetTitleSize(0.075);
    h2_delta_phi_Coh__906->GetYaxis()->SetTitleOffset(1.2);
    h2_delta_phi_Coh__906->GetYaxis()->SetTitleFont(22);
@@ -532,9 +506,10 @@ void all_coh_exc_cuts()
    all_cus_2->SetFillColor(0);
    all_cus_2->SetBorderMode(0);
    all_cus_2->SetBorderSize(2);
-   all_cus_2->SetLeftMargin(0.2);
-   all_cus_2->SetRightMargin(0.05);
-   all_cus_2->SetBottomMargin(0.2);
+   all_cus_2->SetLeftMargin(0.1);
+   all_cus_2->SetRightMargin(0.04);
+   all_cus_2->SetBottomMargin(0.18);
+   all_cus_2->SetTopMargin(0.015);
    all_cus_2->SetFrameBorderMode(0);
    all_cus_2->SetFrameBorderMode(0);
    
@@ -652,20 +627,6 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_E_Mis__907->SetMaximum(222.2);
    h2_e4Hegamma_E_Mis__907->SetEntries(3624);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3624   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = 0.01062");
-   ptstats_LaTex = ptstats->AddText("Std Dev   = 0.2563");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_e4Hegamma_E_Mis__907->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_e4Hegamma_E_Mis__907);
    h2_e4Hegamma_E_Mis__907->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -674,11 +635,11 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_E_Mis__907->GetXaxis()->CenterTitle(true);
    h2_e4Hegamma_E_Mis__907->GetXaxis()->SetNdivisions(505);
    h2_e4Hegamma_E_Mis__907->GetXaxis()->SetLabelFont(22);
-   h2_e4Hegamma_E_Mis__907->GetXaxis()->SetLabelSize(0.075);
-   h2_e4Hegamma_E_Mis__907->GetXaxis()->SetTitleSize(0.09);
+   h2_e4Hegamma_E_Mis__907->GetXaxis()->SetLabelSize(0.070);
+   h2_e4Hegamma_E_Mis__907->GetXaxis()->SetTitleSize(0.08);
    h2_e4Hegamma_E_Mis__907->GetXaxis()->SetTitleFont(22);
    h2_e4Hegamma_E_Mis__907->GetYaxis()->SetLabelFont(22);
-   h2_e4Hegamma_E_Mis__907->GetYaxis()->SetLabelSize(0.075);
+   h2_e4Hegamma_E_Mis__907->GetYaxis()->SetLabelSize(0.065);
    h2_e4Hegamma_E_Mis__907->GetYaxis()->SetTitleSize(0.075);
    h2_e4Hegamma_E_Mis__907->GetYaxis()->SetTitleOffset(1.2);
    h2_e4Hegamma_E_Mis__907->GetYaxis()->SetTitleFont(22);
@@ -895,11 +856,11 @@ void all_coh_exc_cuts()
    h_e4Hegamma_E_Mis__908->SetEntries(17243);
    h_e4Hegamma_E_Mis__908->SetLineWidth(2);
    h_e4Hegamma_E_Mis__908->GetXaxis()->SetLabelFont(22);
-   h_e4Hegamma_E_Mis__908->GetXaxis()->SetLabelSize(0.075);
+   h_e4Hegamma_E_Mis__908->GetXaxis()->SetLabelSize(0.070);
    h_e4Hegamma_E_Mis__908->GetXaxis()->SetTitleSize(0.075);
    h_e4Hegamma_E_Mis__908->GetXaxis()->SetTitleFont(22);
    h_e4Hegamma_E_Mis__908->GetYaxis()->SetLabelFont(22);
-   h_e4Hegamma_E_Mis__908->GetYaxis()->SetLabelSize(0.075);
+   h_e4Hegamma_E_Mis__908->GetYaxis()->SetLabelSize(0.065);
    h_e4Hegamma_E_Mis__908->GetYaxis()->SetTitleSize(0.075);
    h_e4Hegamma_E_Mis__908->GetYaxis()->SetTitleOffset(1.2);
    h_e4Hegamma_E_Mis__908->GetYaxis()->SetTitleFont(22);
@@ -1023,20 +984,6 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_E_Mis__909->SetMaximum(222.2);
    h2_e4Hegamma_E_Mis__909->SetEntries(3624);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3624   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = 0.01062");
-   ptstats_LaTex = ptstats->AddText("Std Dev   = 0.2563");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_e4Hegamma_E_Mis__909->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_e4Hegamma_E_Mis__909);
    h2_e4Hegamma_E_Mis__909->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -1045,11 +992,11 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_E_Mis__909->GetXaxis()->CenterTitle(true);
    h2_e4Hegamma_E_Mis__909->GetXaxis()->SetNdivisions(505);
    h2_e4Hegamma_E_Mis__909->GetXaxis()->SetLabelFont(22);
-   h2_e4Hegamma_E_Mis__909->GetXaxis()->SetLabelSize(0.075);
-   h2_e4Hegamma_E_Mis__909->GetXaxis()->SetTitleSize(0.09);
+   h2_e4Hegamma_E_Mis__909->GetXaxis()->SetLabelSize(0.070);
+   h2_e4Hegamma_E_Mis__909->GetXaxis()->SetTitleSize(0.08);
    h2_e4Hegamma_E_Mis__909->GetXaxis()->SetTitleFont(22);
    h2_e4Hegamma_E_Mis__909->GetYaxis()->SetLabelFont(22);
-   h2_e4Hegamma_E_Mis__909->GetYaxis()->SetLabelSize(0.075);
+   h2_e4Hegamma_E_Mis__909->GetYaxis()->SetLabelSize(0.065);
    h2_e4Hegamma_E_Mis__909->GetYaxis()->SetTitleSize(0.075);
    h2_e4Hegamma_E_Mis__909->GetYaxis()->SetTitleOffset(1.2);
    h2_e4Hegamma_E_Mis__909->GetYaxis()->SetTitleFont(22);
@@ -1079,9 +1026,10 @@ void all_coh_exc_cuts()
    all_cus_3->SetFillColor(0);
    all_cus_3->SetBorderMode(0);
    all_cus_3->SetBorderSize(2);
-   all_cus_3->SetLeftMargin(0.2);
-   all_cus_3->SetRightMargin(0.05);
-   all_cus_3->SetBottomMargin(0.2);
+   all_cus_3->SetLeftMargin(0.1);
+   all_cus_3->SetRightMargin(0.04);
+   all_cus_3->SetBottomMargin(0.18);
+   all_cus_3->SetTopMargin(0.015);
    all_cus_3->SetFrameBorderMode(0);
    all_cus_3->SetFrameBorderMode(0);
    
@@ -1208,20 +1156,6 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_M2_Mis__910->SetMaximum(322.3);
    h2_e4Hegamma_M2_Mis__910->SetEntries(3557);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3557   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = -0.004137");
-   ptstats_LaTex = ptstats->AddText("Std Dev   = 0.01376");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_e4Hegamma_M2_Mis__910->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_e4Hegamma_M2_Mis__910);
    h2_e4Hegamma_M2_Mis__910->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -1230,11 +1164,11 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_M2_Mis__910->GetXaxis()->CenterTitle(true);
    h2_e4Hegamma_M2_Mis__910->GetXaxis()->SetNdivisions(505);
    h2_e4Hegamma_M2_Mis__910->GetXaxis()->SetLabelFont(22);
-   h2_e4Hegamma_M2_Mis__910->GetXaxis()->SetLabelSize(0.075);
-   h2_e4Hegamma_M2_Mis__910->GetXaxis()->SetTitleSize(0.09);
+   h2_e4Hegamma_M2_Mis__910->GetXaxis()->SetLabelSize(0.070);
+   h2_e4Hegamma_M2_Mis__910->GetXaxis()->SetTitleSize(0.08);
    h2_e4Hegamma_M2_Mis__910->GetXaxis()->SetTitleFont(22);
    h2_e4Hegamma_M2_Mis__910->GetYaxis()->SetLabelFont(22);
-   h2_e4Hegamma_M2_Mis__910->GetYaxis()->SetLabelSize(0.075);
+   h2_e4Hegamma_M2_Mis__910->GetYaxis()->SetLabelSize(0.065);
    h2_e4Hegamma_M2_Mis__910->GetYaxis()->SetTitleSize(0.075);
    h2_e4Hegamma_M2_Mis__910->GetYaxis()->SetTitleOffset(1.2);
    h2_e4Hegamma_M2_Mis__910->GetYaxis()->SetTitleFont(22);
@@ -1452,11 +1386,11 @@ void all_coh_exc_cuts()
    h_e4Hegamma_M2_Mis__911->SetLineWidth(2);
    h_e4Hegamma_M2_Mis__911->GetXaxis()->SetNdivisions(205);
    h_e4Hegamma_M2_Mis__911->GetXaxis()->SetLabelFont(22);
-   h_e4Hegamma_M2_Mis__911->GetXaxis()->SetLabelSize(0.075);
+   h_e4Hegamma_M2_Mis__911->GetXaxis()->SetLabelSize(0.070);
    h_e4Hegamma_M2_Mis__911->GetXaxis()->SetTitleSize(0.075);
    h_e4Hegamma_M2_Mis__911->GetXaxis()->SetTitleFont(22);
    h_e4Hegamma_M2_Mis__911->GetYaxis()->SetLabelFont(22);
-   h_e4Hegamma_M2_Mis__911->GetYaxis()->SetLabelSize(0.075);
+   h_e4Hegamma_M2_Mis__911->GetYaxis()->SetLabelSize(0.065);
    h_e4Hegamma_M2_Mis__911->GetYaxis()->SetTitleSize(0.075);
    h_e4Hegamma_M2_Mis__911->GetYaxis()->SetTitleOffset(1.2);
    h_e4Hegamma_M2_Mis__911->GetYaxis()->SetTitleFont(22);
@@ -1589,20 +1523,6 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_M2_Mis__912->SetMaximum(322.3);
    h2_e4Hegamma_M2_Mis__912->SetEntries(3557);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3557   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = -0.004137");
-   ptstats_LaTex = ptstats->AddText("Std Dev   = 0.01376");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_e4Hegamma_M2_Mis__912->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_e4Hegamma_M2_Mis__912);
    h2_e4Hegamma_M2_Mis__912->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -1611,11 +1531,11 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_M2_Mis__912->GetXaxis()->CenterTitle(true);
    h2_e4Hegamma_M2_Mis__912->GetXaxis()->SetNdivisions(505);
    h2_e4Hegamma_M2_Mis__912->GetXaxis()->SetLabelFont(22);
-   h2_e4Hegamma_M2_Mis__912->GetXaxis()->SetLabelSize(0.075);
-   h2_e4Hegamma_M2_Mis__912->GetXaxis()->SetTitleSize(0.09);
+   h2_e4Hegamma_M2_Mis__912->GetXaxis()->SetLabelSize(0.070);
+   h2_e4Hegamma_M2_Mis__912->GetXaxis()->SetTitleSize(0.08);
    h2_e4Hegamma_M2_Mis__912->GetXaxis()->SetTitleFont(22);
    h2_e4Hegamma_M2_Mis__912->GetYaxis()->SetLabelFont(22);
-   h2_e4Hegamma_M2_Mis__912->GetYaxis()->SetLabelSize(0.075);
+   h2_e4Hegamma_M2_Mis__912->GetYaxis()->SetLabelSize(0.065);
    h2_e4Hegamma_M2_Mis__912->GetYaxis()->SetTitleSize(0.075);
    h2_e4Hegamma_M2_Mis__912->GetYaxis()->SetTitleOffset(1.2);
    h2_e4Hegamma_M2_Mis__912->GetYaxis()->SetTitleFont(22);
@@ -1645,9 +1565,10 @@ void all_coh_exc_cuts()
    all_cus_4->SetFillColor(0);
    all_cus_4->SetBorderMode(0);
    all_cus_4->SetBorderSize(2);
-   all_cus_4->SetLeftMargin(0.2);
-   all_cus_4->SetRightMargin(0.05);
-   all_cus_4->SetBottomMargin(0.2);
+   all_cus_4->SetLeftMargin(0.1);
+   all_cus_4->SetRightMargin(0.04);
+   all_cus_4->SetBottomMargin(0.18);
+   all_cus_4->SetTopMargin(0.015);
    all_cus_4->SetFrameBorderMode(0);
    all_cus_4->SetFrameBorderMode(0);
    
@@ -1732,20 +1653,6 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_PT_Mis__913->SetMaximum(223.3);
    h2_e4Hegamma_PT_Mis__913->SetEntries(3464);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3464   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = 0.05577");
-   ptstats_LaTex = ptstats->AddText("Std Dev   = 0.03889");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_e4Hegamma_PT_Mis__913->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_e4Hegamma_PT_Mis__913);
    h2_e4Hegamma_PT_Mis__913->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -1754,11 +1661,11 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_PT_Mis__913->GetXaxis()->CenterTitle(true);
    h2_e4Hegamma_PT_Mis__913->GetXaxis()->SetNdivisions(505);
    h2_e4Hegamma_PT_Mis__913->GetXaxis()->SetLabelFont(22);
-   h2_e4Hegamma_PT_Mis__913->GetXaxis()->SetLabelSize(0.075);
-   h2_e4Hegamma_PT_Mis__913->GetXaxis()->SetTitleSize(0.09);
+   h2_e4Hegamma_PT_Mis__913->GetXaxis()->SetLabelSize(0.070);
+   h2_e4Hegamma_PT_Mis__913->GetXaxis()->SetTitleSize(0.08);
    h2_e4Hegamma_PT_Mis__913->GetXaxis()->SetTitleFont(22);
    h2_e4Hegamma_PT_Mis__913->GetYaxis()->SetLabelFont(22);
-   h2_e4Hegamma_PT_Mis__913->GetYaxis()->SetLabelSize(0.075);
+   h2_e4Hegamma_PT_Mis__913->GetYaxis()->SetLabelSize(0.065);
    h2_e4Hegamma_PT_Mis__913->GetYaxis()->SetTitleSize(0.075);
    h2_e4Hegamma_PT_Mis__913->GetYaxis()->SetTitleOffset(1.2);
    h2_e4Hegamma_PT_Mis__913->GetYaxis()->SetTitleFont(22);
@@ -1974,11 +1881,11 @@ void all_coh_exc_cuts()
    h_e4Hegamma_PT_Mis__914->SetEntries(17243);
    h_e4Hegamma_PT_Mis__914->SetLineWidth(2);
    h_e4Hegamma_PT_Mis__914->GetXaxis()->SetLabelFont(22);
-   h_e4Hegamma_PT_Mis__914->GetXaxis()->SetLabelSize(0.075);
+   h_e4Hegamma_PT_Mis__914->GetXaxis()->SetLabelSize(0.070);
    h_e4Hegamma_PT_Mis__914->GetXaxis()->SetTitleSize(0.075);
    h_e4Hegamma_PT_Mis__914->GetXaxis()->SetTitleFont(22);
    h_e4Hegamma_PT_Mis__914->GetYaxis()->SetLabelFont(22);
-   h_e4Hegamma_PT_Mis__914->GetYaxis()->SetLabelSize(0.075);
+   h_e4Hegamma_PT_Mis__914->GetYaxis()->SetLabelSize(0.065);
    h_e4Hegamma_PT_Mis__914->GetYaxis()->SetTitleSize(0.075);
    h_e4Hegamma_PT_Mis__914->GetYaxis()->SetTitleOffset(1.2);
    h_e4Hegamma_PT_Mis__914->GetYaxis()->SetTitleFont(22);
@@ -2069,20 +1976,6 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_PT_Mis__915->SetMaximum(223.3);
    h2_e4Hegamma_PT_Mis__915->SetEntries(3464);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3464   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = 0.05577");
-   ptstats_LaTex = ptstats->AddText("Std Dev   = 0.03889");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_e4Hegamma_PT_Mis__915->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_e4Hegamma_PT_Mis__915);
    h2_e4Hegamma_PT_Mis__915->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -2091,11 +1984,11 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_PT_Mis__915->GetXaxis()->CenterTitle(true);
    h2_e4Hegamma_PT_Mis__915->GetXaxis()->SetNdivisions(505);
    h2_e4Hegamma_PT_Mis__915->GetXaxis()->SetLabelFont(22);
-   h2_e4Hegamma_PT_Mis__915->GetXaxis()->SetLabelSize(0.075);
-   h2_e4Hegamma_PT_Mis__915->GetXaxis()->SetTitleSize(0.09);
+   h2_e4Hegamma_PT_Mis__915->GetXaxis()->SetLabelSize(0.070);
+   h2_e4Hegamma_PT_Mis__915->GetXaxis()->SetTitleSize(0.08);
    h2_e4Hegamma_PT_Mis__915->GetXaxis()->SetTitleFont(22);
    h2_e4Hegamma_PT_Mis__915->GetYaxis()->SetLabelFont(22);
-   h2_e4Hegamma_PT_Mis__915->GetYaxis()->SetLabelSize(0.075);
+   h2_e4Hegamma_PT_Mis__915->GetYaxis()->SetLabelSize(0.065);
    h2_e4Hegamma_PT_Mis__915->GetYaxis()->SetTitleSize(0.075);
    h2_e4Hegamma_PT_Mis__915->GetYaxis()->SetTitleOffset(1.2);
    h2_e4Hegamma_PT_Mis__915->GetYaxis()->SetTitleFont(22);
@@ -2120,9 +2013,10 @@ void all_coh_exc_cuts()
    all_cus_5->SetFillColor(0);
    all_cus_5->SetBorderMode(0);
    all_cus_5->SetBorderSize(2);
-   all_cus_5->SetLeftMargin(0.2);
-   all_cus_5->SetRightMargin(0.05);
-   all_cus_5->SetBottomMargin(0.2);
+   all_cus_5->SetLeftMargin(0.1);
+   all_cus_5->SetRightMargin(0.04);
+   all_cus_5->SetBottomMargin(0.18);
+   all_cus_5->SetTopMargin(0.015);
    all_cus_5->SetFrameBorderMode(0);
    all_cus_5->SetFrameBorderMode(0);
    
@@ -2277,20 +2171,6 @@ void all_coh_exc_cuts()
    h2_e4He_M2_Mis__916->SetMaximum(298.1);
    h2_e4He_M2_Mis__916->SetEntries(3560);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3560   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = -0.04484");
-   ptstats_LaTex = ptstats->AddText("Std Dev   = 0.3369");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_e4He_M2_Mis__916->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_e4He_M2_Mis__916);
    h2_e4He_M2_Mis__916->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -2299,11 +2179,11 @@ void all_coh_exc_cuts()
    h2_e4He_M2_Mis__916->GetXaxis()->CenterTitle(true);
    h2_e4He_M2_Mis__916->GetXaxis()->SetNdivisions(505);
    h2_e4He_M2_Mis__916->GetXaxis()->SetLabelFont(22);
-   h2_e4He_M2_Mis__916->GetXaxis()->SetLabelSize(0.075);
-   h2_e4He_M2_Mis__916->GetXaxis()->SetTitleSize(0.09);
+   h2_e4He_M2_Mis__916->GetXaxis()->SetLabelSize(0.070);
+   h2_e4He_M2_Mis__916->GetXaxis()->SetTitleSize(0.08);
    h2_e4He_M2_Mis__916->GetXaxis()->SetTitleFont(22);
    h2_e4He_M2_Mis__916->GetYaxis()->SetLabelFont(22);
-   h2_e4He_M2_Mis__916->GetYaxis()->SetLabelSize(0.075);
+   h2_e4He_M2_Mis__916->GetYaxis()->SetLabelSize(0.065);
    h2_e4He_M2_Mis__916->GetYaxis()->SetTitleSize(0.075);
    h2_e4He_M2_Mis__916->GetYaxis()->SetTitleOffset(1.2);
    h2_e4He_M2_Mis__916->GetYaxis()->SetTitleFont(22);
@@ -2519,11 +2399,11 @@ void all_coh_exc_cuts()
    h_e4He_M2_Mis__917->SetEntries(17243);
    h_e4He_M2_Mis__917->SetLineWidth(2);
    h_e4He_M2_Mis__917->GetXaxis()->SetLabelFont(22);
-   h_e4He_M2_Mis__917->GetXaxis()->SetLabelSize(0.075);
+   h_e4He_M2_Mis__917->GetXaxis()->SetLabelSize(0.070);
    h_e4He_M2_Mis__917->GetXaxis()->SetTitleSize(0.075);
    h_e4He_M2_Mis__917->GetXaxis()->SetTitleFont(22);
    h_e4He_M2_Mis__917->GetYaxis()->SetLabelFont(22);
-   h_e4He_M2_Mis__917->GetYaxis()->SetLabelSize(0.075);
+   h_e4He_M2_Mis__917->GetYaxis()->SetLabelSize(0.065);
    h_e4He_M2_Mis__917->GetYaxis()->SetTitleSize(0.075);
    h_e4He_M2_Mis__917->GetYaxis()->SetTitleOffset(1.2);
    h_e4He_M2_Mis__917->GetYaxis()->SetTitleFont(22);
@@ -2684,20 +2564,6 @@ void all_coh_exc_cuts()
    h2_e4He_M2_Mis__918->SetMaximum(298.1);
    h2_e4He_M2_Mis__918->SetEntries(3560);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3560   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = -0.04484");
-   ptstats_LaTex = ptstats->AddText("Std Dev   = 0.3369");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_e4He_M2_Mis__918->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_e4He_M2_Mis__918);
    h2_e4He_M2_Mis__918->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -2706,11 +2572,11 @@ void all_coh_exc_cuts()
    h2_e4He_M2_Mis__918->GetXaxis()->CenterTitle(true);
    h2_e4He_M2_Mis__918->GetXaxis()->SetNdivisions(505);
    h2_e4He_M2_Mis__918->GetXaxis()->SetLabelFont(22);
-   h2_e4He_M2_Mis__918->GetXaxis()->SetLabelSize(0.075);
-   h2_e4He_M2_Mis__918->GetXaxis()->SetTitleSize(0.09);
+   h2_e4He_M2_Mis__918->GetXaxis()->SetLabelSize(0.070);
+   h2_e4He_M2_Mis__918->GetXaxis()->SetTitleSize(0.08);
    h2_e4He_M2_Mis__918->GetXaxis()->SetTitleFont(22);
    h2_e4He_M2_Mis__918->GetYaxis()->SetLabelFont(22);
-   h2_e4He_M2_Mis__918->GetYaxis()->SetLabelSize(0.075);
+   h2_e4He_M2_Mis__918->GetYaxis()->SetLabelSize(0.065);
    h2_e4He_M2_Mis__918->GetYaxis()->SetTitleSize(0.075);
    h2_e4He_M2_Mis__918->GetYaxis()->SetTitleOffset(1.2);
    h2_e4He_M2_Mis__918->GetYaxis()->SetTitleFont(22);
@@ -2740,9 +2606,10 @@ void all_coh_exc_cuts()
    all_cus_6->SetFillColor(0);
    all_cus_6->SetBorderMode(0);
    all_cus_6->SetBorderSize(2);
-   all_cus_6->SetLeftMargin(0.2);
-   all_cus_6->SetRightMargin(0.05);
-   all_cus_6->SetBottomMargin(0.2);
+   all_cus_6->SetLeftMargin(0.1);
+   all_cus_6->SetRightMargin(0.04);
+   all_cus_6->SetBottomMargin(0.18);
+   all_cus_6->SetTopMargin(0.015);
    all_cus_6->SetFrameBorderMode(0);
    all_cus_6->SetFrameBorderMode(0);
    
@@ -2820,20 +2687,6 @@ void all_coh_exc_cuts()
    h2_egamma_M2_Mis_Coh__919->SetMaximum(238.7);
    h2_egamma_M2_Mis_Coh__919->SetEntries(3337);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3337   ");
-   ptstats_LaTex = ptstats->AddText("Mean  =  13.98");
-   ptstats_LaTex = ptstats->AddText("Std Dev   =    1.5");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_egamma_M2_Mis_Coh__919->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_egamma_M2_Mis_Coh__919);
    h2_egamma_M2_Mis_Coh__919->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -2842,11 +2695,11 @@ void all_coh_exc_cuts()
    h2_egamma_M2_Mis_Coh__919->GetXaxis()->CenterTitle(true);
    h2_egamma_M2_Mis_Coh__919->GetXaxis()->SetNdivisions(505);
    h2_egamma_M2_Mis_Coh__919->GetXaxis()->SetLabelFont(22);
-   h2_egamma_M2_Mis_Coh__919->GetXaxis()->SetLabelSize(0.075);
-   h2_egamma_M2_Mis_Coh__919->GetXaxis()->SetTitleSize(0.09);
+   h2_egamma_M2_Mis_Coh__919->GetXaxis()->SetLabelSize(0.070);
+   h2_egamma_M2_Mis_Coh__919->GetXaxis()->SetTitleSize(0.08);
    h2_egamma_M2_Mis_Coh__919->GetXaxis()->SetTitleFont(22);
    h2_egamma_M2_Mis_Coh__919->GetYaxis()->SetLabelFont(22);
-   h2_egamma_M2_Mis_Coh__919->GetYaxis()->SetLabelSize(0.075);
+   h2_egamma_M2_Mis_Coh__919->GetYaxis()->SetLabelSize(0.065);
    h2_egamma_M2_Mis_Coh__919->GetYaxis()->SetTitleSize(0.075);
    h2_egamma_M2_Mis_Coh__919->GetYaxis()->SetTitleOffset(1.2);
    h2_egamma_M2_Mis_Coh__919->GetYaxis()->SetTitleFont(22);
@@ -3062,11 +2915,11 @@ void all_coh_exc_cuts()
    h_egamma_M2_Mis_Coh__920->SetEntries(17243);
    h_egamma_M2_Mis_Coh__920->SetLineWidth(2);
    h_egamma_M2_Mis_Coh__920->GetXaxis()->SetLabelFont(22);
-   h_egamma_M2_Mis_Coh__920->GetXaxis()->SetLabelSize(0.075);
+   h_egamma_M2_Mis_Coh__920->GetXaxis()->SetLabelSize(0.070);
    h_egamma_M2_Mis_Coh__920->GetXaxis()->SetTitleSize(0.075);
    h_egamma_M2_Mis_Coh__920->GetXaxis()->SetTitleFont(22);
    h_egamma_M2_Mis_Coh__920->GetYaxis()->SetLabelFont(22);
-   h_egamma_M2_Mis_Coh__920->GetYaxis()->SetLabelSize(0.075);
+   h_egamma_M2_Mis_Coh__920->GetYaxis()->SetLabelSize(0.065);
    h_egamma_M2_Mis_Coh__920->GetYaxis()->SetTitleSize(0.075);
    h_egamma_M2_Mis_Coh__920->GetYaxis()->SetTitleOffset(1.2);
    h_egamma_M2_Mis_Coh__920->GetYaxis()->SetTitleFont(22);
@@ -3150,20 +3003,6 @@ void all_coh_exc_cuts()
    h2_egamma_M2_Mis_Coh__921->SetMaximum(238.7);
    h2_egamma_M2_Mis_Coh__921->SetEntries(3337);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3337   ");
-   ptstats_LaTex = ptstats->AddText("Mean  =  13.98");
-   ptstats_LaTex = ptstats->AddText("Std Dev   =    1.5");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_egamma_M2_Mis_Coh__921->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_egamma_M2_Mis_Coh__921);
    h2_egamma_M2_Mis_Coh__921->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -3172,11 +3011,11 @@ void all_coh_exc_cuts()
    h2_egamma_M2_Mis_Coh__921->GetXaxis()->CenterTitle(true);
    h2_egamma_M2_Mis_Coh__921->GetXaxis()->SetNdivisions(505);
    h2_egamma_M2_Mis_Coh__921->GetXaxis()->SetLabelFont(22);
-   h2_egamma_M2_Mis_Coh__921->GetXaxis()->SetLabelSize(0.075);
-   h2_egamma_M2_Mis_Coh__921->GetXaxis()->SetTitleSize(0.09);
+   h2_egamma_M2_Mis_Coh__921->GetXaxis()->SetLabelSize(0.070);
+   h2_egamma_M2_Mis_Coh__921->GetXaxis()->SetTitleSize(0.08);
    h2_egamma_M2_Mis_Coh__921->GetXaxis()->SetTitleFont(22);
    h2_egamma_M2_Mis_Coh__921->GetYaxis()->SetLabelFont(22);
-   h2_egamma_M2_Mis_Coh__921->GetYaxis()->SetLabelSize(0.075);
+   h2_egamma_M2_Mis_Coh__921->GetYaxis()->SetLabelSize(0.065);
    h2_egamma_M2_Mis_Coh__921->GetYaxis()->SetTitleSize(0.075);
    h2_egamma_M2_Mis_Coh__921->GetYaxis()->SetTitleOffset(1.2);
    h2_egamma_M2_Mis_Coh__921->GetYaxis()->SetTitleFont(22);
@@ -3206,9 +3045,10 @@ void all_coh_exc_cuts()
    all_cus_7->SetFillColor(0);
    all_cus_7->SetBorderMode(0);
    all_cus_7->SetBorderSize(2);
-   all_cus_7->SetLeftMargin(0.2);
-   all_cus_7->SetRightMargin(0.05);
-   all_cus_7->SetBottomMargin(0.2);
+   all_cus_7->SetLeftMargin(0.1);
+   all_cus_7->SetRightMargin(0.04);
+   all_cus_7->SetBottomMargin(0.18);
+   all_cus_7->SetTopMargin(0.015);
    all_cus_7->SetFrameBorderMode(0);
    all_cus_7->SetFrameBorderMode(0);
    
@@ -3330,20 +3170,6 @@ void all_coh_exc_cuts()
    h2_Theta_gammaX_Coh__922->SetMaximum(168.3);
    h2_Theta_gammaX_Coh__922->SetEntries(3464);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3464   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = 0.6706");
-   ptstats_LaTex = ptstats->AddText("Std Dev   =  0.502");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_Theta_gammaX_Coh__922->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_Theta_gammaX_Coh__922);
    h2_Theta_gammaX_Coh__922->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -3352,11 +3178,11 @@ void all_coh_exc_cuts()
    h2_Theta_gammaX_Coh__922->GetXaxis()->CenterTitle(true);
    h2_Theta_gammaX_Coh__922->GetXaxis()->SetNdivisions(505);
    h2_Theta_gammaX_Coh__922->GetXaxis()->SetLabelFont(22);
-   h2_Theta_gammaX_Coh__922->GetXaxis()->SetLabelSize(0.075);
-   h2_Theta_gammaX_Coh__922->GetXaxis()->SetTitleSize(0.09);
+   h2_Theta_gammaX_Coh__922->GetXaxis()->SetLabelSize(0.070);
+   h2_Theta_gammaX_Coh__922->GetXaxis()->SetTitleSize(0.08);
    h2_Theta_gammaX_Coh__922->GetXaxis()->SetTitleFont(22);
    h2_Theta_gammaX_Coh__922->GetYaxis()->SetLabelFont(22);
-   h2_Theta_gammaX_Coh__922->GetYaxis()->SetLabelSize(0.075);
+   h2_Theta_gammaX_Coh__922->GetYaxis()->SetLabelSize(0.065);
    h2_Theta_gammaX_Coh__922->GetYaxis()->SetTitleSize(0.075);
    h2_Theta_gammaX_Coh__922->GetYaxis()->SetTitleOffset(1.2);
    h2_Theta_gammaX_Coh__922->GetYaxis()->SetTitleFont(22);
@@ -3572,11 +3398,11 @@ void all_coh_exc_cuts()
    h_Theta_gammaX_Coh__923->SetEntries(17243);
    h_Theta_gammaX_Coh__923->SetLineWidth(2);
    h_Theta_gammaX_Coh__923->GetXaxis()->SetLabelFont(22);
-   h_Theta_gammaX_Coh__923->GetXaxis()->SetLabelSize(0.075);
+   h_Theta_gammaX_Coh__923->GetXaxis()->SetLabelSize(0.070);
    h_Theta_gammaX_Coh__923->GetXaxis()->SetTitleSize(0.075);
    h_Theta_gammaX_Coh__923->GetXaxis()->SetTitleFont(22);
    h_Theta_gammaX_Coh__923->GetYaxis()->SetLabelFont(22);
-   h_Theta_gammaX_Coh__923->GetYaxis()->SetLabelSize(0.075);
+   h_Theta_gammaX_Coh__923->GetYaxis()->SetLabelSize(0.065);
    h_Theta_gammaX_Coh__923->GetYaxis()->SetTitleSize(0.075);
    h_Theta_gammaX_Coh__923->GetYaxis()->SetTitleOffset(1.2);
    h_Theta_gammaX_Coh__923->GetYaxis()->SetTitleFont(22);
@@ -3704,20 +3530,6 @@ void all_coh_exc_cuts()
    h2_Theta_gammaX_Coh__924->SetMaximum(168.3);
    h2_Theta_gammaX_Coh__924->SetEntries(3464);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3464   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = 0.6706");
-   ptstats_LaTex = ptstats->AddText("Std Dev   =  0.502");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_Theta_gammaX_Coh__924->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_Theta_gammaX_Coh__924);
    h2_Theta_gammaX_Coh__924->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -3726,11 +3538,11 @@ void all_coh_exc_cuts()
    h2_Theta_gammaX_Coh__924->GetXaxis()->CenterTitle(true);
    h2_Theta_gammaX_Coh__924->GetXaxis()->SetNdivisions(505);
    h2_Theta_gammaX_Coh__924->GetXaxis()->SetLabelFont(22);
-   h2_Theta_gammaX_Coh__924->GetXaxis()->SetLabelSize(0.075);
-   h2_Theta_gammaX_Coh__924->GetXaxis()->SetTitleSize(0.09);
+   h2_Theta_gammaX_Coh__924->GetXaxis()->SetLabelSize(0.070);
+   h2_Theta_gammaX_Coh__924->GetXaxis()->SetTitleSize(0.08);
    h2_Theta_gammaX_Coh__924->GetXaxis()->SetTitleFont(22);
    h2_Theta_gammaX_Coh__924->GetYaxis()->SetLabelFont(22);
-   h2_Theta_gammaX_Coh__924->GetYaxis()->SetLabelSize(0.075);
+   h2_Theta_gammaX_Coh__924->GetYaxis()->SetLabelSize(0.065);
    h2_Theta_gammaX_Coh__924->GetYaxis()->SetTitleSize(0.075);
    h2_Theta_gammaX_Coh__924->GetYaxis()->SetTitleOffset(1.2);
    h2_Theta_gammaX_Coh__924->GetYaxis()->SetTitleFont(22);
@@ -3755,9 +3567,10 @@ void all_coh_exc_cuts()
    all_cus_8->SetFillColor(0);
    all_cus_8->SetBorderMode(0);
    all_cus_8->SetBorderSize(2);
-   all_cus_8->SetLeftMargin(0.2);
-   all_cus_8->SetRightMargin(0.05);
-   all_cus_8->SetBottomMargin(0.2);
+   all_cus_8->SetLeftMargin(0.1);
+   all_cus_8->SetRightMargin(0.04);
+   all_cus_8->SetBottomMargin(0.18);
+   all_cus_8->SetTopMargin(0.015);
    all_cus_8->SetFrameBorderMode(0);
    all_cus_8->SetFrameBorderMode(0);
    
@@ -3795,20 +3608,6 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_Px_Mis__925->SetMaximum(735.9);
    h2_e4Hegamma_Px_Mis__925->SetEntries(3225);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3225   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = -0.00347");
-   ptstats_LaTex = ptstats->AddText("Std Dev   = 0.04589");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_e4Hegamma_Px_Mis__925->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_e4Hegamma_Px_Mis__925);
    h2_e4Hegamma_Px_Mis__925->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -3817,11 +3616,11 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_Px_Mis__925->GetXaxis()->CenterTitle(true);
    h2_e4Hegamma_Px_Mis__925->GetXaxis()->SetNdivisions(505);
    h2_e4Hegamma_Px_Mis__925->GetXaxis()->SetLabelFont(22);
-   h2_e4Hegamma_Px_Mis__925->GetXaxis()->SetLabelSize(0.075);
-   h2_e4Hegamma_Px_Mis__925->GetXaxis()->SetTitleSize(0.09);
+   h2_e4Hegamma_Px_Mis__925->GetXaxis()->SetLabelSize(0.070);
+   h2_e4Hegamma_Px_Mis__925->GetXaxis()->SetTitleSize(0.08);
    h2_e4Hegamma_Px_Mis__925->GetXaxis()->SetTitleFont(22);
    h2_e4Hegamma_Px_Mis__925->GetYaxis()->SetLabelFont(22);
-   h2_e4Hegamma_Px_Mis__925->GetYaxis()->SetLabelSize(0.075);
+   h2_e4Hegamma_Px_Mis__925->GetYaxis()->SetLabelSize(0.065);
    h2_e4Hegamma_Px_Mis__925->GetYaxis()->SetTitleSize(0.075);
    h2_e4Hegamma_Px_Mis__925->GetYaxis()->SetTitleOffset(1.2);
    h2_e4Hegamma_Px_Mis__925->GetYaxis()->SetTitleFont(22);
@@ -3964,11 +3763,11 @@ void all_coh_exc_cuts()
    h_e4Hegamma_Px_Mis__926->SetEntries(17243);
    h_e4Hegamma_Px_Mis__926->SetLineWidth(2);
    h_e4Hegamma_Px_Mis__926->GetXaxis()->SetLabelFont(22);
-   h_e4Hegamma_Px_Mis__926->GetXaxis()->SetLabelSize(0.075);
+   h_e4Hegamma_Px_Mis__926->GetXaxis()->SetLabelSize(0.070);
    h_e4Hegamma_Px_Mis__926->GetXaxis()->SetTitleSize(0.075);
    h_e4Hegamma_Px_Mis__926->GetXaxis()->SetTitleFont(22);
    h_e4Hegamma_Px_Mis__926->GetYaxis()->SetLabelFont(22);
-   h_e4Hegamma_Px_Mis__926->GetYaxis()->SetLabelSize(0.075);
+   h_e4Hegamma_Px_Mis__926->GetYaxis()->SetLabelSize(0.065);
    h_e4Hegamma_Px_Mis__926->GetYaxis()->SetTitleSize(0.075);
    h_e4Hegamma_Px_Mis__926->GetYaxis()->SetTitleOffset(1.2);
    h_e4Hegamma_Px_Mis__926->GetYaxis()->SetTitleFont(22);
@@ -4012,20 +3811,6 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_Px_Mis__927->SetMaximum(735.9);
    h2_e4Hegamma_Px_Mis__927->SetEntries(3225);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3225   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = -0.00347");
-   ptstats_LaTex = ptstats->AddText("Std Dev   = 0.04589");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_e4Hegamma_Px_Mis__927->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_e4Hegamma_Px_Mis__927);
    h2_e4Hegamma_Px_Mis__927->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -4034,11 +3819,11 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_Px_Mis__927->GetXaxis()->CenterTitle(true);
    h2_e4Hegamma_Px_Mis__927->GetXaxis()->SetNdivisions(505);
    h2_e4Hegamma_Px_Mis__927->GetXaxis()->SetLabelFont(22);
-   h2_e4Hegamma_Px_Mis__927->GetXaxis()->SetLabelSize(0.075);
-   h2_e4Hegamma_Px_Mis__927->GetXaxis()->SetTitleSize(0.09);
+   h2_e4Hegamma_Px_Mis__927->GetXaxis()->SetLabelSize(0.070);
+   h2_e4Hegamma_Px_Mis__927->GetXaxis()->SetTitleSize(0.08);
    h2_e4Hegamma_Px_Mis__927->GetXaxis()->SetTitleFont(22);
    h2_e4Hegamma_Px_Mis__927->GetYaxis()->SetLabelFont(22);
-   h2_e4Hegamma_Px_Mis__927->GetYaxis()->SetLabelSize(0.075);
+   h2_e4Hegamma_Px_Mis__927->GetYaxis()->SetLabelSize(0.065);
    h2_e4Hegamma_Px_Mis__927->GetYaxis()->SetTitleSize(0.075);
    h2_e4Hegamma_Px_Mis__927->GetYaxis()->SetTitleOffset(1.2);
    h2_e4Hegamma_Px_Mis__927->GetYaxis()->SetTitleFont(22);
@@ -4058,9 +3843,10 @@ void all_coh_exc_cuts()
    all_cus_9->SetFillColor(0);
    all_cus_9->SetBorderMode(0);
    all_cus_9->SetBorderSize(2);
-   all_cus_9->SetLeftMargin(0.2);
-   all_cus_9->SetRightMargin(0.05);
-   all_cus_9->SetBottomMargin(0.2);
+   all_cus_9->SetLeftMargin(0.1);
+   all_cus_9->SetRightMargin(0.04);
+   all_cus_9->SetBottomMargin(0.18);
+   all_cus_9->SetTopMargin(0.015);
    all_cus_9->SetFrameBorderMode(0);
    all_cus_9->SetFrameBorderMode(0);
    
@@ -4096,20 +3882,6 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_Py_Mis__928->SetMaximum(765.6);
    h2_e4Hegamma_Py_Mis__928->SetEntries(3225);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3225   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = -0.002569");
-   ptstats_LaTex = ptstats->AddText("Std Dev   = 0.03928");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_e4Hegamma_Py_Mis__928->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_e4Hegamma_Py_Mis__928);
    h2_e4Hegamma_Py_Mis__928->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -4118,11 +3890,11 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_Py_Mis__928->GetXaxis()->CenterTitle(true);
    h2_e4Hegamma_Py_Mis__928->GetXaxis()->SetNdivisions(505);
    h2_e4Hegamma_Py_Mis__928->GetXaxis()->SetLabelFont(22);
-   h2_e4Hegamma_Py_Mis__928->GetXaxis()->SetLabelSize(0.075);
-   h2_e4Hegamma_Py_Mis__928->GetXaxis()->SetTitleSize(0.09);
+   h2_e4Hegamma_Py_Mis__928->GetXaxis()->SetLabelSize(0.070);
+   h2_e4Hegamma_Py_Mis__928->GetXaxis()->SetTitleSize(0.08);
    h2_e4Hegamma_Py_Mis__928->GetXaxis()->SetTitleFont(22);
    h2_e4Hegamma_Py_Mis__928->GetYaxis()->SetLabelFont(22);
-   h2_e4Hegamma_Py_Mis__928->GetYaxis()->SetLabelSize(0.075);
+   h2_e4Hegamma_Py_Mis__928->GetYaxis()->SetLabelSize(0.065);
    h2_e4Hegamma_Py_Mis__928->GetYaxis()->SetTitleSize(0.075);
    h2_e4Hegamma_Py_Mis__928->GetYaxis()->SetTitleOffset(1.2);
    h2_e4Hegamma_Py_Mis__928->GetYaxis()->SetTitleFont(22);
@@ -4264,11 +4036,11 @@ void all_coh_exc_cuts()
    h_e4Hegamma_Py_Mis__929->SetEntries(17243);
    h_e4Hegamma_Py_Mis__929->SetLineWidth(2);
    h_e4Hegamma_Py_Mis__929->GetXaxis()->SetLabelFont(22);
-   h_e4Hegamma_Py_Mis__929->GetXaxis()->SetLabelSize(0.075);
+   h_e4Hegamma_Py_Mis__929->GetXaxis()->SetLabelSize(0.070);
    h_e4Hegamma_Py_Mis__929->GetXaxis()->SetTitleSize(0.075);
    h_e4Hegamma_Py_Mis__929->GetXaxis()->SetTitleFont(22);
    h_e4Hegamma_Py_Mis__929->GetYaxis()->SetLabelFont(22);
-   h_e4Hegamma_Py_Mis__929->GetYaxis()->SetLabelSize(0.075);
+   h_e4Hegamma_Py_Mis__929->GetYaxis()->SetLabelSize(0.065);
    h_e4Hegamma_Py_Mis__929->GetYaxis()->SetTitleSize(0.075);
    h_e4Hegamma_Py_Mis__929->GetYaxis()->SetTitleOffset(1.2);
    h_e4Hegamma_Py_Mis__929->GetYaxis()->SetTitleFont(22);
@@ -4310,20 +4082,6 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_Py_Mis__930->SetMaximum(765.6);
    h2_e4Hegamma_Py_Mis__930->SetEntries(3225);
    
-   ptstats = new TPaveStats(0.55,0.65,0.9,0.9,"brNDC");
-   ptstats->SetName("stats");
-   ptstats->SetBorderSize(1);
-   ptstats->SetFillColor(0);
-   ptstats->SetTextAlign(12);
-   ptstats->SetTextFont(42);
-   ptstats_LaTex = ptstats->AddText("Entries = 3225   ");
-   ptstats_LaTex = ptstats->AddText("Mean  = -0.002569");
-   ptstats_LaTex = ptstats->AddText("Std Dev   = 0.03928");
-   ptstats->SetOptStat(1110);
-   ptstats->SetOptFit(111);
-   ptstats->Draw();
-   h2_e4Hegamma_Py_Mis__930->GetListOfFunctions()->Add(ptstats);
-   ptstats->SetParent(h2_e4Hegamma_Py_Mis__930);
    h2_e4Hegamma_Py_Mis__930->SetFillColor(40);
 
    ci = TColor::GetColor("#000099");
@@ -4332,11 +4090,11 @@ void all_coh_exc_cuts()
    h2_e4Hegamma_Py_Mis__930->GetXaxis()->CenterTitle(true);
    h2_e4Hegamma_Py_Mis__930->GetXaxis()->SetNdivisions(505);
    h2_e4Hegamma_Py_Mis__930->GetXaxis()->SetLabelFont(22);
-   h2_e4Hegamma_Py_Mis__930->GetXaxis()->SetLabelSize(0.075);
-   h2_e4Hegamma_Py_Mis__930->GetXaxis()->SetTitleSize(0.09);
+   h2_e4Hegamma_Py_Mis__930->GetXaxis()->SetLabelSize(0.070);
+   h2_e4Hegamma_Py_Mis__930->GetXaxis()->SetTitleSize(0.08);
    h2_e4Hegamma_Py_Mis__930->GetXaxis()->SetTitleFont(22);
    h2_e4Hegamma_Py_Mis__930->GetYaxis()->SetLabelFont(22);
-   h2_e4Hegamma_Py_Mis__930->GetYaxis()->SetLabelSize(0.075);
+   h2_e4Hegamma_Py_Mis__930->GetYaxis()->SetLabelSize(0.065);
    h2_e4Hegamma_Py_Mis__930->GetYaxis()->SetTitleSize(0.075);
    h2_e4Hegamma_Py_Mis__930->GetYaxis()->SetTitleOffset(1.2);
    h2_e4Hegamma_Py_Mis__930->GetYaxis()->SetTitleFont(22);
