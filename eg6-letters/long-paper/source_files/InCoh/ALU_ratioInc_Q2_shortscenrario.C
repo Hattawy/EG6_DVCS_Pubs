@@ -130,7 +130,7 @@ void ALU_ratioInc_Q2_shortscenrario()
    leg->SetFillStyle(1001);
    TLegendEntry *entry=leg->AddEntry("gre","CLAS (This work)","P");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("graphS","Fucini et al. [37]","L");
+   entry=leg->AddEntry("graphS","Fucini et al. [40]","L");
    entry->SetLineStyle(9);
    entry->SetLineWidth(2);
    entry->SetLineColor(6);

@@ -235,11 +235,11 @@ void ALU_ratioInc_x_shortscenrario()
    entry->SetTextFont(42);
    entry=leg->AddEntry("Graph2","Liuti et al. (low -t) [29]","L");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph4","Guzey et al. [34]","L");
+   entry=leg->AddEntry("Graph4","Guzey et al. [37]","L");
    entry->SetTextFont(42);
    entry=leg->AddEntry("Graph3","Liuti et al. (high -t) [29]","L");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("GraphS","Fucini et al. [37]","L");
+   entry=leg->AddEntry("GraphS","Fucini et al. [40]","L");
    entry->SetLineStyle(9);
    entry->SetLineWidth(2);
    entry->SetLineColor(6);

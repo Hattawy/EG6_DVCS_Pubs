@@ -97,14 +97,14 @@ void ALU_90_p_vs_t_shortscenrario()
    0.490,
    1.11 };
    Double_t _sy1[4] = {
-   0.1455,
-   0.1644,
-   0.1902,
-   0.1728};
-// 0.140,
-// 0.155,
-// 0.173,
-// 0.165};
+// 0.1455,
+// 0.1644,
+// 0.1902,
+// 0.1728};
+   0.140,
+   0.155,
+   0.173,
+   0.165};
    TGraph *graphS = new TGraph(4,_sx1,_sy1);
    graphS->SetLineStyle(9);
    graphS->SetLineWidth(2);
@@ -181,7 +181,11 @@ void ALU_90_p_vs_t_shortscenrario()
    0.0997915,
    0.1352,
    0.199169,
-   0.243986,
+   0.243986,  
+  
+  
+  
+
    0.273819,
    0.29121,
    0.298917,
@@ -302,7 +306,7 @@ void ALU_90_p_vs_t_shortscenrario()
    entry=leg->AddEntry("Graph1","HERMES [10]","P");
    entry=leg->AddEntry("Graph3","Liuti et al. (low x_{B}) [29]","L");
    entry=leg->AddEntry("Graph4","Liuti et al. (high x_{B}) [29]","L");
-   entry=leg->AddEntry("GraphS","Fucini et al. [37]","L");
+   entry=leg->AddEntry("GraphS","Fucini et al. [40]","L");
    entry->SetLineStyle(9);
    entry->SetLineWidth(2);
    entry->SetLineColor(6);

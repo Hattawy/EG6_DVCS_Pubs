@@ -142,14 +142,14 @@ void ALU_90_p_vs_x_shortscenrario()
    0.287,
    0.390};
    Double_t _sy1[4] = {
-   0.2084,
-   0.2003,
-   0.1847,
-   0.1625};
-// 0.192,
-// 0.185,
-// 0.169,
-// 0.147};
+// 0.2084,
+// 0.2003,
+// 0.1847,
+// 0.1625};
+   0.192,
+   0.185,
+   0.169,
+   0.147};
    TGraph *graphS = new TGraph(4,_sx1,_sy1);
    graphS->SetLineStyle(9);
    graphS->SetLineWidth(2);
@@ -214,7 +214,7 @@ void ALU_90_p_vs_x_shortscenrario()
    entry->SetTextFont(42);
    entry=leg->AddEntry("Graph2","Liuti et al. (high -t) [29]","L");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("GraphS","Fucini et al. [37]","L");
+   entry=leg->AddEntry("GraphS","Fucini et al. [40]","L");
    entry->SetLineStyle(9);
    entry->SetLineWidth(2);
    entry->SetLineColor(6);
