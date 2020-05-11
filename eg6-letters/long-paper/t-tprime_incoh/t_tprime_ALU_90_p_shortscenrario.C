@@ -20,14 +20,14 @@ void t_tprime_ALU_90_p_shortscenrario()
    Cann_1->SetFillColor(0);
    Cann_1->SetBorderMode(0);
    Cann_1->SetBorderSize(2);
-   Cann_1->SetLeftMargin(0.3012048);
+   Cann_1->SetLeftMargin(0.2012048);
    Cann_1->SetRightMargin(0);
    Cann_1->SetTopMargin(0);
    Cann_1->SetBottomMargin(0.255814);
    Cann_1->SetFrameBorderMode(0);
    Cann_1->SetFrameBorderMode(0);
    
-   TH2F *HALU_p_vs_Q2__1 = new TH2F("HALU_p_vs_Q2__1","",100,0.5,4.5,100,-0.1,0.5);
+   TH2F *HALU_p_vs_Q2__1 = new TH2F("HALU_p_vs_Q2__1","",100,0.8,3.8,100,-0.05,0.35);
    HALU_p_vs_Q2__1->SetStats(0);
 
    Int_t ci;      // for color index setting
@@ -217,7 +217,7 @@ void t_tprime_ALU_90_p_shortscenrario()
    
    graph->Draw("f");
    
-   TLegend *leg = new TLegend(0.7,0.85,0.99,0.99,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.65,0.82,0.99,0.99,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetTextSize(0.05);
    leg->SetLineColor(1);
@@ -225,7 +225,7 @@ void t_tprime_ALU_90_p_shortscenrario()
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
-   TLegendEntry *entry=leg->AddEntry("Graph0","bins in t","P");
+   TLegendEntry *entry=leg->AddEntry("Graph0","t definition","P");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
@@ -235,7 +235,7 @@ void t_tprime_ALU_90_p_shortscenrario()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph1","bins in t'","P");
+   entry=leg->AddEntry("Graph1","t' definition","P");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
@@ -244,7 +244,7 @@ void t_tprime_ALU_90_p_shortscenrario()
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
    leg->Draw();
-   TLine *line = new TLine(0.5,0,4.5,0);
+   TLine *line = new TLine(0.8,0,3.8,0);
    line->SetLineStyle(7);
    line->Draw();
    Cann_1->Modified();
@@ -265,7 +265,7 @@ void t_tprime_ALU_90_p_shortscenrario()
    Cann_2->SetFrameBorderMode(0);
    Cann_2->SetFrameBorderMode(0);
    
-   TH2F *HALU_p_vs_x__2 = new TH2F("HALU_p_vs_x__2","",100,-0.02,0.7,100,-0.1,0.5);
+   TH2F *HALU_p_vs_x__2 = new TH2F("HALU_p_vs_x__2","",100,0.07,0.53,100,-0.05,0.35);
    HALU_p_vs_x__2->SetStats(0);
 
    ci = TColor::GetColor("#000099");
@@ -452,37 +452,10 @@ void t_tprime_ALU_90_p_shortscenrario()
    graph->SetHistogram(Graph_Graph2);
    
    graph->Draw("f");
-   line = new TLine(0,0,0.7,0);
+   line = new TLine(0.07,0,0.53,0);
    line->SetLineStyle(7);
    line->Draw();
    
-   leg = new TLegend(0.7,0.85,0.99,0.99,NULL,"brNDC");
-   leg->SetBorderSize(1);
-   leg->SetTextSize(0.05);
-   leg->SetLineColor(1);
-   leg->SetLineStyle(1);
-   leg->SetLineWidth(1);
-   leg->SetFillColor(0);
-   leg->SetFillStyle(1001);
-   entry=leg->AddEntry("Graph0","bins in t","P");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
-
-   ci = TColor::GetColor("#ff0000");
-   entry->SetMarkerColor(ci);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1.5);
-   entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph0","bins in t'","P");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1.5);
-   entry->SetTextFont(42);
-   leg->Draw();
    Cann_2->Modified();
    Cann->cd();
   
@@ -501,7 +474,7 @@ void t_tprime_ALU_90_p_shortscenrario()
    Cann_3->SetFrameBorderMode(0);
    Cann_3->SetFrameBorderMode(0);
    
-   TH2F *HALU_p_vs_t__3 = new TH2F("HALU_p_vs_t__3","",100,-0.03,1.2,100,-0.1,0.5);
+   TH2F *HALU_p_vs_t__3 = new TH2F("HALU_p_vs_t__3","",100,-0.1,1.4,100,-0.05,0.35);
    HALU_p_vs_t__3->SetStats(0);
 
    ci = TColor::GetColor("#000099");
@@ -688,37 +661,10 @@ void t_tprime_ALU_90_p_shortscenrario()
    graph->SetHistogram(Graph_Graph3);
    
    graph->Draw("f");
-   line = new TLine(0,0,1.2,0);
+   line = new TLine(-0.1,0,1.4,0);
    line->SetLineStyle(7);
    line->Draw();
    
-   leg = new TLegend(0.7,0.85,0.99,0.99,NULL,"brNDC");
-   leg->SetBorderSize(1);
-   leg->SetTextSize(0.05);
-   leg->SetLineColor(1);
-   leg->SetLineStyle(1);
-   leg->SetLineWidth(1);
-   leg->SetFillColor(0);
-   leg->SetFillStyle(1001);
-   entry=leg->AddEntry("Graph0","bins in t","P");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
-
-   ci = TColor::GetColor("#ff0000");
-   entry->SetMarkerColor(ci);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1.5);
-   entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph0","bins in t'","P");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1.5);
-   entry->SetTextFont(42);
-   leg->Draw();
    Cann_3->Modified();
    Cann->cd();
    Cann->Modified();
