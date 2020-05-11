@@ -1,10 +1,12 @@
-\documentclass[aps,prc,preprint,superscriptaddress]{revtex4}
+\documentclass{article}
+\usepackage[left=3.5cm,right=2.5cm,top=2cm,bottom=2cm,includefoot,includehead,headheight=15pt]{geometry}
+\usepackage{lineno}
+%\documentclass[aps,prc,preprint,superscriptaddress]{revtex4}
 %\usepackage{amsmath,amssymb}             % AMS Math
 %\usepackage[francais]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern,textcomp}
-%\usepackage[left=3.5cm,right=2.5cm,top=2cm,bottom=2cm,includefoot,includehead,headheight=15pt]{geometry}
 \usepackage{setspace}
 \usepackage{microtype}
 \usepackage{epigraph}
@@ -16,14 +18,25 @@
 \usepackage{array}
 \usepackage{amsmath} 
 
+%TODO
+\let\oldequation\equation
+\let\oldendequation\endequation
+
+\renewenvironment{equation}
+  {\linenomathNonumbers\oldequation}
+  {\oldendequation\endlinenomath}
+
 \begin{document}
 
 %Title of paper
 \title{Measurement of deeply virtual Compton scattering off Helium-4 with CLAS at Jefferson Lab}
 
-\input author_list.tex
+%\input author_list.tex
 
 \date{\today}
+%TODO
+\maketitle
+\linenumbers
 
 \begin{abstract}
 Measurements of the beam-spin asymmetry in the deeply virtual Compton 
@@ -44,9 +57,9 @@ H_A$, leading the way toward 3D imaging of the partonic structure of nuclei.
 \end{abstract}
 
 % insert suggested PACS numbers in braces on next line
-\pacs{}
+%\pacs{}
 
-\maketitle
+%\maketitle
 
 \section{Introduction}
 
@@ -692,13 +705,10 @@ which is the correct definition with the slightly poorer resolution.
 
 \begin{figure}[tbp!]
 \center
-\includegraphics[width=7.4cm]{fig3/ALU_90_p_vs_Q2_tcomp.pdf}
-\includegraphics[width=7.4cm]{fig3/ALU_90_p_vs_t_tcomp.pdf}
-%\includegraphics[width=7cm]{fig3/ALU_90_p_vs_x_shortscenrario.pdf}
+\includegraphics[width=15cm]{fig3/t_tprime_ALU_90_p_shortscenrario.pdf}
 	\caption{The BSA at 90° ($A_{LU}^{Incoh} (90^\circ)$) as a
-	function of $Q^2$ and $-t$, using the photon based $t$ definition (empty red)
-	and the proton based $t^\prime$ definition (full black).}
-	%TODO we could remove HERMES and the models on these
+	function of $Q^2$, $x_{B}$ and $-t$, using the photon based $t$ definition (red)
+	and the proton based $t^\prime$ definition (black).}
 \label{fig:ttpComp}
 \end{figure}
 
@@ -888,7 +898,9 @@ A future experimental program using tagging at the upgraded CLAS12 detector is
 planned to address this question in the coming years by using a new recoil detector 
 design~\cite{Armstrong:2017zcm}.
 
-\begin{acknowledgments}
+%TODO
+\section{Acknowledgments}
+%\begin{acknowledgments}
 The authors acknowledge the staff of the Accelerator and Physics Divisions at 
 the Thomas Jefferson National Accelerator Facility who made this experiment 
 possible. This work was supported in part by the Chilean Comisi\'on Nacional de 
@@ -905,7 +917,7 @@ the European Research Council (ERC) under the European Union’s Horizon 2020
 research and innovation programme (Grant agreement No. 804480). The Southeastern Universities Research 
 Association operates the Thomas Jefferson National Accelerator Facility for the 
 United States Department of Energy under Contract No. DE-AC05-06OR23177.
-\end{acknowledgments}
+%\end{acknowledgments}
 
 \appendix
 \section{Expressions for the BSA of the coherent DVCS}
@@ -941,6 +953,7 @@ c_0^{BH} = & \bigg[ & \left\{ {(2-y)}^2 + y^2{(1+\epsilon^2)}^2 \right\}
 \right\} \nonumber \\
 & \phantom{\bigg[} & + 2 \epsilon^2 \left\{ 4(1-y)(3+2\epsilon^2) + y^2(2-\epsilon^4) 
 \right\} - 4 x_A^2{(2-y)}^2 (2+\epsilon^2) \frac{t}{Q^2} \nonumber \\
+pdflatex prc-dvcshelium.tex
 & \phantom{\bigg[} & + 8 K^2 \frac{\epsilon^2 Q^2}{t} \,\,\,\,\,\,\, \bigg] F_A^2(t)  \\
 c_1^{BH} = & \phantom{\bigg[} & -8 (2-y) K \left\{ 2 x_A + \epsilon^2 - 
 \frac{\epsilon^2 Q^2}{t} \right\} F_A^2(t)  \\
@@ -1295,6 +1308,8 @@ with
 \end{table}
 
 % Create the reference section using BibTeX:
+%TODO
+\bibliographystyle{unsrt}
 \bibliography{hadro.bib}
 
 \end{document}
