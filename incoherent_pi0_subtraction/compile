@@ -1,0 +1,10 @@
+#! /bin/bash
+
+./Clean
+
+pdflatex incoherent_pi0.tex
+pdflatex incoherent_pi0.tex
+
+rm incoherent_pi0.aux incoherent_pi0.bbl incoherent_pi0.blg incoherent_pi0.log incoherent_pi0.out incoherent_pi0.maf 
+rm incoherent_pi0.mtc incoherent_pi0.mtc1 incoherent_pi0.nlo
+rm formatAndDefs.aux
