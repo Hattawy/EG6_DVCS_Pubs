@@ -1,0 +1,10 @@
+#! /bin/bash
+
+pdflatex AnswerAdHoc.tex
+bibtex   AnswerAdHoc
+pdflatex AnswerAdHoc.tex
+pdflatex AnswerAdHoc.tex
+
+rm AnswerAdHoc.aux AnswerAdHoc.bbl AnswerAdHoc.blg AnswerAdHoc.log AnswerAdHoc.out AnswerAdHoc.maf 
+rm AnswerAdHoc.mtc* AnswerAdHoc.mtc1 AnswerAdHoc.nlo
+rm formatAndDefs.aux

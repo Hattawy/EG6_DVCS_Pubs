@@ -1,0 +1,139 @@
+
+%\documentclass[a4paper,11pt,twoside]{ThesisStyle}
+\documentclass[a4paper,11pt,twoside]{article}
+
+\title{Answer to comments from the Ad-hoc rewiew committee \\
+ Measurement of deeply virtual Compton
+scattering off Helium-4 with CLAS at Jefferson Lab}
+
+
+\date{\today}
+\include{formatAndDefs}
+
+\begin{document}
+
+\maketitle
+
+\section*{}
+
+The committee met on July 2, 2020, to discuss our concerns about the manuscript. We are separating out
+our comments on English, wording, typographical errors, etc., as helpful suggestions for you, which do not need
+any reponse. However, there are a few areas concern where we would like a response before we can approve the
+manuscript. In some cases, we would appreciate a direct answer or some clarifying information. In others, we
+recommend changes to the manuscript to make it more clear and easier to read. In any case, please note your
+reponse and any manuscript changes in a written document in addition to any discussion between the committee
+and the authors by e-mail, so that the response can be preserved in the official record.
+
+\begin{enumerate}
+\item  As this is a long paper, giving more details about two published letters, we'd appreciate some statement as
+to whether or not anything in the analysis has changed between this paper and the two previous papers? Did
+the systematic error decrease? Did the central values of the results move in any case more than 1$\sigma$ of their
+former error. Perhaps it would be good to state the changes/improvements achieved in this new publication.
+
+   \textcolor{blue}{There was no change to the results. The statement at the end of the second paragraph
+clearly states that we are giving more details and do not mention any change or new analysis.}
+
+\item  We have concerns about how you describe your approach to the $\pi^0$ contamination, especially in the incoherent
+channel.
+\begin{enumerate}
+\item In Figs. 14 and 15, bottom right panels, what is the definition of the $\phi$ angle? Is this the $\phi$ angle of the
+$\pi^0$ ?
+
+   \textcolor{blue}{Yes.}
+
+\item What kind of input distributions went into the $\pi^0$ generation to produce the $\phi$-dependence of Figs. 14
+and 15.
+
+   \textcolor{blue}{This is given in eq. 3.6 and tab. 3.1 of the analysis note, we decided not to go to this level 
+   of details.}
+
+\item We feel that it would be more useful to see the $\phi$ distribution calculated (from simulation) from the
+single detected photons, i.e., what the $\phi$-distribution of your actual background looks like.
+
+   \textcolor{blue}{the intent of this figure is comparing the simulation to the real data. What you propose is 
+different and would show the shape of the background. We do not have a way to show this background from experimental 
+data. We provided some of this information by email, but are not convinced it is a useful addition. The document is
+already going into a lot of technical details already.}
+
+\item In lines 280-282, you write "To make the correction on the DVCS BSA, we assume that the exclusive $\pi^0$
+production has no such asymmetry. This has been checked with the exclusive $\pi^0$ production data, for
+which no significant level of BSA was measured."
+There are couple of issues here. First, this claim is contradicted by CLAS data on protons, for example
+https://arxiv.org/pdf/0711.4736.pdf, which observed 5-10\% BSA over a wide kinematic range.
+Second, even if you check with your own exclusive $\pi^0$ data and see no BSA, this claim is only so good as
+the precision of your check, and there must be some systematic uncertainty associated with the possibility
+of a BSA below your ability to detect. This needs to be explained in the paper.
+
+   \textcolor{blue}{The results are not contradictory, our target is half proton half neutron and will experience,
+at least, some smearings from nuclear effects. There is clearly no solid ground to build a correction from the 
+existing data. Moreover, our own measurement shows results consistent with 0, so if we were to make a correction
+it would be very small. On your second point, there is indeed
+a systematic error associated with the $\pi^0$ substraction as specified in the Tab. 1. We clarified in the text that 
+this correction includes a possible undetected asymmetry in the exclusive $\pi^0$ data.}
+
+\item It would be helpful for you to write a few words explaining the differences in the assumed $\pi^0$ distributions
+for the coherent and incoherent cases.
+
+   \textcolor{blue}{There are no assumptions on this, we adjusted the parameters to fit the measured distributions.
+We clarify this point in the text of the paper.}
+
+\end{enumerate}
+
+\item  Regarding the final state interaction discussion starting at approximately line 100, the issue is a nucleonic
+final state interaction issue, and we are not sure why DIS is mentioned here as a reference. There must be
+people who spent their time investigating the A(e, e 0 p)X nucleonic final state calculations, for example, that
+might inform us on these effects. Perhaps adding a more relevant reference would help.
+   \textcolor{blue}{...}
+
+\item  In Section 4.1, your choice to use the present tense here is quite jarring, especially since you don't make a
+distinction between the original CLAS, the upgraded CLAS-12 detector. Please consider switching to past
+tense here and making that distinction explicit. Furthermore, it would be good to state that these data came
+from the EG6 run period, and give the year that they were collected.
+   \textcolor{blue}{...}
+
+5. Line 147: "Its historic use to measure DVCS in many different configurations made it an ideal place for this
+new DVCS measurement."
+This is not an informative claim. CLAS can be ideal for DVCS for many reasons, but you're pretty much
+giving a tautology here.
+   \textcolor{blue}{The information is that CLAS has been used for other DVCS measurements in the past. It seems
+rather relevant when showing results for a new DVCS channel.}
+
+\item  Section 5.1: "In particular, it serves for the identification of the protons."
+Are you referring to the time-of-flight detection of the electron or the proton? Perhaps separate sections for
+electron ID and proton ID are warranted. Furthermore, you have no section on the ID of 4 He in the RTPC.
+We know that this is covered in the RTPC NIM, but a paragraph would be nice.
+   \textcolor{blue}{...}
+
+\item  Line 238: "In principle, a selection based on two or three variables can be used to guaranty the exclusivity of
+the process."
+In exclusive DVCS, you measure the momentum vectors of 3 particles of known ID, i.e. 9 quantities. Exclu-
+sivity requires both energy and momentum conservation, i.e. 4 constraints. Where do "2 or 3" come from?
+That is a vague statement.
+   \textcolor{blue}{This is incorrect, 1 constraint is enough, you can ensure exclusivity by only cutting on missing 
+energy, if it is 0 the process is exclusive. Due to the effects of resolution this is usually never a good solution
+and 2-3 variables are used, often mass and missing momentum for instance. However, we agree the statement was a bit 
+vague and we changed this sentence.}
+
+\item  Line 302: "As it is not obvious which solution is best. . ."
+What is obvious is that this is not an issue of correct or incorrect, but one of possible bias introduced to your
+BSA from your poor t resolution. Please rephrase the paragraph in these terms, and state what systematic
+uncertainty is introduced from the limitations in your ability to reconstruct t. If this effect introduces negligible
+uncertainty on the BSA, that's fine, but make that argument clear.
+   \textcolor{blue}{...}
+
+\item  Table 1 is mildly misleading, simply because the beam polarization is a relative uncertainty, while the others
+are absolute uncertainties (if we understand correctly). Perhaps it is better to pull beam polarization out of
+the middle of the table and put it somewhere else so it can be understood as distinct.
+That 3.5\% is a multiplicative factor, right?
+   \textcolor{blue}{...}
+
+\item  Eq. 25 appears to have a mis-print. xA should be $x_A$.
+   \textcolor{blue}{Done.}
+
+\item  English and Typographical suggestions.
+   \textcolor{blue}{All done.}
+
+\end{enumerate}
+
+
+\end{document}

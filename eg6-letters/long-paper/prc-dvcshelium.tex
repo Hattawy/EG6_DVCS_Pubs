@@ -516,13 +516,17 @@ we use a similar cut where $x_A$ is replaced by $x$ and $M_{^4\!He}$ by $M_{p}$.
 
 \subsection{Exclusive photo-production selection}
 
-To select exclusive events and suppress the backgrounds, we define several 
-exclusivity cuts based on energy and momentum conservation. In principle, 
-a selection based on two or three variables can be used to guarantee the 
-exclusivity of the process. However, in such experiment, where particles 
+In principle, 
+a selection based only on the missing energy of the system would be
+enough to guarantee the 
+exclusivity of the process. However, in our experiment, where particles 
 are detected at very different energies and with very different detector 
-resolutions, we chose to over constrain the selection by using seven 
-variables. The seven variables are defined as follow for the coherent 
+resolutions, this method would not be optimal. For instance the momentum 
+of the helium nuclei is negligible in the missing energy observable, thus
+this valuable information has no impact on a selection using this observable only.
+To circumvent this issue, we constrain the selection of our exclusive events by using seven 
+variables selected to optimize the use of all the detector information available. 
+The seven variables are defined as follow for the coherent 
 DVCS (replace helium by proton for the incoherent case):
 \begin{itemize}
 	\item Co-planarity ($\Delta \phi$) of the virtual photon, the real photon and
@@ -586,9 +590,10 @@ easy to confuse this process with single photon production. In order to estimate
 this channel in the data, we measure the exclusive $\pi^0$ production in the same way as DVCS, with 
 a series of exclusivity cuts, completed by a selection cut on the invariant mass of the two photons
 to match the $\pi^0$ mass. The events obtained for the coherent and incoherent
-channels are shown in Fig. \ref{fig:CohPi0Simul} and \ref{fig:InCohPi0Simul}, respectively. From 
-this sample, we elaborated an event generator, which after being processed
-in the simulation of the detectors gives the red histograms of Fig. \ref{fig:CohPi0Simul} and 
+channels are shown in Fig. \ref{fig:CohPi0Simul} and \ref{fig:InCohPi0Simul}, respectively. Using 
+this sample, we elaborated an event generator by adjusting it to the data after being processed
+in the simulation of the detectors. the result of this process is shown with the red histograms 
+of Fig. \ref{fig:CohPi0Simul} and 
 \ref{fig:InCohPi0Simul}. To correct the experimental data, we estimate the number of single photon 
 events coming from the exclusive $\pi^0$ production as:
 \begin{equation}
@@ -656,7 +661,8 @@ evaluated the impact of changing the exclusivity selection cuts by varying them 
 We evaluated the impact of changing the binning in $\phi$ on the extraction of the beam-spin asymmetry
 at 90°. The precision with which we know the beam polarization is estimated based on the spread 
 of its measurements during the complete run period. We also checked different methods to make the 
-simulation of the exclusive $\pi^0$ production to evaluate the 
+simulation of the exclusive $\pi^0$ production and accounted for a possible undetected 
+asymmetry in its signal to evaluate the 
 possible bias introduced by this correction. As radiative corrections are expected to be small
 for this process, we did not apply them, but associated an error of their expected value.
 These uncertainties are summarized in Tab. \ref{Table:systematic_uncertainties}, with their respective 
@@ -975,7 +981,7 @@ s_{1}^{INT} = F_{A}(t) \Im m(\mathcal{H}_{A}) S_{++}(1),
 with
 \begin{eqnarray}
    S_{++}(1) &=& \frac{-8K(2-y)y}{1+\epsilon^2} \left( 1 + 
-\frac{1-xA+\frac{\sqrt{1+\epsilon^2}-1}{2}}{1+\epsilon^2} 
+\frac{1-x_A+\frac{\sqrt{1+\epsilon^2}-1}{2}}{1+\epsilon^2} 
 \frac{t-t_{min}}{Q^{2}} \right) \label{eq:s1I}
 \end{eqnarray}
 
