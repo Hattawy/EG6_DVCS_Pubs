@@ -335,7 +335,7 @@ result and was designed specifically to solve these two issues of low statistics
 
 \section{The CLAS nuclear DVCS experimental setup}
 
-The CLAS experiment had for main objectives to explore the coherent DVCS on helium-4, to assess if
+The CLAS nuclear DVCS experiment had for main objectives to explore the coherent DVCS on helium-4, to assess if
 the predicted BSA increase could be observed, and to extract the helium-4 GPD. In order to
 perform this measurement however, several instrumentation challenges needed to be resolved. First, to
 measure the scattered electron and the small angle photon of the DVCS, we used CLAS in its 
@@ -346,19 +346,19 @@ will review the important elements of this detection setup.
 
 \subsection{The CEBAF Large Acceptance Spectrometer (CLAS)}
 
-CLAS \cite{Mecking:2003zu} is installed in the hall-B of the JLab continuous electron beam 
-accelerator facility (CEBAF). CLAS is specifically designed to study the multi-particles final states
+CLAS \cite{Mecking:2003zu} was installed in the hall-B of the JLab continuous electron beam 
+accelerator facility (CEBAF). CLAS was specifically designed to study the multi-particles final states
 that cannot be observed conveniently with arm spectrometers. Its historic use to measure DVCS in many different 
-configurations made it an ideal place for this new DVCS measurement. CLAS is composed of six identical radial 
+configurations made it an ideal place for this new DVCS measurement. CLAS was composed of six identical radial 
 sectors separated by coils of toroidal magnets, with each sector made of four detectors 
-as shown in Fig. \ref{fig:CLAS}.  Three regions of drift chambers \cite{Mestayer:2000we} 
-are placed between the torus magnet to reconstruct the charged particles' tracks and 
-calculate their momentum. An array of scintillators is placed behind the drift chambers to measure 
+as shown in Fig. \ref{fig:CLAS}. Three regions of drift chambers \cite{Mestayer:2000we} 
+were placed between the torus magnet to reconstruct the charged particles' tracks and 
+calculate their momentum. An array of scintillators was placed behind the drift chambers to measure 
 a precise time for each track and perform time-of-flight measurement 
-\cite{Smith:1999ii}. These detectors cover the polar angle from 8 to 142 degrees. 
-In forward region, from 8 to 45 degree, these two detectors are complemented with 
+\cite{Smith:1999ii}. These detectors covered the polar angle from 8 to 142 degrees. 
+In the forward region, from 8 to 45 degree, these two detectors were complemented with 
 Cerenkov counters \cite{Adams:2001kk} and electromagnetic calorimeters \cite{Amarian:2001zs},
-important for electron identification. 
+important for electron identification and photon detection. 
 
 \begin{figure}[tbp!]
 \center
@@ -368,9 +368,9 @@ important for electron identification.
 \end{figure}
 
 
-Altogether, CLAS provides a large acceptance of about $2\pi$ steradians for momenta 
-starting at 200 MeV/c. During the nuclear DVCS experiment,
-the beam energy was highest for CLAS with 6.064 GeV, while the beam intensity varied
+Altogether, CLAS provided a large acceptance for momenta 
+starting at 200 MeV/c. The nuclear DVCS experiment took place from October to December 2009,
+the beam energy was 6.064 GeV, while the beam intensity varied
 between 120 and 150 nA. Such beam on the helium-4 target pressurized between 5 and 6 atm,
 corresponds to luminosities in the range of $1$ to $1.2 \times 10^{34}$ cm$^{-2}$.s$^{-1}$.
 During the experiment, the data acquisition operated at a rate of about 3 kHz with about 70\% live-time
@@ -480,8 +480,10 @@ is available in~\cite{Dupre:2017upj}.
 The electrons are detected with the baseline CLAS detectors, the drift chamber measures the kinematic 
 of the electron and the signal measured in both the Cerenkov counter and electromagnetic calorimeter
 provide the identification. A signal of good quality is also required in the 
-time-of-flight system, which serves as a time reference for other detectors. In particular, it 
-serves for the identification of the protons. Several 
+time-of-flight system, which serves as a time reference for all detectors. 
+Protons are detected with the baseline CLAS detectors as well, the drift chamber measures the kinematic 
+of the proton and the time-of-flight system ensure its identification.
+Several 
 fiducial cuts are applied to ensure that particles did not go through part of the inner calorimeter 
 or the solenoid, as well as to reject the edges of the detectors, where efficiency is rapidly 
 decreasing. Kinematic corrections are also applied to the electrons and protons to correct for energy loss
@@ -499,6 +501,11 @@ involving the reconstruction of $\pi^0$ from their decay into two photons. Calib
 with an iterative process to adjust each crystal gain to obtain the most accurate $\pi^0$ mass. A
 global calibration of the calorimeter was also performed to account for incident angle, energy and 
 time dependent effects.
+
+The helium-4 nuclei are detected with the RTPC using a series of constraints on the quality
+of the track reconstruction. As the chamber was operated at low gain and had very low efficiency 
+for protons, we did not apply further identification cuts for the helium-4 nuclei 
+detection~\cite{Dupre:2017upj}.
 
 Finally, we select events that contain a single electron, a high energy photon ($E>2$ GeV) and
 either a helium or a proton. We apply a selection cut on the two charged particles 
@@ -675,19 +682,19 @@ evaluated values. They are added quadratically for the total systematic error pr
 \bf Systematic source & \bf  Coherent channel  & \bf Incoherent channel & \bf Type of systematic 
 error\\
 \hline
-DVCS cuts & 8 $\%$ &  6 $\%$ & bin to bin\\
-\hline
-Data binning & 5.1$\%$ & 7.1$\%$ &bin to bin\\
-\hline
 Beam polarization &  3.5$\%$ &  3.5$\%$& Normalization\\
 \hline
-$\pi^0$ subtraction &  0.6$\%$ &  2.0$\%$ &bin to bin\\
 \hline
-%Beam charge asymmetry &  ~~~~~1.1$\%$&  ~~~~~1.1$\%$\\
-%\hline
-Radiative corrections &  0.1$\%$ & 0.1$\%$ & bin to bin\\
+DVCS cuts & 8 $\%$ &  6 $\%$ & Bin to bin\\
 \hline
-\textbf{Total} &  \textbf{10.1}$\%$ &   \textbf{10.1}$\%$ &bin to 
+Data binning & 5.1$\%$ & 7.1$\%$ & Bin to bin\\
+\hline
+$\pi^0$ subtraction &  0.6$\%$ &  2.0$\%$ & Bin to bin\\
+\hline
+Radiative corrections &  0.1$\%$ & 0.1$\%$ & Bin to bin\\
+\hline
+\hline
+\textbf{Total bin to bin} &  \textbf{10.1}$\%$ &   \textbf{10.1}$\%$ & Bin to 
 bin\\
 \hline
 \end{tabular}
@@ -697,8 +704,8 @@ beam-spin asymmetries at $\phi = 90^{\circ}$.}
 \end{center}
 \end{table}
 
-As discussed above, the best way to define $t$ in the incoherent channel is not completely
-straightforward. As can be seen in Fig. \ref{fig:InCohDiag}, 
+An extra problem that was studied is the best way to define $t$ in the incoherent channel, 
+which is not completely straightforward. As can be seen in Fig. \ref{fig:InCohDiag}, 
 we can either use $t$ or $t^\prime$ ($= (p - p^\prime)^2$). In principle, the two are 
 identical, but experimentally we face some issues. The measurement of $t$ is less precise than
 $t^\prime$ because it involves the photon rather than charged particles. However, the 
@@ -706,8 +713,10 @@ exact measurement of $t^\prime$ is impossible and one needs to assume a proton a
 in the initial state to calculate $t^\prime$. As it is not obvious which solution is best,
 we studied the difference between the two results by analyzing the data independently using the two 
 definitions. We found no significant difference between them, as it is 
-illustrated in Fig. \ref{fig:ttpComp}. We use in the final results $t$,
-which is the correct definition with the slightly poorer resolution.
+illustrated in Fig. \ref{fig:ttpComp}. We use in the final results $t$ as it is based on the 
+rigorous definition. Since the effect of resolution appears small and is partly accounted for
+in the systematic error associated to the DVCS cuts, we decided not to associate an extra
+systematic error based on this study.
 
 \begin{figure}[tbp!]
 \center
