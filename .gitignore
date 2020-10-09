@@ -27,6 +27,9 @@ incoherent_prl.pdf
 *.nfs000000*
 *.bbl
 *.blg
+*.maf
+*.mtc
+*.nlo
 *.end
 *.dpth
 *.toc
