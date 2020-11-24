@@ -6,5 +6,14 @@ pdflatex AnswerAdHoc.tex
 pdflatex AnswerAdHoc.tex
 
 rm AnswerAdHoc.aux AnswerAdHoc.bbl AnswerAdHoc.blg AnswerAdHoc.log AnswerAdHoc.out AnswerAdHoc.maf 
-rm AnswerAdHoc.mtc* AnswerAdHoc.mtc1 AnswerAdHoc.nlo
+rm AnswerAdHoc.mtc* AnswerAdHoc.nlo
+rm formatAndDefs.aux
+
+pdflatex AnswerAdHoc_2.tex
+bibtex   AnswerAdHoc_2
+pdflatex AnswerAdHoc_2.tex
+pdflatex AnswerAdHoc_2.tex
+
+rm AnswerAdHoc_2.aux AnswerAdHoc_2.bbl AnswerAdHoc_2.blg AnswerAdHoc_2.log AnswerAdHoc_2.out AnswerAdHoc_2.maf 
+rm AnswerAdHoc_2.mtc* AnswerAdHoc_2.nlo
 rm formatAndDefs.aux
