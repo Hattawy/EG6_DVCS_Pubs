@@ -755,7 +755,7 @@ void Coherent_CFF()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("graphCFF","Guzey et al. [17]","L");
+   entry=leg->AddEntry("graphCFF","Guzey et al. [18,38]","L");
    entry->SetLineColor(2);
    entry->SetLineStyle(1);
    entry->SetLineWidth(2);
@@ -913,12 +913,12 @@ void Coherent_CFF()
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
-   entry=leg->AddEntry("Graph0","Guzey et al. [17]","L");
+   entry=leg->AddEntry("Graph0","Guzey et al. (VGG)","L");
    entry->SetLineColor(1);
    entry->SetLineStyle(7);
    entry->SetLineWidth(2);
    entry->SetTextFont(42);
-   TLegendEntry *entry2=leg->AddEntry("graph","Liuti et al. [29]","L");
+   TLegendEntry *entry2=leg->AddEntry("graph","Liuti et al. [30,31]","L");
    entry2->SetLineStyle(9);
    entry2->SetLineWidth(2);
    entry2->SetTextFont(42);

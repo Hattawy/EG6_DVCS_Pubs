@@ -99,7 +99,7 @@ void ALU_90_p_vs_Q2_shortscenrario()
    0.175,
    0.134};
    TGraph *graphS = new TGraph(4,_sx1,_sy1);
-   graphS->SetLineStyle(9);
+   graphS->SetLineStyle(7);
    graphS->SetLineWidth(2);
    graphS->SetLineColor(6);
    graphS->Draw("l");
@@ -114,12 +114,12 @@ void ALU_90_p_vs_Q2_shortscenrario()
    TLegendEntry *entry;
    entry=leg->AddEntry("clas","CLAS (this work)","p");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Scope","Fucini et al. [40]","l");
-   entry->SetLineStyle(9);
+   entry=leg->AddEntry("Scope","Fucini et al. [41]","l");
+   entry->SetLineStyle(7);
    entry->SetLineWidth(2);
    entry->SetLineColor(6);
    entry->SetTextFont(42);
-   leg->Draw();
+//   leg->Draw();
    TLine *line = new TLine(0.8,0,3.8,0);
    line->SetLineStyle(7);
    line->Draw();

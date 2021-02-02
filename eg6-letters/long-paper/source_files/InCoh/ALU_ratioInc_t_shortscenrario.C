@@ -101,7 +101,7 @@ void ALU_ratioInc_t_shortscenrario()
    0.8344};
    TGraph *graphS = new TGraph(4,_sx1,_sy1);
    graphS->SetName("GraphS");
-   graphS->SetLineStyle(9);
+   graphS->SetLineStyle(7);
    graphS->SetLineWidth(2);
    graphS->SetLineColor(6);
    graphS->Draw("l");
@@ -161,7 +161,7 @@ void ALU_ratioInc_t_shortscenrario()
    graph->SetName("Graph2");
    graph->SetLineColor(2);
    graph->SetLineWidth(2);
-   graph->Draw("c");
+//   graph->Draw("c");
    
    Double_t Graph3_fx16[16] = {
    0.0026,
@@ -201,7 +201,7 @@ void ALU_ratioInc_t_shortscenrario()
    graph->SetName("Graph3");
    graph->SetLineColor(4);
    graph->SetLineWidth(2);
-   graph->SetLineStyle(7);
+//   graph->SetLineStyle(7);
    graph->Draw("c");
    
    Double_t Graph4_fx17[13] = {
@@ -245,18 +245,18 @@ void ALU_ratioInc_t_shortscenrario()
    entry->SetTextFont(42);
    entry=leg->AddEntry("GraphH","HERMES [10]","P");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph2","Liuti et al. (low -t) [29]","L");
+   entry=leg->AddEntry("Graph2","Liuti et al. (low -t) [30,31]","L");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph4","Guzey et al. [37]","L");
+   entry=leg->AddEntry("Graph4","Guzey et al. [38]","L");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph3","Liuti et al. (high -t) [29]","L");
+   entry=leg->AddEntry("Graph3","Liuti et al. (high -t) [30,31]","L");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("GraphS","Fucini et al. [40]","L");
+   entry=leg->AddEntry("GraphS","Fucini et al. [41]","L");
    entry->SetLineStyle(9);
    entry->SetLineWidth(2);
    entry->SetLineColor(6);
    entry->SetTextFont(42);
-   leg->Draw();
+//   leg->Draw();
    Can_R_t->Modified();
    Can_R_t->cd();
    Can_R_t->SetSelected(Can_R_t);

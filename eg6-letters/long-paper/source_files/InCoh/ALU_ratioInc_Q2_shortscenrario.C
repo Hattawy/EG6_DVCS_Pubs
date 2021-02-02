@@ -16,7 +16,7 @@ void ALU_ratioInc_Q2_shortscenrario()
    Can->SetFrameBorderMode(0);
    Can->SetFrameBorderMode(0);
    
-   TH2F *HALU_RATIO_Q2__1 = new TH2F("HALU_RATIO_Q2__1","",100,0.8,3.8,100,-0.1,1.5);
+   TH2F *HALU_RATIO_Q2__1 = new TH2F("HALU_RATIO_Q2__1","",100,0.8,3.8,100,-0.1,1.7);
    HALU_RATIO_Q2__1->SetStats(0);
 
    Int_t ci;      // for color index setting
@@ -85,7 +85,7 @@ void ALU_ratioInc_Q2_shortscenrario()
    0.9904,
    0.9759};
    TGraph *graphS = new TGraph(4,_sx1,_sy1);
-   graphS->SetLineStyle(9);
+   graphS->SetLineStyle(7);
    graphS->SetLineWidth(2);
    graphS->SetLineColor(6);
    graphS->Draw("l");
@@ -120,23 +120,34 @@ void ALU_ratioInc_Q2_shortscenrario()
    gre->SetMarkerSize(1.5);
    gre->Draw("p");
 
-   TLegend *leg = new TLegend(0.54,0.80,0.92,0.92,NULL,"brNDC");
+    TLegend *leg = new TLegend(0.19,0.72,0.88,0.92,NULL,"brNDC");
+   leg->SetNColumns(2);
    leg->SetBorderSize(1);
-   leg->SetTextSize(0.05);
-   leg->SetLineColor(1);
-   leg->SetLineStyle(1);
-   leg->SetLineWidth(1);
-   leg->SetFillColor(0);
-   leg->SetFillStyle(1001);
-   TLegendEntry *entry=leg->AddEntry("gre","CLAS (This work)","P");
+   TLegendEntry *entry=leg->AddEntry("Graph0","CLAS (This work)","P");
    entry->SetTextFont(42);
-   entry=leg->AddEntry("graphS","Fucini et al. [40]","L");
-   entry->SetLineStyle(9);
+   entry=leg->AddEntry("Graph2","Liuti et al. [30,31]","L");
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(2);
+   entry->SetLineColor(4);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("GraphH","HERMES [10]","P");
+   entry->SetMarkerColor(8);
+   entry->SetMarkerStyle(8);
+   entry->SetMarkerSize(1.5);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("Graph4","Guzey et al. [38]","L");
+   entry->SetLineStyle(5);
+   entry->SetLineWidth(2);
+   entry->SetLineColor(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("","","");
+   entry=leg->AddEntry("GraphS","Fucini et al. [41]","L");
+   entry->SetLineStyle(7);
    entry->SetLineWidth(2);
    entry->SetLineColor(6);
    entry->SetTextFont(42);
    leg->Draw();
-   
+
    Can->Modified();
    Can->cd();
    Can->SetSelected(Can);

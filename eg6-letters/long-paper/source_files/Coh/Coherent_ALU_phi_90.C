@@ -94,7 +94,7 @@ void Coherent_ALU_phi_90()
    graphS->SetMarkerStyle(34);
    graphS->SetMarkerSize(1.5);
    graphS->SetMarkerColor(6);
-   graphS->SetLineStyle(9);
+   graphS->SetLineStyle(7);
    graphS->SetLineWidth(2);
    graphS->SetLineColor(6);
    graphS->Draw("l");
@@ -138,10 +138,14 @@ void Coherent_ALU_phi_90()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1.5);
    entry->SetTextFont(42);
-   TLegendEntry *entry2=leg->AddEntry("graphS","Fucini et al. [31]","L");
-   entry2->SetLineStyle(9);
-   entry2->SetLineWidth(2);
-   entry2->SetLineColor(6);
+   entry=leg->AddEntry("HERMES","HERMES [10]","P");
+   entry->SetLineColor(1);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(8);
+   entry->SetMarkerStyle(8);
+   entry->SetMarkerSize(1.5);
+   entry->SetTextFont(42);
    leg->Draw();
    TLine *line = new TLine(0.85,0,2.6,0);
    line->SetLineStyle(7);
@@ -230,7 +234,7 @@ void Coherent_ALU_phi_90()
    graphT->SetMarkerStyle(34);
    graphT->SetMarkerSize(1.5);
    graphT->SetMarkerColor(6);
-   graphT->SetLineStyle(9);
+   graphT->SetLineStyle(7);
    graphT->SetLineWidth(2);
    graphT->SetLineColor(6);
    graphT->Draw("l");
@@ -301,55 +305,55 @@ void Coherent_ALU_phi_90()
    graph->SetLineWidth(2);
    graph->Draw("c");
    
-   Double_t Graph1_fx24[16] = {
-   0.0053,
-   0.0277,
-   0.0672,
-   0.1223,
-   0.1911,
-   0.271,
-   0.3592,
-   0.4525,
-   0.5475,
-   0.6408,
-   0.729,
-   0.8089,
-   0.8777,
-   0.9328,
-   0.9723,
-   0.9947};
-   Double_t Graph1_fy24[16] = {
-   0.312336,
-   0.327893,
-   0.316997,
-   0.287221,
-   0.245252,
-   0.194805,
-   0.134905,
-   0.0435876,
-   0.0354022,
-   0.0317877,
-   0.0344951,
-   0.0512647,
-   0.125261,
-   0.684747,
-   15.1177,
-   10920.6};
-   graph = new TGraph(16,Graph1_fx24,Graph1_fy24);
-   graph->SetName("Graph1");
-   graph->SetTitle("Graph");
-   graph->SetFillColor(1);
-   graph->SetFillStyle(1000);
-   graph->SetLineColor(4);
-   graph->SetLineStyle(7);
-   graph->SetLineWidth(2);
-   graph->Draw("c");
+// Double_t Graph1_fx24[16] = {
+// 0.0053,
+// 0.0277,
+// 0.0672,
+// 0.1223,
+// 0.1911,
+// 0.271,
+// 0.3592,
+// 0.4525,
+// 0.5475,
+// 0.6408,
+// 0.729,
+// 0.8089,
+// 0.8777,
+// 0.9328,
+// 0.9723,
+// 0.9947};
+// Double_t Graph1_fy24[16] = {
+// 0.312336,
+// 0.327893,
+// 0.316997,
+// 0.287221,
+// 0.245252,
+// 0.194805,
+// 0.134905,
+// 0.0435876,
+// 0.0354022,
+// 0.0317877,
+// 0.0344951,
+// 0.0512647,
+// 0.125261,
+// 0.684747,
+// 15.1177,
+// 10920.6};
+// graph = new TGraph(16,Graph1_fx24,Graph1_fy24);
+// graph->SetName("Graph1");
+// graph->SetTitle("Graph");
+// graph->SetFillColor(1);
+// graph->SetFillStyle(1000);
+// graph->SetLineColor(4);
+// graph->SetLineStyle(7);
+// graph->SetLineWidth(2);
+// graph->Draw("c");
 
    line = new TLine(0.075,0,0.31,0);
    line->SetLineStyle(7);
    line->Draw();
    
-   leg = new TLegend(0.29,0.76,0.98,1,NULL,"brNDC");
+   leg = new TLegend(0.05,0.85,0.67,1,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetTextSize(0.05);
    leg->SetLineColor(1);
@@ -357,15 +361,7 @@ void Coherent_ALU_phi_90()
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
-   entry=leg->AddEntry("Graph0","CLAS (this work)","P");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1.5);
-   entry->SetTextFont(42);
-   entry=leg->AddEntry("LT (-t=0.100)","Liuti et al. (low -t) [29]","L");
+   entry=leg->AddEntry("LT (-t=0.100)","Liuti et al. [30,31]","L");
    entry->SetLineColor(2);
    entry->SetLineStyle(1);
    entry->SetLineWidth(2);
@@ -373,18 +369,10 @@ void Coherent_ALU_phi_90()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph1","Liuti et al. (high -t) [29]","L");
-   entry->SetLineColor(4);
+   entry=leg->AddEntry("graphS","Fucini et al. [32]","L");
    entry->SetLineStyle(7);
    entry->SetLineWidth(2);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1);
-   entry->SetTextFont(42);
-   entry2=leg->AddEntry("graphS","Fucini et al. [31]","L");
-   entry2->SetLineStyle(9);
-   entry2->SetLineWidth(2);
-   entry2->SetLineColor(6);
+   entry->SetLineColor(6);
    leg->Draw();
    Can_2->Modified();
    Can->cd();
@@ -543,7 +531,7 @@ void Coherent_ALU_phi_90()
    graphU->SetMarkerStyle(34);
    graphU->SetMarkerSize(1.5);
    graphU->SetMarkerColor(6);
-   graphU->SetLineStyle(9);
+   graphU->SetLineStyle(7);
    graphU->SetLineWidth(2);
    graphU->SetLineColor(6);
    graphU->Draw("l");
@@ -663,46 +651,4 @@ void Coherent_ALU_phi_90()
    line->SetLineStyle(7);
    line->Draw();
    
-   leg = new TLegend(0.44,0.75,0.98,1,NULL,"brNDC");
-   leg->SetBorderSize(1);
-   leg->SetTextSize(0.05);
-   leg->SetLineColor(1);
-   leg->SetLineStyle(1);
-   leg->SetLineWidth(1);
-   leg->SetFillColor(0);
-   leg->SetFillStyle(1001);
-   entry=leg->AddEntry("Graph0","CLAS (this work)","P");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1.5);
-   entry->SetTextFont(42);
-   entry=leg->AddEntry("HERMES","HERMES [10]","P");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
-   entry->SetMarkerColor(8);
-   entry->SetMarkerStyle(8);
-   entry->SetMarkerSize(1.5);
-   entry->SetTextFont(42);
-   entry=leg->AddEntry("gre","Liuti et al. [29]","L");
-   entry->SetLineColor(2);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(2);
-   entry->SetMarkerColor(1);
-   entry->SetMarkerStyle(21);
-   entry->SetMarkerSize(1);
-   entry->SetTextFont(42);
-   entry2=leg->AddEntry("graphS","Fucini et al. [31]","L");
-   entry2->SetLineStyle(9);
-   entry2->SetLineWidth(2);
-   entry2->SetLineColor(6);
-   leg->Draw();
-   Can_3->Modified();
-   Can->cd();
-   Can->Modified();
-   Can->cd();
-   Can->SetSelected(Can);
 }
