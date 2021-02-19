@@ -6,4 +6,4 @@ pdflatex prc-dvcshelium.tex
 pdflatex prc-dvcshelium.tex
 #dvipdf prc-dvcshelium.dvi
 
-rm -f *.aux *.bbl *.blg *.dvi *.log *.out
+rm -f *.aux *.blg *.dvi *.log *.out
